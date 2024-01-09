@@ -140,14 +140,14 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center border-l border-r border-[#C0CFD3] gap-2">
           <div className="text-8xl font-semibold">50 +</div>
           <div className="text-center text-[19px] text-[#6A858C] tracking-wider">
-            Menorehkan beberapa prestasi bergengsi baik tingkat regional maupun
+            Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun
             nasional
           </div>
         </div>
         <div className="flex flex-col items-center justify-center mr-24 gap-2">
           <div className="text-8xl font-semibold">80%</div>
           <div className="text-center text-[19px] text-[#6A858C] tracking-wider">
-            Tingkat Keberhasilan Pelajar/Mahasiswa yang diterima kerja
+            Tingkat Keberhasilan Pelajar/Mahasiswayang diterima kerja
           </div>
         </div>
       </div>
