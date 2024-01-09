@@ -100,8 +100,12 @@ const Navbar = () => {
                     : " font-bold text-black flex gap-2 duration-300"
                 }
               >
-                <div className="flex ml-[0.5px] items-center gap-1">
-                  <img src={INFlag} alt="IN Flag" />
+                <div className="flex ml-[1px] items-center gap-1">
+                  <img
+                    className="border rounded-full border-black"
+                    src={INFlag}
+                    alt="IN Flag"
+                  />
                   <div>ID</div>
                 </div>
               </button>
@@ -114,7 +118,11 @@ const Navbar = () => {
                 }
               >
                 <div className="flex ml-[1px] items-center gap-1">
-                  <img src={ENFlag} alt="IN Flag" />
+                  <img
+                    className="border rounded-full border-black"
+                    src={ENFlag}
+                    alt="IN Flag"
+                  />
                   <div className="">EN</div>
                 </div>
               </button>
