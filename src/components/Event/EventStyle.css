@@ -1,0 +1,111 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 64px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.date-style {
+  margin-top: 14px;
+  color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  width: calc(25% - 16px); /* 25% untuk 4 item per baris dan dikurangi padding */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-item img {
+  height: 193px;
+  align-self: stretch;
+}
+
+.gallery-text-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.gallery-text-item-headline {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.34px;
+}
+
+.gallery-text-item-deskripsi {
+  color: var(--typo-text, var(--Colors-Neutral-Text-colorTextSecondary, rgba(0, 0, 0, 0.65)));
+  font-family: "Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.084px;
+  text-align: left;
+}
+
+.gallery-text-item-maker {
+  color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
+  font-family: "Poppins";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.maker-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.maker-layout img {
+  width: 16px;
+  height: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 41px;
+  margin-bottom: 160px;
+}
+
+.pagination button {
+  margin: 0 4px;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 4px 9px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.pagination button.active {
+  background-color: #09588d;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 4px 9px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
