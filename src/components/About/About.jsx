@@ -17,26 +17,10 @@ const AboutUs = () => {
               <div className="text-[25px]">Ir. Budiono Kartohadiprojo</div>
               <div className="flex flex-col gap-5 text-lg mt-10">
                 <div>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto excepturi dolorem eius, doloribus repellat assumenda
-                  provident error, asperiores inventore distinctio vel
-                  perferendis illo quas magni numquam quo nesciunt vitae
-                  quibusdam?
+                  Saya dengan senang hati menyambut Anda dalam lingkungan pendidikan kami yang berfokus pada pengembangan karakter, keunggulan akademik, dan kreativitas. Bersama-sama, kami berkomitmen untuk membimbing setiap siswa mencapai
+                  potensi terbaik mereka, menginspirasi keingintahuan, dan membentuk pemimpin masa depan yang tangguh.
                 </div>
-                <div>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto excepturi dolorem eius, doloribus repellat assumenda
-                  provident error, asperiores inventore distinctio vel
-                  perferendis illo quas magni numquam quo nesciunt vitae
-                  quibusdam?
-                </div>
-                <div>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto excepturi dolorem eius, doloribus repellat assumenda
-                  provident error, asperiores inventore distinctio vel
-                  perferendis illo quas magni numquam quo nesciunt vitae
-                  quibusdam?
-                </div>
+                <div>Terima kasih atas kepercayaan Anda kepada kami. Kami berharap bahwa perjalanan pendidikan di Perguruan Cikini akan menjadi fondasi yang kokoh untuk kesuksesan dan prestasi sepanjang hidup.</div>
               </div>
             </div>
             <div className="flex justify-end h-[500px]">
