@@ -1,27 +1,31 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-import AppContext from "../../context/AppContext";
-import "./ProjectStyle.css";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
+import AppContext from "../../context/AppContext";
 import ProjekImg from "../../assets/img/construction_unsplash.jpg";
+import ProjectDetail from "../ProjectDetail/ProjectDetail";
+import "./ProjectStyle.css";
 
 const Project = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
 
   const projectData = [
     {
+      id: 1,
+      tittleProyek: "Proyek pemindahan sekolah 1",
+      deskripsiProyek:
+        "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent",
+      imageSource: ProjekImg,
+    },
+    {
+      id: 2,
       tittleProyek: "Proyek pemindahan sekolah",
       deskripsiProyek:
         "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent",
       imageSource: ProjekImg,
     },
     {
-      tittleProyek: "Proyek pemindahan sekolah",
-      deskripsiProyek:
-        "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent",
-      imageSource: ProjekImg,
-    },
-    {
+      id: 3,
       tittleProyek: "Proyek pemindahan sekolah",
       deskripsiProyek:
         "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent",
@@ -45,11 +49,11 @@ const Project = () => {
       </div>
       <div className="image-list-container">
         {projectData.map((item) => (
-          <div className="image-list-wrapper">
+          <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.imageSource}`} className="image-list-wrapper">
             <img src={item.imageSource} alt="img" />
             <p className="overlay-text-tittle">{item.tittleProyek}</p>
             <p className="overlay-text-desc">{item.deskripsiProyek}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </>

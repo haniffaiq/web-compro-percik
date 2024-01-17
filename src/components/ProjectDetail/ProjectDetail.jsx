@@ -1,16 +1,13 @@
 import React, { useContext, useState } from "react";
+import { useParams } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import AboutUs from "./About";
-import Visi from "./Visi";
-import Prestasi from "./Prestasi";
-import Galeri from "./Galeri";
-import Misi from "./Misi";
+import "./ProjectDetailStyle.css";
 
-const About = () => {
+const ProjectDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIAbout");
   const location = useLocation();
+  const queryParameters = new URLSearchParams(location.search);
 
   return (
     <>
@@ -19,17 +16,17 @@ const About = () => {
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
         </Link>
         <span> / </span>
-        <Link to="/about" className="">
-          {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
+        <Link to="/project" className="">
+          {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
         </Link>
       </div>
-      <AboutUs />
-      <Visi />
-      <Misi />
-      <Prestasi />
-      <Galeri />
+      <div>
+        <h2>{queryParameters.get("tittle")}</h2>
+        <img src={queryParameters.get("img")} alt="img" />
+        <p>{queryParameters.get("desc")}</p>
+      </div>
     </>
   );
 };
 
-export default About;
+export default ProjectDetail;
