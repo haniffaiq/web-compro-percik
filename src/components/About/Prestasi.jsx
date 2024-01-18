@@ -6,9 +6,10 @@ import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
-import data from "../../assets/json/achivement.json"
+import data from "../../assets/json/data.json"
 
-const PrestasiComponent = ({author, date, title, description, location }) => (
+const itemsPerPage = 6;
+const PrestasiComponent = ({ author, date, title, description, location }) => (
   <button className="border rounded-lg p-3 flex flex-col">
     <img className="flex justify-center w-full" src={Foto} alt="foto" />
     <div className="text-start text-2xl mt-5">{title}</div>
@@ -32,29 +33,60 @@ const Prestasi = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const sortedPrestasi = data.achievementsData.sort((a, b) => new Date(b.date) - new Date(a.date));
 
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Menghitung indeks awal dan akhir untuk item pada halaman saat ini
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentPrestasi = sortedPrestasi.slice(indexOfFirstItem, indexOfLastItem);
+
+  const totalPages = Math.ceil(sortedPrestasi.length / itemsPerPage);
+
+  const changePage = (page) => {
+    setCurrentPage(page);
+  };
   return (
     <>
-<div className="p-8">
-    <div className="text-center text-5xl font-bold mb-10">Prestasi Unggulan</div>
-    <div className="grid grid-cols-3 gap-10">
-      {sortedPrestasi.map((achievement, index) => (
-        <PrestasiComponent key={index} {...achievement} />
-      ))}
-    </div>
-    <div className="mt-20 w-full border bg-[#E6F7FF] border-[#1890FF] p-5">
-      <div className="flex justify-between">
-        <div className="flex flex-col gap-2">
-          <div className="font-bold text-xl">Anda Sudah Daftar PPDB ???</div>
-          <div>Yuk daftar PPDB secara daring dan tanpa ribet Sekarang juga</div>
+      <div className="p-8">
+        <div className="text-center text-5xl font-bold mb-10">Prestasi Unggulan</div>
+        <div className="grid grid-cols-3 gap-10">
+          {currentPrestasi .map((achievement, index) => (
+            <PrestasiComponent key={index} {...achievement} />
+          ))}
         </div>
-        <div className="flex items-center">
-          <button className="border py-3 px-3 border-none bg-[#09588D] text-white font-bold text-sm rounded-lg">
-            Ayo Daftar Sekarang !
+        <div className="flex items-center justify-center mt-4">
+          <button
+            className="border py-3 px-3 border-none bg-[#09588D] text-white font-bold text-sm rounded-lg"
+            onClick={() => changePage(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            Sebelumnya
+          </button>
+          <span className="mx-4">
+            {currentPage} dari {totalPages}
+          </span>
+          <button
+            className="border py-3 px-3 border-none bg-[#09588D] text-white font-bold text-sm rounded-lg"
+            onClick={() => changePage(currentPage + 1)}
+            disabled={currentPage === totalPages}
+          >
+            Selanjutnya
           </button>
         </div>
+        <div className="mt-20 w-full border bg-[#E6F7FF] border-[#1890FF] p-5">
+          <div className="flex justify-between">
+            <div className="flex flex-col gap-2">
+              <div className="font-bold text-xl">Anda Sudah Daftar PPDB ???</div>
+              <div>Yuk daftar PPDB secara daring dan tanpa ribet Sekarang juga</div>
+            </div>
+            <div className="flex items-center">
+              <button className="border py-3 px-3 border-none bg-[#09588D] text-white font-bold text-sm rounded-lg">
+                Ayo Daftar Sekarang !
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
     </>
   );
 };
