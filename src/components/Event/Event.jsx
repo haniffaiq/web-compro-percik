@@ -5,6 +5,7 @@ import "./EventStyle.css";
 import Rec1 from "../../assets/img/Rectangle108.png";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import Pagination from "./Pagination";
+import data from "../../assets/json/data.json"
 
 const itemsPerPage = 12;
 
@@ -71,10 +72,10 @@ const Event = () => {
       alt: "Image 1",
     },
   ];
-
+  const sortedPrestasi = data.beritaData.sort((a, b) => new Date(b.date) - new Date(a.date));
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentData = beritaData.slice(startIndex, endIndex);
+  const currentData = sortedPrestasi.slice(startIndex, endIndex);
 
   return (
     <>
@@ -91,7 +92,7 @@ const Event = () => {
         <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
       </div>
       <div className="gallery">
-        {beritaData.map((item, index) => (
+        {currentData.map((item, index) => (
           <div key={index} className="gallery-item">
             <div>
               <img src={item.urlImage} alt={item.alt} />
