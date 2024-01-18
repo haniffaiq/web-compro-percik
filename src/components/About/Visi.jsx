@@ -8,14 +8,14 @@ const Visi = () => {
 
   return (
     <>
-      <div className="p-8">
+      <div className="p-9">
         <div className="text-center text-5xl font-bold mb-10">Visi</div>
-        <div className="border w-full bg-[#5FBEFF] rounded-xl p-14 ">
-          <div className="justify-center mt-5">
+        <div className="border w-full bg-[#5FBEFF] rounded-xl p-9 ">
+          <div className="justify-center ">
             <div className="border bg-[#09588D]  rounded-lg border-none p-3 justify-center">
               <div>
                 <div className="text-white p-1 text-justify">
-                  Visi kami adalah membangun masyarakat yang berkelanjutan, inklusif, dan memberdayakan setiap individu untuk mencapai potensi maksimal mereka. Kami yakin bahwa melalui tindakan yang berfokus pada keberlanjutan, pendidikan,
+                  Membangun masyarakat yang berkelanjutan, inklusif, dan memberdayakan setiap individu untuk mencapai potensi maksimal mereka. Kami yakin bahwa melalui tindakan yang berfokus pada keberlanjutan, pendidikan,
                   kesehatan, dan pemberdayaan ekonomi, kita dapat menciptakan perubahan positif yang akan dirasakan oleh generasi sekarang dan mendatang.
                 </div>
               </div>
