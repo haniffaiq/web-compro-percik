@@ -95,7 +95,7 @@ const Event = () => {
         {currentData.map((item, index) => (
           <div key={index} className="gallery-item">
             <div>
-              <img src={item.urlImage} alt={item.alt} />
+              <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
             </div>
             <p className="date-style">{item.date}</p>
             <div className="gallery-text-item">
