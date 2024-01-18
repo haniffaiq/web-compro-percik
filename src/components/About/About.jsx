@@ -15,7 +15,7 @@ const AboutUs = () => {
             <div className="text-white">
               <div className="text-4xl font-bold">Ucapan Dari Pimpinan</div>
               <div className="text-[25px]">Ir. Budiono Kartohadiprojo</div>
-              <div className="flex flex-col gap-5 text-lg mt-10">
+              <div className="flex flex-col gap-5 text-lg mt-10 ">
                 <div>
                   Saya dengan senang hati menyambut Anda dalam lingkungan pendidikan kami yang berfokus pada pengembangan karakter, keunggulan akademik, dan kreativitas. Bersama-sama, kami berkomitmen untuk membimbing setiap siswa mencapai
                   potensi terbaik mereka, menginspirasi keingintahuan, dan membentuk pemimpin masa depan yang tangguh.

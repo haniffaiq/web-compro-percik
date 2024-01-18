@@ -19,7 +19,7 @@ const Misi = () => {
                 </div>
                 <div className="text-white ml-5 p-1">
                   <div className="text-white p-1">Pendidikan Berkualitas:</div>
-                  <div className="text-white p-1">
+                  <div className="text-white p-1 text-justify">
                     Menyediakan akses dan sumber daya untuk pendidikan berkualitas bagi semua lapisan masyarakat. Melalui program-program inovatif, kami bertujuan untuk meningkatkan tingkat literasi dan membuka pintu peluang bagi anak-anak
                     dan dewasa.
                   </div>
@@ -35,7 +35,7 @@ const Misi = () => {
                 </div>
                 <div className="text-white ml-5 p-1">
                   <div className="text-white p-1">Kesehatan dan Kesejahteraan:</div>
-                  <div className="text-white p-1">
+                  <div className="text-white p-1 text-justify">
                     Memastikan akses universal terhadap layanan kesehatan yang berkualitas. Kami berkomitmen untuk mengurangi disparitas kesehatan dan meningkatkan kesadaran akan pentingnya pola hidup sehat di kalangan masyarakat.
                   </div>
                 </div>
@@ -50,7 +50,7 @@ const Misi = () => {
                 </div>
                 <div className="text-white ml-5 p-1">
                   <div className="text-white p-1">Pemberdayaan Ekonomi:</div>
-                  <div className="text-white p-1">
+                  <div className="text-white p-1 text-justify">
                     Memberdayakan komunitas untuk menciptakan mata pencaharian yang berkelanjutan. Melalui pelatihan keterampilan, dukungan kewirausahaan, dan pembangunan ekonomi lokal, kami berusaha meningkatkan taraf hidup dan kemandirian
                     ekonomi.
                   </div>
@@ -66,7 +66,7 @@ const Misi = () => {
                 </div>
                 <div className="text-white ml-5 p-1">
                   <div className="text-white p-1">Keberlanjutan Lingkungan:</div>
-                  <div className="text-white p-1">
+                  <div className="text-white p-1 text-justify">
                     Melindungi dan melestarikan lingkungan alam. Kami aktif terlibat dalam proyek-proyek keberlanjutan, penghijauan, dan pengelolaan sumber daya alam demi memastikan bumi ini tetap lestari untuk generasi mendatang.
                   </div>
                 </div>
