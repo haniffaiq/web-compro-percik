@@ -88,26 +88,28 @@ const Event = () => {
           {globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}
         </Link>
       </div>
-      <div className="page-tittle">
-        <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
-      </div>
-      <div className="gallery">
-        {currentData.map((item, index) => (
-          <div key={index} className="gallery-item">
-            <div>
-              <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
-            </div>
-            <p className="date-style">{item.date}</p>
-            <div className="gallery-text-item">
-              <p className="gallery-text-item-headline">{item.headline}</p>
-              <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
-              <div className="maker-layout">
-                <img src={Logo} alt="logo" />
-                <p className="gallery-text-item-maker">{item.maker}</p>
+      <div className="">
+        <div className="page-tittle flex justify-center">
+          <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
+        </div>
+        <div className="gallery flex justify-center">
+          {currentData.map((item, index) => (
+            <div key={index} className="gallery-item">
+              <div>
+                <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+              </div>
+              <p className="date-style">{item.date}</p>
+              <div className="gallery-text-item">
+                <p className="gallery-text-item-headline">{item.headline}</p>
+                <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
+                <div className="maker-layout">
+                  <img src={Logo} alt="logo" />
+                  <p className="gallery-text-item-maker">{item.maker}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <Pagination totalItems={beritaData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
     </>
