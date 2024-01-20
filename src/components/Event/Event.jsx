@@ -5,7 +5,7 @@ import "./EventStyle.css";
 import Rec1 from "../../assets/img/Rectangle108.png";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import Pagination from "./Pagination";
-import data from "../../assets/json/data.json"
+import data from "../../assets/json/data.json";
 
 const itemsPerPage = 12;
 
@@ -16,62 +16,6 @@ const Event = () => {
     setCurrentPage(page);
   };
 
-  const beritaData = [
-    {
-      id: 1,
-      date: "14 Juni 2022",
-      headline: "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-      deskripsi: "Blusheets said its helping over 10,000 companies automate their financial data.",
-      maker: "Bloomberg",
-      urlImage: Rec1,
-      alt: "Image 1",
-    },
-    {
-      id: 2,
-      date: "14 Juni 2022",
-      headline: "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-      deskripsi: "Blusheets said its helping over 10,000 companies automate their financial data.",
-      maker: "Bloomberg",
-      urlImage: Rec1,
-      alt: "Image 1",
-    },
-    {
-      id: 3,
-      date: "14 Juni 2022",
-      headline: "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-      deskripsi: "Blusheets said its helping over 10,000 companies automate their financial data.",
-      maker: "Bloomberg",
-      urlImage: Rec1,
-      alt: "Image 1",
-    },
-    {
-      id: 4,
-      date: "14 Juni 2022",
-      headline: "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-      deskripsi: "Blusheets said its helping over 10,000 companies automate their financial data.",
-      maker: "Bloomberg",
-      urlImage: Rec1,
-      alt: "Image 1",
-    },
-    {
-      id: 5,
-      date: "14 Juni 2022",
-      headline: "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-      deskripsi: "Blusheets said its helping over 10,000 companies automate their financial data.",
-      maker: "Bloomberg",
-      urlImage: Rec1,
-      alt: "Image 1",
-    },
-    {
-      id: 6,
-      date: "14 Juni 2022",
-      headline: "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-      deskripsi: "Blusheets said its helping over 10,000 companies automate their financial data.",
-      maker: "Bloomberg",
-      urlImage: Rec1,
-      alt: "Image 1",
-    },
-  ];
   const sortedPrestasi = data.beritaData.sort((a, b) => new Date(b.date) - new Date(a.date));
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -109,7 +53,7 @@ const Event = () => {
           </div>
         ))}
       </div>
-      <Pagination totalItems={beritaData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
+      <Pagination totalItems={currentData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
     </>
   );
 };

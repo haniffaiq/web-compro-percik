@@ -1,200 +1,239 @@
 {
-    "achievementsData" : [
-        {
-          "author" : "Pandu Wirakusuma",
-          "date": "14 Januari 2024",
-          "title": "Sekolah Dasar hingga Menengah Perguruan Cikini",
-          "description": "Mengukir Prestasi Unggul di Tingkat Kota",
-          "location": "Jakarta Pusat"
-        },
-        {
-          "author" : "Pandu Wirakusuma",
-          "date": "15 Januari 2024",
-          "title": "SMA Perguruan Cikini, Jakarta Selatan, Menyongsong Prestasi Akademik dan Kreativitas",
-          "description": "SMA Perguruan Cikini di Jakarta Selatan menonjolkan pencapaian akademik dan kreativitas siswa. Dengan kurikulum yang berkualitas dan fasilitas modern, kami membentuk para pemimpin masa depan yang berprestasi.",
-          "location": "Jakarta Selatan"
-        },
-        {
-          "author" : "Pandu Wirakusuma",
-          "date": "16 Januari 2024",
-          "title": "SMK 1 Perguruan Cikini, Jakarta Utara, Menyelami Dunia Profesional dengan Keahlian Unggul",
-          "description": "SMK 1 Perguruan Cikini di Jakarta Utara menawarkan pendidikan vokasional berkualitas tinggi, membekali siswa dengan keahlian unggul dalam persiapan menuju dunia profesional yang dinamis.",
-          "location": "Jakarta Utara"
-        },
-        {
-          "author" : "Pandu Wirakusuma",
-          "date": "17 Januari 2024",
-          "title": "SMK 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tumpuan Utama bagi Bakat Musik Berkelas",
-          "description": "SMK 2 Perguruan Cikini di Jakarta Selatan menggabungkan pendidikan umum dan keahlian musik, menciptakan lingkungan di mana bakat musikal berkembang dan menghasilkan prestasi di tingkat nasional.",
-          "location": "Jakarta Selatan"
-        },
-        {
-          "author" : "Pandu Wirakusuma",
-          "date": "18 Januari 2024",
-          "title": "SMK 3 Perguruan Cikini, Jakarta Selatan, Membangun Generasi Unggul dengan Fokus Keahlian",
-          "description": "SMK 3 Perguruan Cikini di Jakarta Selatan menawarkan program pendidikan yang berfokus pada keahlian tertentu, mempersiapkan siswa untuk sukses di dunia pekerjaan dengan keunggulan kompetitif.",
-          "location": "Jakarta Selatan"
-        },
-        {
-          "author" : "Pandu Wirakusuma",
-          "date": "19 Januari 2024",
-          "title": "SMA 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tempat Inspiratif bagi Pencapaian Akademik",
-          "description": "SMA 2 Perguruan Cikini di Jakarta Selatan mengeksplorasi potensi siswa dalam pencapaian akademik dan kegiatan ekstrakurikuler membentuk pribadi yang berprestasi",
-          "location": "Jakarta Selatan"
-        },
-        {
-            "author" : "Pandu Wirakusuma",
-            "date": "20 Januari 2024",
-            "title": "Sekolah Dasar hingga Menengah Perguruan Cikini",
-            "description": "Mengukir Prestasi Unggul di Tingkat Kota",
-            "location": "Jakarta Pusat"
-          },
-          {
-            "author" : "Pandu Wirakusuma",
-            "date": "21 Januari 2024",
-            "title": "SMA Perguruan Cikini, Jakarta Selatan, Menyongsong Prestasi Akademik dan Kreativitas",
-            "description": "SMA Perguruan Cikini di Jakarta Selatan menonjolkan pencapaian akademik dan kreativitas siswa. Dengan kurikulum yang berkualitas dan fasilitas modern, kami membentuk para pemimpin masa depan yang berprestasi.",
-            "location": "Jakarta Selatan"
-          },
-          {
-            "author" : "Pandu Wirakusuma",
-            "date": "22 Januari 2024",
-            "title": "SMK 1 Perguruan Cikini, Jakarta Utara, Menyelami Dunia Profesional dengan Keahlian Unggul",
-            "description": "SMK 1 Perguruan Cikini di Jakarta Utara menawarkan pendidikan vokasional berkualitas tinggi, membekali siswa dengan keahlian unggul dalam persiapan menuju dunia profesional yang dinamis.",
-            "location": "Jakarta Utara"
-          },
-          {
-            "author" : "Pandu Wirakusuma",
-            "date": "23 Januari 2024",
-            "title": "SMK 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tumpuan Utama bagi Bakat Musik Berkelas",
-            "description": "SMK 2 Perguruan Cikini di Jakarta Selatan menggabungkan pendidikan umum dan keahlian musik, menciptakan lingkungan di mana bakat musikal berkembang dan menghasilkan prestasi di tingkat nasional.",
-            "location": "Jakarta Selatan"
-          },
-          {
-            "author" : "Pandu Wirakusuma",
-            "date": "24 Januari 2024",
-            "title": "SMK 3 Perguruan Cikini, Jakarta Selatan, Membangun Generasi Unggul dengan Fokus Keahlian",
-            "description": "SMK 3 Perguruan Cikini di Jakarta Selatan menawarkan program pendidikan yang berfokus pada keahlian tertentu, mempersiapkan siswa untuk sukses di dunia pekerjaan dengan keunggulan kompetitif.",
-            "location": "Jakarta Selatan"
-          },
-          {
-            "author" : "Pandu Wirakusuma",
-            "date": "25 Januari 2024",
-            "title": "SMA 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tempat Inspiratif bagi Pencapaian Akademik",
-            "description": "SMA 2 Perguruan Cikini di Jakarta Selatan mengeksplorasi potensi siswa dalam pencapaian akademik dan kegiatan ekstrakurikuler membentuk pribadi yang berprestasi",
-            "location": "Jakarta Selatan"
-          }
-        
+  "achievementsData": [
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "14 Januari 2024",
+      "title": "Sekolah Dasar hingga Menengah Perguruan Cikini",
+      "description": "Mengukir Prestasi Unggul di Tingkat Kota",
+      "location": "Jakarta Pusat"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "15 Januari 2024",
+      "title": "SMA Perguruan Cikini, Jakarta Selatan, Menyongsong Prestasi Akademik dan Kreativitas",
+      "description": "SMA Perguruan Cikini di Jakarta Selatan menonjolkan pencapaian akademik dan kreativitas siswa. Dengan kurikulum yang berkualitas dan fasilitas modern, kami membentuk para pemimpin masa depan yang berprestasi.",
+      "location": "Jakarta Selatan"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "16 Januari 2024",
+      "title": "SMK 1 Perguruan Cikini, Jakarta Utara, Menyelami Dunia Profesional dengan Keahlian Unggul",
+      "description": "SMK 1 Perguruan Cikini di Jakarta Utara menawarkan pendidikan vokasional berkualitas tinggi, membekali siswa dengan keahlian unggul dalam persiapan menuju dunia profesional yang dinamis.",
+      "location": "Jakarta Utara"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "17 Januari 2024",
+      "title": "SMK 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tumpuan Utama bagi Bakat Musik Berkelas",
+      "description": "SMK 2 Perguruan Cikini di Jakarta Selatan menggabungkan pendidikan umum dan keahlian musik, menciptakan lingkungan di mana bakat musikal berkembang dan menghasilkan prestasi di tingkat nasional.",
+      "location": "Jakarta Selatan"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "18 Januari 2024",
+      "title": "SMK 3 Perguruan Cikini, Jakarta Selatan, Membangun Generasi Unggul dengan Fokus Keahlian",
+      "description": "SMK 3 Perguruan Cikini di Jakarta Selatan menawarkan program pendidikan yang berfokus pada keahlian tertentu, mempersiapkan siswa untuk sukses di dunia pekerjaan dengan keunggulan kompetitif.",
+      "location": "Jakarta Selatan"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "19 Januari 2024",
+      "title": "SMA 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tempat Inspiratif bagi Pencapaian Akademik",
+      "description": "SMA 2 Perguruan Cikini di Jakarta Selatan mengeksplorasi potensi siswa dalam pencapaian akademik dan kegiatan ekstrakurikuler membentuk pribadi yang berprestasi",
+      "location": "Jakarta Selatan"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "20 Januari 2024",
+      "title": "Sekolah Dasar hingga Menengah Perguruan Cikini",
+      "description": "Mengukir Prestasi Unggul di Tingkat Kota",
+      "location": "Jakarta Pusat"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "21 Januari 2024",
+      "title": "SMA Perguruan Cikini, Jakarta Selatan, Menyongsong Prestasi Akademik dan Kreativitas",
+      "description": "SMA Perguruan Cikini di Jakarta Selatan menonjolkan pencapaian akademik dan kreativitas siswa. Dengan kurikulum yang berkualitas dan fasilitas modern, kami membentuk para pemimpin masa depan yang berprestasi.",
+      "location": "Jakarta Selatan"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "22 Januari 2024",
+      "title": "SMK 1 Perguruan Cikini, Jakarta Utara, Menyelami Dunia Profesional dengan Keahlian Unggul",
+      "description": "SMK 1 Perguruan Cikini di Jakarta Utara menawarkan pendidikan vokasional berkualitas tinggi, membekali siswa dengan keahlian unggul dalam persiapan menuju dunia profesional yang dinamis.",
+      "location": "Jakarta Utara"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "23 Januari 2024",
+      "title": "SMK 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tumpuan Utama bagi Bakat Musik Berkelas",
+      "description": "SMK 2 Perguruan Cikini di Jakarta Selatan menggabungkan pendidikan umum dan keahlian musik, menciptakan lingkungan di mana bakat musikal berkembang dan menghasilkan prestasi di tingkat nasional.",
+      "location": "Jakarta Selatan"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "24 Januari 2024",
+      "title": "SMK 3 Perguruan Cikini, Jakarta Selatan, Membangun Generasi Unggul dengan Fokus Keahlian",
+      "description": "SMK 3 Perguruan Cikini di Jakarta Selatan menawarkan program pendidikan yang berfokus pada keahlian tertentu, mempersiapkan siswa untuk sukses di dunia pekerjaan dengan keunggulan kompetitif.",
+      "location": "Jakarta Selatan"
+    },
+    {
+      "author": "Pandu Wirakusuma",
+      "date": "25 Januari 2024",
+      "title": "SMA 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tempat Inspiratif bagi Pencapaian Akademik",
+      "description": "SMA 2 Perguruan Cikini di Jakarta Selatan mengeksplorasi potensi siswa dalam pencapaian akademik dan kegiatan ekstrakurikuler membentuk pribadi yang berprestasi",
+      "location": "Jakarta Selatan"
+    }
+  ],
+  "beritaData": [
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    },
+    {
+      "id": 1,
+      "date": "14 Juni 2022",
+      "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
+      "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
+      "maker": "Bloomberg",
+      "urlImage": "img/Rectangle108.png",
+      "alt": "Image 1"
+    }
+  ],
+  "projectData": [
+    {
+      "id": 1,
+      "tittleProyek": "Proyek Pemindahan Sekolah Cikini 1",
+      "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+      "Paragraf": [
+        "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+        "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+        "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
       ],
-    "beritaData" : [
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 1,
-          "date": "14 Juni 2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        }
-        
-      ]
-} 
+      "urlImage": "img/construction_unsplash.jpg",
+      "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+      "alt": "Image 1"
+    },
+    {
+      "id": 2,
+      "tittleProyek": "Proyek Pemindahan Sekolah Cikini 2",
+      "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+      "Paragraf": [
+        "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+        "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+        "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+      ],
+      "urlImage": "img/construction_unsplash.jpg",
+      "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+      "alt": "Image 1"
+    },
+    {
+      "id": 3,
+      "tittleProyek": "Proyek Pemindahan Sekolah Cikini 3",
+      "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+      "Paragraf": [
+        "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+        "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+        "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+      ],
+      "urlImage": "img/construction_unsplash.jpg",
+      "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+      "alt": "Image 1"
+    }
+  ]
+}
