@@ -32,13 +32,13 @@ const Event = () => {
           {globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}
         </Link>
       </div>
-      <div className="">
-        <div className="page-tittle flex justify-center">
-          <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
-        </div>
-        <div className="gallery flex justify-center">
-          {currentData.map((item, index) => (
-            <div key={index} className="gallery-item">
+      <div className="page-tittle flex justify-center">
+        <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
+      </div>
+      <div className="gallery">
+        {currentData.map((item) => (
+          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
+            <div>
               <div>
                 <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
@@ -52,8 +52,8 @@ const Event = () => {
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </Link>
+        ))}
       </div>
       <Pagination totalItems={currentData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
     </>
