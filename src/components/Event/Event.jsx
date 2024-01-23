@@ -36,21 +36,23 @@ const Event = () => {
         <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
       </div>
       <div className="gallery">
-        {currentData.map((item, index) => (
-          <div key={index} className="gallery-item">
+        {currentData.map((item) => (
+          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
             <div>
-              <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
-            </div>
-            <p className="date-style">{item.date}</p>
-            <div className="gallery-text-item">
-              <p className="gallery-text-item-headline">{item.headline}</p>
-              <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
-              <div className="maker-layout">
-                <img src={Logo} alt="logo" />
-                <p className="gallery-text-item-maker">{item.maker}</p>
+              <div>
+                <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+              </div>
+              <p className="date-style">{item.date}</p>
+              <div className="gallery-text-item">
+                <p className="gallery-text-item-headline">{item.headline}</p>
+                <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
+                <div className="maker-layout">
+                  <img src={Logo} alt="logo" />
+                  <p className="gallery-text-item-maker">{item.maker}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <Pagination totalItems={currentData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
