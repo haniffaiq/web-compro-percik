@@ -1,90 +1,65 @@
 {
   "achievementsData": [
     {
-      "author": "Pandu Wirakusuma",
-      "date": "14 Januari 2024",
-      "title": "Sekolah Dasar hingga Menengah Perguruan Cikini",
-      "description": "Mengukir Prestasi Unggul di Tingkat Kota",
-      "location": "Jakarta Pusat"
+      "author": "ANDI SASHA SARINA (4C)",
+      "created_at": "01/01/2024",
+      "title": "SKATE ASIA 2022 IN SUBWAY KUALA LUMPUR, MALAYSIA",
+      "description": "",
+      "category" : ["1 EMAS KATEGORI","1 PERAK KATEGORI","1 PERUNGGU KATEGORI"],
+      "date" :"01/08/2022",
+      "location": "Kuala Lumpur, Malaysia"
     },
     {
-      "author": "Pandu Wirakusuma",
-      "date": "15 Januari 2024",
-      "title": "SMA Perguruan Cikini, Jakarta Selatan, Menyongsong Prestasi Akademik dan Kreativitas",
-      "description": "SMA Perguruan Cikini di Jakarta Selatan menonjolkan pencapaian akademik dan kreativitas siswa. Dengan kurikulum yang berkualitas dan fasilitas modern, kami membentuk para pemimpin masa depan yang berprestasi.",
-      "location": "Jakarta Selatan"
+      "author": "BALANGGA SHIDIQ HERLIANTORO (5C)",
+      "created_at": "01/01/2024",
+      "title": "KEJUARAAN SEPATU RODA NASIONAL PIALA WALI KOTA SOLO ke-7 2022",
+      "description": "",
+      "category" : ["JUARA 1 (50 METER)","JUARA 2 (100 METER)"],
+      "date" :"01/08/2022",
+      "location": "Solo, Indonesia"
     },
     {
-      "author": "Pandu Wirakusuma",
-      "date": "16 Januari 2024",
-      "title": "SMK 1 Perguruan Cikini, Jakarta Utara, Menyelami Dunia Profesional dengan Keahlian Unggul",
-      "description": "SMK 1 Perguruan Cikini di Jakarta Utara menawarkan pendidikan vokasional berkualitas tinggi, membekali siswa dengan keahlian unggul dalam persiapan menuju dunia profesional yang dinamis.",
-      "location": "Jakarta Utara"
+      "author": "KAYLA AYUDIA LARASATI",
+      "created_at": "01/01/2024",
+      "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
+      "description": "",
+      "category" : ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+      "date" :"01/08/2022",
+      "location": "DKI Jakarta, Indonesia"
     },
     {
-      "author": "Pandu Wirakusuma",
-      "date": "17 Januari 2024",
-      "title": "SMK 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tumpuan Utama bagi Bakat Musik Berkelas",
-      "description": "SMK 2 Perguruan Cikini di Jakarta Selatan menggabungkan pendidikan umum dan keahlian musik, menciptakan lingkungan di mana bakat musikal berkembang dan menghasilkan prestasi di tingkat nasional.",
-      "location": "Jakarta Selatan"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "18 Januari 2024",
-      "title": "SMK 3 Perguruan Cikini, Jakarta Selatan, Membangun Generasi Unggul dengan Fokus Keahlian",
-      "description": "SMK 3 Perguruan Cikini di Jakarta Selatan menawarkan program pendidikan yang berfokus pada keahlian tertentu, mempersiapkan siswa untuk sukses di dunia pekerjaan dengan keunggulan kompetitif.",
-      "location": "Jakarta Selatan"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "19 Januari 2024",
-      "title": "SMA 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tempat Inspiratif bagi Pencapaian Akademik",
-      "description": "SMA 2 Perguruan Cikini di Jakarta Selatan mengeksplorasi potensi siswa dalam pencapaian akademik dan kegiatan ekstrakurikuler membentuk pribadi yang berprestasi",
-      "location": "Jakarta Selatan"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "20 Januari 2024",
-      "title": "Sekolah Dasar hingga Menengah Perguruan Cikini",
-      "description": "Mengukir Prestasi Unggul di Tingkat Kota",
-      "location": "Jakarta Pusat"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "21 Januari 2024",
-      "title": "SMA Perguruan Cikini, Jakarta Selatan, Menyongsong Prestasi Akademik dan Kreativitas",
-      "description": "SMA Perguruan Cikini di Jakarta Selatan menonjolkan pencapaian akademik dan kreativitas siswa. Dengan kurikulum yang berkualitas dan fasilitas modern, kami membentuk para pemimpin masa depan yang berprestasi.",
-      "location": "Jakarta Selatan"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "22 Januari 2024",
-      "title": "SMK 1 Perguruan Cikini, Jakarta Utara, Menyelami Dunia Profesional dengan Keahlian Unggul",
-      "description": "SMK 1 Perguruan Cikini di Jakarta Utara menawarkan pendidikan vokasional berkualitas tinggi, membekali siswa dengan keahlian unggul dalam persiapan menuju dunia profesional yang dinamis.",
-      "location": "Jakarta Utara"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "23 Januari 2024",
-      "title": "SMK 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tumpuan Utama bagi Bakat Musik Berkelas",
-      "description": "SMK 2 Perguruan Cikini di Jakarta Selatan menggabungkan pendidikan umum dan keahlian musik, menciptakan lingkungan di mana bakat musikal berkembang dan menghasilkan prestasi di tingkat nasional.",
-      "location": "Jakarta Selatan"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "24 Januari 2024",
-      "title": "SMK 3 Perguruan Cikini, Jakarta Selatan, Membangun Generasi Unggul dengan Fokus Keahlian",
-      "description": "SMK 3 Perguruan Cikini di Jakarta Selatan menawarkan program pendidikan yang berfokus pada keahlian tertentu, mempersiapkan siswa untuk sukses di dunia pekerjaan dengan keunggulan kompetitif.",
-      "location": "Jakarta Selatan"
-    },
-    {
-      "author": "Pandu Wirakusuma",
-      "date": "25 Januari 2024",
-      "title": "SMA 2 Perguruan Cikini, Jakarta Selatan, Menjadi Tempat Inspiratif bagi Pencapaian Akademik",
-      "description": "SMA 2 Perguruan Cikini di Jakarta Selatan mengeksplorasi potensi siswa dalam pencapaian akademik dan kegiatan ekstrakurikuler membentuk pribadi yang berprestasi",
-      "location": "Jakarta Selatan"
+      "author": ["ANDI QONITA BILBINA GAZLY (6C)",
+      "BALANGGA SHIDIQ HERLIANTORO (5C)",
+      "AQUILA MALIK MAULANA (5C)",
+      "ANDI HUMAERA ZAHEN NAFAY GAZLY (5B)",
+      "ZIVANNA ASHAKEELA ANDRYAN (5B)",
+      "CHYLADISKA CALISTA (5A)",
+      "RANIA NAYYARA SALSABILA (3C)",
+      "RAKA BHADRESWARA PUTRA MAESTRA (4C)",
+      "FARA ALORA KINANTI (4C)",
+      "KASSABIAN ALKHAIRAN HABIBIE (1C)"
+      ],
+      "created_at": "01/01/2024",
+      "title": "KEJUARAAN SEPATU RODA BUPATI BEKASI OPEN 2022",
+      "description": "",
+      "category" : ["JUARA 3 (100 METER)",
+      "JUARA 2 (100 METER)",
+      "JUARA 1 (100 METER)",
+      "JUARA 1 (200 METER)",
+      "JUARA 3 (100 METER)",
+      "JUARA 3 (100 METER)",
+      "JUARA 3 (100 METER)",
+      "JUARA 2 (100 METER)",
+      "JUARA 3 (100 METER)",
+      "JUARA 1 (100 METER)",
+      "JUARA 1 (100 METER)"
+      ],
+      "date" :"01/09/2022",
+      "location": "Bekasi, Indonesia"
     }
+    
   ],
+
   "beritaData": [
     {
       "id": 1,
