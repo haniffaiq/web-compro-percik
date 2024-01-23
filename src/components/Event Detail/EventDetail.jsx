@@ -1,11 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import LogoWriter from "../../assets/icon/ant-design_user-outlined.svg";
 import IconDownload from "../../assets/img/download.png";
 import data from "../../assets/json/data.json";
 import "./EventDetailStyle.css";
-
+import html2pdf from 'html2pdf.js';
 const EventDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
@@ -13,9 +13,25 @@ const EventDetail = () => {
 
   const sortedData = data.beritaData.sort((a, b) => new Date(b.date) - new Date(a.date));
   const slicedData = sortedData.slice(0, 3);
+  const contentRef = useRef();
 
+  const handleDownloadPDF = () => {
+    const content = contentRef.current;
+    if (content) {
+      const pdfOptions = {
+        margin: 10,
+        filename:`${queryParameters.get("headline")}_news_event_detail.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      };
+
+      html2pdf().from(content).set(pdfOptions).save();
+    }
+  };
   return (
     <>
+
       <div className="flex gap-1 ml-[35px] py-9">
         <Link to="/" className="">
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
@@ -25,26 +41,30 @@ const EventDetail = () => {
           {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "News & Event Details"}
         </Link>
       </div>
-      <div className="event-detail-main-container">
-        <h2>{queryParameters.get("headline")}</h2>
-        <div className="date-writer-layout">
-          <div className="date-layout">
-            <img src={LogoWriter} alt="Image" />
-            <p>{queryParameters.get("date")}</p>
+
+      <div ref={contentRef}>
+        <div className="event-detail-main-container">
+          <h2>{queryParameters.get("headline")}</h2>
+          <div className="date-writer-layout">
+            <div className="date-layout">
+              <img src={LogoWriter} alt="Image" />
+              <p>{queryParameters.get("date")}</p>
+            </div>
+            <div className="writter-layout">
+              <img src={LogoWriter} alt="Image" />
+              <p>{queryParameters.get("maker")}</p>
+            </div>
           </div>
-          <div className="writter-layout">
-            <img src={LogoWriter} alt="Image" />
-            <p>{queryParameters.get("maker")}</p>
-          </div>
+          <img className="event-image-main-layout" src={require(`../../assets/${queryParameters.get("img")}`)} alt="image headline" />
         </div>
-        <img className="event-image-main-layout" src={require(`../../assets/${queryParameters.get("img")}`)} alt="image headline" />
+        <div className="isi-desc-event">
+          <p>{queryParameters.get("desc")}</p>
+        </div>
       </div>
-      <div className="isi-desc-event">
-        <p>{queryParameters.get("desc")}</p>
-      </div>
+
       <div className="detail-selengkapnya-event-layout">
         <p>Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :</p>
-        <button className="detail-selengkapnya-event-button-layout">
+        <button className="detail-selengkapnya-event-button-layout" onClick={handleDownloadPDF}>
           <img src={IconDownload} />
           <p>Download Berita</p>
         </button>
