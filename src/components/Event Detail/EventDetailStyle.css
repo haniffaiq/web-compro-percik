@@ -20,7 +20,7 @@
   gap: 32px;
   align-items: flex-start;
   align-self: stretch;
-  margin-left: 148px;
+  margin-left: 142px;
 }
 
 .date-layout {
@@ -39,6 +39,11 @@
   color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
 }
 
+.date-layout img {
+  width: 24px;
+  height: 24px;
+}
+
 .writter-layout {
   display: flex;
   flex-direction: row;
@@ -53,4 +58,93 @@
   line-height: 24px; /* 150% */
   letter-spacing: -0.176px;
   color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
+}
+
+.writter-layout img {
+  width: 24px;
+  height: 24px;
+}
+
+.event-image-main-layout {
+  height: 490.963px;
+  width: 1058px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.isi-desc-event {
+  margin-left: 142px;
+  margin-top: 24px;
+}
+
+.detail-selengkapnya-event-layout {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 142px;
+}
+
+.detail-selengkapnya-event-button-layout {
+  background-color: #09588d;
+  display: flex;
+  width: 200px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+}
+
+.detail-selengkapnya-event-button-layout img {
+  width: 24px;
+  height: 24px;
+}
+
+.detail-selengkapnya-event-button-layout p {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.176px;
+  margin-top: 20px;
+}
+
+.daftar-ppdb-layout {
+  border: 1px solid var(--Status-Info, #1890ff);
+  background: #e6f7ff;
+  display: flex;
+  width: 1058px;
+  height: 110px;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 142px;
+  margin-top: 48px;
+}
+
+.berita-lainnya-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 22px;
+}
+
+.berita-lainnya-layout {
+  margin-left: 142px;
+  margin-top: 48px;
+  margin-bottom: 240px;
+}
+
+.berita-lainnya-layout h2 {
+  color: var(--typo-HEADING, rgba(0, 0, 0, 0.85));
+  /* Heading/2 */
+  font-family: "Poppins";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.792px;
 }
