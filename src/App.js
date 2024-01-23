@@ -8,6 +8,7 @@ import About from "./components/About/Index";
 import School from "./components/School/Index";
 import Project from "./components/Project/Project";
 import ProjectDetail from "./components/ProjectDetail/ProjectDetail";
+import EventDetail from "./components/Event Detail/EventDetail";
 import Event from "./components/Event/Event";
 import Management from "./components/Management/Management";
 import Footer from "./components/Footer/Footer";
@@ -23,6 +24,7 @@ function App() {
           <Route path="/school" element={<School />} />
           <Route path="/project" element={<Project />} />
           <Route path="/project-detail" element={<ProjectDetail />} />
+          <Route path="/event-detail" element={<EventDetail />} />
           <Route path="/event" element={<Event />} />
           <Route path="/management" element={<Management />} />
         </Routes>
