@@ -25,10 +25,10 @@ const formatDate = (dateObject) => {
 
 const itemsPerPage = 6;
 const PrestasiComponent = ({ author, created_at, title, description, category, location, date }) => (
-  <button className="border rounded-lg p-3 flex flex-col">
+  <button className="border rounded-lg p-3 flex flex-col shadow-2xl">
     <img className="flex justify-center w-full" src={Foto} alt="foto" />
     <div className="text-start text-2xl mt-5">{title}</div>
-    <div className="flex gap-3 text-start mt-3">
+    {/*<div className="flex gap-3 text-start mt-3">
       <img src={Logo} alt="logo" />
       <div className="text-[#8d8f91] flex-grow">
         {Array.isArray(author) ? (
@@ -42,7 +42,7 @@ const PrestasiComponent = ({ author, created_at, title, description, category, l
     </div>
 
     <div className="flex gap-3 text-start mt-3">
-      {/* <img src={Logo} alt="logo" /> */}
+      <img src={Logo} alt="logo" /> *
       <div className="text-[#8d8f91] flex-grow">
         {Array.isArray(category) ? (
           category.map((categoryItem, index) => (
@@ -52,7 +52,7 @@ const PrestasiComponent = ({ author, created_at, title, description, category, l
           category
         )}
       </div>
-    </div>
+    </div> */}
 
 
     <div className="flex gap-3 text-start mt-3">

@@ -12,7 +12,7 @@ const Project = () => {
 
   return (
     <>
-      <div className="flex gap-1 ml-[35px] py-9">
+      <div className="flex gap-1 ml-[35px] py-9 ">
         <Link to="/" className="">
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
         </Link>
@@ -21,7 +21,7 @@ const Project = () => {
           {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
         </Link>
       </div>
-      <div className="page-tittle">
+      <div className="page-tittle flex justify-center">
         <p>{globalState.globalProperty === "IND" ? "Proyek" : "Project"}</p>
       </div>
       <div className="image-list-container">

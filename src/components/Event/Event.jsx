@@ -32,18 +32,18 @@ const Event = () => {
           {globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}
         </Link>
       </div>
-      <div className="page-tittle flex justify-center">
+      <div className="page-tittle flex justify-center ">
         <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
       </div>
-      <div className="gallery">
+      <div className="gallery ">
         {currentData.map((item) => (
-          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
+          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
             <div>
               <div>
                 <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
               <p className="date-style">{item.date}</p>
-              <div className="gallery-text-item">
+              <div className="gallery-text-item ">
                 <p className="gallery-text-item-headline">{item.headline}</p>
                 <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
                 <div className="maker-layout">
