@@ -11,9 +11,11 @@ const Partnership = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 items-center p-14 bg-[#E4E4E4]">
-        <div className="text-5xl font-bold mb-10">Partnership</div>
-        <div className="flex gap-28">
+      <div className="flex flex-col gap-2 items-center p-14 bg-[#EEF6FF] lg:bg-[#E4E4E4]">
+        <div className="lg:flex hidden text-5xl font-bold mb-10">
+          Partnership
+        </div>
+        <div className="flex gap-5 lg:gap-28 lg:h-full lg:w-full h-[50px] w-[350px] overflow-y-hidden">
           <img src={Lipi} />
           <img src={Bni} />
           <img src={Telkomsel} />

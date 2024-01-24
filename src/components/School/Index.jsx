@@ -12,7 +12,7 @@ const School = () => {
 
   return (
     <>
-      <div className="flex gap-1 ml-[35px] py-9">
+      <div className="hidden lg:flex gap-1 ml-[35px] py-9">
         <Link to="/" className="">
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
         </Link>
