@@ -32,7 +32,7 @@ const Header = () => {
       }}
     >
       <Carousel autoplay>
-        <div className="h-[700px] ">
+        <div className="h-[300px] lg:h-[700px]">
           <div
             className="h-full object-cover"
             style={{
@@ -41,22 +41,22 @@ const Header = () => {
               backgroundSize: "cover",
             }}
           >
-            <div className="h-full flex flex-col justify-center ml-24">
-              <div className="text-white text-[50px] font-[600]">
+            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
                 Mari Bergabung dengan Kami
               </div>
-              <div className="text-white text-[45px] font-[600]">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
                 Mari Kita Menciptakan Anak Didik yang Berbakat
               </div>
-              <div>
-                <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
+              <div className="flex justify-center lg:justify-start ">
+                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
                   Kunjungi Kami
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="h-[700px] ">
+        <div className="h-[300px] lg:h-[700px]">
           <div
             className="h-full object-cover"
             style={{
@@ -65,22 +65,22 @@ const Header = () => {
               backgroundSize: "cover",
             }}
           >
-            <div className="h-full flex flex-col justify-center ml-24">
-              <div className="text-white text-[50px] font-[600]">
+            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
                 Mari Bergabung dengan Kami
               </div>
-              <div className="text-white text-[45px] font-[600]">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
                 Mari Kita Menciptakan Anak Didik yang Berbakat
               </div>
-              <div>
-                <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
+              <div className="flex justify-center lg:justify-start ">
+                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
                   Kunjungi Kami
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="h-[700px] ">
+        <div className="h-[300px] lg:h-[700px]">
           <div
             className="h-full object-cover"
             style={{
@@ -89,22 +89,22 @@ const Header = () => {
               backgroundSize: "cover",
             }}
           >
-            <div className="h-full flex flex-col justify-center ml-24">
-              <div className="text-white text-[50px] font-[600]">
+            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
                 Mari Bergabung dengan Kami
               </div>
-              <div className="text-white text-[45px] font-[600]">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
                 Mari Kita Menciptakan Anak Didik yang Berbakat
               </div>
-              <div>
-                <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
+              <div className="flex justify-center lg:justify-start ">
+                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
                   Kunjungi Kami
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="h-[700px] ">
+        <div className="h-[300px] lg:h-[700px]">
           <div
             className="h-full object-cover"
             style={{
@@ -113,15 +113,15 @@ const Header = () => {
               backgroundSize: "cover",
             }}
           >
-            <div className="h-full flex flex-col justify-center ml-24">
-              <div className="text-white text-[50px] font-[600]">
+            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
                 Mari Bergabung dengan Kami
               </div>
-              <div className="text-white text-[45px] font-[600]">
+              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
                 Mari Kita Menciptakan Anak Didik yang Berbakat
               </div>
-              <div>
-                <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
+              <div className="flex justify-center lg:justify-start ">
+                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
                   Kunjungi Kami
                 </button>
               </div>
@@ -129,24 +129,24 @@ const Header = () => {
           </div>
         </div>
       </Carousel>
-      <div className="bg-[#EEF8FF] pt-24 pb-24 grid grid-cols-3 gap-5">
-        <div className="flex flex-col items-center justify-center ml-24 gap-5">
-          <div className="text-8xl font-semibold">5K +</div>
-          <div className="text-center text-[19px] text-[#6A858C] tracking-wider">
+      <div className="bg-[#EEF8FF] lg:pt-24 lg:pb-24 lg:grid lg:grid-cols-3 flex flex-col lg:gap-5">
+        <div className=" py-32 lg:py-0 flex flex-col items-center justify-center lg:ml-24 gap-5 bg-[#EEF8FF]">
+          <div className="text-6xl lg:text-8xl font-semibold">5K +</div>
+          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] tracking-wider lg:w-full w-[310px]">
             Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia
             kerja
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center border-l border-r border-[#C0CFD3] gap-2">
-          <div className="text-8xl font-semibold">50 +</div>
-          <div className="text-center text-[19px] text-[#6A858C] tracking-wider">
+        <div className="py-32 lg:py-0 flex flex-col items-center justify-center lg:border-l lg:border-r border-[#C0CFD3] gap-2 lg:bg-transparent bg-[#FFFCEE]">
+          <div className="text-6xl lg:text-8xl font-semibold">50 +</div>
+          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] tracking-wider lg:w-full w-[310px]">
             Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun
             nasional
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mr-24 gap-2">
-          <div className="text-8xl font-semibold">80%</div>
-          <div className="text-center text-[19px] text-[#6A858C] tracking-wider">
+        <div className=" py-32 lg:py-0 flex flex-col items-center justify-center lg:mr-24 gap-2 lg:bg-transparent bg-[#F3EEFF]">
+          <div className="text-6xl lg:text-8xl font-semibold">80%</div>
+          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] tracking-wider lg:w-full w-[310px]">
             Tingkat Keberhasilan Pelajar/Mahasiswayang diterima kerja
           </div>
         </div>

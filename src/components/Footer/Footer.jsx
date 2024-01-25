@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bg-[#09588D] w-full grid grid-cols-7 py-[40px] pl-[35px] pr-[35px]">
+      <div className="bg-[#09588D] w-full flex flex-col lg:grid grid-cols-7 p-5 lg:p-14">
         <div className="col-span-3 ">
           <div className="text-white font-[600] text-2xl mb-5">
             Yayasan Perguruan Cikini
@@ -26,7 +26,7 @@ const Footer = () => {
             admin@perguruancikini.com
           </div>
         </div>
-        <div className="col-span-2 flex flex-col gap-3">
+        <div className="col-span-2 lg:mt-0 mt-5 flex flex-col gap-3 ">
           <div className="text-white font-[600] text-xl">Follow Us</div>
           <div className="flex gap-4">
             <img src={Instagram} alt="Instagram" className="h-[30px]" />
@@ -39,18 +39,18 @@ const Footer = () => {
             Privacy Policy | Disclaimer
           </div>
         </div>
-        <div className="col-span-2 flex flex-col gap-3">
-          <div className="flex justify-center">
-            <button className="border py-3 px-7 rounded-full flex gap-3 items-center bg-[#E06D1A] border-none">
+        <div className="col-span-2 flex flex-col gap-3 mt-5 lg:mt-0">
+          <div className="flex justify-start lg:justify-center">
+            <button className="border py-2 lg:py-3 px-7 rounded-xl lg:rounded-full flex gap-3 items-center bg-[#E06D1A] border-none">
               <img src={Whatsapp} alt="Whatsapp" className="h-[40px]" />
               <div className="font-[600] text-white">Kontak Admin</div>
             </button>
           </div>
-          <div className="text-[#C1CACF] text-lg text-center">
+          <div className="text-[#C1CACF] text-lg text-start lg:text-center">
             Informasi Selengkapnya Hubungi Kami
           </div>
         </div>
-        <div className="mt-[35px] w-full col-span-3 text-[#C1CACF]">
+        <div className="mt-2 lg:mt-[35px] w-full col-span-3 text-[#C1CACF]">
           @ 2024 Yayasan Perguruan Cikini
         </div>
       </div>

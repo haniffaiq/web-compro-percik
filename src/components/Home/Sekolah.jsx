@@ -12,13 +12,15 @@ const Sekolah = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 p-14">
+      <div className="flex flex-col gap-2 p-5 lg:p-14">
         <div className="flex justify-between ">
-          <div className="text-3xl font-bold mb-10">DAFTAR SEKOLAH</div>
-          <div className="text-sm">SELENGKAPNYA {">>"}</div>
+          <div className="text-2xl lg:text-3xl font-bold mb-10">
+            Daftar Sekolah
+          </div>
+          <div className="lg:flex hidden text-sm">Selengkapnya {">>"}</div>
         </div>
-        <div className="grid grid-cols-3 gap-28">
-          <div className="h-[400px] w-[400px]">
+        <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-3 gap-5 lg:gap-28 lg:w-full">
+          <div className="h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]">
             <div
               className="h-full object-cover rounded-xl"
               style={{
@@ -40,7 +42,7 @@ const Sekolah = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] w-[400px]">
+          <div className="h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]">
             <div
               className="h-full object-cover rounded-xl"
               style={{
@@ -62,7 +64,7 @@ const Sekolah = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] w-[400px]">
+          <div className="h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]">
             <div
               className="h-full object-cover rounded-xl"
               style={{

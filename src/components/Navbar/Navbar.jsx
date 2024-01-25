@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo/logo.svg";
 import INFlag from "../../assets/icon/in.svg";
 import ENFlag from "../../assets/icon/en.svg";
+import burger from "../../assets/icon/pajamas_hamburger.svg";
 import { Link, Location, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 
@@ -11,20 +12,29 @@ const Navbar = () => {
   const location = useLocation();
   //   const isLocation = location.pathname.split("/");
 
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
     <>
       {console.log(location, "LOCATION")}
       <div className="w-full border-b shadow-lg">
-        <div className="grid grid-cols-8 ml-[30px] mr-[30px] m-2 ">
-          <div className="flex gap-3 col-span-3">
+        <div className="flex justify-between lg:grid lg:grid-cols-8 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] m-2 ">
+          <div className="flex gap-0 lg:gap-3 col-span-3">
             <button className="">
               <Logo />
             </button>
-            <button className="font-bold text-xl flex items-center">
+            <button className="font-bold text-md lg:text-xl flex items-center">
               YAYASAN PERGURUAN CIKINI
             </button>
           </div>
-          <div className="flex items-center gap-4 w-full col-span-3">
+          <button
+            onClick={() => setNavbarOpen(!navbarOpen)}
+            className="flex items-center lg:hidden"
+          >
+            <img src={burger} />
+          </button>
+
+          <div className="hidden lg:flex items-center gap-4 w-full col-span-3">
             <Link
               to="/"
               className={
@@ -90,7 +100,7 @@ const Navbar = () => {
                 : "Management"}
             </Link>
           </div>
-          <div className="w-full flex justify-end items-center col-span-2 py-2">
+          <div className="hidden w-full lg:flex justify-end items-center col-span-2 py-2">
             <div className="border-2 rounded-[8px] grid grid-cols-2 border-[#09588D]">
               <button
                 onClick={() => updateGlobalState({ globalProperty: "IND" })}
@@ -127,6 +137,86 @@ const Navbar = () => {
                 </div>
               </button>
             </div>
+          </div>
+        </div>
+        <div
+          className={
+            "lg:flex flex-grow items-center pt-5 pb-5" +
+            (navbarOpen ? " " : " hidden")
+          }
+          id="example-navbar-danger"
+        >
+          <div className="flex flex-col lg:hidden text-center gap-5 list-none lg:ml-auto">
+            <Link
+              to="/"
+              className={
+                location.pathname === "/"
+                  ? " text-black font-[600]"
+                  : "text-[#6B7280] font-[600]"
+              }
+              onClick={() => setNavbarOpen(false)}
+            >
+              {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
+            </Link>
+            <Link
+              to="/about"
+              className={
+                location.pathname === "/about"
+                  ? "text-black font-[600]"
+                  : "text-[#6B7280] font-[600]"
+              }
+              onClick={() => setNavbarOpen(false)}
+            >
+              {globalState.globalProperty === "IND"
+                ? "Tentang Kami"
+                : "About Us"}
+            </Link>
+            <Link
+              to="/school"
+              className={
+                location.pathname === "/school"
+                  ? "text-black font-[600]"
+                  : "text-[#6B7280] font-[600]"
+              }
+              onClick={() => setNavbarOpen(false)}
+            >
+              {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
+            </Link>
+            <Link
+              to="/project"
+              className={
+                location.pathname === "/project"
+                  ? "text-black font-[600]"
+                  : "text-[#6B7280] font-[600]"
+              }
+              onClick={() => setNavbarOpen(false)}
+            >
+              {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
+            </Link>
+            <Link
+              to="/event"
+              className={
+                location.pathname === "/event"
+                  ? "text-black font-[600]"
+                  : "text-[#6B7280] font-[600]"
+              }
+              onClick={() => setNavbarOpen(false)}
+            >
+              {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
+            </Link>
+            <Link
+              to="/management"
+              className={
+                location.pathname === "/management"
+                  ? "text-black font-[600]"
+                  : "text-[#6B7280] font-[600]"
+              }
+              onClick={() => setNavbarOpen(false)}
+            >
+              {globalState.globalProperty === "IND"
+                ? "Manajemen"
+                : "Management"}
+            </Link>
           </div>
         </div>
       </div>

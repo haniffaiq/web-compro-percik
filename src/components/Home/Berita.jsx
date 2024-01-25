@@ -23,10 +23,12 @@ const Berita = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 p-14 bg-[#CCEAFF]">
+      <div className="flex flex-col gap-2 p-5 lg:p-14 bg-[#CCEAFF]">
         <div className="flex justify-between ">
-          <div className="text-3xl font-bold mb-10">BERITA DAN ACARA</div>
-          <div className="text-sm">SELENGKAPNYA {">>"}</div>
+          <div className="text-xl lg:text-3xl font-bold mb-10">
+            BERITA DAN ACARA
+          </div>
+          <div className="lg:flex hidden text-sm">Selengkapnya {">>"}</div>
         </div>
         <div className=" grid grid-cols-4 gap-5">
           {currentData.slice(0, 4).map((item) => (
