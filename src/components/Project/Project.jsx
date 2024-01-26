@@ -21,15 +21,16 @@ const Project = () => {
           {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
         </Link>
       </div>
-      <div className="page-tittle flex justify-center">
+      <div className="page-tittle">
         <p>{globalState.globalProperty === "IND" ? "Proyek" : "Project"}</p>
       </div>
       <div className="image-list-container">
         {sortedProject.map((item) => (
           <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="image-list-wrapper">
+            <div className="image-overlay"></div> {/* Tambahkan div untuk lapisan transparan */}
             <img src={require(`../../assets/${item.urlImage}`)} alt="img" />
             <p className="overlay-text-tittle">{item.tittleProyek}</p>
-            <p className="overlay-text-desc">{item.deskripsiProyek.length > 400 ? `${item.deskripsiProyek.slice(0, 400)}` : item.deskripsiProyek}</p>
+            <p className="overlay-text-desc">{item.deskripsiProyek.length > 400 ? `${item.deskripsiProyek.slice(0, 400)}...` : item.deskripsiProyek}</p>
             <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="link-layout">
               <p>Selengkapnya...</p>
             </Link>

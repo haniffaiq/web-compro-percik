@@ -27,22 +27,27 @@ const ProjectDetail = () => {
       </div>
       <div className="project-detail-main-container">
         <h2>{queryParameters.get("tittle")}</h2>
-        <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
-        <div className="desc-container-layout">
+        <div className="image-detail-layout">
+          <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
+        </div>
+        <div className="desc-main-container">
           {projectDatas.Paragraf.map((ParagrafText, index) => (
-            <div key={index}>
+            <div key={index} className="desc-container-layout">
               <p>{ParagrafText}</p>
             </div>
           ))}
         </div>
       </div>
       <div className="detail-selengkapnya-layout">
-        <p>Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :</p>
-        <button className="detail-selengkapnya-button-layout">
-          <img src={IconDownload} />
-          <p>Download PDF</p>
-        </button>
+        <p className="detail-selengkapnya-text">Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :</p>
+        <div className="button-container">
+          <button className="button-download-style">
+            <img src={IconDownload} className="button-image-style" alt="download-image" />
+            <p className="button-text-style">Download PDF</p>
+          </button>
+        </div>
       </div>
+
       <GalleryProjectDetail Getid={queryParameters.get("id")} />
     </>
   );
