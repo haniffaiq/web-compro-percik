@@ -30,26 +30,34 @@ const Berita = () => {
           </div>
           <div className="lg:flex hidden text-sm">Selengkapnya {">>"}</div>
         </div>
-        <div className=" grid grid-cols-4 gap-5">
+        <div className="flex w-[350px] lg:w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-4 gap-5">
           {currentData.slice(0, 4).map((item) => (
-            <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
+            <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="border flex flex-col items-center bg-white shadow-lg rounded-lg p-3 min-w-[200px] lg:w-full">
+
+              <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} className="radius-lg object-cover w-full " />
               <div>
-                <div>
-                  <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+                <div className="text-start text-[#8d8f91] text-xs lg:text-sm mt-3 mb-3">
+                  {item.date}
                 </div>
-                <p className="date-style">{item.date}</p>
-                <div className="gallery-text-item ">
-                  <p className="gallery-text-item-headline">{item.headline}</p>
-                  <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
-                  <div className="maker-layout">
+                <div className="font-bold text-[14px] lg:text-2xl mb-5">
+                  {item.headline}
+                </div>
+                <div className="text-[12px] lg:text-2xl text-md tracking-wider mb-5">
+                  {item.deskripsi}
+                </div>
+                <div className="flex gap-3 items-center">
+                  <div>
                     <img src={Logo} alt="logo" />
-                    <p className="gallery-text-item-maker">{item.maker}</p>
                   </div>
+                  <div className="text-[#8d8f91]">{item.maker}</div>
                 </div>
               </div>
+
             </Link>
           ))}
         </div>
+
+
       </div>
     </>
   );
