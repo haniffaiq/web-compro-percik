@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
@@ -6,7 +6,7 @@ import GalleryProjectDetail from "./GalleryProjectDetail";
 import data from "../../assets/json/data.json";
 import IconDownload from "../../assets/img/download.png";
 import "./ProjectDetailStyle.css";
-
+import html2pdf from 'html2pdf.js';
 const ProjectDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
@@ -14,6 +14,21 @@ const ProjectDetail = () => {
   const projectId = queryParameters.get("id");
   const projectDatas = data.projectData.find((item) => (item.id = projectId));
 
+  const contentRef = useRef();
+  const handleDownloadPDF = () => {
+    const content = contentRef.current;
+    if (content) {
+      const pdfOptions = {
+        margin: 10,
+        filename: `${queryParameters.get("headline")}_news_event_detail.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      };
+
+      html2pdf().from(content).set(pdfOptions).save();
+    }
+  };
   return (
     <>
       <div className="flex gap-1 ml-[35px] py-9">
@@ -25,23 +40,26 @@ const ProjectDetail = () => {
           {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
         </Link>
       </div>
-      <div className="project-detail-main-container">
-        <h2>{queryParameters.get("tittle")}</h2>
-        <div className="image-detail-layout">
-          <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
-        </div>
-        <div className="desc-main-container">
-          {projectDatas.Paragraf.map((ParagrafText, index) => (
-            <div key={index} className="desc-container-layout">
-              <p>{ParagrafText}</p>
-            </div>
-          ))}
+      <div ref={contentRef}>
+        <div className="project-detail-main-container" >
+          <h2>{queryParameters.get("tittle")}</h2>
+          <div className="image-detail-layout">
+            <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
+          </div>
+          <div className="desc-main-container">
+            {projectDatas.Paragraf.map((ParagrafText, index) => (
+              <div key={index} className="desc-container-layout">
+                <p>{ParagrafText}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
       <div className="detail-selengkapnya-layout">
         <p className="detail-selengkapnya-text">Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :</p>
         <div className="button-container">
-          <button className="button-download-style">
+          <button className="button-download-style" onClick={handleDownloadPDF}>
             <img src={IconDownload} className="button-image-style" alt="download-image" />
             <p className="button-text-style">Download PDF</p>
           </button>

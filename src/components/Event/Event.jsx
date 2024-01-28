@@ -27,9 +27,9 @@ const Event = () => {
     setCurrentPage(page);
   };
 
-  let sortedPrestasi = {}
-  if (globalState.globalProperty == "IND") {
-    sortedPrestasi = [...data.bahasa].sort(
+  let sortedData = {}
+  if (globalState.globalProperty === "IND") {
+    sortedData = [...data.bahasa].sort(
       (a, b) => {
         const dateA = parseDate(a.date);
         const dateB = parseDate(b.date);
@@ -38,7 +38,7 @@ const Event = () => {
     );
   }
   else{
-    sortedPrestasi = [...data.english].sort(
+    sortedData = [...data.english].sort(
       (a, b) => {
       const dateA = parseDate(a.date);
       const dateB = parseDate(b.date);
@@ -48,7 +48,7 @@ const Event = () => {
   }
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentData = sortedPrestasi.slice(startIndex, endIndex);
+  const currentData = sortedData.slice(startIndex, endIndex);
 
   return (
     <>

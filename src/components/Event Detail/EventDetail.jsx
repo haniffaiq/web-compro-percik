@@ -3,15 +3,42 @@ import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import LogoWriter from "../../assets/icon/ant-design_user-outlined.svg";
 import IconDownload from "../../assets/img/download.png";
-import data from "../../assets/json/data.json";
+import data from "../../assets/json/events.json";
 import "./EventDetailStyle.css";
 import html2pdf from 'html2pdf.js';
+
+
+const itemsPerPage = 12;
+const parseDate = (dateString) => {
+  const [day, month, year] = dateString.split('/').map(Number);
+  return new Date(year, month - 1, day);
+};
+
+
 const EventDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
 
-  const sortedData = data.beritaData.sort((a, b) => new Date(b.date) - new Date(a.date));
+  let sortedData = {}
+  if (globalState.globalProperty == "IND") {
+    sortedData = [...data.bahasa].sort(
+      (a, b) => {
+        const dateA = parseDate(a.date);
+        const dateB = parseDate(b.date);
+        return dateB - dateA;
+      }
+    );
+  }
+  else{
+    sortedData = [...data.english].sort(
+      (a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    }
+    );
+  }
   const slicedData = sortedData.slice(0, 3);
   const contentRef = useRef();
 
