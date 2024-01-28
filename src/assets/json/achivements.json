@@ -1,0 +1,162 @@
+{
+    "bahasa": [
+        {
+          "id": 1,
+          "author": "ANDI SASHA SARINA (4C)",
+          "created_at": "01/01/2024",
+          "title": "SKATE ASIA 2022 IN SUBWAY KUALA LUMPUR, MALAYSIA",
+          "description": "",
+          "category": ["1 EMAS KATEGORI", "1 PERAK KATEGORI", "1 PERUNGGU KATEGORI"],
+          "date": "01/08/2022",
+          "location": "Kuala Lumpur, Malaysia"
+        },
+        {
+          "id": 1,
+          "author": "BALANGGA SHIDIQ HERLIANTORO (5C)",
+          "created_at": "01/01/2024",
+          "title": "KEJUARAAN SEPATU RODA NASIONAL PIALA WALI KOTA SOLO ke-7 2022",
+          "description": "",
+          "category": ["JUARA 1 (50 METER)", "JUARA 2 (100 METER)"],
+          "date": "01/08/2022",
+          "location": "Solo, Indonesia"
+        },
+        {
+          "id": 1,
+          "author": "KAYLA AYUDIA LARASATI",
+          "created_at": "01/01/2024",
+          "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
+          "description": "",
+          "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+          "date": "01/08/2022",
+          "location": "DKI Jakarta, Indonesia"
+        },
+        {
+          "id": 1,
+          "author": [
+            "ANDI QONITA BILBINA GAZLY (6C)",
+            "BALANGGA SHIDIQ HERLIANTORO (5C)",
+            "AQUILA MALIK MAULANA (5C)",
+            "ANDI HUMAERA ZAHEN NAFAY GAZLY (5B)",
+            "ZIVANNA ASHAKEELA ANDRYAN (5B)",
+            "CHYLADISKA CALISTA (5A)",
+            "RANIA NAYYARA SALSABILA (3C)",
+            "RAKA BHADRESWARA PUTRA MAESTRA (4C)",
+            "FARA ALORA KINANTI (4C)",
+            "KASSABIAN ALKHAIRAN HABIBIE (1C)"
+          ],
+          "created_at": "01/01/2024",
+          "title": "KEJUARAAN SEPATU RODA BUPATI BEKASI OPEN 2022",
+          "description": "",
+          "category": [
+            "JUARA 3 (100 METER)",
+            "JUARA 2 (100 METER)",
+            "JUARA 1 (100 METER)",
+            "JUARA 1 (200 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 2 (100 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 1 (100 METER)",
+            "JUARA 1 (100 METER)"
+          ],
+          "date": "01/09/2022",
+          "location": "Bekasi, Indonesia"
+        },
+        {
+          "id": 1,
+          "author": "KAYLA AYUDIA LARASATI",
+          "created_at": "01/01/2024",
+          "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
+          "description": "",
+          "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+          "date": "01/08/2022",
+          "location": "DKI Jakarta, Indonesia"
+        },
+        {
+          "id": 1,
+          "author": "KAYLA AYUDIA LARASATI",
+          "created_at": "01/01/2024",
+          "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
+          "description": "",
+          "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+          "date": "01/08/2022",
+          "location": "DKI Jakarta, Indonesia"
+        }
+      ],
+    "english": [
+        {
+          "id": 1,
+          "author": "ANDI SASHA SARINA (4C)",
+          "created_at": "01/01/2024",
+          "title": "SKATE ASIA 2022 IN SUBWAY KUALA LUMPUR, MALAYSIA",
+          "description": "",
+          "category": ["1 EMAS KATEGORI", "1 PERAK KATEGORI", "1 PERUNGGU KATEGORI"],
+          "date": "01/08/2022",
+          "location": "Kuala Lumpur, Malaysia"
+        },
+        {
+          "id": 1,
+          "author": "BALANGGA SHIDIQ HERLIANTORO (5C)",
+          "created_at": "01/01/2024",
+          "title": "KEJUARAAN SEPATU RODA NASIONAL PIALA WALI KOTA SOLO ke-7 2022",
+          "description": "",
+          "category": ["JUARA 1 (50 METER)", "JUARA 2 (100 METER)"],
+          "date": "01/08/2022",
+          "location": "Solo, Indonesia"
+        },
+        {
+          "id": 1,
+          "author": "KAYLA AYUDIA LARASATI",
+          "created_at": "01/01/2024",
+          "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
+          "description": "",
+          "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+          "date": "01/08/2022",
+          "location": "DKI Jakarta, Indonesia"
+        },
+        {
+          "id": 1,
+          "author": [
+            "ANDI QONITA BILBINA GAZLY (6C)",
+            "BALANGGA SHIDIQ HERLIANTORO (5C)",
+            "AQUILA MALIK MAULANA (5C)",
+            "ANDI HUMAERA ZAHEN NAFAY GAZLY (5B)",
+            "ZIVANNA ASHAKEELA ANDRYAN (5B)",
+            "CHYLADISKA CALISTA (5A)",
+            "RANIA NAYYARA SALSABILA (3C)",
+            "RAKA BHADRESWARA PUTRA MAESTRA (4C)",
+            "FARA ALORA KINANTI (4C)",
+            "KASSABIAN ALKHAIRAN HABIBIE (1C)"
+          ],
+          "created_at": "01/01/2024",
+          "title": "KEJUARAAN SEPATU RODA BUPATI BEKASI OPEN 2022",
+          "description": "",
+          "category": [
+            "JUARA 3 (100 METER)",
+            "JUARA 2 (100 METER)",
+            "JUARA 1 (100 METER)",
+            "JUARA 1 (200 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 2 (100 METER)",
+            "JUARA 3 (100 METER)",
+            "JUARA 1 (100 METER)",
+            "JUARA 1 (100 METER)"
+          ],
+          "date": "01/09/2022",
+          "location": "Bekasi, Indonesia"
+        },
+        {
+          "id": 1,
+          "author": "KAYLA AYUDIA LARASATI",
+          "created_at": "01/01/2024",
+          "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
+          "description": "",
+          "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+          "date": "01/08/2022",
+          "location": "DKI Jakarta, Indonesia"
+        }
+      ]
+}

@@ -7,7 +7,7 @@ import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import achivementLogo from "../../assets/img/achivement.jpg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
-import data from "../../assets/json/data.json"
+import data from "../../assets/json/achivements.json"
 
 // Fungsi untuk mengonversi string tanggal ke objek Date
 const parseDate = (dateString) => {
@@ -75,13 +75,30 @@ const PrestasiComponent = ({ author, created_at, title, description, category, l
 
 const Prestasi = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  const sortedPrestasi = [...data.achievementsData].sort(
-    (a, b) => {
-    const dateA = parseDate(a.date);
-    const dateB = parseDate(b.date);
-    return dateB - dateA;
+  console.log(globalState.globalProperty);
+  let sortedPrestasi = {}
+  if (globalState.globalProperty == "IND") {
+    sortedPrestasi = [...data.bahasa].sort(
+      (a, b) => {
+        const dateA = parseDate(a.date);
+        const dateB = parseDate(b.date);
+        return dateB - dateA;
+      }
+    );
   }
-  );
+  else{
+    sortedPrestasi = [...data.english].sort(
+      (a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    }
+    );
+  }
+
+
+
+  console.log(typeof (sortedPrestasi));
 
   const [currentPage, setCurrentPage] = useState(1);
 
