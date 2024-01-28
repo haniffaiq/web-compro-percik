@@ -465,18 +465,7 @@
     height: 495px;
     flex-shrink: 0;
     border-radius: 16px;
-    border: 12px solid #ff4343;
-    background: #09588d;
-    display: flex;
-    flex-direction: row;
-  }
-  .pict-list-management-wrapper.custom-style {
-    width: 1205px;
-    height: 495px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 12px solid #f6e11c;
-    background: #09588d;
+    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 81.74%);
     display: flex;
     flex-direction: row;
   }
@@ -515,7 +504,7 @@
   }
 
   .management-image-wrapper {
-    top: -85px;
+    top: -63px;
     right: 2px;
     position: relative;
   }

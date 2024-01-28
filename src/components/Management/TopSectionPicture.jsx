@@ -26,8 +26,8 @@ const TopSectionPict = () => {
   return (
     <div>
       <div className="top-section-pict-container">
-        {manajemenData.map((item, index) => (
-          <div key={index} className={`pict-list-management-wrapper ${index === 1 ? "custom-style" : ""}`}>
+        {manajemenData.map((item) => (
+          <div className="pict-list-management-wrapper">
             <div className="management-image-wrapper">
               <img src={item.imageSourceManajemen} alt="img" />
             </div>
