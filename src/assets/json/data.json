@@ -1,87 +1,88 @@
 {
   "achievementsData": [
     {
-      "id":1,
+      "id": 1,
       "author": "ANDI SASHA SARINA (4C)",
       "created_at": "01/01/2024",
       "title": "SKATE ASIA 2022 IN SUBWAY KUALA LUMPUR, MALAYSIA",
       "description": "",
-      "category" : ["1 EMAS KATEGORI","1 PERAK KATEGORI","1 PERUNGGU KATEGORI"],
-      "date" :"01/08/2022",
+      "category": ["1 EMAS KATEGORI", "1 PERAK KATEGORI", "1 PERUNGGU KATEGORI"],
+      "date": "01/08/2022",
       "location": "Kuala Lumpur, Malaysia"
     },
     {
-      "id":1,
+      "id": 1,
       "author": "BALANGGA SHIDIQ HERLIANTORO (5C)",
       "created_at": "01/01/2024",
       "title": "KEJUARAAN SEPATU RODA NASIONAL PIALA WALI KOTA SOLO ke-7 2022",
       "description": "",
-      "category" : ["JUARA 1 (50 METER)","JUARA 2 (100 METER)"],
-      "date" :"01/08/2022",
+      "category": ["JUARA 1 (50 METER)", "JUARA 2 (100 METER)"],
+      "date": "01/08/2022",
       "location": "Solo, Indonesia"
     },
     {
-      "id":1,
+      "id": 1,
       "author": "KAYLA AYUDIA LARASATI",
       "created_at": "01/01/2024",
       "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
       "description": "",
-      "category" : ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
-      "date" :"01/08/2022",
+      "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+      "date": "01/08/2022",
       "location": "DKI Jakarta, Indonesia"
     },
     {
-      "id":1,
-      "author": ["ANDI QONITA BILBINA GAZLY (6C)",
-      "BALANGGA SHIDIQ HERLIANTORO (5C)",
-      "AQUILA MALIK MAULANA (5C)",
-      "ANDI HUMAERA ZAHEN NAFAY GAZLY (5B)",
-      "ZIVANNA ASHAKEELA ANDRYAN (5B)",
-      "CHYLADISKA CALISTA (5A)",
-      "RANIA NAYYARA SALSABILA (3C)",
-      "RAKA BHADRESWARA PUTRA MAESTRA (4C)",
-      "FARA ALORA KINANTI (4C)",
-      "KASSABIAN ALKHAIRAN HABIBIE (1C)"
+      "id": 1,
+      "author": [
+        "ANDI QONITA BILBINA GAZLY (6C)",
+        "BALANGGA SHIDIQ HERLIANTORO (5C)",
+        "AQUILA MALIK MAULANA (5C)",
+        "ANDI HUMAERA ZAHEN NAFAY GAZLY (5B)",
+        "ZIVANNA ASHAKEELA ANDRYAN (5B)",
+        "CHYLADISKA CALISTA (5A)",
+        "RANIA NAYYARA SALSABILA (3C)",
+        "RAKA BHADRESWARA PUTRA MAESTRA (4C)",
+        "FARA ALORA KINANTI (4C)",
+        "KASSABIAN ALKHAIRAN HABIBIE (1C)"
       ],
       "created_at": "01/01/2024",
       "title": "KEJUARAAN SEPATU RODA BUPATI BEKASI OPEN 2022",
       "description": "",
-      "category" : ["JUARA 3 (100 METER)",
-      "JUARA 2 (100 METER)",
-      "JUARA 1 (100 METER)",
-      "JUARA 1 (200 METER)",
-      "JUARA 3 (100 METER)",
-      "JUARA 3 (100 METER)",
-      "JUARA 3 (100 METER)",
-      "JUARA 2 (100 METER)",
-      "JUARA 3 (100 METER)",
-      "JUARA 1 (100 METER)",
-      "JUARA 1 (100 METER)"
+      "category": [
+        "JUARA 3 (100 METER)",
+        "JUARA 2 (100 METER)",
+        "JUARA 1 (100 METER)",
+        "JUARA 1 (200 METER)",
+        "JUARA 3 (100 METER)",
+        "JUARA 3 (100 METER)",
+        "JUARA 3 (100 METER)",
+        "JUARA 2 (100 METER)",
+        "JUARA 3 (100 METER)",
+        "JUARA 1 (100 METER)",
+        "JUARA 1 (100 METER)"
       ],
-      "date" :"01/09/2022",
+      "date": "01/09/2022",
       "location": "Bekasi, Indonesia"
     },
     {
-      "id":1,
+      "id": 1,
       "author": "KAYLA AYUDIA LARASATI",
       "created_at": "01/01/2024",
       "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
       "description": "",
-      "category" : ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
-      "date" :"01/08/2022",
+      "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+      "date": "01/08/2022",
       "location": "DKI Jakarta, Indonesia"
     },
     {
-      "id":1,
+      "id": 1,
       "author": "KAYLA AYUDIA LARASATI",
       "created_at": "01/01/2024",
       "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
       "description": "",
-      "category" : ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
-      "date" :"01/08/2022",
+      "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
+      "date": "01/08/2022",
       "location": "DKI Jakarta, Indonesia"
     }
-    
   ],
 
   "beritaData": [
@@ -197,7 +198,7 @@
   "projectData": [
     {
       "id": 1,
-      "tittleProyek": "Proyek Pemindahan Sekolah Cikini 1",
+      "tittleProyek": "Auditorium Roosseno",
       "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
       "Paragraf": [
         "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
@@ -210,7 +211,7 @@
     },
     {
       "id": 2,
-      "tittleProyek": "Proyek Pemindahan Sekolah Cikini 2",
+      "tittleProyek": "Pembangunan Kantor Yayasan",
       "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
       "Paragraf": [
         "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
@@ -223,7 +224,33 @@
     },
     {
       "id": 3,
-      "tittleProyek": "Proyek Pemindahan Sekolah Cikini 3",
+      "tittleProyek": "Pembangunan SMA 2",
+      "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+      "Paragraf": [
+        "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+        "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+        "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+      ],
+      "urlImage": "img/construction_unsplash.jpg",
+      "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+      "alt": "Image 1"
+    },
+    {
+      "id": 4,
+      "tittleProyek": "Pembangunan SMK 3",
+      "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+      "Paragraf": [
+        "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+        "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+        "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+      ],
+      "urlImage": "img/construction_unsplash.jpg",
+      "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+      "alt": "Image 1"
+    },
+    {
+      "id": 5,
+      "tittleProyek": "Pembangunan SMK KIIC",
       "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
       "Paragraf": [
         "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",

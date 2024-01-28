@@ -36,14 +36,16 @@ const GalleryProjectDetail = ({ Getid }) => {
       <div className="gallery-tittle">
         <h2>Gallery</h2>
       </div>
-      <div className="gallery-container">
-        <Carousel autoplay slidesToShow={3} {...settings}>
-          {projectDatas.urlGallery.map((imageUrl, index) => (
-            <div key={index}>
-              <img src={require(`../../assets/${imageUrl}`)} alt={`Image ${index + 1}`} className="gallery-project-detail-layout" />
-            </div>
-          ))}
-        </Carousel>
+      <div className="gallery-outer-container">
+        <div className="gallery-container">
+          <Carousel autoplay slidesToShow={3} {...settings}>
+            {projectDatas.urlGallery.map((imageUrl, index) => (
+              <div key={index}>
+                <img src={require(`../../assets/${imageUrl}`)} alt={`Image ${index + 1}`} className="gallery-project-detail-layout" />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </ConfigProvider>
   );
