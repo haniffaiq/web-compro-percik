@@ -1,1 +1,146 @@
-{}
+{
+    "bahasa": [
+        {
+          "id": 1,
+          "date": "01/08/2022",
+          "tittleProyek": "Auditorium Roosseno",
+          "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+          "Paragraf": [
+            "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+            "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+            "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 2,
+          "date": "01/08/2022",
+          "tittleProyek": "Pembangunan Kantor Yayasan",
+          "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+          "Paragraf": [
+            "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+            "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+            "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 3,
+          "date": "01/08/2022",
+          "tittleProyek": "Pembangunan SMA 2",
+          "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+          "Paragraf": [
+            "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+            "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+            "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 4,
+          "date": "01/08/2022",
+          "tittleProyek": "Pembangunan SMK 3",
+          "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+          "Paragraf": [
+            "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+            "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+            "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 5,
+          "date": "01/08/2022",
+          "tittleProyek": "Pembangunan SMK KIIC",
+          "deskripsiProyek": "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+          "Paragraf": [
+            "Pemerintah setempat mengumumkan kebijakan pemindahan sekolah sebagai bagian dari upaya meningkatkan infrastruktur pendidikan di wilayah tersebut. Langkah ini diambil sebagai respons terhadap tuntutan masyarakat akan fasilitas pendidikan yang lebih baik dan modern. Pemindahan ini direncanakan untuk memberikan pengalaman belajar yang lebih optimal bagi siswa dan memastikan bahwa setiap anak memiliki akses terhadap sarana dan prasarana pendidikan yang memadai.",
+            "Pemindahan ini tidak hanya berfokus pada peningkatan fisik gedung sekolah, tetapi juga mencakup perbaikan teknologi pembelajaran dan peningkatan kualitas tenaga pendidik. Sebagai bagian dari strategi pengembangan pendidikan, pemerintah juga bekerja sama dengan pihak swasta untuk mendukung program ini. Diharapkan bahwa pemindahan sekolah ini akan memberikan dampak positif terhadap prestasi belajar siswa dan mempersiapkan mereka dengan lebih baik untuk menghadapi tantangan di era globalisasi.",
+            "Meskipun kebijakan pemindahan sekolah ini mendapat dukungan, beberapa pihak menyuarakan keprihatinan terkait dampak sosial dan logistik yang mungkin timbul akibat perubahan ini. Pemerintah berkomitmen untuk melibatkan masyarakat dalam proses pengambilan keputusan dan memberikan penjelasan yang transparan mengenai manfaat dari pemindahan tersebut. Di tengah harapan akan peningkatan kualitas pendidikan, masyarakat dan para pemangku kepentingan diajak untuk berpartisipasi aktif dalam memastikan keberhasilan implementasi kebijakan ini demi masa depan pendidikan yang lebih baik."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        }
+      ],
+    "english": [
+        {
+          "id": 1,
+          "date": "01/08/2022",
+          "tittleProyek": "Roosseno Auditorium",
+          "deskripsiProyek": "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+          "Paragraf": [
+            "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+            "This relocation is not only focused on the physical improvement of school buildings but also includes enhancements in learning technology and the quality of educators. As part of the education development strategy, the government is also collaborating with private entities to support this program. It is expected that this school relocation will have a positive impact on students' learning achievements and better prepare them to face challenges in the era of globalization.",
+            "While the school relocation policy has garnered support, some express concerns about the social and logistical impacts that may arise from this change. The government is committed to involving the community in the decision-making process and providing transparent explanations about the benefits of the relocation. Amidst hopes for improved education quality, the community and stakeholders are encouraged to actively participate in ensuring the success of the implementation of this policy for a better future in education."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 2,
+          "date": "01/08/2022",
+          "tittleProyek": "Foundation Office Construction",
+          "deskripsiProyek": "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+          "Paragraf": [
+            "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+            "This relocation is not only focused on the physical improvement of school buildings but also includes enhancements in learning technology and the quality of educators. As part of the education development strategy, the government is also collaborating with private entities to support this program. It is expected that this school relocation will have a positive impact on students' learning achievements and better prepare them to face challenges in the era of globalization.",
+            "While the school relocation policy has garnered support, some express concerns about the social and logistical impacts that may arise from this change. The government is committed to involving the community in the decision-making process and providing transparent explanations about the benefits of the relocation. Amidst hopes for improved education quality, the community and stakeholders are encouraged to actively participate in ensuring the success of the implementation of this policy for a better future in education."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 3,
+          "date": "01/08/2022",
+          "tittleProyek": "Construction of High School 2",
+          "deskripsiProyek": "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+          "Paragraf": [
+            "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+            "This relocation is not only focused on the physical improvement of school buildings but also includes enhancements in learning technology and the quality of educators. As part of the education development strategy, the government is also collaborating with private entities to support this program. It is expected that this school relocation will have a positive impact on students' learning achievements and better prepare them to face challenges in the era of globalization.",
+            "While the school relocation policy has garnered support, some express concerns about the social and logistical impacts that may arise from this change. The government is committed to involving the community in the decision-making process and providing transparent explanations about the benefits of the relocation. Amidst hopes for improved education quality, the community and stakeholders are encouraged to actively participate in ensuring the success of the implementation of this policy for a better future in education."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 4,
+          "date": "01/08/2022",
+          "tittleProyek": "Construction of Vocational School 3",
+          "deskripsiProyek": "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+          "Paragraf": [
+            "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+            "This relocation is not only focused on the physical improvement of school buildings but also includes enhancements in learning technology and the quality of educators. As part of the education development strategy, the government is also collaborating with private entities to support this program. It is expected that this school relocation will have a positive impact on students' learning achievements and better prepare them to face challenges in the era of globalization.",
+            "While the school relocation policy has garnered support, some express concerns about the social and logistical impacts that may arise from this change. The government is committed to involving the community in the decision-making process and providing transparent explanations about the benefits of the relocation. Amidst hopes for improved education quality, the community and stakeholders are encouraged to actively participate in ensuring the success of the implementation of this policy for a better future in education."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        },
+        {
+          "id": 5,
+          "date": "01/08/2022",
+          "tittleProyek": "Construction of KIIC Vocational School",
+          "deskripsiProyek": "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+          "Paragraf": [
+            "The local government announced a school relocation policy as part of efforts to improve educational infrastructure in the area. This step is taken in response to the community's demand for better and modern educational facilities. The relocation is planned to provide a more optimal learning experience for students and ensure that every child has access to adequate educational facilities.",
+            "This relocation is not only focused on the physical improvement of school buildings but also includes enhancements in learning technology and the quality of educators. As part of the education development strategy, the government is also collaborating with private entities to support this program. It is expected that this school relocation will have a positive impact on students' learning achievements and better prepare them to face challenges in the era of globalization.",
+            "While the school relocation policy has garnered support, some express concerns about the social and logistical impacts that may arise from this change. The government is committed to involving the community in the decision-making process and providing transparent explanations about the benefits of the relocation. Amidst hopes for improved education quality, the community and stakeholders are encouraged to actively participate in ensuring the success of the implementation of this policy for a better future in education."
+          ],
+          "urlImage": "img/construction_unsplash.jpg",
+          "urlGallery": ["img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg", "img/construction_unsplash.jpg"],
+          "alt": "Image 1"
+        }
+      ]
+}

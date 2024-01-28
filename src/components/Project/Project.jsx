@@ -3,13 +3,36 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 import AppContext from "../../context/AppContext";
 import ProjekImg from "../../assets/img/construction_unsplash.jpg";
-import data from "../../assets/json/data.json";
+import data from "../../assets/json/project.json";
 import "./ProjectStyle.css";
+
+const parseDate = (dateString) => {
+  const [day, month, year] = dateString.split('/').map(Number);
+  return new Date(year, month - 1, day);
+};
 
 const Project = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  const sortedProject = data.projectData.sort((a, b) => new Date(b.date) - new Date(a.date));
-
+  // const sortedProject = data.projectData.sort((a, b) => new Date(b.date) - new Date(a.date));
+  let sortedProject = {}
+  if (globalState.globalProperty === "IND") {
+    sortedProject = [...data.bahasa].sort(
+      (a, b) => {
+        const dateA = parseDate(a.date);
+        const dateB = parseDate(b.date);
+        return dateB - dateA;
+      }
+    );
+  }
+  else{
+    sortedProject = [...data.english].sort(
+      (a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    }
+    );
+  }
   return (
     <>
       <div className="flex gap-1 ml-[35px] py-9 ">
