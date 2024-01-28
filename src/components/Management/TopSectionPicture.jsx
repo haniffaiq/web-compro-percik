@@ -3,38 +3,25 @@ import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import "./ManagementStyle.css";
 
-import ManajemenImg from "../../assets/img/unsplash_pAtA8xe_iVM.png";
-
-const TopSectionPict = () => {
+const TopSectionPict = ({ selectedButton, manajemenData }) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
+  const filteredData = manajemenData.filter((item) => item.jabatanManajemen === selectedButton);
 
-  const manajemenData = [
-    {
-      namaLengkapManajemen: "Ir. Budiono Kartohadiprodjo",
-      jabatanManajemen: "Ketua",
-      deskripsiManajemen: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-      imageSourceManajemen: ManajemenImg,
-    },
-    {
-      namaLengkapManajemen: "Dr. Setiawan Nazir, M.Kes",
-      jabatanManajemen: "Sekretaris",
-      deskripsiManajemen: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-      imageSourceManajemen: ManajemenImg,
-    },
-  ];
+  if (filteredData.length === 0) {
+    return <div>No data available for {selectedButton}</div>;
+  }
 
   return (
     <div>
       <div className="top-section-pict-container">
-        {manajemenData.map((item) => (
+        {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
           <div className="pict-list-management-wrapper">
-            <div className="management-image-wrapper">
-              <img src={item.imageSourceManajemen} alt="img" />
+            <div className="management-image-wrapper" key={id}>
+              <img src={imageSourceManajemen} alt="img" />
             </div>
             <div className="management-text-wrapper">
-              <p className="overlay-text-management-tittle">{item.namaLengkapManajemen}</p>
-              <p className="overlay-text-management-role">{item.jabatanManajemen}</p>
-              <p className="overlay-text-management-desc">{item.deskripsiManajemen}</p>
+              <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
+              <p className="overlay-text-management-desc">{deskripsiManajemen}</p>
             </div>
           </div>
         ))}
