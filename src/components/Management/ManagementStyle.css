@@ -15,7 +15,7 @@
   }
 
   .tittle-container {
-    margin-bottom: 8px;
+    margin-bottom: 0px;
   }
 
   .tittle-container p {
@@ -49,7 +49,7 @@
   }
 
   .tittle-container {
-    margin-bottom: 8px;
+    margin-bottom: -40px;
   }
 
   .tittle-container p {
@@ -69,7 +69,7 @@
 }
 
 /* Untuk Laptop */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
   .tittle-management-wrapper {
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
   }
 
   .tittle-container {
-    margin-bottom: 8px;
+    margin-bottom: -40px;
   }
 
   .tittle-container p {
@@ -103,7 +103,7 @@
 }
 
 /* Untuk Desktop PC */
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1920px) {
   .tittle-management-wrapper {
     display: flex;
     flex-direction: column;
@@ -117,7 +117,7 @@
   }
 
   .tittle-container {
-    margin-bottom: 8px;
+    margin-bottom: -40px;
   }
 
   .tittle-container p {
@@ -145,7 +145,8 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
-    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
     margin-top: 84px;
   }
 
@@ -164,10 +165,10 @@
   .triple-button-container button.selected {
     border-radius: 12px;
     background: #09588d;
-    padding: 8px 20px 8px 20px;
+    padding: 8px 15px 8px 15px;
     color: #fff;
     font-family: "Segoe UI";
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -180,7 +181,8 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-left: 43px;
+    justify-content: center;
+    align-items: center;
     margin-top: 34px;
   }
 
@@ -210,13 +212,13 @@
 }
 
 /* Untuk Laptop */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
   .triple-button-container {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-left: 43px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
   }
 
   .triple-button-container button {
@@ -245,13 +247,14 @@
 }
 
 /* Untuk Desktop PC */
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1920px) {
   .triple-button-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    margin-left: 85px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .triple-button-container button {
@@ -290,27 +293,16 @@
     gap: 43px;
     align-items: center;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 80px;
     margin-bottom: 70px;
   }
 
   .pict-list-management-wrapper {
-    width: 335px;
-    height: 200px;
+    width: 340px;
+    height: 180px;
     flex-shrink: 0;
     border-radius: 16px;
-    border: 12px solid #ff4343;
-    background: #09588d;
-    display: flex;
-    flex-direction: row;
-  }
-  .pict-list-management-wrapper.custom-style {
-    width: 335px;
-    height: 200px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 12px solid #f6e11c;
-    background: #09588d;
+    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 105%);
     display: flex;
     flex-direction: row;
   }
@@ -327,6 +319,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 120px;
   }
 
   .overlay-text-management-role {
@@ -339,7 +332,7 @@
   }
 
   .overlay-text-management-desc {
-    width: 140px;
+    width: 120px;
     color: #c4d9ec;
     font-family: "Segoe UI";
     font-size: 8px;
@@ -349,7 +342,7 @@
   }
 
   .management-image-wrapper {
-    top: 25px;
+    top: -25px;
     right: 2px;
     position: relative;
   }
@@ -360,8 +353,8 @@
   }
 
   .management-image-wrapper img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 200px;
   }
 }
 
@@ -373,7 +366,7 @@
     gap: 90px;
     align-items: center;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 120px;
     margin-bottom: 70px;
   }
 
@@ -382,34 +375,24 @@
     height: 280px;
     flex-shrink: 0;
     border-radius: 16px;
-    border: 12px solid #ff4343;
-    background: #09588d;
-    display: flex;
-    flex-direction: row;
-  }
-  .pict-list-management-wrapper.custom-style {
-    width: 670px;
-    height: 280px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 12px solid #f6e11c;
-    background: #09588d;
+    background: linear-gradient(279deg, #09588d 18.46%, rgba(9, 88, 141, 0) 115%);
     display: flex;
     flex-direction: row;
   }
 
   .management-text-wrapper {
-    margin-left: 50px;
-    margin-top: 35px;
+    margin-left: 58px;
+    margin-top: 38px;
   }
 
   .overlay-text-management-tittle {
     color: #fff;
     font-family: "Segoe UI";
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 380px;
   }
 
   .overlay-text-management-role {
@@ -432,8 +415,8 @@
   }
 
   .management-image-wrapper {
-    top: -40px;
-    right: 2px;
+    top: -50px;
+    right: -10px;
     position: relative;
   }
 
@@ -443,8 +426,8 @@
   }
 
   .management-image-wrapper img {
-    width: 250px;
-    height: 295px;
+    width: 279px;
+    height: 327px;
   }
 }
 
@@ -453,10 +436,10 @@
   .top-section-pict-container {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 150px;
     align-items: center;
     justify-content: center;
-    margin-top: 180px;
+    margin-top: 120px;
     margin-bottom: 70px;
   }
 
@@ -465,7 +448,7 @@
     height: 495px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 81.74%);
+    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 110%);
     display: flex;
     flex-direction: row;
   }
@@ -505,7 +488,7 @@
 
   .management-image-wrapper {
     top: -63px;
-    right: 2px;
+    right: -28px;
     position: relative;
   }
 
@@ -526,7 +509,7 @@
   .top-section-pict-container {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 150px;
     align-items: center;
     justify-content: center;
     margin-top: 180px;
@@ -538,18 +521,7 @@
     height: 600px;
     flex-shrink: 0;
     border-radius: 16px;
-    border: 12px solid #ff4343;
-    background: #09588d;
-    display: flex;
-    flex-direction: row;
-  }
-  .pict-list-management-wrapper.custom-style {
-    width: 90%;
-    height: 600px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    border: 12px solid #f6e11c;
-    background: #09588d;
+    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 110%);
     display: flex;
     flex-direction: row;
   }
@@ -588,9 +560,8 @@
   }
 
   .management-image-wrapper {
-    bottom: 150px;
-    top: -115px;
-    right: 2px;
+    top: -90px;
+    right: -50px;
     position: relative;
   }
 
@@ -605,272 +576,3 @@
   }
 }
 /* End Of Style Component Top Section Pict*/
-
-/* Style Component Bottom Section Pict*/
-
-/* Untuk Mobile */
-@media only screen and (max-width: 600px) {
-  .bottom-section-pict-container {
-    display: flex;
-    flex-direction: column;
-    gap: 71px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 41px;
-  }
-
-  .pict-list-management-member-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .management-member-image-wrapper {
-    border: var(--Size-Base-sizeXS, 8px) solid #11cd2f;
-    background: #09588d;
-    height: 270px;
-    align-self: stretch;
-    flex-shrink: 0;
-    border-radius: 16px;
-    padding-top: 53px;
-    padding-left: 8px;
-  }
-
-  .management-member-image-wrapper img {
-    width: 160px;
-    height: 200px;
-  }
-
-  .management-member-text-wrapper {
-    margin-left: 2px;
-  }
-
-  .overlay-text-management-member-tittle {
-    color: #000;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-role {
-    color: #444b51;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-desc {
-    color: #4f5458;
-    font-family: "Segoe UI";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 200px;
-  }
-}
-/* Untuk Tablet */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .bottom-section-pict-container {
-    display: flex;
-    flex-direction: column;
-    gap: 71px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 41px;
-  }
-
-  .pict-list-management-member-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .management-member-image-wrapper {
-    border: var(--Size-Base-sizeXS, 8px) solid #11cd2f;
-    background: #09588d;
-    height: 270px;
-    align-self: stretch;
-    flex-shrink: 0;
-    border-radius: 16px;
-    padding-top: 53px;
-    padding-left: 8px;
-  }
-
-  .management-member-image-wrapper img {
-    width: 160px;
-    height: 200px;
-  }
-
-  .management-member-text-wrapper {
-    margin-left: 2px;
-  }
-
-  .overlay-text-management-member-tittle {
-    color: #000;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-role {
-    color: #444b51;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-desc {
-    color: #4f5458;
-    font-family: "Segoe UI";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 200px;
-  }
-}
-
-/* Untuk Laptop */
-@media only screen and (min-width: 1366px) and (max-width: 1920px) {
-  .bottom-section-pict-container {
-    display: flex;
-    flex-direction: row;
-    gap: 71px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 41px;
-  }
-
-  .pict-list-management-member-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .management-member-image-wrapper {
-    border: var(--Size-Base-sizeXS, 8px) solid #11cd2f;
-    background: #09588d;
-    height: 270px;
-    align-self: stretch;
-    flex-shrink: 0;
-    border-radius: 16px;
-    padding-top: 53px;
-    padding-left: 8px;
-  }
-
-  .management-member-image-wrapper img {
-    width: 160px;
-    height: 200px;
-  }
-
-  .management-member-text-wrapper {
-    margin-left: 2px;
-  }
-
-  .overlay-text-management-member-tittle {
-    color: #000;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-role {
-    color: #444b51;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-desc {
-    color: #4f5458;
-    font-family: "Segoe UI";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 200px;
-  }
-}
-
-/* Untuk PC */
-@media only screen and (min-width: 1920px) {
-  .bottom-section-pict-container {
-    display: flex;
-    flex-direction: row;
-    gap: 71px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 41px;
-  }
-
-  .pict-list-management-member-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .management-member-image-wrapper {
-    border: var(--Size-Base-sizeXS, 8px) solid #11cd2f;
-    background: #09588d;
-    height: 370px;
-    align-self: stretch;
-    flex-shrink: 0;
-    border-radius: 16px;
-    padding-top: 60px;
-    padding-left: 8px;
-  }
-
-  .management-member-image-wrapper img {
-    width: 250px;
-    height: 290px;
-  }
-
-  .management-member-text-wrapper {
-    margin-left: 2px;
-  }
-
-  .overlay-text-management-member-tittle {
-    color: #000;
-    font-family: "Segoe UI";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-role {
-    color: #444b51;
-    font-family: "Segoe UI";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .overlay-text-management-member-desc {
-    color: #4f5458;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 220px;
-  }
-}
