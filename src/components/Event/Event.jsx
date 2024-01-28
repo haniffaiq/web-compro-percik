@@ -5,10 +5,21 @@ import "./EventStyle.css";
 import Rec1 from "../../assets/img/Rectangle108.png";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import Pagination from "./Pagination";
-import data from "../../assets/json/data.json";
+import data from "../../assets/json/events.json";
 
 const itemsPerPage = 12;
+const parseDate = (dateString) => {
+  const [day, month, year] = dateString.split('/').map(Number);
+  return new Date(year, month - 1, day);
+};
 
+// Fungsi untuk mengonversi objek Date ke string tanggal dengan format DD/MM/YYYY
+const formatDate = (dateObject) => {
+  const day = dateObject.getDate();
+  const month = dateObject.getMonth() + 1;
+  const year = dateObject.getFullYear();
+  return `${day}/${month}/${year}`;
+};
 const Event = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const [currentPage, setCurrentPage] = useState(1);
@@ -16,7 +27,25 @@ const Event = () => {
     setCurrentPage(page);
   };
 
-  const sortedPrestasi = data.beritaData.sort((a, b) => new Date(b.date) - new Date(a.date));
+  let sortedPrestasi = {}
+  if (globalState.globalProperty == "IND") {
+    sortedPrestasi = [...data.bahasa].sort(
+      (a, b) => {
+        const dateA = parseDate(a.date);
+        const dateB = parseDate(b.date);
+        return dateB - dateA;
+      }
+    );
+  }
+  else{
+    sortedPrestasi = [...data.english].sort(
+      (a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    }
+    );
+  }
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentData = sortedPrestasi.slice(startIndex, endIndex);
