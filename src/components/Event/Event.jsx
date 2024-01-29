@@ -9,7 +9,7 @@ import data from "../../assets/json/events.json";
 
 const itemsPerPage = 12;
 const parseDate = (dateString) => {
-  const [day, month, year] = dateString.split('/').map(Number);
+  const [day, month, year] = dateString.split("/").map(Number);
   return new Date(year, month - 1, day);
 };
 
@@ -27,24 +27,19 @@ const Event = () => {
     setCurrentPage(page);
   };
 
-  let sortedData = {}
+  let sortedData = {};
   if (globalState.globalProperty === "IND") {
-    sortedData = [...data.bahasa].sort(
-      (a, b) => {
-        const dateA = parseDate(a.date);
-        const dateB = parseDate(b.date);
-        return dateB - dateA;
-      }
-    );
-  }
-  else{
-    sortedData = [...data.english].sort(
-      (a, b) => {
+    sortedData = [...data.bahasa].sort((a, b) => {
       const dateA = parseDate(a.date);
       const dateB = parseDate(b.date);
       return dateB - dateA;
-    }
-    );
+    });
+  } else {
+    sortedData = [...data.english].sort((a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    });
   }
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -58,13 +53,13 @@ const Event = () => {
         </Link>
         <span> / </span>
         <Link to="/project" className="">
-          {globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}
+          {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
         </Link>
       </div>
-      <div className="page-tittle flex justify-center ">
-        <p>{globalState.globalProperty === "IND" ? "Berita & Acara" : "News & Event"}</p>
+      <div className="page-tittle-event">
+        <p>{globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}</p>
       </div>
-      <div className="gallery ">
+      <div className="gallery">
         {currentData.map((item) => (
           <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
             <div>

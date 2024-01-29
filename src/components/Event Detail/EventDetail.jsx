@@ -5,41 +5,34 @@ import LogoWriter from "../../assets/icon/ant-design_user-outlined.svg";
 import IconDownload from "../../assets/img/download.png";
 import data from "../../assets/json/events.json";
 import "./EventDetailStyle.css";
-import html2pdf from 'html2pdf.js';
-
+import html2pdf from "html2pdf.js";
 
 const itemsPerPage = 12;
 const parseDate = (dateString) => {
-  const [day, month, year] = dateString.split('/').map(Number);
+  const [day, month, year] = dateString.split("/").map(Number);
   return new Date(year, month - 1, day);
 };
-
 
 const EventDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
 
-  let sortedData = {}
+  let sortedData = {};
   if (globalState.globalProperty == "IND") {
-    sortedData = [...data.bahasa].sort(
-      (a, b) => {
-        const dateA = parseDate(a.date);
-        const dateB = parseDate(b.date);
-        return dateB - dateA;
-      }
-    );
-  }
-  else{
-    sortedData = [...data.english].sort(
-      (a, b) => {
+    sortedData = [...data.bahasa].sort((a, b) => {
       const dateA = parseDate(a.date);
       const dateB = parseDate(b.date);
       return dateB - dateA;
-    }
-    );
+    });
+  } else {
+    sortedData = [...data.english].sort((a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    });
   }
-  const slicedData = sortedData.slice(0, 3);
+  const slicedData = sortedData.slice(0, 4);
   const contentRef = useRef();
 
   const handleDownloadPDF = () => {
@@ -48,9 +41,9 @@ const EventDetail = () => {
       const pdfOptions = {
         margin: 10,
         filename: `${queryParameters.get("headline")}_news_event_detail.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
+        image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       };
 
       html2pdf().from(content).set(pdfOptions).save();
@@ -58,7 +51,6 @@ const EventDetail = () => {
   };
   return (
     <>
-
       <div className="flex gap-1 ml-[35px] py-9">
         <Link to="/" className="">
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
@@ -69,20 +61,18 @@ const EventDetail = () => {
         </Link>
       </div>
 
-      <div  className="container-event">
-
-
+      <div className="container-event">
         <div ref={contentRef}>
           <div className="event-detail-main-container">
             <h2>{queryParameters.get("headline")}</h2>
             <div className="date-writer-layout">
               <div className="date-layout">
                 <img src={LogoWriter} alt="Image" />
-                <p>{queryParameters.get("date")}</p>
+                <p>{queryParameters.get("maker")}</p>
               </div>
               <div className="writter-layout">
-                <img src={LogoWriter} alt="Image" />
-                <p>{queryParameters.get("maker")}</p>
+                {/* <img src={LogoWriter} alt="Image" /> */}
+                <p>{queryParameters.get("date")}</p>
               </div>
             </div>
             <img className="event-image-main-layout" src={require(`../../assets/${queryParameters.get("img")}`)} alt="image headline" />
@@ -99,26 +89,37 @@ const EventDetail = () => {
             <p>Download Berita</p>
           </button>
         </div>
-        <div className="mt-20 w-full border bg-[#E6F7FF] border-[#1890FF] p-5">
+        {/* <div className="outer-ppdb-container">
+          <div className="inner-ppdb-container">
+            <div className="ppdb-txt-layout">
+              <p className="ppdb-txt-bold">Anda Sudah Daftar PPDB ????</p>
+              <p className="ppdb-txt-reg">Yuk daftar PPDB secara daring dan tanpa ribeat sekarang juga</p>
+            </div>
+            <div className="ppdb-button-layout">
+              <button className="ppdb-button-style">Ayo Daftar Sekarang !</button>
+            </div>
+          </div>
+        </div> */}
+
+        {/* Style anip */}
+        {/* <div className="mt-20 w-full border bg-[#E6F7FF] border-[#1890FF] p-5">
           <div className="flex justify-between">
             <div className="flex flex-col gap-2">
               <div className="font-bold text-xl">Anda Sudah Daftar PPDB ???</div>
               <div>Yuk daftar PPDB secara daring dan tanpa ribet Sekarang juga</div>
             </div>
             <div className="flex items-center">
-              <button className="border py-3 px-3 border-none bg-[#09588D] text-white font-bold text-sm rounded-lg">
-                Ayo Daftar Sekarang !
-              </button>
+              <button className="border py-3 px-3 border-none bg-[#09588D] text-white font-bold text-sm rounded-lg">Ayo Daftar Sekarang !</button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="berita-lainnya-layout">
           <h2>Berita Lainnya</h2>
           <div className="berita-lainnya-gallery">
             {slicedData.map((item) => (
-              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
-                <div>
+              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
+                <div className="card-layout">
                   <div>
                     <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
                   </div>
@@ -137,8 +138,6 @@ const EventDetail = () => {
           </div>
         </div>
       </div>
-
-
 
       {/* <div className="berita-lainnya-layout">
         <h2>Berita Lainnya</h2>
