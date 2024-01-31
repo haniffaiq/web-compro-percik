@@ -25,44 +25,16 @@ const formatDate = (dateObject) => {
 
 const itemsPerPage = 6;
 const PrestasiComponent = ({ author, created_at, title, description, category, location, date }) => (
-  <button className="h-full  lg:h-full  border rounded-lg p-3 flex flex-col shadow-2xl">
-    <img className="flex justify-center min-w-[200px]" src={Foto} alt="foto" />
+  <button className="h-full lg:h-full  border rounded-lg p-3 flex flex-col shadow-2xl">
+    <img className="w-full min-w-[200px]" src={Foto} alt="foto" />
     <div className="text-start text-md lg:text-2xl mt-5">{title}</div>
-    {/*<div className="flex gap-3 text-start mt-3">
-      <img src={Logo} alt="logo" />
-      <div className="text-[#8d8f91] flex-grow text-xs lg:text-md">
-        
-        {Array.isArray(author) ? (
-          author.map((authorItem, index) => (
-            <div key={index}>{authorItem}
-      </div>
-          ))
-        ) : (
-          author
-        )}
-      </div>
-    </div>
-
-    <div className="flex gap-3 text-start mt-3">
-      <img src={Logo} alt="logo" /> *
-      <div className="text-[#8d8f91] flex-grow">
-        {Array.isArray(category) ? (
-          category.map((categoryItem, index) => (
-            <div key={index}>{categoryItem}</div>
-          ))
-        ) : (
-          category
-        )}
-      </div>
-    </div> */}
-
-
     <div className="flex gap-3 text-start mt-3">
       <div className="text-[#8d8f91] flex-grow text-xs lg:text-md">
         {description}
       </div>
     </div>
-    <div className="flex-grow" /> {/* Penambahan bagian ini */}
+
+    <div className="lg:flex-grow" /> {/* Penambahan bagian ini */}
 
     <div className="flex gap-3 items-start text-start mt-3">
       <div className="text-[#8d8f91] text-xs lg:text-md">{location}</div>
@@ -86,13 +58,13 @@ const Prestasi = () => {
       }
     );
   }
-  else{
+  else {
     sortedPrestasi = [...data.english].sort(
       (a, b) => {
-      const dateA = parseDate(a.date);
-      const dateB = parseDate(b.date);
-      return dateB - dateA;
-    }
+        const dateA = parseDate(a.date);
+        const dateB = parseDate(b.date);
+        return dateB - dateA;
+      }
     );
   }
 
@@ -121,10 +93,17 @@ const Prestasi = () => {
         <div className="text-center text-3xl lg:text-5xl font-bold mb-10">
           Prestasi Unggulan
         </div>
-        <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:w-full lg:grid lg:grid-cols-3 gap-5 lg:gap-10">
+        <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:w-full lg:grid lg:grid-cols-3 gap-5 lg:gap-10 w-full ">
+          {/* Gradasi putih di kiri
+          <div className="absolute h-full w-1/6 left-0 bg-gradient-to-r from-white to-transparent"></div> */}
+
+          {/* Konten prestasi */}
           {currentPrestasi.map((achievement, index) => (
             <PrestasiComponent key={index} {...achievement} />
           ))}
+
+          {/* Gradasi putih di kanan
+          <div className="absolute h-full w-1/6 right-0 bg-gradient-to-l from-white to-transparent"></div> */}
         </div>
         <div className="flex items-center justify-center mt-4">
           <button
