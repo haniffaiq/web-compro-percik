@@ -354,6 +354,9 @@
 
 /* Untuk Laptop */
 @media only screen and (min-width: 1366px) and (max-width: 1920px) {
+  .project-detail-main-container {
+    width: auto;
+  }
   .project-detail-main-container h2 {
     color: #000;
     font-family: "Segoe UI";
@@ -386,10 +389,12 @@
     line-height: 24px; /* 150% */
     letter-spacing: -0.176px;
     text-align: justify;
+    padding-right: 9%;
+    padding-left: 9%;
   }
 
   .desc-container-layout {
-    width: 1100px;
+    width: 100%;
   }
 
   .desc-main-container {
@@ -399,7 +404,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
   }
 
   .detail-selengkapnya-layout {
@@ -553,3 +558,43 @@
   }
 }
 /* End Style Main Component Project Detail */
+
+/* style pdf */
+
+.project-detail-main-container-pdf {
+  width: auto;
+}
+.project-detail-main-container-pdf h2 {
+  color: #000;
+  font-family: "Segoe UI";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.desc-container-layout-pdf p {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.176px;
+  text-align: justify;
+}
+
+.desc-container-layout-pdf {
+  width: 100%;
+}
+
+.desc-main-container-pdf {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}

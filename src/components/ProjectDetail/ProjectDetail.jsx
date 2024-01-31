@@ -6,7 +6,7 @@ import GalleryProjectDetail from "./GalleryProjectDetail";
 import data from "../../assets/json/data.json";
 import IconDownload from "../../assets/img/download.png";
 import "./ProjectDetailStyle.css";
-import html2pdf from 'html2pdf.js';
+import html2pdf from "html2pdf.js";
 const ProjectDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
@@ -20,14 +20,34 @@ const ProjectDetail = () => {
     if (content) {
       const pdfOptions = {
         margin: 10,
-        filename: `${queryParameters.get("headline")}_news_event_detail.pdf`,
-        image: { type: 'jpeg', quality: 0.98 },
+        filename: `${queryParameters.get("tittle")}_Project_detail.pdf`,
+        image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
       };
 
       html2pdf().from(content).set(pdfOptions).save();
     }
+  };
+
+  const ComponentPDF = () => {
+    return (
+      <div style={{ display: "none" }}>
+        <div className="project-detail-main-container-pdf" ref={contentRef}>
+          <h2>{queryParameters.get("tittle")}</h2>
+          <div className="image-detail-layout">
+            <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
+          </div>
+          <div className="desc-main-container-pdf">
+            {projectDatas.Paragraf.map((ParagrafText, index) => (
+              <div key={index} className="desc-container-layout-pdf">
+                <p>{ParagrafText}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
   };
   return (
     <>
@@ -40,19 +60,18 @@ const ProjectDetail = () => {
           {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
         </Link>
       </div>
-      <div ref={contentRef}>
-        <div className="project-detail-main-container" >
-          <h2>{queryParameters.get("tittle")}</h2>
-          <div className="image-detail-layout">
-            <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
-          </div>
-          <div className="desc-main-container">
-            {projectDatas.Paragraf.map((ParagrafText, index) => (
-              <div key={index} className="desc-container-layout">
-                <p>{ParagrafText}</p>
-              </div>
-            ))}
-          </div>
+
+      <div className="project-detail-main-container">
+        <h2>{queryParameters.get("tittle")}</h2>
+        <div className="image-detail-layout">
+          <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
+        </div>
+        <div className="desc-main-container">
+          {projectDatas.Paragraf.map((ParagrafText, index) => (
+            <div key={index} className="desc-container-layout">
+              <p>{ParagrafText}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -67,6 +86,8 @@ const ProjectDetail = () => {
       </div>
 
       <GalleryProjectDetail Getid={queryParameters.get("id")} />
+      {/* Buat trigger pdf nya */}
+      <ComponentPDF />
     </>
   );
 };
