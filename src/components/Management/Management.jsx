@@ -5,6 +5,7 @@ import ManagementTittle from "./ManagementTittle";
 import TopSectionPict from "./TopSectionPicture";
 import "./ManagementStyle.css";
 import ManajemenImg from "../../assets/img/unsplash_pAtA8xe_iVM.png";
+import data from "../../assets/json/management.json";
 
 const Management = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -14,36 +15,7 @@ const Management = () => {
     setSelectedButton(buttonName);
   };
 
-  const manajemenData = [
-    {
-      id: 1,
-      namaLengkapManajemen: "Megawati Soekarnoputri",
-      jabatanManajemen: "Pembina",
-      deskripsiManajemen: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-      imageSourceManajemen: ManajemenImg,
-    },
-    {
-      id: 2,
-      namaLengkapManajemen: "Jokowi",
-      jabatanManajemen: "Pembina",
-      deskripsiManajemen: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-      imageSourceManajemen: ManajemenImg,
-    },
-    {
-      id: 3,
-      namaLengkapManajemen: "Prof. Mardjono Reksodiputro, SH, MA",
-      jabatanManajemen: "Pengawas",
-      deskripsiManajemen: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-      imageSourceManajemen: ManajemenImg,
-    },
-    {
-      id: 4,
-      namaLengkapManajemen: "Dr. ir. Darwin Cyril Noerhadi, M.sc",
-      jabatanManajemen: "Pengurus",
-      deskripsiManajemen: "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-      imageSourceManajemen: ManajemenImg,
-    },
-  ];
+
 
   return (
     <>
@@ -68,7 +40,7 @@ const Management = () => {
           PENGURUS
         </button>
       </div>
-      <TopSectionPict selectedButton={selectedButton} manajemenData={manajemenData} />
+      <TopSectionPict selectedButton={selectedButton} manajemenData={data.managementData} />
     </>
   );
 };
