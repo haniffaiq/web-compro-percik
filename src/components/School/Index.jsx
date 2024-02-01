@@ -4,10 +4,10 @@ import AppContext from "../../context/AppContext";
 import Alur from "./Alur";
 import Prestasi from "../About/Prestasi";
 import Daftar from "./Daftar";
+import data from "../../assets/json/school";
 
 const School = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIAbout");
   const location = useLocation();
 
   useEffect(() => {
