@@ -2,34 +2,32 @@ import React, { useContext } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
 
-
-
 const carouselItems = [
   {
-    image: require('../../assets/img/header/img_header1.png'), // replace with your image path
-    title: 'Mari Bergabung dengan Kami',
-    subtitle: 'Mari Kita Menciptakan Anak Didik yang Berbakat',
-    buttonText: 'Kunjungi Kami',
+    image: require("../../assets/img/header/img_header1.png"), // replace with your image path
+    title: "Mari Bergabung dengan Kami",
+    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
+    buttonText: "Kunjungi Kami",
   },
   {
-    image: require('../../assets/img/header/img_header2.JPG'), // replace with your image path
-    title: 'Mari Bergabung dengan Kami',
-    subtitle: 'Mari Kita Menciptakan Anak Didik yang Berbakat',
-    buttonText: 'Kunjungi Kami',
+    image: require("../../assets/img/header/img_header2.JPG"), // replace with your image path
+    title: "Mari Bergabung dengan Kami",
+    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
+    buttonText: "Kunjungi Kami",
   },
   {
-    image: require('../../assets/img/header/img_header3.jpg'), // replace with your image path
-    title: 'Mari Bergabung dengan Kami',
-    subtitle: 'Mari Kita Menciptakan Anak Didik yang Berbakat',
-    buttonText: 'Kunjungi Kami',
+    image: require("../../assets/img/header/img_header3.jpg"), // replace with your image path
+    title: "Mari Bergabung dengan Kami",
+    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
+    buttonText: "Kunjungi Kami",
   },
   {
-    image: require('../../assets/img/header/img_header4.jpg'), // replace with your image path
-    title: 'Mari Bergabung dengan Kami',
-    subtitle: 'Mari Kita Menciptakan Anak Didik yang Berbakat',
-    buttonText: 'Kunjungi Kami',
-  }
-]
+    image: require("../../assets/img/header/img_header4.jpg"), // replace with your image path
+    title: "Mari Bergabung dengan Kami",
+    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
+    buttonText: "Kunjungi Kami",
+  },
+];
 const Header = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   console.log(globalState, "DIHeader");
@@ -184,25 +182,30 @@ const Header = () => {
         </div> */}
       </Carousel>
 
-
-      <div className="bg-[#EEF8FF] lg:pt-24 lg:pb-24 lg:grid lg:grid-cols-3 flex flex-col lg:gap-5">
-        <div className=" py-32 lg:py-0 flex flex-col items-center justify-center lg:ml-24 gap-5 bg-[#EEF8FF]">
-          <div className="text-6xl lg:text-8xl font-semibold">5K +</div>
-          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] tracking-wider lg:w-full w-[310px]">
+      <div className="bg-[#295D97] lg:pt-24 lg:pb-24 lg:grid lg:grid-cols-3 flex flex-col lg:gap-5">
+        <div className=" py-32 lg:py-0 flex flex-col items-center justify-center lg:ml-24 gap-5 lg:bg-transparent bg-[#EEF8FF]">
+          <div className="text-6xl lg:text-8xl font-semibold lg:text-white text-black">
+            5K +
+          </div>
+          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] lg:text-white tracking-wider lg:w-full w-[310px]">
             Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia
             kerja
           </div>
         </div>
         <div className="py-32 lg:py-0 flex flex-col items-center justify-center lg:border-l lg:border-r border-[#C0CFD3] gap-2 lg:bg-transparent bg-[#FFFCEE]">
-          <div className="text-6xl lg:text-8xl font-semibold">50 +</div>
-          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] tracking-wider lg:w-full w-[310px]">
+          <div className="text-6xl lg:text-8xl font-semibold lg:text-white text-black">
+            50 +
+          </div>
+          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] lg:text-white tracking-wider lg:w-full w-[310px]">
             Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun
             nasional
           </div>
         </div>
         <div className=" py-32 lg:py-0 flex flex-col items-center justify-center lg:mr-24 gap-2 lg:bg-transparent bg-[#F3EEFF]">
-          <div className="text-6xl lg:text-8xl font-semibold">80%</div>
-          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] tracking-wider lg:w-full w-[310px]">
+          <div className="text-6xl lg:text-8xl font-semibold lg:text-white text-black">
+            80%
+          </div>
+          <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] lg:text-white tracking-wider lg:w-full w-[310px]">
             Tingkat Keberhasilan Pelajar/Mahasiswayang diterima kerja
           </div>
         </div>

@@ -40,18 +40,18 @@ const Berita = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 p-5 lg:p-14 bg-[#CCEAFF]">
-        <div className="flex justify-between ">
-          <div className="text-xl lg:text-3xl font-bold mb-10">
-            BERITA DAN ACARA
+      <div className="flex flex-col gap-2 p-5 lg:p-14 bg-[#CCEAFF] lg:bg-[#295D97]">
+        <div className="flex justify-between items-center">
+          <div className="text-xl lg:text-3xl font-bold mb-5 lg:text-white text-black lg:flex items-center">
+            KEGIATAN
           </div>
           <Link to="/event">
-            <button className="lg:flex hidden text-sm">
-              Selengkapnya {">>"}
+            <button className="lg:flex hidden text-sm lg:text-lg lg:text-white text-black items-center">
+              SELENGKAPNYA {">>"}
             </button>
           </Link>
         </div>
-        <div className="flex w-full lg:w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-4 gap-5">
+        <div className="flex w-full lg:w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-4 gap-5 mt-0 lg:mt-10">
           {currentData.slice(0, 4).map((item) => (
             <Link
               key={item.id}

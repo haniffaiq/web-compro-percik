@@ -14,13 +14,23 @@ const Sekolah = () => {
   return (
     <>
       <div className="flex flex-col gap-2 p-5 lg:p-14">
-        <div className="flex justify-between ">
+        {/* <div className="flex justify-between ">
           <div className="text-2xl lg:text-3xl font-bold mb-10">
             Daftar Sekolah
           </div>
           <Link to="/school">
             <button className="lg:flex hidden text-sm">
               Selengkapnya {">>"}
+            </button>
+          </Link>
+        </div> */}
+        <div className="flex justify-between items-center">
+          <div className="text-xl lg:text-3xl font-bold mb-5 text-black lg:flex items-center">
+            DAFTAR SEKOLAH
+          </div>
+          <Link to="/school">
+            <button className="lg:flex hidden text-sm lg:text-lg text-black items-center">
+              SELENGKAPNYA {">>"}
             </button>
           </Link>
         </div>
