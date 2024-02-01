@@ -299,7 +299,7 @@
 
   .pict-list-management-wrapper {
     width: 340px;
-    height: 180px;
+    height: 220px;
     flex-shrink: 0;
     border-radius: 16px;
     background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 105%);
@@ -354,7 +354,7 @@
 
   .management-image-wrapper img {
     width: 180px;
-    height: 200px;
+    height: 240px;
   }
 }
 
@@ -371,8 +371,8 @@
   }
 
   .pict-list-management-wrapper {
-    width: 670px;
-    height: 280px;
+    width: 730px;
+    height: 450px;
     flex-shrink: 0;
     border-radius: 16px;
     background: linear-gradient(279deg, #09588d 18.46%, rgba(9, 88, 141, 0) 115%);
@@ -381,7 +381,7 @@
   }
 
   .management-text-wrapper {
-    margin-left: 58px;
+    margin-left: 50px;
     margin-top: 38px;
   }
 
@@ -392,7 +392,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 380px;
+    width: 260px;
   }
 
   .overlay-text-management-role {
@@ -405,7 +405,7 @@
   }
 
   .overlay-text-management-desc {
-    width: 300px;
+    width: 250px;
     color: #c4d9ec;
     font-family: "Segoe UI";
     font-size: 18px;
@@ -426,8 +426,8 @@
   }
 
   .management-image-wrapper img {
-    width: 279px;
-    height: 327px;
+    width: 400px;
+    height: 500px;
   }
 }
 
@@ -445,7 +445,7 @@
 
   .pict-list-management-wrapper {
     width: 1205px;
-    height: 495px;
+    height: 560px;
     flex-shrink: 0;
     border-radius: 16px;
     background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 110%);
@@ -455,7 +455,7 @@
 
   .management-text-wrapper {
     margin-left: 173px;
-    margin-top: 100px;
+    margin-top: 57px;
   }
 
   .overlay-text-management-tittle {
@@ -465,6 +465,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 500px;
   }
 
   .overlay-text-management-role {
@@ -477,7 +478,7 @@
   }
 
   .overlay-text-management-desc {
-    width: 400px;
+    width: 465px;
     color: #c4d9ec;
     font-family: "Segoe UI";
     font-size: 24px;
@@ -499,7 +500,7 @@
 
   .management-image-wrapper img {
     width: 475.062px;
-    height: 555.643px;
+    height: 620px;
     flex-shrink: 0;
   }
 }
@@ -538,6 +539,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 750px;
   }
 
   .overlay-text-management-role {

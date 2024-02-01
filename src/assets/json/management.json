@@ -1,158 +1,158 @@
 {
-    "managementData": [
-        {
-            "id": 1,
-            "namaLengkapManajemen": "M. Harjono Kartohadiprodjo, SH",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 2,
-            "namaLengkapManajemen": "Megawati Soekarnoputri",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 3,
-            "namaLengkapManajemen": "Prof. DR. Benny Hoedoro Hoed",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Prof. DR. Awaludin Djamin",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 5,
-            "namaLengkapManajemen": "Prof. Ir. Oetarjo Diran",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 6,
-            "namaLengkapManajemen": "Drs. Indra Kartasasmita",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 7,
-            "namaLengkapManajemen": "Prof. Dr. H. Does Sampoerno MPH",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 8,
-            "namaLengkapManajemen": "Soebronto Laras",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 9,
-            "namaLengkapManajemen": "Prof. DR. Tuti Heraty Noerhadi",
-            "jabatanManajemen": "Pembina",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 10,
-            "namaLengkapManajemen": "Prof. Mardjono Reksodiputro, SH, MA",
-            "jabatanManajemen": "Pengawas",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 11,
-            "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
-            "jabatanManajemen": "Pengawas",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 12,
-            "namaLengkapManajemen": "Ir. Tjahjo Sasmojo",
-            "jabatanManajemen": "Pengawas",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 13,
-            "namaLengkapManajemen": "Ir. Syahril Anwar",
-            "jabatanManajemen": "Pengawas",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Hoediatmo Hoed, SH",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Dr. Setiawan Nazir, M. Kes",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "DR. Ir. Darwin Cyril Noerhadi, M.Sc",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR (K)",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Handhari Subrata",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Ir. Firdaus Akmal",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Ir. Triawan Saleh",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        },
-        {
-            "id": 4,
-            "namaLengkapManajemen": "Dra. Indrarti Kartohadiprodjo",
-            "jabatanManajemen": "Pengurus",
-            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
-        }
-    ]
+  "managementData": [
+    {
+      "id": 1,
+      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo, SH",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Lahir di Semarang, 26 Desember 1938, meraih Sarjana Hukum dari Fakultas Hukum UI tahun 1967. Melanjutkan studi dengan kursus singkat di Norwegian Shipping Academy, Sanderstolen, Norwegian, dan Seatrade Academy of London, Cambridge, Inggris.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 2,
+      "namaLengkapManajemen": "Prof.Dr.(H.C).Hj Megawati Soekarnoputri",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Merupakan Presiden Indonesia kelima yang menjabat sejak 23 Juli 2001 sampai 20 Oktober 2004. Ia merupakan presiden wanita Indonesia pertama dan putri dari presiden Indonesia pertama, Soekarno, yang kemudian mengikuti jejak ayahnya menjadi Presiden Indonesia",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 3,
+      "namaLengkapManajemen": "Prof. DR. Benny Hoedoro Hoed",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Guru besar emeritus Fakultas Ilmu Budaya UI, ahli linguistik Indonesia, analisis wacana, penerjemahan, dan semiotika. Mantan ketua Himpunan Penerjemah Indonesia (2000–2007), anggota AIPI, dan pendiri Lingkaran Semiotik. Juga, ahli musik jazz dan pemain harmonika ",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 4,
+      "namaLengkapManajemen": "Prof. DR. Awaludin Djamin",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Tokoh Kepolisian Republik Indonesia (Polri) dan akademikus. Ia pernah menjabat sebagai Kepala Kepolisian Negara Republik Indonesia (Kapolri) pada periode 1978 sampai 1982, sebagai Menteri Tenaga Kerja pada Kabinet Ampera (1966), dan juga pernah ditugaskan sebagai Duta Besar untuk Jerman Barat.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 5,
+      "namaLengkapManajemen": "Prof. Ir. Oetarjo Diran",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Akademisi transportasi dan alumni Technische Hogeschool Delft, Belanda (1952-1958), Universitas Purdue, AS (1960-1961), dan Institute For Theoretical Physics, Trieste (1973). Dosen ITB (1959), Instruktur Wing Pendidikan 006, TNI-AU (1959-1965), Penasihat Dinas Kelaikan Udara Ditjen Perhubungan Udara (1959-1968).",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 6,
+      "namaLengkapManajemen": "Drs. Indra Kartasasmita",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 7,
+      "namaLengkapManajemen": "Prof. Dr. H. Does Sampoerno MPH",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 8,
+      "namaLengkapManajemen": "Soebronto Laras",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Soebronto Laras, pembalap dan mekanik dikenal sebagai Yonto, anak R. Moerdono importir mobil Citroen, Tempo, dan Combi sejak 1949. Sejak kecil tertarik bengkel, Yonto menjabat Direktur Utama PT. Indohero Steel & Engineering Co., dan PT Indo Mobil Utama, perakit motor dan mobil Suzuki. Juga, Presiden Komisaris Indomobil Group dan Suzuki Indomobil Motor.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 9,
+      "namaLengkapManajemen": "Prof. DR. Tuti Heraty Noerhadi",
+      "jabatanManajemen": "Pembina",
+      "deskripsiManajemen": "Lahir di Bandung, 27 November 1933, ahli konstruksi beton, pendiri Universitas Gadjah Mada dan Yayasan Perguruan Cikini. Sarjana Muda Kedokteran UI (1955), Sarjana Psikologi UI (1962), Sarjana Filsafat Rijk Universiteit, Leiden, Belanda (1974), Doktor Filsafat UI (1979).",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 10,
+      "namaLengkapManajemen": "Prof. Mardjono Reksodiputro, SH, MA",
+      "jabatanManajemen": "Pengawas",
+      "deskripsiManajemen": "Prof. Mardjono, Ketua Program Kajian Ilmu Kepolisian Pascasarjana UI (1996—2006), Sekretaris dan Ketua Konsorsium Ilmu Hukum Departemen Pendidikan dan Kebudayaan (1990—2002). Sarjana Hukum UI 1962, Master of Arts dari University of Pennsylvania 1967.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 11,
+      "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
+      "jabatanManajemen": "Pengawas",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 12,
+      "namaLengkapManajemen": "Ir. Tjahjo Sasmojo",
+      "jabatanManajemen": "Pengawas",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 13,
+      "namaLengkapManajemen": "Ir. Syahril Anwar",
+      "jabatanManajemen": "Pengawas",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 14,
+      "namaLengkapManajemen": "Hoediatmo Hoed, SH",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Hoediatmo Hoed, ekonom dan profesional Indonesia, pernah menjabat sebagai direktur utama PT. Freeport Indonesia, perusahaan modal asing pertama pada zaman Orde Baru. Menggantikan Usman Pamuntjak, Hoediatmo Hoed digantikan oleh Adrianto Machribie pada 1996 setelah kerusuhan di Tembagapura dan Timika.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 15,
+      "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 16,
+      "namaLengkapManajemen": "Dr. Setiawan Nazir, M. Kes",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 17,
+      "namaLengkapManajemen": "DR. Ir. Darwin Cyril Noerhadi, M.Sc",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Merupakan Konsultan & Peneliti di Harvard Institute for International Development (HIID) – Departemen Keuangan. Gelar Doktor di bidang Strategic Management (cum laude) dari Universitas Indonesia, MBA bidang Keuangan dan Ekonomi dari University of Houston, dan Sarjana Teknik dari Institut Teknologi Bandung.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 18,
+      "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR (K)",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Merupakan anggota dari Ikatan Dokter Indonesia (IDI) dan Perhimpunan Dokter Spesialis Rehabilitasi Medis Indonesia (PERDOSRI).Beliau juga mengikuti pendidikan lainnya seperti Child Development and Rehabilitation di Royal Children's Hospital, Melbourn, Australia ",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 19,
+      "namaLengkapManajemen": "Handhari Subrata",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 20,
+      "namaLengkapManajemen": "Ir. Firdaus Akmal",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 21,
+      "namaLengkapManajemen": "Ir. Triawan Saleh",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 22,
+      "namaLengkapManajemen": "Dra. Indrarti Kartohadiprodjo",
+      "jabatanManajemen": "Pengurus",
+      "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    }
+  ]
 }
