@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import Header from "./Header";
@@ -15,6 +15,10 @@ const SchoolDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   console.log(globalState, "DIAbout");
   const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

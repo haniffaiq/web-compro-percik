@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import ManagementTittle from "./ManagementTittle";
@@ -15,7 +15,9 @@ const Management = () => {
     setSelectedButton(buttonName);
   };
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -30,17 +32,29 @@ const Management = () => {
       </div>
       <ManagementTittle />
       <div className="triple-button-container">
-        <button className={selectedButton === "Pembina" ? "selected" : ""} onClick={() => handleButtonClick("Pembina")}>
+        <button
+          className={selectedButton === "Pembina" ? "selected" : ""}
+          onClick={() => handleButtonClick("Pembina")}
+        >
           PEMBINA
         </button>
-        <button className={selectedButton === "Pengawas" ? "selected" : ""} onClick={() => handleButtonClick("Pengawas")}>
+        <button
+          className={selectedButton === "Pengawas" ? "selected" : ""}
+          onClick={() => handleButtonClick("Pengawas")}
+        >
           PENGAWAS
         </button>
-        <button className={selectedButton === "Pengurus" ? "selected" : ""} onClick={() => handleButtonClick("Pengurus")}>
+        <button
+          className={selectedButton === "Pengurus" ? "selected" : ""}
+          onClick={() => handleButtonClick("Pengurus")}
+        >
           PENGURUS
         </button>
       </div>
-      <TopSectionPict selectedButton={selectedButton} manajemenData={data.managementData} />
+      <TopSectionPict
+        selectedButton={selectedButton}
+        manajemenData={data.managementData}
+      />
     </>
   );
 };

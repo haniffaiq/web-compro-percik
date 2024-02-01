@@ -19,7 +19,7 @@ const Sekolah = () => {
           </div>
           <div className="lg:flex hidden text-sm">Selengkapnya {">>"}</div>
         </div>
-        <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-3 gap-5 lg:gap-28 lg:w-full">
+        <div className="flex w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-3 gap-5 lg:gap-28 lg:w-full">
           <div className="h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]">
             <div
               className="h-full object-cover rounded-xl"

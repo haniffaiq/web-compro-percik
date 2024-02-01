@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import LogoWriter from "../../assets/icon/ant-design_user-outlined.svg";
@@ -17,6 +17,9 @@ const EventDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   let sortedData = {};
   if (globalState.globalProperty == "IND") {
@@ -57,7 +60,9 @@ const EventDetail = () => {
         </Link>
         <span> / </span>
         <Link to="/project" className="">
-          {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "News & Event Details"}
+          {globalState.globalProperty === "IND"
+            ? "Detail Berita & Acara"
+            : "News & Event Details"}
         </Link>
       </div>
 
@@ -75,7 +80,11 @@ const EventDetail = () => {
                 <p>{queryParameters.get("date")}</p>
               </div>
             </div>
-            <img className="event-image-main-layout" src={require(`../../assets/${queryParameters.get("img")}`)} alt="image headline" />
+            <img
+              className="event-image-main-layout"
+              src={require(`../../assets/${queryParameters.get("img")}`)}
+              alt="image headline"
+            />
           </div>
           <div className="isi-desc-event">
             <p>{queryParameters.get("desc")}</p>
@@ -83,8 +92,13 @@ const EventDetail = () => {
         </div>
 
         <div className="detail-selengkapnya-event-layout">
-          <p>Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :</p>
-          <button className="detail-selengkapnya-event-button-layout" onClick={handleDownloadPDF}>
+          <p>
+            Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :
+          </p>
+          <button
+            className="detail-selengkapnya-event-button-layout"
+            onClick={handleDownloadPDF}
+          >
             <img src={IconDownload} />
             <p>Download Berita</p>
           </button>
@@ -118,15 +132,26 @@ const EventDetail = () => {
           <h2>Berita Lainnya</h2>
           <div className="berita-lainnya-gallery">
             {slicedData.map((item) => (
-              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
+              <Link
+                key={item.id}
+                to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
+                className="gallery-item shadow-xl"
+              >
                 <div className="card-layout">
                   <div>
-                    <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+                    <img
+                      src={require(`../../assets/${item.urlImage}`)}
+                      alt={item.alt}
+                    />
                   </div>
                   <p className="date-style">{item.date}</p>
                   <div className="gallery-text-item">
-                    <p className="gallery-text-item-headline">{item.headline}</p>
-                    <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
+                    <p className="gallery-text-item-headline">
+                      {item.headline}
+                    </p>
+                    <p className="gallery-text-item-deskripsi">
+                      {item.deskripsi}
+                    </p>
                     <div className="maker-layout">
                       <img src={LogoWriter} alt="logo" />
                       <p className="gallery-text-item-maker">{item.maker}</p>

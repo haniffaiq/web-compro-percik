@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import "./EventStyle.css";
@@ -26,6 +26,9 @@ const Event = () => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   let sortedData = {};
   if (globalState.globalProperty === "IND") {
@@ -61,10 +64,17 @@ const Event = () => {
       </div>
       <div className="gallery">
         {currentData.map((item) => (
-          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
+          <Link
+            key={item.id}
+            to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
+            className="gallery-item shadow-xl"
+          >
             <div>
               <div>
-                <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+                <img
+                  src={require(`../../assets/${item.urlImage}`)}
+                  alt={item.alt}
+                />
               </div>
               <p className="date-style">{item.date}</p>
               <div className="gallery-text-item ">
@@ -79,7 +89,12 @@ const Event = () => {
           </Link>
         ))}
       </div>
-      <Pagination totalItems={currentData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
+      <Pagination
+        totalItems={currentData.length}
+        itemsPerPage={itemsPerPage}
+        currentPage={currentPage}
+        onPageChange={handlePageChange}
+      />
     </>
   );
 };
