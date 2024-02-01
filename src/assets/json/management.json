@@ -1,5 +1,5 @@
 {
-  "managementData": [
+  "bahasa": [
     {
       "id": 1,
       "namaLengkapManajemen": "M. Harjono Kartohadiprodjo, SH",
@@ -152,6 +152,162 @@
       "namaLengkapManajemen": "Dra. Indrarti Kartohadiprodjo",
       "jabatanManajemen": "Pengurus",
       "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    }
+  ],
+  "english": [
+    {
+      "id": 1,
+      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo, SH",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Born in Semarang, December 26, 1938, graduated with a Law degree from the Faculty of Law UI in 1967. Continued studies with short courses at the Norwegian Shipping Academy, Sanderstolen, Norway, and the Seatrade Academy of London, Cambridge, England.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 2,
+      "namaLengkapManajemen": "Prof. Dr. (H.C). Hj Megawati Soekarnoputri",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "The fifth President of Indonesia who served from July 23, 2001, to October 20, 2004. She is the first female president of Indonesia and the daughter of the first President of Indonesia, Soekarno, who later followed in her father's footsteps to become the President of Indonesia.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 3,
+      "namaLengkapManajemen": "Prof. DR. Benny Hoedoro Hoed",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Emeritus professor at the Faculty of Cultural Sciences UI, expert in Indonesian linguistics, discourse analysis, translation, and semiotics. Former chairman of the Indonesian Translators Association (2000–2007), member of AIPI, and founder of the Semiotic Circle. Also, an expert in jazz music and a harmonica player.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 4,
+      "namaLengkapManajemen": "Prof. DR. Awaludin Djamin",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Prominent figure in the Indonesian National Police (Polri) and academician. He served as the Chief of the Indonesian National Police (Kapolri) from 1978 to 1982, as the Minister of Manpower in the Ampera Cabinet (1966), and was also assigned as the Ambassador to West Germany.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 5,
+      "namaLengkapManajemen": "Prof. Ir. Oetarjo Diran",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Academic in transportation and alumnus of Technische Hogeschool Delft, Netherlands (1952-1958), Purdue University, USA (1960-1961), and Institute For Theoretical Physics, Trieste (1973). Lecturer at ITB (1959), Instructor at Education Wing 006, Indonesian Air Force (1959-1965), Advisor to the Airworthiness Service of the Directorate General of Air Transportation (1959-1968).",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 6,
+      "namaLengkapManajemen": "Drs. Indra Kartasasmita",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 7,
+      "namaLengkapManajemen": "Prof. Dr. H. Does Sampoerno MPH",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 8,
+      "namaLengkapManajemen": "Soebronto Laras",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Soebronto Laras, racer and mechanic known as Yonto, the son of R. Moerdono, the importer of Citroen, Tempo, and Combi since 1949. Interested in the workshop since childhood, Yonto served as the President Director of PT. Indohero Steel & Engineering Co., and PT Indo Mobil Utama, assembler of Suzuki motorcycles and cars. Also, the President Commissioner of the Indomobil Group and Suzuki Indomobil Motor.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 9,
+      "namaLengkapManajemen": "Prof. DR. Tuti Heraty Noerhadi",
+      "jabatanManajemen": "Advisor",
+      "deskripsiManajemen": "Born in Bandung, November 27, 1933, concrete construction expert, founder of Gadjah Mada University and Cikini Educational Foundation. Bachelor of Medicine UI (1955), Bachelor of Psychology UI (1962), Bachelor of Philosophy from Leiden University, Netherlands (1974), Doctor of Philosophy UI (1979).",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 10,
+      "namaLengkapManajemen": "Prof. Mardjono Reksodiputro, SH, MA",
+      "jabatanManajemen": "Supervisor",
+      "deskripsiManajemen": "Prof. Mardjono, Chairman of the Police Science Studies Program at UI Postgraduate (1996—2006), Secretary and Chairman of the Law Science Consortium of the Ministry of Education and Culture (1990—2002). Law graduate of UI 1962, Master of Arts from the University of Pennsylvania 1967.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 11,
+      "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
+      "jabatanManajemen": "Supervisor",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 12,
+      "namaLengkapManajemen": "Ir. Tjahjo Sasmojo",
+      "jabatanManajemen": "Supervisor",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 13,
+      "namaLengkapManajemen": "Ir. Syahril Anwar",
+      "jabatanManajemen": "Supervisor",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 14,
+      "namaLengkapManajemen": "Hoediatmo Hoed, SH",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Hoediatmo Hoed, Indonesian economist and professional, served as the president director of PT. Freeport Indonesia, the first foreign capital company in the New Order era. Replacing Usman Pamuntjak, Hoediatmo Hoed was replaced by Adrianto Machribie in 1996 after riots in Tembagapura and Timika.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 15,
+      "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 16,
+      "namaLengkapManajemen": "Dr. Setiawan Nazir, M. Kes",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 17,
+      "namaLengkapManajemen": "DR. Ir. Darwin Cyril Noerhadi, M.Sc",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Consultant & Researcher at the Harvard Institute for International Development (HIID) – Ministry of Finance. Doctoral degree in Strategic Management (cum laude) from the University of Indonesia, MBA in Finance and Economics from the University of Houston, and Bachelor of Engineering from the Bandung Institute of Technology.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 18,
+      "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR (K)",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Member of the Indonesian Medical Association (IDI) and the Indonesian Association of Specialist Doctors in Physical Medicine and Rehabilitation (PERDOSRI). He also received education in Child Development and Rehabilitation at the Royal Children's Hospital, Melbourne, Australia.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 19,
+      "namaLengkapManajemen": "Handhari Subrata",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 20,
+      "namaLengkapManajemen": "Ir. Firdaus Akmal",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 21,
+      "namaLengkapManajemen": "Ir. Triawan Saleh",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+      "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+    },
+    {
+      "id": 22,
+      "namaLengkapManajemen": "Dra. Indrarti Kartohadiprodjo",
+      "jabatanManajemen": "Administrator",
+      "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
       "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
     }
   ]

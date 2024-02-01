@@ -4,12 +4,18 @@ import AppContext from "../../context/AppContext";
 import ManagementTittle from "./ManagementTittle";
 import TopSectionPict from "./TopSectionPicture";
 import "./ManagementStyle.css";
-import ManajemenImg from "../../assets/img/unsplash_pAtA8xe_iVM.png";
 import data from "../../assets/json/management.json";
 
+
+const Button = ({ buttonName, onClick, selected }) => (
+  <button className={selected === buttonName ? "selected" : ""} onClick={() => onClick(buttonName)}>
+    {buttonName.toUpperCase()}
+  </button>
+);
+
 const Management = () => {
-  const { globalState, updateGlobalState } = useContext(AppContext);
-  const [selectedButton, setSelectedButton] = useState("Pembina");
+  const { globalState } = useContext(AppContext);
+  const [selectedButton, setSelectedButton] = useState(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
 
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
@@ -17,43 +23,43 @@ const Management = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    
   }, []);
+
+  useEffect(() => {
+    setSelectedButton(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
+    console.log(globalState.globalProperty);
+  }, [globalState.globalProperty]);
 
   return (
     <>
       <div className="flex gap-1 ml-[35px] py-9">
-        <Link to="/" className="">
-          {globalState.globalProperty === "IND" ? "Home" : "Home"}
-        </Link>
+        <Link to="/">{globalState.globalProperty === "IND" ? "Home" : "Home"}</Link>
         <span> / </span>
-        <Link to="/project" className="">
-          {globalState.globalProperty === "IND" ? "Manajement" : "Management"}
-        </Link>
+        <Link to="/project">{globalState.globalProperty === "IND" ? "Manajemen" : "Management"}</Link>
       </div>
+
       <ManagementTittle />
+
       <div className="triple-button-container">
-        <button
-          className={selectedButton === "Pembina" ? "selected" : ""}
-          onClick={() => handleButtonClick("Pembina")}
-        >
-          PEMBINA
-        </button>
-        <button
-          className={selectedButton === "Pengawas" ? "selected" : ""}
-          onClick={() => handleButtonClick("Pengawas")}
-        >
-          PENGAWAS
-        </button>
-        <button
-          className={selectedButton === "Pengurus" ? "selected" : ""}
-          onClick={() => handleButtonClick("Pengurus")}
-        >
-          PENGURUS
-        </button>
+        {globalState.globalProperty === "IND" ? (
+          <>
+            <Button buttonName="Pembina" onClick={handleButtonClick} selected={selectedButton} />
+            <Button buttonName="Pengawas" onClick={handleButtonClick} selected={selectedButton} />
+            <Button buttonName="Pengurus" onClick={handleButtonClick} selected={selectedButton} />
+          </>
+        ) : (
+          <>
+            <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
+            <Button buttonName="Supervisor" onClick={handleButtonClick} selected={selectedButton} />
+            <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
+          </>
+        )}
       </div>
+
       <TopSectionPict
         selectedButton={selectedButton}
-        manajemenData={data.managementData}
+        manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english}
       />
     </>
   );

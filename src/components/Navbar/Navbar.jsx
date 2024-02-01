@@ -8,7 +8,7 @@ import AppContext from "../../context/AppContext";
 
 const Navbar = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log("Global State:", globalState);
+  // console.log("Global State:", globalState);
   const location = useLocation();
   //   const isLocation = location.pathname.split("/");
 
@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      {console.log(location, "LOCATION")}
+      {/* {console.log(location, "LOCATION")} */}
       <div className="w-full border-b shadow-lg">
         <div className="flex justify-between lg:grid lg:grid-cols-8 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] m-2 ">
           <div className="flex gap-0 lg:gap-3 col-span-3">
