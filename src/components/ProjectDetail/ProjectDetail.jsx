@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
@@ -15,6 +15,9 @@ const ProjectDetail = () => {
   const projectDatas = data.projectData.find((item) => (item.id = projectId));
 
   const contentRef = useRef();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleDownloadPDF = () => {
     const content = contentRef.current;
     if (content) {
@@ -36,7 +39,10 @@ const ProjectDetail = () => {
         <div className="project-detail-main-container-pdf" ref={contentRef}>
           <h2>{queryParameters.get("tittle")}</h2>
           <div className="image-detail-layout">
-            <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
+            <img
+              src={require(`../../assets/${queryParameters.get("img")}`)}
+              alt="img"
+            />
           </div>
           <div className="desc-main-container-pdf">
             {projectDatas.Paragraf.map((ParagrafText, index) => (
@@ -57,14 +63,19 @@ const ProjectDetail = () => {
         </Link>
         <span> / </span>
         <Link to="/project" className="">
-          {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
+          {globalState.globalProperty === "IND"
+            ? "Detail Proyek"
+            : "Project Details"}
         </Link>
       </div>
 
       <div className="project-detail-main-container">
         <h2>{queryParameters.get("tittle")}</h2>
         <div className="image-detail-layout">
-          <img src={require(`../../assets/${queryParameters.get("img")}`)} alt="img" />
+          <img
+            src={require(`../../assets/${queryParameters.get("img")}`)}
+            alt="img"
+          />
         </div>
         <div className="desc-main-container">
           {projectDatas.Paragraf.map((ParagrafText, index) => (
@@ -76,10 +87,16 @@ const ProjectDetail = () => {
       </div>
 
       <div className="detail-selengkapnya-layout">
-        <p className="detail-selengkapnya-text">Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :</p>
+        <p className="detail-selengkapnya-text">
+          Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :
+        </p>
         <div className="button-container">
           <button className="button-download-style" onClick={handleDownloadPDF}>
-            <img src={IconDownload} className="button-image-style" alt="download-image" />
+            <img
+              src={IconDownload}
+              className="button-image-style"
+              alt="download-image"
+            />
             <p className="button-text-style">Download PDF</p>
           </button>
         </div>

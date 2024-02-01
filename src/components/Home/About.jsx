@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
 import AboutImg from "../../assets/img/Rectangle 15.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -35,9 +36,11 @@ const About = () => {
                 numquam. Excepturi, saepe fuga.
               </div>
             </div>
-            <div className=" flex items-end justify-center lg:justify-start lg:mt-0 mt-10 font-semibold">
-              Selengkapnya {">>>"}
-            </div>
+            <Link to="/about">
+              <button className=" flex items-end justify-center lg:justify-start lg:mt-0 mt-10 font-semibold">
+                Selengkapnya {">>>"}
+              </button>
+            </Link>
           </div>
         </div>
       </div>
