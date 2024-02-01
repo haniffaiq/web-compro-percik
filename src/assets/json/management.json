@@ -1,32 +1,158 @@
 {
-    "managementData" : [
+    "managementData": [
         {
-          "id": 1,
-          "namaLengkapManajemen": "Megawati Soekarnoputri",
-          "jabatanManajemen": "Pembina",
-          "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-          "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+            "id": 1,
+            "namaLengkapManajemen": "M. Harjono Kartohadiprodjo, SH",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
         },
         {
-          "id": 2,
-          "namaLengkapManajemen": "Jokowi",
-          "jabatanManajemen": "Pembina",
-          "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-          "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+            "id": 2,
+            "namaLengkapManajemen": "Megawati Soekarnoputri",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
         },
         {
-          "id": 3,
-          "namaLengkapManajemen": "Prof. Mardjono Reksodiputro, SH, MA",
-          "jabatanManajemen": "Pengawas",
-          "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-          "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+            "id": 3,
+            "namaLengkapManajemen": "Prof. DR. Benny Hoedoro Hoed",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
         },
         {
-          "id": 4,
-          "namaLengkapManajemen": "Dr. ir. Darwin Cyril Noerhadi, M.sc",
-          "jabatanManajemen": "Pengurus",
-          "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
-          "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+            "id": 4,
+            "namaLengkapManajemen": "Prof. DR. Awaludin Djamin",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 5,
+            "namaLengkapManajemen": "Prof. Ir. Oetarjo Diran",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 6,
+            "namaLengkapManajemen": "Drs. Indra Kartasasmita",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 7,
+            "namaLengkapManajemen": "Prof. Dr. H. Does Sampoerno MPH",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 8,
+            "namaLengkapManajemen": "Soebronto Laras",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 9,
+            "namaLengkapManajemen": "Prof. DR. Tuti Heraty Noerhadi",
+            "jabatanManajemen": "Pembina",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 10,
+            "namaLengkapManajemen": "Prof. Mardjono Reksodiputro, SH, MA",
+            "jabatanManajemen": "Pengawas",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 11,
+            "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
+            "jabatanManajemen": "Pengawas",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 12,
+            "namaLengkapManajemen": "Ir. Tjahjo Sasmojo",
+            "jabatanManajemen": "Pengawas",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 13,
+            "namaLengkapManajemen": "Ir. Syahril Anwar",
+            "jabatanManajemen": "Pengawas",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Hoediatmo Hoed, SH",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Dr. Setiawan Nazir, M. Kes",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "DR. Ir. Darwin Cyril Noerhadi, M.Sc",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR (K)",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Handhari Subrata",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Ir. Firdaus Akmal",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Ir. Triawan Saleh",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
+        },
+        {
+            "id": 4,
+            "namaLengkapManajemen": "Dra. Indrarti Kartohadiprodjo",
+            "jabatanManajemen": "Pengurus",
+            "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
+            "imageSourceManajemen": "img/unsplash_pAtA8xe_iVM.png"
         }
-      ]
+    ]
 }
