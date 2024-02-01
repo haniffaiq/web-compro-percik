@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import Header1 from "../../assets/img/header/img_header1.png";
-import Header2 from "../../assets/img/header/img_header2.JPG";
+
 
 
 const carouselItems = [
