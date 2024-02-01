@@ -7,31 +7,26 @@ import data from "../../assets/json/project.json";
 import "./ProjectStyle.css";
 
 const parseDate = (dateString) => {
-  const [day, month, year] = dateString.split('/').map(Number);
+  const [day, month, year] = dateString.split("/").map(Number);
   return new Date(year, month - 1, day);
 };
 
 const Project = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   // const sortedProject = data.projectData.sort((a, b) => new Date(b.date) - new Date(a.date));
-  let sortedProject = {}
+  let sortedProject = {};
   if (globalState.globalProperty === "IND") {
-    sortedProject = [...data.bahasa].sort(
-      (a, b) => {
-        const dateA = parseDate(a.date);
-        const dateB = parseDate(b.date);
-        return dateB - dateA;
-      }
-    );
-  }
-  else{
-    sortedProject = [...data.english].sort(
-      (a, b) => {
+    sortedProject = [...data.bahasa].sort((a, b) => {
       const dateA = parseDate(a.date);
       const dateB = parseDate(b.date);
       return dateB - dateA;
-    }
-    );
+    });
+  } else {
+    sortedProject = [...data.english].sort((a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    });
   }
   return (
     <>
@@ -51,7 +46,7 @@ const Project = () => {
         {sortedProject.map((item) => (
           <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="image-list-wrapper">
             <div className="image-overlay"></div> {/* Tambahkan div untuk lapisan transparan */}
-            <img src={require(`../../assets/${item.urlImage}`)} alt="img" />
+            <img src={require(`../../assets/img/project/${item.urlImage}`)} alt="img" />
             <p className="overlay-text-tittle">{item.tittleProyek}</p>
             <p className="overlay-text-desc">{item.deskripsiProyek.length > 400 ? `${item.deskripsiProyek.slice(0, 400)}...` : item.deskripsiProyek}</p>
             <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="link-layout">
