@@ -45,7 +45,11 @@ const Berita = () => {
           <div className="text-xl lg:text-3xl font-bold mb-10">
             BERITA DAN ACARA
           </div>
-          <div className="lg:flex hidden text-sm">Selengkapnya {">>"}</div>
+          <Link to="/event">
+            <button className="lg:flex hidden text-sm">
+              Selengkapnya {">>"}
+            </button>
+          </Link>
         </div>
         <div className="flex w-full lg:w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-4 gap-5">
           {currentData.slice(0, 4).map((item) => (
@@ -59,17 +63,19 @@ const Berita = () => {
                 alt={item.alt}
                 className="radius-lg object-cover w-full "
               />
-              <div>
-                <div className="text-start text-[#8d8f91] text-xs lg:text-sm mt-3 mb-3">
-                  {item.date}
+              <div className="flex flex-col justify-between h-full">
+                <div>
+                  <div className="text-start text-[#8d8f91] text-xs lg:text-sm mt-3 mb-3">
+                    {item.date}
+                  </div>
+                  <div className="font-bold text-[14px] lg:text-2xl mb-5">
+                    {item.headline}
+                  </div>
+                  <div className="text-[12px] lg:text-2xl text-md tracking-wider mb-5">
+                    {item.deskripsi}
+                  </div>
                 </div>
-                <div className="font-bold text-[14px] lg:text-2xl mb-5">
-                  {item.headline}
-                </div>
-                <div className="text-[12px] lg:text-2xl text-md tracking-wider mb-5">
-                  {item.deskripsi}
-                </div>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-end">
                   <div>
                     <img src={Logo} alt="logo" />
                   </div>

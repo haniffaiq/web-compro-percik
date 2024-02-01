@@ -7,11 +7,11 @@ import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import achivementLogo from "../../assets/img/achivement.jpg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
-import data from "../../assets/json/achivements.json"
+import data from "../../assets/json/achivements.json";
 
 // Fungsi untuk mengonversi string tanggal ke objek Date
 const parseDate = (dateString) => {
-  const [day, month, year] = dateString.split('/').map(Number);
+  const [day, month, year] = dateString.split("/").map(Number);
   return new Date(year, month - 1, day);
 };
 
@@ -24,8 +24,16 @@ const formatDate = (dateObject) => {
 };
 
 const itemsPerPage = 6;
-const PrestasiComponent = ({ author, created_at, title, description, category, location, date }) => (
-  <button className="h-full lg:h-full  border rounded-lg p-3 flex flex-col shadow-2xl">
+const PrestasiComponent = ({
+  author,
+  created_at,
+  title,
+  description,
+  category,
+  location,
+  date,
+}) => (
+  <button className="min-h-[350px] lg:h-full  border rounded-lg p-3 flex flex-col shadow-2xl">
     <img className="w-full min-w-[200px]" src={Foto} alt="foto" />
     <div className="text-start text-md lg:text-2xl mt-5">{title}</div>
     <div className="flex gap-3 text-start mt-3">
@@ -33,9 +41,8 @@ const PrestasiComponent = ({ author, created_at, title, description, category, l
         {description}
       </div>
     </div>
-
-    <div className="lg:flex-grow" /> {/* Penambahan bagian ini */}
-
+    <div className="flex items-end h-full lg:flex-grow" />{" "}
+    {/* Penambahan bagian ini */}
     <div className="flex gap-3 items-start text-start mt-3">
       <div className="text-[#8d8f91] text-xs lg:text-md">{location}</div>
     </div>
@@ -48,29 +55,22 @@ const PrestasiComponent = ({ author, created_at, title, description, category, l
 const Prestasi = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   console.log(globalState.globalProperty);
-  let sortedPrestasi = {}
+  let sortedPrestasi = {};
   if (globalState.globalProperty == "IND") {
-    sortedPrestasi = [...data.bahasa].sort(
-      (a, b) => {
-        const dateA = parseDate(a.date);
-        const dateB = parseDate(b.date);
-        return dateB - dateA;
-      }
-    );
-  }
-  else {
-    sortedPrestasi = [...data.english].sort(
-      (a, b) => {
-        const dateA = parseDate(a.date);
-        const dateB = parseDate(b.date);
-        return dateB - dateA;
-      }
-    );
+    sortedPrestasi = [...data.bahasa].sort((a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    });
+  } else {
+    sortedPrestasi = [...data.english].sort((a, b) => {
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB - dateA;
+    });
   }
 
-
-
-  console.log(typeof (sortedPrestasi));
+  console.log(typeof sortedPrestasi);
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -93,7 +93,7 @@ const Prestasi = () => {
         <div className="text-center text-3xl lg:text-5xl font-bold mb-10">
           Prestasi Unggulan
         </div>
-        <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:w-full lg:grid lg:grid-cols-3 gap-5 lg:gap-10 w-full ">
+        <div className="flex overflow-y-hidden lg:overflow-hidden lg:w-full lg:grid lg:grid-cols-3 gap-5 lg:gap-10 w-full ">
           {/* Gradasi putih di kiri
           <div className="absolute h-full w-1/6 left-0 bg-gradient-to-r from-white to-transparent"></div> */}
 

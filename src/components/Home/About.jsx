@@ -37,9 +37,11 @@ const About = () => {
               </div>
             </div>
             <Link to="/about">
-              <button className=" flex items-end justify-center lg:justify-start lg:mt-0 mt-10 font-semibold">
-                Selengkapnya {">>>"}
-              </button>
+              <div className="flex justify-center lg:justify-start">
+                <button className=" flex items-end justify-center lg:justify-start lg:mt-0 mt-10 font-semibold">
+                  Selengkapnya {">>>"}
+                </button>
+              </div>
             </Link>
           </div>
         </div>

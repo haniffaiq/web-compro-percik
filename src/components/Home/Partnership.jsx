@@ -4,6 +4,7 @@ import AppContext from "../../context/AppContext";
 import Lipi from "../../assets/icon/Group 2.svg";
 import Bni from "../../assets/icon/Layer_x5F_1.svg";
 import Telkomsel from "../../assets/icon/Layer_x0020_1.svg";
+import { ReactComponent as Logo } from "../../assets/logo/logo.svg";
 
 const Partnership = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -15,10 +16,8 @@ const Partnership = () => {
         <div className="lg:flex hidden text-5xl font-bold mb-10">
           Partnership
         </div>
-        <div className="flex gap-5 lg:gap-28 lg:h-full lg:w-full h-[50px] w-[350px] overflow-y-hidden">
-          <img src={Lipi} />
-          <img src={Bni} />
-          <img src={Telkomsel} />
+        <div className="flex justify-center gap-5 lg:gap-28 lg:h-full lg:w-full h-[50px] w-[350px] overflow-y-hidden lg">
+          <Logo />
         </div>
       </div>
     </>

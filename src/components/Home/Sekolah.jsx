@@ -5,6 +5,7 @@ import Rec1 from "../../assets/img/Rectangle18.png";
 import Rec2 from "../../assets/img/Rectangle182.png";
 import Rec3 from "../../assets/img/Rectangle183.png";
 import Loc from "../../assets/icon/Group 3.svg";
+import { Link } from "react-router-dom";
 
 const Sekolah = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -17,7 +18,11 @@ const Sekolah = () => {
           <div className="text-2xl lg:text-3xl font-bold mb-10">
             Daftar Sekolah
           </div>
-          <div className="lg:flex hidden text-sm">Selengkapnya {">>"}</div>
+          <Link to="/school">
+            <button className="lg:flex hidden text-sm">
+              Selengkapnya {">>"}
+            </button>
+          </Link>
         </div>
         <div className="flex w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-3 gap-5 lg:gap-28 lg:w-full">
           <div className="h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]">
