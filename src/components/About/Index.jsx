@@ -6,6 +6,7 @@ import Visi from "./Visi";
 import Prestasi from "./Prestasi";
 import Galeri from "./Galeri";
 import Misi from "./Misi";
+import Filosofi from "./Filosofi";
 
 const About = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -27,6 +28,7 @@ const About = () => {
         </Link>
       </div>
       <AboutUs />
+      <Filosofi />
       {/* <Visi /> */}
       <Misi />
       <Prestasi />

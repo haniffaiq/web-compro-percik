@@ -1,5 +1,5 @@
 {
-  "bahasa" : [
+  "bahasa": [
     {
       "id": 1,
       "name": "TK Perguruan Cikini, Jakarta Pusat",
@@ -7,7 +7,27 @@
       "image": "Rectangle108school.png",
       "students": 200,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085xxxxxx"
+      "phone": "085xxxxxx",
+      "fasilitas": [
+        {
+          "title": "Lapangan",
+          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
+        },
+        {
+          "title": "Kolam Renang",
+          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Sepak Bola",
+          "desc": "11111"
+        },
+        {
+          "title": "Renang",
+          "desc": "22222"
+        }
+      ]
     },
     {
       "id": 2,
@@ -16,10 +36,30 @@
       "image": "Rectangle108school.png",
       "students": 250,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085yyyyyy"
+      "phone": "085yyyyyy",
+      "fasilitas": [
+        {
+          "title": "Kolam Renang",
+          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
+        },
+        {
+          "title": "Lapangan",
+          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111"
+        }
+      ]
     }
   ],
-  "english" : [
+  "english": [
     {
       "id": 1,
       "name": "TK Perguruan Cikini, Jakarta Pusat",
@@ -27,7 +67,27 @@
       "image": "Rectangle108school.png",
       "students": 200,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085xxxxxx"
+      "phone": "085xxxxxx",
+      "fasilitas": [
+        {
+          "title": "Lapangan",
+          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
+        },
+        {
+          "title": "Kolam Renang",
+          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Sepak Bola",
+          "desc": "11111"
+        },
+        {
+          "title": "Renang",
+          "desc": "22222"
+        }
+      ]
     },
     {
       "id": 2,
@@ -36,7 +96,27 @@
       "image": "Rectangle108school.png",
       "students": 250,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085yyyyyy"
+      "phone": "085yyyyyy",
+      "fasilitas": [
+        {
+          "title": "Kolam Renang",
+          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
+        },
+        {
+          "title": "Lapangan",
+          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111"
+        }
+      ]
     }
   ]
 }
