@@ -9,7 +9,7 @@ const GalleryProjectDetail = ({ Getid }) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const galleryId = Getid;
   console.log("Gallery id = ", galleryId);
-  const projectDatas = data.projectData.find((item) => (item.id = galleryId));
+  const projectDatas = data.bahasa.find((item) => (item.id = galleryId));
   console.log("data Gallery=", projectDatas);
 
   const settings = {

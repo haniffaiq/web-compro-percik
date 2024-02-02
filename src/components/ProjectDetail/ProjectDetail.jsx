@@ -12,11 +12,16 @@ const ProjectDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
+  const projectDatasBahasa = data.bahasa.find((item) => (item.id = queryParameters.get("id")));
+  const projectDatasEnglish = data.english.find((item) => (item.id = queryParameters.get("id")));
 
   const contentRef = useRef();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // console.log("Data" ,queryParameters.get("id"));
+  // console.log("Data Project" ,projectDatasEnglish);
   const handleDownloadPDF = () => {
     const content = contentRef.current;
     if (content) {
@@ -41,14 +46,14 @@ const ProjectDetail = () => {
             <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
           </div>
           <div className="desc-main-container-pdf">
-            {sortedData.bahasa.Paragraf.map((ParagrafText) => (
+            {projectDatasBahasa.Paragraf.map((ParagrafText) => (
               <div className="desc-container-layout-pdf">
                 <p>{ParagrafText}</p>
               </div>
             ))}
           </div>
           <div className="desc-main-container-pdf">
-            {sortedData.english.Paragraf.map((ParagrafText) => (
+            {projectDatasEnglish.Paragraf.map((ParagrafText) => (
               <div className="desc-container-layout-pdf">
                 <p>{ParagrafText}</p>
               </div>
@@ -57,6 +62,7 @@ const ProjectDetail = () => {
         </div>
       </div>
     );
+  
   };
   return (
     <>
@@ -76,14 +82,14 @@ const ProjectDetail = () => {
           <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
         </div>
         <div className="desc-main-container">
-          {sortedData.bahasa.Paragraf.map((ParagrafText) => (
+          {projectDatasBahasa.Paragraf.map((ParagrafText) => (
             <div className="desc-container-layout">
               <p>{ParagrafText}</p>
             </div>
           ))}
         </div>
         <div className="desc-main-container">
-          {sortedData.english.Paragraf.map((ParagrafText) => (
+          {projectDatasEnglish.Paragraf.map((ParagrafText) => (
             <div className="desc-container-layout">
               <p>{ParagrafText}</p>
             </div>
