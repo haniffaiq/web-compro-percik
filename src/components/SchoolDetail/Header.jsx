@@ -8,15 +8,18 @@ import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
 import Foto from "../../assets/img/Rectangle108school.png";
+import data from "../../assets/json/school";
 
-const Header = () => {
+const Header = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
+  let a = props.idSchool;
 
   return (
     <>
+      {console.log(data.bahasa, "PPPP")}
       <div className="p-5 lg:p-14">
         <div className="text-center lg:text-start text-3xl lg:text-5xl font-bold mb-10">
-          SD Perguruan Cikini
+          {data.bahasa[a - 1].name}
         </div>
         <ConfigProvider
           theme={{
@@ -60,20 +63,19 @@ const Header = () => {
             <div className="flex gap-3 text-start ">
               <img src={Wisuda} alt="logo" />
               <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">
-                200 Siswa
+                {data.bahasa[a - 1].students} Siswa
               </div>
             </div>
             <div className="flex gap-3 items-start text-start ">
               <img className=" " src={Loc} alt="logo" />
               <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">
-                Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng,
-                Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330
+                {data.bahasa[a - 1].address}
               </div>
             </div>
             <div className="flex gap-3 text-start ">
               <img src={Telf} alt="logo" />
               <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">
-                085xxxxxx
+                {data.bahasa[a - 1].phone}
               </div>
             </div>
           </div>
