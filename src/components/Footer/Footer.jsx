@@ -19,7 +19,9 @@ const Footer = () => {
             Yayasan Perguruan Cikini
           </div>
           <div className="text-[#C1CACF] text-lg">
-            Jl. Telekomunikasi, no.1, Dayeuh Kolot, Kota Bandung
+            Jl. Pegangsaan Timur No.10, RT.14/RW.4, Cikini,
+            Kec. Menteng, Kota Jakarta Pusat, DKI Jakarta
+            10330
           </div>
           <div className="text-[#C1CACF] text-lg">08886453759898</div>
           <div className="text-[#C1CACF] text-lg">
