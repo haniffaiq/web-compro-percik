@@ -3,16 +3,15 @@ import { useParams } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import GalleryProjectDetail from "./GalleryProjectDetail";
-import data from "../../assets/json/data.json";
+import data from "../../assets/json/project.json";
 import IconDownload from "../../assets/img/download.png";
 import "./ProjectDetailStyle.css";
 import html2pdf from "html2pdf.js";
+
 const ProjectDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
-  const projectId = queryParameters.get("id");
-  const projectDatas = data.projectData.find((item) => (item.id = projectId));
 
   const contentRef = useRef();
   useEffect(() => {
@@ -39,14 +38,18 @@ const ProjectDetail = () => {
         <div className="project-detail-main-container-pdf" ref={contentRef}>
           <h2>{queryParameters.get("tittle")}</h2>
           <div className="image-detail-layout">
-            <img
-              src={require(`../../assets/${queryParameters.get("img")}`)}
-              alt="img"
-            />
+            <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
           </div>
           <div className="desc-main-container-pdf">
-            {projectDatas.Paragraf.map((ParagrafText, index) => (
-              <div key={index} className="desc-container-layout-pdf">
+            {sortedData.bahasa.Paragraf.map((ParagrafText) => (
+              <div className="desc-container-layout-pdf">
+                <p>{ParagrafText}</p>
+              </div>
+            ))}
+          </div>
+          <div className="desc-main-container-pdf">
+            {sortedData.english.Paragraf.map((ParagrafText) => (
+              <div className="desc-container-layout-pdf">
                 <p>{ParagrafText}</p>
               </div>
             ))}
@@ -63,23 +66,25 @@ const ProjectDetail = () => {
         </Link>
         <span> / </span>
         <Link to="/project" className="">
-          {globalState.globalProperty === "IND"
-            ? "Detail Proyek"
-            : "Project Details"}
+          {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
         </Link>
       </div>
 
       <div className="project-detail-main-container">
         <h2>{queryParameters.get("tittle")}</h2>
         <div className="image-detail-layout">
-          <img
-            src={require(`../../assets/${queryParameters.get("img")}`)}
-            alt="img"
-          />
+          <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
         </div>
         <div className="desc-main-container">
-          {projectDatas.Paragraf.map((ParagrafText, index) => (
-            <div key={index} className="desc-container-layout">
+          {sortedData.bahasa.Paragraf.map((ParagrafText) => (
+            <div className="desc-container-layout">
+              <p>{ParagrafText}</p>
+            </div>
+          ))}
+        </div>
+        <div className="desc-main-container">
+          {sortedData.english.Paragraf.map((ParagrafText) => (
+            <div className="desc-container-layout">
               <p>{ParagrafText}</p>
             </div>
           ))}
@@ -87,16 +92,10 @@ const ProjectDetail = () => {
       </div>
 
       <div className="detail-selengkapnya-layout">
-        <p className="detail-selengkapnya-text">
-          Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :
-        </p>
+        <p className="detail-selengkapnya-text">Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :</p>
         <div className="button-container">
           <button className="button-download-style" onClick={handleDownloadPDF}>
-            <img
-              src={IconDownload}
-              className="button-image-style"
-              alt="download-image"
-            />
+            <img src={IconDownload} className="button-image-style" alt="download-image" />
             <p className="button-text-style">Download PDF</p>
           </button>
         </div>

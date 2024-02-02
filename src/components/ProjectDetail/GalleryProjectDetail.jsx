@@ -3,7 +3,7 @@ import { Carousel, ConfigProvider } from "antd";
 import "antd/dist/reset.css";
 import AppContext from "../../context/AppContext";
 import "./ProjectDetailStyle.css";
-import data from "../../assets/json/data.json";
+import data from "../../assets/json/project.json";
 
 const GalleryProjectDetail = ({ Getid }) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -41,7 +41,7 @@ const GalleryProjectDetail = ({ Getid }) => {
           <Carousel autoplay slidesToShow={3} {...settings}>
             {projectDatas.urlGallery.map((imageUrl, index) => (
               <div key={index}>
-                <img src={require(`../../assets/${imageUrl}`)} alt={`Image ${index + 1}`} className="gallery-project-detail-layout" />
+                <img src={require(`../../assets/img/project/${imageUrl}`)} alt={`Image ${index + 1}`} className="gallery-project-detail-layout" />
               </div>
             ))}
           </Carousel>
