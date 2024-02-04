@@ -28,6 +28,7 @@ const carouselItems = [
     buttonText: "Kunjungi Kami",
   },
 ];
+
 const Header = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   console.log(globalState, "DIHeader");
@@ -83,103 +84,6 @@ const Header = () => {
             </div>
           </div>
         ))}
-
-        {/* <div className="h-[300px] lg:h-[700px]">
-          <div
-            className="h-full object-cover"
-            style={{
-              backgroundImage: `url(${Header1})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
-                Mari Bergabung dengan Kami
-              </div>
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
-                Mari Kita Menciptakan Anak Didik yang Berbakat
-              </div>
-              <div className="flex justify-center lg:justify-start ">
-                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
-                  Kunjungi Kami
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-[300px] lg:h-[700px]">
-          <div
-            className="h-full object-cover"
-            style={{
-              backgroundImage: `url(${Header2})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
-                Mari Bergabung dengan Kami
-              </div>
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
-                Mari Kita Menciptakan Anak Didik yang Berbakat
-              </div>
-              <div className="flex justify-center lg:justify-start ">
-                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
-                  Kunjungi Kami
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-[300px] lg:h-[700px]">
-          <div
-            className="h-full object-cover"
-            style={{
-              backgroundImage: `url(${Header1})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
-                Mari Bergabung dengan Kami
-              </div>
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
-                Mari Kita Menciptakan Anak Didik yang Berbakat
-              </div>
-              <div className="flex justify-center lg:justify-start ">
-                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
-                  Kunjungi Kami
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-[300px] lg:h-[700px]">
-          <div
-            className="h-full object-cover"
-            style={{
-              backgroundImage: `url(${Header1})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
-            <div className="h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
-                Mari Bergabung dengan Kami
-              </div>
-              <div className="text-white text-center lg:text-left text-[25px] lg:text-[45px] font-[600]">
-                Mari Kita Menciptakan Anak Didik yang Berbakat
-              </div>
-              <div className="flex justify-center lg:justify-start ">
-                <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
-                  Kunjungi Kami
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </Carousel>
 
       <div className="bg-[#295D97] lg:pt-24 lg:pb-24 lg:grid lg:grid-cols-3 flex flex-col lg:gap-5">

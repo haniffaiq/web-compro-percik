@@ -223,7 +223,7 @@ const Navbar = () => {
                   onClick={() => updateGlobalState({ globalProperty: "IND" })}
                   className={
                     globalState.globalProperty === "IND"
-                      ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full h-full  font-bold text-white flex gap-2"
+                      ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full font-bold text-white flex gap-2"
                       : " font-bold text-black flex gap-2 duration-300"
                   }
                 >
@@ -240,7 +240,7 @@ const Navbar = () => {
                   onClick={() => updateGlobalState({ globalProperty: "ENG" })}
                   className={
                     globalState.globalProperty === "ENG"
-                      ? " bg-[#09588D] rounded-r-[3px] rounded-l-[8px] duration-300 w-full h-full  font-bold text-white flex gap-2"
+                      ? " bg-[#09588D] rounded-r-[3px] rounded-l-[8px] duration-300 w-full font-bold text-white flex gap-2"
                       : " font-bold text-black flex gap-2 "
                   }
                 >

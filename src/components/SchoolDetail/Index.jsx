@@ -5,6 +5,8 @@ import Header from "./Header";
 import Fasilitas from "./Fasilitas";
 import Ekstrakulikuler from "./Ekstrakulikuler";
 import Galeri from "./Galeri";
+import Visi from "./Visi";
+import Sambutan from "./Foto";
 // import AboutUs from "./About";
 // import Visi from "./Visi";
 // import Prestasi from "./Prestasi";
@@ -37,6 +39,8 @@ const SchoolDetail = (props) => {
         </Link>
       </div>
       <Header idSchool={id} />
+      <Sambutan />
+      <Visi />
       <Fasilitas idSchool={id} />
       <Ekstrakulikuler idSchool={id} />
       <Galeri idSchool={id} />
