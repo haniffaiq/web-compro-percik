@@ -1,7 +1,9 @@
 /* Untuk Mobile */
 @media only screen and (max-width: 600px) {
   .page-tittle {
-    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .page-tittle p {
@@ -96,6 +98,7 @@
   .page-tittle {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .page-tittle p {
@@ -187,7 +190,9 @@
 
 @media only screen and (min-width: 1366px) and (max-width: 1920px) {
   .page-tittle {
-    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .page-tittle p {
@@ -278,7 +283,9 @@
 /* Untuk Desktop PC */
 @media only screen and (min-width: 1920px) {
   .page-tittle {
-    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .page-tittle p {
@@ -334,7 +341,6 @@
     font-weight: 700;
     line-height: normal;
     max-width: 940px;
-    
   }
   .overlay-text-desc {
     width: 950px;
