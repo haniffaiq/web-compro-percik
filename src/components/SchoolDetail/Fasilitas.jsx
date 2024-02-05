@@ -5,23 +5,30 @@ import AppContext from "../../context/AppContext";
 import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
-import Foto from "../../assets/img/Rectangle108school.png";
+import Foto from "../../assets/img/school/facility/Ruang Kerja.png";
 import data from "../../assets/json/school";
 
 const Fasilitas = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   let a = props.idSchool;
+  let selectedData = {}
+  if (globalState.globalProperty === "IND") {
+    selectedData = data.bahasa
+  }
+  else{
+    selectedData = data.english
+  }
   return (
     <>
       <div className="p-5 lg:p-8">
         <div className="text-5xl font-bold">Fasilitas</div>
-        <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:w-full gap-5 lg:gap-10 mt-5">
-          {data.bahasa[a - 1].fasilitas.map((value, index) => {
+        <div className="flex overflow-x-auto w-[350px] lg:w-full gap-5 lg:gap-10 mt-5">
+          {selectedData[a - 1].fasilitas.map((value, index) => {
             return (
-              <button className="h-full  lg:h-full  border rounded-lg p-3 flex flex-col ">
+              <button key={index} className="h-full border rounded-lg p-3 flex flex-col ">
                 <img
                   className="flex justify-center min-w-[200px]"
-                  src={Foto}
+                  src={require(`../../assets/img/school/facility${value.imgUrl}`)}
                   alt="foto"
                 />
                 <div className="text-start text-md lg:text-2xl mt-5">
@@ -37,6 +44,7 @@ const Fasilitas = (props) => {
           })}
         </div>
       </div>
+
     </>
   );
 };

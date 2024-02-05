@@ -57,6 +57,72 @@
           "desc": "11111"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "SMK 3 PERGURUAN “CIKINI”",
+      "type": "SMK",
+      "image": "Rectangle108school.png",
+      "students": 1246,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "phone": "085yyyyyy",
+      "fasilitas": [
+        {
+          "title": "Ruang kelas",
+          "desc": "Digunakan sebagai ...",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Laboratorium",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Labolatorium.png"
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Ruang Kerja.png"
+        },
+        {
+          "title": "Perpustakaan",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Perpustakaan.png"
+        },
+        {
+          "title": "Cafetaria/Kantin",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Cafetaria atau Kantin.png"
+        },
+        {
+          "title": "Gedung Aula",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gedung Aula.png"
+        },
+        {
+          "title": "Gudang Sekolah",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gudang sekolah.png"
+        },
+        {
+          "title": "Kendaraan operasional",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Kendaraan operasional.png"
+        },
+        {
+          "title": "Jaringan Internet",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Jaringan Internet.png"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111"
+        }
+      ]
     }
   ],
   "english": [
@@ -105,6 +171,72 @@
         {
           "title": "Lapangan",
           "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SMK 3 PERGURUAN “CIKINI”",
+      "type": "SMK",
+      "image": "Rectangle108school.png",
+      "students": 1246,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "phone": "085yyyyyy",
+      "fasilitas": [
+        {
+          "title": "Ruang kelas",
+          "desc": "Digunakan sebagai ...",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Laboratorium",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Labolatorium.png"
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Ruang Kerja.png"
+        },
+        {
+          "title": "Perpustakaan",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Perpustakaan.png"
+        },
+        {
+          "title": "Cafetaria/Kantin",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Cafetaria atau Kantin.png"
+        },
+        {
+          "title": "Gedung Aula",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gedung Aula.png"
+        },
+        {
+          "title": "Gudang Sekolah",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gudang sekolah.png"
+        },
+        {
+          "title": "Kendaraan operasional",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Kendaraan operasional.png"
+        },
+        {
+          "title": "Jaringan Internet",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Jaringan Internet.png"
         }
       ],
       "ekstrakulikuler": [

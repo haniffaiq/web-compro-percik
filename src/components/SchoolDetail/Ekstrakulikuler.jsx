@@ -11,13 +11,20 @@ import data from "../../assets/json/school";
 const Ekstrakulikuler = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   let a = props.idSchool;
+  let selectedData = {}
+  if (globalState.globalProperty === "IND") {
+    selectedData = data.bahasa
+  }
+  else{
+    selectedData = data.english
+  }
   return (
     <>
       {console.log(data.bahasa[a - 1].ekstrakulikuler)}
       <div className="p-5 lg:p-8">
         <div className="text-5xl font-bold">Ekstrakulikuler</div>
         <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:w-full gap-5 lg:gap-10 mt-5">
-          {data.bahasa[a - 1].ekstrakulikuler.map((value, index) => {
+          {selectedData[a - 1].ekstrakulikuler.map((value, index) => {
             return (
               <button className="h-full  lg:h-full  border rounded-lg p-3 flex flex-col">
                 <img
