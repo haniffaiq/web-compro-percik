@@ -29,7 +29,7 @@ const Ekstrakulikuler = (props) => {
                   {value.title}
                 </div>
                 <div className="flex gap-3 text-start mt-3">
-                  <div className="text-[#8d8f91] flex-grow text-xs lg:text-md">
+                  <div className="text-[#8d8f91] flex-grow text-xs lg:text-md max-w-[300px]">
                     {value.desc}
                   </div>
                 </div>

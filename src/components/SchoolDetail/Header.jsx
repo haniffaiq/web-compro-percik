@@ -85,7 +85,7 @@ const Header = (props) => {
             </button>
           </div>
         </div>
-        <div className="mt-10 flex flex-col items-center">
+        {/* <div className="mt-10 flex flex-col items-center">
           <div className="text-3xl lg:text-5xl font-bold">Visi</div>
           <div className="w-full lg:w-[900px] text-center text-sm lg:text-lg mt-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -100,7 +100,7 @@ const Header = (props) => {
           <div className=" mt-10">
             <img src={Misi} alt="logo" />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

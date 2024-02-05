@@ -18,7 +18,7 @@ const Fasilitas = (props) => {
         <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:w-full gap-5 lg:gap-10 mt-5">
           {data.bahasa[a - 1].fasilitas.map((value, index) => {
             return (
-              <button className="h-full  lg:h-full  border rounded-lg p-3 flex flex-col">
+              <button className="h-full  lg:h-full  border rounded-lg p-3 flex flex-col ">
                 <img
                   className="flex justify-center min-w-[200px]"
                   src={Foto}
@@ -28,7 +28,7 @@ const Fasilitas = (props) => {
                   {value.title}
                 </div>
                 <div className="flex gap-3 text-start mt-3">
-                  <div className="text-[#8d8f91] flex-grow text-xs lg:text-md">
+                  <div className="text-[#8d8f91] flex-grow text-xs lg:text-md max-w-[300px]">
                     {value.desc}
                   </div>
                 </div>
