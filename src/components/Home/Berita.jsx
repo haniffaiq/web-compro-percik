@@ -12,6 +12,8 @@ const parseDate = (dateString) => {
   return new Date(year, month - 1, day);
 };
 
+
+
 const Berita = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   console.log(globalState, "DIHeader");
@@ -19,6 +21,17 @@ const Berita = () => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+
+  function truncateText(text, maxLength) {
+    const words = text.split(' ');
+
+    if (words.length > maxLength) {
+      const truncatedText = words.slice(0, maxLength).join(' ');
+      return `${truncatedText} ...`;
+    }
+
+    return text;
+  }
 
   let sortedData = {};
   if (globalState.globalProperty === "IND") {
@@ -61,7 +74,7 @@ const Berita = () => {
               <img
                 src={require(`../../assets/${item.urlImage}`)}
                 alt={item.alt}
-                className="radius-lg object-cover w-full "
+                className="radius-lg object-cover w-full h-[200px]" // You can adjust the height as needed
               />
               <div className="flex flex-col justify-between h-full">
                 <div>
@@ -72,7 +85,7 @@ const Berita = () => {
                     {item.headline}
                   </div>
                   <div className="text-[12px] lg:text-2xl text-md tracking-wider mb-5">
-                    {item.deskripsi}
+                    {truncateText(item.deskripsi, 10)}
                   </div>
                 </div>
                 <div className="flex gap-3 items-end">
