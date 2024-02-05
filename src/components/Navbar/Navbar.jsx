@@ -60,7 +60,12 @@ const Navbar = () => {
             <Link
               to="/school"
               className={
-                location.pathname === "/school"
+                location.pathname === "/school" ||
+                location.pathname === "/school-detail/1" ||
+                location.pathname === "/school-detail/2" ||
+                location.pathname === "/school-detail/3" ||
+                location.pathname === "/school-detail/4" ||
+                location.pathname === "/school-detail/5"
                   ? "text-black font-[600]"
                   : "text-[#6B7280] font-[600]"
               }

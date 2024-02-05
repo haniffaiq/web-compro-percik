@@ -48,7 +48,7 @@ const SchoolDetail = (props) => {
       </div>
       <Header idSchool={id} />
       <Sambutan />
-      <Visi />
+      <Visi idSchool={id} />
       <Fasilitas idSchool={id} />
       <Ekstrakulikuler idSchool={id} />
       <Galeri idSchool={id} />
