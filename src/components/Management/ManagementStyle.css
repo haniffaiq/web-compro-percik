@@ -153,10 +153,10 @@
   .triple-button-container button {
     border-radius: 12px;
     background: #ededed;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 10px 8px 10px;
     color: #000;
     font-family: "Segoe UI";
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -165,10 +165,10 @@
   .triple-button-container button.selected {
     border-radius: 12px;
     background: #09588d;
-    padding: 8px 15px 8px 15px;
+    padding: 8px 10px 8px 10px;
     color: #fff;
     font-family: "Segoe UI";
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -298,8 +298,8 @@
   }
 
   .pict-list-management-wrapper {
-    width: 340px;
-    height: 220px;
+    width: 355px;
+    height: 250px;
     flex-shrink: 0;
     border-radius: 16px;
     background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 105%);
@@ -353,8 +353,8 @@
   }
 
   .management-image-wrapper img {
-    width: 180px;
-    height: 240px;
+    width: 195px;
+    height: 270px;
   }
 }
 
@@ -372,7 +372,7 @@
 
   .pict-list-management-wrapper {
     width: 730px;
-    height: 450px;
+    height: 500px;
     flex-shrink: 0;
     border-radius: 16px;
     background: linear-gradient(279deg, #09588d 18.46%, rgba(9, 88, 141, 0) 115%);
@@ -427,7 +427,7 @@
 
   .management-image-wrapper img {
     width: 400px;
-    height: 500px;
+    height: 550px;
   }
 }
 
