@@ -17,6 +17,18 @@ const EventDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
+  const idParameter = queryParameters.get('id');
+
+  function truncateText(text, maxLength) {
+    const words = text.split(' ');
+
+    if (words.length > maxLength) {
+      const truncatedText = words.slice(0, maxLength).join(' ');
+      return `${truncatedText} ...`;
+    }
+
+    return text;
+  }
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -37,7 +49,8 @@ const EventDetail = () => {
   }
   const slicedData = sortedData.slice(0, 4);
   const contentRef = useRef();
-
+  const selectedItem = slicedData.find(item => item.id === parseInt(idParameter, 10));
+  console.log("ITEM", selectedItem);
   const handleDownloadPDF = () => {
     const content = contentRef.current;
     if (content) {
@@ -69,25 +82,27 @@ const EventDetail = () => {
       <div className="container-event">
         <div ref={contentRef}>
           <div className="event-detail-main-container">
-            <h2>{queryParameters.get("headline")}</h2>
+            <h2>{selectedItem.headline}</h2>
             <div className="date-writer-layout">
               <div className="date-layout">
                 <img src={LogoWriter} alt="Image" />
-                <p>{queryParameters.get("maker")}</p>
+                <p>{selectedItem.maker}</p>
               </div>
               <div className="writter-layout">
                 {/* <img src={LogoWriter} alt="Image" /> */}
-                <p>{queryParameters.get("date")}</p>
+                <p>{selectedItem.date}</p>
               </div>
             </div>
             <img
-              className="event-image-main-layout"
-              src={require(`../../assets/${queryParameters.get("img")}`)}
+              className="lg:event-image-main-layout"
+              src={require(`../../assets/${selectedItem.urlImage}`)}
               alt="image headline"
             />
           </div>
           <div className="isi-desc-event">
-            <p>{queryParameters.get("desc")}</p>
+            {selectedItem.deskripsi.split('\n').map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
           </div>
         </div>
 
@@ -150,7 +165,7 @@ const EventDetail = () => {
                       {item.headline}
                     </p>
                     <p className="gallery-text-item-deskripsi">
-                      {item.deskripsi}
+                      {truncateText(item.deskripsi, 10)}
                     </p>
                     <div className="maker-layout">
                       <img src={LogoWriter} alt="logo" />

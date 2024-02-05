@@ -1,114 +1,60 @@
 {
-    "bahasa": [
-        {
-          "id": 1,
-          "date": "01/08/2022",
-          "headline": "indonesia",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 2,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 2",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 3,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 3",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 4,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 4",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 5,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 5",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 6,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        }
-    ],
-    "english": [
-        {
-          "id": 1,
-          "date": "01/08/2022",
-          "headline": "english",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 2,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 2",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 3,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 3",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 4,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 4",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 5,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags 5",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        },
-        {
-          "id": 6,
-          "date": "01/08/2022",
-          "headline": "Ex-Rocket Internet, Uber e xecs` SaaS platform bags",
-          "deskripsi": "Blusheets said its helping over 10,000 companies automate their financial data.",
-          "maker": "Bloomberg",
-          "urlImage": "img/Rectangle108.png",
-          "alt": "Image 1"
-        }
-    ]
+  "bahasa": [
+    {
+      "id": 1,
+      "date": "01/08/2022",
+      "headline": "Pelepasan Siswa Kelas 12 SMK 2",
+      "deskripsi": "Yayasan Perguruan Cikini merayakan momen bersejarah dengan upacara pelepasan siswa kelas 12 pada bulan Juni 2023. Acara ini diadakan di Aula Ade Irma Suryani Nasution, menjadi wadah untuk memberikan penghargaan kepada siswa yang telah menyelesaikan perjalanan pendidikannya. Dalam suasana penuh kehangatan, siswa-siswa kelas 12 angkatan 2023 dipandu menuju babak baru dalam kehidupan mereka. \n Aula Ade Irma Suryani Nasution menjadi saksi bisu dari momen pelepasan ini, di mana kepala sekolah dan para guru memberikan wejangan kepada siswa-siswa yang akan menghadapi ujian kehidupan selanjutnya. Siswa-siswa diberikan motivasi untuk terus mengembangkan potensi, menjunjung tinggi nilai-nilai kejujuran, dan menjadi agen perubahan positif di masyarakat. \n Sebagai bagian dari rangkaian acara, Yayasan Perguruan Cikini turut memberikan penghargaan kepada siswa-siswa berprestasi yang telah menonjol dalam berbagai bidang. Pelepasan siswa kelas 12 ini bukan hanya sekadar perpisahan, tetapi juga awal dari perjalanan baru mereka yang diharapkan dapat membawa dampak positif bagi diri mereka sendiri dan lingkungan sekitar.",
+      "maker": "Redaksi",
+      "urlImage": "img/event/Pelepasan Kelas XII 2023.jpg",
+      "alt": "Pelepasan Kelas XII 2023.jpg"
+    },
+    {
+      "id": 2,
+      "date": "01/08/2022",
+      "headline": "XTRAVAGANZA 2022",
+      "deskripsi": "Dalam rangka menggali bakat dan menampilkan prestasi siswa, SMK 2 Musik Yayasan Perguruan Cikini menggelar acara spektakuler bertajuk 'XTRAVAGANZA 2022'. Acara ini menampilkan ragam talenta musik orkestra dari siswa-siswi SMK 2 Musik Yayasan Perguruan Cikini yang memukau penonton dengan keahlian dan dedikasi mereka dalam bermusik. Aula teater menjadi saksi ketangguhan mereka dalam menyajikan penampilan yang menghibur dan memberikan pengalaman musik yang luar biasa. \n XTRAVAGANZA 2022 bukan hanya sekadar pertunjukan biasa, melainkan panggung untuk menunjukkan kemampuan siswa SMK 2 Musik dalam mengolah harmoni dan melodi. Para penonton diajak merasakan nuansa musik yang kaya dan mendalam, memberikan apresiasi terhadap talenta yang diasah di bawah bimbingan pendidik yang berkompeten. Acara ini menjadi sarana bagi siswa untuk memperlihatkan kemampuan bermusik mereka di hadapan publik, sekaligus memperkuat semangat kebersamaan dan kecintaan terhadap seni musik. \n Melalui penampilan orkestra yang penuh semangat, SMK 2 Musik Yayasan Perguruan Cikini berhasil menciptakan pengalaman musik yang tak terlupakan bagi seluruh peserta dan penonton. Diharapkan, keberhasilan ini dapat menjadi inspirasi bagi siswa-siswi lainnya untuk terus berkembang dan mengeksplorasi potensi di bidang musik. Acara ini menandai prestasi gemilang sekolah dalam mencetak generasi musisi masa depan yang berbakat dan berdedikasi.",
+      "maker": "Redaksi",
+      "urlImage": "img/event/Pelepasan Kelas XII 2023.jpg",
+      "alt": "Pelepasan Kelas XII 2023.jpg"
+    },
+    {
+      "id": 3,
+      "date": "01/08/2022",
+      "headline": "Pelepasan Siswa Kelas 12 SMK 2",
+      "deskripsi": "Yayasan Perguruan Cikini merayakan momen bersejarah dengan upacara pelepasan siswa kelas 12 pada bulan Juni 2023. Acara ini diadakan di Aula Ade Irma Suryani Nasution, menjadi wadah untuk memberikan penghargaan kepada siswa yang telah menyelesaikan perjalanan pendidikannya. Dalam suasana penuh kehangatan, siswa-siswa kelas 12 angkatan 2023 dipandu menuju babak baru dalam kehidupan mereka. \n Aula Ade Irma Suryani Nasution menjadi saksi bisu dari momen pelepasan ini, di mana kepala sekolah dan para guru memberikan wejangan kepada siswa-siswa yang akan menghadapi ujian kehidupan selanjutnya. Siswa-siswa diberikan motivasi untuk terus mengembangkan potensi, menjunjung tinggi nilai-nilai kejujuran, dan menjadi agen perubahan positif di masyarakat.",
+      "maker": "Redaksi",
+      "urlImage": "img/event/Pelepasan Kelas XII 2023.jpg",
+      "alt": "Pelepasan Kelas XII 2023.jpg"
+    },
+    {
+      "id": 4,
+      "date": "01/08/2022",
+      "headline": "Acara 17 agustus 2022",
+      "deskripsi": "Dalam rangka merayakan hari lahirnya Indonesia yang ke-77 pada tanggal 17 Agustus, SMK 2 Musik Yayasan Perguruan Cikini turut berpartisipasi dengan menyelenggarakan acara khusus. Kemeriahan perayaan tersebut semakin terasa dengan penampilan musik istimewa yang disuguhkan oleh siswa SMK 2 Musik. Mereka berhasil menghibur para tamu undangan dan pejabat pemerintah yang hadir dalam acara yang dilaksanakan di Kantor Kementerian Pendidikan dan Kebudayaan (Kemendikbud) pada tahun 2022. \n Penampilan musik dari siswa SMK 2 Musik Yayasan Perguruan Cikini di acara peringatan kemerdekaan ini menciptakan atmosfer kebangsaan yang begitu menggema. Orkestra dan ansambel musik yang dibawakan dengan penuh semangat dan kekompakan menunjukkan prestasi siswa dalam menggali potensi musik mereka. Keindahan melodi dan harmoni yang dihasilkan menjadi bentuk penghormatan mereka terhadap perjuangan bangsa Indonesia. \n Perayaan di Kantor Kemendikbud ini memberikan kesempatan bagi siswa SMK 2 Musik untuk menunjukkan kontribusi mereka dalam memperingati kemerdekaan Indonesia. Dengan kolaborasi musikal yang memukau, mereka turut merayakan semangat persatuan dan keberagaman yang menjadi ciri khas negara ini. Melalui partisipasi ini, SMK 2 Musik Yayasan Perguruan Cikini memberikan kontribusi positif dalam memupuk rasa nasionalisme di kalangan siswa dan masyarakat.",
+      "maker": "Redaksi",
+      "urlImage": "img/event/Pelepasan Kelas XII 2023.jpg",
+      "alt": "Pelepasan Kelas XII 2023.jpg"
+    },
+    {
+      "id": 5,
+      "date": "01/08/2022",
+      "headline": "Kunjungan ke UPH",
+      "deskripsi": "SMK 2 Musik Yayasan Perguruan Cikini menggelar acara kunjungan ke kampus Universitas Pelita Harapan (UPH) pada tahun 2023. Acara ini bertujuan untuk memberikan pengenalan kepada siswa SMK 2 tentang budaya perkuliahan dan lingkungan kampus yang inspiratif. Selama kunjungan ini, para siswa dapat melihat langsung ruangan-ruangan kelas, perpustakaan, serta fasilitas lainnya yang dimiliki oleh UPH. \n Acara kunjungan ini menjadi kesempatan emas bagi siswa SMK 2 untuk mendapatkan pemahaman lebih dalam mengenai dunia perkuliahan dan kehidupan kampus. Mereka diberikan pengenalan tentang berbagai kegiatan akademik dan non-akademik yang dapat diikuti di UPH. Dalam suasana yang penuh antusiasme, siswa mendapatkan informasi mengenai program studi yang ditawarkan, kegiatan ekstrakurikuler, serta dukungan fasilitas akademik yang memadai. \n Selain pengenalan terhadap kehidupan perkuliahan, siswa SMK 2 juga diajak untuk mengenal budaya kampus UPH. Mereka berkesempatan berinteraksi dengan mahasiswa dan dosen, serta mendengarkan pengalaman-pengalaman unik yang mereka alami selama menempuh pendidikan di UPH. Hal ini diharapkan dapat memotivasi siswa SMK 2 untuk meraih prestasi dan merencanakan masa depan mereka di dunia perguruan tinggi. \n Kegiatan kunjungan ini berhasil menciptakan suasana akrab antara siswa SMK 2 dan lingkungan kampus UPH. Para siswa merasa terinspirasi dan lebih siap menghadapi peralihan dari pendidikan menengah ke pendidikan tinggi. Dengan dukungan dari yayasan perguruan cikini, kunjungan ini menjadi bagian penting dalam membantu siswa SMK 2 merencanakan karir dan mengejar impian akademik mereka.",
+      "maker": "Redaksi",
+      "urlImage": "img/event/Pelepasan Kelas XII 2023.jpg",
+      "alt": "Pelepasan Kelas XII 2023.jpg"
+    }
+  ],
+  "english": [
+    {
+      "id": 1,
+      "date": "01/08/2022",
+      "headline": "Graduation of 12th Grade Students at SMK 2",
+      "deskripsi": "The Cikini Education Foundation celebrates a historic moment with the graduation ceremony of 12th-grade students in June 2023. The event took place at the Ade Irma Suryani Nasution Hall, serving as a platform to honor students who have completed their educational journey. In a warm atmosphere, the 12th-grade students of the 2023 cohort are guided towards a new chapter in their lives. \n The Ade Irma Suryani Nasution Hall bears witness to this momentous occasion, where the headmaster and teachers provide guidance to students who will face the challenges of life ahead. Students are motivated to continue developing their potential, uphold the values of honesty, and become positive agents of change in society.",
+      "maker": "Redaksi",
+      "urlImage": "img/event/Pelepasan Kelas XII 2023.jpg",
+      "alt": "Pelepasan Kelas XII 2023.jpg"
+    }
+  ]
 }

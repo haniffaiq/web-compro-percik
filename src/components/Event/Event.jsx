@@ -48,6 +48,16 @@ const Event = () => {
   const endIndex = startIndex + itemsPerPage;
   const currentData = sortedData.slice(startIndex, endIndex);
 
+  function truncateText(text, maxLength) {
+    const words = text.split(' ');
+  
+    if (words.length > maxLength) {
+      const truncatedText = words.slice(0, maxLength).join(' ');
+      return `${truncatedText} ...`;
+    }
+  
+    return text;
+  }
   return (
     <>
       <div className="flex gap-1 ml-[35px] py-9">
@@ -79,7 +89,7 @@ const Event = () => {
               <p className="date-style">{item.date}</p>
               <div className="gallery-text-item ">
                 <p className="gallery-text-item-headline">{item.headline}</p>
-                <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
+                <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
                 <div className="maker-layout">
                   <img src={Logo} alt="logo" />
                   <p className="gallery-text-item-maker">{item.maker}</p>
