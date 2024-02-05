@@ -11,12 +11,11 @@ import data from "../../assets/json/school";
 const Ekstrakulikuler = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   let a = props.idSchool;
-  let selectedData = {}
+  let selectedData = {};
   if (globalState.globalProperty === "IND") {
-    selectedData = data.bahasa
-  }
-  else{
-    selectedData = data.english
+    selectedData = data.bahasa;
+  } else {
+    selectedData = data.english;
   }
   return (
     <>
@@ -26,15 +25,16 @@ const Ekstrakulikuler = (props) => {
         <div className="flex w-[350px] overflow-y-hidden lg:overflow-hidden lg:w-full gap-5 lg:gap-10 mt-5">
           {selectedData[a - 1].ekstrakulikuler.map((value, index) => {
             return (
-              <button className="h-full  lg:h-full  border rounded-lg p-3 flex flex-col">
+              <button className="border rounded-lg p-3 flex flex-col">
                 <img
                   className="flex justify-center min-w-[200px]"
-                  src={Foto}
+                  src={require(`../../assets/img/school/facility${value.imgUrl}`)}
                   alt="foto"
                 />
                 <div className="text-start text-md lg:text-2xl mt-5">
                   {value.title}
                 </div>
+                <div className="flex items-end h-full lg:flex-grow" />{" "}
                 <div className="flex gap-3 text-start mt-3">
                   <div className="text-[#8d8f91] flex-grow text-xs lg:text-md max-w-[300px]">
                     {value.desc}

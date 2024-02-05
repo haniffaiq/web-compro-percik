@@ -11,12 +11,11 @@ import data from "../../assets/json/school";
 const Fasilitas = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   let a = props.idSchool;
-  let selectedData = {}
+  let selectedData = {};
   if (globalState.globalProperty === "IND") {
-    selectedData = data.bahasa
-  }
-  else{
-    selectedData = data.english
+    selectedData = data.bahasa;
+  } else {
+    selectedData = data.english;
   }
   return (
     <>
@@ -25,7 +24,10 @@ const Fasilitas = (props) => {
         <div className="flex overflow-x-auto w-[350px] lg:w-full gap-5 lg:gap-10 mt-5">
           {selectedData[a - 1].fasilitas.map((value, index) => {
             return (
-              <button key={index} className="h-full border rounded-lg p-3 flex flex-col ">
+              <button
+                key={index}
+                className="border rounded-lg p-3 flex flex-col"
+              >
                 <img
                   className="flex justify-center min-w-[200px]"
                   src={require(`../../assets/img/school/facility${value.imgUrl}`)}
@@ -34,8 +36,9 @@ const Fasilitas = (props) => {
                 <div className="text-start text-md lg:text-2xl mt-5">
                   {value.title}
                 </div>
+                <div className="flex items-end h-full lg:flex-grow" />{" "}
                 <div className="flex gap-3 text-start mt-3">
-                  <div className="text-[#8d8f91] flex-grow text-xs lg:text-md max-w-[300px]">
+                  <div className="text-[#8d8f91]  text-xs lg:text-md max-w-[300px]">
                     {value.desc}
                   </div>
                 </div>
@@ -44,7 +47,6 @@ const Fasilitas = (props) => {
           })}
         </div>
       </div>
-
     </>
   );
 };

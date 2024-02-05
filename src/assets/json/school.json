@@ -8,64 +8,8 @@
       "students": 200,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "085xxxxxx",
-      "fasilitas": [
-        {
-          "title": "Lapangan",
-          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
-        },
-        {
-          "title": "Kolam Renang",
-          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
-        }
-      ],
-      "ekstrakulikuler": [
-        {
-          "title": "Sepak Bola",
-          "desc": "11111"
-        },
-        {
-          "title": "Renang",
-          "desc": "22222"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "SD Perguruan Cikini, Jakarta Pusat",
-      "type": "SD",
-      "image": "Rectangle108school.png",
-      "students": 250,
-      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085yyyyyy",
-      "fasilitas": [
-        {
-          "title": "Kolam Renang",
-          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
-        },
-        {
-          "title": "Lapangan",
-          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
-        }
-      ],
-      "ekstrakulikuler": [
-        {
-          "title": "Renang",
-          "desc": "22222"
-        },
-        {
-          "title": "Sepak Bola",
-          "desc": "11111"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "SMK 3 PERGURUAN “CIKINI”",
-      "type": "SMK",
-      "image": "Rectangle108school.png",
-      "students": 1246,
-      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085yyyyyy",
+      "visi": "Yayasan Perguruan “Cikini” mengutamakan pendidikan berwawasan kebangsaan dan budi pekerti yang luhur dengan memberdayakan kemampuan putra-putri bangsa agar dapat mengatasi tantangan masa depan dalam kehidupan bermasyarakat dan berbangsa.",
+      "misi": "/misi.png",
       "fasilitas": [
         {
           "title": "Ruang kelas",
@@ -116,11 +60,153 @@
       "ekstrakulikuler": [
         {
           "title": "Renang",
-          "desc": "22222"
+          "desc": "22222",
+          "imgUrl": "/Ruang Kelas.png"
         },
         {
           "title": "Sepak Bola",
-          "desc": "11111"
+          "desc": "11111",
+          "imgUrl": "/Ruang Kelas.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SD Perguruan Cikini, Jakarta Pusat",
+      "type": "SD",
+      "image": "Rectangle108school.png",
+      "students": 250,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "phone": "085yyyyyy",
+      "visi": "Yayasan Perguruan “Cikini” mengutamakan pendidikan berwawasan kebangsaan dan budi pekerti yang luhur dengan memberdayakan kemampuan putra-putri bangsa agar dapat mengatasi tantangan masa depan dalam kehidupan bermasyarakat dan berbangsa.",
+      "misi": "/misi.png",
+      "fasilitas": [
+        {
+          "title": "Ruang kelas",
+          "desc": "Digunakan sebagai ...",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Laboratorium",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Labolatorium.png"
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Ruang Kerja.png"
+        },
+        {
+          "title": "Perpustakaan",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Perpustakaan.png"
+        },
+        {
+          "title": "Cafetaria/Kantin",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Cafetaria atau Kantin.png"
+        },
+        {
+          "title": "Gedung Aula",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gedung Aula.png"
+        },
+        {
+          "title": "Gudang Sekolah",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gudang sekolah.png"
+        },
+        {
+          "title": "Kendaraan operasional",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Kendaraan operasional.png"
+        },
+        {
+          "title": "Jaringan Internet",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Jaringan Internet.png"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111",
+          "imgUrl": "/Ruang Kelas.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SMK 3 PERGURUAN “CIKINI”",
+      "type": "SMK",
+      "image": "Rectangle108school.png",
+      "students": 1246,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "phone": "085yyyyyy",
+      "visi": "Yayasan Perguruan “Cikini” mengutamakan pendidikan berwawasan kebangsaan dan budi pekerti yang luhur dengan memberdayakan kemampuan putra-putri bangsa agar dapat mengatasi tantangan masa depan dalam kehidupan bermasyarakat dan berbangsa.",
+      "misi": "/misi.png",
+      "fasilitas": [
+        {
+          "title": "Ruang kelas",
+          "desc": "Digunakan sebagai ...",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Laboratorium",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Labolatorium.png"
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Ruang Kerja.png"
+        },
+        {
+          "title": "Perpustakaan",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Perpustakaan.png"
+        },
+        {
+          "title": "Cafetaria/Kantin",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Cafetaria atau Kantin.png"
+        },
+        {
+          "title": "Gedung Aula",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gedung Aula.png"
+        },
+        {
+          "title": "Gudang Sekolah",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gudang sekolah.png"
+        },
+        {
+          "title": "Kendaraan operasional",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Kendaraan operasional.png"
+        },
+        {
+          "title": "Jaringan Internet",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Jaringan Internet.png"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111",
+          "imgUrl": "/Ruang Kelas.png"
         }
       ]
     }
@@ -134,64 +220,8 @@
       "students": 200,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "085xxxxxx",
-      "fasilitas": [
-        {
-          "title": "Lapangan",
-          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
-        },
-        {
-          "title": "Kolam Renang",
-          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
-        }
-      ],
-      "ekstrakulikuler": [
-        {
-          "title": "Sepak Bola",
-          "desc": "11111"
-        },
-        {
-          "title": "Renang",
-          "desc": "22222"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "SD Perguruan Cikini, Jakarta Pusat",
-      "type": "SD",
-      "image": "Rectangle108school.png",
-      "students": 250,
-      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085yyyyyy",
-      "fasilitas": [
-        {
-          "title": "Kolam Renang",
-          "desc": "BDigunakan sebagai wadah ekstrakulikuler renang dan tempat bermain"
-        },
-        {
-          "title": "Lapangan",
-          "desc": "Digunakan sebagai wadah ekstrakulikuler sepak bola dan menjadi tempat lomba setiap tahunnya"
-        }
-      ],
-      "ekstrakulikuler": [
-        {
-          "title": "Renang",
-          "desc": "22222"
-        },
-        {
-          "title": "Sepak Bola",
-          "desc": "11111"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "SMK 3 PERGURUAN “CIKINI”",
-      "type": "SMK",
-      "image": "Rectangle108school.png",
-      "students": 1246,
-      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "085yyyyyy",
+      "visi": "Yayasan Perguruan “Cikini” mengutamakan pendidikan berwawasan kebangsaan dan budi pekerti yang luhur dengan memberdayakan kemampuan putra-putri bangsa agar dapat mengatasi tantangan masa depan dalam kehidupan bermasyarakat dan berbangsa.",
+      "misi": "/misi.png",
       "fasilitas": [
         {
           "title": "Ruang kelas",
@@ -242,11 +272,153 @@
       "ekstrakulikuler": [
         {
           "title": "Renang",
-          "desc": "22222"
+          "desc": "22222",
+          "imgUrl": "/Ruang Kelas.png"
         },
         {
           "title": "Sepak Bola",
-          "desc": "11111"
+          "desc": "11111",
+          "imgUrl": "/Ruang Kelas.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SD Perguruan Cikini, Jakarta Pusat",
+      "type": "SD",
+      "image": "Rectangle108school.png",
+      "students": 250,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "phone": "085yyyyyy",
+      "visi": "Yayasan Perguruan “Cikini” mengutamakan pendidikan berwawasan kebangsaan dan budi pekerti yang luhur dengan memberdayakan kemampuan putra-putri bangsa agar dapat mengatasi tantangan masa depan dalam kehidupan bermasyarakat dan berbangsa.",
+      "misi": "/misi.png",
+      "fasilitas": [
+        {
+          "title": "Ruang kelas",
+          "desc": "Digunakan sebagai ...",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Laboratorium",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Labolatorium.png"
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Ruang Kerja.png"
+        },
+        {
+          "title": "Perpustakaan",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Perpustakaan.png"
+        },
+        {
+          "title": "Cafetaria/Kantin",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Cafetaria atau Kantin.png"
+        },
+        {
+          "title": "Gedung Aula",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gedung Aula.png"
+        },
+        {
+          "title": "Gudang Sekolah",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gudang sekolah.png"
+        },
+        {
+          "title": "Kendaraan operasional",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Kendaraan operasional.png"
+        },
+        {
+          "title": "Jaringan Internet",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Jaringan Internet.png"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111",
+          "imgUrl": "/Ruang Kelas.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SMK 3 PERGURUAN “CIKINI”",
+      "type": "SMK",
+      "image": "Rectangle108school.png",
+      "students": 1246,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "phone": "085yyyyyy",
+      "visi": "Yayasan Perguruan “Cikini” mengutamakan pendidikan berwawasan kebangsaan dan budi pekerti yang luhur dengan memberdayakan kemampuan putra-putri bangsa agar dapat mengatasi tantangan masa depan dalam kehidupan bermasyarakat dan berbangsa.",
+      "misi": "/misi.png",
+      "fasilitas": [
+        {
+          "title": "Ruang kelas",
+          "desc": "Digunakan sebagai ...",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Laboratorium",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Labolatorium.png"
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Ruang Kerja.png"
+        },
+        {
+          "title": "Perpustakaan",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Perpustakaan.png"
+        },
+        {
+          "title": "Cafetaria/Kantin",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Cafetaria atau Kantin.png"
+        },
+        {
+          "title": "Gedung Aula",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gedung Aula.png"
+        },
+        {
+          "title": "Gudang Sekolah",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Gudang sekolah.png"
+        },
+        {
+          "title": "Kendaraan operasional",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Kendaraan operasional.png"
+        },
+        {
+          "title": "Jaringan Internet",
+          "desc": "Digunakan sebagai...",
+          "imgUrl": "/Jaringan Internet.png"
+        }
+      ],
+      "ekstrakulikuler": [
+        {
+          "title": "Renang",
+          "desc": "22222",
+          "imgUrl": "/Ruang Kelas.png"
+        },
+        {
+          "title": "Sepak Bola",
+          "desc": "11111",
+          "imgUrl": "/Ruang Kelas.png"
         }
       ]
     }
