@@ -50,7 +50,7 @@ const Project = () => {
             <p className="overlay-text-tittle">{item.tittleProyek}</p>
             <p className="overlay-text-desc">{item.deskripsiProyek.length > 400 ? `${item.deskripsiProyek.slice(0, 400)}...` : item.deskripsiProyek}</p>
             <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="link-layout">
-              <p>Selengkapnya...</p>
+              <p>{globalState.globalProperty === "IND" ? "Selengkapnya..." : "More..."}</p>
             </Link>
           </Link>
         ))}
