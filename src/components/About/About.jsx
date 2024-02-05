@@ -2,23 +2,34 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import Foto from "../../assets/img/unsplash_pAtA8xe_iVM.png";
-import data from "../../assets/json/about";
+import data from "../../assets/json/about.json";
 
 const AboutUs = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
+
+
+  let selectedData = {}
+  if (globalState.globalProperty === "IND") {
+    selectedData = data.bahasa
+  }
+  else {
+    selectedData = data.english
+  }
+
+  
   const [html, setHtml] = useState({ __html: "" });
   const [html2, setHtml2] = useState({ __html: "" });
   const [html3, setHtml3] = useState({ __html: "" });
 
   let descLoader = () => {
     setHtml({
-      __html: `<div>${data.bahasa[0].desc.replace(/\n/g, "<br><br>")}</div>`,
+      __html: `<div>${selectedData[0].desc.replace(/\n/g, "<br><br>")}</div>`,
     });
     setHtml2({
-      __html: `<div>${data.bahasa[1].desc.replace(/\n/g, "<br><br>")}</div>`,
+      __html: `<div>${selectedData[1].desc.replace(/\n/g, "<br><br>")}</div>`,
     });
     setHtml3({
-      __html: `<div>${data.bahasa[2].desc.replace(/\n/g, "<br><br>")}</div>`,
+      __html: `<div>${selectedData[2].desc.replace(/\n/g, "<br><br>")}</div>`,
     });
   };
 
@@ -32,7 +43,7 @@ const AboutUs = () => {
         <div className="text-center text-3xl lg:text-5xl font-bold mb-10">
           Tentang Kami
         </div>
-        {data.bahasa.map((value, index) => {
+        {selectedData.map((value, index) => {
           return (
             <div
               style={{
