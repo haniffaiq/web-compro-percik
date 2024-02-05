@@ -21,7 +21,7 @@ const School = () => {
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
         </Link>
         <span> / </span>
-        <Link to="/sekolah" className="">
+        <Link to="/sekolah" className="font-bold">
           {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
         </Link>
       </div>

@@ -24,7 +24,7 @@ const About = () => {
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
         </Link>
         <span> / </span>
-        <Link to="/about" className="">
+        <Link to="/about" className="font-bold">
           {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
         </Link>
       </div>
