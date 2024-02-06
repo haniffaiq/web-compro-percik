@@ -1,8 +1,8 @@
 import React, { useContext, useState, useRef, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import GalleryProjectDetail from "./GalleryProjectDetail";
+import DanaDetail from "./DanaDetail";
 import data from "../../assets/json/project.json";
 import IconDownload from "../../assets/img/download.png";
 import "./ProjectDetailStyle.css";
@@ -10,14 +10,28 @@ import html2pdf from "html2pdf.js";
 
 const ProjectDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
+  const [html, setHtml] = useState({ __html: "" });
+  const [html2, setHtml2] = useState({ __html: "" });
   const location = useLocation();
+
   const queryParameters = new URLSearchParams(location.search);
-  const projectDatasBahasa = data.bahasa.find((item) => (item.id = queryParameters.get("id")));
-  const projectDatasEnglish = data.english.find((item) => (item.id = queryParameters.get("id")));
+  console.log("id project detail nya = ", queryParameters.get("id"));
+  const projectDatasBahasa = data.bahasa.find((item) => item.id === parseInt(queryParameters.get("id")));
+  const projectDatasEnglish = data.english.find((item) => item.id === parseInt(queryParameters.get("id")));
+
+  let descLoader = () => {
+    setHtml({
+      __html: `<p>${projectDatasBahasa.Paragraf.replace(/\n/g, "<br><br>")}</p>`,
+    });
+    setHtml2({
+      __html: `<p>${projectDatasEnglish.Paragraf.replace(/\n/g, "<br><br>")}</p>`,
+    });
+  };
 
   const contentRef = useRef();
   useEffect(() => {
     window.scrollTo(0, 0);
+    descLoader();
   }, []);
 
   // console.log("Data" ,queryParameters.get("id"));
@@ -40,6 +54,7 @@ const ProjectDetail = () => {
   const ComponentPDF = () => {
     return (
       <div style={{ display: "none" }}>
+        {console.log("data indo ", projectDatasBahasa)}
         <div className="project-detail-main-container-pdf" ref={contentRef}>
           <h2>{queryParameters.get("tittle")}</h2>
           <div className="image-detail-layout-pdf">
@@ -49,41 +64,20 @@ const ProjectDetail = () => {
           {globalState.globalProperty === "IND" ? (
             <div>
               <div className="desc-main-container-pdf">
-                {projectDatasBahasa.Paragraf.map((ParagrafText) => (
-                  <div className="desc-container-layout-pdf">
-                    <p>{ParagrafText}</p>
-                  </div>
-                ))}
-              </div>
-              <div className="dana-detail-container">
-                <div className="dana-detail-content-layout">
-                  {projectDatasBahasa.rincianDanaPict.map((DanaPict) => (
-                    <div>
-                      <img src={require(`../../assets/img/project/${DanaPict}`)} alt="rincian-dana" />
-                    </div>
-                  ))}
+                <div className="desc-container-layout-pdf">
+                  <p dangerouslySetInnerHTML={html} />
                 </div>
               </div>
+              <DanaDetail Getid={queryParameters.get("id")} />
             </div>
           ) : (
             <div>
               <div className="desc-main-container-pdf">
-                {projectDatasEnglish.Paragraf.map((ParagrafText) => (
-                  <div className="desc-container-layout-pdf">
-                    <p>{ParagrafText}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="dana-detail-container">
-                <div className="dana-detail-content-layout">
-                  {projectDatasEnglish.rincianDanaPict.map((DanaPict) => (
-                    <div>
-                      <img src={require(`../../assets/img/project/${DanaPict}`)} alt="rincian-dana" />
-                    </div>
-                  ))}
+                <div className="desc-container-layout-pdf">
+                  <p dangerouslySetInnerHTML={html2} />
                 </div>
               </div>
+              <DanaDetail Getid={queryParameters.get("id")} />
             </div>
           )}
         </div>
@@ -109,19 +103,15 @@ const ProjectDetail = () => {
         </div>
         {globalState.globalProperty === "IND" ? (
           <div className="desc-main-container">
-            {projectDatasBahasa.Paragraf.map((ParagrafText) => (
-              <div className="desc-container-layout">
-                <p>{ParagrafText}</p>
-              </div>
-            ))}
+            <div className="desc-container-layout">
+              <p dangerouslySetInnerHTML={html} />
+            </div>
           </div>
         ) : (
           <div className="desc-main-container">
-            {projectDatasEnglish.Paragraf.map((ParagrafText) => (
-              <div className="desc-container-layout">
-                <p>{ParagrafText}</p>
-              </div>
-            ))}
+            <div className="desc-container-layout">
+              <p dangerouslySetInnerHTML={html2} />
+            </div>
           </div>
         )}
       </div>
