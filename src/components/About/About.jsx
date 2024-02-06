@@ -40,7 +40,7 @@ const AboutUs = () => {
   return (
     <>
       <div className="p-5 lg:p-8">
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-10">
+        <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">
           Tentang Kami
         </div>
         {selectedData.map((value, index) => {
