@@ -13,12 +13,25 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [scrollTimeout, setScrollTimeout] = useState(null);
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
     const isVisible = prevScrollPos > currentScrollPos;
     setPrevScrollPos(currentScrollPos);
-    setVisible(isVisible);
+
+    clearTimeout(scrollTimeout);
+    setScrollTimeout(
+      setTimeout(() => {
+        setVisible(true);
+      }, 500)
+    );
+
+    if (isVisible) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
   };
 
   useEffect(() => {
