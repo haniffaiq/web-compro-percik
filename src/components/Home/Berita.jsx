@@ -12,8 +12,6 @@ const parseDate = (dateString) => {
   return new Date(year, month - 1, day);
 };
 
-
-
 const Berita = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   console.log(globalState, "DIHeader");
@@ -23,10 +21,10 @@ const Berita = () => {
   };
 
   function truncateText(text, maxLength) {
-    const words = text.split(' ');
+    const words = text.split(" ");
 
     if (words.length > maxLength) {
-      const truncatedText = words.slice(0, maxLength).join(' ');
+      const truncatedText = words.slice(0, maxLength).join(" ");
       return `${truncatedText} ...`;
     }
 
@@ -64,7 +62,7 @@ const Berita = () => {
             </button>
           </Link>
         </div>
-        <div className="flex w-full lg:w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-4 gap-5 mt-0 lg:mt-10">
+        <div className="flex w-full lg:w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-4 gap-5 mt-0 lg:mt-10 container">
           {currentData.slice(0, 4).map((item) => (
             <Link
               key={item.id}

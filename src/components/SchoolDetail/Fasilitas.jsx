@@ -21,7 +21,7 @@ const Fasilitas = (props) => {
     <>
       <div className="p-5 lg:p-8">
         <div className="text-5xl font-bold">Fasilitas</div>
-        <div className="flex overflow-x-auto w-[350px] lg:w-full gap-5 lg:gap-10 mt-5">
+        <div className="flex overflow-x-auto w-[350px] lg:w-full gap-5 lg:gap-10 mt-5 container">
           {selectedData[a - 1].fasilitas.map((value, index) => {
             return (
               <button
