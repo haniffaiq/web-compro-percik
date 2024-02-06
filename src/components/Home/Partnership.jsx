@@ -13,12 +13,18 @@ const Partnership = () => {
   return (
     <>
       <div className="flex flex-col gap-2 items-center p-3 bg-[#EEF6FF] lg:bg-[#F3F3F3]">
-        {/* <div className="lg:flex hidden text-5xl font-bold mb-10">
-          Partnership
-        </div> */}
-        <div className="flex justify-center gap-5 lg:gap-28 lg:h-[200px] lg:w-full h-[50px] w-[350px] overflow-y-hidden">
+        <div className="flex justify-center gap-5 lg:gap-28 lg:h-[200px] lg:w-full h-[50px] w-[350px] overflow-y-hidden container">
           {/* <div className="h-full border py-3"> */}
+          <div>
+            <img src={Logo} className="h-full" alt="logo" />
+          </div>
+          {/* <img src={Logo} className="h-full" alt="logo" />
           <img src={Logo} className="h-full" alt="logo" />
+          <img src={Logo} className="h-full" alt="logo" />
+          <img src={Logo} className="h-full" alt="logo" />
+          <img src={Logo} className="h-full" alt="logo" />
+          <img src={Logo} className="h-full" alt="logo" />
+          <img src={Logo} className="h-full" alt="logo" /> */}
           {/* </div> */}
         </div>
       </div>

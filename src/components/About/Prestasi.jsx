@@ -93,7 +93,7 @@ const Prestasi = () => {
         <div className="text-center text-3xl lg:text-5xl font-bold mb-10">
           Prestasi Unggulan
         </div>
-        <div className="flex overflow-y-hidden lg:overflow-hidden lg:w-full lg:grid lg:grid-cols-3 gap-5 lg:gap-10 w-full ">
+        <div className="flex overflow-y-hidden lg:overflow-hidden lg:w-full lg:grid lg:grid-cols-3 gap-5 lg:gap-10 w-full container">
           {/* Gradasi putih di kiri
           <div className="absolute h-full w-1/6 left-0 bg-gradient-to-r from-white to-transparent"></div> */}
 
