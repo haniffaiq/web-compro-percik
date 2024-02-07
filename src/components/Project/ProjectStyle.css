@@ -28,7 +28,7 @@
   .image-list-wrapper {
     position: relative;
     width: 334.365px;
-    height: 190.241px;
+    height: 200px;
     overflow: hidden;
     border-radius: 20px;
   }
@@ -48,13 +48,18 @@
     border-radius: 20px;
   }
 
+  .overlay-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .overlay-text-tittle {
     position: absolute;
-    right: 19%;
-    bottom: 100px;
+    bottom: 140px;
     color: white;
     font-family: "Segoe UI";
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -65,12 +70,11 @@
     width: 250px;
     height: 49.153px;
     position: absolute;
-    right: 13%;
-    bottom: 40px;
+    bottom: 90px;
     color: white;
     text-align: center;
     font-family: "Segoe UI";
-    font-size: 8px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

@@ -49,13 +49,13 @@ const Event = () => {
   const currentData = sortedData.slice(startIndex, endIndex);
 
   function truncateText(text, maxLength) {
-    const words = text.split(' ');
-  
+    const words = text.split(" ");
+
     if (words.length > maxLength) {
-      const truncatedText = words.slice(0, maxLength).join(' ');
+      const truncatedText = words.slice(0, maxLength).join(" ");
       return `${truncatedText} ...`;
     }
-  
+
     return text;
   }
   return (
@@ -74,20 +74,13 @@ const Event = () => {
       </div>
       <div className="gallery">
         {currentData.map((item) => (
-          <Link
-            key={item.id}
-            to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
-            className="gallery-item shadow-xl"
-          >
+          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
             <div>
               <div>
-                <img
-                  src={require(`../../assets/${item.urlImage}`)}
-                  alt={item.alt}
-                />
+                <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
-              <p className="date-style">{item.date}</p>
               <div className="gallery-text-item ">
+                <p className="date-style">{item.date}</p>
                 <p className="gallery-text-item-headline">{item.headline}</p>
                 <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
                 <div className="maker-layout">
@@ -99,12 +92,7 @@ const Event = () => {
           </Link>
         ))}
       </div>
-      <Pagination
-        totalItems={currentData.length}
-        itemsPerPage={itemsPerPage}
-        currentPage={currentPage}
-        onPageChange={handlePageChange}
-      />
+      <Pagination totalItems={currentData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
     </>
   );
 };
