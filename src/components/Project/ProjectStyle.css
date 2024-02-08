@@ -295,7 +295,7 @@
 }
 
 /* Untuk Desktop PC */
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) and (min-height: 1080px) {
   .page-tittle {
     display: flex;
     justify-content: center;
