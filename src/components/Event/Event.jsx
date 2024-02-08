@@ -7,7 +7,7 @@ import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import Pagination from "./Pagination";
 import data from "../../assets/json/events.json";
 
-const itemsPerPage = 12;
+const itemsPerPage = 8;
 const parseDate = (dateString) => {
   const [day, month, year] = dateString.split("/").map(Number);
   return new Date(year, month - 1, day);
@@ -92,7 +92,7 @@ const Event = () => {
           </Link>
         ))}
       </div>
-      <Pagination totalItems={currentData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
+      <Pagination totalItems={sortedData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
     </>
   );
 };
