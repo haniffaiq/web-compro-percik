@@ -97,7 +97,8 @@ const ProjectDetail = () => {
       </div>
 
       <div className="project-detail-main-container">
-        <h2>{queryParameters.get("tittle")}</h2>
+        {globalState.globalProperty === "IND" ? <h2>{projectDatasBahasa.tittleProyek}</h2> : <h2>{projectDatasEnglish.tittleProyek}</h2>}
+
         <div className="image-detail-layout">
           <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
         </div>

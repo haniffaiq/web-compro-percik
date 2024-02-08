@@ -206,6 +206,7 @@
     line-height: normal;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   .image-detail-layout {
@@ -308,7 +309,7 @@
     font-weight: 700;
     line-height: normal;
     display: flex;
-
+    text-align: center;
     justify-content: center;
   }
 
@@ -416,6 +417,7 @@
     line-height: normal;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   .image-detail-layout {
@@ -512,6 +514,7 @@
     line-height: normal;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   .image-detail-layout {
