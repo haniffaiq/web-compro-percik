@@ -49,7 +49,7 @@ const Project = () => {
             <img src={require(`../../assets/img/project/${item.urlImage}`)} alt="img" />
             <div className="overlay-layout">
               <p className="overlay-text-tittle">{item.tittleProyek}</p>
-              <p className="overlay-text-desc">{item.deskripsiProyek.length > 400 ? `${item.deskripsiProyek.slice(0, 400)}...` : item.deskripsiProyek}</p>
+              <p className="overlay-text-desc">{item.deskripsiProyek.length > 350 ? `${item.deskripsiProyek.slice(0, 350)}...` : item.deskripsiProyek}</p>
             </div>
             <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="link-layout">
               <p>{globalState.globalProperty === "IND" ? "Selengkapnya..." : "More..."}</p>

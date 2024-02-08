@@ -56,14 +56,14 @@
 
   .overlay-text-tittle {
     position: absolute;
-    bottom: 140px;
+    bottom: 80px;
     color: white;
     font-family: "Segoe UI";
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    max-width: 230px;
+    max-width: 250px;
     text-align: center;
   }
   .overlay-text-desc {
@@ -78,22 +78,32 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: none;
   }
 
   .link-layout {
-    width: 704px;
-    height: 189px;
+    width: 150px;
+    border-radius: 15px;
     position: absolute;
-    right: 23px;
-    bottom: -160px;
+    display: flex;
+    justify-content: center;
+    left: 85px;
+    bottom: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     color: white;
     text-align: right;
     font-family: "Segoe UI";
-    font-size: 8px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background-color: #09588d;
   }
+}
+
+.link-layout p {
+  margin-top: 8px;
 }
 
 /* Untuk Tablet */
@@ -243,7 +253,7 @@
 
   .overlay-text-tittle {
     position: absolute;
-    right: 73px;
+    right: 65px;
     bottom: 226px;
     color: white;
     font-family: "Segoe UI";
@@ -254,7 +264,7 @@
     max-width: 690px;
   }
   .overlay-text-desc {
-    width: 704px;
+    width: 679px;
     height: 189px;
     position: absolute;
     right: 73px;
