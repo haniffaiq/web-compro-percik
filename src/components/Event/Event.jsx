@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import "./EventStyle.css";
-import Rec1 from "../../assets/img/Rectangle108.png";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import Pagination from "./Pagination";
 import data from "../../assets/json/events.json";

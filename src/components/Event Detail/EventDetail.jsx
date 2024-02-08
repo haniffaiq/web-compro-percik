@@ -17,7 +17,7 @@ const EventDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
-  const idParameter = queryParameters.get('id');
+  let idParameter = queryParameters.get('id');
 
   function truncateText(text, maxLength) {
     const words = text.split(' ');
@@ -49,8 +49,9 @@ const EventDetail = () => {
   }
   const slicedData = sortedData.slice(0, 4);
   const contentRef = useRef();
-  const selectedItem = slicedData.find(item => item.id === parseInt(idParameter, 10));
+  const selectedItem = sortedData.find(item => item.id === parseInt(idParameter, 10));
   console.log("ITEM", selectedItem);
+
   const handleDownloadPDF = () => {
     const content = contentRef.current;
     if (content) {
