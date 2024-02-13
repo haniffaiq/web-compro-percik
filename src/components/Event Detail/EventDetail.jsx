@@ -17,13 +17,13 @@ const EventDetail = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const location = useLocation();
   const queryParameters = new URLSearchParams(location.search);
-  let idParameter = queryParameters.get('id');
+  let idParameter = queryParameters.get("id");
 
   function truncateText(text, maxLength) {
-    const words = text.split(' ');
+    const words = text.split(" ");
 
     if (words.length > maxLength) {
-      const truncatedText = words.slice(0, maxLength).join(' ');
+      const truncatedText = words.slice(0, maxLength).join(" ");
       return `${truncatedText} ...`;
     }
 
@@ -49,7 +49,7 @@ const EventDetail = () => {
   }
   const slicedData = sortedData.slice(0, 4);
   const contentRef = useRef();
-  const selectedItem = sortedData.find(item => item.id === parseInt(idParameter, 10));
+  const selectedItem = sortedData.find((item) => item.id === parseInt(idParameter, 10));
   console.log("ITEM", selectedItem);
 
   const handleDownloadPDF = () => {
@@ -66,6 +66,34 @@ const EventDetail = () => {
       html2pdf().from(content).set(pdfOptions).save();
     }
   };
+
+  const ComponentPDF = () => {
+    return (
+      <div style={{ display: "none" }}>
+        <div ref={contentRef}>
+          <div className="event-detail-main-container-pdf">
+            <h2>{selectedItem.headline}</h2>
+            <div className="date-writer-layout-pdf">
+              <div className="date-layout-pdf">
+                <img src={LogoWriter} alt="Image" />
+                <p>{selectedItem.maker}</p>
+              </div>
+              <div className="writter-layout-pdf">
+                {/* <img src={LogoWriter} alt="Image" /> */}
+                <p>{selectedItem.date}</p>
+              </div>
+            </div>
+            <img className="lg:event-image-main-layout" src={require(`../../assets/${selectedItem.urlImage}`)} alt="image headline" />
+          </div>
+          <div className="isi-desc-event-pdf">
+            {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <>
       <div className="flex gap-1 ml-[35px] py-9">
@@ -74,14 +102,12 @@ const EventDetail = () => {
         </Link>
         <span> / </span>
         <Link to="/project" className="">
-          {globalState.globalProperty === "IND"
-            ? "Detail Berita & Acara"
-            : "News & Event Details"}
+          {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "News & Event Details"}
         </Link>
       </div>
 
       <div className="container-event">
-        <div ref={contentRef}>
+        <div>
           <div className="event-detail-main-container">
             <h2>{selectedItem.headline}</h2>
             <div className="date-writer-layout">
@@ -94,80 +120,36 @@ const EventDetail = () => {
                 <p>{selectedItem.date}</p>
               </div>
             </div>
-            <img
-              className="lg:event-image-main-layout"
-              src={require(`../../assets/${selectedItem.urlImage}`)}
-              alt="image headline"
-            />
+            <img className="lg:event-image-main-layout" src={require(`../../assets/${selectedItem.urlImage}`)} alt="image headline" />
           </div>
           <div className="isi-desc-event">
-            {selectedItem.deskripsi.split('\n').map((paragraph, index) => (
+            {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}
           </div>
         </div>
-
+        <ComponentPDF />
         <div className="detail-selengkapnya-event-layout">
-          <p>
-            Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :
-          </p>
-          <button
-            className="detail-selengkapnya-event-button-layout"
-            onClick={handleDownloadPDF}
-          >
+          <p>{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more details, please download the following link:"}</p>
+          <button className="detail-selengkapnya-event-button-layout" onClick={handleDownloadPDF}>
             <img src={IconDownload} />
-            <p>Download Berita</p>
+            <p>{globalState.globalProperty === "IND" ? "Download Berita" : "Download News"}</p>
           </button>
         </div>
-        {/* <div className="outer-ppdb-container">
-          <div className="inner-ppdb-container">
-            <div className="ppdb-txt-layout">
-              <p className="ppdb-txt-bold">Anda Sudah Daftar PPDB ????</p>
-              <p className="ppdb-txt-reg">Yuk daftar PPDB secara daring dan tanpa ribeat sekarang juga</p>
-            </div>
-            <div className="ppdb-button-layout">
-              <button className="ppdb-button-style">Ayo Daftar Sekarang !</button>
-            </div>
-          </div>
-        </div> */}
-
-        {/* Style anip */}
-        {/* <div className="mt-20 w-full border bg-[#E6F7FF] border-[#1890FF] p-5">
-          <div className="flex justify-between">
-            <div className="flex flex-col gap-2">
-              <div className="font-bold text-xl">Anda Sudah Daftar PPDB ???</div>
-              <div>Yuk daftar PPDB secara daring dan tanpa ribet Sekarang juga</div>
-            </div>
-            <div className="flex items-center">
-              <button className="border py-3 px-3 border-none bg-[#09588D] text-white font-bold text-sm rounded-lg">Ayo Daftar Sekarang !</button>
-            </div>
-          </div>
-        </div> */}
 
         <div className="berita-lainnya-layout">
           <h2>Berita Lainnya</h2>
           <div className="berita-lainnya-gallery">
             {slicedData.map((item) => (
-              <Link
-                key={item.id}
-                to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
-                className="gallery-item shadow-xl"
-              >
+              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
                 <div className="card-layout">
                   <div>
-                    <img
-                      src={require(`../../assets/${item.urlImage}`)}
-                      alt={item.alt}
-                    />
+                    <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
                   </div>
                   <p className="date-style">{item.date}</p>
                   <div className="gallery-text-item">
-                    <p className="gallery-text-item-headline">
-                      {item.headline}
-                    </p>
-                    <p className="gallery-text-item-deskripsi">
-                      {truncateText(item.deskripsi, 10)}
-                    </p>
+                    <p className="gallery-text-item-headline">{item.headline}</p>
+                    <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
                     <div className="maker-layout">
                       <img src={LogoWriter} alt="logo" />
                       <p className="gallery-text-item-maker">{item.maker}</p>
@@ -179,30 +161,6 @@ const EventDetail = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="berita-lainnya-layout">
-        <h2>Berita Lainnya</h2>
-        <div className="berita-lainnya-gallery">
-          {slicedData.map((item) => (
-            <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
-              <div>
-                <div>
-                  <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
-                </div>
-                <p className="date-style">{item.date}</p>
-                <div className="gallery-text-item">
-                  <p className="gallery-text-item-headline">{item.headline}</p>
-                  <p className="gallery-text-item-deskripsi">{item.deskripsi}</p>
-                  <div className="maker-layout">
-                    <img src={LogoWriter} alt="logo" />
-                    <p className="gallery-text-item-maker">{item.maker}</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div> */}
     </>
   );
 };

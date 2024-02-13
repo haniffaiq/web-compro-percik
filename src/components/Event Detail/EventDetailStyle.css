@@ -78,6 +78,7 @@
 
   .isi-desc-event {
     margin-top: 24px;
+    text-align: justify;
   }
 
   .detail-selengkapnya-event-layout {
@@ -113,49 +114,6 @@
     /* 150% */
     letter-spacing: -0.176px;
     margin-top: 20px;
-  }
-
-  .outer-ppdb-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  .inner-ppdb-container {
-    background: #e6f7ff;
-    border: 1px solid var(--Status-Info, #1890ff);
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    padding: 15px;
-  }
-
-  .ppdb-txt-bold {
-    color: var(--typo-HEADING, rgba(0, 0, 0, 0.85));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.34px;
-  }
-
-  .ppdb-txt-reg {
-    color: var(--typo-text, rgba(0, 0, 0, 0.65));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: -0.176px;
-  }
-
-  .ppdb-button-style {
-    border-radius: 8px;
-    background: #09588d;
-    padding: 16px;
-    color: #fff;
   }
 
   .berita-lainnya-gallery {
@@ -265,6 +223,7 @@
 
   .isi-desc-event {
     margin-top: 24px;
+    text-align: justify;
   }
 
   .detail-selengkapnya-event-layout {
@@ -300,49 +259,6 @@
     /* 150% */
     letter-spacing: -0.176px;
     margin-top: 20px;
-  }
-
-  .outer-ppdb-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  .inner-ppdb-container {
-    background: #e6f7ff;
-    border: 1px solid var(--Status-Info, #1890ff);
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    padding: 15px;
-  }
-
-  .ppdb-txt-bold {
-    color: var(--typo-HEADING, rgba(0, 0, 0, 0.85));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.34px;
-  }
-
-  .ppdb-txt-reg {
-    color: var(--typo-text, rgba(0, 0, 0, 0.65));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: -0.176px;
-  }
-
-  .ppdb-button-style {
-    border-radius: 8px;
-    background: #09588d;
-    padding: 16px;
-    color: #fff;
   }
 
   .berita-lainnya-gallery {
@@ -454,6 +370,7 @@
 
   .isi-desc-event {
     margin-top: 24px;
+    text-align: justify;
   }
 
   .detail-selengkapnya-event-layout {
@@ -489,49 +406,6 @@
     /* 150% */
     letter-spacing: -0.176px;
     margin-top: 20px;
-  }
-
-  .outer-ppdb-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  .inner-ppdb-container {
-    background: #e6f7ff;
-    border: 1px solid var(--Status-Info, #1890ff);
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    padding: 15px;
-  }
-
-  .ppdb-txt-bold {
-    color: var(--typo-HEADING, rgba(0, 0, 0, 0.85));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.34px;
-  }
-
-  .ppdb-txt-reg {
-    color: var(--typo-text, rgba(0, 0, 0, 0.65));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: -0.176px;
-  }
-
-  .ppdb-button-style {
-    border-radius: 8px;
-    background: #09588d;
-    padding: 16px;
-    color: #fff;
   }
 
   .berita-lainnya-gallery {
@@ -650,6 +524,7 @@
     line-height: 24px;
     /* 150% */
     letter-spacing: -0.176px;
+    text-align: justify;
   }
 
   .detail-selengkapnya-event-layout {
@@ -697,49 +572,6 @@
     margin-top: 20px;
   }
 
-  .outer-ppdb-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  .inner-ppdb-container {
-    background: #e6f7ff;
-    border: 1px solid var(--Status-Info, #1890ff);
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    padding: 15px;
-  }
-
-  .ppdb-txt-bold {
-    color: var(--typo-HEADING, rgba(0, 0, 0, 0.85));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.34px;
-  }
-
-  .ppdb-txt-reg {
-    color: var(--typo-text, rgba(0, 0, 0, 0.65));
-    font-family: "Poppins";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: -0.176px;
-  }
-
-  .ppdb-button-style {
-    border-radius: 8px;
-    background: #09588d;
-    padding: 16px;
-    color: #fff;
-  }
-
   .berita-lainnya-gallery {
     display: flex;
     margin-left: 8%;
@@ -770,4 +602,89 @@
     margin-left: 10%;
     margin-right: 10%;
   }
+}
+
+.event-detail-main-container-pdf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-detail-main-container-pdf h2 {
+  font-family: "Poppins";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.056px;
+  color: var(--typo-HEADING, rgba(0, 0, 0, 0.85));
+}
+
+.date-writer-layout-pdf {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.date-layout-pdf {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.date-layout-pdf p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.176px;
+  color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
+}
+
+.date-layout-pdf img {
+  width: 24px;
+  height: 24px;
+}
+
+.writter-layout-pdf {
+  display: flex;
+  flex-direction: row;
+}
+
+.writter-layout-pdf p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.176px;
+  color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
+}
+
+.writter-layout-pdf img {
+  width: 24px;
+  height: 24px;
+}
+
+.event-image-main-layout-pdf {
+  height: 790.963px;
+  width: 1800px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.isi-desc-event-pdf {
+  margin-top: 45px;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.176px;
 }
