@@ -451,6 +451,11 @@
     background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 110%);
     display: flex;
     flex-direction: row;
+    transition: transform 0.3s ease;
+  }
+
+  .pict-list-management-wrapper:hover {
+    transform: scale(1.1);
   }
 
   .management-text-wrapper {
@@ -525,6 +530,11 @@
     background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 110%);
     display: flex;
     flex-direction: row;
+    transition: transform 0.3s ease;
+  }
+
+  .pict-list-management-wrapper:hover {
+    transform: scale(1.1);
   }
 
   .management-text-wrapper {
