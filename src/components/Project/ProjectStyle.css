@@ -234,6 +234,15 @@
     height: 630px;
     overflow: hidden;
     border-radius: 20px;
+    overflow: hidden; /* Tambahkan overflow: hidden untuk memastikan efek overflow tersembunyi saat zoom in */
+    transition: transform 0.3s ease; /* Atur transisi untuk efek zoom in */
+  }
+
+  .image-list-wrapper:hover {
+    transform: scale(1.2);
+  }
+  .image-list-wrapper:hover .image-overlay {
+    opacity: 1;
   }
 
   .image-list-wrapper img {
@@ -249,6 +258,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); /* Atur tingkat transparansi di sini */
     border-radius: 20px;
+    transition: opacity 0.3s ease;
   }
 
   .overlay-text-tittle {
@@ -323,10 +333,18 @@
 
   .image-list-wrapper {
     position: relative;
-    width: 1865px;
-    height: 980px;
-    overflow: hidden;
+    width: 1565px;
+    height: 780px;
     border-radius: 20px;
+    overflow: hidden; /* Tambahkan overflow: hidden untuk memastikan efek overflow tersembunyi saat zoom in */
+    transition: transform 0.3s ease; /* Atur transisi untuk efek zoom in */
+  }
+
+  .image-list-wrapper:hover {
+    transform: scale(1.2);
+  }
+  .image-list-wrapper:hover .image-overlay {
+    opacity: 1;
   }
 
   .image-list-wrapper img {
@@ -342,6 +360,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); /* Atur tingkat transparansi di sini */
     border-radius: 20px;
+
+    transition: opacity 0.3s ease;
   }
 
   .overlay-text-tittle {
