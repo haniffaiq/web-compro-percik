@@ -164,7 +164,7 @@
 
   .triple-button-container button.selected {
     border-radius: 12px;
-    background: #09588d;
+    background: #0033ff;
     padding: 8px 10px 8px 10px;
     color: #fff;
     font-family: "Segoe UI";
@@ -200,7 +200,7 @@
 
   .triple-button-container button.selected {
     border-radius: 12px;
-    background: #09588d;
+    background: #0033ff;
     padding: 8px 20px 8px 20px;
     color: #fff;
     font-family: "Segoe UI";
@@ -235,7 +235,7 @@
 
   .triple-button-container button.selected {
     border-radius: 12px;
-    background: #09588d;
+    background: #0033ff;
     padding: 8px 20px 8px 20px;
     color: #fff;
     font-family: "Segoe UI";
@@ -271,7 +271,7 @@
 
   .triple-button-container button.selected {
     border-radius: 12px;
-    background: #09588d;
+    background: #0033ff;
     padding: 8px 20px 8px 20px;
     color: #fff;
     font-family: "Segoe UI";
@@ -302,7 +302,7 @@
     height: 250px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 105%);
+    background: linear-gradient(279deg, #0033ff 12.46%, rgba(9, 88, 141, 0) 105%);
     display: flex;
     flex-direction: row;
   }
@@ -375,7 +375,7 @@
     height: 500px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: linear-gradient(279deg, #09588d 18.46%, rgba(9, 88, 141, 0) 115%);
+    background: linear-gradient(279deg, #0033ff 18.46%, rgba(9, 88, 141, 0) 115%);
     display: flex;
     flex-direction: row;
   }
@@ -448,7 +448,7 @@
     height: 560px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 110%);
+    background: linear-gradient(279deg, #0033ff 12.46%, rgba(9, 88, 141, 0) 90%);
     display: flex;
     flex-direction: row;
     transition: transform 0.3s ease;
@@ -527,7 +527,7 @@
     height: 600px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: linear-gradient(279deg, #09588d 12.46%, rgba(9, 88, 141, 0) 110%);
+    background: linear-gradient(279deg, #0033ff 12.46%, rgba(9, 88, 141, 0) 90%);
     display: flex;
     flex-direction: row;
     transition: transform 0.3s ease;
