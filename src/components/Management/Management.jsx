@@ -6,7 +6,6 @@ import TopSectionPict from "./TopSectionPicture";
 import "./ManagementStyle.css";
 import data from "../../assets/json/management.json";
 
-
 const Button = ({ buttonName, onClick, selected }) => (
   <button className={selected === buttonName ? "selected" : ""} onClick={() => onClick(buttonName)}>
     {buttonName.toUpperCase()}
@@ -23,7 +22,6 @@ const Management = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    
   }, []);
 
   useEffect(() => {
@@ -57,10 +55,7 @@ const Management = () => {
         )}
       </div>
 
-      <TopSectionPict
-        selectedButton={selectedButton}
-        manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english}
-      />
+      <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
     </>
   );
 };

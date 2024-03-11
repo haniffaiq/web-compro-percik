@@ -78,7 +78,7 @@
 
   .isi-desc-event {
     margin-top: 24px;
-    text-align: justify;
+    text-align: left;
   }
 
   .detail-selengkapnya-event-layout {
@@ -370,7 +370,7 @@
 
   .isi-desc-event {
     margin-top: 24px;
-    text-align: justify;
+    text-align: left;
   }
 
   .detail-selengkapnya-event-layout {
@@ -524,7 +524,7 @@
     line-height: 24px;
     /* 150% */
     letter-spacing: -0.176px;
-    text-align: justify;
+    text-align: left;
   }
 
   .detail-selengkapnya-event-layout {
