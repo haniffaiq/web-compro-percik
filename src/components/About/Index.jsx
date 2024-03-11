@@ -31,7 +31,7 @@ const About = () => {
       <AboutUs />
       <Filosofi />
       <Riwayat />
-      <Visi />
+      {/* <Visi /> */}
       {/* <Misi /> */}
       <Prestasi />
       <Galeri />

@@ -1,8 +1,8 @@
-import React, { useContext, useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { BrowserRouter as Link } from "react-router-dom";
 
 import AppContext from "../../context/AppContext";
-import ProjekImg from "../../assets/img/construction_unsplash.jpg";
+
 import data from "../../assets/json/project.json";
 import "./ProjectStyle.css";
 
@@ -40,7 +40,7 @@ const Project = () => {
         </Link>
       </div>
       <div className="page-tittle">
-        <p>{globalState.globalProperty === "IND" ? "Proyek" : "Project"}</p>
+        <p>{globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}</p>
       </div>
       <div className="image-list-container">
         {sortedProject.map((item) => (

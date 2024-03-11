@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import "./ManagementStyle.css";
@@ -10,7 +10,7 @@ const ManagementTittle = () => {
     <div>
       <div className="tittle-management-wrapper">
         <div className="tittle-container">
-          <p>{globalState.globalProperty === "IND" ? "Manajement" : "Management"}</p>
+          <p>{globalState.globalProperty === "IND" ? "MANAJEMEN" : "MANAGEMENT"}</p>
         </div>
         <div className="deskripsi-management-container">
           <p>

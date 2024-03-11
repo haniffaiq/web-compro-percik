@@ -2,7 +2,7 @@
   "bahasa": [
     {
       "id": 1,
-      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo, SH",
+      "namaLengkapManajemen": "M.Harjono Kartohadiprodjo,SH",
       "jabatanManajemen": "Pembina",
       "deskripsiManajemen": "Lahir di Semarang, 26 Desember 1938, meraih Sarjana Hukum dari Fakultas Hukum UI tahun 1967. Melanjutkan studi dengan kursus singkat di Norwegian Shipping Academy, Sanderstolen, Norwegian, dan Seatrade Academy of London, Cambridge, Inggris.",
       "imageSourceManajemen": "img/management/Pembina/M. Harjono Kartohadiprodjo, SH.png"
@@ -16,35 +16,35 @@
     },
     {
       "id": 6,
-      "namaLengkapManajemen": "Drs. Indra Kartasasmita",
+      "namaLengkapManajemen": "Drs.Indra Kartasasmita",
       "jabatanManajemen": "Pembina",
       "deskripsiManajemen": "Wakil Presiden Komite Olimpiade Indonesia, juga aktif di Yayasan Perguruan Cikini, berperan dalam pengembangan olahraga dan pendidikan.",
       "imageSourceManajemen": "img/management/Pembina/Drs. Indra Kartasasmita.png"
     },
     {
       "id": 11,
-      "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
+      "namaLengkapManajemen": "Ir.Akhmad Bukhari Saleh",
       "jabatanManajemen": "Pengawas",
       "deskripsiManajemen": "Pembicara di Lokakarya Majelis Penilai PP PII, betonisasi sertifikat insinyur dan rekam kinerja. Bagian dari pengurus Yayasan Perguruan Cikini, ia mendukung budaya profesional dan ketatnya regulasi keprofesian.",
       "imageSourceManajemen": "img/management/Pengawas/Ir. Akhmad Bukhari Saleh.png"
     },
     {
       "id": 13,
-      "namaLengkapManajemen": "Ir. Syahril Anwar",
+      "namaLengkapManajemen": "Ir.Syahril Anwar",
       "jabatanManajemen": "Pengawas",
       "deskripsiManajemen": "Pengusaha tambang dan pengurus Yayasan Perguruan Cikini, menopang kesuksesan istri, Iin Parlina, penyanyi legendaris. Dalam kebahagiaan keluarga, keduanya aktif dalam kegiatan sosial dan amal.",
       "imageSourceManajemen": "img/management/Pengawas/Ir. Syahril Anwar.png"
     },
     {
       "id": 15,
-      "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo",
+      "namaLengkapManajemen": "Ir.Budiono Kartohadiprodjo",
       "jabatanManajemen": "Pengurus",
-      "deskripsiManajemen": "Ir. Budiono Kartohadiprojo, mantan Ketua Umum Korps Menwa Indonesia, memegang peran sentral dalam membangkitkan kesadaran bela negara dan pertahanan NKRI. Sebagai CEO PT. Era Media Informasi, ia juga aktif dalam dunia media, menunjukkan kontribusinya pada pemahaman dan penyiaran informasi.",
+      "deskripsiManajemen": "Ir.Budiono Kartohadiprojo, mantan Ketua Umum Korps Menwa Indonesia, memegang peran sentral dalam membangkitkan kesadaran bela negara dan pertahanan NKRI. Sebagai CEO PT. Era Media Informasi, ia juga aktif dalam dunia media, menunjukkan kontribusinya pada pemahaman dan penyiaran informasi.",
       "imageSourceManajemen": "img/management/Pengurus/Ir. Budiono Kartohadiprodjo.png"
     },
     {
       "id": 16,
-      "namaLengkapManajemen": "Dr. Setiawan Nazir, M. Kes",
+      "namaLengkapManajemen": "Dr.Setiawan Nazir,M.Kes",
       "jabatanManajemen": "Pengurus",
       "deskripsiManajemen": "Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
       "imageSourceManajemen": "img/management/Pengurus/Dr. Setiawan Nazir, M. Kes.png"
@@ -52,7 +52,7 @@
 
     {
       "id": 18,
-      "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR (K)",
+      "namaLengkapManajemen": "Dr.Amendi Nasution,Sp.KFR(K)",
       "jabatanManajemen": "Pengurus",
       "deskripsiManajemen": "Merupakan anggota dari Ikatan Dokter Indonesia (IDI) dan Perhimpunan Dokter Spesialis Rehabilitasi Medis Indonesia (PERDOSRI).Beliau juga mengikuti pendidikan lainnya seperti Child Development and Rehabilitation di Royal Children's Hospital, Melbourn, Australia ",
       "imageSourceManajemen": "img/management/Pengurus/Dr. Amendi Nasution, Sp.KFR (K).png"
@@ -60,66 +60,66 @@
 
     {
       "id": 21,
-      "namaLengkapManajemen": "Ir. Triawan Saleh",
+      "namaLengkapManajemen": "Ir.Triawan Saleh",
       "jabatanManajemen": "Pengurus",
-      "deskripsiManajemen": "Pejuang TNI AU, putra Marsekal Muda TNI Prof. Abdurrahman Saleh, dikenal sebagai tokoh perintis. Sebagai bagian pengurus Yayasan Perguruan Cikini, ia terlibat dalam film Kadet 1947, diundang dalam peluncuran film 25 November mendatang.",
+      "deskripsiManajemen": "Pejuang TNI AU, putra Marsekal Muda TNI Prof.Abdurrahman Saleh, dikenal sebagai tokoh perintis. Sebagai bagian pengurus Yayasan Perguruan Cikini, ia terlibat dalam film Kadet 1947, diundang dalam peluncuran film 25 November mendatang.",
       "imageSourceManajemen": "img/management/Pengurus/Ir. Triawan Saleh.png"
     }
   ],
   "english": [
     {
       "id": 1,
-      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo, SH",
+      "namaLengkapManajemen": "M.Harjono Kartohadiprodjo,SH",
       "jabatanManajemen": "Advisor",
       "deskripsiManajemen": "Born in Semarang, December 26, 1938, graduated with a Law degree from the Faculty of Law UI in 1967. Continued studies with short courses at the Norwegian Shipping Academy, Sanderstolen, Norway, and the Seatrade Academy of London, Cambridge, England.",
       "imageSourceManajemen": "img/management/Pembina/M. Harjono Kartohadiprodjo, SH.png"
     },
     {
       "id": 2,
-      "namaLengkapManajemen": "Prof. Dr. (H.C). Hj Megawati Soekarnoputri",
+      "namaLengkapManajemen": "Prof.Dr.(H.C).Hj Megawati Soekarnoputri",
       "jabatanManajemen": "Advisor",
       "deskripsiManajemen": "The fifth President of Indonesia who served from July 23, 2001, to October 20, 2004. She is the first female president of Indonesia and the daughter of the first President of Indonesia, Soekarno, who later followed in her father's footsteps to become the President of Indonesia.",
       "imageSourceManajemen": "img/management/Pembina/Megawati Soekarnoputri.png"
     },
     {
       "id": 6,
-      "namaLengkapManajemen": "Drs. Indra Kartasasmita",
+      "namaLengkapManajemen": "Drs.Indra Kartasasmita",
       "jabatanManajemen": "Advisor",
       "deskripsiManajemen": "Vice President of the Indonesian Olympic Committee, also active in the Cikini Educational Foundation, playing a role in the development of sports and education.",
       "imageSourceManajemen": "img/management/Pembina/Drs. Indra Kartasasmita.png"
     },
     {
       "id": 11,
-      "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
+      "namaLengkapManajemen": "Ir.Akhmad Bukhari Saleh",
       "jabatanManajemen": "Supervisor",
       "deskripsiManajemen": "The speaker at the Workshop of the Assessors Assembly of the Indonesian Institute of Engineers discussed the certification of engineers and performance recording. As part of the management of the Cikini Educational Foundation, he supports a professional culture and the strictness of professional regulations.",
       "imageSourceManajemen": "img/management/Pengawas/Ir. Akhmad Bukhari Saleh.png"
     },
     {
       "id": 13,
-      "namaLengkapManajemen": "Ir. Syahril Anwar",
+      "namaLengkapManajemen": "Ir.Syahril Anwar",
       "jabatanManajemen": "Supervisor",
       "deskripsiManajemen": "The mining entrepreneur and member of the Cikini Educational Foundation, supporting the success of his wife, Iin Parlina, a legendary singer. In the happiness of their family, both are actively involved in social and charitable activities.",
-      "imageSourceManajemen": "img/management/Pengawas/Ir. Syahril Anwar.png"
+      "imageSourceManajemen": "img/management/Pengawas/Ir.Syahril Anwar.png"
     },
 
     {
       "id": 15,
-      "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo",
+      "namaLengkapManajemen": "Ir.Budiono Kartohadiprodjo",
       "jabatanManajemen": "Administrator",
-      "deskripsiManajemen": "Ir. Budiono Kartohadiprojo, the former Chairman of the Indonesian Student Regiment Corps (Korps Menwa Indonesia), played a central role in raising awareness of national defense and the defense of the Unitary State of the Republic of Indonesia (NKRI). As the CEO of PT. Era Media Informasi, he is also active in the media industry, demonstrating his contribution to understanding and disseminating information.",
+      "deskripsiManajemen": "Ir.Budiono Kartohadiprojo, the former Chairman of the Indonesian Student Regiment Corps (Korps Menwa Indonesia), played a central role in raising awareness of national defense and the defense of the Unitary State of the Republic of Indonesia (NKRI). As the CEO of PT. Era Media Informasi, he is also active in the media industry, demonstrating his contribution to understanding and disseminating information.",
       "imageSourceManajemen": "img/management/Pengurus/Ir. Budiono Kartohadiprodjo.png"
     },
     {
       "id": 16,
-      "namaLengkapManajemen": "Dr. Setiawan Nazir, M. Kes",
+      "namaLengkapManajemen": "Dr.Setiawan Nazir,M.Kes",
       "jabatanManajemen": "Administrator",
       "deskripsiManajemen": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.",
       "imageSourceManajemen": "img/management/Pengurus/Dr. Setiawan Nazir, M. Kes.png"
     },
     {
       "id": 18,
-      "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR (K)",
+      "namaLengkapManajemen": "Dr.Amendi Nasution,Sp.KFR(K)",
       "jabatanManajemen": "Administrator",
       "deskripsiManajemen": "Member of the Indonesian Medical Association (IDI) and the Indonesian Association of Specialist Doctors in Physical Medicine and Rehabilitation (PERDOSRI). He also received education in Child Development and Rehabilitation at the Royal Children's Hospital, Melbourne, Australia.",
       "imageSourceManajemen": "img/management/Pengurus/Dr. Amendi Nasution, Sp.KFR (K).png"
@@ -127,9 +127,9 @@
 
     {
       "id": 21,
-      "namaLengkapManajemen": "Ir. Triawan Saleh",
+      "namaLengkapManajemen": "Ir.Triawan Saleh",
       "jabatanManajemen": "Administrator",
-      "deskripsiManajemen": "The Air Force fighter, son of Air Marshal TNI Prof. Abdurrahman Saleh, is known as a pioneering figure. As a member of the management of the Cikini Education Foundation, he is involved in the film 'Kadet 1947' and has been invited to the premiere of the film on November 25.",
+      "deskripsiManajemen": "The Air Force fighter, son of Air Marshal TNI Prof.Abdurrahman Saleh, is known as a pioneering figure. As a member of the management of the Cikini Education Foundation, he is involved in the film 'Kadet 1947' and has been invited to the premiere of the film on November 25.",
       "imageSourceManajemen": "img/management/Pengurus/Ir. Triawan Saleh.png"
     }
   ]
