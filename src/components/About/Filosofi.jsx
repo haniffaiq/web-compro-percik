@@ -22,19 +22,13 @@ const Filosofi = () => {
   return (
     <>
       <div className="p-5 lg:p-8">
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-10">
-          Filosofi Lambang
-        </div>
+        <div className="text-center text-3xl lg:text-5xl font-bold mb-10">FILOSOFI LAMBANG</div>
         <div className="w-full rounded-xl ">
           <div className="grid grid-cols-2 mt-0 lg:mt-10 lg:gap-0 gap-5">
             <div className="text-white p-5 lg:p-14 ">
-              <div className="text-[12px] lg:text-3xl font-bold text-black">
-                Yayasan dengan Track Record Memukau
-              </div>
+              <div className="text-[12px] lg:text-3xl font-bold text-black">YAYASAN DENGAN TRACK RECORD MEMUKAU</div>
               {/* <div className="text-[10px] lg:text-[25px]">{value.name}</div> */}
-              <div className="flex flex-col gap-5 text-[7px] lg:text-sm mt-5 lg:mt-10 text-black">
-                {<div dangerouslySetInnerHTML={html} />}
-              </div>
+              <div className="flex flex-col gap-5 text-[7px] lg:text-sm mt-5 lg:mt-10 text-black">{<div dangerouslySetInnerHTML={html} />}</div>
             </div>
             <div className="flex lg:justify-end justify-center items-center h-full lg:h-full ">
               <img src={Logo} className="lg:object-cover flex h-full" />
