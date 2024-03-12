@@ -5,7 +5,7 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 const carouselItems = [
   {
-    image: require("../../assets/img/header/img_header1.png"), // replace with your image path
+    image: require("../../assets/img/header/img_header1.jpg"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
@@ -89,7 +89,23 @@ const Header = () => {
               }}
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
-            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
+
+            {index === 0 && (
+              <div className="absolute bottom-0 left-0 w-full text-center p-10">
+                <div className="text-white text-[15px] lg:text-[25px] font-[600]">
+                  {item.title}
+                </div>
+                <div className="text-white text-[12px] lg:text-[20px] font-[600]">
+                  {item.subtitle}
+                </div>
+                <div className="flex justify-center">
+                  <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
+                    {item.buttonText}
+                  </button>
+                </div>
+              </div>
+            )}
+            {/* <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
               <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
                 {item.title}
               </div>
@@ -101,7 +117,7 @@ const Header = () => {
                   {item.buttonText}
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         ))}
       </Carousel>

@@ -5,7 +5,7 @@ import Header1 from "../../assets/img/unsplash_1-aA2Fadydc.png";
 
 const carouselItems = [
   {
-    image: require('../../assets/img/header/img_header1.png'), // replace with your image path
+    image: require('../../assets/img/header/img_header1.jpg'), // replace with your image path
     title: 'Mari Bergabung dengan Kami',
     subtitle: 'Mari Kita Menciptakan Anak Didik yang Berbakat',
     buttonText: 'Kunjungi Kami',
