@@ -10,7 +10,7 @@ const ManagementTittle = () => {
     <div>
       <div className="tittle-management-wrapper">
         <div className="tittle-container">
-          <p>{globalState.globalProperty === "IND" ? "Manajement" : "Management"}</p>
+          <p>{globalState.globalProperty === "IND" ? "Manajemen" : "Management"}</p>
         </div>
         <div className="deskripsi-management-container">
           <p>
