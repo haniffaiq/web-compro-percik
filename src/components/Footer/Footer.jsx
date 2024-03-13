@@ -6,7 +6,7 @@ import React, { useContext, useState } from "react";
 // import Facebook from "../../assets/icon/Facebook.svg";
 // import Youtube from "../../assets/icon/Youtube.svg";
 // import Tiktok from "../../assets/icon/Tik Tok.svg";
-// import Whatsapp from "../../assets/icon/WhatsApp.svg";
+import Whatsapp from "../../assets/icon/WhatsApp.svg";
 
 const Footer = () => {
   //   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -32,13 +32,19 @@ const Footer = () => {
           <div className="text-[#C1CACF] text-lg">Privacy Policy | Disclaimer</div> */}
         </div>
         <div className="col-span-2 flex flex-col gap-3 mt-5 lg:mt-0">
-          {/* <div className="flex justify-start lg:justify-center">
-            <button className="border py-2 lg:py-3 px-7 rounded-xl lg:rounded-full flex gap-3 items-center bg-[#E06D1A] border-none">
+          <div className="flex justify-start lg:justify-center">
+            <a
+              href="https://wa.me/62811151502?text=Halo%20Admin,%20saya%20tertarik%20dengan%20layanan%20anda"
+              // href="https://wa.me/62811151502"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border py-2 lg:py-3 px-7 rounded-xl lg:rounded-full flex gap-3 items-center bg-[#E06D1A] border-none text-white font-[600]"
+            >
               <img src={Whatsapp} alt="Whatsapp" className="h-[40px]" />
-              <div className="font-[600] text-white">Kontak Admin</div>
-            </button>
-          </div> */}
-          {/* <div className="text-[#C1CACF] text-lg text-start lg:text-center">Informasi Selengkapnya Hubungi Kami</div> */}
+              Kontak Admin
+            </a>
+          </div>
+          <div className="text-[#C1CACF] text-lg text-start lg:text-center">Informasi Selengkapnya Hubungi Kami</div>
         </div>
         <div className="mt-2 lg:mt-[35px] w-full col-span-3 text-[#C1CACF]">@ 2024 Yayasan Perguruan Cikini</div>
       </div>
