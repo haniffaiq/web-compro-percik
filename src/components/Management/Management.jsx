@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import ManagementTittle from "./ManagementTittle";
 import TopSectionPict from "./TopSectionPicture";
+import TopSectionPict_khusus from "./TopSectionPicture_khusus";
 import "./ManagementStyle.css";
 import data from "../../assets/json/management.json";
 
@@ -26,7 +27,7 @@ const Management = () => {
 
   useEffect(() => {
     setSelectedButton(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
-    console.log(globalState.globalProperty);
+    // console.log(globalState.globalProperty);
   }, [globalState.globalProperty]);
 
   return (
@@ -54,6 +55,10 @@ const Management = () => {
           </>
         )}
       </div>
+
+
+      {/* <TopSectionPict_khusus selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} /> */}
+
 
       <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
     </>
