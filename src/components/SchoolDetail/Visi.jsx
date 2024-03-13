@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import Foto from "../../assets/img/unsplash_pAtA8xe_iVM.png";
-import misi from "../../assets/img/misi.png";
+// import Foto from "../../assets/img/unsplash_pAtA8xe_iVM.png";
+// import misi from "../../assets/img/misi.png";
 import data from "../../assets/json/school";
 
 const Visi = (props) => {

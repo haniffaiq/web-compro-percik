@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 // import Foto from "../../assets/img/image 23.png";
-import Wisuda from "../../assets/icon/ph_student-light.svg";
-import Loc from "../../assets/icon/loc.svg";
-import Telf from "../../assets/icon/telfon.svg";
-import Foto from "../../assets/img/Rectangle108school.png";
+// import Wisuda from "../../assets/icon/ph_student-light.svg";
+// import Loc from "../../assets/icon/loc.svg";
+// import Telf from "../../assets/icon/telfon.svg";
+// import Foto from "../../assets/img/Rectangle108school.png";
 import data from "../../assets/json/school";
 
 const Ekstrakulikuler = (props) => {

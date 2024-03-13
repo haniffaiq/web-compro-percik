@@ -101,7 +101,7 @@ const EventDetail = () => {
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
         </Link>
         <span> / </span>
-        <Link to="/project" className="">
+        <Link to="/event" className="">
           {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "News & Event Details"}
         </Link>
       </div>

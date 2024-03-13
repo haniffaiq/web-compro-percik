@@ -34,7 +34,7 @@ const Management = () => {
       <div className="flex gap-1 ml-[35px] py-9">
         <Link to="/">{globalState.globalProperty === "IND" ? "Home" : "Home"}</Link>
         <span> / </span>
-        <Link to="/project">{globalState.globalProperty === "IND" ? "Manajemen" : "Management"}</Link>
+        <Link to="/management">{globalState.globalProperty === "IND" ? "Manajemen" : "Management"}</Link>
       </div>
 
       <ManagementTittle />

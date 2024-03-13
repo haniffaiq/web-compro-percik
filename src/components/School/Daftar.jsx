@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import Foto from "../../assets/img/Rectangle108school.png";
+// import Foto from "../../assets/img/Rectangle108school.png";
 import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
 import data from "../../assets/json/school";
-import SchoolDetail from "../SchoolDetail/Index";
+// import SchoolDetail from "../SchoolDetail/Index";
 
 let schoolData = [
   {
@@ -30,7 +30,7 @@ let schoolData = [
 ];
 const Daftar = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  const [saveId, setSaveId] = useState(null);
+  // const [saveId, setSaveId] = useState(null);
 
   return (
     <div className="p-5 lg:p-8">

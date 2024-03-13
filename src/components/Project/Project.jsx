@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import AppContext from "../../context/AppContext";
 
