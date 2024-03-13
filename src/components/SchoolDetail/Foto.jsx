@@ -10,21 +10,21 @@ const Sambutan = () => {
   const [html2, setHtml2] = useState({ __html: "" });
   const [html3, setHtml3] = useState({ __html: "" });
 
-  let descLoader = () => {
-    setHtml({
-      __html: `<div>${data.bahasa[0].desc.replace(/\n/g, "<br><br>")}</div>`,
-    });
-    setHtml2({
-      __html: `<div>${data.bahasa[1].desc.replace(/\n/g, "<br><br>")}</div>`,
-    });
-    setHtml3({
-      __html: `<div>${data.bahasa[2].desc.replace(/\n/g, "<br><br>")}</div>`,
-    });
-  };
+  // let descLoader = () => {
+  //   setHtml({
+  //     __html: `<div>${data.bahasa[0].desc.replace(/\n/g, "<br><br>")}</div>`,
+  //   });
+  //   setHtml2({
+  //     __html: `<div>${data.bahasa[1].desc.replace(/\n/g, "<br><br>")}</div>`,
+  //   });
+  //   setHtml3({
+  //     __html: `<div>${data.bahasa[2].desc.replace(/\n/g, "<br><br>")}</div>`,
+  //   });
+  // };
 
-  useEffect(() => {
-    descLoader();
-  }, []);
+  // useEffect(() => {
+  //   descLoader();
+  // }, []);
 
   return (
     <>

@@ -30,7 +30,7 @@ let schoolData = [
 ];
 const Daftar = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  // const [saveId, setSaveId] = useState(null);
+  const [saveId, setSaveId] = useState(null);
 
   return (
     <div className="p-5 lg:p-8">
@@ -39,11 +39,11 @@ const Daftar = () => {
         {data.bahasa.map((school) => (
           <Link key={school.id} to={`/school-detail/${school.id}`}>
             <button
-              // onClick={() => {
-              //   setSaveId(school.id);
-              //   console.log(school.id);
-              //   // <SchoolDetail data={saveId} />;
-              // }}
+              onClick={() => {
+                setSaveId(school.id);
+                console.log(school.id);
+                // <SchoolDetail data={saveId} />;
+              }}
               className="border rounded-lg p-3"
             >
               <img className="flex justify-center w-full" src={require(`../../assets/img/school/${school.image}`)} alt={`${school.name} Image`} />
