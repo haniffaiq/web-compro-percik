@@ -43,7 +43,7 @@ const Riwayat = () => {
               </div>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <img src={Pandu} className="lg:object-cover flex h-[200px] lg:h-full" />
+              <img src={Pandu} className="lg:object-cover flex h-[300px] lg:h-full" />
               <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
             </div>
           </div>
