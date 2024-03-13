@@ -68,7 +68,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 2,
@@ -138,7 +143,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 3,
@@ -208,7 +218,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 4,
@@ -278,7 +293,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 5,
@@ -348,7 +368,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     }
   ],
   "english": [
@@ -420,7 +445,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 2,
@@ -490,7 +520,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 3,
@@ -560,7 +595,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 4,
@@ -630,7 +670,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     },
     {
       "id": 5,
@@ -700,7 +745,12 @@
           "desc": "11111",
           "imgUrl": "/Ruang Kelas.png"
         }
-      ]
+      ],
+      "sambutan":{
+        "name": "Dr. Setiawan Nazir",
+        "image":  "Rectangle108school.png",
+        "desc" : "Lorem Lipsum"
+      }
     }
   ]
 }

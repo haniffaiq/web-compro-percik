@@ -47,7 +47,7 @@ const SchoolDetail = (props) => {
         </Link>
       </div>
       <Header idSchool={id} />
-      <Sambutan />
+      {/* <Sambutan idSchool={id}/> */}
       {/* <Visi idSchool={id} /> */}
       <Fasilitas idSchool={id} />
       <Ekstrakulikuler idSchool={id} />
