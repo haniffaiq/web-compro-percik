@@ -54,7 +54,7 @@ const Header = () => {
     return <span style={dotStyle} />;
   };
   useEffect(() => {
-    const animation1 = animate(count1, 5, { duration: 5 });
+    const animation1 = animate(count1, 5000, { duration: 5 });
     const animation2 = animate(count2, 50, { duration: 5 });
     const animation3 = animate(count3, 80, { duration: 5 });
 
@@ -123,16 +123,16 @@ const Header = () => {
       </Carousel>
 
       <div className="bg-[#295D97] lg:pt-24 lg:pb-24 lg:grid lg:grid-cols-3 flex flex-col lg:gap-5">
-        <div className=" py-32 lg:py-0 flex flex-col items-center justify-center lg:ml-24 gap-5 lg:bg-transparent bg-[#EEF8FF]">
+        <div className="py-2 lg:py-0 flex flex-col items-center justify-center lg:ml-24 lg:bg-transparent bg-[#EEF8FF]">
           <div className="flex text-6xl lg:text-8xl font-semibold lg:text-white text-black">
-            <motion.h1>{rounded1}</motion.h1>K +
+            <motion.h1>{rounded1}</motion.h1>+
           </div>
           <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] lg:text-white tracking-wider lg:w-full w-[310px]">
             Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia
             kerja
           </div>
         </div>
-        <div className="py-32 lg:py-0 flex flex-col items-center justify-center lg:border-l lg:border-r border-[#C0CFD3] gap-2 lg:bg-transparent bg-[#FFFCEE]">
+        <div className="py-2 lg:py-0 flex flex-col items-center justify-center lg:border-l lg:border-r border-[#C0CFD3] lg:bg-transparent bg-[#FFFCEE]">
           <div className="flex text-6xl lg:text-8xl font-semibold lg:text-white text-black">
             <motion.h1>{rounded2}</motion.h1>+
           </div>
@@ -141,7 +141,7 @@ const Header = () => {
             nasional
           </div>
         </div>
-        <div className=" py-32 lg:py-0 flex flex-col items-center justify-center lg:mr-24 gap-2 lg:bg-transparent bg-[#F3EEFF]">
+        <div className="py-2 lg:py-0 flex flex-col items-center justify-center lg:mr-24 lg:bg-transparent bg-[#F3EEFF]">
           <div className="flex text-6xl lg:text-8xl font-semibold lg:text-white text-black">
             <motion.h1>{rounded3}</motion.h1>%
           </div>

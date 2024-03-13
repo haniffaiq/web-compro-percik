@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIHeader");
+  // console.log(globalState, "DIHeader");
 
   return (
     <>
@@ -16,10 +16,10 @@ const About = () => {
           <div className="flex justify-center rounded-lg">
             <img className="rounded-lg" src={AboutImg} alt="img" />
           </div>
-          <div className="flex flex-col justify-between ">
+          <div className="flex flex-col justify-start ">
             <div className="text-center lg:text-start">
-              <div className="font-bold text-md lg:text-3xl mb-4 lg:mb-10">YAYASAN DENGAN TRACK RECORD MEMUKAU</div>
-              <div className="text-sm lg:text-md mr-0 lg:mr-24 mb-4 lg:mb-10">
+              <div className="font-bold text-md lg:text-3xl mb-4 lg:mb-10 lg:text-start">YAYASAN DENGAN TRACK RECORD MEMUKAU</div>
+              <div className="text-sm lg:text-md mr-0 lg:mr-24 mb-4 lg:mb-10 text-start">
                 Yayasan Perguruan Cikini telah mencatat prestasi gemilang sebagai lembaga pendidikan dengan track record yang memukau. Sejak berdiri, yayasan ini telah melahirkan banyak individu hebat yang kini berkontribusi di berbagai
                 sektor di Indonesia. Alumni Perguruan Cikini menjadi bukti nyata akan dedikasi yayasan dalam membentuk generasi yang unggul dan berprestasi. <br />
                 <br />
