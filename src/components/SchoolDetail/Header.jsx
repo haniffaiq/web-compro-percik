@@ -9,6 +9,10 @@ import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
 import Foto from "../../assets/img/Rectangle108school.png";
 import data from "../../assets/json/school";
+import Header1 from "../../assets/img/school/header1.jpg";
+import Header2 from "../../assets/img/school/header2.jpg";
+import Header3 from "../../assets/img/school/header3.JPG";
+
 
 const Header = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -37,7 +41,7 @@ const Header = (props) => {
               <div
                 className="h-full object-cover border border-none rounded-lg"
                 style={{
-                  backgroundImage: `url(${FotoHeader})`,
+                  backgroundImage: `url(${Header1})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                   //   borderRadius: "10px",
@@ -48,7 +52,7 @@ const Header = (props) => {
               <div
                 className="h-full object-cover border border-none rounded-lg"
                 style={{
-                  backgroundImage: `url(${FotoHeader})`,
+                  backgroundImage: `url(${Header2})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
                   //   borderRadius: "10px",

@@ -50,8 +50,8 @@ const SchoolDetail = (props) => {
       {/* <Sambutan idSchool={id}/> */}
       {/* <Visi idSchool={id} /> */}
       <Fasilitas idSchool={id} />
-      <Ekstrakulikuler idSchool={id} />
-      <Galeri idSchool={id} />
+      {/* <Ekstrakulikuler idSchool={id} /> */}
+      {/* <Galeri idSchool={id} /> */}
     </>
   );
 };

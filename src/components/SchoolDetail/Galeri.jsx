@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import Header1 from "../../assets/img/unsplash_1-aA2Fadydc.png";
+import Header1 from "../../assets/img/school/header1.jpg";
+import Header2 from "../../assets/img/school/header2.jpg";
+import Header3 from "../../assets/img/school/header3.JPG";
 
 const Galeri = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
