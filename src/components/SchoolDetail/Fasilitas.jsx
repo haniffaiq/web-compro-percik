@@ -6,7 +6,7 @@ import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
 import Foto from "../../assets/img/school/facility/Ruang Kerja.png";
-import data from "../../assets/json/sekolah.json";
+import data from "../../assets/json/school";
 
 const Fasilitas = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
