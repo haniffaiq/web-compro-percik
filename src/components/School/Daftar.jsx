@@ -5,7 +5,7 @@ import AppContext from "../../context/AppContext";
 import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
-import data from "../../assets/json/school";
+import data from "../../assets/json/school.json";
 // import SchoolDetail from "../SchoolDetail/Index";
 
 let schoolData = [
@@ -28,15 +28,16 @@ let schoolData = [
     phone: "085yyyyyy",
   },
 ];
+
 const Daftar = () => {
-  const { globalState, updateGlobalState } = useContext(AppContext);
+  const {globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
 
   return (
     <div className="p-5 lg:p-8">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
       <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 gap-2 lg:gap-10">
-        {data.bahasa.map((school) => (
+        {data.english.map((school) => (
           <Link key={school.id} to={`/school-detail/${school.id}`}>
             <button
               onClick={() => {
