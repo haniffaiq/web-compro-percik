@@ -9,7 +9,7 @@ import Telf from "../../assets/icon/telfon.svg";
 // import schoolsData from "../../assets/json/school";
 
 // import SchoolDetail from "../SchoolDetail/Index";
-data = {
+const data = {
   "bahasa": [
     {
       "id": 1,
