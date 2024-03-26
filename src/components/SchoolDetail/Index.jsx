@@ -51,7 +51,7 @@ const SchoolDetail = (props) => {
       {/* <Visi idSchool={id} /> */}
       <Fasilitas idSchool={id} />
       <Ekstrakulikuler idSchool={id} />
-      <Galeri idSchool={id} />
+      {/* <Galeri idSchool={id} /> */}
     </>
   );
 };

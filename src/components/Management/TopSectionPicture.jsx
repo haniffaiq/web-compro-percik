@@ -21,7 +21,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
             </div>
             <div className="management-text-wrapper">
               <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
-              <p className="overlay-text-management-desc">{deskripsiManajemen}</p>
+              <p className="overlay-text-management-desc">{deskripsiManajemen.length > 300 ? deskripsiManajemen.slice(0, 300) + '...' : deskripsiManajemen}</p>
             </div>
           </div>
         ))}
