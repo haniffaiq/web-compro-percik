@@ -12,7 +12,7 @@ const Daftar = () => {
   let schoolsData = data.bahasa
   const {globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
-  console.log(schoolsData)
+  console.log(data)
   return (
     <div className="p-5 lg:p-8">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
