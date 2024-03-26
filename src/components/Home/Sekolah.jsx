@@ -6,7 +6,7 @@ import Rec2 from "../../assets/img/Rectangle182.png";
 import Rec3 from "../../assets/img/Rectangle183.png";
 import Loc from "../../assets/icon/Group 3.svg";
 import { Link } from "react-router-dom";
-import schoolsData from "../../assets/json/school.json";
+import schoolsData from "../../assets/json/sekolah.json";
 
 schoolsData = schoolsData.bahasa.slice(0, 3)
 const SchoolCard = ({ name, image, address }) => (

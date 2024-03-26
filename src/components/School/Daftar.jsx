@@ -5,7 +5,7 @@ import AppContext from "../../context/AppContext";
 import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
-import data from "../../assets/json/school.json";
+import data from "../../assets/json/sekolah.json";
 // import schoolsData from "../../assets/json/school";
 
 // import SchoolDetail from "../SchoolDetail/Index";

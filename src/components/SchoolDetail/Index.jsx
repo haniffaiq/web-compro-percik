@@ -7,7 +7,7 @@ import Ekstrakulikuler from "./Ekstrakulikuler";
 import Galeri from "./Galeri";
 import Visi from "./Visi";
 import Sambutan from "./Foto";
-import data from "../../assets/json/school.json";
+import data from "../../assets/json/sekolah.json";
 // import AboutUs from "./About";
 // import Visi from "./Visi";
 // import Prestasi from "./Prestasi";
