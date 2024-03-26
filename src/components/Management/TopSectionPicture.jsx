@@ -26,14 +26,14 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
   return (
     <div>
       {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
-        <div className="top-section-pict-container" onClick={() => openModal({ namaLengkapManajemen, deskripsiManajemen })}>
+        <div className="top-section-pict-container" onClick={() => openModal({ namaLengkapManajemen, deskripsiManajemen, imageSourceManajemen })}>
           <div className="pict-list-management-wrapper">
             <div className="management-image-wrapper" key={id}>
               <img src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
             </div>
             <div className="management-text-wrapper">
               <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
-              <p className="overlay-text-management-desc">{deskripsiManajemen.length > 300 ? deskripsiManajemen.slice(0, 300) + '...' : deskripsiManajemen}</p>
+              <p className="overlay-text-management-desc">{deskripsiManajemen.length > 300 ? deskripsiManajemen.slice(0, 300) + "..." : deskripsiManajemen}</p>
             </div>
           </div>
         </div>
@@ -41,9 +41,14 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         {selectedManagement && (
           <>
-            <h2>{selectedManagement.namaLengkapManajemen}</h2>
-            <p>{selectedManagement.deskripsiManajemen}</p>
-            <button onClick={closeModal}>tutup</button>
+            <div className="modal-konten-container">
+              <img src={require(`../../assets/${selectedManagement.imageSourceManajemen}`)} alt="popup"></img>
+              <div className="modal-konten-deskripsi-container">
+                <h2>{selectedManagement.namaLengkapManajemen}</h2>
+                <p>{selectedManagement.deskripsiManajemen}</p>
+                <button onClick={closeModal}>tutup</button>
+              </div>
+            </div>
           </>
         )}
       </Modal>
