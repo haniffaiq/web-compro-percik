@@ -599,3 +599,151 @@
 }
 
 /* End Of Style Component Top Section Pict*/
+
+/* style untuk konten modal */
+
+@media only screen and (max-width: 600px) {
+  .modal-konten-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-konten-container img {
+    height: 270px;
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .modal-konten-deskripsi-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .modal-konten-deskripsi-container h2 {
+    font-size: 20px;
+    line-height: 53px;
+    font-weight: 700;
+  }
+
+  .modal-konten-deskripsi-container p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .modal-konten-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-konten-container img {
+    height: 470px;
+    width: 450px;
+    margin-top: 20px;
+  }
+
+  .modal-konten-deskripsi-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .modal-konten-deskripsi-container h2 {
+    font-size: 24px;
+    line-height: 53px;
+    font-weight: 700;
+  }
+
+  .modal-konten-deskripsi-container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+  .modal-konten-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #fff;
+  }
+
+  .modal-konten-container img {
+    height: 570px;
+    width: 650px;
+    margin-top: 40px;
+    margin-left: -60px;
+  }
+
+  .modal-konten-deskripsi-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modal-konten-deskripsi-container h2 {
+    font-size: 40px;
+    line-height: 53px;
+    font-weight: 700;
+  }
+
+  .modal-konten-deskripsi-container p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .modal-konten-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #fff;
+  }
+
+  .modal-konten-container img {
+    height: 570px;
+    width: 650px;
+    margin-top: 40px;
+    margin-left: -60px;
+  }
+
+  .modal-konten-deskripsi-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modal-konten-deskripsi-container h2 {
+    font-size: 40px;
+    line-height: 53px;
+    font-weight: 700;
+  }
+
+  .modal-konten-deskripsi-container p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
