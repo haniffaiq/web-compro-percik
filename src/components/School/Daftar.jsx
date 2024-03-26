@@ -6,7 +6,7 @@ import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
 import data from "../../assets/json/sekolah.json";
-// import schoolsData from "../../assets/json/school";
+// import schoolsData from "../../assets/json/sekolah.json";
 
 // import SchoolDetail from "../SchoolDetail/Index";
 

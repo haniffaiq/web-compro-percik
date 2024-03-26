@@ -6,7 +6,7 @@ import AppContext from "../../context/AppContext";
 // import Loc from "../../assets/icon/loc.svg";
 // import Telf from "../../assets/icon/telfon.svg";
 // import Foto from "../../assets/img/Rectangle108school.png";
-import data from "../../assets/json/school";
+import data from "../../assets/json/sekolah.json";
 
 const Ekstrakulikuler = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);

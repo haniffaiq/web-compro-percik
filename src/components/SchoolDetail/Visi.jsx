@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 import AppContext from "../../context/AppContext";
 // import Foto from "../../assets/img/unsplash_pAtA8xe_iVM.png";
 // import misi from "../../assets/img/misi.png";
-import data from "../../assets/json/school";
+import data from "../../assets/json/sekolah.json";
 
 const Visi = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);

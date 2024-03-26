@@ -8,7 +8,7 @@ import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
 import Foto from "../../assets/img/Rectangle108school.png";
-import data from "../../assets/json/school";
+import data from "../../assets/json/sekolah.json";
 import Header1 from "../../assets/img/school/header1.jpg";
 import Header2 from "../../assets/img/school/header2.jpg";
 import Header3 from "../../assets/img/school/header3.JPG";

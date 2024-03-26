@@ -4,7 +4,7 @@ import AppContext from "../../context/AppContext";
 import Alur from "./Alur";
 // import Prestasi from "../About/Prestasi";
 import Daftar from "./Daftar";
-// import data from "../../assets/json/school";
+// import data from "../../assets/json/sekolah.json";
 
 const School = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);

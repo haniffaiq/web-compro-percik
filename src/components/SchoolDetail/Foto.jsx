@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import Foto from "../../assets/img/unsplash_pAtA8xe_iVM.png";
-import data from "../../assets/json/school";
+import data from "../../assets/json/sekolah.json";
 
 const Sambutan = (props) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
