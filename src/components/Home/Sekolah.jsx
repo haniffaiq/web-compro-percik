@@ -32,7 +32,7 @@ const SchoolCard = ({ name, image, address }) => (
 
 const Sekolah = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIHeader");
+  // console.log(globalState, "DIHeader");
 
   return (
     <>

@@ -9,14 +9,15 @@ import data from "../../assets/json/school.json";
 // import SchoolDetail from "../SchoolDetail/Index";
 
 const Daftar = () => {
+  let schoolsData = data.bahasa
   const {globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
-
+  console.log(schoolsData)
   return (
     <div className="p-5 lg:p-8">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
       <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 gap-2 lg:gap-10">
-        {data.english.map((school) => (
+        {schoolsData.map((school) => (
           <Link key={school.id} to={`/school-detail/${school.id}`}>
             <button
               onClick={() => {
