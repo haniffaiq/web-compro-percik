@@ -8,27 +8,6 @@ import Telf from "../../assets/icon/telfon.svg";
 import data from "../../assets/json/school.json";
 // import SchoolDetail from "../SchoolDetail/Index";
 
-let schoolData = [
-  {
-    id: 1,
-    name: "TK Perguruan Cikini, Jakarta Pusat",
-    type: "TK",
-    image: "Rectangle108school.png",
-    students: 200,
-    address: "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-    phone: "085xxxxxx",
-  },
-  {
-    id: 2,
-    name: "SD Perguruan Cikini, Jakarta Pusat",
-    type: "SD",
-    image: "Rectangle108school.png",
-    students: 250,
-    address: "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-    phone: "085yyyyyy",
-  },
-];
-
 const Daftar = () => {
   const {globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
@@ -47,7 +26,7 @@ const Daftar = () => {
               }}
               className="border rounded-lg p-3"
             >
-              <img className="flex justify-center w-full" src={require(`../../assets/img/school/${school.image}`)} alt={`${school.name} Image`} />
+              <img className="flex justify-center w-full" src={require(`../../assets/img/school/${school.image}`)} alt={`${school.name}`} />
               <div className="text-start text-sm lg:text-2xl mt-5">{school.name}</div>
               <div className="flex gap-3 text-start mt-3">
                 <img src={Wisuda} alt="logo" />
@@ -58,7 +37,7 @@ const Daftar = () => {
                 <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.address}</div>
               </div>
               <div className="flex gap-3 text-start mt-3">
-                <img src={Telf} alt="logo" />
+                <img src={Telf} alt="Telf" />
                 <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.phone}</div>
               </div>
             </button>
