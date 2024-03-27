@@ -33,7 +33,7 @@ const SchoolCard = ({ name, image, address }) => (
 const Sekolah = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   // console.log(globalState, "DIHeader");
-  let schoolsData = data.bahasa.slice(0, 3)
+  
   return (
     <>
       <div className="flex flex-col gap-2 p-5 lg:p-14">
@@ -48,7 +48,7 @@ const Sekolah = () => {
           </Link>
         </div>
         <div className="flex w-full overflow-y-hidden lg:overflow-hidden lg:grid lg:grid-cols-3 gap-5 lg:gap-28 lg:w-full container">
-          {schoolsData.map(school => (
+          {data.bahasa.slice(0, 3).map(school => (
             <SchoolCard
               key={school.id}
               name={school.name}
