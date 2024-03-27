@@ -5,25 +5,25 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 const carouselItems = [
   {
-    image: require("../../assets/img/header/img_header1.jpg"), // replace with your image path
+    image: require("../../assets/img/header/img_header1.webp"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/header/img_header2.JPG"), // replace with your image path
+    image: require("../../assets/img/header/img_header2.webp"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/header/img_header3.jpg"), // replace with your image path
+    image: require("../../assets/img/header/img_header3.webp"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/header/img_header4.jpg"), // replace with your image path
+    image: require("../../assets/img/header/img_header4.webp"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
