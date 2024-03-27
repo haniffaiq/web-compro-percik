@@ -8,7 +8,7 @@ import Loc from "../../assets/icon/Group 3.svg";
 import { Link } from "react-router-dom";
 import schoolsData from "../../assets/json/school.json";
 
-schoolsData = schoolsData.bahasa.slice(0, 3)
+// schoolsData = schoolsData.bahasa.slice(0, 3)
 const SchoolCard = ({ name, image, address }) => (
   <div className="h-[200px] w-[200px] lg:h-[400px] lg:w-[400px]">
     <div
