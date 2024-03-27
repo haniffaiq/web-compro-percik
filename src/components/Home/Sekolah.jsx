@@ -33,7 +33,7 @@ const SchoolCard = ({ name, image, address }) => (
 const Sekolah = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   // console.log(globalState, "DIHeader");
-
+  schoolsData = schoolsData.bahasa.slice(0, 3)
   return (
     <>
       <div className="flex flex-col gap-2 p-5 lg:p-14">
