@@ -13,10 +13,10 @@ import data from "../../assets/json/school.json";
 
 const Daftar = () => {
   let schoolsData = data.bahasa
-  const {globalState, updateGlobalState } = useContext(AppContext);
+  const { globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
-  console.log(data)
-  console.log(schoolsData)
+  // console.log(data)
+  // console.log(schoolsData)
   return (
     <div className="p-5 lg:p-8">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
@@ -31,7 +31,15 @@ const Daftar = () => {
               }}
               className="border rounded-lg p-3"
             >
-              <img className="flex justify-center w-full" src={require(`../../assets/img/school/${school.image}`)} alt={`${school.name}`} />
+              <div
+                className="w-full h-32 lg:h-64 overflow-hidden"
+              >
+                <img
+                  className="w-full h-full object-cover"
+                  src={require(`../../assets/img/school/${school.image}`)}
+                  alt={`${school.name}`}
+                />
+              </div>
               <div className="text-start text-sm lg:text-2xl mt-5">{school.name}</div>
               <div className="flex gap-3 text-start mt-3">
                 <img src={Wisuda} alt="logo" />

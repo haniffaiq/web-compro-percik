@@ -4,7 +4,7 @@
       "id": 1,
       "name": "TK Perguruan Cikini, Jakarta Pusat",
       "type": "TK",
-      "image": "Rectangle108school.png",
+      "image": "TK.webp",
       "students": 200,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-xxx",
@@ -71,7 +71,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -79,7 +79,7 @@
       "id": 2,
       "name": "SD Perguruan Cikini, Jakarta Pusat",
       "type": "SD",
-      "image": "Rectangle108school.png",
+      "image": "SD.webp",
       "students": 250,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "085yyyyyy",
@@ -146,7 +146,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -154,7 +154,7 @@
       "id": 3,
       "name": "SMK 3 PERGURUAN “CIKINI”",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 1246,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "085yyyyyy",
@@ -221,7 +221,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -229,7 +229,7 @@
       "id": 4,
       "name": "SMA PERGURUAN “CIKINI",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 406,
       "address": "Jl. Duren Tiga Raya No.1 Pancoran Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -296,7 +296,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -304,7 +304,7 @@
       "id": 5,
       "name": "SMK 1 PERGURUAN “CIKINI”",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 1183,
       "address": "Jl Alur laut blok NN no 1, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -371,7 +371,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -379,7 +379,7 @@
       "id": 6,
       "name": "SMK MUSIK PERGURUAN “CIKINI”",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 37,
       "address": "L Duren Tiga Raya NO 1, Pancoran, Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -446,7 +446,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -454,7 +454,7 @@
       "id": 7,
       "name": "SMP PERGURUAN “CIKINI”",
       "type": "SMP",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 133,
       "address": "Jl. Cikini Raya No. 74-76, Menteng, Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -521,7 +521,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -529,7 +529,7 @@
       "id": 8,
       "name": "SMK Perguruan CIKINI-KIIC Karawang",
       "type": "SMP",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 190,
       "address": "Jalan Permatan IV, Kawasan industry KIIC, Desa Sukaluyu, Kec. Teluk Jamber Timur, Karawang, Jawa Barat.",
       "phone": "08-",
@@ -596,7 +596,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     }
@@ -607,7 +607,7 @@
       "id": 1,
       "name": "TK Perguruan Cikini, Jakarta Pusat",
       "type": "TK",
-      "image": "Rectangle108school.png",
+      "image": "TK.webp",
       "students": 200,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -674,7 +674,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -682,7 +682,7 @@
       "id": 2,
       "name": "SD Perguruan Cikini, Jakarta Pusat",
       "type": "SD",
-      "image": "Rectangle108school.png",
+      "image": "SD.webp",
       "students": 250,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "085yyyyyy",
@@ -749,7 +749,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -757,7 +757,7 @@
       "id": 3,
       "name": "SMK 3 PERGURUAN “CIKINI”",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 1246,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "085yyyyyy",
@@ -824,7 +824,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -832,7 +832,7 @@
       "id": 4,
       "name": "SMA PERGURUAN “CIKINI",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 406,
       "address": "Jl. Duren Tiga Raya No.1 Pancoran Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -899,7 +899,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -907,7 +907,7 @@
       "id": 5,
       "name": "SMK 1 PERGURUAN “CIKINI”",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 1183,
       "address": "Jl Alur laut blok NN no 1, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -974,7 +974,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -982,7 +982,7 @@
       "id": 6,
       "name": "SMK MUSIK PERGURUAN “CIKINI”",
       "type": "SMK",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 37,
       "address": "L Duren Tiga Raya NO 1, Pancoran, Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -1049,7 +1049,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -1057,7 +1057,7 @@
       "id": 7,
       "name": "SMP PERGURUAN “CIKINI”",
       "type": "SMP",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 133,
       "address": "Jl. Cikini Raya No. 74-76, Menteng, Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
       "phone": "08-",
@@ -1124,7 +1124,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     },
@@ -1132,7 +1132,7 @@
       "id": 8,
       "name": "SMK Perguruan CIKINI-KIIC Karawang",
       "type": "SMP",
-      "image": "Rectangle108school.png",
+      "image": "SMK3.webp",
       "students": 190,
       "address": "Jalan Permatan IV, Kawasan industry KIIC, Desa Sukaluyu, Kec. Teluk Jamber Timur, Karawang, Jawa Barat.",
       "phone": "08-",
@@ -1199,7 +1199,7 @@
       ],
       "sambutan":{
         "name": "Dr. Setiawan Nazir",
-        "image":  "Rectangle108school.png",
+        "image":  "SMK3.webp",
         "desc" : "Lorem Lipsum"
       }
     }
