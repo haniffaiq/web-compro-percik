@@ -6,7 +6,7 @@ import Rec2 from "../../assets/img/Rectangle182.png";
 import Rec3 from "../../assets/img/Rectangle183.png";
 import Loc from "../../assets/icon/Group 3.svg";
 import { Link } from "react-router-dom";
-import schoolsData from "../../assets/json/school.json";
+import data from "../../assets/json/school.json";
 
 // schoolsData = schoolsData.bahasa.slice(0, 3)
 const SchoolCard = ({ name, image, address }) => (
@@ -33,7 +33,7 @@ const SchoolCard = ({ name, image, address }) => (
 const Sekolah = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   // console.log(globalState, "DIHeader");
-  schoolsData = schoolsData.bahasa.slice(0, 3)
+  let schoolsData = data.bahasa.slice(0, 3)
   return (
     <>
       <div className="flex flex-col gap-2 p-5 lg:p-14">
