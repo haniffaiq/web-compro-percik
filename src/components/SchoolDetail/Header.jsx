@@ -20,7 +20,7 @@ const Header = (props) => {
 
   return (
     <>
-      {console.log(data.bahasa, "PPPP")}
+      {/* {console.log(data.bahasa, "PPPP")} */}
       <div className="p-5 lg:p-14">
         <div className="text-center lg:text-start text-3xl lg:text-5xl font-bold mb-10">
           {data.bahasa[a - 1].name}

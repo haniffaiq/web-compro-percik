@@ -197,10 +197,10 @@
 
 /* Untuk Mobile */
 @media only screen and (max-width: 600px) {
-  .project-detail-main-container h2 {
+  .project-detail-main-container h1 {
     color: #000;
     font-family: "Segoe UI";
-    font-size: 15.326px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -301,7 +301,7 @@
 
 /* Untuk Tablet */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .project-detail-main-container h2 {
+  .project-detail-main-container h1 {
     color: #000;
     font-family: "Segoe UI";
     font-size: 30px;
@@ -408,7 +408,7 @@
   .project-detail-main-container {
     width: auto;
   }
-  .project-detail-main-container h2 {
+  .project-detail-main-container h1 {
     color: #000;
     font-family: "Segoe UI";
     font-size: 64px;
@@ -505,7 +505,7 @@
 }
 /* Untuk Desktop */
 @media only screen and (min-width: 1920px) {
-  .project-detail-main-container h2 {
+  .project-detail-main-container h1 {
     color: #000;
     font-family: "Segoe UI";
     font-size: 64px;

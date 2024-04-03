@@ -97,7 +97,25 @@ const ProjectDetail = () => {
       </div>
 
       <div className="project-detail-main-container">
-        {globalState.globalProperty === "IND" ? <h2>{projectDatasBahasa.tittleProyek}</h2> : <h2>{projectDatasEnglish.tittleProyek}</h2>}
+        {globalState.globalProperty === "IND" ? (
+          <h1>
+            {projectDatasBahasa.tittleProyek.split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </h1>
+        ) : (
+          <h1>
+            {projectDatasEnglish.tittleProyek.split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </h1>
+        )}
 
         <div className="image-detail-layout">
           <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
