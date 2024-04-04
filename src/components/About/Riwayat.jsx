@@ -1,11 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import Foto from "../../assets/img/unsplash_pAtA8xe_iVM.png";
-import data from "../../assets/json/about";
-import Logo from "../../assets/logo/logo.svg";
-import Pandu from "../../assets/img/Ibu.png";
-import Sejarah from "../../assets/img/sejarah.png";
+import Pandu from "../../assets/img/Ibu.webp";
+import Sejarah from "../../assets/img/sejarah.webp";
 
 const Riwayat = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);

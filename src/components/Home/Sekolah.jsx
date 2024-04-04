@@ -1,10 +1,6 @@
 import React, { useContext } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import Rec1 from "../../assets/img/Rectangle18.png";
-import Rec2 from "../../assets/img/Rectangle182.png";
-import Rec3 from "../../assets/img/Rectangle183.png";
-import Loc from "../../assets/icon/Group 3.svg";
 import { Link } from "react-router-dom";
 import data from "../../assets/json/school.json";
 

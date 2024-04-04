@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import Foto from "../../assets/img/unsplash_pAtA8xe_iVM.png";
-import misi from "../../assets/img/misi.png";
+import misi from "../../assets/img/misi.webp";
 
 const Visi = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import Foto from "../../assets/img/1 13264.jpg";
+import Foto from "../../assets/img/1 13264.webp";
 
 const Alur = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);

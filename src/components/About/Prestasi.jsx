@@ -1,12 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import Foto from "../../assets/img/Rectangle108school.png";
-import Wisuda from "../../assets/icon/ph_student-light.svg";
-import Logo from "../../assets/icon/ant-design_user-outlined.svg";
-import achivementLogo from "../../assets/img/achivement.jpg";
-import Loc from "../../assets/icon/loc.svg";
-import Telf from "../../assets/icon/telfon.svg";
+import Foto from "../../assets/img/Rectangle108school.webp";
 import data from "../../assets/json/achivements.json";
 
 // Fungsi untuk mengonversi string tanggal ke objek Date

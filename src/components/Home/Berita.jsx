@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import Rec1 from "../../assets/img/Rectangle108.png";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import { Link } from "react-router-dom";
 import data from "../../assets/json/events.json";

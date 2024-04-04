@@ -4,7 +4,7 @@ import AppContext from "../../context/AppContext";
 import GalleryProjectDetail from "./GalleryProjectDetail";
 import DanaDetail from "./DanaDetail";
 import data from "../../assets/json/project.json";
-import IconDownload from "../../assets/img/download.png";
+import IconDownload from "../../assets/img/download.webp";
 import "./ProjectDetailStyle.css";
 import html2pdf from "html2pdf.js";
 

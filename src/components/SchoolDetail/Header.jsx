@@ -1,13 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-import FotoHeader from "../../assets/img/image19.png";
-import Misi from "../../assets/img/image26.png";
 import { Carousel, ConfigProvider } from "antd";
 import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
-import Foto from "../../assets/img/Rectangle108school.png";
 import data from "../../assets/json/school";
 import Header1 from "../../assets/img/school/header1.jpg";
 import Header2 from "../../assets/img/school/header2.jpg";
@@ -20,7 +17,7 @@ const Header = (props) => {
 
   return (
     <>
-      {/* {console.log(data.bahasa, "PPPP")} */}
+      {console.log(data.bahasa, "PPPP")}
       <div className="p-5 lg:p-14">
         <div className="text-center lg:text-start text-3xl lg:text-5xl font-bold mb-10">
           {data.bahasa[a - 1].name}

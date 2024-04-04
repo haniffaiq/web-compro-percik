@@ -2,7 +2,7 @@ import React, { useContext, useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import LogoWriter from "../../assets/icon/ant-design_user-outlined.svg";
-import IconDownload from "../../assets/img/download.png";
+import IconDownload from "../../assets/img/download.webp";
 import data from "../../assets/json/events.json";
 import "./EventDetailStyle.css";
 import html2pdf from "html2pdf.js";

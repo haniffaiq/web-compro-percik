@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import AboutImg from "../../assets/img/UPACARA5.jpg";
+import AboutImg from "../../assets/img/UPACARA5.webp";
 import { Link } from "react-router-dom";
 
 const About = () => {
