@@ -14,7 +14,7 @@ const About = () => {
         <div className="text-2xl lg:text-5xl font-bold mb-5 lg:mb-10 lg:text-center text-start">TENTANG KAMI</div>
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5 w-full">
           <div className="flex justify-center rounded-lg">
-            <img className="rounded-lg" src={AboutImg} alt="img" />
+            <img loading="lazy" className="rounded-lg" src={AboutImg} alt="img" />
           </div>
           <div className="flex flex-col justify-start ">
             <div className="text-center lg:text-start">

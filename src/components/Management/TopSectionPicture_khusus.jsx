@@ -17,7 +17,7 @@ const TopSectionPict_khusus = ({ selectedButton, manajemenData }) => {
         {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
           <div className="pict-list-management-wrapper">
             <div className="management-image-wrapper" key={id}>
-              <img src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
+              <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
             </div>
             <div className="management-text-wrapper">
               <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>

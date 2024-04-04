@@ -25,7 +25,7 @@ const Filosofi = () => {
         <div className="w-full rounded-xl ">
           <div className="grid grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5">
             <div className="flex lg:justify-center justify-center items-center h-full lg:h-full ">
-              <img src={Logo} className="lg:object-cover flex h-full" />
+              <img loading="lazy" src={Logo} className="lg:object-cover flex h-full" />
             </div>
             <div className="text-white p-5 lg:p-14 ">
               {/* <div className="text-[12px] lg:text-3xl font-bold text-black">YAYASAN DENGAN TRACK RECORD MEMUKAU</div> */}

@@ -62,19 +62,19 @@ const Header = (props) => {
           <div className="flex flex-col gap-2 max-w-[150px] lg:max-w-[700px]">
             <div className="mt-5 text-sm lg:text-lg">Detail Sekolah</div>
             <div className="flex gap-3 text-start ">
-              <img src={Wisuda} alt="logo" />
+              <img loading="lazy" src={Wisuda} alt="logo" />
               <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">
                 {data.bahasa[a - 1].students} Siswa
               </div>
             </div>
             <div className="flex gap-3 items-start text-start ">
-              <img className=" " src={Loc} alt="logo" />
+              <img loading="lazy" className=" " src={Loc} alt="logo" />
               <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">
                 {data.bahasa[a - 1].address}
               </div>
             </div>
             <div className="flex gap-3 text-start ">
-              <img src={Telf} alt="logo" />
+              <img loading="lazy" src={Telf} alt="logo" />
               <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">
                 {data.bahasa[a - 1].phone}
               </div>
@@ -99,7 +99,7 @@ const Header = (props) => {
           </div>
           <div className="text-3xl lg:text-5xl font-bold mt-14">Misi</div>
           <div className=" mt-10">
-            <img src={Misi} alt="logo" />
+            <img loading="lazy" src={Misi} alt="logo" />
           </div>
         </div> */}
       </div>

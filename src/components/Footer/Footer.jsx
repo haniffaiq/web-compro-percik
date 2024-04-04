@@ -23,11 +23,11 @@ const Footer = () => {
         <div className="col-span-2 lg:mt-0 mt-5 flex flex-col gap-3 ">
           {/* <div className="text-white font-[600] text-xl">Follow Us</div>
           <div className="flex gap-4">
-            <img src={Instagram} alt="Instagram" className="h-[30px]" />
-            <img src={Twitter} alt="Twitter" className="h-[30px]" />
-            <img src={Facebook} alt="Facebook" className="h-[30px]" />
-            <img src={Youtube} alt="Youtube" className="h-[30px]" />
-            <img src={Tiktok} alt="Tiktok" className="h-[30px]" />
+            <img loading="lazy" src={Instagram} alt="Instagram" className="h-[30px]" />
+            <img loading="lazy" src={Twitter} alt="Twitter" className="h-[30px]" />
+            <img loading="lazy" src={Facebook} alt="Facebook" className="h-[30px]" />
+            <img loading="lazy" src={Youtube} alt="Youtube" className="h-[30px]" />
+            <img loading="lazy" src={Tiktok} alt="Tiktok" className="h-[30px]" />
           </div>
           <div className="text-[#C1CACF] text-lg">Privacy Policy | Disclaimer</div> */}
         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="border py-2 lg:py-3 px-7 rounded-xl lg:rounded-full flex gap-3 items-center bg-[#E06D1A] border-none text-white font-[600]"
             >
-              <img src={Whatsapp} alt="Whatsapp" className="h-[40px]" />
+              <img loading="lazy" src={Whatsapp} alt="Whatsapp" className="h-[40px]" />
               Kontak Admin
             </a>
           </div>

@@ -42,15 +42,15 @@ const Daftar = () => {
               </div>
               <div className="text-start text-sm lg:text-2xl mt-5">{school.name}</div>
               <div className="flex gap-3 text-start mt-3">
-                <img src={Wisuda} alt="logo" />
+                <img loading="lazy" src={Wisuda} alt="logo" />
                 <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.students} Siswa</div>
               </div>
               <div className="flex gap-3 items-start text-start mt-3">
-                <img className=" " src={Loc} alt="logo" />
+                <img loading="lazy" className=" " src={Loc} alt="logo" />
                 <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.address}</div>
               </div>
               <div className="flex gap-3 text-start mt-3">
-                <img src={Telf} alt="Telf" />
+                <img loading="lazy" src={Telf} alt="Telf" />
                 <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.phone}</div>
               </div>
             </button>

@@ -16,15 +16,15 @@ const Partnership = () => {
         <div className="flex justify-center gap-5 lg:gap-28 lg:h-[200px] lg:w-full h-[50px] w-[350px] overflow-y-hidden container">
           {/* <div className="h-full border py-3"> */}
           <div>
-            <img src={Logo} className="h-full" alt="logo" />
+            <img loading="lazy" src={Logo} className="h-full" alt="logo" />
           </div>
-          {/* <img src={Logo} className="h-full" alt="logo" />
-          <img src={Logo} className="h-full" alt="logo" />
-          <img src={Logo} className="h-full" alt="logo" />
-          <img src={Logo} className="h-full" alt="logo" />
-          <img src={Logo} className="h-full" alt="logo" />
-          <img src={Logo} className="h-full" alt="logo" />
-          <img src={Logo} className="h-full" alt="logo" /> */}
+          {/* <img loading="lazy" src={Logo} className="h-full" alt="logo" />
+          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
+          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
+          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
+          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
+          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
+          <img loading="lazy" src={Logo} className="h-full" alt="logo" /> */}
           {/* </div> */}
         </div>
       </div>

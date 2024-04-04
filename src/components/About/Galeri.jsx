@@ -48,9 +48,9 @@ const Galeri = () => {
   return (
     // <>
     //   {/* <div className="flex gap-2 lg:h-full lg:w-full h-full w-full overflow-y-hidden p-5">
-    //     <img src={Header1} />
-    //     <img src={Header1} />
-    //     <img src={Header1} />
+    //     <img loading="lazy" src={Header1} />
+    //     <img loading="lazy" src={Header1} />
+    //     <img loading="lazy" src={Header1} />
     //   </div> */}
     // </>
     <ConfigProvider

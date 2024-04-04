@@ -58,7 +58,7 @@ const ProjectDetail = () => {
         <div className="project-detail-main-container-pdf" ref={contentRef}>
           <h2>{queryParameters.get("tittle")}</h2>
           <div className="image-detail-layout-pdf">
-            <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
+            <img loading="lazy" src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
           </div>
 
           {globalState.globalProperty === "IND" ? (
@@ -118,7 +118,7 @@ const ProjectDetail = () => {
         )}
 
         <div className="image-detail-layout">
-          <img src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
+          <img loading="lazy" src={require(`../../assets/img/project/${queryParameters.get("img")}`)} alt="img" />
         </div>
         {globalState.globalProperty === "IND" ? (
           <div className="desc-main-container">
@@ -139,7 +139,7 @@ const ProjectDetail = () => {
         <p className="detail-selengkapnya-text">{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more detailed information, you can download it at the link below :"}</p>
         <div className="button-container">
           <button className="button-download-style" onClick={handleDownloadPDF}>
-            <img src={IconDownload} className="button-image-style" alt="download-icon" />
+            <img loading="lazy" src={IconDownload} className="button-image-style" alt="download-icon" />
             <p className="button-text-style">Download PDF</p>
           </button>
         </div>

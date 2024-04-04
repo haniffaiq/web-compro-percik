@@ -40,12 +40,12 @@ const Riwayat = () => {
               </div>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <img src={Pandu} className="lg:object-cover flex h-[300px] lg:h-full" />
+              <img loading="lazy" src={Pandu} className="lg:object-cover flex h-[300px] lg:h-full" />
               <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
             </div>
           </div>
           <div className="flex justify-center w-full p-5">
-            <img src={Sejarah} className="lg:object-cover flex h-full w-full" />
+            <img loading="lazy" src={Sejarah} className="lg:object-cover flex h-full w-full" />
           </div>
           <div className="p-5">
             <div className="text-[12px] lg:text-4xl font-bold text-black">ERA PEMBENTUKAN (1952 - 1959)</div>

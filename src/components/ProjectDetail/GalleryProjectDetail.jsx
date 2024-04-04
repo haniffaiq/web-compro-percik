@@ -43,7 +43,7 @@ const GalleryProjectDetail = ({ Getid }) => {
           <Carousel autoplay slidesToShow={3} {...settings}>
             {projectDatas.urlGallery.map((imageUrl, index) => (
               <div key={index}>
-                <img src={require(`../../assets/img/project/${imageUrl}`)} alt={`gambar ${index + 1}`} className="gallery-project-detail-layout" />
+                <img loading="lazy" src={require(`../../assets/img/project/${imageUrl}`)} alt={`gambar ${index + 1}`} className="gallery-project-detail-layout" />
               </div>
             ))}
           </Carousel>

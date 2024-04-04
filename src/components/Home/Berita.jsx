@@ -87,7 +87,7 @@ const Berita = () => {
                 </div>
                 <div className="flex gap-3 items-end">
                   <div>
-                    <img src={Logo} alt="logo" />
+                    <img loading="lazy" src={Logo} alt="logo" />
                   </div>
                   <div className="text-[#8d8f91]">{item.maker}</div>
                 </div>

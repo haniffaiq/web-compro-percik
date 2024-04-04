@@ -52,7 +52,7 @@ const AboutUs = () => {
                   <div className="flex flex-col gap-5 text-[4px] lg:text-sm mt-5 lg:mt-10 ">{index == 0 ? <div dangerouslySetInnerHTML={html} /> : index == 1 ? <div dangerouslySetInnerHTML={html2} /> : <div></div>}</div>
                 </div>
                 <div className="flex justify-end h-full lg:h-full">
-                  <img src={require(`../../assets/${value.img}`)} alt="img" className="object-cover rounded-lg" />
+                  <img loading="lazy" src={require(`../../assets/${value.img}`)} alt="img" className="object-cover rounded-lg" />
                 </div>
               </div>
             </div>

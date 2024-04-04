@@ -46,7 +46,7 @@ const Project = () => {
         {sortedProject.map((item) => (
           <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="image-list-wrapper">
             <div className="image-overlay"></div> {/* Tambahkan div untuk lapisan transparan */}
-            <img src={require(`../../assets/img/project/${item.urlImage}`)} alt="img" />
+            <img loading="lazy" src={require(`../../assets/img/project/${item.urlImage}`)} alt="img" />
             <div className="overlay-layout">
               <p className="overlay-text-tittle">{item.tittleProyek}</p>
               <p className="overlay-text-desc">{item.deskripsiProyek.length > 350 ? `${item.deskripsiProyek.slice(0, 350)}...` : item.deskripsiProyek}</p>

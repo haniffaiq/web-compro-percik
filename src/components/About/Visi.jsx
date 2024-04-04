@@ -16,7 +16,7 @@ const Visi = () => {
         </div>
         <div className="text-center text-3xl lg:text-5xl font-bold mb-10 mt-10">Misi</div>
         <div className="flex justify-center w-full h-full">
-          <img src={misi} />
+          <img loading="lazy" src={misi} />
         </div>
       </div>
     </>

@@ -26,9 +26,9 @@ const Galeri = () => {
       <div className="">
         <div className="p-5 lg:p-14 text-3xl lg:text-5xl font-bold">Galeri</div>
         <div className="flex gap-2 lg:h-full lg:w-full h-full w-full overflow-y-hidden p-1">
-          <img src={Header1} />
-          <img src={Header1} />
-          <img src={Header1} />
+          <img loading="lazy" src={Header1} />
+          <img loading="lazy" src={Header1} />
+          <img loading="lazy" src={Header1} />
         </div>
       </div>
     </>

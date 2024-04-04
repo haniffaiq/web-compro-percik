@@ -45,7 +45,7 @@ const Sambutan = (props) => {
         >
           <div className="grid grid-cols-2 mt-0 lg:mt-10 lg:gap-0 gap-5">
             <div className="flex justify-start h-full lg:h-full">
-              <img src={require(`../../assets/img/kepsek/${selectedData[a - 1].sambutan.image}`)} className="object-cover rounded-lg" />
+              <img loading="lazy" src={require(`../../assets/img/kepsek/${selectedData[a - 1].sambutan.image}`)} className="object-cover rounded-lg" />
             </div>
             <div className="text-white p-5 lg:p-14">
               <div className="text-[12px] lg:text-4xl font-bold">

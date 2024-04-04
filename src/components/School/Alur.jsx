@@ -17,7 +17,7 @@ const Alur = () => {
           </div>
         </div>
         <div className="w-full flex justify-center mt-10">
-          <img src={Foto} />
+          <img loading="lazy" src={Foto} />
         </div>
       </div>
     </>

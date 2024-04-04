@@ -76,14 +76,14 @@ const Event = () => {
           <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
             <div>
               <div>
-                <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+                <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
               <div className="gallery-text-item ">
                 <p className="date-style">{item.date}</p>
                 <p className="gallery-text-item-headline">{item.headline}</p>
                 <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
                 <div className="maker-layout">
-                  <img src={Logo} alt="logo" />
+                  <img loading="lazy" src={Logo} alt="logo" />
                   <p className="gallery-text-item-maker">{item.maker}</p>
                 </div>
               </div>

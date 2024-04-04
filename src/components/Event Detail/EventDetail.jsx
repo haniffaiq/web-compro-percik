@@ -75,15 +75,15 @@ const EventDetail = () => {
             <h2>{selectedItem.headline}</h2>
             <div className="date-writer-layout-pdf">
               <div className="date-layout-pdf">
-                <img src={LogoWriter} alt="Image" />
+                <img loading="lazy" src={LogoWriter} alt="Image" />
                 <p>{selectedItem.maker}</p>
               </div>
               <div className="writter-layout-pdf">
-                {/* <img src={LogoWriter} alt="Image" /> */}
+                {/* <img loading="lazy" src={LogoWriter} alt="Image" /> */}
                 <p>{selectedItem.date}</p>
               </div>
             </div>
-            <img className="lg:event-image-main-layout" src={require(`../../assets/${selectedItem.urlImage}`)} alt="image headline" />
+            <img loading="lazy" className="lg:event-image-main-layout" src={require(`../../assets/${selectedItem.urlImage}`)} alt="image headline" />
           </div>
           <div className="isi-desc-event-pdf">
             {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
@@ -112,15 +112,15 @@ const EventDetail = () => {
             <h2>{selectedItem.headline}</h2>
             <div className="date-writer-layout">
               <div className="date-layout">
-                <img src={LogoWriter} alt="Image" />
+                <img loading="lazy" src={LogoWriter} alt="Image" />
                 <p>{selectedItem.maker}</p>
               </div>
               <div className="writter-layout">
-                {/* <img src={LogoWriter} alt="Image" /> */}
+                {/* <img loading="lazy" src={LogoWriter} alt="Image" /> */}
                 <p>{selectedItem.date}</p>
               </div>
             </div>
-            <img className="lg:event-image-main-layout" src={require(`../../assets/${selectedItem.urlImage}`)} alt="image headline" />
+            <img loading="lazy" className="lg:event-image-main-layout" src={require(`../../assets/${selectedItem.urlImage}`)} alt="image headline" />
           </div>
           <div className="isi-desc-event">
             {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
@@ -132,7 +132,7 @@ const EventDetail = () => {
         <div className="detail-selengkapnya-event-layout">
           <p>{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more details, please download the following link:"}</p>
           <button className="detail-selengkapnya-event-button-layout" onClick={handleDownloadPDF}>
-            <img src={IconDownload} />
+            <img loading="lazy" src={IconDownload} />
             <p>{globalState.globalProperty === "IND" ? "Download Berita" : "Download News"}</p>
           </button>
         </div>
@@ -144,14 +144,14 @@ const EventDetail = () => {
               <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
                 <div className="card-layout">
                   <div>
-                    <img src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+                    <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
                   </div>
                   <p className="date-style">{item.date}</p>
                   <div className="gallery-text-item">
                     <p className="gallery-text-item-headline">{item.headline}</p>
                     <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
                     <div className="maker-layout">
-                      <img src={LogoWriter} alt="logo" />
+                      <img loading="lazy" src={LogoWriter} alt="logo" />
                       <p className="gallery-text-item-maker">{item.maker}</p>
                     </div>
                   </div>

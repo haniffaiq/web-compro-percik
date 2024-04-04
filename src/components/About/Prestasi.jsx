@@ -21,7 +21,7 @@ const formatDate = (dateObject) => {
 const itemsPerPage = 6;
 const PrestasiComponent = ({ author, created_at, title, description, category, location, date }) => (
   <button className="min-h-[350px] lg:h-full  border rounded-lg p-3 flex flex-col shadow-2xl">
-    <img className="w-full min-w-[200px]" src={Foto} alt="foto" />
+    <img loading="lazy" className="w-full min-w-[200px]" src={Foto} alt="foto" />
     <div className="text-start text-md lg:text-2xl mt-5">{title}</div>
     <div className="flex gap-3 text-start mt-3">
       <div className="text-[#8d8f91] flex-grow text-xs lg:text-md">{description}</div>

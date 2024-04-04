@@ -15,7 +15,7 @@ const DanaDetail = ({ Getid }) => {
         <div className="dana-detail-content-layout">
           {projectDatas.rincianDanaPict.map((imageUrl, index) => (
             <div key={index}>
-              <img src={require(`../../assets/img/project/${imageUrl}`)} alt="rincian-dana" />
+              <img loading="lazy" src={require(`../../assets/img/project/${imageUrl}`)} alt="rincian-dana" />
             </div>
           ))}
         </div>

@@ -22,7 +22,7 @@ const Visi = (props) => {
           Misi
         </div>
         <div className="flex justify-center">
-          <img src={require(`../../assets/img${data.bahasa[a - 1].misi}`)} />
+          <img loading="lazy" src={require(`../../assets/img${data.bahasa[a - 1].misi}`)} />
         </div>
       </div>
     </>

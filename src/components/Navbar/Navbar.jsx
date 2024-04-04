@@ -63,7 +63,7 @@ const Navbar = () => {
           onClick={() => setNavbarOpen(!navbarOpen)}
           className="flex items-center lg:hidden"
         >
-          <img src={burger} alt="Menu" />
+          <img loading="lazy" src={burger} alt="Menu" />
         </button>
 
         <div className="hidden lg:flex items-center gap-4 w-full col-span-3">
