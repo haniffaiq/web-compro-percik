@@ -49,13 +49,13 @@
   }
 
   .overlay-layout {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .overlay-text-tittle {
-    position: absolute;
     bottom: 80px;
     color: white;
     font-family: "Segoe UI";

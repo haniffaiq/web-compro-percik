@@ -19,9 +19,9 @@ const formatDate = (dateObject) => {
 };
 
 const itemsPerPage = 6;
-const PrestasiComponent = ({ author, created_at, title, description, category, location, date }) => (
+const PrestasiComponent = ({ author, created_at, title, description, category, location, date, imgUrl }) => (
   <button className="min-h-[350px] lg:h-full  border rounded-lg p-3 flex flex-col shadow-2xl">
-    <img loading="lazy" className="w-full min-w-[200px]" src={Foto} alt="foto" />
+    <img loading="lazy" className="w-full min-w-[200px]" src={require(`../../assets/img/achivements/${imgUrl}`)} alt="foto" />
     <div className="text-start text-md lg:text-2xl mt-5">{title}</div>
     <div className="flex gap-3 text-start mt-3">
       <div className="text-[#8d8f91] flex-grow text-xs lg:text-md">{description}</div>
@@ -42,14 +42,14 @@ const Prestasi = () => {
   let sortedPrestasi = {};
   if (globalState.globalProperty == "IND") {
     sortedPrestasi = [...data.bahasa].sort((a, b) => {
-      const dateA = parseDate(a.date);
-      const dateB = parseDate(b.date);
+      const dateA = parseDate(a.created_at);
+      const dateB = parseDate(b.created_at);
       return dateB - dateA;
     });
   } else {
     sortedPrestasi = [...data.english].sort((a, b) => {
-      const dateA = parseDate(a.date);
-      const dateB = parseDate(b.date);
+      const dateA = parseDate(a.created_at);
+      const dateB = parseDate(b.created_at);
       return dateB - dateA;
     });
   }

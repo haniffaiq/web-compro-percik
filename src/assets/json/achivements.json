@@ -8,7 +8,8 @@
           "description": "",
           "category": ["1 EMAS KATEGORI", "1 PERAK KATEGORI", "1 PERUNGGU KATEGORI"],
           "date": "01/08/2022",
-          "location": "Kuala Lumpur, Malaysia"
+          "location": "Kuala Lumpur, Malaysia",
+          "imgUrl": "achivement.webp" 
         },
         {
           "id": 2,
@@ -18,17 +19,19 @@
           "description": "",
           "category": ["JUARA 1 (50 METER)", "JUARA 2 (100 METER)"],
           "date": "01/08/2022",
-          "location": "Solo, Indonesia"
+          "location": "Solo, Indonesia",
+          "imgUrl": "achivement.webp" 
         },
         {
           "id": 3,
           "author": "KAYLA AYUDIA LARASATI",
-          "created_at": "01/01/2024",
+          "created_at": "01/02/2024",
           "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
           "description": "",
           "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
           "date": "01/08/2022",
-          "location": "DKI Jakarta, Indonesia"
+          "location": "DKI Jakarta, Indonesia",
+          "imgUrl": "XTRAVAGANZA 2022 (2).webp" 
         },
         {
           "id": 4,
@@ -61,72 +64,78 @@
             "JUARA 1 (100 METER)"
           ],
           "date": "01/09/2022",
-          "location": "Bekasi, Indonesia"
+          "location": "Bekasi, Indonesia",
+          "imgUrl": "achivement.webp" 
         }
       ],
-    "english": [
+      "english": [
         {
-          "id": 1,
-          "author": "ANDI SASHA SARINA (4C)",
-          "created_at": "01/01/2024",
-          "title": "SKATE ASIA 2022 IN SUBWAY KUALA LUMPUR, MALAYSIA {ENGLISH}",
-          "description": "",
-          "category": ["1 EMAS KATEGORI", "1 PERAK KATEGORI", "1 PERUNGGU KATEGORI"],
-          "date": "01/08/2022",
-          "location": "Kuala Lumpur, Malaysia"
+            "id": 1,
+            "author": "ANDI SASHA SARINA (4C)",
+            "created_at": "01/01/2024",
+            "title": "SKATE ASIA 2022 IN SUBWAY KUALA LUMPUR, MALAYSIA {ENGLISH}",
+            "description": "",
+            "category": ["1 GOLD MEDAL CATEGORY", "1 SILVER MEDAL CATEGORY", "1 BRONZE MEDAL CATEGORY"],
+            "date": "01/08/2022",
+            "location": "Kuala Lumpur, Malaysia",
+            "imgUrl": "achivement.webp"
         },
         {
-          "id": 1,
-          "author": "BALANGGA SHIDIQ HERLIANTORO (5C)",
-          "created_at": "01/01/2024",
-          "title": "KEJUARAAN SEPATU RODA NASIONAL PIALA WALI KOTA SOLO ke-7 2022",
-          "description": "",
-          "category": ["JUARA 1 (50 METER)", "JUARA 2 (100 METER)"],
-          "date": "01/08/2022",
-          "location": "Solo, Indonesia"
+            "id": 2,
+            "author": "BALANGGA SHIDIQ HERLIANTORO (5C)",
+            "created_at": "01/01/2024",
+            "title": "7th NATIONAL ROLLER SKATING CHAMPIONSHIP MAYOR OF SOLO CUP 2022",
+            "description": "",
+            "category": ["CHAMPION 1 (50 METERS)", "CHAMPION 2 (100 METERS)"],
+            "date": "01/08/2022",
+            "location": "Solo, Indonesia",
+            "imgUrl": "achivement.webp"
         },
         {
-          "id": 1,
-          "author": "KAYLA AYUDIA LARASATI",
-          "created_at": "01/01/2024",
-          "title": "RENANG BULANAN TINGKAT KOTA JAKARTA PUSAT 2022",
-          "description": "",
-          "category": ["JUARA 3 (50 METER) GAYA BEBAS PUTRI"],
-          "date": "01/08/2022",
-          "location": "DKI Jakarta, Indonesia"
+            "id": 3,
+            "author": "KAYLA AYUDIA LARASATI",
+            "created_at": "01/02/2024",
+            "title": "JAKARTA CITY LEVEL MONTHLY SWIMMING COMPETITION 2022",
+            "description": "",
+            "category": ["3rd PLACE (50 METERS FREESTYLE FOR GIRLS)"],
+            "date": "01/08/2022",
+            "location": "DKI Jakarta, Indonesia",
+            "imgUrl": "XTRAVAGANZA 2022 (2).webp"
         },
         {
-          "id": 1,
-          "author": [
-            "ANDI QONITA BILBINA GAZLY (6C)",
-            "BALANGGA SHIDIQ HERLIANTORO (5C)",
-            "AQUILA MALIK MAULANA (5C)",
-            "ANDI HUMAERA ZAHEN NAFAY GAZLY (5B)",
-            "ZIVANNA ASHAKEELA ANDRYAN (5B)",
-            "CHYLADISKA CALISTA (5A)",
-            "RANIA NAYYARA SALSABILA (3C)",
-            "RAKA BHADRESWARA PUTRA MAESTRA (4C)",
-            "FARA ALORA KINANTI (4C)",
-            "KASSABIAN ALKHAIRAN HABIBIE (1C)"
-          ],
-          "created_at": "01/01/2024",
-          "title": "KEJUARAAN SEPATU RODA BUPATI BEKASI OPEN 2022",
-          "description": "",
-          "category": [
-            "JUARA 3 (100 METER)",
-            "JUARA 2 (100 METER)",
-            "JUARA 1 (100 METER)",
-            "JUARA 1 (200 METER)",
-            "JUARA 3 (100 METER)",
-            "JUARA 3 (100 METER)",
-            "JUARA 3 (100 METER)",
-            "JUARA 2 (100 METER)",
-            "JUARA 3 (100 METER)",
-            "JUARA 1 (100 METER)",
-            "JUARA 1 (100 METER)"
-          ],
-          "date": "01/09/2022",
-          "location": "Bekasi, Indonesia"
+            "id": 4,
+            "author": [
+                "ANDI QONITA BILBINA GAZLY (6C)",
+                "BALANGGA SHIDIQ HERLIANTORO (5C)",
+                "AQUILA MALIK MAULANA (5C)",
+                "ANDI HUMAERA ZAHEN NAFAY GAZLY (5B)",
+                "ZIVANNA ASHAKEELA ANDRYAN (5B)",
+                "CHYLADISKA CALISTA (5A)",
+                "RANIA NAYYARA SALSABILA (3C)",
+                "RAKA BHADRESWARA PUTRA MAESTRA (4C)",
+                "FARA ALORA KINANTI (4C)",
+                "KASSABIAN ALKHAIRAN HABIBIE (1C)"
+            ],
+            "created_at": "01/01/2024",
+            "title": "BEKASI DISTRICT ROLLER SKATING CHAMPIONSHIP OPEN 2022",
+            "description": "",
+            "category": [
+                "3rd PLACE (100 METERS)",
+                "2nd PLACE (100 METERS)",
+                "1st PLACE (100 METERS)",
+                "1st PLACE (200 METERS)",
+                "3rd PLACE (100 METERS)",
+                "3rd PLACE (100 METERS)",
+                "3rd PLACE (100 METERS)",
+                "2nd PLACE (100 METERS)",
+                "3rd PLACE (100 METERS)",
+                "1st PLACE (100 METERS)",
+                "1st PLACE (100 METERS)"
+            ],
+            "date": "01/09/2022",
+            "location": "Bekasi, Indonesia",
+            "imgUrl": "achivement.webp"
         }
-      ]
+    ]
+    
 }
