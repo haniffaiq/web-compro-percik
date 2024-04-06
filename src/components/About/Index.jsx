@@ -11,7 +11,7 @@ import Riwayat from "./Riwayat";
 
 const About = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIAbout");
+  console.log(globalState.globalProperty );
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);

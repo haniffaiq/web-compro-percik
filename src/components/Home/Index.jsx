@@ -11,7 +11,7 @@ const Home = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const [isMobile, setIsMobile] = useState(false);
 
-  console.log(globalState, "DIHOME");
+  console.log(globalState.globalProperty );
 
   useEffect(() => {
     window.scrollTo(0, 0);

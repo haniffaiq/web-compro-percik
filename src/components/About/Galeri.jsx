@@ -31,7 +31,7 @@ const carouselItems = [
 
 const Galeri = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIHeader");
+  console.log(globalState.globalProperty );
 
   const customDotRender = (index, { isActive }) => {
     const dotStyle = {
@@ -94,102 +94,7 @@ const Galeri = () => {
             </div>
           ))}
 
-          {/* <div className="h-[300px] ">
-            <div
-              className="h-full object-cover"
-              style={{
-                backgroundImage: `url(${Header1})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            >
-              <div className="h-full flex flex-col justify-center ml-24">
-                <div className="text-white text-[50px] font-[600]">
-                  Mari Bergabung dengan Kami
-                </div>
-                <div className="text-white text-[45px] font-[600]">
-                  Mari Kita Menciptakan Anak Didik yang Berbakat
-                </div>
-                <div>
-                  <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
-                    Kunjungi Kami
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="h-[300px] ">
-            <div
-              className="h-full object-cover"
-              style={{
-                backgroundImage: `url(${Header1})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            >
-              <div className="h-full flex flex-col justify-center ml-24">
-                <div className="text-white text-[50px] font-[600]">
-                  Mari Bergabung dengan Kami
-                </div>
-                <div className="text-white text-[45px] font-[600]">
-                  Mari Kita Menciptakan Anak Didik yang Berbakat
-                </div>
-                <div>
-                  <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
-                    Kunjungi Kami
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="h-[300px] ">
-            <div
-              className="h-full object-cover"
-              style={{
-                backgroundImage: `url(${Header1})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            >
-              <div className="h-full flex flex-col justify-center ml-24">
-                <div className="text-white text-[50px] font-[600]">
-                  Mari Bergabung dengan Kami
-                </div>
-                <div className="text-white text-[45px] font-[600]">
-                  Mari Kita Menciptakan Anak Didik yang Berbakat
-                </div>
-                <div>
-                  <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
-                    Kunjungi Kami
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="h-[300px] ">
-            <div
-              className="h-full object-cover"
-              style={{
-                backgroundImage: `url(${Header1})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-              }}
-            >
-              <div className="h-full flex flex-col justify-center ml-24">
-                <div className="text-white text-[50px] font-[600]">
-                  Mari Bergabung dengan Kami
-                </div>
-                <div className="text-white text-[45px] font-[600]">
-                  Mari Kita Menciptakan Anak Didik yang Berbakat
-                </div>
-                <div>
-                  <button className="border bg-[#2F80ED] text-white py-2 mt-2 px-4 text-md border-none rounded-md font-bold">
-                    Kunjungi Kami
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div> */}
+          
         </Carousel>
       </div>
     </ConfigProvider>

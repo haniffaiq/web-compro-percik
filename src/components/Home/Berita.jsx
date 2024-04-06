@@ -13,7 +13,7 @@ const parseDate = (dateString) => {
 
 const Berita = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIHeader");
+  console.log(globalState.globalProperty );
   const [currentPage, setCurrentPage] = useState(1);
   const handlePageChange = (page) => {
     setCurrentPage(page);

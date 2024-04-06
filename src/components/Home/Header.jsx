@@ -32,7 +32,7 @@ const carouselItems = [
 
 const Header = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIHeader");
+  console.log(globalState.globalProperty );
   const count1 = useMotionValue(0);
   const rounded1 = useTransform(count1, Math.round);
 
@@ -90,7 +90,7 @@ const Header = () => {
             />
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
 
-            {index === 0 && (
+            {index === 10 && (
               <div className="absolute bottom-0 left-0 w-full text-center p-10">
                 <div className="text-white text-[15px] lg:text-[25px] font-[600]">
                   {item.title}

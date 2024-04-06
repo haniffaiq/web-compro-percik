@@ -5,6 +5,7 @@ import misi from "../../assets/img/misi.webp";
 
 const Visi = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
+  console.log(globalState.globalProperty );
 
   return (
     <>

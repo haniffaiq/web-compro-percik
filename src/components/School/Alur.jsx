@@ -1,11 +1,10 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
 import AppContext from "../../context/AppContext";
 import Foto from "../../assets/img/1 13264.webp";
 
 const Alur = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-
+  console.log(globalState.globalProperty );
   return (
     <>
       <div className="p-5 lg:p-8">

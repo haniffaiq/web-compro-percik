@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   // console.log(globalState, "DIHeader");
+  console.log(globalState.globalProperty );
 
   return (
     <>

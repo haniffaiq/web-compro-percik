@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
 import { Link } from "react-router-dom";
 import data from "../../assets/json/school.json";
@@ -28,7 +27,7 @@ const SchoolCard = ({ name, image, address }) => (
 
 const Sekolah = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  // console.log(globalState, "DIHeader");
+  console.log(globalState.globalProperty );
   
   return (
     <>

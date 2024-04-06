@@ -2,6 +2,7 @@
 
 /* Untuk Mobile */
 @media only screen and (max-width: 600px) {
+  
   .ant-carousel .slick-dots li {
     background-color: grey;
     border-radius: 50%;
@@ -197,6 +198,7 @@
 
 /* Untuk Mobile */
 @media only screen and (max-width: 600px) {
+
   .project-detail-main-container h1 {
     color: #000;
     font-family: "Segoe UI";

@@ -7,7 +7,7 @@ import Header3 from "../../assets/img/school/header3.JPG";
 
 const Galeri = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIHeader");
+  console.log(globalState.globalProperty );
 
   const customDotRender = (index, { isActive }) => {
     const dotStyle = {

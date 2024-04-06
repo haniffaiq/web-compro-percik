@@ -96,7 +96,7 @@ const ProjectDetail = () => {
         </Link>
       </div>
 
-      <div className="project-detail-main-container">
+      <div className="project-detail-main-container mx-12">
         {globalState.globalProperty === "IND" ? (
           <h1>
             {projectDatasBahasa.tittleProyek.split('\n').map((line, index) => (

@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
-import { Carousel, ConfigProvider } from "antd";
+// import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import Lipi from "../../assets/icon/Group 2.svg";
-import Bni from "../../assets/icon/Layer_x5F_1.svg";
-import Telkomsel from "../../assets/icon/Layer_x0020_1.svg";
+// import Lipi from "../../assets/icon/Group 2.svg";
+// import Bni from "../../assets/icon/Layer_x5F_1.svg";
+// import Telkomsel from "../../assets/icon/Layer_x0020_1.svg";
 import Logo from "../../assets/logo/logo.svg";
 
 const Partnership = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState, "DIHeader");
+  console.log(globalState.globalProperty );
 
   return (
     <>

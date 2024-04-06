@@ -1,22 +1,17 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
-// import Foto from "../../assets/img/Rectangle108school.png";
+
 import Wisuda from "../../assets/icon/ph_student-light.svg";
 import Loc from "../../assets/icon/loc.svg";
 import Telf from "../../assets/icon/telfon.svg";
 import data from "../../assets/json/school.json";
-// import schoolsData from "../../assets/json/school";
-
-// import SchoolDetail from "../SchoolDetail/Index";
-
 
 const Daftar = () => {
   let schoolsData = data.bahasa
   const { globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
-  // console.log(data)
-  // console.log(schoolsData)
+  console.log(globalState.globalProperty + saveId);
   return (
     <div className="p-5 lg:p-8">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
