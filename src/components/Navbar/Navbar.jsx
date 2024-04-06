@@ -60,7 +60,9 @@ const Navbar = () => {
           </Link>
         </div>
         <button
-          onClick={() => setNavbarOpen(!navbarOpen)}
+          onClick={() => {
+            setNavbarOpen(!navbarOpen);
+          }}
           className="flex items-center lg:hidden"
         >
           <img loading="lazy" src={burger} alt="Menu" />
