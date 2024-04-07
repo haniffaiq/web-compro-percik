@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import AppContext from "../../context/AppContext";
 import Modal from "../Modal/Modal";
 import "./ManagementStyle.css";
+import { IoMdClose } from "react-icons/io";
 
 const TopSectionPict = ({ selectedButton, manajemenData }) => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -17,7 +18,9 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  const filteredData = manajemenData.filter((item) => item.jabatanManajemen === selectedButton);
+  const filteredData = manajemenData.filter(
+    (item) => item.jabatanManajemen === selectedButton
+  );
 
   if (filteredData.length === 0) {
     return <div>No data available for {selectedButton}</div>;
@@ -25,24 +28,58 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
 
   return (
     <div>
-      {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
-        <div className="top-section-pict-container" onClick={() => openModal({ namaLengkapManajemen, deskripsiManajemen, imageSourceManajemen })}>
-          <div className="pict-list-management-wrapper">
-            <div className="management-image-wrapper" key={id}>
-              <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
-            </div>
-            <div className="management-text-wrapper">
-              <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
-              <p className="overlay-text-management-desc">{deskripsiManajemen.length > 300 ? deskripsiManajemen.slice(0, 300) + "..." : deskripsiManajemen}</p>
+      {filteredData.map(
+        ({
+          id,
+          namaLengkapManajemen,
+          jabatanManajemen,
+          deskripsiManajemen,
+          imageSourceManajemen,
+        }) => (
+          <div
+            className="top-section-pict-container"
+            onClick={() =>
+              openModal({
+                namaLengkapManajemen,
+                deskripsiManajemen,
+                imageSourceManajemen,
+              })
+            }
+          >
+            <div className="pict-list-management-wrapper">
+              <div className="management-image-wrapper" key={id}>
+                <img
+                  loading="lazy"
+                  src={require(`../../assets/${imageSourceManajemen}`)}
+                  alt="img"
+                />
+              </div>
+              <div className="management-text-wrapper">
+                <p className="overlay-text-management-tittle">
+                  {namaLengkapManajemen}
+                </p>
+                <p className="overlay-text-management-desc">
+                  {deskripsiManajemen.length > 300
+                    ? deskripsiManajemen.slice(0, 300) + "..."
+                    : deskripsiManajemen}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        )
+      )}
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         {selectedManagement && (
           <>
+            <button onClick={closeModal} className="flex justify-end w-full">
+              <IoMdClose />
+            </button>
             <div className="modal-konten-container">
-              <img loading="lazy" src={require(`../../assets/${selectedManagement.imageSourceManajemen}`)} alt="popup"></img>
+              <img
+                loading="lazy"
+                src={require(`../../assets/${selectedManagement.imageSourceManajemen}`)}
+                alt="popup"
+              ></img>
               <div className="modal-konten-deskripsi-container">
                 <h2>{selectedManagement.namaLengkapManajemen}</h2>
                 <p>{selectedManagement.deskripsiManajemen}</p>
