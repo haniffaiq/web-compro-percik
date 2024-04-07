@@ -68,8 +68,12 @@ const Event = () => {
           {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
         </Link>
       </div>
-      <div className="page-tittle-event">
+      {/* <div className="page-tittle-event">
         <p>{globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}</p>
+      </div> */}
+
+      <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">
+        {globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}
       </div>
       <div className="gallery">
         {currentData.map((item) => (

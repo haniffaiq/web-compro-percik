@@ -19,7 +19,7 @@ const About = () => {
           </div>
           <div className="flex flex-col justify-start ">
             <div className="text-center lg:text-start">
-              <div className="font-bold text-md lg:text-3xl mb-4 lg:mb-10 lg:text-start">YAYASAN DENGAN TRACK RECORD MEMUKAU</div>
+              <div className="font-bold text-md lg:text-3xl mb-4 lg:mb-10 text-start">YAYASAN DENGAN TRACK RECORD MEMUKAU</div>
               <div className="text-sm lg:text-md mr-0 lg:mr-24 mb-4 lg:mb-10 text-start">
                 Yayasan Perguruan Cikini telah mencatat prestasi gemilang sebagai lembaga pendidikan dengan track record yang memukau. Sejak berdiri, yayasan ini telah melahirkan banyak individu hebat yang kini berkontribusi di berbagai
                 sektor di Indonesia. Alumni Perguruan Cikini menjadi bukti nyata akan dedikasi yayasan dalam membentuk generasi yang unggul dan berprestasi. <br />

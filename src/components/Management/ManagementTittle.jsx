@@ -8,8 +8,12 @@ const ManagementTittle = () => {
   return (
     <div>
       <div className="tittle-management-wrapper">
-        <div className="tittle-container">
+        {/* <div className="tittle-container">
           <p>{globalState.globalProperty === "IND" ? "MANAJEMEN" : "MANAGEMENT"}</p>
+        </div> */}
+
+        <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">
+          {globalState.globalProperty === "IND" ? "MANAJEMEN" : "MANAGEMENT"}
         </div>
         <div className="deskripsi-management-container">
           <p>

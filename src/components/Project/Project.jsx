@@ -40,7 +40,10 @@ const Project = () => {
         </Link>
       </div>
       <div className="page-tittle">
-        <p>{globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}</p>
+        {/* <p>{globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}</p> */}
+        <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">
+          {globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}
+        </div>
       </div>
       <div className="image-list-container">
         {sortedProject.map((item) => (

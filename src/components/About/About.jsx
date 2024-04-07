@@ -148,13 +148,13 @@ const AboutUs = () => {
                   <IoMdClose />
                 </button>
                 <div className="modal-konten-container">
-                  <img
+                  {/* <img
                     loading="lazy"
                     src={require(`../../assets/${selectedManagement.img}`)}
                     alt="popup"
-                  ></img>
-                  <div className="modal-konten-deskripsi-container">
-                    <div className="text-[20px] font-semibold text-center">
+                  ></img> */}
+                  <div>
+                    <div className="text-[20px] font-semibold text-start">
                       {selectedManagement.title}
                     </div>
                     <div className="text-[24px] mt-5 font-bold text-start">
