@@ -4,7 +4,7 @@ import Foto from "../../assets/img/1 13264.webp";
 
 const Alur = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
-  console.log(globalState.globalProperty );
+  console.log(globalState.globalProperty);
   return (
     <>
       <div className="p-5 lg:p-8">
@@ -16,7 +16,7 @@ const Alur = () => {
           </div>
         </div>
         <div className="w-full flex justify-center mt-10">
-          <img loading="lazy" src={Foto} />
+          <img loading="lazy" src={Foto} alt="lazy loading" />
         </div>
       </div>
     </>
