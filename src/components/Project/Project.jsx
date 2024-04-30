@@ -30,21 +30,27 @@ const Project = () => {
   }
   return (
     <>
-      <div className="flex gap-1 ml-[35px] py-9 ">
-        <Link to="/" className="">
-          {globalState.globalProperty === "IND" ? "Home" : "Home"}
-        </Link>
-        <span> / </span>
-        <Link to="/project" className="">
-          {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
-        </Link>
-      </div>
-      <div className="page-tittle">
-        {/* <p>{globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}</p> */}
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">
-          {globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}
+      <div>
+        <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
+          <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
+            <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">
+              {globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}
+            </p>
+          </div>
+          <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div>
         </div>
       </div>
+      <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
+        <Link to="/" className="text-lg">
+          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
+        </Link>
+        <span className="text-lg"> &gt; </span>
+        <Link to="/project" className="font-bold text-lg">
+          {globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}
+        </Link>
+      </div>
+
+
       <div className="image-list-container">
         {sortedProject.map((item) => (
           <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="image-list-wrapper">

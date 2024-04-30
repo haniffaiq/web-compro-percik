@@ -42,10 +42,10 @@ const Navbar = () => {
     };
   }, [prevScrollPos]);
 
-  const navbarClasses = `w-[1090px] mt-[20px] rounded-tl-[20px] ml-[500px] border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
+  const navbarClasses = `w-full mt-[20px] rounded-tl-[20px] border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
 
   return (
-    <div className="flex gap-0 bg-[#034DA2] ">
+    <div className="flex gap-0 bg-[#034DA2] justify-between ">
       <div className="flex w-[500px] lg:gap-3 col-span- ml-[24px]">
         <Link to="/" className="w-[65px] h-[65px] mt-[5px]">
           <img src={logo} alt="ypc" />
@@ -65,7 +65,7 @@ const Navbar = () => {
             <img loading="lazy" src={burger} alt="Menu" />
           </button>
 
-          <div className="hidden lg:flex items-center gap-4 w-full col-span-6">
+          <div className="hidden lg:flex items-center gap-6 w-full col-span-6 ">
             <Link to="/" className={location.pathname === "/" ? " text-black font-[600]" : "text-[#6B7280] font-[600]"}>
               {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
             </Link>

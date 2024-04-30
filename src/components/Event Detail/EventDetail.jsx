@@ -98,7 +98,7 @@ const EventDetail = () => {
     <>
       <div className="flex gap-1 ml-[35px] py-9">
         <Link to="/" className="">
-          {globalState.globalProperty === "IND" ? "Home" : "Home"}
+          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span> / </span>
         <Link to="/event" className="">
