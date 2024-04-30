@@ -1,96 +1,137 @@
-import React, { useContext, useState } from "react";
-// import { Link } from "react-router-dom";
+import React, { useContext } from "react";
 import AppContext from "../../context/AppContext";
-import Modal from "../Modal/Modal";
+// import { Link } from "react-router-dom";
+
 import "./ManagementStyle.css";
-import { IoMdClose } from "react-icons/io";
 
 const TopSectionPict = ({ selectedButton, manajemenData }) => {
-  const { globalState, updateGlobalState } = useContext(AppContext);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedManagement, setSelectedManagement] = useState(null);
-
-  const openModal = (managementData) => {
-    setSelectedManagement(managementData);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-  const filteredData = manajemenData.filter(
-    (item) => item.jabatanManajemen === selectedButton
-  );
+  const { globalState } = useContext(AppContext);
+  const filteredData = manajemenData.filter((item) => item.jabatanManajemen === selectedButton);
 
   if (filteredData.length === 0) {
     return <div>No data available for {selectedButton}</div>;
   }
 
-  return (
-    <div>
-      {filteredData.map(
-        ({
-          id,
-          namaLengkapManajemen,
-          jabatanManajemen,
-          deskripsiManajemen,
-          imageSourceManajemen,
-        }) => (
-          <div
-            className="top-section-pict-container"
-            onClick={() =>
-              openModal({
-                namaLengkapManajemen,
-                deskripsiManajemen,
-                imageSourceManajemen,
-              })
-            }
-          >
+  if (selectedButton === "Pembina" || selectedButton === "Advisor") {
+    return (
+      <div>
+        {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
+          <div className="top-section-pict-container">
             <div className="pict-list-management-wrapper">
               <div className="management-image-wrapper" key={id}>
-                <img
-                  loading="lazy"
-                  src={require(`../../assets/${imageSourceManajemen}`)}
-                  alt="img"
-                />
+                <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
               </div>
               <div className="management-text-wrapper">
-                <p className="overlay-text-management-tittle">
-                  {namaLengkapManajemen}
-                </p>
-                <p className="overlay-text-management-desc">
-                  {deskripsiManajemen.length > 300
-                    ? deskripsiManajemen.slice(0, 300) + "..."
-                    : deskripsiManajemen}
-                </p>
+                <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
+                <div className="yellow-bar-management-tittle"></div>
+
+                <div className="overlay-text-management-desc">
+                  {deskripsiManajemen.split("\n").map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        )
-      )}
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        {selectedManagement && (
-          <>
-            <button onClick={closeModal} className="flex justify-end w-full">
-              <IoMdClose />
-            </button>
-            <div className="modal-konten-container">
-              <img
-                loading="lazy"
-                src={require(`../../assets/${selectedManagement.imageSourceManajemen}`)}
-                alt="popup"
-              ></img>
-              <div className="modal-konten-deskripsi-container">
-                <h2>{selectedManagement.namaLengkapManajemen}</h2>
-                <p>{selectedManagement.deskripsiManajemen}</p>
-                <button onClick={closeModal}>tutup</button>
+        ))}
+      </div>
+    );
+  }
+
+  if (selectedButton === "Pengawas" || selectedButton === "Supervisor") {
+    return (
+      <div>
+        {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
+          <div className="top-section-pict-container">
+            <div className="pict-list-management-wrapper">
+              <div className="management-image-wrapper" key={id}>
+                <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
+              </div>
+              <div className="management-text-wrapper">
+                <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
+                <div className="yellow-bar-management-tittle"></div>
+
+                <div className="overlay-text-management-desc">
+                  {deskripsiManajemen.split("\n").map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
             </div>
-          </>
-        )}
-      </Modal>
-    </div>
-  );
+          </div>
+        ))}
+        <div className="quotes-habibi">
+          <p style={{ fontSize: "32px", fontWeight: "500" }}>
+            <strong style={{ fontSize: "42px" }}>’’</strong>
+            Keberhasilan bukanlah milik orang yang pintar, keberhasilan adalah kepunyaan mereka yang senantiasa berusaha.
+            <strong style={{ fontSize: "42px" }}>’’</strong>
+            <span style={{ opacity: "0.6", fontStyle: "italic" }}>~ BJ. Habibie</span>
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (selectedButton === "Pengurus" || selectedButton === "Administrator") {
+    return (
+      <div className="top-section-pict-container-pengurus">
+        {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
+          <div>
+            <div className="pict-list-management-wrapper-pengurus">
+              <div className="management-image-wrapper-pengurus" key={id}>
+                <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
+              </div>
+              {deskripsiManajemen.length >= 719 && globalState.globalProperty === "IND" ? (
+                <div className="management-text-wrapper-pengurus" style={{ height: "1030px" }}>
+                  <div className="all-text-wrapper-pengurus">
+                    <p className="overlay-text-management-tittle-pengurus">{namaLengkapManajemen}</p>
+                    <div className="yellow-bar-management-tittle-pengurus"></div>
+
+                    <div className="overlay-text-management-desc-pengurus">
+                      {deskripsiManajemen.split("\n").map((paragraph, index) =>
+                        // Kondisional render berdasarkan panjang deskripsiManajemen
+                        deskripsiManajemen.length < 719 ? (
+                          // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
+                          <p key={index} style={{ height: "366px" }}>
+                            {paragraph}
+                          </p>
+                        ) : (
+                          // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
+                          <p key={index}>{paragraph}</p>
+                        )
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="management-text-wrapper-pengurus">
+                  <div className="all-text-wrapper-pengurus">
+                    <p className="overlay-text-management-tittle-pengurus">{namaLengkapManajemen}</p>
+                    <div className="yellow-bar-management-tittle-pengurus"></div>
+
+                    <div className="overlay-text-management-desc-pengurus">
+                      {deskripsiManajemen.split("\n").map((paragraph, index) =>
+                        // Kondisional render berdasarkan panjang deskripsiManajemen
+                        deskripsiManajemen.length < 719 ? (
+                          // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
+                          <p key={index} style={{ height: "366px" }}>
+                            {paragraph}
+                          </p>
+                        ) : (
+                          // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
+                          <p key={index}>{paragraph}</p>
+                        )
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
 };
 
 export default TopSectionPict;
