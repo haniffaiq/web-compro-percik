@@ -3,22 +3,28 @@ import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import ManagementTittle from "./ManagementTittle";
 import TopSectionPict from "./TopSectionPicture";
-import TopSectionPict_khusus from "./TopSectionPicture_khusus";
+import VisiMisiSection from "./VisiMisiSection";
 import "./ManagementStyle.css";
 import data from "../../assets/json/management.json";
 
 const Button = ({ buttonName, onClick, selected }) => (
   <button className={selected === buttonName ? "selected" : ""} onClick={() => onClick(buttonName)}>
-    {buttonName.toUpperCase()}
+    {buttonName}
   </button>
 );
 
 const Management = () => {
   const { globalState } = useContext(AppContext);
   const [selectedButton, setSelectedButton] = useState(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
+  const [isPengurusSelected, setIsPengurusSelected] = useState(false);
 
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
+    if (buttonName === "Pengurus" || buttonName === "Administrator") {
+      setIsPengurusSelected(true);
+    } else {
+      setIsPengurusSelected(false);
+    }
   };
 
   useEffect(() => {
@@ -27,19 +33,22 @@ const Management = () => {
 
   useEffect(() => {
     setSelectedButton(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
-    // console.log(globalState.globalProperty);
+    setIsPengurusSelected(false); // Reset state when globalProperty changes
   }, [globalState.globalProperty]);
 
   return (
     <>
-      <div className="flex gap-1 ml-[35px] py-9">
-        <Link to="/">{globalState.globalProperty === "IND" ? "Home" : "Home"}</Link>
-        <span> / </span>
-        <Link to="/management">{globalState.globalProperty === "IND" ? "Manajemen" : "Management"}</Link>
-      </div>
-
       <ManagementTittle />
-
+      <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
+        <Link to="/" className="text-lg">
+          {globalState.globalProperty === "IND" ? "Home" : "Home"}
+        </Link>
+        <span className="text-lg"> &gt; </span>
+        <Link to="/management" className="font-bold text-lg">
+          {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
+        </Link>
+      </div>
+      <div className="horizontal-line"></div>
       <div className="triple-button-container">
         {globalState.globalProperty === "IND" ? (
           <>
@@ -56,11 +65,13 @@ const Management = () => {
         )}
       </div>
 
-
       {/* <TopSectionPict_khusus selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} /> */}
 
-
-      <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
+      {/* Conditional rendering based on Pengurus selection */}
+      <div style={{ display: isPengurusSelected ? "block" : "flex", flexDirection: isPengurusSelected ? "column" : "row", gap: isPengurusSelected ? "" : "39px" }}>
+        <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
+        <VisiMisiSection selectedButton={selectedButton} />
+      </div>
     </>
   );
 };
