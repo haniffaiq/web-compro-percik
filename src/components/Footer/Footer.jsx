@@ -13,7 +13,9 @@ const Footer = () => {
 
   return (
     <>
-      <div className="bg-[#09588D] w-full flex flex-col lg:grid grid-cols-7 p-5 lg:p-14">
+      <hr className="bg-[#034DA2] h-4 w-full border-none" />
+      <div className="bg-[#012958] w-full flex flex-col lg:grid grid-cols-7 p-5 lg:p-14">
+
         <div className="col-span-3 ">
           <div className="text-white font-[600] text-2xl mb-5">Yayasan Perguruan Cikini</div>
           <div className="text-[#C1CACF] text-lg">Jl. Pegangsaan Timur No.10, RT.14/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pusat, DKI Jakarta 10330</div>

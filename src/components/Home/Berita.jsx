@@ -50,7 +50,7 @@ const Berita = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 p-5 lg:p-14 bg-[#CCEAFF] lg:bg-[#295D97]">
+      <div className="flex flex-col gap-2 p-5 lg:p-14 bg-[#CCEAFF] lg:bg-[#012958]">
         <div className="flex justify-between items-center">
           <div className="text-xl lg:text-3xl font-bold mb-5 lg:text-white text-black lg:flex items-center">
             KEGIATAN
