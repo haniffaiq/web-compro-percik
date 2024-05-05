@@ -15,43 +15,47 @@ const Daftar = () => {
   return (
     <div className="p-5 lg:p-8">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
-      <div className="grid grid-cols-2 lg:grid lg:grid-cols-3 gap-2 lg:gap-10">
-        {schoolsData.map((school) => (
-          <Link key={school.id} to={`/school-detail/${school.id}`}>
-            <button
-              onClick={() => {
-                setSaveId(school.id);
-                console.log(school.id);
-                // <SchoolDetail data={saveId} />;
-              }}
-              className="border rounded-lg p-3"
-            >
-              <div
-                className="w-full h-32 lg:h-64 overflow-hidden"
+      <div className="mx-auto max-w-fit px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 flex">
+          {schoolsData.map((school) => (
+            <Link key={school.id} to={`/school-detail/${school.id}`} className="w-[450px]">
+              <button
+                onClick={() => {
+                  setSaveId(school.id);
+                  console.log(school.id);
+                  // <SchoolDetail data={saveId} />;
+                }}
+                className="border rounded-lg p-3 w-full"
+                style={{ height: '100%' }}
               >
-                <img
-                  className="w-full h-full object-cover"
-                  src={require(`../../assets/img/school/${school.image}`)}
-                  alt={`${school.name}`}
-                />
-              </div>
-              <div className="text-start text-sm lg:text-2xl mt-5">{school.name}</div>
-              <div className="flex gap-3 text-start mt-3">
-                <img loading="lazy" src={Wisuda} alt="logo" />
-                <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.students} Siswa</div>
-              </div>
-              <div className="flex gap-3 items-start text-start mt-3">
-                <img loading="lazy" className=" " src={Loc} alt="logo" />
-                <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.address}</div>
-              </div>
-              <div className="flex gap-3 text-start mt-3">
-                <img loading="lazy" src={Telf} alt="Telf" />
-                <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.phone}</div>
-              </div>
-            </button>
-          </Link>
-        ))}
+                <div className="w-full h-32 lg:h-64 overflow-hidden">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={require(`../../assets/img/school/${school.image}`)}
+                    alt={`${school.name}`}
+                  />
+                </div>
+                <div className="text-start text-sm lg:text-2xl mt-5 font-bold">{school.name}</div>
+                <hr className="border-yellow-400 border-t-8 mt-2 w-[103px]" /> {/* Garis kuning setebal 2px */}
+                <div className="flex gap-3 text-start mt-3">
+                  <img loading="lazy" src={Wisuda} alt="logo" />
+                  <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.students} Siswa</div>
+                </div>
+                <div className="flex gap-3 items-start text-start mt-3">
+                  <img loading="lazy" className=" " src={Loc} alt="logo" />
+                  <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.address}</div>
+                </div>
+                <div className="flex gap-3 text-start mt-3">
+                  <img loading="lazy" src={Telf} alt="Telf" />
+                  <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.phone}</div>
+                </div>
+              </button>
+            </Link>
+          ))}
+        </div>
       </div>
+
+
       {/* <div className="hidden">
         <SchoolDetail data={{ saveId }} />
       </div> */}
