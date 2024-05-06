@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import LogoWriter from "../../assets/icon/ant-design_user-outlined.svg";
 import IconDownload from "../../assets/img/download.webp";
+import download from "../../assets/img/donlod pdf.png";
 import data from "../../assets/json/events.json";
 import "./EventDetailStyle.css";
 import html2pdf from "html2pdf.js";
@@ -96,13 +97,21 @@ const EventDetail = () => {
   };
   return (
     <>
-      <div className="flex gap-1 ml-[35px] py-9">
-        <Link to="/" className="">
-          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
+      <div>
+        <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
+          <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
+            <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}</p>
+          </div>
+          <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div>
+        </div>
+      </div>
+      <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
+        <Link to="/" className="text-lg">
+          {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
-        <span> / </span>
-        <Link to="/event" className="">
-          {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "News & Event Details"}
+        <span className="text-lg"> &gt; </span>
+        <Link to="/management" className="font-bold text-lg">
+          {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "Event & News Details"}
         </Link>
       </div>
 
@@ -131,13 +140,14 @@ const EventDetail = () => {
         <ComponentPDF />
         <div className="detail-selengkapnya-event-layout">
           <p>{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more details, please download the following link:"}</p>
-          <button className="detail-selengkapnya-event-button-layout" onClick={handleDownloadPDF}>
-            <img loading="lazy" src={IconDownload} />
-            <p>{globalState.globalProperty === "IND" ? "Download Berita" : "Download News"}</p>
-          </button>
+          <div class="container-download-event">
+            <div class="line-proyek1-event"></div>
+            <img src={download} alt="Gambar" onClick={handleDownloadPDF} />
+            <div class="line-proyek2-event"></div>
+          </div>
         </div>
 
-        <div className="berita-lainnya-layout">
+        {/* <div className="berita-lainnya-layout">
           <h2>Berita Lainnya</h2>
           <div className="berita-lainnya-gallery">
             {slicedData.map((item) => (
@@ -159,7 +169,7 @@ const EventDetail = () => {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

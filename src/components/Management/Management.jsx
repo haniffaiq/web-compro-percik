@@ -41,7 +41,7 @@ const Management = () => {
       <ManagementTittle />
       <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
         <Link to="/" className="text-lg">
-          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
+          {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
         <span className="text-lg"> &gt; </span>
         <Link to="/management" className="font-bold text-lg">

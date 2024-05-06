@@ -59,31 +59,25 @@ const Event = () => {
     return text;
   }
 
-
   return (
     <>
-
-
       <div>
         <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">
-              {globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}
-            </p>
+            <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}</p>
           </div>
           <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div>
         </div>
       </div>
       <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
         <Link to="/" className="text-lg">
-          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
+          {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
         <span className="text-lg"> &gt; </span>
         <Link to="/event" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}
+          {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
         </Link>
       </div>
-
 
       <div className="gallery">
         {currentData.map((item) => (
@@ -93,12 +87,15 @@ const Event = () => {
                 <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
               <div className="gallery-text-item ">
-                <p className="date-style">{item.date}</p>
                 <p className="gallery-text-item-headline">{item.headline}</p>
+                <div className="yellow-bar"></div>
                 <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
                 <div className="maker-layout">
                   <img loading="lazy" src={Logo} alt="logo" />
                   <p className="gallery-text-item-maker">{item.maker}</p>
+                  <div>
+                    <p className="date-style">{item.date}</p>
+                  </div>
                 </div>
               </div>
             </div>
