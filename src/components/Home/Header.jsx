@@ -6,25 +6,25 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 const carouselItems = [
   {
-    image: require("../../assets/img/header/img_header1.webp"), // replace with your image path
+    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/header/img_header2.webp"), // replace with your image path
+    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/header/img_header3.webp"), // replace with your image path
+    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/header/img_header4.webp"), // replace with your image path
+    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
@@ -89,7 +89,7 @@ const Header = () => {
                 backgroundSize: "cover",
               }}
             />
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+            {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div> */}
 
             {index === 10 && (
               <div className="absolute bottom-0 left-0 w-full text-center p-10">
@@ -118,21 +118,21 @@ const Header = () => {
       </Carousel>
 
       <div className="lg:grid lg:grid-cols-3 flex flex-col lg:gap-0 relative h-[157px]">
-        <div className="py-2 lg:py-0 flex flex-col items-center justify-center lg:ml-24 lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun1Img})` }}>
+        <div className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun1Img})` }}>
           <div className="absolute inset-0 bg-yellow-400 bg-opacity-50"></div> {/* Overlay kuning */}
           <div className="flex text-6xl lg:text-8xl font-semibold lg:text-white text-black relative z-10">
             <motion.h1>{rounded1}</motion.h1>+
           </div>
           <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] lg:text-white tracking-wider lg:w-full w-[310px] relative z-10">Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia kerja</div>
         </div>
-        <div className="py-2 lg:py-0 flex flex-col items-center justify-center lg:border-l lg:border-r border-[#C0CFD3] lg:bg-transparent bg-[#FFFCEE] relative">
-          <div className="absolute inset-0 bg-red-400 bg-opacity-50"></div> {/* Overlay merah */}
+        <div className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun1Img})` }}>
+          <div className="absolute inset-0 bg-green-400 bg-opacity-50"></div> {/* Overlay merah */}
           <div className="flex text-6xl lg:text-8xl font-semibold lg:text-white text-black relative z-10">
             <motion.h1>{rounded2}</motion.h1>+
           </div>
           <div className="text-center text-[15px] lg:text-[19px] text-[#6A858C] lg:text-white tracking-wider lg:w-full w-[310px] relative z-10">Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun nasional</div>
         </div>
-        <div className="py-2 lg:py-0 flex flex-col items-center justify-center lg:mr-24 lg:bg-transparent bg-[#F3EEFF] relative">
+        <div className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun1Img})` }}>
           <div className="absolute inset-0 bg-blue-400 bg-opacity-50"></div> {/* Overlay biru */}
           <div className="flex text-6xl lg:text-8xl font-semibold lg:text-white text-black relative z-10">
             <motion.h1>{rounded3}</motion.h1>%

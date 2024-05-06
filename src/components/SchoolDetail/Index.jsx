@@ -1241,7 +1241,7 @@ const SchoolDetail = (props) => {
       {/* {console.log(detailSchool, "INIPROPS")} */}
       <div className="hidden lg:flex gap-1 ml-[40px] py-9 ">
         <Link to="/" className="">
-          {globalState.globalProperty === "IND" ? "Home" : "Home"}
+          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span> / </span>
         <Link to="/school" className="">

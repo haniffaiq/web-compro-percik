@@ -90,11 +90,11 @@ const ProjectDetail = () => {
       <ProjectTittle />
       <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
         <Link to="/" className="text-lg">
-          {globalState.globalProperty === "IND" ? "Home" : "Home"}
+          {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
         <span className="text-lg"> &gt; </span>
         <Link to="/management" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "Proyek Detail" : "Project Details"}
+          {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
         </Link>
       </div>
 

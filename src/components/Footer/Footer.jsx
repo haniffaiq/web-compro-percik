@@ -7,19 +7,32 @@ import React, { useContext, useState } from "react";
 // import Youtube from "../../assets/icon/Youtube.svg";
 // import Tiktok from "../../assets/icon/Tik Tok.svg";
 import Whatsapp from "../../assets/icon/WhatsApp.svg";
+import Logo from "../../assets/logo/logo_white.png";
 
 const Footer = () => {
   //   const { globalState, updateGlobalState } = useContext(AppContext);
 
   return (
     <>
-      <div className="bg-[#09588D] w-full flex flex-col lg:grid grid-cols-7 p-5 lg:p-14">
-        <div className="col-span-3 ">
-          <div className="text-white font-[600] text-2xl mb-5">Yayasan Perguruan Cikini</div>
-          <div className="text-[#C1CACF] text-lg">Jl. Pegangsaan Timur No.10, RT.14/RW.4, Cikini, Kec. Menteng, Kota Jakarta Pusat, DKI Jakarta 10330</div>
-          <div className="text-[#C1CACF] text-lg">08886453759898</div>
-          <div className="text-[#C1CACF] text-lg">admin@perguruancikini.com</div>
+      <hr className="bg-[#034DA2] h-4 w-full border-none" />
+      <div className="bg-[#012958] w-full flex flex-col lg:grid grid-cols-7 p-5 lg:p-14">
+
+        <div className="col-span-3 flex items-center">
+          <div>
+            <div className="flex items-center">
+              <div className="mr-2">
+                <img src={Logo} alt="Logo Yayasan" className="w-16 h-16 mr-4" />
+              </div>
+              <div className="text-white font-[600] text-2xl">YAYASAN PERGURUAN CIKINI</div>
+            </div>
+            <div className="text-[#C1CACF] text-lg">Jl. Cikini Raya No. 74-76, Jakarta Pusat 10330  2024 Yayasan Perguruan Cikini</div>
+            <div className="text-white font-[600] text-2xl mt-8">Sekretariat Yayasan Perguruan ’Cikini’ </div>
+            <div className="text-[#C1CACF] text-lg">Jl. Duren Tiga Raya No. 1, Duren Tiga, Kec. Pancoran, Jakarta Selatan 12760</div>
+            <div className="text-[#C1CACF] text-lg">021-27534786</div>
+            <div className="text-[#C1CACF] text-lg">ypcikini@indo.net.id</div>
+          </div>
         </div>
+
         <div className="col-span-2 lg:mt-0 mt-5 flex flex-col gap-3 ">
           {/* <div className="text-white font-[600] text-xl">Follow Us</div>
           <div className="flex gap-4">

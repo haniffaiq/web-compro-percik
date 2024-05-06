@@ -37,7 +37,7 @@ const Home = () => {
       <About />
       <Partnership />
       {!isMobile && <Sekolah />}
-      <Berita />
+      {/* <Berita /> */}
     </>
   );
 };
