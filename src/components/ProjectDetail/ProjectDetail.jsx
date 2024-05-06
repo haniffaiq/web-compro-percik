@@ -5,6 +5,7 @@ import GalleryProjectDetail from "./GalleryProjectDetail";
 import DanaDetail from "./DanaDetail";
 import data from "../../assets/json/project.json";
 import IconDownload from "../../assets/img/download.webp";
+import ProjectTittle from "../Project/ProjectTittle";
 import "./ProjectDetailStyle.css";
 import html2pdf from "html2pdf.js";
 
@@ -86,20 +87,21 @@ const ProjectDetail = () => {
   };
   return (
     <>
-      <div className="flex gap-1 ml-[35px] py-9">
-        <Link to="/" className="">
+      <ProjectTittle />
+      <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
+        <Link to="/" className="text-lg">
           {globalState.globalProperty === "IND" ? "Home" : "Home"}
         </Link>
-        <span> / </span>
-        <Link to="/project" className="">
-          {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
+        <span className="text-lg"> &gt; </span>
+        <Link to="/management" className="font-bold text-lg">
+          {globalState.globalProperty === "IND" ? "Proyek Detail" : "Project Details"}
         </Link>
       </div>
 
       <div className="project-detail-main-container mx-12">
         {globalState.globalProperty === "IND" ? (
           <h1>
-            {projectDatasBahasa.tittleProyek.split('\n').map((line, index) => (
+            {projectDatasBahasa.tittleProyek.split("\n").map((line, index) => (
               <React.Fragment key={index}>
                 {line}
                 <br />
@@ -108,7 +110,7 @@ const ProjectDetail = () => {
           </h1>
         ) : (
           <h1>
-            {projectDatasEnglish.tittleProyek.split('\n').map((line, index) => (
+            {projectDatasEnglish.tittleProyek.split("\n").map((line, index) => (
               <React.Fragment key={index}>
                 {line}
                 <br />
