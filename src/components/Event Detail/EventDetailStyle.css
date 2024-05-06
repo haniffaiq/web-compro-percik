@@ -688,3 +688,35 @@
   /* 150% */
   letter-spacing: -0.176px;
 }
+
+/* style download icon event */
+.container-download-event {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.line-proyek1-event {
+  position: absolute;
+  transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+  width: 700px; /* Lebar garis */
+  height: 5px; /* Tinggi garis */
+  left: 850px;
+  background-color: #ebebeb; /* Warna garis */
+}
+.line-proyek2-event {
+  position: absolute;
+  transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+  width: 660px; /* Lebar garis */
+  height: 5px; /* Tinggi garis */
+  left: 0px;
+  background-color: #ebebeb; /* Warna garis */
+}
+
+.container-download-event img {
+  position: relative;
+  z-index: 1; /* Letakkan gambar di atas garis */
+  width: 150px;
+}

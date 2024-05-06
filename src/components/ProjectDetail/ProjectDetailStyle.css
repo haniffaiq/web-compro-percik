@@ -2,7 +2,6 @@
 
 /* Untuk Mobile */
 @media only screen and (max-width: 600px) {
-  
   .ant-carousel .slick-dots li {
     background-color: grey;
     border-radius: 50%;
@@ -198,7 +197,6 @@
 
 /* Untuk Mobile */
 @media only screen and (max-width: 600px) {
-
   .project-detail-main-container h1 {
     color: #000;
     font-family: "Segoe UI";
@@ -663,4 +661,35 @@
 .dana-detail-content-layout img {
   height: 90%;
   width: 90%;
+}
+
+/* style button download baru */
+.container-download {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-proyek1 {
+  position: absolute;
+  transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+  width: 200px; /* Lebar garis */
+  height: 5px; /* Tinggi garis */
+  right: 160px;
+  background-color: #ebebeb; /* Warna garis */
+}
+.line-proyek2 {
+  position: absolute;
+  transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+  width: 200px; /* Lebar garis */
+  height: 5px; /* Tinggi garis */
+  left: 160px;
+  background-color: #ebebeb; /* Warna garis */
+}
+
+.container-download img {
+  position: relative;
+  z-index: 1; /* Letakkan gambar di atas garis */
+  width: 150px;
 }

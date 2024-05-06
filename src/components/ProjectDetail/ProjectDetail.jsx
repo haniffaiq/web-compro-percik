@@ -6,6 +6,7 @@ import DanaDetail from "./DanaDetail";
 import data from "../../assets/json/project.json";
 import IconDownload from "../../assets/img/download.webp";
 import ProjectTittle from "../Project/ProjectTittle";
+import download from "../../assets/img/donlod pdf.png";
 import "./ProjectDetailStyle.css";
 import html2pdf from "html2pdf.js";
 
@@ -140,10 +141,15 @@ const ProjectDetail = () => {
       <div className="detail-selengkapnya-layout">
         <p className="detail-selengkapnya-text">{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more detailed information, you can download it at the link below :"}</p>
         <div className="button-container">
-          <button className="button-download-style" onClick={handleDownloadPDF}>
+          <div class="container-download">
+            <div class="line-proyek1"></div>
+            <img src={download} alt="Gambar" onClick={handleDownloadPDF} />
+            <div class="line-proyek2"></div>
+          </div>
+          {/* <button className="button-download-style" onClick={handleDownloadPDF}>
             <img loading="lazy" src={IconDownload} className="button-image-style" alt="download-icon" />
             <p className="button-text-style">Download PDF</p>
-          </button>
+          </button> */}
         </div>
       </div>
 
