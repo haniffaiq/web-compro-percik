@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import AppContext from "../../context/AppContext";
+import logoYPC from "../../assets/img/logo YPC_PUTIH.png";
 // import { Link } from "react-router-dom";
 
 import "./ManagementStyle.css";
@@ -40,35 +41,33 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
 
   if (selectedButton === "Pengawas" || selectedButton === "Supervisor") {
     return (
-      <div>
-        {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
-          <div className="top-section-pict-container">
-            <div className="pict-list-management-wrapper">
-              <div className="management-image-wrapper" key={id}>
-                <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
-              </div>
-              <div className="management-text-wrapper">
-                <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
-                <div className="yellow-bar-management-tittle"></div>
+      <>
+        <div className="layout-pengawas">
+          {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
+            <div className="top-section-pict-container">
+              <div className="pict-list-management-wrapper">
+                <div className="management-image-wrapper" key={id}>
+                  <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
+                </div>
+                <div className="management-text-wrapper">
+                  <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
+                  <div className="yellow-bar-management-tittle"></div>
 
-                <div className="overlay-text-management-desc">
-                  {deskripsiManajemen.split("\n").map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
+                  <div className="overlay-text-management-desc">
+                    {deskripsiManajemen.split("\n").map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
+          ))}
+          <div className="blue-bottom-banner">
+            <img src={logoYPC} alt="icon-percik" />
+            <p>TURUT BERBAKTI MEMBANGUN NEGRI</p>
           </div>
-        ))}
-        <div className="quotes-habibi">
-          <p style={{ fontSize: "32px", fontWeight: "500" }}>
-            <strong style={{ fontSize: "42px" }}>’’</strong>
-            Keberhasilan bukanlah milik orang yang pintar, keberhasilan adalah kepunyaan mereka yang senantiasa berusaha.
-            <strong style={{ fontSize: "42px" }}>’’</strong>
-            <span style={{ opacity: "0.6", fontStyle: "italic" }}>~ BJ. Habibie</span>
-          </p>
         </div>
-      </div>
+      </>
     );
   }
 

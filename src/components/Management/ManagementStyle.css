@@ -291,157 +291,6 @@
 /* End Of Style Buat Component Triple Button */
 
 /* Style Component Top Section Pict */
-
-/* Untuk Mobile */
-@media only screen and (max-width: 600px) {
-  .top-section-pict-container {
-    display: flex;
-    flex-direction: column;
-    gap: 43px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 70px;
-  }
-
-  .pict-list-management-wrapper {
-    width: 355px;
-    height: 250px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: linear-gradient(279deg, #0033ff 12.46%, rgba(9, 88, 141, 0) 105%);
-    display: flex;
-    flex-direction: row;
-  }
-
-  .management-text-wrapper {
-    margin-left: 20px;
-    margin-right: 50px;
-    margin-top: 20px;
-  }
-
-  .overlay-text-management-tittle {
-    color: #fff;
-    font-family: "Segoe UI";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 120px;
-  }
-
-  .overlay-text-management-role {
-    color: #fff;
-    font-family: "Segoe UI";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .overlay-text-management-desc {
-    width: 120px;
-    color: #c4d9ec;
-    font-family: "Segoe UI";
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .management-image-wrapper {
-    top: -25px;
-    right: 2px;
-    position: relative;
-  }
-
-  .management-image-wrapper.custom-style {
-    border: 2px solid yellow;
-    /* Gaya khusus untuk elemen dengan indeks 2 */
-  }
-
-  .management-image-wrapper img {
-    width: 100%;
-    height: 270px;
-    object-fit: cover;
-  }
-}
-
-/* Untuk Tablet */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .top-section-pict-container {
-    display: flex;
-    flex-direction: column;
-    gap: 90px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 120px;
-    margin-bottom: 70px;
-  }
-
-  .pict-list-management-wrapper {
-    width: 730px;
-    height: 500px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: linear-gradient(279deg, #0033ff 18.46%, rgba(9, 88, 141, 0) 115%);
-    display: flex;
-    flex-direction: row;
-  }
-
-  .management-text-wrapper {
-    margin-left: 50px;
-    margin-top: 38px;
-    margin-right: 20px;
-  }
-
-  .overlay-text-management-tittle {
-    color: #fff;
-    font-family: "Segoe UI";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 260px;
-  }
-
-  .overlay-text-management-role {
-    color: #fff;
-    font-family: "Segoe UI";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .overlay-text-management-desc {
-    width: 250px;
-    color: #c4d9ec;
-    font-family: "Segoe UI";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .management-image-wrapper {
-    top: -50px;
-    right: -10px;
-    position: relative;
-  }
-
-  .management-image-wrapper.custom-style {
-    border: 2px solid yellow;
-    /* Gaya khusus untuk elemen dengan indeks 2 */
-  }
-
-  .management-image-wrapper img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-  }
-}
-
 /* Untuk Laptop */
 @media only screen and (min-width: 1366px) and (max-width: 1920px) {
   .top-section-pict-container {
@@ -508,13 +357,8 @@
     position: relative;
   }
 
-  .management-image-wrapper.custom-style {
-    border: 2px solid yellow;
-    /* Gaya khusus untuk elemen dengan indeks 2 */
-  }
-
   .management-image-wrapper img {
-    width: 250px;
+    width: 300px;
     height: 300px;
   }
 }
@@ -578,13 +422,8 @@
     position: relative;
   }
 
-  .management-image-wrapper.custom-style {
-    border: 2px solid yellow;
-    /* Gaya khusus untuk elemen dengan indeks 2 */
-  }
-
   .management-image-wrapper img {
-    width: 260px;
+    width: 300px;
     height: 300px;
   }
 }
@@ -608,7 +447,6 @@
   border-color: #ebebeb;
   border-width: 0px 2px 2px 2px;
   width: 299px;
-
   margin-top: -120px;
 }
 
@@ -658,11 +496,6 @@
   right: 0px;
   left: 0px;
   position: relative;
-}
-
-.management-image-wrapper-pengurus.custom-style {
-  border: 2px solid yellow;
-  /* Gaya khusus untuk elemen dengan indeks 2 */
 }
 
 .management-image-wrapper-pengurus img {
@@ -742,7 +575,7 @@
 .main-container-layout-pengawas {
   border: 2px solid #ebebeb;
   width: 273px;
-  height: 1090px;
+  height: 796px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -765,8 +598,7 @@
   margin: 0;
   padding: 0;
   color: #000;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 12px;
   line-height: 18px;
   text-align: left;
 }
@@ -832,15 +664,38 @@
   line-height: 18px;
 }
 
-.quotes-habibi {
-  margin-left: 125px;
-  width: 1216px;
-}
-
 .yellow-bar-header {
   border-top: 7px solid #faa61a;
   width: 103px;
   position: absolute;
   top: 218px;
   left: 125px;
+}
+
+.blue-bottom-banner {
+  display: flex;
+  flex-direction: row;
+  background-color: #034da2;
+  width: 100%;
+  gap: 18px;
+  position: absolute;
+  padding-left: 100px;
+}
+
+.blue-bottom-banner img {
+  width: 260.79px;
+  height: 260.79px;
+}
+
+.blue-bottom-banner p {
+  color: #fff;
+  line-height: 76px;
+  font-weight: bold;
+  font-size: 70px;
+  position: relative;
+  top: 96px;
+}
+
+.layout-pengawas {
+  margin-bottom: 260px;
 }
