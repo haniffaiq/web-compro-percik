@@ -39,12 +39,12 @@ const Management = () => {
   return (
     <>
       <ManagementTittle />
-      <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
-        <Link to="/" className="text-lg">
+      <div className="flex gap-1 lg:ml-[125px] py-9 mt-[28px] align-center justify-center">
+        <Link to="/" className="lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
-        <span className="text-lg"> &gt; </span>
-        <Link to="/management" className="font-bold text-lg">
+        <span className="lg:text-lg text-sm"> &gt; </span>
+        <Link to="/management" className="font-bold lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
         </Link>
       </div>

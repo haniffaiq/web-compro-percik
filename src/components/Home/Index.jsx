@@ -36,7 +36,8 @@ const Home = () => {
       <Header />
       <About />
       <Partnership />
-      {!isMobile && <Sekolah />}
+      <Sekolah />
+      {/* {!isMobile && } */}
       {/* <Berita /> */}
     </>
   );

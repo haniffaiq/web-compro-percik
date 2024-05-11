@@ -29,12 +29,12 @@ const About = () => {
           <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div>
         </div>
       </div>
-      <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
-        <Link to="/" className="text-lg">
+      <div className="flex gap-1 lg:ml-[125px] py-9 mt-[28px] align-center justify-center">
+        <Link to="/" className="text-lg lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
-        <span className="text-lg"> &gt; </span>
-        <Link to="/about" className="font-bold text-lg">
+        <span className="text-lg lg:text-lg text-sm"> &gt; </span>
+        <Link to="/about" className="font-bold text-lg lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"}
         </Link>
       </div>

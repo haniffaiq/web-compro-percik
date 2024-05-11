@@ -39,7 +39,7 @@ const Project = () => {
           <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div>
         </div>
       </div>
-      <div className="flex gap-1 ml-[125px] py-9 mt-[28px]">
+      <div className="flex gap-1 lg:ml-[125px] py-9 mt-[28px] align-center justify-center ">
         <Link to="/" className="text-lg">
           {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
