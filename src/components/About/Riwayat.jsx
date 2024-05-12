@@ -170,10 +170,13 @@ const Riwayat = () => {
   // );
   return (
     <>
-      <div className="p-5 lg:p-8">
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-10">
-          {globalState.globalProperty === "IND" ? 'RIWAYAT SINGKAT PERGURUAN CIKINI' : 'BRIEF HISTORY OF CIKINI SCHOOL'}
+      <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
+        <div className=" bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
+          <p className="text-black font-segoeui text-XM font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left">{globalState.globalProperty === "IND" ? "RIWAYAT SINGKAT PERGURUAN 'CIKINI'" : "RIWAYAT SINGKAT PERGURUAN 'CIKINI'"}</p>
+          <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div>
         </div>
+      </div>
+      <div className="px-5 lg:px-8">
         <div className="w-full rounded-xl " style={{ background: "linear-gradient(104deg, #DBDBDB 4.33%, #FFF 33.28%, #FFF 65.71%, #D7D6D6 93.89%)" }}>
           {Object.keys(selectedData).map((key) => (
             <div key={selectedData[key].id} className="flex flex-col-reverse lg:grid lg:grid-cols-3 mt-0 lg:mt-10 lg:gap-0 gap-5 p-5 rounded-lg">

@@ -20,19 +20,21 @@ const Filosofi = () => {
   }, []);
   return (
     <>
+      {/* <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
+        <div className=" bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
+          <p className="text-black font-segoeui text-lg font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left">{globalState.globalProperty === "IND" ? "FILOSOFI LAMBANG" : "FILOSOFI LAMBANG"}</p>
+          <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div>
+        </div>
+      </div> */}
       <div className="p-5 lg:p-8">
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-10">FILOSOFI LAMBANG</div>
         <div className="w-full rounded-xl ">
-          <div className="grid grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5">
-            <div className="flex lg:justify-center justify-center items-center h-full lg:h-full ">
+          <div className="grid lg:grid-cols-3 grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5">
+            <div className="flex lg:justify-center justify-center items-center h-full lg:h-full lg:row-span-2">
               <img loading="lazy" src={Logo} className="lg:object-cover flex h-full" />
             </div>
-            <div className="text-white p-5 lg:p-14 ">
-              {/* <div className="text-[12px] lg:text-3xl font-bold text-black">YAYASAN DENGAN TRACK RECORD MEMUKAU</div> */}
-              {/* <div className="text-[10px] lg:text-[25px]">{value.name}</div> */}
-              <div className="flex flex-col gap-5 text-[7px] lg:text-sm mt-5 lg:mt-10 text-black">{<div dangerouslySetInnerHTML={html} />}</div>
+            <div className="text-white p-5 lg:p-14 lg:col-span-2 lg:row-span-2 ">
+              <div className="flex flex-col gap-5 text-[12px] lg:text-lg mt-5 lg:mt-10 text-black">{<div dangerouslySetInnerHTML={html} />}</div>
             </div>
-
           </div>
         </div>
       </div>

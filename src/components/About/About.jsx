@@ -85,7 +85,7 @@ const AboutUs = () => {
                 </div>
 
                 {index == 0 ? (
-                  <div className="border-4 h-full">
+                  <div className="h-full">
                     <div className="mb-[-28px] lg:mb-0 p-8 justify-center align-center text-center w-full">
                       <div className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "DAFTAR PPDB" : "REGISTER PPDB"}</div>
                       <div className="text-black font-segoeui text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "Pendaftaran Peserta Didik Baru" : "Register New Students"}</div>
@@ -104,7 +104,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="border-4 h-full">
+                  <div className=" h-full">
                     <div className="mb-[-28px] lg:mb-0 p-8 justify-center align-center text-center w-full">
                     <div className="text-black font-segoeui text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025" : "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025"}</div>
                     <div className="text-black font-segoeui text-lg font-bold lg:text-lg  mt-16 text-left">{globalState.globalProperty === "IND" ? "Atau langsung Daftar langsung :" : "Atau langsung Daftar langsung :"}</div>
