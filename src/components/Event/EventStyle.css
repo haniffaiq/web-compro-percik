@@ -122,6 +122,67 @@
     justify-content: center;
     align-items: center;
   }
+  .image-logo-layout {
+    position: relative;
+    top: -50px;
+    left: 37%;
+  }
+  .image-logo-layout img {
+    width: 76px;
+    height: 76px;
+  }
+  .separator-border-logo1 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -27px;
+    left: -113px;
+    position: relative;
+    width: 100px;
+  }
+  .separator-border-logo2 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -29px;
+    left: 90px;
+    width: 101px;
+    position: relative;
+  }
+  .kerjasama-yayasan-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .kerjasama-yayasan-box {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    width: 305px;
+  }
+  .kerjasama-yayasan-content {
+    margin-top: -27px;
+  }
+  .kerjasama-yayasan-content ol {
+    width: 270px;
+    margin-left: 17px;
+    margin-top: 16px;
+  }
+
+  .kerjasama-yayasan-content li {
+    margin-bottom: 30px;
+  }
+
+  .kerjasama-yayasan-content h1 {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .separator-border {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    margin-bottom: 30px;
+  }
 }
 /* Table Style */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
@@ -253,6 +314,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .image-logo-layout {
+    position: relative;
+    top: -150px;
+    left: 34%;
+  }
+  .separator-border-logo1 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -84px;
+    left: -240px;
+    position: relative;
+    width: 240px;
+  }
+  .separator-border-logo2 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -85px;
+    left: 240px;
+    width: 221px;
+    position: relative;
+  }
+  .kerjasama-yayasan-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .kerjasama-yayasan-box {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    width: 700px;
+  }
+  .kerjasama-yayasan-content {
+    margin-top: -110px;
+  }
+  .kerjasama-yayasan-content ol {
+    width: 580px;
+    margin-left: 65px;
+  }
+
+  .kerjasama-yayasan-content li {
+    margin-bottom: 30px;
+  }
+
+  .kerjasama-yayasan-content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .separator-border {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    margin-bottom: 30px;
   }
 }
 
@@ -387,6 +504,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .image-logo-layout {
+    position: relative;
+    top: -150px;
+    left: 40%;
+  }
+  .separator-border-logo1 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -84px;
+    left: -504px;
+    position: relative;
+    width: 490px;
+  }
+  .separator-border-logo2 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -85px;
+    left: 240px;
+    width: 514px;
+    position: relative;
+  }
+  .kerjasama-yayasan-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .kerjasama-yayasan-box {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    width: 1260px;
+  }
+  .kerjasama-yayasan-content {
+    margin-top: -110px;
+  }
+  .kerjasama-yayasan-content ol {
+    width: 1080px;
+    margin-left: 80px;
+  }
+
+  .kerjasama-yayasan-content li {
+    margin-bottom: 30px;
+  }
+
+  .kerjasama-yayasan-content h1 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .separator-border {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    margin-bottom: 30px;
   }
 }
 
@@ -523,6 +696,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .image-logo-layout {
+    position: relative;
+    top: -150px;
+    left: 40%;
+  }
+  .separator-border-logo1 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -84px;
+    left: -504px;
+    position: relative;
+    width: 490px;
+  }
+  .separator-border-logo2 {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    top: -85px;
+    left: 240px;
+    width: 514px;
+    position: relative;
+  }
+  .kerjasama-yayasan-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .kerjasama-yayasan-box {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    width: 1260px;
+  }
+  .kerjasama-yayasan-content {
+    margin-top: -110px;
+  }
+  .kerjasama-yayasan-content ol {
+    width: 1080px;
+    margin-left: 80px;
+  }
+
+  .kerjasama-yayasan-content li {
+    margin-bottom: 30px;
+  }
+
+  .kerjasama-yayasan-content h1 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .separator-border {
+    border-bottom-width: 3px;
+    border-color: #ddd;
+    margin-bottom: 30px;
   }
 }
 

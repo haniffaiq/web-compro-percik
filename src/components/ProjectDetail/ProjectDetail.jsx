@@ -94,7 +94,7 @@ const ProjectDetail = () => {
           {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
         <span className="text-lg"> &gt; </span>
-        <Link to="/management" className="font-bold text-lg">
+        <Link to="/project" className="font-bold text-lg">
           {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
         </Link>
       </div>
@@ -126,13 +126,13 @@ const ProjectDetail = () => {
         {globalState.globalProperty === "IND" ? (
           <div className="desc-main-container">
             <div className="desc-container-layout">
-              <p dangerouslySetInnerHTML={html} />
+              <p dangerouslySetInnerHTML={html} className="leading-normal" />
             </div>
           </div>
         ) : (
           <div className="desc-main-container">
             <div className="desc-container-layout">
-              <p dangerouslySetInnerHTML={html2} />
+              <p dangerouslySetInnerHTML={html2} className="leading-normal" />
             </div>
           </div>
         )}
