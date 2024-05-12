@@ -12,9 +12,14 @@ const PartnershipReal = () => {
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row">
-        <div className=" bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
-          <p className="text-black text-lg font-bold lg:text-3xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center">{globalState.globalProperty === "IND" ? "PARTNERSHIP" : "PARTNERSHIP"}</p>
+        <div className="relative bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
+          <p className="text-black text-lg font-bold lg:text-3xl mt-16 lg:mt-0 py-2 text-center relative z-20">{globalState.globalProperty === "IND" ? "PARTNERSHIP" : "PARTNERSHIP"}</p>
         </div>
+
+
+
+
+
       </div>
       <div className="flex flex-col gap-2 items-center p-3">
         <div className="flex justify-center gap-5 lg:gap-28 lg:h-[150px] lg:w-full h-[50px] w-[350px] overflow-y-hidden container">

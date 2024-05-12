@@ -66,15 +66,15 @@ const Sekolah = () => {
                     <hr className="border-yellow-400 border-t-8 mt-2 w-[103px]" />
                     <div className="flex gap-3 text-start mt-3">
                       <img loading="lazy" src={Wisuda} alt="logo" />
-                      <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.students} Students</div>
+                      <div className="text-[#000] text-[14px] flex items-center lg:text-lg">{school.students} Students</div>
                     </div>
                     <div className="flex gap-3 items-start text-start mt-3">
                       <img loading="lazy" className=" " src={Loc} alt="logo" />
-                      <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.address}</div>
+                      <div className="text-[#000] text-[14px] flex items-center lg:text-lg">{school.address}</div>
                     </div>
                     <div className="flex gap-3 text-start mt-3">
                       <img loading="lazy" src={Telf} alt="Telf" />
-                      <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.phone}</div>
+                      <div className="text-[#000] text-[14px] flex items-center lg:text-lg">{school.phone}</div>
                     </div>
                   </div>
                 </div>
