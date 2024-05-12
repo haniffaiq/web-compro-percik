@@ -3,7 +3,7 @@
   .page-tittle-event {
     display: flex;
     justify-content: center;
-    margin-right: 1.8%;
+    align-items: center;
   }
   .page-tittle-event p {
     color: #000;
@@ -123,8 +123,8 @@
     align-items: center;
   }
   .image-logo-layout {
-    position: relative;
-    top: -50px;
+    position: absolute;
+    top: 1748px;
     left: 37%;
   }
   .image-logo-layout img {
@@ -135,16 +135,16 @@
     border-bottom-width: 3px;
     border-color: #ddd;
     top: -27px;
-    left: -113px;
+    left: -110px;
     position: relative;
-    width: 100px;
+    width: 109px;
   }
   .separator-border-logo2 {
     border-bottom-width: 3px;
     border-color: #ddd;
     top: -29px;
-    left: 90px;
-    width: 101px;
+    left: 77px;
+    width: 115px;
     position: relative;
   }
   .kerjasama-yayasan-layout {
@@ -161,7 +161,7 @@
     width: 305px;
   }
   .kerjasama-yayasan-content {
-    margin-top: -27px;
+    margin-top: 90px;
   }
   .kerjasama-yayasan-content ol {
     width: 270px;
