@@ -55,7 +55,7 @@ const AboutUs = () => {
         {selectedData.map((value, index) => {
           return (
             <div
-              className="w-full rounded-xl mt-10 flex"
+              className="w-full rounded-xl mt-10 flex "
             >
               <div className="hidden lg:grid grid-cols-4 mt-0 lg:mt-10 lg:gap-0 gap-5">
                 <div className="lg:col-span-3 lg:grid lg:grid-cols-3 border-4 rounded-lg">
@@ -106,9 +106,9 @@ const AboutUs = () => {
                 ) : (
                   <div className=" h-full">
                     <div className="mb-[-28px] lg:mb-0 p-8 justify-center align-center text-center w-full">
-                    <div className="text-black font-segoeui text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025" : "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025"}</div>
-                    <div className="text-black font-segoeui text-lg font-bold lg:text-lg  mt-16 text-left">{globalState.globalProperty === "IND" ? "Atau langsung Daftar langsung :" : "Atau langsung Daftar langsung :"}</div>
-                    <div className="text-black font-segoeui text-lg lg:text-lg text-left	mt-8 ">{globalState.globalProperty === "IND" ? "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760" : "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760"}</div>
+                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025" : "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025"}</div>
+                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg  mt-16 text-left">{globalState.globalProperty === "IND" ? "Atau langsung Daftar langsung :" : "Atau langsung Daftar langsung :"}</div>
+                      <div className="text-black font-segoeui text-lg lg:text-lg text-left	mt-8 ">{globalState.globalProperty === "IND" ? "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760" : "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760"}</div>
 
                     </div>
                   </div>
@@ -123,43 +123,38 @@ const AboutUs = () => {
                 onClick={() =>
                   openModal(index, value.title, value.name, value.img)
                 }
-                className="lg:hidden grid grid-cols-2 mt-0 lg:mt-10 lg:gap-0 gap-5"
+                className="lg:hidden grid grid-cols-2 mt-0 lg:mt-10 lg:gap-0 gap-5 border-4 rounded-lg "
               >
-                <div className="flex flex-col justify-between  p-5 lg:p-14">
-                  <div className="">
-                    <div className="text-[14px] lg:text-4xl font-bold">
-                      {value.title}
-                    </div>
-                    <div className="text-[20px] lg:text-[25px]">
-                      {value.name}
-                    </div>
-                    {/* <div className="flex flex-col gap-5 text-[4px] lg:text-sm mt-5 lg:mt-10 ">
-                      {index == 0 ? (
-                        <div dangerouslySetInnerHTML={html} />
-                      ) : index == 1 ? (
-                        <div dangerouslySetInnerHTML={html2} />
-                      ) : (
-                        <div></div>
-                      )}
-                    </div> */}
-                  </div>
-                  <button
-                    onClick={() =>
-                      openModal(index, value.title, value.name, value.img)
-                    }
-                    className="text-[12px] mt-24 text-left"
-                  >
-                    Lihat Sambutan
-                  </button>
-                </div>
-                <div className="flex justify-end h-full lg:h-full">
+                <div className="flex flex-cols-2 h-[full] ">
                   <img
                     loading="lazy"
                     src={require(`../../assets/${value.img}`)}
                     alt="img"
                     className="object-cover rounded-lg"
                   />
+                  
+
+                  <div className="flex flex-col justify-between  p-5 lg:p-14">
+                    <div className="">
+                      <div className="text-[16px] lg:text-4xl font-bold">
+                        {value.title}
+                      </div>
+                      <div className="text-[16px] lg:text-[25px] font-bold">
+                        {value.name}
+                      </div>
+                    </div>
+                    <button
+                      onClick={() =>
+                        openModal(index, value.title, value.name, value.img)
+                      }
+                      className="text-[12px] text-center bg-green-400 w-[120px] rounded-lg p-1"
+                    >
+                      Lihat Sambutan
+                    </button>
+                  </div>
                 </div>
+
+
               </div>
             </div>
           );

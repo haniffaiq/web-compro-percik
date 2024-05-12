@@ -37,12 +37,12 @@ const Sekolah = () => {
           <div className="mx-auto max-w-fit px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-5">
               {schoolsData.slice(0, 5).map((school) => (
-                <Link key={school.id} to={`/school-detail/${school.id}`} className="w-[300px]">
-                  <button
-                    onClick={() => {
-                      setSaveId(school.id);
-                      console.log(school.id);
-                    }}
+                <div key={school.id} to={`/school-detail/${school.id}`} className="w-[300px]">
+                  <div
+                    // onClick={() => {
+                    //   setSaveId(school.id);
+                    //   console.log(school.id);
+                    // }}
                     className="border rounded-lg p-3 w-full"
                     style={{ height: '100%' }}
                   >
@@ -67,8 +67,8 @@ const Sekolah = () => {
                       <img loading="lazy" src={Telf} alt="Telf" />
                       <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.phone}</div>
                     </div>
-                  </button>
-                </Link>
+                  </div>
+                </div>
               ))}
             </div>
           </div>

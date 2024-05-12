@@ -79,20 +79,21 @@ const Event = () => {
         </Link>
       </div>
 
-      <div className="gallery">
+      <div className="flex align-center justify-center flex-wrap mt-8 gap-4">
         {currentData.map((item) => (
-          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item">
-            <div>
+          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} 
+          className="flex flex-col w-[400px] min-h-[424px] p-4 border-4 rounded-lg shadow-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0">
+            <div className="">
               <div>
                 <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
-              <div className="gallery-text-item ">
-                <p className="gallery-text-item-headline">{item.headline}</p>
+              <div className="">
+                <p className="font-bold py-2 justify-center">{item.headline}</p>
                 <div className="yellow-bar"></div>
-                <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
+                <p className="">{truncateText(item.deskripsi, 10)}</p>
                 <div className="maker-layout">
                   <img loading="lazy" src={Logo} alt="logo" />
-                  <p className="gallery-text-item-maker">{item.maker}</p>
+                  <p className="">{item.maker}</p>
                   <div>
                     <p className="date-style">{item.date}</p>
                   </div>

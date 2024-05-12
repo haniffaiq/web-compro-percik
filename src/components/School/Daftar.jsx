@@ -18,13 +18,13 @@ const Daftar = () => {
       <div className="mx-auto max-w-fit px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-3">
           {schoolsData.map((school) => (
-            <Link key={school.id} to={`/school-detail/${school.id}`} className="w-full">
-              <button
-                onClick={() => {
-                  setSaveId(school.id);
-                  console.log(school.id);
-                  // <SchoolDetail data={saveId} />;
-                }}
+            <div key={school.id} to={`/school-detail/${school.id}`} className="w-full">
+              <div
+                // onClick={() => {
+                //   setSaveId(school.id);
+                //   console.log(school.id);
+                //   // <SchoolDetail data={saveId} />;
+                // }}
                 className="border rounded-lg p-3"
                 style={{ margin: '10px 0' }}
               >
@@ -49,8 +49,8 @@ const Daftar = () => {
                   <img loading="lazy" src={Telf} alt="Telf" />
                   <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.phone}</div>
                 </div>
-              </button>
-            </Link>
+              </div>
+            </div>
           ))}
         </div>
       </div>

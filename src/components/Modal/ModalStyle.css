@@ -14,7 +14,7 @@
 
   /* Modal Window */
   .modal {
-    background-image: linear-gradient(to right, #7b82c3, #0d3cf9);
+    background-color: white;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Efek bayangan */
