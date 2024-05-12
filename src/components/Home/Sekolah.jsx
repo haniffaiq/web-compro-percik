@@ -17,6 +17,12 @@ const Sekolah = () => {
   const [saveId, setSaveId] = useState(null);
   console.log(globalState.globalProperty + saveId);
 
+  let sortedData = {};
+  if (globalState.globalProperty === "IND") {
+    sortedData = [...data.bahasa];
+  } else {
+    sortedData = [...data.english];
+  }
   return (
     <>
       <div className="flex flex-col gap-2 p-5 lg:p-14">
@@ -33,17 +39,13 @@ const Sekolah = () => {
         </div> */}
 
         <div className="p-5 lg:p-8">
-          <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
+          <div className="text-center text-3xl lg:text-5xl font-bold mb-10">{globalState.globalProperty === "IND" ? "DAFTAR SEKOLAH" : "LIST OF SCHOOLS"}</div>
           <div className="mx-auto max-w-fit px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-5">
-              {schoolsData.slice(0, 5).map((school) => (
-                <div key={school.id} to={`/school-detail/${school.id}`} className="w-[300px]">
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-5">
+              {sortedData.slice(0, 5).map((school) => (
+                <div key={school.id} className="w-full">
                   <div
-                    // onClick={() => {
-                    //   setSaveId(school.id);
-                    //   console.log(school.id);
-                    // }}
-                    className="border rounded-lg p-3 w-full"
+                    className="border rounded-lg p-3 h-full"
                     style={{ height: '100%' }}
                   >
                     <div className="w-full h-32 lg:h-64 overflow-hidden">
@@ -53,11 +55,18 @@ const Sekolah = () => {
                         alt={`${school.name}`}
                       />
                     </div>
-                    <div className="text-start text-sm lg:text-2xl mt-5 font-bold">{school.name}</div>
+                    <div className="text-start text-lg lg:text-2xl mt-5 font-bold">
+                      {school.name.split('\n').map((line, index) => (
+                        <React.Fragment key={index}>
+                          {line}
+                          {index !== school.name.split('\n').length - 1 && <br />}
+                        </React.Fragment>
+                      ))}
+                    </div>
                     <hr className="border-yellow-400 border-t-8 mt-2 w-[103px]" />
                     <div className="flex gap-3 text-start mt-3">
                       <img loading="lazy" src={Wisuda} alt="logo" />
-                      <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.students} Siswa</div>
+                      <div className="text-[#8d8f91] text-[10px] flex items-center lg:text-lg">{school.students} Students</div>
                     </div>
                     <div className="flex gap-3 items-start text-start mt-3">
                       <img loading="lazy" className=" " src={Loc} alt="logo" />
@@ -71,12 +80,13 @@ const Sekolah = () => {
                 </div>
               ))}
             </div>
+
           </div>
         </div>
 
         <Link to="/school" className="flex mt-auto item-center justify-center">
-          <button className="font-semibold item-center">
-            <img src={selengkapnya} alt="Selengkapnya" />
+          <button className="text-[12px] text-center bg-green-500 w-[120px] rounded-lg p-1 text-white">
+            {globalState.globalProperty === "IND" ? "SELENGKAPNYA" : "SEE MORE"}
           </button>
         </Link>
 

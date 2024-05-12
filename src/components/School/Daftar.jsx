@@ -12,12 +12,20 @@ const Daftar = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
   console.log(globalState.globalProperty + saveId);
+
+  let sortedData = {};
+  if (globalState.globalProperty === "IND") {
+    sortedData = [...data.bahasa];
+  } else {
+    sortedData = [...data.english];
+  }
+  
   return (
     <div className="p-5 lg:p-8">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
       <div className="mx-auto max-w-fit px-4 sm:px-6 lg:px-[200px]">
         <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-3">
-          {schoolsData.map((school) => (
+          {sortedData.map((school) => (
             <div key={school.id} to={`/school-detail/${school.id}`} className="w-full">
               <div
                 // onClick={() => {

@@ -19,8 +19,8 @@ const Partnership = () => {
             <img loading="lazy" src={Logo} className="h-full" alt="logo" />
           </div>
           <div className="text-white text-[2.5vw] lg:text-[2vw] flex flex-col justify-center align-center text-center">
-            <div className=" font-bold">YAYASAN PERGURUAN ’CIKINI’ ADALAH PIONIR </div>
-            <div>dalam membentuk karakter dan kecerdasan anak bangsa.</div>
+            <div className=" font-bold"> {globalState.globalProperty === "IND" ? "YAYASAN PERGURUAN ’CIKINI’ ADALAH PIONIR" : "THE 'CIKINI' EDUCATIONAL FOUNDATION IS A PIONEER"} <br /></div>
+            <div>{globalState.globalProperty === "IND" ? "dalam membentuk karakter dan kecerdasan anak bangsa." : "in shaping the character and intelligence of the nation's children"}</div>
           </div>
           {/* <img loading="lazy" src={Logo} className="h-full" alt="logo" />
           <img loading="lazy" src={Logo} className="h-full" alt="logo" />

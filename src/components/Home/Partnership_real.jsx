@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 // import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import Lipi from "../../assets/icon/Group 2.svg";
-import Bni from "../../assets/icon/Layer_x5F_1.svg";
-import Telkomsel from "../../assets/icon/Layer_x0020_1.svg";
-import Logo from "../../assets/logo/logo_white.png";
+import Lipi from "../../assets/img/Home/BNI.png";
+import Bni from "../../assets/img/Home/BSI.png";
+import Telkomsel from "../../assets/img/Home/mandiri.png";
 
 const PartnershipReal = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
