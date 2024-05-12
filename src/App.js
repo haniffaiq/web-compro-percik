@@ -13,6 +13,7 @@ import EventDetail from "./components/Event Detail/EventDetail";
 import Event from "./components/Event/Event";
 import Management from "./components/Management/Management";
 import Footer from "./components/Footer/Footer";
+import Riwayat from "./components/About/Riwayat";
 // import SchoolDetail from "./components/SchoolDetail/Index";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about-detail" element={<Riwayat />} />
           <Route path="/school" element={<School />} />
           {/* <Route path="/school-detail/:id" element={<SchoolDetail />} /> */}
           <Route path="/project" element={<Project />} />
