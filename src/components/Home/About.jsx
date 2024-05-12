@@ -17,9 +17,9 @@ const About = () => {
           <div>
             <img loading="lazy" className="w-full h-auto" src={AboutImg} alt="img" />
           </div>
-          <div className="flex flex-col justify-start px-6 py-6 lg:py-0 lg:justify-between">
-            <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10">
-            Yayasan Perguruan Cikini telah mencatat prestasi gemilang sebagai lembaga pendidikan dengan track record yang memukau. Sejak berdiri, yayasan ini telah melahirkan banyak individu hebat yang kini berkontribusi di berbagai
+          <div className="flex flex-col justify-start px-6 py-6 lg:py-0 lg:justify-between leading-normal	">
+            <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal	">
+              Yayasan Perguruan Cikini telah mencatat prestasi gemilang sebagai lembaga pendidikan dengan track record yang memukau. Sejak berdiri, yayasan ini telah melahirkan banyak individu hebat yang kini berkontribusi di berbagai
               sektor di Indonesia. Alumni Perguruan Cikini menjadi bukti nyata akan dedikasi yayasan dalam membentuk generasi yang unggul dan berprestasi. <br />
                <br />
               Yayasan Perguruan Cikini terus berinovasi tanpa meninggalkan tradisi yang kuat. Dengan memadukan kekayaan tradisional dan semangat inovatif, yayasan ini memberikan pendidikan yang tidak hanya relevan dengan perkembangan

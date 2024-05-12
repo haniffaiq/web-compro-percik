@@ -23,7 +23,7 @@ const Footer = () => {
               <div className="mr-2 mb-2 flex justify-center">
                 <img src={Logo} alt="Logo Yayasan" className="w-16 h-16 mr-4" />
               </div>
-              <div className="text-white font-[600] lg:text-lg text-md  lg:text-start text-center">YAYASAN PERGURUAN CIKINI</div>
+              <div className="text-white font-[600] lg:text-[27px] text-md lg:text-start text-center">YAYASAN PERGURUAN CIKINI</div>
             </div>
             <div className="text-[#C1CACF] lg:text-lg text-sm lg:text-start text-center">Jl. Cikini Raya No. 74-76, Jakarta Pusat 10330</div>
             <div className="text-white font-[600] lg:text-2xl text-md  mt-8  lg:text-start text-center">Sekretariat Yayasan Perguruan ’Cikini’ </div>

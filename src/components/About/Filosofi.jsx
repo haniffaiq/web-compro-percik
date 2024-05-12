@@ -28,12 +28,12 @@ const Filosofi = () => {
       </div> */}
       <div className="p-5 lg:p-8">
         <div className="w-full rounded-xl ">
-          <div className="grid lg:grid-cols-3 grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5">
+          <div className="grid lg:grid-cols-3 grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5 leading-normal	">
             <div className="flex lg:justify-center justify-center items-center h-full lg:h-full lg:row-span-2">
               <img loading="lazy" src={Logo} className="lg:object-cover flex h-full" />
             </div>
             <div className="text-white p-5 lg:p-14 lg:col-span-2 lg:row-span-2 ">
-              <div className="flex flex-col gap-5 text-[12px] lg:text-lg mt-5 lg:mt-10 text-black">{<div dangerouslySetInnerHTML={html} />}</div>
+              <div className="flex flex-col gap-5 text-[12px] lg:text-lg mt-5 lg:mt-10 text-black leading-normal">{<div dangerouslySetInnerHTML={html} />}</div>
             </div>
           </div>
         </div>

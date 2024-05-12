@@ -108,8 +108,8 @@ const MobileNavbar = ({
             to="/"
             className={
               location.pathname === "/"
-                ? " text-black font-[600]"
-                : "text-[#6B7280] font-[600]"
+                ? " text-black "
+                : "text-[#6B7280] "
             }
           >
             {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
@@ -118,8 +118,8 @@ const MobileNavbar = ({
             to="/about"
             className={
               location.pathname === "/about"
-                ? "text-black font-[600]"
-                : "text-[#6B7280] font-[600]"
+                ? "text-black "
+                : "text-[#6B7280] "
             }
           >
             {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
@@ -133,8 +133,8 @@ const MobileNavbar = ({
                 location.pathname === "/school-detail/3" ||
                 location.pathname === "/school-detail/4" ||
                 location.pathname === "/school-detail/5"
-                ? "text-black font-[600]"
-                : "text-[#6B7280] font-[600]"
+                ? "text-black "
+                : "text-[#6B7280] "
             }
           >
             {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
@@ -143,8 +143,8 @@ const MobileNavbar = ({
             to="/project"
             className={
               location.pathname === "/project"
-                ? "text-black font-[600]"
-                : "text-[#6B7280] font-[600]"
+                ? "text-black "
+                : "text-[#6B7280] "
             }
           >
             {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
@@ -153,8 +153,8 @@ const MobileNavbar = ({
             to="/event"
             className={
               location.pathname === "/event"
-                ? "text-black font-[600]"
-                : "text-[#6B7280] font-[600]"
+                ? "text-black "
+                : "text-[#6B7280] "
             }
           >
             {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
@@ -163,8 +163,8 @@ const MobileNavbar = ({
             to="/management"
             className={
               location.pathname === "/management"
-                ? "text-black font-[600]"
-                : "text-[#6B7280] font-[600]"
+                ? "text-black "
+                : "text-[#6B7280] "
             }
           >
             {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
@@ -176,7 +176,7 @@ const MobileNavbar = ({
               onClick={() => updateGlobalState({ globalProperty: "IND" })}
               className={
                 globalState.globalProperty === "IND"
-                  ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full h-full  font-bold text-white flex gap-2"
+                  ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full h-full font-bold text-white flex gap-2"
                   : " font-bold text-black flex gap-2 duration-300"
               }
             >

@@ -136,10 +136,10 @@ const AboutUs = () => {
 
                   <div className="flex flex-col justify-between  p-5 lg:p-14">
                     <div className="">
-                      <div className="text-[16px] lg:text-4xl font-bold">
+                      <div className="text-[16px] lg:text-4xl font-bold leading-normal	">
                         {value.title}
                       </div>
-                      <div className="text-[16px] lg:text-[25px] font-bold">
+                      <div className="text-[16px] lg:text-[25px] font-bold leading-normal	">
                         {value.name}
                       </div>
                     </div>
@@ -176,10 +176,10 @@ const AboutUs = () => {
                     alt="popup"
                   ></img> */}
                   <div>
-                    <div className="text-[20px] font-semibold text-start">
+                    <div className="text-[20px] font-semibold text-start leading-normal	">
                       {selectedManagement.title}
                     </div>
-                    <div className="text-[24px] mt-5 font-bold text-start">
+                    <div className="text-[24px] mt-5 font-bold text-start leading-normal	">
                       {selectedManagement.name}
                     </div>
                     <div className="mt-3">

@@ -13,7 +13,7 @@ import EventDetail from "./components/Event Detail/EventDetail";
 import Event from "./components/Event/Event";
 import Management from "./components/Management/Management";
 import Footer from "./components/Footer/Footer";
-import SchoolDetail from "./components/SchoolDetail/Index";
+// import SchoolDetail from "./components/SchoolDetail/Index";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/school" element={<School />} />
-          <Route path="/school-detail/:id" element={<SchoolDetail />} />
+          {/* <Route path="/school-detail/:id" element={<SchoolDetail />} /> */}
           <Route path="/project" element={<Project />} />
           <Route path="/project-detail" element={<ProjectDetail />} />
           <Route path="/event-detail" element={<EventDetail />} />
