@@ -123,9 +123,9 @@
     align-items: center;
   }
   .image-logo-layout {
-    position: absolute;
-    top: 1748px;
-    left: 37%;
+    position: relative;
+    top: -50px;
+    left: 110px;
   }
   .image-logo-layout img {
     width: 76px;
