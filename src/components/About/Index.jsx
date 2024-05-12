@@ -8,6 +8,7 @@ import Galeri from "./Galeri";
 import Misi from "./Misi";
 import Filosofi from "./Filosofi";
 import Riwayat from "./Riwayat";
+import Riwayat2 from "./Riwayat2";
 
 const About = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -38,7 +39,8 @@ const About = () => {
       </div>
       <AboutUs />
       <Filosofi />
-      <Riwayat />
+      {/* <Riwayat /> */}
+      <Riwayat2 />
       {/* <Visi /> */}
       {/* <Misi /> */}
       {/* <Prestasi /> */}

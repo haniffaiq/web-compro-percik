@@ -106,9 +106,9 @@ const AboutUs = () => {
                 ) : (
                   <div className=" h-full">
                     <div className="mb-[-28px] lg:mb-0 p-8 justify-center align-center text-center w-full">
-                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025" : "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025"}</div>
-                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg  mt-16 text-left">{globalState.globalProperty === "IND" ? "Atau langsung Daftar langsung :" : "Atau langsung Daftar langsung :"}</div>
-                      <div className="text-black font-segoeui text-lg lg:text-lg text-left	mt-8 ">{globalState.globalProperty === "IND" ? "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760" : "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760"}</div>
+                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "MEMBUKA PENDAFTARAN PESERTA DIDIK BARU UNTUK TAHUN PELAJARAN 2024/2025" : "OPENING REGISTRATION FOR NEW STUDENTS FOR THE ACADEMIC YEAR 2024/2025"}</div>
+                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg  mt-16 text-left">{globalState.globalProperty === "IND" ? "Atau Daftar langsung :" : "Onsite Registration :"}</div>
+                      <div className="text-black font-segoeui text-lg lg:text-lg text-left	mt-8 ">{globalState.globalProperty === "IND" ? "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760" : "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, South Jakarta, Special Capital Region of Jakarta 12760"}</div>
 
                     </div>
                   </div>

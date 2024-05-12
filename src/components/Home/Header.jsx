@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
 import Coun1Img from "../../assets/img/count1img.jpg";
@@ -9,32 +9,53 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 const carouselItems = [
   {
-    image: require("../../assets/img/Home/H1.webp"), // replace with your image path
-    title: "Mari Bergabung dengan Kami",
-    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
-    buttonText: "Kunjungi Kami",
+    image: require("../../assets/img/Home/H1.webp")
   },
   {
-    image: require("../../assets/img/Home/H2.webp"), // replace with your image path
-    title: "Mari Bergabung dengan Kami",
-    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
-    buttonText: "Kunjungi Kami",
+    image: require("../../assets/img/Home/H2.webp")
   },
   {
-    image: require("../../assets/img/Home/H3.webp"), // replace with your image path
-    title: "Mari Bergabung dengan Kami",
-    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
-    buttonText: "Kunjungi Kami",
+    image: require("../../assets/img/Home/H3.webp")
   },
   {
-    image: require("../../assets/img/Home/H4.webp"), // replace with your image path
-    title: "Mari Bergabung dengan Kami",
-    subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
-    buttonText: "Kunjungi Kami",
+    image: require("../../assets/img/Home/H4.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H5.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H6.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H7.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H8.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H9.webp")
+  },
+];
+
+
+const carouselItemsMobile = [
+  {
+    image: require("../../assets/img/Home/H1.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H2.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H3.webp")
+  },
+  {
+    image: require("../../assets/img/Home/H4.webp")
   },
 ];
 
 const Header = () => {
+
+
   const { globalState, updateGlobalState } = useContext(AppContext);
   console.log(globalState.globalProperty);
   const count1 = useMotionValue(0);
@@ -45,6 +66,28 @@ const Header = () => {
 
   const count3 = useMotionValue(0);
   const rounded3 = useTransform(count3, Math.round);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  console.log(globalState.globalProperty);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Ubah 768 sesuai dengan breakpoint yang Anda inginkan
+    };
+
+    handleResize(); // Panggil handleResize saat pertama kali komponen dimount
+
+    window.addEventListener("resize", handleResize); // Tambahkan event listener untuk merespon perubahan ukuran layar
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Hapus event listener saat komponen unmount
+    };
+  }, []);
 
   const customDotRender = (index, { isActive }) => {
     const dotStyle = {
@@ -82,8 +125,31 @@ const Header = () => {
           },
         }}
       >
-        <Carousel autoplay>
+
+        {!isMobile && <Carousel autoplay>
           {carouselItems.map((item, index) => (
+            <div key={index} className="h-[300px] lg:h-[700px] relative">
+              <div
+                className="h-full bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${item.image})`
+                }}
+              />
+              {index === 10 && (
+                <div className="absolute bottom-0 left-0 w-full text-center p-10">
+                  <div className="text-white text-[15px] lg:text-[25px] font-[600]">{item.title}</div>
+                  <div className="text-white text-[12px] lg:text-[20px] font-[600]">{item.subtitle}</div>
+                  <div className="flex justify-center">
+                    <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">{item.buttonText}</button>
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </Carousel>}
+
+        {isMobile && <Carousel autoplay>
+          {carouselItemsMobile.map((item, index) => (
             <div key={index} className="h-[300px] lg:h-[700px] relative">
               <div
                 className="h-full bg-cover bg-center"
@@ -117,7 +183,8 @@ const Header = () => {
             </div> */}
             </div>
           ))}
-        </Carousel>
+        </Carousel>}
+
 
 
       </ConfigProvider>
