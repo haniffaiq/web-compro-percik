@@ -125,7 +125,6 @@ const Event = () => {
               </li>
               <div className="separator-border"></div>
               <li className="leading-normal">
-                {" "}
                 {globalState.globalProperty === "IND"
                   ? "2. Yayasan Perguruan ’Cikini’ dengan Yayasan Pendidikan Prima Swarga Bara Sangata Kalimantan Timur, mengelola bidang manajemen  Pendidikan TK, SD, SMP  mulai Tahun 1990 berakhir tahun1993"
                   : "2. Currently, the Cikini Educational Foundation collaborates with the Prima Swarga Bara Education Foundation in Sangata, East Kalimantan, to manage the fields of TK, elementary, and junior high school education. The collaboration started in 1990 and ended in 1993."}
