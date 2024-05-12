@@ -626,7 +626,7 @@
   }
 }
 /* Laptop */
-@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+@media only screen and (min-width: 1366px) and (max-width: 1900px) {
   .top-section-pict-container-pengurus {
     display: flex;
     flex-direction: row;
@@ -866,7 +866,7 @@
 .main-container-layout-pengawas {
   border: 2px solid #ebebeb;
   width: 273px;
-  height: 796px;
+  height: 850px;
   display: flex;
   align-items: center;
   flex-direction: column;

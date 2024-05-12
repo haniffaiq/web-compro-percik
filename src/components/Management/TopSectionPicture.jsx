@@ -23,12 +23,14 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
               </div>
               <div className="management-text-wrapper">
-                <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
+                <p className="overlay-text-management-tittle leading-normal">{namaLengkapManajemen}</p>
                 <div className="yellow-bar-management-tittle"></div>
 
                 <div className="overlay-text-management-desc">
                   {deskripsiManajemen.split("\n").map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
+                    <p key={index} className="leading-normal">
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -55,7 +57,9 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
 
                   <div className="overlay-text-management-desc">
                     {deskripsiManajemen.split("\n").map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
+                      <p key={index} className="leading-normal">
+                        {paragraph}
+                      </p>
                     ))}
                   </div>
                 </div>
@@ -96,7 +100,9 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                           </p>
                         ) : (
                           // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
-                          <p key={index}>{paragraph}</p>
+                          <p key={index} className="leading-normal">
+                            {paragraph}
+                          </p>
                         )
                       )}
                     </div>
@@ -113,12 +119,14 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "366px" }}>
+                          <p key={index} style={{ height: "366px" }} className="leading-normal">
                             {paragraph}
                           </p>
                         ) : (
                           // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
-                          <p key={index}>{paragraph}</p>
+                          <p key={index} className="leading-normal">
+                            {paragraph}
+                          </p>
                         )
                       )}
                     </div>

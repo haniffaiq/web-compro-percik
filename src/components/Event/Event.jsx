@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import "./EventStyle.css";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
+import logoYPCBiru from "../../assets/img/logo YPC_biru 3.png";
 import Pagination from "./Pagination";
 import data from "../../assets/json/events.json";
 
@@ -81,8 +82,11 @@ const Event = () => {
 
       <div className="flex align-center justify-center flex-wrap mt-8 gap-4">
         {currentData.map((item) => (
-          <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} 
-          className="flex flex-col w-[400px] min-h-[424px] p-4 border-4 rounded-lg shadow-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0">
+          <Link
+            key={item.id}
+            to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
+            className="flex flex-col w-[400px] min-h-[424px] p-4 border-4 rounded-lg shadow-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0"
+          >
             <div className="">
               <div>
                 <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
@@ -104,6 +108,50 @@ const Event = () => {
         ))}
       </div>
       <Pagination totalItems={sortedData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
+      <div className="kerjasama-yayasan-layout">
+        <div className="kerjasama-yayasan-box">
+          <div className="image-logo-layout">
+            <img src={logoYPCBiru} alt="logo-percik" />
+            <div className="separator-border-logo1"></div>
+            <div className="separator-border-logo2"></div>
+          </div>
+          <div className="kerjasama-yayasan-content">
+            <h1> {globalState.globalProperty === "IND" ? "KERJASAMA YAYASAN PERGURUAN `CIKINI` DENGAN PIHAK LAIN" : "COLLABORATION OF CIKINI EDUCATIONAL FOUNDATION WITH OTHER PARTIES"}</h1>
+            <ol>
+              <li className="leading-normal">
+                {globalState.globalProperty === "IND"
+                  ? "1. Yayasan Perguruan ’Cikini’ Dengan Sekolah Nasional KPS (Kontraktor Production Sharing) Balikpapan Kalimantan Timur mengelola Pendidikan TK,SD dan SMP KPS Balikpapan mulai Tahun 1976 berakhir tahun 2004, pihak Yayasan Sekolah Nasional KPS ingin berupaya mandiri dalam pengelolaan sekolah sendiri."
+                  : "1. Currently, the Cikini Educational Foundation collaborates with the National School KPS (Contractor Production Sharing) Balikpapan in East Kalimantan to manage TK, elementary, and junior high school education. The collaboration started in 1976 and ended in 2004. The National School KPS wishes to strive for self-sufficiency in managing its own schools."}
+              </li>
+              <div className="separator-border"></div>
+              <li className="leading-normal">
+                {" "}
+                {globalState.globalProperty === "IND"
+                  ? "2. Yayasan Perguruan ’Cikini’ dengan Yayasan Pendidikan Prima Swarga Bara Sangata Kalimantan Timur, mengelola bidang manajemen  Pendidikan TK, SD, SMP  mulai Tahun 1990 berakhir tahun1993"
+                  : "2. Currently, the Cikini Educational Foundation collaborates with the Prima Swarga Bara Education Foundation in Sangata, East Kalimantan, to manage the fields of TK, elementary, and junior high school education. The collaboration started in 1990 and ended in 1993."}
+              </li>
+              <div className="separator-border"></div>
+              <li className="leading-normal">
+                {globalState.globalProperty === "IND"
+                  ? "3. Yayasan Perguruan ’Cikini’dengan PT. Kertas Nusantara di Mangkajang Kalimantan Timur mengelola Pendidikan TK, SD, SMP dan SMA mulai tahun 1998 berakhir Tahun 2012, pihak  PT Kertas Nusantara ingin berupaya mandiri dalam mengelola Sekolah sendiri."
+                  : "3. Currently, the Cikini Educational Foundation collaborates with PT. Kertas Nusantara in Mangkajang, East Kalimantan, to manage TK, elementary, junior high, and senior high school education. The collaboration started in 1998 and ended in 2012. PT Kertas Nusantara aims to strive for self-sufficiency in managing its own schools."}
+              </li>
+              <div className="separator-border"></div>
+              <li className="leading-normal">
+                {globalState.globalProperty === "IND"
+                  ? "4. Yayasan Perguruan ’Cikini’ dengan Yayasan Pendidikan Vidya Patra di Komplek PT. Badak Bontang Kalimantan Timur mengelola Pendidikan SD,SMP dan SMA  dari Tahun 2010 s.d 2012 untuk proses transformasi dari PT Badak Bontang ke YPVDP (Yayasan Pendidikan Vidya Dahana Patra) sampai mandiri dalam mengelola opesional sekolah."
+                  : "4. Currently, the Cikini Educational Foundation collaborates with the Vidya Patra Education Foundation in the PT. Badak Bontang Complex in East Kalimantan to manage primary, junior high, and senior high school education. This collaboration took place from 2010 to 2012 as part of the transformation process from PT. Badak Bontang to YPVDP (Vidya Dahana Patra Education Foundation), leading to self-sufficiency in managing the school's operations."}
+              </li>
+              <div className="separator-border"></div>
+              <li className="leading-normal">
+                {globalState.globalProperty === "IND"
+                  ? "5. Yayasan Perguruan ’Cikini’ dengan PT. Harapan  Anang Bakri & Sons, PT. Maligi Permata Industrial Estate Karawang mendirikan Pendidikan Vokasi (SMK Perguruan CIKINI-KIIC dan Politeknik Perguruan CIKINI-KIIC) di Kawasan Industri KIIC Karawang mulai Tahun 2021 s.d Sekarang."
+                  : "5. Currently, the Cikini Educational Foundation, in collaboration with PT. Harapan Anang Bakri & Sons and PT. Maligi Permata Industrial Estate Karawang, has established Vocational Education (SMK Cikini-KIIC and Polytechnic Cikini-KIIC) in the KIIC Industrial Area, Karawang. This initiative started in 2021 and continues to the present."}
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

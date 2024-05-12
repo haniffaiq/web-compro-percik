@@ -110,7 +110,7 @@ const EventDetail = () => {
           {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
         <span className="text-lg"> &gt; </span>
-        <Link to="/management" className="font-bold text-lg">
+        <Link to="/event" className="font-bold text-lg">
           {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "Event & News Details"}
         </Link>
       </div>
@@ -133,43 +133,21 @@ const EventDetail = () => {
           </div>
           <div className="isi-desc-event">
             {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index} className="leading-normal">
+                {paragraph}
+              </p>
             ))}
           </div>
         </div>
         <ComponentPDF />
         <div className="detail-selengkapnya-event-layout">
-          <p>{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more details, please download the following link:"}</p>
+          <p className="leading-normal">{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more details, please download the following link:"}</p>
           <div class="container-download-event">
             <div class="line-proyek1-event"></div>
             <img src={download} alt="Gambar" onClick={handleDownloadPDF} />
             <div class="line-proyek2-event"></div>
           </div>
         </div>
-
-        {/* <div className="berita-lainnya-layout">
-          <h2>Berita Lainnya</h2>
-          <div className="berita-lainnya-gallery">
-            {slicedData.map((item) => (
-              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="gallery-item shadow-xl">
-                <div className="card-layout">
-                  <div>
-                    <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
-                  </div>
-                  <p className="date-style">{item.date}</p>
-                  <div className="gallery-text-item">
-                    <p className="gallery-text-item-headline">{item.headline}</p>
-                    <p className="gallery-text-item-deskripsi">{truncateText(item.deskripsi, 10)}</p>
-                    <div className="maker-layout">
-                      <img loading="lazy" src={LogoWriter} alt="logo" />
-                      <p className="gallery-text-item-maker">{item.maker}</p>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div> */}
       </div>
     </>
   );
