@@ -1,98 +1,399 @@
-/* style untuk tittle */
-.tittle-management-wrapper {
-  background: #ebebeb;
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .tittle-management-wrapper {
+    background: #ebebeb;
+  }
+
+  .horizontal-line {
+    border-top: 2px solid #ebebeb;
+    width: 100%;
+  }
+
+  .tittle-container {
+    margin-bottom: -28px;
+    background: #ebebeb;
+  }
+
+  .tittle-container p {
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 125px;
+    margin-top: 61px;
+  }
+
+  .deskripsi-management-container p {
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    font-family: "Segoe UI";
+  }
+
+  .image-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-list-wrapper {
+    border: 2px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+    width: 350px;
+    height: 447px;
+  }
+
+  .image-list-wrapper img {
+    width: 380px;
+    height: 200px;
+  }
+
+  .overlay-text-tittle {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    width: 300px;
+    margin-top: 12px;
+  }
+
+  .yellow-bar-project {
+    border-top: 5px solid #faa61a;
+    width: 55px;
+    position: relative;
+    top: -5px;
+  }
+
+  .overlay-text-desc {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+  .link-layout {
+    background-color: turquoise;
+    width: 133px;
+    height: 26px;
+    border-radius: 15px;
+    padding: 5px 14.95px 6px 16px;
+    margin-left: 80px;
+  }
+
+  .link-layout:hover {
+    background-color: #48d1cc;
+  }
+  .link-layout:active {
+    transform: translateY(1px);
+  }
+  .link-layout p {
+    font-size: 14px;
+    color: #fff;
+  }
 }
 
-.horizontal-line {
-  border-top: 2px solid #ebebeb;
-  width: 100%;
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .tittle-management-wrapper {
+    background: #ebebeb;
+  }
+
+  .horizontal-line {
+    border-top: 2px solid #ebebeb;
+    width: 100%;
+  }
+
+  .tittle-container {
+    margin-bottom: -28px;
+    background: #ebebeb;
+  }
+
+  .tittle-container p {
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 125px;
+    margin-top: 61px;
+  }
+
+  .deskripsi-management-container p {
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    font-family: "Segoe UI";
+  }
+
+  .image-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-list-wrapper {
+    border: 2px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+    width: 450px;
+    height: 447px;
+  }
+
+  .image-list-wrapper img {
+    width: 380px;
+    height: 200px;
+  }
+
+  .overlay-text-tittle {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    width: 300px;
+    margin-top: 12px;
+  }
+
+  .yellow-bar-project {
+    border-top: 5px solid #faa61a;
+    width: 55px;
+    position: relative;
+    top: -5px;
+  }
+
+  .overlay-text-desc {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+  .link-layout {
+    background-color: turquoise;
+    width: 133px;
+    height: 26px;
+    border-radius: 15px;
+    padding: 5px 14.95px 6px 16px;
+    margin-left: 80px;
+  }
+
+  .link-layout:hover {
+    background-color: #48d1cc;
+  }
+  .link-layout:active {
+    transform: translateY(1px);
+  }
+  .link-layout p {
+    font-size: 14px;
+    color: #fff;
+  }
 }
 
-.tittle-container {
-  margin-bottom: -28px;
-  background: #ebebeb;
+/* Laptop */
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+  .tittle-management-wrapper {
+    background: #ebebeb;
+  }
+
+  .horizontal-line {
+    border-top: 2px solid #ebebeb;
+    width: 100%;
+  }
+
+  .tittle-container {
+    margin-bottom: -28px;
+    background: #ebebeb;
+  }
+
+  .tittle-container p {
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 125px;
+    margin-top: 61px;
+  }
+
+  .deskripsi-management-container p {
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    font-family: "Segoe UI";
+  }
+
+  .image-list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-list-wrapper {
+    border: 2px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+    width: 400px;
+    height: 447px;
+    margin-bottom: 57px;
+  }
+
+  .image-list-wrapper img {
+    width: 380px;
+    height: 200px;
+  }
+
+  .overlay-text-tittle {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    width: 300px;
+    margin-top: 12px;
+  }
+
+  .yellow-bar-project {
+    border-top: 5px solid #faa61a;
+    width: 55px;
+    position: relative;
+    top: -5px;
+  }
+
+  .overlay-text-desc {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+  .link-layout {
+    background-color: turquoise;
+    width: 133px;
+    height: 26px;
+    border-radius: 15px;
+    padding: 5px 14.95px 6px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-layout:hover {
+    background-color: #48d1cc;
+  }
+  .link-layout:active {
+    transform: translateY(1px);
+  }
+  .link-layout p {
+    font-size: 14px;
+    color: #fff;
+  }
 }
 
-.tittle-container p {
-  color: #000;
-  font-family: "Segoe UI";
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  margin-left: 125px;
-  margin-top: 61px;
-}
+/* Desktop PC */
+@media only screen and (min-width: 1920px) {
+  .tittle-management-wrapper {
+    background: #ebebeb;
+  }
 
-.deskripsi-management-container p {
-  text-align: center;
-  font-weight: 400;
-  line-height: normal;
-  color: #000;
-  font-family: "Segoe UI";
-}
+  .horizontal-line {
+    border-top: 2px solid #ebebeb;
+    width: 100%;
+  }
 
-.image-list-container {
-  display: flex;
-  flex-direction: row;
-  gap: 52px;
-  justify-content: center;
-  align-items: center;
-}
+  .tittle-container {
+    margin-bottom: -28px;
+    background: #ebebeb;
+  }
 
-.image-list-wrapper {
-  border: 2px solid #ebebeb;
-  display: flex;
-  flex-direction: column;
-  padding: 19px;
-  width: 400px;
-  height: 447px;
-  margin-bottom: 57px;
-}
+  .tittle-container p {
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 125px;
+    margin-top: 61px;
+  }
 
-.image-list-wrapper img {
-  width: 380px;
-  height: 200px;
-}
+  .deskripsi-management-container p {
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    font-family: "Segoe UI";
+  }
 
-.overlay-text-tittle {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 22px;
-  width: 300px;
-  margin-top: 12px;
-}
+  .image-list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    justify-content: center;
+    align-items: center;
+  }
 
-.yellow-bar-project {
-  border-top: 5px solid #faa61a;
-  width: 55px;
-  position: relative;
-  top: -5px;
-}
+  .image-list-wrapper {
+    border: 2px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+    width: 400px;
+    height: 447px;
+    margin-bottom: 57px;
+  }
 
-.overlay-text-desc {
-  font-size: 14px;
-  color: #000;
-  font-weight: normal;
-  margin-top: 20px;
-}
+  .image-list-wrapper img {
+    width: 380px;
+    height: 200px;
+  }
 
-.link-layout {
-  background-color: turquoise;
-  width: 133px;
-  height: 26px;
-  border-radius: 15px;
-  padding: 5px 14.95px 6px 16px;
-  display: flex;
-  justify-content: center;
-}
+  .overlay-text-tittle {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    width: 300px;
+    margin-top: 12px;
+  }
 
-.link-layout:hover {
-  background-color: #48d1cc;
-}
-.link-layout:active {
-  transform: translateY(1px);
-}
-.link-layout p {
-  font-size: 14px;
-  color: #fff;
+  .yellow-bar-project {
+    border-top: 5px solid #faa61a;
+    width: 55px;
+    position: relative;
+    top: -5px;
+  }
+
+  .overlay-text-desc {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+
+  .link-layout {
+    background-color: turquoise;
+    width: 133px;
+    height: 26px;
+    border-radius: 15px;
+    padding: 5px 14.95px 6px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-layout:hover {
+    background-color: #48d1cc;
+  }
+  .link-layout:active {
+    transform: translateY(1px);
+  }
+  .link-layout p {
+    font-size: 14px;
+    color: #fff;
+  }
 }

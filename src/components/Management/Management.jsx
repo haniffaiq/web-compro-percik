@@ -39,7 +39,8 @@ const Management = () => {
   return (
     <>
       <ManagementTittle />
-      <div className="flex gap-1 lg:ml-[125px] py-9 mt-[28px] align-center justify-center">
+
+      <div className="flex gap-1 lg:ml-[125px] py-9 mt-[28px]">
         <Link to="/" className="lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
