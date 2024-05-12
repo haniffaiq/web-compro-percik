@@ -39,17 +39,24 @@ const carouselItems = [
 
 const carouselItemsMobile = [
   {
-    image: require("../../assets/img/Home/H1.webp"),
+    image: require("../../assets/img/Home/mobile1.jpg"),
+    title: "SELAMAT DATANG DI WEB RESMI",
+    subTitle: "YAYASAN PERGURUAN 'CIKINI'",
+    desc: "Terimakasih atas kunjungan Anda, semoga informasi yang diberikan dapat memberi manfaat bagi kita semua",
   },
   {
-    image: require("../../assets/img/Home/H2.webp"),
+    image: require("../../assets/img/Home/mobile2.jpg"),
+    title: "PERESMIAN GEDUNG SEKRETARIAT",
+    subTitle: "YAYASAN PERGURUAN 'CIKINI'",
+    desc: "Potong Tumpeng simbol rasa syukur kepada Allah SWT atas Peresmian Gedung Sekretariat Yayasan Perguruan ’Cikini’ oleh Presiden Ke-5 Republik Indonesia Ibu Prof. Dr. (H.C) Hj. Megawati Soekarnoputri.",
   },
   {
-    image: require("../../assets/img/Home/H3.webp"),
+    image: require("../../assets/img/Home/mobile3.jpg"),
+    desc: 'Dihadiri oleh Pengawas, Pembina, Pengurus Yayasan Perguruan ’Cikini’, Sekretaris Eksekutif beserta staf-nya, Direktur Dikdasmen, Wakil Direktur Dikdasmen, Kepala Sekolah TK-SD-SMP-SMA 1-SMA 2-SMK 1-SMK 2 Musik-SMK 3 Perguruan "Cikini"- SMK Perguruan "Cikini"-KIIC, Rektor ISTN, Wakil Rektor dan Dekan. Kegiatan tersebut dilaksanakan pada hari Senin, 4 Maret 2024 bertempat di Kampus Duren Tiga beralamat di Jl. Duren Tiga Raya No. 1, Pancoran, Jakarta Selatan.',
   },
-  {
-    image: require("../../assets/img/Home/H4.webp"),
-  },
+  // {
+  //   image: require("../../assets/img/Home/H4.webp"),
+  // },
 ];
 
 const Header = () => {
@@ -155,30 +162,31 @@ const Header = () => {
         {isMobile && (
           <Carousel autoplay>
             {carouselItemsMobile.map((item, index) => (
-              <div key={index} className="h-[300px] lg:h-[700px] relative">
-                <div
+              <div key={index} className="flex flex-col ">
+                {/* <div
                   className="h-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${item.image})`,
                   }}
-                />
+                /> */}
+                {item.image && (
+                  <img className="h-full w-full" src={item.image} alt="Item" />
+                )}
+                <div className="bg-[#034EA2] text-center flex flex-col min-h-[200px] justify-center items-center">
+                  <div className="text-[#3AE7FF] text-xl font-bold">
+                    {item.title ? item.title : ""}
+                  </div>
+                  <div className="text-white text-xl font-bold">
+                    {item.subTitle ? item.subTitle : ""}
+                  </div>
+                  <div className="mr-[20px] ml-[20px] text-white">
+                    {item.desc ? item.desc : ""}
+                  </div>
+                </div>
+
                 {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div> */}
 
                 {/* {index === 10 && ( */}
-                <div className=" w-full text-center p-10">
-                  <div className="text-white text-[15px] lg:text-[25px] font-[600]">
-                    {item.title}
-                  </div>
-                  {/* <div className="text-white text-[15px] lg:text-[25px] font-[600]">{item.title}</div> */}
-                  <div className="text-white text-[12px] lg:text-[20px] font-[600]">
-                    {item.subtitle}
-                  </div>
-                  <div className="flex justify-center">
-                    {/* <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
-                      {item.buttonText}
-                    </button> */}
-                  </div>
-                </div>
                 {/* )} */}
                 {/* <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center p-5 lg:p-0 lg:ml-24">
               <div className="text-white text-center lg:text-left text-[25px] lg:text-[50px] font-[600]">
