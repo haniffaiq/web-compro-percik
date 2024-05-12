@@ -690,33 +690,138 @@
 }
 
 /* style download icon event */
-.container-download-event {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 35px;
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .container-download-event {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .line-proyek1-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 90px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    left: 215px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+  .line-proyek2-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 120px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    left: 0px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+
+  .container-download-event img {
+    position: relative;
+    z-index: 1; /* Letakkan gambar di atas garis */
+    width: 80px;
+  }
 }
 
-.line-proyek1-event {
-  position: absolute;
-  transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
-  width: 700px; /* Lebar garis */
-  height: 5px; /* Tinggi garis */
-  left: 850px;
-  background-color: #ebebeb; /* Warna garis */
-}
-.line-proyek2-event {
-  position: absolute;
-  transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
-  width: 660px; /* Lebar garis */
-  height: 5px; /* Tinggi garis */
-  left: 0px;
-  background-color: #ebebeb; /* Warna garis */
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container-download-event {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .line-proyek1-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 200px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    right: 90px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+  .line-proyek2-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 200px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    left: 90px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+
+  .container-download-event img {
+    position: relative;
+    z-index: 1; /* Letakkan gambar di atas garis */
+    width: 100px;
+  }
 }
 
-.container-download-event img {
-  position: relative;
-  z-index: 1; /* Letakkan gambar di atas garis */
-  width: 150px;
+/* Laptop */
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+  .container-download-event {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .line-proyek1-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 300px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    right: 160px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+  .line-proyek2-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 300px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    left: 160px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+
+  .container-download-event img {
+    position: relative;
+    z-index: 1; /* Letakkan gambar di atas garis */
+    width: 150px;
+  }
+}
+
+/* Desktop PC */
+@media only screen and (min-width: 1920px) {
+  .container-download-event {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .line-proyek1-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 700px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    left: 850px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+  .line-proyek2-event {
+    position: absolute;
+    transform: translateY(-50%); /* Pusatkan garis di tengah secara vertikal */
+    width: 660px; /* Lebar garis */
+    height: 5px; /* Tinggi garis */
+    left: 0px;
+    background-color: #ebebeb; /* Warna garis */
+  }
+
+  .container-download-event img {
+    position: relative;
+    z-index: 1; /* Letakkan gambar di atas garis */
+    width: 150px;
+  }
 }
