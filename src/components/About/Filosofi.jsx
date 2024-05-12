@@ -20,12 +20,12 @@ const Filosofi = () => {
   }, []);
   return (
     <>
-      {/* <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
+      <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
         <div className=" bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
           <p className="text-black font-segoeui text-lg font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left">{globalState.globalProperty === "IND" ? "FILOSOFI LAMBANG" : "FILOSOFI LAMBANG"}</p>
           <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div>
         </div>
-      </div> */}
+      </div>
       <div className="p-5 lg:p-8">
         <div className="w-full rounded-xl ">
           <div className="grid lg:grid-cols-3 grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5 leading-normal	">

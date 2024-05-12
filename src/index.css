@@ -17,3 +17,7 @@ code {
   border-width: 2px;
   border-color: blueviolet;
 } */
+
+* {
+  font-family: "Open Sans", sans-serif;
+}

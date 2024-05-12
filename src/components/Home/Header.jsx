@@ -2,29 +2,32 @@ import React, { useContext, useEffect } from "react";
 import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
 import Coun1Img from "../../assets/img/count1img.jpg";
+import Coun2Img from "../../assets/img/50plus.JPG";
+import Coun3Img from "../../assets/img/80persen.JPG";
+
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 const carouselItems = [
   {
-    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
+    image: require("../../assets/img/Home/H1.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
+    image: require("../../assets/img/Home/H2.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
+    image: require("../../assets/img/Home/H3.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
   },
   {
-    image: require("../../assets/img/Home/Header_1.png"), // replace with your image path
+    image: require("../../assets/img/Home/H1.png"), // replace with your image path
     title: "Mari Bergabung dengan Kami",
     subtitle: "Mari Kita Menciptakan Anak Didik yang Berbakat",
     buttonText: "Kunjungi Kami",
@@ -83,11 +86,9 @@ const Header = () => {
           {carouselItems.map((item, index) => (
             <div key={index} className="h-[300px] lg:h-[700px] relative">
               <div
-                className="h-full object-cover"
+                className="h-full bg-cover bg-center"
                 style={{
-                  backgroundImage: `url(${item.image})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
+                  backgroundImage: `url(${item.image})`
                 }}
               />
               {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div> */}
@@ -129,14 +130,14 @@ const Header = () => {
           </div>
           <div className="text-center text-[15px] lg:text-[19px] font-bold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10">Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia kerja</div>
         </div>
-        <div className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun1Img})`, backgroundSize: 'cover' }}>
+        <div className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun2Img})`, backgroundSize: 'cover' }}>
           <div className="absolute inset-0 bg-[#30B8A9] bg-opacity-80"></div> {/* Overlay merah */}
           <div className="flex text-6xl lg:text-8xl font-bold lg:text-white text-white relative z-10">
             <motion.h1>{rounded2}</motion.h1>+
           </div>
           <div className="text-center text-[15px] lg:text-[19px] font-bold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10">Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun nasional</div>
         </div>
-        <div className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun1Img})`, backgroundSize: 'cover' }}>
+        <div className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative" style={{ backgroundImage: `url(${Coun3Img})`, backgroundSize: 'cover' }}>
           <div className="absolute inset-0 bg-[#7888C4] bg-opacity-80"></div> {/* Overlay biru */}
           <div className="flex text-6xl lg:text-8xl font-bold lg:text-white text-white relative z-10">
             <motion.h1>{rounded3}</motion.h1>%

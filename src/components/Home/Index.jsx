@@ -6,6 +6,7 @@ import About from "./About";
 import Partnership from "./Partnership";
 import Sekolah from "./Sekolah";
 import Berita from "./Berita";
+import PartnershipReal from "./Partnership_real";
 
 const Home = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -37,6 +38,7 @@ const Home = () => {
       <About />
       <Partnership />
       <Sekolah />
+      <PartnershipReal />
       {/* {!isMobile && } */}
       {/* <Berita /> */}
     </>

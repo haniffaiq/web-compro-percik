@@ -49,7 +49,7 @@ const Navbar = () => {
     };
   }, [prevScrollPos]);
 
-  const navbarClasses = `w-full mt-[20px] rounded-tl-[20px] border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
+  const navbarClasses = `w-2/3 mt-[20px] rounded-tl-[20px] border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
   const navbarClassesMobile = `w-full border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
 
   return (
@@ -350,9 +350,9 @@ const DesktopNavbar = ({
         </Link>
       </div>
       <div className={navbarClasses}>
-        <div className="flex justify-between lg:grid lg:grid-cols-8 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] m-2 items-center">
+        <div className="flex justify-between lg:grid lg:grid-cols-5 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] m-2 items-center">
 
-          <div className="hidden lg:flex items-center gap-6 w-full col-span-6 ">
+          <div className="hidden lg:flex items-center gap-6 w-full col-span-4 justify-start">
             <Link to="/" className={location.pathname === "/" ? " text-black font-[600]" : "text-[#6B7280] font-[600]"}>
               {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
             </Link>
@@ -389,7 +389,7 @@ const DesktopNavbar = ({
               {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
             </Link>
           </div>
-          <div className="hidden w-full lg:flex justify-end items-center col-span-2 py-2">
+          <div className="hidden w-full lg:flex justify-end items-center col-span-1 py-2">
             <div className="border-2 rounded-[8px] grid grid-cols-2 border-[#09588D]">
               <button
                 onClick={() => updateGlobalState({ globalProperty: "IND" })}
