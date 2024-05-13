@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 // import { Carousel, ConfigProvider } from "antd";
 import AppContext from "../../context/AppContext";
-import Lipi from "../../assets/img/Home/BNI.png";
-import Bni from "../../assets/img/Home/BSI.png";
-import Telkomsel from "../../assets/img/Home/mandiri.png";
+import Lipi from "../../assets/img/Home/BNI.webp";
+import Bni from "../../assets/img/Home/BSI.webp";
+import Telkomsel from "../../assets/img/Home/mandiri.webp";
 
 const PartnershipReal = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -21,28 +21,20 @@ const PartnershipReal = () => {
 
 
       </div>
-      <div className="flex flex-col gap-2 items-center p-3">
-        <div className="flex justify-center gap-5 lg:gap-28 lg:h-[150px] lg:w-full h-[50px] w-[350px] overflow-y-hidden container">
-          {/* <div className="h-full border py-3"> */}
-          <div>
-            <img loading="lazy" src={Bni} className="" alt="logo" />
+      <div class="flex flex-col gap-2 items-center py-8 ">
+        <div class="flex justify-center lg:gap-36 lg:h-full lg:w-full h-[50px] w-[350px] overflow-y-hidden container">
+          <div class="flex items-center">
+            <img loading="lazy" src={Bni} class="" alt="logo" />
           </div>
-          <div>
-            <img loading="lazy" src={Lipi} className="" alt="logo" />
+          <div class="flex items-center">
+            <img loading="lazy" src={Lipi} class="" alt="logo" />
           </div>
-          <div>
-            <img loading="lazy" src={Telkomsel} className="" alt="logo" />
+          <div class="flex items-center">
+            <img loading="lazy" src={Telkomsel} class="" alt="logo" />
           </div>
-          {/* <img loading="lazy" src={Logo} className="h-full" alt="logo" />
-          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
-          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
-          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
-          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
-          <img loading="lazy" src={Logo} className="h-full" alt="logo" />
-          <img loading="lazy" src={Logo} className="h-full" alt="logo" /> */}
-          {/* </div> */}
         </div>
       </div>
+
     </>
   );
 };

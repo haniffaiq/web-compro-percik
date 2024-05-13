@@ -132,7 +132,7 @@ const Header = () => {
         {!isMobile && (
           <Carousel autoplay>
             {carouselItems.map((item, index) => (
-              <div key={index} className="h-[300px] lg:h-[700px] relative">
+              <div key={index} className="h-[300px] lg:h-[810px] relative">
                 <div
                   className="h-full bg-cover bg-center"
                   style={{
@@ -217,10 +217,11 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#FAAE35] bg-opacity-80"></div>{" "}
           {/* Overlay kuning */}
-          <div className="flex text-6xl lg:text-8xl font-bold lg:text-white text-white relative z-10">
-            <motion.h1>{rounded1}</motion.h1>+
+          <div className="flex text-6xl lg:text-8xl lg:text-white text-white relative z-10">
+            <motion.h1 className="font-bold font-sans">{rounded1}</motion.h1>
+            <div className="text-6xl lg:text-8xl font-bold font-sans">+</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[19px] font-bold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10">
+          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-bold font-sans px-10">
             Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia
             kerja
           </div>
@@ -234,10 +235,12 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#30B8A9] bg-opacity-80"></div>{" "}
           {/* Overlay merah */}
-          <div className="flex text-6xl lg:text-8xl font-bold lg:text-white text-white relative z-10">
-            <motion.h1>{rounded2}</motion.h1>+
+          <div className="flex text-6xl lg:text-8xl lg:text-white text-white relative z-10">
+            <motion.h1 className="font-bold font-sans">{rounded2}</motion.h1>
+            <div className="text-6xl lg:text-8xl font-bold font-sansfont-bold">+</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[19px] font-bold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10">
+
+          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-bold font-sans px-10">
             Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun
             nasional
           </div>
@@ -251,10 +254,11 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#7888C4] bg-opacity-80"></div>{" "}
           {/* Overlay biru */}
-          <div className="flex text-6xl lg:text-8xl font-bold lg:text-white text-white relative z-10">
-            <motion.h1>{rounded3}</motion.h1>%
+          <div className="flex text-6xl lg:text-8xl lg:text-white text-white relative z-10">
+            <motion.h1 className="font-bold font-sans">{rounded3}</motion.h1>
+            <div className="text-6xl lg:text-8xl font-bold font-sans">%</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[19px] font-bold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10">
+          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-bold font-sans px-10">
             Tingkat Keberhasilan Pelajar/Mahasiswayang diterima kerja
           </div>
         </div>

@@ -38,7 +38,7 @@ const Sekolah = () => {
           ))}
         </div> */}
 
-        <div className="p-5 lg:p-8">
+        <div className="p-5 lg:p-6">
           <div className="text-center text-3xl lg:text-5xl font-bold mb-10">{globalState.globalProperty === "IND" ? "DAFTAR SEKOLAH" : "LIST OF SCHOOLS"}</div>
           <div className="mx-auto max-w-fit px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-5">
@@ -85,8 +85,8 @@ const Sekolah = () => {
         </div>
 
         <Link to="/school" className="flex mt-auto item-center justify-center">
-          <button className="text-[12px] text-center bg-green-500 w-[120px] rounded-lg p-1 text-white">
-            {globalState.globalProperty === "IND" ? "SELENGKAPNYA" : "SEE MORE"}
+          <button className="text-[20px] text-center bg-green-500 w-auto rounded-full p-1 text-white px-3">
+            {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
           </button>
         </Link>
 

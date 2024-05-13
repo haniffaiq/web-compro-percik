@@ -27,16 +27,16 @@ const About = () => {
         <div className="text-center lg:text-start text-2xl lg:text-5xl font-bold mb-5 lg:mb-10">{globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"} <br /></div>
         <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-cols-2 gap-5 w-full lg:p-24 px-4">
           <div>
-            <img loading="lazy" className="w-full h-auto" src={AboutImg} alt="img" />
+            <img loading="lazy" className="w-auto h-full" src={AboutImg} alt="img" />
           </div>
           <div className="flex flex-col justify-start px-6 py-6 lg:py-0 lg:justify-between leading-normal	">
             <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal	">
               {globalState.globalProperty === "IND" ? bahasa : english} <br />
               
             </div>
-            <Link to="/about" className="flex mt-auto item-center justify-center">
-              <button className="text-[12px] text-center bg-green-500 w-[120px] rounded-lg p-1 text-white">
-              {globalState.globalProperty === "IND" ? "SELENGKAPNYA" : "SEE MORE"}
+            <Link to="/about" className="flex mt-auto item-center justify-start">
+              <button className="text-[20px] text-center bg-green-500 w-auto rounded-full p-1 text-white px-3">
+              {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
               </button>
             </Link>
           </div>
