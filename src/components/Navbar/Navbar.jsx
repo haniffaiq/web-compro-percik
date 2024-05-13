@@ -345,7 +345,7 @@ const DesktopNavbar = ({
         <Link to="/" className="w-[65px] h-[65px] mt-[5px] lg:ml-14">
           <img src={logo} alt="ypc" />
         </Link>
-        <Link to="/" className="font-bold text-md lg:text-3xl flex items-center text-white w-full">
+        <Link to="/" className="font-bold text-md lg:text-[28px] flex items-center text-white w-full">
           YAYASAN PERGURUAN CIKINI
         </Link>
       </div>
