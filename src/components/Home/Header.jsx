@@ -221,7 +221,7 @@ const Header = () => {
             <motion.h1 className="font-bold font-sans">{rounded1}</motion.h1>
             <div className="text-6xl lg:text-8xl font-bold font-sans">+</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-bold font-sans px-10">
+          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-10">
             Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia
             kerja
           </div>
@@ -240,7 +240,7 @@ const Header = () => {
             <div className="text-6xl lg:text-8xl font-bold font-sansfont-bold">+</div>
           </div>
 
-          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-bold font-sans px-10">
+          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-10">
             Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun
             nasional
           </div>
@@ -258,7 +258,7 @@ const Header = () => {
             <motion.h1 className="font-bold font-sans">{rounded3}</motion.h1>
             <div className="text-6xl lg:text-8xl font-bold font-sans">%</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-bold font-sans px-10">
+          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-10">
             Tingkat Keberhasilan Pelajar/Mahasiswayang diterima kerja
           </div>
         </div>

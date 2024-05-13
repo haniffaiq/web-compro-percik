@@ -29,7 +29,7 @@ const About = () => {
           <div>
             <img loading="lazy" className="w-auto h-full" src={AboutImg} alt="img" />
           </div>
-          <div className="flex flex-col justify-start px-6 py-6 lg:py-0 lg:justify-between leading-normal	">
+          <div className="flex flex-col justify-start pl-8 py-6 lg:py-0 lg:justify-between leading-normal	">
             <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal	">
               {globalState.globalProperty === "IND" ? bahasa : english} <br />
               
