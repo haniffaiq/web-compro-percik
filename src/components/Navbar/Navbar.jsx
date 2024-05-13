@@ -342,10 +342,10 @@ const DesktopNavbar = ({
   return (
     <div className="flex gap-0 bg-[#034DA2] justify-between">
       <div className="flex w-[30%] lg:gap-3 ml-[24px] lg:my-2 ">
-        <Link to="/" className="w-[65px] h-[65px] mt-[5px] lg:ml-14">
+        <Link to="/" className="w-[65px] h-[65px] mt-[5px] lg:ml-16">
           <img src={logo} alt="ypc" />
         </Link>
-        <Link to="/" className="font-bold text-md lg:text-[28px] flex items-center text-white w-full">
+        <Link to="/" className="font-bold text-md lg:text-2xl flex items-center text-white w-full">
           YAYASAN PERGURUAN CIKINI
         </Link>
       </div>
