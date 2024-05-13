@@ -16,8 +16,8 @@ const PartnershipReal = () => {
           <div className="text-black text-lg font-bold lg:text-3xl lg:mt-0 text-center relative z-20 lg:py-[10px]">{globalState.globalProperty === "IND" ? "PARTNERSHIP" : "PARTNERSHIP"}</div>
         </div>
       </div>
-      <div class="flex flex-col gap-2 items-center py-8 ">
-        <div class="flex justify-center lg:gap-36 lg:h-full lg:w-full h-[50px] w-[350px] overflow-y-hidden container">
+      <div class="flex flex-col gap-2 items-center py-16 px-36">
+        <div class="flex justify-center lg:gap-28 lg:h-full lg:w-full h-[50px] w-[350px] overflow-y-hidden">
           <div class="flex items-center">
             <img loading="lazy" src={Bni} class="" alt="logo" />
           </div>

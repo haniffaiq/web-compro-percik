@@ -49,7 +49,7 @@ const Navbar = () => {
     };
   }, [prevScrollPos]);
 
-  const navbarClasses = `w-2/3 mt-[20px] rounded-tl-[20px] border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
+  const navbarClasses = `w-[67%] mt-[20px] rounded-tl-[20px] border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
   const navbarClassesMobile = `w-full border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
 
   return (
@@ -340,12 +340,12 @@ const DesktopNavbar = ({
   location
 }) => {
   return (
-    <div className="flex gap-0 bg-[#034DA2] justify-between ">
-      <div className="flex w-[500px] lg:gap-3 ml-[24px]">
-        <Link to="/" className="w-[65px] h-[65px] mt-[5px]">
+    <div className="flex gap-0 bg-[#034DA2] justify-between">
+      <div className="flex w-[30%] lg:gap-3 ml-[24px] lg:my-2 ">
+        <Link to="/" className="w-[65px] h-[65px] mt-[5px] lg:ml-14">
           <img src={logo} alt="ypc" />
         </Link>
-        <Link to="/" className="font-bold text-md lg:text-xl flex items-center text-white">
+        <Link to="/" className="font-bold text-md lg:text-3xl flex items-center text-white w-full">
           YAYASAN PERGURUAN CIKINI
         </Link>
       </div>

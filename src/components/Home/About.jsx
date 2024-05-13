@@ -29,12 +29,12 @@ const About = () => {
           <div>
             <img loading="lazy" className="w-auto h-full" src={AboutImg} alt="img" />
           </div>
-          <div className="flex flex-col justify-start pl-8 py-6 lg:py-0 lg:justify-between leading-normal	">
+          <div className="flex flex-col justify-start lg:pl-8 py-6 lg:py-0 lg:justify-between leading-normal	">
             <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal	">
               {globalState.globalProperty === "IND" ? bahasa : english} <br />
               
             </div>
-            <Link to="/about" className="flex mt-auto item-center justify-start">
+            <Link to="/about" className="flex mt-auto item-center lg:justify-start justify-center">
               <button className="text-[20px] text-center bg-green-500 w-auto rounded-full p-1 text-white px-3">
               {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
               </button>

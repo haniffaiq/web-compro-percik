@@ -218,12 +218,12 @@ const Header = () => {
           <div className="absolute inset-0 bg-[#FAAE35] bg-opacity-80"></div>{" "}
           {/* Overlay kuning */}
           <div className="flex text-6xl lg:text-8xl lg:text-white text-white relative z-10">
-            <motion.h1 className="font-bold font-sans">{rounded1}</motion.h1>
+            <motion.h1 className="font-bold font-sans ">{rounded1}</motion.h1>
             <div className="text-6xl lg:text-8xl font-bold font-sans">+</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-10">
-            Mendidik Pelajar / Mahasiswa berkualitas yang siap dengan dunia
-            kerja
+          <div className="text-center text-[15px] lg:text-[24px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
+            Mendidik Pelajar / Mahasiswa Berkualitas Yang Siap Dengan Dunia
+            Kerja
           </div>
         </div>
         <div
@@ -240,9 +240,9 @@ const Header = () => {
             <div className="text-6xl lg:text-8xl font-bold font-sansfont-bold">+</div>
           </div>
 
-          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-10">
-            Menorehkan beberapa prestasi bergengsibaik tingkat regional maupun
-            nasional
+          <div className="text-center text-[15px] lg:text-[24px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-12">
+            Menorehkan Beberapa Prestasi Bergengsi Baik Tingkat Regional Maupun
+            Nasional
           </div>
         </div>
         <div
@@ -258,8 +258,8 @@ const Header = () => {
             <motion.h1 className="font-bold font-sans">{rounded3}</motion.h1>
             <div className="text-6xl lg:text-8xl font-bold font-sans">%</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[19px] font-extrabold lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-10">
-            Tingkat Keberhasilan Pelajar/Mahasiswayang diterima kerja
+          <div className="text-center text-[15px] lg:text-[24px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
+            Tingkat Keberhasilan Pelajar/Mahasiswa Yang Diterima Kerja
           </div>
         </div>
       </div>
