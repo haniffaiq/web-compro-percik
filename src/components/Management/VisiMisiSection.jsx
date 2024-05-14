@@ -17,7 +17,7 @@ const VisiMisiSection = ({ selectedButton }) => {
               <h1>{globalState.globalProperty === "IND" ? "VISI" : "VISION"}</h1>
             </div>
             <div className="desc-container-template">
-              <p className="leading-normal">
+              <p>
                 {globalState.globalProperty === "IND"
                   ? "Menjadi center of excellence bidang pendidikan dalam mencetak generasi panutan yang amanah, berwawasan kebangsaan, pancasilais, berbudi pekerti luhur, dan mandiri sesuai perkembangan zaman, dengan tetap menjaga keberlangsungan Yayasan Perguruan 'Cikini'."
                   : "Becoming a center of excellence in the field of education, dedicated to producing exemplary generations who are trustworthy, nationalist, adherent to Pancasila, possess noble character, and are self-reliant according to the changing times, while ensuring the continuity of the 'Cikini' Educational Foundation."}
@@ -28,7 +28,7 @@ const VisiMisiSection = ({ selectedButton }) => {
             </div>
             <div className="bullet-points">
               <ul>
-                <li className="leading-normal">
+                <li>
                   {globalState.globalProperty === "IND"
                     ? "– Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi."
                     : "– Developing outstanding curriculum to produce competent individuals who are adaptive to technological changes."}
@@ -43,28 +43,24 @@ const VisiMisiSection = ({ selectedButton }) => {
               <h1>{globalState.globalProperty === "IND" ? "VALUE" : "VALUES"}</h1>
             </div>
             <div className="desc-container-template">
-              <p className="leading-normal">
+              <p>
                 {globalState.globalProperty === "IND"
                   ? "– Bekerja secara kompeten dengan jiwa patriotik kebangsaan, dan keteladanan dalam berperilaku luhur serta menjunjung tinggi etika profesi."
                   : "– Working competently with a patriotic spirit, exemplary behavior, and upholding professional ethics."}
               </p>
-              <p className="leading-normal">
-                {globalState.globalProperty === "IND" ? "– Bekerja dengan berpedoman pada standar terbaik untuk memberikan hasil yang unggul." : "– Working based on the best standards to achieve superior results."}
-              </p>
-              <p className="leading-normal">
+              <p>{globalState.globalProperty === "IND" ? "– Bekerja dengan berpedoman pada standar terbaik untuk memberikan hasil yang unggul." : "– Working based on the best standards to achieve superior results."}</p>
+              <p>
                 {globalState.globalProperty === "IND"
                   ? "– Bekerja dengan menjunjung tinggi nilai-nilai religi dan mengedepankan empati, toleransi serta saling menghormati."
                   : "Upholding religious values and promoting empathy, tolerance, and mutual respect."}
               </p>
-              <p className="leading-normal">
-                {globalState.globalProperty === "IND" ? "– Memberikan manfaat nyata dengan tulus dan ikhlas kepada bangsa, Negara, dan masyarakat." : "Providing genuine and sincere benefits to the nation, state, and society."}
-              </p>
-              <p className="leading-normal">
+              <p>{globalState.globalProperty === "IND" ? "– Memberikan manfaat nyata dengan tulus dan ikhlas kepada bangsa, Negara, dan masyarakat." : "Providing genuine and sincere benefits to the nation, state, and society."}</p>
+              <p>
                 {globalState.globalProperty === "IND"
                   ? "– Komitmen satunya kata dengan perbuatan dan bersikap jujur dalam melaksanakan tugas sesuai prinsip-prinsip."
                   : "Committing to one's word and acting honestly in carrying out tasks according to principles."}
               </p>
-              <p className="leading-normal">
+              <p>
                 {globalState.globalProperty === "IND"
                   ? "– Cerdas dan berwawasan luas dengan senantiasa melakukan peningkatan berkelanjutan sesuai perkembangan zaman"
                   : "Being intelligent and broad-minded, continuously improving in line with the changing times."}
