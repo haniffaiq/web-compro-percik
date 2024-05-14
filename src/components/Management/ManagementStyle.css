@@ -21,6 +21,8 @@
   .horizontal-line {
     border-top: 2px solid #ebebeb;
     width: 100%;
+    top: -10px;
+    position: relative;
   }
 }
 
@@ -29,6 +31,8 @@
   .horizontal-line {
     border-top: 2px solid #ebebeb;
     width: 100%;
+    top: -10px;
+    position: relative;
   }
 }
 
@@ -335,6 +339,9 @@
   }
 }
 /* Untuk Laptop */
+.parent-container {
+  margin-bottom: 72px;
+}
 @media only screen and (min-width: 1366px) and (max-width: 1920px) {
   .top-section-pict-container {
     display: flex;
@@ -408,6 +415,9 @@
 
 /* Untuk Desktop PC */
 @media only screen and (min-width: 1920px) {
+  .parent-container {
+    margin-bottom: 72px;
+  }
   .top-section-pict-container {
     display: flex;
     flex-direction: column;
@@ -417,7 +427,15 @@
 
   .pict-list-management-wrapper {
     width: 1245px;
-    height: 382px;
+    height: 410px;
+    flex-shrink: 0;
+    border: solid 2px #ebebeb;
+    display: flex;
+    flex-direction: row;
+  }
+  .pict-list-management-wrapper-pengawas {
+    width: 1245px;
+    height: 434px;
     flex-shrink: 0;
     border: solid 2px #ebebeb;
     display: flex;
@@ -425,14 +443,13 @@
   }
 
   .management-text-wrapper {
-    margin-left: 70px;
-    margin-top: 30px;
+    margin-left: 90px;
+    margin-top: 42px;
     margin-right: 20px;
   }
 
   .overlay-text-management-tittle {
     color: #000;
-    font-family: "Segoe UI";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -441,7 +458,6 @@
 
   .overlay-text-management-role {
     color: #000;
-    font-family: "Segoe UI";
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -449,25 +465,26 @@
   }
 
   .overlay-text-management-desc {
-    max-width: 835px;
+    max-width: 680px;
+    max-height: 546px;
     color: #000;
-    font-family: "Segoe UI";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: left;
   }
 
   .management-image-wrapper {
-    top: 39px;
+    top: 45px;
     right: 35px;
-    left: 30px;
+    left: 35px;
     position: relative;
   }
 
   .management-image-wrapper img {
-    width: 300px;
-    height: 300px;
+    width: 317px;
+    height: 320px;
   }
 }
 
@@ -806,8 +823,8 @@
 
 .main-container-layout {
   border: 2px solid #ebebeb;
-  width: 273px;
-  height: 1210px;
+  width: 373px;
+  height: 1295px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -815,7 +832,7 @@
 
 .tittle-container-template {
   background: #034da2;
-  width: 219.18px;
+  width: 319.18px;
   height: 34px;
   justify-content: center;
   align-items: center;
@@ -833,19 +850,19 @@
 
 .desc-container-template {
   margin: 10px 0px 10px 0px;
-  width: 219.18px;
+  width: 319.18px;
 }
 
 .desc-container-template p {
   color: #000;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.5;
 }
 
 .bullet-points {
   margin: 10px 0px 10px 0px;
-  width: 219px;
+  width: 310px;
 }
 
 .bullet-points ul {
@@ -858,39 +875,38 @@
   margin: 0;
   padding: 0;
   color: #000;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: left;
 }
 
 .main-container-layout-pengawas {
   border: 2px solid #ebebeb;
-  width: 273px;
-  height: 850px;
+  width: 390px;
+  height: 900px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .bullet-points-pengawas {
-  margin: 10px 0px 10px 0px;
-  width: 219px;
+  margin: 10px 20px 10px 20px;
 }
 
 .bullet-points-pengawas ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 237px;
+  margin-left: 10px;
+  padding: 10px 20px 10px 20px;
+  width: 346px;
   list-style: disc;
 }
 
 .bullet-points-pengawas li {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 1px 0px;
   color: #000;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 1.5;
   text-align: left;
 }
 
@@ -917,7 +933,7 @@
 .tittle-container-template-pengawas {
   background: #034da2;
   justify-content: center;
-  width: 231px;
+  width: 331px;
   align-items: center;
   display: flex;
   padding: 10px;
@@ -926,29 +942,17 @@
 
 .tittle-container-template-pengawas h1 {
   color: #fff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 26px;
   text-align: center;
 }
 
-.desc-container-template {
-  margin: 10px 0px 10px 0px;
-  width: 219.18px;
-}
-
-.desc-container-template p {
-  color: #000;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
 .yellow-bar-header {
-  border-top: 7px solid #faa61a;
+  border-top: 9px solid #faa61a;
   width: 103px;
   position: absolute;
-  top: 218px;
+  top: 225px;
   left: 125px;
 }
 
@@ -960,22 +964,24 @@
   gap: 18px;
   position: absolute;
   padding-left: 100px;
+  padding-top: 7px;
+  top: 1430px;
 }
 
 .blue-bottom-banner img {
-  width: 260.79px;
-  height: 260.79px;
+  width: 230.79px;
+  height: 230.79px;
 }
 
 .blue-bottom-banner p {
   color: #fff;
   line-height: 76px;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 73px;
   position: relative;
   top: 96px;
 }
 
 .layout-pengawas {
-  margin-bottom: 260px;
+  margin-bottom: 284px;
 }

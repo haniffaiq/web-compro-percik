@@ -24,7 +24,6 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
               </div>
               <div className="management-text-wrapper">
                 <p className="overlay-text-management-tittle leading-normal">{namaLengkapManajemen}</p>
-                <div className="yellow-bar-management-tittle"></div>
 
                 <div className="overlay-text-management-desc">
                   {deskripsiManajemen.split("\n").map((paragraph, index) => (
@@ -47,13 +46,12 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
         <div className="layout-pengawas">
           {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
             <div className="top-section-pict-container">
-              <div className="pict-list-management-wrapper">
+              <div className="pict-list-management-wrapper-pengawas">
                 <div className="management-image-wrapper" key={id}>
                   <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
                 </div>
                 <div className="management-text-wrapper">
                   <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
-                  <div className="yellow-bar-management-tittle"></div>
 
                   <div className="overlay-text-management-desc">
                     {deskripsiManajemen.split("\n").map((paragraph, index) => (
@@ -68,7 +66,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
           ))}
           <div className="blue-bottom-banner">
             <img src={logoYPC} alt="icon-percik" />
-            <p>TURUT BERBAKTI MEMBANGUN NEGRI</p>
+            <p>TURUT BERBAKTI MEMBANGUN NEGERI</p>
           </div>
         </div>
       </>
@@ -88,7 +86,6 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <div className="management-text-wrapper-pengurus" style={{ height: "1030px" }}>
                   <div className="all-text-wrapper-pengurus">
                     <p className="overlay-text-management-tittle-pengurus">{namaLengkapManajemen}</p>
-                    <div className="yellow-bar-management-tittle-pengurus"></div>
 
                     <div className="overlay-text-management-desc-pengurus">
                       {deskripsiManajemen.split("\n").map((paragraph, index) =>
@@ -112,7 +109,6 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <div className="management-text-wrapper-pengurus">
                   <div className="all-text-wrapper-pengurus">
                     <p className="overlay-text-management-tittle-pengurus">{namaLengkapManajemen}</p>
-                    <div className="yellow-bar-management-tittle-pengurus"></div>
 
                     <div className="overlay-text-management-desc-pengurus">
                       {deskripsiManajemen.split("\n").map((paragraph, index) =>
