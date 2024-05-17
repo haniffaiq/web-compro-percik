@@ -50,7 +50,7 @@ const Project = () => {
       </div>
       <div className="page-tittle">
         {/* <p>{globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}</p> */}
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">{globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}</div>
+        <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">{globalState.globalProperty === "IND" ? "RENCANA PEMBANGUNAN SEKOLAH" : "PLANNED SCHOOL CONSTRUCTION"}</div>
       </div>
 
       <div className="image-list-container">
@@ -58,7 +58,6 @@ const Project = () => {
           <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="image-list-wrapper">
             <img loading="lazy" src={require(`../../assets/img/project/${item.urlImage}`)} alt="img" />
             <p className="overlay-text-tittle">{item.tittleProyek}</p>
-            <div className="yellow-bar-project"></div>
             <p className="overlay-text-desc">{item.deskripsiProyek.length > 270 ? `${item.deskripsiProyek.slice(0, 270)}...` : item.deskripsiProyek}</p>
             <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="link-layout">
               <p>{globalState.globalProperty === "IND" ? "Selengkapnya" : "More"}</p>
