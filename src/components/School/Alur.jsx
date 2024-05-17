@@ -8,7 +8,7 @@ const Alur = () => {
   return (
     <>
       <div className="p-5 lg:p-8">
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-5">ALUR PENERIMAAN</div>
+        <div className="text-center text-3xl lg:text-5xl font-bold mb-5">Alur Penerimaan</div>
         {/* <div className="flex justify-center">
           <div className=" text-center text-xs lg:text-md w-[900px]">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, non quae nihil dicta nulla a? Ut expedita dolorem error iusto, ratione optio ducimus animi eaque, vitae praesentium quam laboriosam inventore! Lorem ipsum,

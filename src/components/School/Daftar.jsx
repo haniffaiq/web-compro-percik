@@ -22,9 +22,9 @@ const Daftar = () => {
   
   return (
     <div className="p-5 lg:p-8">
-      <div className="text-center text-3xl lg:text-5xl font-bold mb-10">DAFTAR SEKOLAH</div>
-      <div className="mx-auto max-w-fit px-4 sm:px-6 lg:px-[200px]">
-        <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-3">
+      <div className="text-center text-3xl lg:text-5xl font-bold mb-10">Daftar Sekolah</div>
+      <div className="mx-auto px-4 sm:px-6 lg:mx-16">
+        <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-4">
           {sortedData.map((school) => (
             <div key={school.id} to={`/school-detail/${school.id}`} className="w-full">
               <div
@@ -33,7 +33,7 @@ const Daftar = () => {
                 //   console.log(school.id);
                 //   // <SchoolDetail data={saveId} />;
                 // }}
-                className="border rounded-lg p-3"
+                className="border-4 rounded-lg p-3"
                 style={{ margin: '10px 0' }}
               >
                 <div className="w-full h-64 lg:h-64 overflow-hidden">
@@ -51,7 +51,7 @@ const Daftar = () => {
                     </React.Fragment>
                   ))}
                 </div>
-                <hr className="border-yellow-400 border-t-8 mt-2 w-[103px]" />
+                {/* <hr className="border-yellow-400 border-t-8 mt-2 w-[103px]" /> */}
                 <div className="flex gap-3 text-start mt-3">
                   <img loading="lazy" src={Wisuda} alt="logo" />
                   <div className="text-[#000] text-[14px] flex items-center lg:text-lg leading-normal	">{school.students} Siswa</div>

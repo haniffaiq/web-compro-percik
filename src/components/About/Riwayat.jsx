@@ -114,7 +114,7 @@ const Riwayat = () => {
           <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div>
         </div>
       </div>
-      <div className="px-5 lg:px-8">
+      <div className="px-5 lg:px-8 lg:mx-16">
         <div className="w-full rounded-xl">
           {Object.keys(selectedData).map((key) => (
             <div

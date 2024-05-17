@@ -104,9 +104,9 @@ const Riwayat2 = () => {
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
-        <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
+        <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px] lg:px-16">
           <div className="flex justify-center text-center lg:flex lg:justify-between">
-            <p className="text-black font-segoeui text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left">
+            <p className="text-black font-segoeui text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
               {globalState.globalProperty === "IND"
                 ? "RIWAYAT SINGKAT PERGURUAN 'CIKINI'"
                 : "RIWAYAT SINGKAT PERGURUAN 'CIKINI'"}
@@ -115,16 +115,16 @@ const Riwayat2 = () => {
               to="/about-detail"
               className="text-center mr-[30px] lg:mt-3 mt-16"
             >
-              <button className="border border-none px-3 rounded-lg py-1 bg-green-500  text-white hidden lg:flex ">
-                Lihat Selengkapnya
+              <button className="text-[20px] text-center bg-green-500 w-auto rounded-full p-1 text-white px-3">
+                {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
               </button>
             </Link>
           </div>
-          <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div>
+          {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div> */}
         </div>
       </div>
-      <div className="px-5 lg:px-8">
-        <div className="w-full rounded-xl">
+      <div className="px-5 lg:px-8 lg:mx-16">
+        <div className="w-full rounded-xl lg:my-10 ">
           <div
             // key={selectedData[key].id}
             className="grid grid-cols-2 mt-0 lg:mt-10 lg:gap-0 gap-10 p-5 rounded-lg"

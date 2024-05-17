@@ -35,19 +35,19 @@ const Filosofi = () => {
 
   return (
     <>
-      <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
-        <div className=" bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
-          <p className="text-black font-segoeui text-lg font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left">
+      <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
+        <div className=" bg-[#E1E1E1] w-full lg:pt-[28px]">
+          <p className="text-black text-lg font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 lg:text-left">
             {globalState.globalProperty === "IND"
-              ? "FILOSOFI LAMBANG"
-              : "PHILOSOPHY OF THE EMBLEM"}
+              ? "Filosofi lambang"
+              : "Philosophy of The Emblem"}
           </p>
-          <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div>
+          {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>
-      <div className="p-5 lg:p-8">
-        <div className="w-full rounded-xl ">
-          <div className="grid lg:grid-cols-3 grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5 leading-normal	">
+      <div className="p-5 lg:p-8 lg:mx-16">
+        <div className="w-full rounded-xl lg:my-10 ">
+          <div className="grid lg:grid-cols-3 grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5 leading-normal	border-4">
             <div className="flex lg:justify-center justify-center items-center h-full lg:h-full lg:row-span-2">
               <img
                 loading="lazy"
