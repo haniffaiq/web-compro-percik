@@ -211,7 +211,7 @@
   .pict-list-management-wrapper {
     width: 290px;
     flex-shrink: 0;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
     border-color: #ebebeb;
     display: flex;
     flex-direction: column;
@@ -287,7 +287,7 @@
   .pict-list-management-wrapper {
     width: 500px;
     flex-shrink: 0;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
     border-color: #ebebeb;
     display: flex;
     flex-direction: column;
@@ -361,7 +361,7 @@
     width: 878px;
     height: 382px;
     flex-shrink: 0;
-    border: solid 2px #ebebeb;
+    border: solid 3px #ebebeb;
     display: flex;
     flex-direction: row;
   }
@@ -429,7 +429,7 @@
     width: 1245px;
     height: 410px;
     flex-shrink: 0;
-    border: solid 2px #ebebeb;
+    border: solid 3px #ebebeb;
     display: flex;
     flex-direction: row;
   }
@@ -444,7 +444,7 @@
 
   .management-text-wrapper {
     margin-left: 90px;
-    margin-top: 42px;
+    margin-top: 48px;
     margin-right: 20px;
   }
 
@@ -465,11 +465,10 @@
   }
 
   .overlay-text-management-desc {
-    max-width: 680px;
+    max-width: 690px;
     max-height: 546px;
     color: #000;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: left;
@@ -822,7 +821,7 @@
 }
 
 .main-container-layout {
-  border: 2px solid #ebebeb;
+  border: 3px solid #ebebeb;
   width: 373px;
   height: 1295px;
   display: flex;
@@ -858,10 +857,11 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  text-align: left;
 }
 
 .bullet-points {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 10px 10px -1px;
   width: 310px;
 }
 
@@ -881,7 +881,7 @@
 }
 
 .main-container-layout-pengawas {
-  border: 2px solid #ebebeb;
+  border: 3px solid #ebebeb;
   width: 390px;
   height: 900px;
   display: flex;

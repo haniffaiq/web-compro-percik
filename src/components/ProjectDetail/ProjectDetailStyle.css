@@ -204,6 +204,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
     /* display: flex;
     justify-content: center;
     text-align: center; */
@@ -504,14 +505,11 @@
 @media only screen and (min-width: 1920px) {
   .project-detail-main-container h1 {
     color: #000;
-
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     display: flex;
-    justify-content: center;
-    text-align: center;
   }
 
   .image-detail-layout {
