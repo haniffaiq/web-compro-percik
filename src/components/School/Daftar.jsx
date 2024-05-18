@@ -33,7 +33,7 @@ const Daftar = () => {
                 //   console.log(school.id);
                 //   // <SchoolDetail data={saveId} />;
                 // }}
-                className="border-4 rounded-lg p-3"
+                className="border-4 rounded-lg p-4"
                 style={{ margin: '10px 0' }}
               >
                 <div className="w-full h-64 lg:h-64 overflow-hidden">
