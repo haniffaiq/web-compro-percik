@@ -696,11 +696,10 @@
   .overlay-text-management-desc-pengurus {
     max-width: 835px;
     color: #000;
-    font-family: "Segoe UI";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5;
   }
 
   .management-image-wrapper-pengurus {
@@ -714,12 +713,49 @@
     width: 300px;
     height: 300px;
   }
+}
+
+@media only screen and (min-width: 1366px) {
   .pengurus-visi-misi-container {
-    transform: translate(490px, -410px);
+    transform: translate(990px, -390px);
     margin-bottom: -300px;
     border-width: 7px 0px 7px 0px;
     border-color: #ebebeb;
-    max-width: 800px;
+    width: 890px;
+    padding: 29px 79px 15px 79px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pengurus-visi-misi-container-eng {
+    transform: translate(629px, -498px);
+    margin-bottom: -300px;
+    border-width: 7px 0px 7px 0px;
+    border-color: #ebebeb;
+    width: 990px;
+    padding: 29px 79px 29px 79px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .pengurus-visi-misi-container {
+    transform: translate(390px, -458px);
+    margin-bottom: -300px;
+    border-width: 7px 0px 7px 0px;
+    border-color: #ebebeb;
+    width: 990px;
+    padding: 29px 79px 15px 79px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pengurus-visi-misi-container-eng {
+    transform: translate(629px, -498px);
+    margin-bottom: -300px;
+    border-width: 7px 0px 7px 0px;
+    border-color: #ebebeb;
+    width: 990px;
     padding: 29px 79px 29px 79px;
     display: flex;
     justify-content: center;
@@ -755,7 +791,6 @@
     color: #000;
     font-family: "Segoe UI";
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     width: 278px;
@@ -770,7 +805,6 @@
 
   .overlay-text-management-role-pengurus {
     color: #000;
-    font-family: "Segoe UI";
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -780,11 +814,10 @@
   .overlay-text-management-desc-pengurus {
     max-width: 835px;
     color: #000;
-    font-family: "Segoe UI";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5;
   }
 
   .management-image-wrapper-pengurus {
@@ -799,7 +832,18 @@
     height: 300px;
   }
   .pengurus-visi-misi-container {
-    transform: translate(629px, -420px);
+    transform: translate(629px, -458px);
+    margin-bottom: -300px;
+    border-width: 7px 0px 7px 0px;
+    border-color: #ebebeb;
+    width: 990px;
+    padding: 29px 79px 15px 79px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pengurus-visi-misi-container-eng {
+    transform: translate(629px, -498px);
     margin-bottom: -300px;
     border-width: 7px 0px 7px 0px;
     border-color: #ebebeb;
