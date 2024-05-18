@@ -7,7 +7,7 @@ const sejarah = {
   1: {
     id: "1",
     imgUrl: require("../../assets/img/history/ibu_pandu.webp"),
-    title: "ERA MERINTIS DAN PERJUANGAN \n (1942 - 1951)",
+    title: "ERA MERINTIS DAN PERJUANGAN (1942 - 1951)",
     content:
       "Pada tahun 1942, di tengah era perjuangan menuju kemerdekaan Republik Indonesia, Ibu Pandu Soeradhiningrat mengambil inisiatif untuk membuka kursus Bahasa Indonesia. Saat itu, tentara Jepang menutup sekolah-sekolah peninggalan Hindia Belanda, tetapi memberikan kebebasan berbicara dalam Bahasa Indonesia kepada rakyat pribumi. Ibu Pandu melihat peluang ini sebagai sarana untuk mencerdaskan anak bangsa dan menanamkan semangat perjuangan tanpa memandang status sosial, agama, dan politik. Kursus dimulai dengan 12 murid di rumah Dr. Rasyid, Jakarta, dibantu oleh guru bernama Ibu Mien Soemadji. Seiring bertambahnya jumlah murid, kursus berubah fungsi menjadi Sekolah Rakyat Partikelir 'MAYUMI' pada tanggal 1 Agustus 1942, dan hanya dalam waktu 3 bulan, tepatnya pada tanggal 1 November 1942, sekolah 'MAYUMI' dipindahkan ke Jalan Cikini Raya No. 76 karena jumlah murid yang terus meningkat mencapai 200 orang. Perjuangan Ibu Pandu dan perkembangan sekolahnya mencerminkan tekad untuk mencerdaskan generasi muda Indonesia di tengah keterbatasan dan perubahan kondisi pada masa itu.",
   },
@@ -28,7 +28,7 @@ const sejarah = {
   4: {
     id: "4",
     imgUrl: require("../../assets/img/history/3.webp"),
-    title: "MASA UJIAN BERAT BAGI PERGURUAN 'CIKINI' \n(1996 - 2000)",
+    title: "MASA UJIAN BERAT \n(1996 - 2000)",
     content:
       "Di tengah pergolakan politik negara dan tekanan dari banyak kebijakan pemerintah terhadap perguruan swasta, pada penghujung tahun 1990-an dan awal abad Milenium pada tahun 2000, Perguruan 'Cikini' menghadapi ujian berat. Terutama terlihat pada SMA Perguruan 'Cikini' di Jalan PLN Duren Tiga, di mana jumlah siswa mengalami penurunan drastis dari 950 siswa menjadi hanya 225 siswa. Penurunan tersebut dapat diatribusikan pada keterlibatan banyak mahasiswa ISTN dalam kegiatan politik dan kekerasan, yang berdampak pada kurangnya minat untuk kuliah di ISTN. Fenomena serupa juga terjadi pada tingkatan TK, SD, dan SMP, meskipun penurunan jumlah siswa di tingkatan tersebut hanya berkisar 25%, tidak sejauh penurunan pada tingkat SMA dan perguruan tinggi. Perguruan 'Cikini,' yang telah berjuang selama lebih dari setengah abad dan mencapai puncak kejayaannya, sangat disayangkan mengalami penurunan yang tajam dalam waktu kurang dari lima tahun saat memasuki abad ke-21.",
   },
@@ -114,7 +114,7 @@ const Riwayat2 = () => {
             </p>
             <Link
               to="/about-detail"
-              className="text-center mr-[30px] lg:mt-3 mt-16"
+              className="text-center mr-[30px] lg:mt-3 mt-16  lg:mr-16"
             >
               <button className="text-[20px] text-center bg-green-500 w-auto rounded-full p-1 text-white px-3">
                 {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
@@ -131,7 +131,7 @@ const Riwayat2 = () => {
             className="grid grid-cols-3 mt-0 lg:mt-10 lg:gap-0 gap-10 p-5 rounded-lg"
           >
             {Object.keys(selectedData).map((key) => (
-              <div className="lg:flex gap-5 mt-10 border-l-4 lg:px-2">
+              <div className="lg:flex gap-5 mt-10 lg:px-2">
                 <img
                   loading="lazy"
                   src={selectedData[key].imgUrl}
@@ -140,11 +140,11 @@ const Riwayat2 = () => {
                 />
                 {/* <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div> */}
                 <div className="col-span-2">
-                  <div className="text-[12px] lg:text-[24px] font-bold text-black lg:px-2" style={{ whiteSpace: 'pre-line' }}>
+                  <div className="text-[12px] lg:text-[21px] font-bold text-black lg:px-2" style={{ whiteSpace: 'pre-line' }}>
                     {selectedData[key].title}
                   </div>
-                  <div className="flex flex-col gap-5 text-[12px] lg:text-[18px] mt-5 lg:mt-10 text-black w-full lg:w-auto text-left lg:px-2">
-                    {selectedData[key].content.slice(0, 250)}...
+                  <div className="flex flex-col gap-5 text-[12px] lg:text-[18px] mt-5 lg:mt-2 text-black w-full lg:w-auto text-left lg:px-2">
+                    {selectedData[key].content.slice(0, 233)}...
                   </div>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const Riwayat2 = () => {
             to="/about-detail"
             className="lg:hidden flex justify-center text-center lg:mt-3 mt-16 py-2"
           >
-            <button className="border border-none px-3 rounded-lg py-1 bg-green-500  text-white  ">
+            <button className="border border-none px-3 rounded-lg py-1 bg-green-500  text-white ">
               Lihat Selengkapnya
             </button>
           </Link>

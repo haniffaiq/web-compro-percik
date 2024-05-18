@@ -389,7 +389,7 @@ const DesktopNavbar = ({
               {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
             </Link>
           </div>
-          <div className="hidden w-full lg:flex justify-end items-center col-span-1 py-2">
+          <div className="hidden w-full lg:flex justify-end items-center col-span-1 py-2 lg:pr-16">
             <div className="border-2 rounded-[8px] grid grid-cols-2 border-[#09588D]">
               <button
                 onClick={() => updateGlobalState({ globalProperty: "IND" })}

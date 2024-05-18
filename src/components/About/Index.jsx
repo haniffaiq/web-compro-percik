@@ -44,7 +44,7 @@ const About = () => {
       {/* <Visi /> */}
       {/* <Misi /> */}
       {/* <Prestasi /> */}
-      <Galeri />
+      {/* <Galeri /> */}
     </>
   );
 };
