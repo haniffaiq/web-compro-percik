@@ -83,7 +83,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
               </div>
               {deskripsiManajemen.length >= 719 && globalState.globalProperty === "IND" ? (
-                <div className="management-text-wrapper-pengurus" style={{ height: "1030px" }}>
+                <div className="management-text-wrapper-pengurus">
                   <div className="all-text-wrapper-pengurus">
                     <p className="overlay-text-management-tittle-pengurus">{namaLengkapManajemen}</p>
 
@@ -92,14 +92,12 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "366px" }}>
+                          <p key={index} style={{ height: "400px", lineHeight: 1.5 }}>
                             {paragraph}
                           </p>
                         ) : (
                           // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
-                          <p key={index} className="leading-normal">
-                            {paragraph}
-                          </p>
+                          <p key={index}>{paragraph}</p>
                         )
                       )}
                     </div>
@@ -115,14 +113,12 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "366px" }} className="leading-normal">
+                          <p key={index} style={{ height: "425px", lineHeight: 1.5 }}>
                             {paragraph}
                           </p>
                         ) : (
                           // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
-                          <p key={index} className="leading-normal">
-                            {paragraph}
-                          </p>
+                          <p key={index}>{paragraph}</p>
                         )
                       )}
                     </div>
