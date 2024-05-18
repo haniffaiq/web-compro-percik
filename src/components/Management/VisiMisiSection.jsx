@@ -127,10 +127,36 @@ const VisiMisiSection = ({ selectedButton }) => {
     );
   }
 
-  if (selectedButton === "Pengurus" || selectedButton === "Administrator") {
+  if (selectedButton === "Pengurus") {
     return (
       <div className="parent-container">
         <div className="pengurus-visi-misi-container">
+          <div className="item-desc-tittle-container">
+            <h1>{globalState.globalProperty === "IND" ? "PENDIDIKAN FORMAL" : "FORMAL EDUCATION"}</h1>
+            <p className="leading-normal">
+              {globalState.globalProperty === "IND"
+                ? "TK Perguruan 'Cikini' | SD Perguruan 'Cikini' | SMP Perguruan 'Cikini' | SMA 1 Perguruan 'Cikini' | SMA 2 Perguruan 'Cikini' | SMK 1 Perguruan 'Cikini' | SMK 2 Musik Perguruan 'Cikini' | SMK 3 Perguruan 'Cikini' | SMK YPC-KIIC | ISTN (Institut Sains dan Teknologi Nasional)"
+                : "Cikini School Kindergarten | Cikini School Elementary | Cikini School Junior High | Cikini School Senior High 1 | Cikini School Senior High 2 | Cikini School Vocational High 1 | Cikini School Vocational High 2 Music | Cikini School Vocational High 3 | Cikini School Vocational High YPC-KIIC | ISTN (National Institute of Science and Technology)"}
+            </p>
+            <h1>{globalState.globalProperty === "IND" ? "PENDIDIKAN NONFORMAL" : "INFORMAL EDUCATION"}</h1>
+            <p className="leading-normal">
+              {globalState.globalProperty === "IND" ? "Pusat pelatihan Suzuki 'Cikini' | Kursus Musik - Lembaga Pendidikan Musik Perguruan 'Cikini'" : "Suzuki Training Center 'Cikini' | Music Course - Music Education Institution 'Cikini'"}
+            </p>
+            <h1>{globalState.globalProperty === "IND" ? "KERJA SAMA DENGAN INSTITUSI LAIN" : "COLLABORATION WITH OTHER INSTITUTIONS"}</h1>
+            <p className="leading-normal">
+              {globalState.globalProperty === "IND"
+                ? "Kerja sama pendidikan dengan PT Kertas Nusantara Kalimantan Timur | Kerja sama pendidikan dengan Yayasan Vidatra (PT Badak) Bontang, Kalimantan Timur | Kerja sama pendidikan dengan Yayasan KPS (Kontrak tor Production Sharing) Balikpapan, Kalimantan Timur | Kerja sama pendidikan dengan Sangata Prima Coal, Sangata, Kalimantan Timur | Kerja sama kesehatan dengan penyelenggara asuransi kesehatan | Kerja sama asuransi dengan PT Jaminan Sosial Tenaga Kerja"
+                : "Education collaboration with PT Kertas Nusantara East Kalimantan | Education collaboration with Yayasan Vidatra (PT Badak) Bontang, East Kalimantan | Education collaboration with Yayasan KPS (Production Sharing Contract) Balikpapan, East Kalimantan | Education collaboration with Sangata Prima Coal, Sangata, East Kalimantan | Health collaboration with health insurance providers | Insurance collaboration with PT Jaminan Sosial Tenaga Kerja"}
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  if (selectedButton === "Administrator") {
+    return (
+      <div className="parent-container">
+        <div className="pengurus-visi-misi-container-eng">
           <div className="item-desc-tittle-container">
             <h1>{globalState.globalProperty === "IND" ? "PENDIDIKAN FORMAL" : "FORMAL EDUCATION"}</h1>
             <p className="leading-normal">
