@@ -49,7 +49,7 @@ const Management = () => {
           {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
         </Link>
       </div>
-      <div className="horizontal-line"></div>
+
       <div className="triple-button-container">
         {globalState.globalProperty === "IND" ? (
           <>

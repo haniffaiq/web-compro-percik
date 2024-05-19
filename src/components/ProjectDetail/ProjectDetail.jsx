@@ -106,23 +106,17 @@ const ProjectDetail = () => {
         </Link>
       </div>
 
-      <div className="project-detail-main-container mx-80">
+      <div className="project-detail-main-container">
         {globalState.globalProperty === "IND" ? (
           <h1>
             {projectDatasBahasa.tittleProyek.split("\n").map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                <br />
-              </React.Fragment>
+              <React.Fragment key={index}>{line}</React.Fragment>
             ))}
           </h1>
         ) : (
           <h1>
             {projectDatasEnglish.tittleProyek.split("\n").map((line, index) => (
-              <React.Fragment key={index}>
-                {line}
-                <br />
-              </React.Fragment>
+              <React.Fragment key={index}>{line}</React.Fragment>
             ))}
           </h1>
         )}

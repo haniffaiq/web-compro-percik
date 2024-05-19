@@ -6,7 +6,6 @@ import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import logoYPCBiru from "../../assets/img/logo YPC_biru 3.png";
 import data from "../../assets/json/events.json";
 
-
 const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
@@ -23,7 +22,6 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => 
     </div>
   );
 };
-
 
 const Event = () => {
   const { globalState } = useContext(AppContext);
@@ -79,7 +77,7 @@ const Event = () => {
           <Link
             key={item.id}
             to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
-            className="flex flex-col w-[400px] lg:w-[550px] min-h-[424px] p-4 border-4 rounded-lg shadow-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0"
+            className="flex flex-col w-[400px] lg:w-[550px] min-h-[424px] p-4 border-4 rounded-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0"
           >
             <div className="">
               <div>
@@ -87,7 +85,7 @@ const Event = () => {
               </div>
               <div className="">
                 <p className="font-bold py-2 justify-center">{item.headline}</p>
-                <p className="">{truncateText(item.deskripsi, 20)}</p>
+                <p className="">{truncateText(item.deskripsi, 39)}</p>
                 <div className="maker-layout">
                   <img loading="lazy" src={Logo} alt="logo" />
                   <p className="">{item.maker}</p>
