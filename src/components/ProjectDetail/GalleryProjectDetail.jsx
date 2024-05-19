@@ -35,7 +35,7 @@ const GalleryProjectDetail = ({ Getid }) => {
     >
       {projectDatas.urlGallery.length > 0 && ( // Conditional rendering based on projectDatas.urlGallery
         <div className="gallery-tittle">
-          <h2>{globalState.globalProperty === "IND" ? "Galleri" : "Gallery"}</h2>
+          <h2>{globalState.globalProperty === "IND" ? "Galeri" : "Gallery"}</h2>
         </div>
       )}
       <div className="gallery-outer-container">
