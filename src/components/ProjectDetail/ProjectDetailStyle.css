@@ -407,6 +407,10 @@
   .project-detail-main-container {
     width: auto;
     margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   .project-detail-main-container h1 {
     color: #000;
@@ -418,6 +422,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 1300px;
   }
 
   .image-detail-layout {
@@ -506,6 +511,10 @@
 @media only screen and (min-width: 1920px) {
   .project-detail-main-container {
     margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   .project-detail-main-container h1 {
     color: #000;
@@ -514,6 +523,7 @@
     font-weight: 700;
     line-height: normal;
     display: flex;
+    width: 1300px;
   }
 
   .image-detail-layout {

@@ -113,7 +113,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "425px", lineHeight: 1.5 }}>
+                          <p key={index} style={{ height: "600px", lineHeight: 1.5 }}>
                             {paragraph}
                           </p>
                         ) : (

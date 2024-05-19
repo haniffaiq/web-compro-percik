@@ -859,18 +859,18 @@
     height: 300px;
   }
   .pengurus-visi-misi-container {
-    transform: translate(629px, -458px);
+    transform: translate(629px, -480px);
     margin-bottom: -300px;
     border-width: 7px 0px 7px 0px;
     border-color: #ebebeb;
     width: 990px;
-    padding: 29px 79px 15px 79px;
+    padding: 29px 79px 35px 79px;
     display: flex;
     justify-content: center;
   }
 
   .pengurus-visi-misi-container-eng {
-    transform: translate(629px, -498px);
+    transform: translate(629px, -499px);
     margin-bottom: -300px;
     border-width: 7px 0px 7px 0px;
     border-color: #ebebeb;
