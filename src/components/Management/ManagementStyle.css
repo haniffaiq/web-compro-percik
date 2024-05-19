@@ -136,9 +136,21 @@
 
   .triple-button-container button.selected {
     border-radius: 20px;
-    background: #faa61a;
+    background: #034da2;
     padding: 6px 21px 6px 21px;
-    color: #000;
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .triple-button-container button:hover {
+    border-radius: 20px;
+    background: #034da2;
+    padding: 6px 21px 6px 21px;
+    color: #fff;
     font-family: "Segoe UI";
     font-size: 20px;
     font-style: normal;
@@ -173,9 +185,20 @@
 
   .triple-button-container button.selected {
     border-radius: 20px;
-    background: #faa61a;
+    background: #034da2;
     padding: 6px 21px 6px 21px;
-    color: #000;
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .triple-button-container button:hover {
+    border-radius: 20px;
+    background: #034da2;
+    padding: 6px 21px 6px 21px;
+    color: #fff;
     font-family: "Segoe UI";
     font-size: 20px;
     font-style: normal;
@@ -444,7 +467,7 @@
 
   .management-text-wrapper {
     margin-left: 90px;
-    margin-top: 48px;
+    margin-top: 58px;
     margin-right: 20px;
   }
 
