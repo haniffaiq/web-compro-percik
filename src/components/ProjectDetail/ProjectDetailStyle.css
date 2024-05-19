@@ -227,7 +227,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 1.5;
     letter-spacing: -0.176px;
     text-align: justify;
   }
@@ -330,7 +330,7 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 1.5;
     letter-spacing: -0.8px;
     text-align: justify;
   }
@@ -533,7 +533,7 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 1.5;
     letter-spacing: -0.176px;
     text-align: justify;
   }
