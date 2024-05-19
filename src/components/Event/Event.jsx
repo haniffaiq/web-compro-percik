@@ -67,7 +67,7 @@ const Event = () => {
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
             <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}</p>
           </div>
-          <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div>
+          {/* <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div> */}
         </div>
       </div>
       <div className="flex gap-1 lg:ml-[125px] py-9 mt-[28px] justify-center lg:justify-start">
@@ -85,7 +85,7 @@ const Event = () => {
           <Link
             key={item.id}
             to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
-            className="flex flex-col w-[400px] min-h-[424px] p-4 border-4 rounded-lg shadow-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0"
+            className="flex flex-col w-[400px] lg:w-[550px] min-h-[424px] p-4 border-4 rounded-lg shadow-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0"
           >
             <div className="">
               <div>
@@ -93,8 +93,8 @@ const Event = () => {
               </div>
               <div className="">
                 <p className="font-bold py-2 justify-center">{item.headline}</p>
-                <div className="yellow-bar"></div>
-                <p className="">{truncateText(item.deskripsi, 10)}</p>
+                {/* <div className="yellow-bar"></div> */}
+                <p className="">{truncateText(item.deskripsi, 20)}</p>
                 <div className="maker-layout">
                   <img loading="lazy" src={Logo} alt="logo" />
                   <p className="">{item.maker}</p>

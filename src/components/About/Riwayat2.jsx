@@ -105,18 +105,18 @@ const Riwayat2 = () => {
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
-        <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px] lg:px-16">
+        <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:py-[28px] lg:mb-[28px] lg:px-16">
           <div className="flex justify-center text-center lg:flex lg:justify-between">
-            <p className="text-black font-segoeui text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
+            <div className="text-black font-segoeui text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
               {globalState.globalProperty === "IND"
                 ? "Riwayat Singkat Perguruan 'CIKINI'"
                 : "Riwayat Singkat Perguruan 'CIKINI'"}
-            </p>
+            </div>
             <Link
               to="/about-detail"
               className="text-center mr-[30px] lg:mt-3 mt-16  lg:mr-16"
             >
-              <button className="text-[20px] text-center bg-green-500 w-auto rounded-full p-1 text-white px-3">
+              <button className="text-[20px] text-center bg-[#40E0D0] w-auto rounded-full p-1 text-white px-3">
                 {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
               </button>
             </Link>
@@ -154,7 +154,7 @@ const Riwayat2 = () => {
             to="/about-detail"
             className="lg:hidden flex justify-center text-center lg:mt-3 mt-16 py-2"
           >
-            <button className="border border-none px-3 rounded-lg py-1 bg-green-500  text-white ">
+            <button className="border border-none px-3 rounded-lg py-1 bg-[#40E0D0] text-white ">
               Lihat Selengkapnya
             </button>
           </Link>

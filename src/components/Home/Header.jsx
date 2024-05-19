@@ -217,9 +217,9 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#FAAE35] bg-opacity-80"></div>{" "}
           {/* Overlay kuning */}
-          <div className="flex text-6xl lg:text-8xl lg:text-white text-white relative z-10">
+          <div className="flex text-6xl lg:text-9xl lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans ">{rounded1}</motion.h1>
-            <div className="text-6xl lg:text-8xl font-bold font-sans">+</div>
+            <h1 className="text-6xl lg:text-9xl font-bold font-sans">+</h1>
           </div>
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
             Mendidik Pelajar / Mahasiswa Berkualitas Yang Siap Dengan Dunia
@@ -235,9 +235,9 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#30B8A9] bg-opacity-80"></div>{" "}
           {/* Overlay merah */}
-          <div className="flex text-6xl lg:text-8xl lg:text-white text-white relative z-10">
+          <div className="flex text-6xl lg:text-9xl lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans">{rounded2}</motion.h1>
-            <div className="text-6xl lg:text-8xl font-bold font-sansfont-bold">+</div>
+            <div className="text-6xl lg:text-9xl font-bold font-sansfont-bold">+</div>
           </div>
 
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-12">
@@ -254,9 +254,9 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#7888C4] bg-opacity-80"></div>{" "}
           {/* Overlay biru */}
-          <div className="flex text-6xl lg:text-8xl lg:text-white text-white relative z-10">
+          <div className="flex text-6xl lg:text-9xl lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans">{rounded3}</motion.h1>
-            <div className="text-6xl lg:text-8xl font-bold font-sans">%</div>
+            <div className="text-6xl lg:text-9xl font-bold font-sans">%</div>
           </div>
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
             Tingkat Keberhasilan Pelajar/Mahasiswa Yang Diterima Kerja

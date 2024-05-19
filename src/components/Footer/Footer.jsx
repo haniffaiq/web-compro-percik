@@ -46,7 +46,8 @@ const Footer = () => {
                 className="border py-2 lg:py-3 px-12 rounded-xl lg:rounded-full flex gap-3 items-center bg-[#E06D1A] border-none text-white font-[600]"
               >
                 <img loading="lazy" src={Whatsapp} alt="Whatsapp" className="h-[40px]" />
-                Kontak Admin
+                <div className="lg:text-2xl">Kontak Admin</div>
+                
               </a>
             </div>
             <div className="col-span-2 lg:mt-0 mt-5 flex flex-col gap-3 ">

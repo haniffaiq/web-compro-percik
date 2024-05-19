@@ -36,12 +36,12 @@ const Filosofi = () => {
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
-        <div className=" bg-[#E1E1E1] w-full lg:pt-[28px]">
-          <p className="text-black text-lg font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 lg:text-left">
+        <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
+          <div className="text-black text-lg font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 lg:text-left">
             {globalState.globalProperty === "IND"
               ? "Filosofi lambang"
               : "Philosophy of The Emblem"}
-          </p>
+          </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>

@@ -125,7 +125,7 @@ const Riwayat = () => {
                 <img
                   loading="lazy"
                   src={selectedData[key].imgUrl}
-                  className="lg:object-cover flex h-[300px] lg:h-full"
+                  className="lg:object-cover flex h-[300px] lg:h-[300px]"
                   alt="selectedData[key].imgUrl"
                 />
                 {/* <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div> */}

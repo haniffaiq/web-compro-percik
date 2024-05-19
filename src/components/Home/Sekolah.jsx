@@ -85,7 +85,7 @@ const Sekolah = () => {
         </div>
 
         <Link to="/school" className="flex mt-auto item-center justify-center">
-          <button className="text-[20px] text-center bg-green-500 w-auto rounded-full p-1 text-white px-3">
+          <button className="text-[20px] text-center bg-[#40E0D0] w-auto rounded-full p-1 text-white px-3">
             {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
           </button>
         </Link>
