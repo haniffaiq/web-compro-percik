@@ -467,7 +467,11 @@
 
   .management-text-wrapper {
     margin-left: 90px;
-    margin-top: 58px;
+    /* margin-top: 58px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     margin-right: 20px;
   }
 
