@@ -1,53 +1,48 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import "./EventStyle.css";
 import Logo from "../../assets/icon/ant-design_user-outlined.svg";
 import logoYPCBiru from "../../assets/img/logo YPC_biru 3.png";
-import Pagination from "./Pagination";
 import data from "../../assets/json/events.json";
 
-const itemsPerPage = 8;
-const parseDate = (dateString) => {
-  const [day, month, year] = dateString.split("/").map(Number);
-  return new Date(year, month - 1, day);
+
+const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange }) => {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
+
+  return (
+    <div className="pagination">
+      <button onClick={() => onPageChange(Math.max(1, currentPage - 1))}>{"<"}</button>
+      {pages.map((page) => (
+        <button key={page} onClick={() => onPageChange(page)} className={currentPage === page ? "active" : ""}>
+          {page}
+        </button>
+      ))}
+      <button onClick={() => onPageChange(Math.min(totalPages, currentPage + 1))}>{">"}</button>
+    </div>
+  );
 };
 
-// Fungsi untuk mengonversi objek Date ke string tanggal dengan format DD/MM/YYYY
-const formatDate = (dateObject) => {
-  const day = dateObject.getDate();
-  const month = dateObject.getMonth() + 1;
-  const year = dateObject.getFullYear();
-  return `${day}/${month}/${year}`;
-};
 
 const Event = () => {
-  const { globalState, updateGlobalState } = useContext(AppContext);
+  const { globalState } = useContext(AppContext);
   const [currentPage, setCurrentPage] = useState(1);
+
+  const sortedData = globalState.globalProperty === "IND" ? [...data.bahasa] : [...data.english];
+
+  const totalPages = Math.ceil(sortedData.length / 6);
+  const startIndex = (currentPage - 1) * 6;
+  const endIndex = startIndex + 6;
+  const currentData = sortedData.slice(startIndex, endIndex).filter((item, index, self) => {
+    return (
+      self.findIndex((t) => t.id === item.id) === index // Ensure uniqueness by ID
+    );
+  });
+
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  let sortedData = {};
-  if (globalState.globalProperty === "IND") {
-    sortedData = [...data.bahasa].sort((a, b) => {
-      const dateA = parseDate(a.date);
-      const dateB = parseDate(b.date);
-      return dateB - dateA;
-    });
-  } else {
-    sortedData = [...data.english].sort((a, b) => {
-      const dateA = parseDate(a.date);
-      const dateB = parseDate(b.date);
-      return dateB - dateA;
-    });
-  }
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentData = sortedData.slice(startIndex, endIndex);
 
   function truncateText(text, maxLength) {
     const words = text.split(" ");
@@ -67,7 +62,6 @@ const Event = () => {
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
             <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}</p>
           </div>
-          {/* <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div> */}
         </div>
       </div>
       <div className="flex gap-1 lg:ml-[125px] py-9 mt-[28px] justify-center lg:justify-start">
@@ -93,7 +87,6 @@ const Event = () => {
               </div>
               <div className="">
                 <p className="font-bold py-2 justify-center">{item.headline}</p>
-                {/* <div className="yellow-bar"></div> */}
                 <p className="">{truncateText(item.deskripsi, 20)}</p>
                 <div className="maker-layout">
                   <img loading="lazy" src={Logo} alt="logo" />
@@ -107,7 +100,7 @@ const Event = () => {
           </Link>
         ))}
       </div>
-      <Pagination totalItems={sortedData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} onPageChange={handlePageChange} />
+      <Pagination totalItems={sortedData.length} itemsPerPage={6} currentPage={currentPage} onPageChange={handlePageChange} />
       <div className="kerjasama-yayasan-layout">
         <div className="kerjasama-yayasan-box">
           <div className="image-logo-layout">

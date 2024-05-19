@@ -16,7 +16,7 @@ const sejarah = {
     imgUrl: require("../../assets/img/history/1.webp"),
     title: "ERA PEMBENTUKAN (1952 - 1959)",
     content:
-      "Perjuangan yang tak pernah berhenti melanjutkan perjalanan di era pasca Proklamasi Kemerdekaan Republik Indonesia. Pada tanggal 27 September 1952, Badan Wakaf MAYUMI berganti nama menjadi Yayasan Perguruan 'CIKINI' dengan akte notaris MR. Soewandi, terus berupaya mewujudkan cita-cita luhur bangsa dan perintis untuk berkontribusi dalam mencerdaskan rakyat Indonesia. Bapak Soemadji dan Bapak Moh. Amin memulai kelas percontohan untuk SMP di bawah pohon sawo yang terkenal sebagai 'kelas Pohon Sawo,' dengan murid pertama, Bapak Mohamad Arief Nazir MS (Ipul), dan Ibu Sri Widjajanti Moersadik (Wiwik). SMP I Perguruan 'Cikini' diresmikan pada tanggal 15 Agustus 1956, diikuti oleh SMP II Perguruan 'Cikini' sore hari, yang dibuka pada tanggal 15 Agustus 1957. Peristiwa penting dalam sejarah Perguruan 'Cikini' terjadi pada tanggal 30 November 1957, saat perayaan ulang tahun ke-15, yang dikenal sebagai 'Peristiwa Cikini,' yaitu upaya penggranatan terhadap Presiden RI pertama, Ir. Soekarno. Berkat pertolongan Tuhan, Presiden selamat dan tetap sehat. Seiring waktu, Yayasan Perguruan 'Cikini' terus berkembang. Setelah didirikan TK, SD, SMP I, dan SMP II, pada tanggal 1 September 1959, SMA didirikan dengan Kepala Sekolah Bapak Boediman, menggunakan gedung di Jalan Cikini Raya No. 74 yang sebelumnya dihuni oleh Dr. Theo Ban Hien.",
+      "Perjuangan tanpa henti terus berlanjut di era pasca Proklamasi Kemerdekaan Republik Indonesia. Pada tanggal 27 September 1952, Yayasan Wakaf MAYUMI berganti nama menjadi Yayasan Sekolah 'CIKINI' dengan akta notaris MR. Soewandi, terus berusaha mewujudkan cita-cita luhur bangsa dan menjadi pelopor untuk turut mencerdaskan kehidupan bangsa Indonesia. Bapak Soemadji dan Bapak Moh. Amin memulai kelas percontohan untuk sekolah menengah pertama di bawah pohon sawo yang terkenal dengan sebutan 'kelas Pohon Sawo', dengan siswa pertama, Bapak Mohamad Arief Nazir MS (Ipul), dan Ibu Sri Widjajanti Moersadik (Wiwik). SMP I 'Cikini' diresmikan pada tanggal 15 Agustus 1956, disusul dengan SMP II 'Cikini' pada malam harinya, yang dibuka pada tanggal 15 Agustus 1957. Peristiwa penting dalam sejarah Sekolah 'Cikini' terjadi pada tanggal 30 November 1957, saat perayaan ulang tahun ke-15, yang dikenal sebagai 'Peristiwa Cikini', yaitu percobaan pelemparan granat terhadap Presiden pertama Republik Indonesia, Ir. Soekarno. Atas anugerah Tuhan, Presiden selamat dan tetap sehat. Seiring berjalannya waktu, Yayasan Sekolah Cikini terus berkembang. Setelah berdirinya TK, SD, SMP I, dan SMP II, pada tanggal 1 September 1959, didirikanlah SMA dengan Bapak Boediman sebagai Kepala Sekolahnya, dengan menggunakan gedung di Jalan Cikini Raya No. 74 yang sebelumnya ditempati oleh Dr. Theo Ban Hien.",
   },
   3: {
     id: "3",
@@ -105,13 +105,15 @@ const Riwayat = () => {
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
-        <div className=" bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:pt-[28px] lg:mb-[28px]">
-          <p className="text-black font-segoeui text-XM font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left">
-            {globalState.globalProperty === "IND"
-              ? "RIWAYAT SINGKAT PERGURUAN 'CIKINI'"
-              : "RIWAYAT SINGKAT PERGURUAN 'CIKINI'"}
-          </p>
-          <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div>
+        <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:py-[28px] lg:mb-[28px] lg:px-16">
+          <div className="flex justify-center text-center lg:flex lg:justify-between">
+            <div className="text-black font-segoeui text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
+              {globalState.globalProperty === "IND"
+                ? "Riwayat Singkat Perguruan 'CIKINI'"
+                : "'CIKINI' School Brief History"}
+            </div>
+          </div>
+          {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div> */}
         </div>
       </div>
       <div className="px-5 lg:px-8 lg:mx-16">
@@ -119,9 +121,9 @@ const Riwayat = () => {
           {Object.keys(selectedData).map((key) => (
             <div
               key={selectedData[key].id}
-              className="flex flex-col lg:grid lg:grid-cols-3 mt-0 lg:mt-10 lg:gap-0 gap-5 p-5 rounded-lg"
+              className="flex flex-col lg:grid lg:grid-cols-7 mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg"
             >
-              <div className="flex flex-col items-center gap-5">
+              <div className="flex flex-col items-center">
                 <img
                   loading="lazy"
                   src={selectedData[key].imgUrl}
@@ -130,11 +132,11 @@ const Riwayat = () => {
                 />
                 {/* <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div> */}
               </div>
-              <div className="col-span-2 lg:ml-24">
+              <div className="col-span-6 lg:mx-5">
                 <div className="text-[12px] lg:text-4xl font-bold text-black">
                   {selectedData[key].title}
                 </div>
-                <div className="flex flex-col gap-5 text-[12px] lg:text-lg mt-5 lg:mt-10 text-black w-full lg:w-auto text-left">
+                <div className="flex flex-col gap-5 text-[12px] lg:text-[24px] mt-5 lg:mt-10 text-black w-full lg:w-auto text-left">
                   {selectedData[key].content}
                 </div>
               </div>

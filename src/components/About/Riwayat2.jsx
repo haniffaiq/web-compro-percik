@@ -110,7 +110,7 @@ const Riwayat2 = () => {
             <div className="text-black font-segoeui text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
               {globalState.globalProperty === "IND"
                 ? "Riwayat Singkat Perguruan 'CIKINI'"
-                : "Riwayat Singkat Perguruan 'CIKINI'"}
+                : "'CIKINI' School Brief History"}
             </div>
             <Link
               to="/about-detail"
