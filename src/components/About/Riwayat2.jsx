@@ -102,6 +102,17 @@ const Riwayat2 = () => {
   useEffect(() => {
     descLoader();
   }, []);
+
+  function truncateText(text, maxLength) {
+    const words = text.split(" ");
+
+    if (words.length > maxLength) {
+      const truncatedText = words.slice(0, maxLength).join(" ");
+      return `${truncatedText} ...`;
+    }
+
+    return text;
+  }
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
@@ -144,7 +155,7 @@ const Riwayat2 = () => {
                     {selectedData[key].title}
                   </div>
                   <div className="flex flex-col gap-5 text-[12px] lg:text-[18px] mt-5 lg:mt-2 text-black w-full lg:w-auto text-left lg:px-2">
-                    {selectedData[key].content.slice(0, 233)}...
+                    {truncateText(selectedData[key].content, 32)}...
                   </div>
                 </div>
               </div>

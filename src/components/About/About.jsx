@@ -67,7 +67,7 @@ const AboutUs = () => {
                       className="object-cover rounded-lg"
                     />
                   </div>
-                  <div className="lg:col-span-2 p-5 lg:p-7">
+                  <div className="lg:col-span-2 p-5 lg:p-6">
                     <div className="text-[12px] lg:text-4xl font-bold">
                       {value.title}
                     </div>

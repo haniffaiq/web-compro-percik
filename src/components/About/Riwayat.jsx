@@ -102,6 +102,7 @@ const Riwayat = () => {
     descLoader();
     window.scrollTo(0, 0);
   }, []);
+  
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
