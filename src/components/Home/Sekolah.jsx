@@ -45,7 +45,7 @@ const Sekolah = () => {
               {sortedData.slice(0, 5).map((school) => (
                 <div key={school.id} className="w-full">
                   <div
-                    className="border rounded-lg p-3 h-full"
+                    className="border-4 rounded-lg p-3 h-full"
                     style={{ height: '100%' }}
                   >
                     <div className="w-full h-32 lg:h-64 overflow-hidden">
