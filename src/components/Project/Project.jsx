@@ -29,6 +29,17 @@ const Project = () => {
       return dateB - dateA;
     });
   }
+
+  function truncateText(text, maxLength) {
+    const words = text.split(" ");
+
+    if (words.length > maxLength) {
+      const truncatedText = words.slice(0, maxLength).join(" ");
+      return `${truncatedText} ...`;
+    }
+
+    return text;
+  }
   return (
     <>
       <div>
@@ -58,7 +69,7 @@ const Project = () => {
           <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="image-list-wrapper">
             <img loading="lazy" src={require(`../../assets/img/project/${item.urlImage}`)} alt="img" />
             <p className="overlay-text-tittle">{item.tittleProyek}</p>
-            <p className="overlay-text-desc">{item.deskripsiProyek.length > 270 ? `${item.deskripsiProyek.slice(0, 270)}...` : item.deskripsiProyek}</p>
+            <p className="overlay-text-desc">{truncateText(item.deskripsiProyek, 29)}...</p>
             <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="link-layout">
               <p>{globalState.globalProperty === "IND" ? "Selengkapnya" : "More"}</p>
             </Link>
