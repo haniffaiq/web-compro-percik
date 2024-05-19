@@ -222,8 +222,8 @@ const Header = () => {
             <h1 className="text-6xl lg:text-9xl font-bold font-sans">+</h1>
           </div>
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
-            Mendidik Pelajar / Mahasiswa Berkualitas Yang Siap Dengan Dunia
-            Kerja
+            Mendidik pelajar/mahasiswa berkualitas
+            yang siap dengan dunia kerja
           </div>
         </div>
         <div
@@ -241,8 +241,8 @@ const Header = () => {
           </div>
 
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-12">
-            Menorehkan Beberapa Prestasi Bergengsi Baik Tingkat Regional Maupun
-            Nasional
+            Menorehkan beberapa prestasi bergengsi
+            baik tingkat regional maupun nasional
           </div>
         </div>
         <div
@@ -259,7 +259,8 @@ const Header = () => {
             <div className="text-6xl lg:text-9xl font-bold font-sans">%</div>
           </div>
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
-            Tingkat Keberhasilan Pelajar/Mahasiswa Yang Diterima Kerja
+            Tingkat keberhasilan pelajar/mahasiswa
+            yang diterima kerja
           </div>
         </div>
       </div>

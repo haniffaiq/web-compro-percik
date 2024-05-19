@@ -116,7 +116,7 @@ const Riwayat2 = () => {
               to="/about-detail"
               className="text-center mr-[30px] lg:mt-3 mt-16  lg:mr-16"
             >
-              <button className="text-[20px] text-center bg-[#40E0D0] w-auto rounded-full p-1 text-white px-3">
+              <button className="text-[20px] text-center bg-[#40E0D0] lg:px-6 lg:py-2 w-auto rounded-full p-1 text-white px-3">
                 {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
               </button>
             </Link>
@@ -154,7 +154,7 @@ const Riwayat2 = () => {
             to="/about-detail"
             className="lg:hidden flex justify-center text-center lg:mt-3 mt-16 py-2"
           >
-            <button className="border border-none px-3 rounded-lg py-1 bg-[#40E0D0] text-white ">
+            <button className="border border-none px-3 rounded-lg py-1 bg-[#40E0D0] lg:px-6 lg:py-2 text-white ">
               Lihat Selengkapnya
             </button>
           </Link>

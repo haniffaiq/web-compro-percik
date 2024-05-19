@@ -148,7 +148,7 @@ const AboutUs = () => {
                       onClick={() =>
                         openModal(index, value.title, value.name, value.img)
                       }
-                      className="text-[12px] text-center bg-[#40E0D0] w-[120px] rounded-lg p-1"
+                      className="text-[12px] text-center bg-[#40E0D0] lg:px-6 lg:py-2 w-[120px] rounded-lg p-1"
                     >
                       Lihat Sambutan
                     </button>
