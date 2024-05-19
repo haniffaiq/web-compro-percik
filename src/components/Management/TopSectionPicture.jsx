@@ -73,7 +73,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
     );
   }
 
-  if (selectedButton === "Pengurus" || selectedButton === "Administrator") {
+  if (selectedButton === "Pengurus") {
     return (
       <div className="top-section-pict-container-pengurus">
         {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
@@ -92,7 +92,66 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "400px", lineHeight: 1.5 }}>
+                          <p key={index} style={{ height: "600px", lineHeight: 1.5 }}>
+                            {paragraph}
+                          </p>
+                        ) : (
+                          // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
+                          <p key={index}>{paragraph}</p>
+                        )
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="management-text-wrapper-pengurus">
+                  <div className="all-text-wrapper-pengurus">
+                    <p className="overlay-text-management-tittle-pengurus">{namaLengkapManajemen}</p>
+
+                    <div className="overlay-text-management-desc-pengurus">
+                      {deskripsiManajemen.split("\n").map((paragraph, index) =>
+                        // Kondisional render berdasarkan panjang deskripsiManajemen
+                        deskripsiManajemen.length < 719 ? (
+                          // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
+                          <p key={index} style={{ height: "425px", lineHeight: 1.5 }}>
+                            {paragraph}
+                          </p>
+                        ) : (
+                          // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
+                          <p key={index}>{paragraph}</p>
+                        )
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (selectedButton === "Administrator") {
+    return (
+      <div className="top-section-pict-container-pengurus">
+        {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
+          <div>
+            <div className="pict-list-management-wrapper-pengurus">
+              <div className="management-image-wrapper-pengurus" key={id}>
+                <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
+              </div>
+              {deskripsiManajemen.length >= 719 && globalState.globalProperty === "IND" ? (
+                <div className="management-text-wrapper-pengurus">
+                  <div className="all-text-wrapper-pengurus">
+                    <p className="overlay-text-management-tittle-pengurus">{namaLengkapManajemen}</p>
+
+                    <div className="overlay-text-management-desc-pengurus">
+                      {deskripsiManajemen.split("\n").map((paragraph, index) =>
+                        // Kondisional render berdasarkan panjang deskripsiManajemen
+                        deskripsiManajemen.length < 719 ? (
+                          // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
+                          <p key={index} style={{ height: "600px", lineHeight: 1.5 }}>
                             {paragraph}
                           </p>
                         ) : (
