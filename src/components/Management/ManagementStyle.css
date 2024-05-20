@@ -566,7 +566,6 @@
   .overlay-text-management-desc-pengurus {
     width: 250px;
     color: #000;
-
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -805,37 +804,21 @@
   .management-text-wrapper-pengurus {
     border-color: #ebebeb;
     border-width: 0px 2px 2px 2px;
-    width: 299px;
+    width: 319px;
     margin-top: -120px;
   }
 
   .all-text-wrapper-pengurus {
-    width: 217px;
-    margin: 180px 21px 23px 20px;
+    width: 200px;
+    margin: 160px 21px 23px 20px;
   }
 
   .overlay-text-management-tittle-pengurus {
     color: #000;
-
     font-size: 18px;
     font-weight: 700;
-    line-height: normal;
-    width: 278px;
-  }
-
-  .yellow-bar-management-tittle-pengurus {
-    border-top: 7px solid #faa61a;
-    width: 90px;
-    position: relative;
-    top: -10px;
-  }
-
-  .overlay-text-management-role-pengurus {
-    color: #000;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    line-height: 1.5;
+    width: 290px;
   }
 
   .overlay-text-management-desc-pengurus {
@@ -855,27 +838,27 @@
   }
 
   .management-image-wrapper-pengurus img {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
   }
   .pengurus-visi-misi-container {
-    transform: translate(629px, -480px);
+    transform: translate(610px, -550px);
     margin-bottom: -300px;
     border-width: 7px 0px 7px 0px;
     border-color: #ebebeb;
-    width: 990px;
-    padding: 29px 79px 35px 79px;
+    width: 1050px;
+    padding: 65px 79px 65px 79px;
     display: flex;
     justify-content: center;
   }
 
   .pengurus-visi-misi-container-eng {
-    transform: translate(629px, -499px);
+    transform: translate(610px, -578px);
     margin-bottom: -300px;
     border-width: 7px 0px 7px 0px;
     border-color: #ebebeb;
-    width: 990px;
-    padding: 29px 79px 29px 79px;
+    width: 1050px;
+    padding: 92px 79px 92px 79px;
     display: flex;
     justify-content: center;
   }

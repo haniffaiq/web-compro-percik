@@ -92,9 +92,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "600px", lineHeight: 1.5 }}>
-                            {paragraph}
-                          </p>
+                          <p key={index}>{paragraph}</p>
                         ) : (
                           // Jika panjang deskripsi lebih dari atau sama dengan 719 karakter, tinggi tidak diatur (default)
                           <p key={index}>{paragraph}</p>
@@ -113,7 +111,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "425px", lineHeight: 1.5 }}>
+                          <p key={index} style={{ height: "407px" }}>
                             {paragraph}
                           </p>
                         ) : (
@@ -151,7 +149,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "600px", lineHeight: 1.5 }}>
+                          <p key={index} style={{ height: "525px", lineHeight: 1.5 }}>
                             {paragraph}
                           </p>
                         ) : (
@@ -172,7 +170,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                         // Kondisional render berdasarkan panjang deskripsiManajemen
                         deskripsiManajemen.length < 719 ? (
                           // Jika panjang deskripsi kurang dari 719 karakter, set tinggi
-                          <p key={index} style={{ height: "600px", lineHeight: 1.5 }}>
+                          <p key={index} style={{ height: "525px", lineHeight: 1.5 }}>
                             {paragraph}
                           </p>
                         ) : (
