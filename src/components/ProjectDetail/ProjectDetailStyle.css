@@ -522,8 +522,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    display: flex;
-    width: 1040px;
+    width: 1200px;
+    text-align: center;
   }
 
   .image-detail-layout {

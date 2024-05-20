@@ -108,16 +108,12 @@ const ProjectDetail = () => {
 
       <div className="project-detail-main-container">
         {globalState.globalProperty === "IND" ? (
-          <h1>
-            {projectDatasBahasa.tittleProyek.split("\n").map((line, index) => (
-              <React.Fragment key={index}>{line}</React.Fragment>
-            ))}
+          <h1 style={{ whiteSpace: 'pre-line' }}>
+              <React.Fragment >{projectDatasBahasa.tittleProyek}</React.Fragment>
           </h1>
         ) : (
           <h1>
-            {projectDatasEnglish.tittleProyek.split("\n").map((line, index) => (
-              <React.Fragment key={index}>{line}</React.Fragment>
-            ))}
+              <React.Fragment >{projectDatasEnglish.tittleProyek}</React.Fragment>
           </h1>
         )}
 

@@ -120,8 +120,8 @@ const Riwayat2 = () => {
           <div className="flex justify-center text-center lg:flex lg:justify-between">
             <div className="text-black  text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
               {globalState.globalProperty === "IND"
-                ? "Riwayat Singkat Perguruan 'CIKINI'"
-                : "'CIKINI' School Brief History"}
+                ? "Riwayat Singkat Perguruan 'Cikini'"
+                : "'Cikini' School Brief History"}
             </div>
             <Link
               to="/about-detail"

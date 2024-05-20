@@ -110,8 +110,8 @@ const Riwayat = () => {
           <div className="flex justify-center text-center lg:flex lg:justify-between">
             <div className="text-black  text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
               {globalState.globalProperty === "IND"
-                ? "Riwayat Singkat Perguruan 'CIKINI'"
-                : "'CIKINI' School Brief History"}
+                ? "Riwayat Singkat Perguruan 'Cikini'"
+                : "'Cikini' School Brief History"}
             </div>
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div> */}
@@ -133,11 +133,11 @@ const Riwayat = () => {
                 />
                 {/* <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div> */}
               </div>
-              <div className="col-span-6 lg:mx-5">
+              <div className="col-span-6 lg:mx-5 lg:ml-16">
                 <div className="text-[12px] lg:text-4xl font-bold text-black">
                   {selectedData[key].title}
                 </div>
-                <div className="flex flex-col gap-5 text-[12px] lg:text-[24px] mt-5 lg:mt-10 text-black w-full lg:w-auto text-left">
+                <div className="flex flex-col gap-5 text-[12px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black w-full lg:w-auto text-left leading-normal">
                   {selectedData[key].content}
                 </div>
               </div>
