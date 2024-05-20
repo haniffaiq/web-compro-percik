@@ -7,7 +7,7 @@
   }
   .page-tittle-event p {
     color: #000;
-    font-family: "Segoe UI";
+    
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -23,7 +23,7 @@
   }
   .date-style {
     color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
-    font-family: "Poppins";
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -51,7 +51,7 @@
 
   .gallery-text-item-headline {
     color: #000;
-    font-family: "Poppins";
+    
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -61,7 +61,7 @@
 
   .gallery-text-item-deskripsi {
     color: var(--typo-text, var(--Colors-Neutral-Text-colorTextSecondary, rgba(0, 0, 0, 0.65)));
-    font-family: "Poppins";
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -72,7 +72,7 @@
 
   .gallery-text-item-maker {
     color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
-    font-family: "Poppins";
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -193,7 +193,7 @@
   }
   .page-tittle-event p {
     color: #000;
-    font-family: "Segoe UI";
+    
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -209,7 +209,7 @@
   }
   .date-style {
     color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
-    font-family: "Poppins";
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -242,7 +242,7 @@
 
   .gallery-text-item-headline {
     color: #000;
-    font-family: "Poppins";
+    
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -254,7 +254,7 @@
 
   .gallery-text-item-deskripsi {
     color: var(--typo-text, var(--Colors-Neutral-Text-colorTextSecondary, rgba(0, 0, 0, 0.65)));
-    font-family: "Poppins";
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -266,7 +266,7 @@
 
   .gallery-text-item-maker {
     color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
-    font-family: "Poppins";
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -382,7 +382,7 @@
   }
   .page-tittle-event p {
     color: #000;
-    font-family: "Segoe UI";
+    
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
@@ -398,7 +398,7 @@
   }
   .date-style {
     color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
-    font-family: "Poppins";
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -432,7 +432,7 @@
 
   .gallery-text-item-headline {
     color: #000;
-    font-family: "Poppins";
+    
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -443,7 +443,7 @@
 
   .gallery-text-item-deskripsi {
     color: var(--typo-text, var(--Colors-Neutral-Text-colorTextSecondary, rgba(0, 0, 0, 0.65)));
-    font-family: "Poppins";
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -455,7 +455,7 @@
 
   .gallery-text-item-maker {
     color: var(--typo-text-secondary, rgba(0, 0, 0, 0.45));
-    font-family: "Poppins";
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -571,7 +571,7 @@
   }
   .page-tittle-event p {
     color: #000;
-    font-family: "Segoe UI";
+    
     font-size: 64px;
     font-style: normal;
     font-weight: 700;

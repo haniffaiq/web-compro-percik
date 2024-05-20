@@ -58,7 +58,7 @@ const Event = () => {
       <div>
         <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}</p>
+            <p className="text-black  text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}</p>
           </div>
         </div>
       </div>
@@ -84,8 +84,8 @@ const Event = () => {
                 <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
               <div className="">
-                <p className="font-bold py-2 justify-center">{item.headline}</p>
-                <p className="">{truncateText(item.deskripsi, 39)}</p>
+                <p className="font-bold lg:text-[20px] py-2 justify-center">{item.headline}</p>
+                <p className="lg:text-[14px]">{truncateText(item.deskripsi, 39)}</p>
                 <div className="maker-layout">
                   <img loading="lazy" src={Logo} alt="logo" />
                   <p className="">{item.maker}</p>
@@ -93,6 +93,11 @@ const Event = () => {
                     <p className="date-style">{item.date}</p>
                   </div>
                 </div>
+
+                <div className="link-layout">
+                  <p>{globalState.globalProperty === "IND" ? "Selengkapnya" : "More"}</p>
+                </div>
+
               </div>
             </div>
           </Link>

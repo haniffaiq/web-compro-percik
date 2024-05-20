@@ -35,7 +35,7 @@
 
 .gallery-tittle h2 {
   color: #000;
-  font-family: "Segoe UI";
+  
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -44,7 +44,7 @@
 
 .project-detail-main-container h2 {
   color: #000;
-  font-family: "Segoe UI";
+  
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -62,7 +62,7 @@
 }
 
 .project-detail-main-container p {
-  font-family: "Poppins";
+  
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -106,7 +106,7 @@
 
 .detail-selengkapnya-button-layout p {
   color: #fff;
-  font-family: "Poppins";
+  
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

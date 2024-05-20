@@ -100,7 +100,7 @@ const EventDetail = () => {
       <div>
         <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}</p>
+            <p className="text-black  text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "KEGIATAN" : "EVENT"}</p>
           </div>
           {/* <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div> */}
         </div>
@@ -115,37 +115,30 @@ const EventDetail = () => {
         </Link>
       </div>
 
-      <div className="container-event">
-        <div>
-          <div className="event-detail-main-container">
-            <h2>{selectedItem.headline}</h2>
-            <div className="date-writer-layout">
-              <div className="date-layout">
-                <img loading="lazy" src={LogoWriter} alt="Image" />
-                <p>{selectedItem.maker}</p>
-              </div>
-              <div className="writter-layout">
-                {/* <img loading="lazy" src={LogoWriter} alt="Image" /> */}
-                <p>{selectedItem.date}</p>
-              </div>
+      <div className="container mx-auto px-[5%] py-8">
+        <div className="rounded-lg overflow-hidden lg:mt-20">
+          <h2 className="lg:text-6xl font-bold mb-16 text-center leading-normal" style={{ whiteSpace: 'pre-line' }}>{selectedItem.headline}</h2>
+          <img className="w-full" src={require(`../../assets/${selectedItem.urlImage}`)} alt="News" />
+          <div className="">
+            {/* <div className="flex items-center mb-4">
+              <img className="w-6 mr-2" src={LogoWriter} alt="Writer" />
+              <p className="text-gray-700">{selectedItem.maker}</p>
             </div>
-            <img loading="lazy" className="lg:event-image-main-layout" src={require(`../../assets/${selectedItem.urlImage}`)} alt="image headline" />
+            <p className="text-gray-700">{selectedItem.date}</p> */}
+            <div className="mt-16">
+              {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
+                <p key={index} className="lg:text-[22px] text-justify leading-normal text-black">{paragraph}</p>
+              ))}
+            </div>
           </div>
-          <div className="isi-desc-event">
-            {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
-              <p key={index} className="leading-normal">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div>
-        <ComponentPDF />
-        <div className="detail-selengkapnya-event-layout">
-          <p className="leading-normal">{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more details, please download the following link:"}</p>
-          <div class="container-download-event">
-            <div class="line-proyek1-event"></div>
-            <img src={download} alt="Gambar" onClick={handleDownloadPDF} />
-            <div class="line-proyek2-event"></div>
+          <ComponentPDF />
+          <div className="px-6 py-4 justify-center items-center text-center lg:text-[22px]">
+            <p className="">{globalState.globalProperty === "IND" ? "Untuk Detail selengkapnya, dapat didownload pada link dibawah ini :" : "For more details, please download the following link:"}</p>
+            <div className="flex items-center mt-2">
+              <div className="bg-[#ebebeb] h-1 w-1/2"></div>
+              <img className="w-[150px] mx-4" src={download} alt="Download" onClick={handleDownloadPDF} />
+              <div className="bg-[#ebebeb] h-1 w-1/2"></div>
+            </div>
           </div>
         </div>
       </div>

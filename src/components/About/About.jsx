@@ -87,29 +87,29 @@ const AboutUs = () => {
                 {index == 0 ? (
                   <div className="h-full flex justify-center items-start">
                     <div className="px-8 align-center text-center w-full">
-                      <div className="text-black font-segoeui text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "DAFTAR PPDB" : "REGISTER PPDB"}</div>
-                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "Pendaftaran Peserta Didik Baru" : "Register New Students"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-8 py-2 ">{globalState.globalProperty === "IND" ? "TK Perguruan 'Cikini'" : "TK Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SD Perguruan 'Cikini'" : "SD Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMP Perguruan 'Cikini'" : "SMP Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMA 1 Perguruan 'Cikini'" : "SMA 1 Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMA 2 Perguruan 'Cikini'" : "SMA 2 Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK 1 Perguruan 'Cikini'" : "SMK 1 Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK 2 MUSIK" : "SMK 2 MUSIK"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "Perguruan 'Cikini'" : "Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK 3 Perguruan 'Cikini'" : "SMK 3 Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK Perguruan 'Cikini'" : "SMK Perguruan 'Cikini'"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK KIIC KARAWANG" : "SMK KIIC KARAWANG"}</div>
-                      <div className="text-black font-segoeui text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2" style={{ whiteSpace: 'pre-line' }}> {globalState.globalProperty === "IND" ? "ISTN \n (Institut Sains & Teknologi Nasional)" : "ISTN \n (Institut Sains & Teknologi Nasional)"}
+                      <div className="text-black  text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "DAFTAR PPDB" : "REGISTER PPDB"}</div>
+                      <div className="text-black  text-lg font-bold lg:text-lg">{globalState.globalProperty === "IND" ? "Pendaftaran Peserta Didik Baru" : "Register New Students"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-8 py-2 ">{globalState.globalProperty === "IND" ? "TK Perguruan 'Cikini'" : "TK Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SD Perguruan 'Cikini'" : "SD Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMP Perguruan 'Cikini'" : "SMP Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMA 1 Perguruan 'Cikini'" : "SMA 1 Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMA 2 Perguruan 'Cikini'" : "SMA 2 Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK 1 Perguruan 'Cikini'" : "SMK 1 Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK 2 MUSIK" : "SMK 2 MUSIK"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "Perguruan 'Cikini'" : "Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK 3 Perguruan 'Cikini'" : "SMK 3 Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK Perguruan 'Cikini'" : "SMK Perguruan 'Cikini'"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2 ">{globalState.globalProperty === "IND" ? "SMK KIIC KARAWANG" : "SMK KIIC KARAWANG"}</div>
+                      <div className="text-black  text-lg font-semibold bg-[#ebebeb] hover:bg-yellow-400 rounded-full mt-6 py-2" style={{ whiteSpace: 'pre-line' }}> {globalState.globalProperty === "IND" ? "ISTN \n (Institut Sains & Teknologi Nasional)" : "ISTN \n (Institut Sains & Teknologi Nasional)"}
                       </div>
                     </div>
                   </div>
                 ) : (
                   <div className="h-full flex flex-col justify-end">
                     <div className="mb-[-28px] lg:mb-0 p-8 justify-center align-center text-;eft w-full">
-                      <div className="text-black font-segoeui text-lg font-bold lg:text-2xl" style={{ whiteSpace: 'pre-line' }} >{globalState.globalProperty === "IND" ? "MEMBUKA PENDAFTARAN \n PESERTA DIDIK BARU \n UNTUK TAHUN PELAJARAN \n 2024/2025" : "OPENING REGISTRATION \n FOR NEW STUDENTS \n FOR THE ACADEMIC YEAR \n 2024/2025"}</div>
-                      <div className="text-black font-segoeui text-lg font-bold lg:text-lg  mt-16 text-left" style={{ whiteSpace: 'pre-line' }} >{globalState.globalProperty === "IND" ? "Atau Daftar langsung :" : "Onsite Registration :"}</div>
-                      <div className="text-black font-segoeui text-lg lg:text-lg text-left	mt-8 " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "Jl. Duren Tiga Raya No.1, \n Duren Tiga, Kec. Pancoran, \n Kota Jakarta Selatan, \n Daerah Khusus Ibukota \n Jakarta 12760" : "Jl. Duren Tiga Raya No.1, \n Duren Tiga, Kec. Pancoran,\n South Jakarta, \n Special Capital Region of \n Jakarta 12760"}</div>
+                      <div className="text-black  text-lg font-bold lg:text-2xl" style={{ whiteSpace: 'pre-line' }} >{globalState.globalProperty === "IND" ? "MEMBUKA PENDAFTARAN \n PESERTA DIDIK BARU \n UNTUK TAHUN PELAJARAN \n 2024/2025" : "OPENING REGISTRATION \n FOR NEW STUDENTS \n FOR THE ACADEMIC YEAR \n 2024/2025"}</div>
+                      <div className="text-black  text-lg font-bold lg:text-lg  mt-16 text-left" style={{ whiteSpace: 'pre-line' }} >{globalState.globalProperty === "IND" ? "Atau Daftar langsung :" : "Onsite Registration :"}</div>
+                      <div className="text-black  text-lg lg:text-lg text-left	mt-8 " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "Jl. Duren Tiga Raya No.1, \n Duren Tiga, Kec. Pancoran, \n Kota Jakarta Selatan, \n Daerah Khusus Ibukota \n Jakarta 12760" : "Jl. Duren Tiga Raya No.1, \n Duren Tiga, Kec. Pancoran,\n South Jakarta, \n Special Capital Region of \n Jakarta 12760"}</div>
 
                     </div>
                   </div>

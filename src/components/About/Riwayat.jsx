@@ -108,7 +108,7 @@ const Riwayat = () => {
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
         <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:py-[28px] lg:mb-[28px] lg:px-16">
           <div className="flex justify-center text-center lg:flex lg:justify-between">
-            <div className="text-black font-segoeui text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
+            <div className="text-black  text-md font-bold lg:text-5xl mt-16 lg:mt-0 lg:ml-16 py-2 text-center lg:text-left">
               {globalState.globalProperty === "IND"
                 ? "Riwayat Singkat Perguruan 'CIKINI'"
                 : "'CIKINI' School Brief History"}
