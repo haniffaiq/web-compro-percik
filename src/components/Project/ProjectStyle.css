@@ -16,7 +16,7 @@
 
   .tittle-container p {
     color: #000;
-    
+
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
@@ -29,7 +29,6 @@
     font-weight: 400;
     line-height: normal;
     color: #000;
-    
   }
 
   .image-list-container {
@@ -115,7 +114,7 @@
 
   .tittle-container p {
     color: #000;
-    
+
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
@@ -128,7 +127,6 @@
     font-weight: 400;
     line-height: normal;
     color: #000;
-    
   }
 
   .image-list-container {
@@ -214,7 +212,7 @@
 
   .tittle-container p {
     color: #000;
-    
+
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
@@ -227,7 +225,6 @@
     font-weight: 400;
     line-height: normal;
     color: #000;
-    
   }
 
   .image-list-container {
@@ -303,19 +300,16 @@
     background: #ebebeb;
   }
 
-  .horizontal-line {
-    border-top: 2px solid #ebebeb;
-    width: 100%;
+  .page-tittle {
+    margin-top: 80px;
   }
 
   .tittle-container {
-    margin-bottom: -28px;
     background: #ebebeb;
   }
 
   .tittle-container p {
     color: #000;
-    
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
@@ -328,7 +322,6 @@
     font-weight: 400;
     line-height: normal;
     color: #000;
-    
   }
 
   .image-list-container {
@@ -358,7 +351,7 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 22px;
-    min-width: 400px;
+    min-width: 370px;
     min-height: 50px;
     margin-top: 22px;
   }

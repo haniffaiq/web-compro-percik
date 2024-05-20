@@ -26,46 +26,48 @@ const VisiMisiSection = ({ selectedButton }) => {
             <div className="tittle-container-template">
               <h1>{globalState.globalProperty === "IND" ? "MISI" : "MISION"}</h1>
             </div>
-            <div className="bullet-points">
+            <div className="bullet-points-pengawas">
               <ul>
                 <li>
                   {globalState.globalProperty === "IND"
-                    ? "– Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi."
-                    : "– Developing outstanding curriculum to produce competent individuals who are adaptive to technological changes."}
+                    ? "Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi."
+                    : "Developing outstanding curriculum to produce competent individuals who are adaptive to technological changes."}
                 </li>
-                <li className="leading-normal">{globalState.globalProperty === "IND" ? "– Membangun fasilitas sarana dan prasarana yang unggul." : "– Building superior facilities and infrastructure."}</li>
-                <li className="leading-normal">{globalState.globalProperty === "IND" ? "– Membangun pusat pengembangan dan penelitian kebangsaan." : "– Establishing a national development and research center."}</li>
-                <li className="leading-normal">{globalState.globalProperty === "IND" ? "– Menjalin kerjasama, kolaborasi dan jejaring industri." : "– Forging partnerships, collaborations, and industrial networks."}.</li>
-                <li className="leading-normal">{globalState.globalProperty === "IND" ? "– Memberikan manfaat kepada bangsa dan negara." : "– Contributing to the benefit of the nation and the state."}</li>
+                <li className="leading-normal">{globalState.globalProperty === "IND" ? "Membangun fasilitas sarana dan prasarana yang unggul." : "Building superior facilities and infrastructure."}</li>
+                <li className="leading-normal">{globalState.globalProperty === "IND" ? "Membangun pusat pengembangan dan penelitian kebangsaan." : "Establishing a national development and research center."}</li>
+                <li className="leading-normal">{globalState.globalProperty === "IND" ? "Menjalin kerjasama, kolaborasi dan jejaring industri." : "Forging partnerships, collaborations, and industrial networks."}.</li>
+                <li className="leading-normal">{globalState.globalProperty === "IND" ? "Memberikan manfaat kepada bangsa dan negara." : "Contributing to the benefit of the nation and the state."}</li>
               </ul>
             </div>
             <div className="tittle-container-template">
               <h1>{globalState.globalProperty === "IND" ? "VALUE" : "VALUES"}</h1>
             </div>
-            <div className="desc-container-template">
-              <p>
-                {globalState.globalProperty === "IND"
-                  ? "– Bekerja secara kompeten dengan jiwa patriotik kebangsaan, dan keteladanan dalam berperilaku luhur serta menjunjung tinggi etika profesi."
-                  : "– Working competently with a patriotic spirit, exemplary behavior, and upholding professional ethics."}
-              </p>
-              <p>{globalState.globalProperty === "IND" ? "– Bekerja dengan berpedoman pada standar terbaik untuk memberikan hasil yang unggul." : "– Working based on the best standards to achieve superior results."}</p>
-              <p>
-                {globalState.globalProperty === "IND"
-                  ? "– Bekerja dengan menjunjung tinggi nilai-nilai religi dan mengedepankan empati, toleransi serta saling menghormati."
-                  : "Upholding religious values and promoting empathy, tolerance, and mutual respect."}
-              </p>
-              <p>{globalState.globalProperty === "IND" ? "– Memberikan manfaat nyata dengan tulus dan ikhlas kepada bangsa, Negara, dan masyarakat." : "Providing genuine and sincere benefits to the nation, state, and society."}</p>
-              <p>
-                {globalState.globalProperty === "IND"
-                  ? "– Komitmen satunya kata dengan perbuatan dan bersikap jujur dalam melaksanakan tugas sesuai prinsip-prinsip."
-                  : "Committing to one's word and acting honestly in carrying out tasks according to principles."}
-              </p>
-              <p>
-                {globalState.globalProperty === "IND"
-                  ? "– Cerdas dan berwawasan luas dengan senantiasa melakukan peningkatan berkelanjutan sesuai perkembangan zaman"
-                  : "Being intelligent and broad-minded, continuously improving in line with the changing times."}
-                .
-              </p>
+            <div className="bullet-points-pembina">
+              <ul>
+                <li>
+                  {globalState.globalProperty === "IND"
+                    ? "Bekerja secara kompeten dengan jiwa patriotik kebangsaan, dan keteladanan dalam berperilaku luhur serta menjunjung tinggi etika profesi."
+                    : "Working competently with a patriotic spirit, exemplary behavior, and upholding professional ethics."}
+                </li>
+                <li>{globalState.globalProperty === "IND" ? "Bekerja dengan berpedoman pada standar terbaik untuk memberikan hasil yang unggul." : "Working based on the best standards to achieve superior results."}</li>
+                <li>
+                  {globalState.globalProperty === "IND"
+                    ? "Bekerja dengan menjunjung tinggi nilai-nilai religi dan mengedepankan empati, toleransi serta saling menghormati."
+                    : "Upholding religious values and promoting empathy, tolerance, and mutual respect."}
+                </li>
+                <li>{globalState.globalProperty === "IND" ? "Memberikan manfaat nyata dengan tulus dan ikhlas kepada bangsa, Negara, dan masyarakat." : "Providing genuine and sincere benefits to the nation, state, and society."}</li>
+                <li>
+                  {globalState.globalProperty === "IND"
+                    ? "Komitmen satunya kata dengan perbuatan dan bersikap jujur dalam melaksanakan tugas sesuai prinsip-prinsip."
+                    : "Committing to one's word and acting honestly in carrying out tasks according to principles."}
+                </li>
+                <li>
+                  {globalState.globalProperty === "IND"
+                    ? "Cerdas dan berwawasan luas dengan senantiasa melakukan peningkatan berkelanjutan sesuai perkembangan zaman"
+                    : "Being intelligent and broad-minded, continuously improving in line with the changing times."}
+                  .
+                </li>
+              </ul>
             </div>
           </div>
         </div>

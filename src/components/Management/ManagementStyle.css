@@ -55,7 +55,7 @@
     background: #ededed;
     padding: 8px 20px 8px 20px;
     color: #000;
-    
+
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -67,7 +67,7 @@
     background: #faa61a;
     padding: 8px 20px 8px 20px;
     color: #000;
-    
+
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -91,7 +91,7 @@
     background: #ededed;
     padding: 6px 21px 6px 21px;
     color: #000;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -103,7 +103,7 @@
     background: #faa61a;
     padding: 6px 21px 6px 21px;
     color: #000;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -127,7 +127,7 @@
     background: #ededed;
     padding: 6px 21px 6px 21px;
     color: #000;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -139,7 +139,7 @@
     background: #034da2;
     padding: 6px 21px 6px 21px;
     color: #fff;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -151,7 +151,7 @@
     background: #034da2;
     padding: 6px 21px 6px 21px;
     color: #fff;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -176,7 +176,7 @@
     background: #ededed;
     padding: 6px 21px 6px 21px;
     color: #000;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -188,7 +188,7 @@
     background: #034da2;
     padding: 6px 21px 6px 21px;
     color: #fff;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -199,7 +199,7 @@
     background: #034da2;
     padding: 6px 21px 6px 21px;
     color: #fff;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -246,7 +246,7 @@
 
   .overlay-text-management-tittle {
     color: #000;
-    
+
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -256,7 +256,7 @@
 
   .overlay-text-management-role {
     color: #000;
-    
+
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -266,7 +266,7 @@
   .overlay-text-management-desc {
     max-width: 255px;
     color: #000;
-    
+
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -322,7 +322,7 @@
 
   .overlay-text-management-tittle {
     color: #000;
-    
+
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -332,7 +332,7 @@
 
   .overlay-text-management-role {
     color: #000;
-    
+
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -342,7 +342,7 @@
   .overlay-text-management-desc {
     max-width: 455px;
     color: #000;
-    
+
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -397,7 +397,7 @@
 
   .overlay-text-management-tittle {
     color: #000;
-    
+
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -406,7 +406,7 @@
 
   .overlay-text-management-role {
     color: #000;
-    
+
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -416,7 +416,7 @@
   .overlay-text-management-desc {
     max-width: 535px;
     color: #000;
-    
+
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -492,7 +492,7 @@
   }
 
   .overlay-text-management-desc {
-    max-width: 690px;
+    max-width: 750px;
     max-height: 546px;
     color: #000;
     font-size: 20px;
@@ -548,7 +548,7 @@
 
   .overlay-text-management-tittle-pengurus {
     color: #000;
-    
+
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -566,7 +566,7 @@
   .overlay-text-management-desc-pengurus {
     width: 250px;
     color: #000;
-    
+
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -619,7 +619,7 @@
 
   .overlay-text-management-tittle-pengurus {
     color: #000;
-    
+
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -636,7 +636,7 @@
 
   .overlay-text-management-role-pengurus {
     color: #000;
-    
+
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -646,7 +646,7 @@
   .overlay-text-management-desc-pengurus {
     width: 320px;
     color: #000;
-    
+
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -696,7 +696,7 @@
 
   .overlay-text-management-tittle-pengurus {
     color: #000;
-    
+
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -713,7 +713,7 @@
 
   .overlay-text-management-role-pengurus {
     color: #000;
-    
+
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -816,7 +816,7 @@
 
   .overlay-text-management-tittle-pengurus {
     color: #000;
-    
+
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
@@ -975,6 +975,26 @@
 .bullet-points-pengawas li {
   margin: 0;
   padding: 0px 0px 1px 0px;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.bullet-points-pembina {
+  margin: 0px 20px 10px 20px;
+}
+
+.bullet-points-pembina ul {
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 10px 20px 10px 20px;
+  width: 346px;
+  list-style: disc;
+}
+
+.bullet-points-pembina li {
+  padding: 20px 0px 1px 0px;
   color: #000;
   font-size: 14px;
   line-height: 1.5;
