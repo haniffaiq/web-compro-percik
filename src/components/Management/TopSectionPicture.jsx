@@ -66,7 +66,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
           ))}
           <div className="blue-bottom-banner">
             <img src={logoYPC} alt="icon-percik" />
-            <p>TURUT BERBAKTI MEMBANGUN NEGERI</p>
+            <p>{globalState.globalProperty === "IND" ? "TURUT BERBAKTI MEMBANGUN NEGERI" : "PARTICIPATING IN NATION BUILDING."}</p>
           </div>
         </div>
       </>

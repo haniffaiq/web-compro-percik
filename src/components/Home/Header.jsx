@@ -7,35 +7,70 @@ import Coun3Img from "../../assets/img/80persen.JPG";
 
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
-const carouselItems = [
-  {
-    image: require("../../assets/img/Home/H1.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H2.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H3.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H4.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H5.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H6.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H7.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H8.webp"),
-  },
-  {
-    image: require("../../assets/img/Home/H9.webp"),
-  },
-];
+const carouselItemsMulti = {
+  bahasa: [
+    {
+      image: require("../../assets/img/Home/H1.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H2.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H3.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H4.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H5.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H6.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H7.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H8.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H9.webp"),
+    }
+  ],
+  english: [
+    {
+      image: require("../../assets/img/Home/H1-ENG.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H2-ENG.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H3-ENG.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H4.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H5.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H6.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H7.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H8.webp"),
+    },
+    {
+      image: require("../../assets/img/Home/H9.webp"),
+    }
+  ]
+
+};
+
+
+let carouselItemsSelected = []
 
 const carouselItemsMobile = [
   {
@@ -78,6 +113,12 @@ const Header = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if (globalState.globalProperty == "IND") {
+    carouselItemsSelected = carouselItemsMulti.bahasa
+  } else {
+    carouselItemsSelected = carouselItemsMulti.english
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -131,7 +172,7 @@ const Header = () => {
       >
         {!isMobile && (
           <Carousel autoplay>
-            {carouselItems.map((item, index) => (
+            {carouselItemsSelected.map((item, index) => (
               <div key={index} className="h-[300px] lg:h-[810px] relative">
                 <div
                   className="h-full bg-cover bg-center"
@@ -221,9 +262,8 @@ const Header = () => {
             <motion.h1 className="font-bold font-sans ">{rounded1}</motion.h1>
             <h1 className="text-6xl lg:text-9xl font-bold font-sans">+</h1>
           </div>
-          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
-            Mendidik pelajar/mahasiswa berkualitas
-            yang siap dengan dunia kerja
+          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
+            {globalState.globalProperty === "IND" ? "Mendidik pelajar/mahasiswa berkualitas \n yang siap dengan dunia kerja" : "Educating qualified students \n who are ready to face the world of work"}
           </div>
         </div>
         <div
@@ -240,9 +280,8 @@ const Header = () => {
             <div className="text-6xl lg:text-9xl font-bold font-sansfont-bold">+</div>
           </div>
 
-          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-12">
-            Menorehkan beberapa prestasi bergengsi
-            baik tingkat regional maupun nasional
+          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
+            {globalState.globalProperty === "IND" ? "Menorehkan beberapa prestasi bergengsi \n baik tingkat regional maupun nasional" : "Achieved several prestigious achievements \n both at regional and national levels"}
           </div>
         </div>
         <div
@@ -258,9 +297,8 @@ const Header = () => {
             <motion.h1 className="font-bold font-sans">{rounded3}</motion.h1>
             <div className="text-6xl lg:text-9xl font-bold font-sans">%</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12">
-            Tingkat keberhasilan pelajar/mahasiswa
-            yang diterima kerja
+          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
+            {globalState.globalProperty === "IND" ? "Tingkat keberhasilan pelajar/mahasiswa \n yang diterima kerja" : "Success rate of students who are \n accepted to work"}
           </div>
         </div>
       </div>
