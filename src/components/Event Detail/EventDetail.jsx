@@ -117,7 +117,7 @@ const EventDetail = () => {
 
       <div className="container mx-auto px-[5%] py-8">
         <div className="rounded-lg overflow-hidden lg:mt-20">
-          <h2 className="lg:text-6xl font-bold mb-16 text-center leading-normal" style={{ whiteSpace: 'pre-line' }}>{selectedItem.headline}</h2>
+          <div className="lg:text-6xl font-bold mb-16 text-center lg:leading-normal" style={{ whiteSpace: 'pre-line' }}>{selectedItem.headline}</div>
           <img className="w-full" src={require(`../../assets/${selectedItem.urlImage}`)} alt="News" />
           <div className="">
             {/* <div className="flex items-center mb-4">
