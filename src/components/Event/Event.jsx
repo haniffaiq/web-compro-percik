@@ -84,8 +84,8 @@ const Event = () => {
                 <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
               </div>
               <div className="">
-                <p className="font-bold lg:text-[20px] py-2 justify-center">{item.headline}</p>
-                <p className="lg:text-[14px]">{truncateText(item.deskripsi, 39)}</p>
+                <p className="font-bold lg:text-[20px] py-6 justify-center">{item.headline}</p>
+                <p className="lg:text-[14px] leading-normal">{truncateText(item.deskripsi, 39)}</p>
                 <div className="maker-layout">
                   <img loading="lazy" src={Logo} alt="logo" />
                   <p className="">{item.maker}</p>

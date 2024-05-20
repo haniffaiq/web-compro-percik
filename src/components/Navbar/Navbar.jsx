@@ -356,24 +356,14 @@ const DesktopNavbar = ({
             <Link to="/" className={location.pathname === "/" ? " text-black font-[600]" : "text-[#6B7280] font-[600]"}>
               {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
             </Link>
-            <div>|</div>
-            <Link to="/about" className={location.pathname === "/about" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+            <div className="hover:bg-[##034da2]">|</div>
+            <Link to="/about" className={location.pathname === "/about" ? "text-black font-[600]" : "text-[#6B7280] font-[600]" }>
               {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
             </Link>
             <div>|</div>
             <Link
               to="/school"
-              className={
-                location.pathname === "/school" ||
-                  location.pathname === "/school-detail/1" ||
-                  location.pathname === "/school-detail/2" ||
-                  location.pathname === "/school-detail/3" ||
-                  location.pathname === "/school-detail/4" ||
-                  location.pathname === "/school-detail/5"
-                  ? "text-black font-[600]"
-                  : "text-[#6B7280] font-[600]"
-              }
-            >
+              className={location.pathname === "/school" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
               {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
             </Link>
             <div>|</div>
@@ -395,7 +385,7 @@ const DesktopNavbar = ({
                 onClick={() => updateGlobalState({ globalProperty: "IND" })}
                 className={globalState.globalProperty === "IND" ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 duration-300"}
               >
-                <div className="flex ml-[1px] items-center gap-1">
+                <div className="flex ml-[1px] items-center gap-1 px-2">
                   <img className="border rounded-full border-black" src={INFlag} alt="IN Flag" />
                   <div>ID</div>
                 </div>
@@ -404,7 +394,7 @@ const DesktopNavbar = ({
                 onClick={() => updateGlobalState({ globalProperty: "ENG" })}
                 className={globalState.globalProperty === "ENG" ? " bg-[#09588D] rounded-r-[3px] rounded-l-[8px] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 "}
               >
-                <div className="flex ml-[1px] items-center gap-1">
+                <div className="flex ml-[1px] items-center gap-1 px-2">
                   <img className="border rounded-full border-black" src={ENFlag} alt="IN Flag" />
                   <div className="">EN</div>
                 </div>
