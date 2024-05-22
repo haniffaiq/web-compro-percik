@@ -37,7 +37,7 @@ const About = () => {
           {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
         </Link>
       </div>
-      <AboutUs />
+      {/* <AboutUs /> */}
       <Filosofi />
       {/* <Riwayat /> */}
       <Riwayat2 />

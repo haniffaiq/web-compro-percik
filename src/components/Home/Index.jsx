@@ -7,6 +7,8 @@ import Partnership from "./Partnership";
 import Sekolah from "./Sekolah";
 import Berita from "./Berita";
 import PartnershipReal from "./Partnership_real";
+import Sambutan from "./Sambutan";
+
 
 const Home = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -34,11 +36,13 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <About />
+      <Sambutan/>
       <Partnership />
       <Sekolah />
       <PartnershipReal />
+
       {/* {!isMobile && } */}
       {/* <Berita /> */}
     </>
