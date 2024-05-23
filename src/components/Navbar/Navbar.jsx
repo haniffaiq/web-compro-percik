@@ -49,11 +49,11 @@ const Navbar = () => {
     };
   }, [prevScrollPos]);
 
-  const navbarClasses = `w-[67%] mt-[20px] rounded-tl-[20px] border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
-  const navbarClassesMobile = `w-full border-b shadow-lg sticky top-0 z-50 bg-white transition-opacity duration-300 ${!visible && "opacity-0"}`;
+  const navbarClasses = `w-[67%] mt-[20px] rounded-tl-[20px] border-b shadow-lg sticky top-0 z-50 bg-white`;
+  const navbarClassesMobile = `w-full border-b shadow-lg sticky top-0 z-50 bg-white`;
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col sticky top-0 z-50">
       {isMobile ? (
         <MobileNavbar
           navbarClasses={navbarClassesMobile}
