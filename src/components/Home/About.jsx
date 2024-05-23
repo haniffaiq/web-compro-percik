@@ -27,7 +27,7 @@ const About = () => {
         <div className="text-center lg:text-start text-2xl lg:text-5xl font-bold mb-5 lg:mb-10">{globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"} <br /></div>
         <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-cols-2 gap-5 w-full lg:p-24 px-4">
           <div>
-            <img loading="lazy" className="w-auto h-full" src={AboutImg} alt="img" />
+            <img loading="lazy" className="w-auto" src={AboutImg} alt="img" />
           </div>
           <div className="flex flex-col justify-start lg:pl-8 py-6 lg:py-0 lg:justify-between leading-normal	">
             <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal	">
