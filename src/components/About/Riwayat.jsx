@@ -124,15 +124,15 @@ const Riwayat = () => {
               key={selectedData[key].id}
               className="flex flex-col lg:grid lg:grid-cols-7 mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg"
             >
-              <div className="flex flex-col items-center">
+              {/* <div className="flex flex-col items-center">
                 <img
                   loading="lazy"
                   src={selectedData[key].imgUrl}
                   className="lg:object-cover flex h-[300px] lg:h-[300px]"
                   alt="selectedData[key].imgUrl"
                 />
-                {/* <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div> */}
-              </div>
+                <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
+              </div> */}
               <div className="col-span-6 lg:mx-5 lg:ml-16">
                 <div className="text-[12px] lg:text-4xl font-bold text-black">
                   {selectedData[key].title}

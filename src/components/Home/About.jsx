@@ -23,20 +23,20 @@ const About = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 items-center lg:pt-12 pt-4 lg:p-24 lg:bg-[#D9D9D9]">
+      <div className="flex flex-col gap-2 items-center lg:pt-12 pt-4 lg:p-24">
         <div className="text-center lg:text-start text-2xl lg:text-5xl font-bold mb-5 lg:mb-10">{globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"} <br /></div>
-        <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-cols-2 gap-5 w-full lg:p-24 px-4">
-          <div>
-            <img loading="lazy" className="w-auto" src={AboutImg} alt="img" />
+        <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-row-2 gap-5 w-full lg:p-24 px-4 ">
+          <div className="justify-center flex">
+            <img loading="lazy" className="w-auto lg:w-[1220px]" src={AboutImg} alt="img" />
           </div>
-          <div className="flex flex-col justify-start lg:pl-8 py-6 lg:py-0 lg:justify-between leading-normal	">
-            <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal	">
+          <div className="flex flex-col justify-center items-center py-6 lg:py-0 leading-normal	">
+            <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal lg:w-[1220px] px-4 text-justify	">
               {globalState.globalProperty === "IND" ? bahasa : english} <br />
               
             </div>
-            <Link to="/about" className="flex mt-auto item-center lg:justify-start justify-center">
-              <button className="text-[20px] text-center bg-[#40E0D0] lg:px-6 lg:py-2 w-auto rounded-full p-1 text-white px-3">
-              {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
+            <Link to="/about" className="flex mt-auto item-center justify-center">
+              <button className="text-[20px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md">
+              {globalState.globalProperty === "IND" ? "Selengkapnya >>" : "See More >>"}
               </button>
             </Link>
           </div>

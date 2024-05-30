@@ -14,6 +14,7 @@ import Event from "./components/Event/Event";
 import Management from "./components/Management/Management";
 import Footer from "./components/Footer/Footer";
 import Riwayat from "./components/About/Riwayat";
+import Sambutan from "./components/Home/Sambutan";
 // import SchoolDetail from "./components/SchoolDetail/Index";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/event-detail" element={<EventDetail />} />
           <Route path="/event" element={<Event />} />
           <Route path="/management" element={<Management />} />
+          <Route path="/sambutan" element={<Sambutan />} />
         </Routes>
         <Footer />
       </Router>

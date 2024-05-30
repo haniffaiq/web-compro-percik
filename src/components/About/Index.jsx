@@ -12,6 +12,7 @@ import Riwayat2 from "./Riwayat2";
 
 
 import { useRef } from 'react';
+import Statistik from "./Statistik";
 
 const About = () => {
 
@@ -20,11 +21,15 @@ const About = () => {
   const prinsipRef = useRef(null);
   const visiMisiRef = useRef(null);
   const strukturRef = useRef(null);
+  const statistikRef = useRef(null);
 
 
   const scrollToRef = (ref) => {
     if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const offset = 100; // Ganti dengan nilai offset yang diinginkan
+      const elementTopPosition = ref.current.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementTopPosition - offset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
     }
   };
 
@@ -67,16 +72,7 @@ const About = () => {
 
 
       <div className="lg:grid lg:grid-cols-7">
-        <div className="h-[1000px] sticky top-0 z-10 lg:block hidden">
-          <div className="mt-32 grid grid-rows justify-center">
-            <button onClick={() => handleClick(maknaRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Makna Logo</button>
-            <button onClick={() => handleClick(riwayatRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Riwayat</button>
-            <button onClick={() => handleClick(prinsipRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Prinsip Dasar</button>
-            <button onClick={() => handleClick(visiMisiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Visi, Misi & Value</button>
-            <button onClick={() => handleClick(strukturRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Struktur Organisasi</button>
-          
-          </div>
-        </div>
+
         <div className="grid grid-row lg:col-span-6">
           {/* <AboutUs /> */}
           <div ref={maknaRef}>
@@ -94,11 +90,26 @@ const About = () => {
           <div ref={strukturRef}>
             <Filosofi />
           </div>
+          <div ref={statistikRef}>
+            <Statistik />
+          </div>
           {/* <Riwayat2 /> */}
           {/* <Visi /> */}
           {/* <Misi /> */}
           {/* <Prestasi /> */}
           {/* <Galeri /> */}
+        </div>
+
+        <div className="h-[1000px] sticky top-0 z-10 lg:block hidden">
+          <div className="mt-32 grid grid-rows justify-center">
+            <button onClick={() => handleClick(maknaRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Makna Logo</button>
+            <button onClick={() => handleClick(riwayatRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Riwayat</button>
+            <button onClick={() => handleClick(prinsipRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Prinsip Dasar</button>
+            <button onClick={() => handleClick(visiMisiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Visi, Misi & Value</button>
+            <button onClick={() => handleClick(strukturRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Struktur Organisasi</button>
+            <button onClick={() => handleClick(statistikRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Statistik</button>
+
+          </div>
         </div>
       </div>
 

@@ -8,6 +8,7 @@ import Sekolah from "./Sekolah";
 import Berita from "./Berita";
 import PartnershipReal from "./Partnership_real";
 import Sambutan from "./Sambutan";
+import SambutanCard from "./SambutanCard";
 
 
 const Home = () => {
@@ -38,9 +39,9 @@ const Home = () => {
     <>
       {/* <Header /> */}
       <About />
-      <Sambutan/>
-      <Partnership />
-      <Sekolah />
+      <SambutanCard />
+      {/* <Partnership /> */}
+      {/* <Sekolah /> */}
       <PartnershipReal />
 
       {/* {!isMobile && } */}
