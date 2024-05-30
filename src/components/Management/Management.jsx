@@ -40,38 +40,35 @@ const Management = () => {
     <>
       <ManagementTittle />
 
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start">
+      <div className="flex gap-1 lg:ml-[270px] py-2 mt-[28px] justify-center lg:justify-start">
         <Link to="/" className="lg:text-lg text-sm">
-          {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
+          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="lg:text-lg text-sm"> &gt; </span>
         <Link to="/management" className="font-bold lg:text-lg text-sm">
-          {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
+          {globalState.globalProperty === "IND" ? "MANAJEMEN" : "MANAGEMENT"}
         </Link>
       </div>
 
-      <div className="triple-button-container">
-        {globalState.globalProperty === "IND" ? (
-          <>
-            <Button buttonName="Pembina" onClick={handleButtonClick} selected={selectedButton} />
-            <Button buttonName="Pengawas" onClick={handleButtonClick} selected={selectedButton} />
-            <Button buttonName="Pengurus" onClick={handleButtonClick} selected={selectedButton} />
-          </>
-        ) : (
-          <>
-            <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
-            <Button buttonName="Supervisor" onClick={handleButtonClick} selected={selectedButton} />
-            <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
-          </>
-        )}
-      </div>
-
-      {/* <TopSectionPict_khusus selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} /> */}
-
-      {/* Conditional rendering based on Pengurus selection */}
-      <div style={{ display: isPengurusSelected ? "block" : "flex", flexDirection: isPengurusSelected ? "column" : "row", gap: isPengurusSelected ? "" : "39px" }}>
+      <div className="managament-layout-main">
         <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
-        <VisiMisiSection selectedButton={selectedButton} />
+        <div className="triple-button-container">
+          {globalState.globalProperty === "IND" ? (
+            <>
+              <Button buttonName="Pembina" onClick={handleButtonClick} selected={selectedButton} />
+
+              <Button buttonName="Pengawas" onClick={handleButtonClick} selected={selectedButton} />
+
+              <Button buttonName="Pengurus" onClick={handleButtonClick} selected={selectedButton} />
+            </>
+          ) : (
+            <>
+              <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
+              <Button buttonName="Supersivor" onClick={handleButtonClick} selected={selectedButton} />
+              <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
+            </>
+          )}
+        </div>
       </div>
     </>
   );
