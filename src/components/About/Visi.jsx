@@ -10,7 +10,7 @@ const Visi = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
-          <div className="text-black text-md  lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
+          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
             {globalState.globalProperty === "IND"
               ? "Visi, Misi dan Value"
               : "Vision, Mission and Values"}
@@ -19,11 +19,11 @@ const Visi = () => {
         </div>
       </div>
       <div className="p-9 lg:px-0 lg:py-4 lg:ml-32">
-        <div className="text-start text-3xl lg:text-3xl font-bold my-12">Visi</div>
+        <div className="lg:text-start text-center text-3xl lg:text-3xl font-bold my-12">Visi</div>
         <div className="text-md lg:text-xl text-start">
           Menjadi center of excellence bidang pendidikan dalam mencetak generasi panutan yang amanah, berwawasan kebangsaan, pancasilais, berbudi pekerti luhur, dan mandiri sesuai perkembangan zaman, dengan tetap menjaga keberlangsungan Yayasan Perguruan “CIKINI”. Misi Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi. Membangun fasilitas sarana dan prasarana yang unggul. Membangun pusat pengembanga dan penelitian kebangsaan. Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara. Value
         </div>
-        <div className="text-start text-3xl lg:text-3xl font-bold my-12">Misi</div>
+        <div className="lg:text-start text-center text-3xl lg:text-3xl font-bold my-12">Misi</div>
         <div className="flex flex-col gap-5 text-sm lg:text-lg mt-5 lg:mt-0 text-black leading-normal px-4">
           <ul className="list-inside list-disc">
             <li>Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi.</li>
@@ -32,7 +32,7 @@ const Visi = () => {
             <li>Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara.</li>
           </ul>
         </div>
-        <div className="text-start text-3xl lg:text-3xl font-bold my-12">Value</div>
+        <div className="lg:text-start text-center text-3xl lg:text-3xl font-bold my-12">Value</div>
         <div className="grid grid-row gap-0 my-5 text-black leading-normal px-4">
 
           <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
