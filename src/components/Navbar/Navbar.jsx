@@ -79,13 +79,13 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
           <img src={burger} alt="Menu" />
         </button>
         <div className="hidden lg:flex items-center gap-4 w-full col-span-3">
-          <Link to="/" className={location.pathname === "/" ? " text-black " : "text-[#6B7280] "}>
+          <Link to="/" className={location.pathname === "/" ? " text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
           </Link>
-          <Link to="/about" className={location.pathname === "/about" ? "text-black " : "text-[#6B7280] "}>
+          <Link to="/about" className={location.pathname === "/about" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
           </Link>
-          <Link to="/management" className={location.pathname === "/management" ? "text-black " : "text-[#6B7280] "}>
+          <Link to="/management" className={location.pathname === "/management" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
           </Link>
           <Link
@@ -97,16 +97,16 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
               location.pathname === "/school-detail/3" ||
               location.pathname === "/school-detail/4" ||
               location.pathname === "/school-detail/5"
-                ? "text-black "
+                ? "text-black text-[21px] "
                 : "text-[#6B7280] "
             }
           >
             {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
           </Link>
-          <Link to="/project" className={location.pathname === "/project" ? "text-black " : "text-[#6B7280] "}>
+          <Link to="/project" className={location.pathname === "/project" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
           </Link>
-          <Link to="/event" className={location.pathname === "/event" ? "text-black " : "text-[#6B7280] "}>
+          <Link to="/event" className={location.pathname === "/event" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
           </Link>
         </div>
@@ -114,7 +114,7 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
           <div className="border-2 rounded-[8px] grid grid-cols-2 border-[#09588D]">
             <button
               onClick={() => updateGlobalState({ globalProperty: "IND" })}
-              className={globalState.globalProperty === "IND" ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full h-full font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 duration-300"}
+              className={globalState.globalProperty === "IND" ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full h-full font-bold text-white flex gap-2" : " font-bold text-black text-[21px] flex gap-2 duration-300"}
             >
               <div className="flex ml-[1px] items-center gap-1">
                 <img className="border rounded-full border-black" src={INFlag} alt="IN Flag" />
@@ -123,7 +123,7 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
             </button>
             <button
               onClick={() => updateGlobalState({ globalProperty: "ENG" })}
-              className={globalState.globalProperty === "ENG" ? " bg-[#09588D] rounded-r-[3px] rounded-l-[8px] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 "}
+              className={globalState.globalProperty === "ENG" ? " bg-[#09588D] rounded-r-[3px] rounded-l-[8px] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black text-[21px] flex gap-2 "}
             >
               <div className="flex ml-[1px] items-center gap-1">
                 <img className="border rounded-full border-black" src={ENFlag} alt="IN Flag" />
@@ -137,28 +137,33 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
       <div className="lg:hidden flex">
         <div className={"lg:flex flex-grow items-center pt-5 pb-5" + (navbarOpen ? " " : " hidden")} id="example-navbar-danger">
           <div className="flex flex-col lg:hidden text-center gap-5 list-none lg:ml-auto">
-            <Link to="/" className={location.pathname === "/" ? " text-black font-[600]" : "text-[#6B7280] font-[600]"} onClick={() => setNavbarOpen(false)}>
+            <Link to="/" className={location.pathname === "/" ? " text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
               {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
             </Link>
-            <Link to="/about" className={location.pathname === "/about" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"} onClick={() => setNavbarOpen(false)}>
+            <Link to="/about" className={location.pathname === "/about" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
               {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
             </Link>
-            <Link to="/school" className={location.pathname === "/school" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"} onClick={() => setNavbarOpen(false)}>
+            <Link to="/school" className={location.pathname === "/school" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
               {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
             </Link>
-            <Link to="/project" className={location.pathname === "/project" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"} onClick={() => setNavbarOpen(false)}>
+            <Link to="/project" className={location.pathname === "/project" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
               {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
             </Link>
-            <Link to="/event" className={location.pathname === "/event" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"} onClick={() => setNavbarOpen(false)}>
+            <Link to="/event" className={location.pathname === "/event" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
               {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
             </Link>
-            <Link to="/management" className={location.pathname === "/management" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"} onClick={() => setNavbarOpen(false)}>
+            <Link
+              to="/management"
+              className={location.pathname === "/management" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"}
+              style={{ fontFamily: "Hedvig Letters Serif, serif" }}
+              onClick={() => setNavbarOpen(false)}
+            >
               {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
             </Link>
             <div className="border-2 rounded-[8px] ml-32 mr-32 grid grid-cols-2 border-[#09588D]">
               <button
                 onClick={() => updateGlobalState({ globalProperty: "IND" })}
-                className={globalState.globalProperty === "IND" ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 duration-300"}
+                className={globalState.globalProperty === "IND" ? "bg-[#09588D] rounded-l-[3px] rounded-r-[8px] duration-300 w-full font-bold text-white flex gap-2" : " font-bold text-black text-[21px] flex gap-2 duration-300"}
               >
                 <div className="flex ml-[1px] items-center gap-1">
                   <img className="border rounded-full border-black" src={INFlag} alt="IN Flag" />
@@ -167,7 +172,7 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
               </button>
               <button
                 onClick={() => updateGlobalState({ globalProperty: "ENG" })}
-                className={globalState.globalProperty === "ENG" ? " bg-[#09588D] rounded-r-[3px] rounded-l-[8px] duration-300 w-full font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 "}
+                className={globalState.globalProperty === "ENG" ? " bg-[#09588D] rounded-r-[3px] rounded-l-[8px] duration-300 w-full font-bold text-white flex gap-2" : " font-bold text-black text-[21px] flex gap-2 "}
               >
                 <div className="flex ml-[1px] items-center gap-1">
                   <img className="border rounded-full border-black" src={ENFlag} alt="IN Flag" />
@@ -185,33 +190,33 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
 const DesktopNavbar = ({ navbarClasses, globalState, updateGlobalState, location }) => {
   return (
     <div className="flex gap-0 bg-[#034DA2] justify-between">
-      <div className="flex w-[30%] lg:gap-3 ml-[94px] lg:my-2 ">
+      <div className="flex w-[30%] lg:gap-3 ml-[32px] lg:my-2 ">
         <Link to="/" className="w-[85px] h-[85px] mt-[22px] lg:ml-16">
           <img src={logo} alt="ypc" />
         </Link>
-        <Link to="/" className="font-bold text-md lg:text-2xl flex items-center text-white w-full">
+        <Link to="/" className="font-bold text-md lg:text-[26px] flex items-center text-white w-full">
           YAYASAN PERGURUAN "CIKINI"
         </Link>
       </div>
       <div className={navbarClasses}>
         <div className="flex justify-between lg:grid lg:grid-cols-5 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] mt-[15px] items-center">
           <div className="hidden lg:flex items-center gap-6 w-full col-span-4 justify-start">
-            <Link to="/" className={location.pathname === "/" ? " text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+            <Link to="/" className={location.pathname === "/" ? " text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
             </Link>
-            <Link to="/about" className={location.pathname === "/about" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+            <Link to="/about" className={location.pathname === "/about" ? "text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
             </Link>
-            <Link to="/management" className={location.pathname === "/management" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+            <Link to="/management" className={location.pathname === "/management" ? "text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
             </Link>
-            <Link to="/school" className={location.pathname === "/school" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+            <Link to="/school" className={location.pathname === "/school" ? "text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
             </Link>
-            <Link to="/event" className={location.pathname === "/event" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+            <Link to="/event" className={location.pathname === "/event" ? "text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Warta" : "News"}
             </Link>
-            <Link to="/project" className={location.pathname === "/project" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+            <Link to="/project" className={location.pathname === "/project" ? "text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}
             </Link>
           </div>
@@ -219,7 +224,7 @@ const DesktopNavbar = ({ navbarClasses, globalState, updateGlobalState, location
             <div className="border-2 rounded-[2px] grid grid-cols-2 border-[#09588D]">
               <button
                 onClick={() => updateGlobalState({ globalProperty: "IND" })}
-                className={globalState.globalProperty === "IND" ? "bg-[#09588D] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 duration-300"}
+                className={globalState.globalProperty === "IND" ? "bg-[#09588D] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black text-[21px] flex gap-2 duration-300"}
               >
                 <div className="flex ml-[1px] items-center gap-1 px-2">
                   <img className="border border-black" src={INFlag} alt="IN Flag" />
@@ -228,7 +233,7 @@ const DesktopNavbar = ({ navbarClasses, globalState, updateGlobalState, location
               </button>
               <button
                 onClick={() => updateGlobalState({ globalProperty: "ENG" })}
-                className={globalState.globalProperty === "ENG" ? " bg-[#09588D] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black flex gap-2 "}
+                className={globalState.globalProperty === "ENG" ? " bg-[#09588D] duration-300 w-full h-full  font-bold text-white flex gap-2" : " font-bold text-black text-[21px] flex gap-2 "}
               >
                 <div className="flex ml-[1px] items-center gap-1 px-2">
                   <img className="border border-black" src={ENFlag} alt="IN Flag" />
