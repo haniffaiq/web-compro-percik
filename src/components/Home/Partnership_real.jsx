@@ -11,25 +11,28 @@ const PartnershipReal = () => {
 
   return (
     <>
-      <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row">
-        <div className="relative bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full">
-          <div className="text-black text-lg font-bold lg:text-3xl lg:mt-0 text-center relative z-20 lg:py-[10px]">{globalState.globalProperty === "IND" ? "PARTNERSHIP" : "PARTNERSHIP"}</div>
-        </div>
-      </div>
-      <div class="flex flex-col gap-2 items-center py-16 px-36">
-        <div class="flex justify-center lg:gap-28 lg:h-full lg:w-full h-[50px] w-[350px] overflow-y-hidden">
-          <div class="flex items-center">
-            <img loading="lazy" src={Bni} class="" alt="logo" />
-          </div>
-          <div class="flex items-center">
-            <img loading="lazy" src={Lipi} class="" alt="logo" />
-          </div>
-          <div class="flex items-center">
-            <img loading="lazy" src={Telkomsel} class="" alt="logo" />
+      <div className="lg:mb-[55px]">
+        <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row ">
+          <div className="relative bg-[#034694] lg:bg-[#034694] lg:w-[118] lg:mx-0 mx-20 rounded-lg">
+            <div className="text-white text-lg font-bold lg:text-xl lg:mt-0 text-center relative z-20 lg:py-[2px] lg:px-[20px]" style={{ letterSpacing: 4 }}>
+              {globalState.globalProperty === "IND" ? "BANK" : "BANK"}
+            </div>
           </div>
         </div>
+        <div class="flex lg:flex-row py-16 px-36 lg:mx-[200px] items-center">
+          <div class="flex flex-col lg:flex-row justify-center lg:gap-28 lg:h-full lg:w-full h-full w-full gap-7 overflow-y-hidden">
+            <div class="flex items-center">
+              <img loading="lazy" src={Bni} class="" alt="logo" />
+            </div>
+            <div class="flex items-center">
+              <img loading="lazy" src={Lipi} class="" alt="logo" />
+            </div>
+            <div class="flex items-center">
+              <img loading="lazy" src={Telkomsel} class="" alt="logo" />
+            </div>
+          </div>
+        </div>
       </div>
-
     </>
   );
 };

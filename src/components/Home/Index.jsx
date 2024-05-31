@@ -9,6 +9,7 @@ import Berita from "./Berita";
 import PartnershipReal from "./Partnership_real";
 import Sambutan from "./Sambutan";
 import SambutanCard from "./SambutanCard";
+import Kerjasama from "./Kerjasama";
 
 const Home = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -39,6 +40,7 @@ const Home = () => {
       {/* <Header /> */}
       <About />
       <SambutanCard />
+      <Kerjasama />
       {/* <Partnership /> */}
       {/* <Sekolah /> */}
       <PartnershipReal />
