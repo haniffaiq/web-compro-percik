@@ -13,6 +13,7 @@ import Riwayat2 from "./Riwayat2";
 
 import { useRef } from 'react';
 import Statistik from "./Statistik";
+import Prinsip from "./Prinsip";
 
 const About = () => {
 
@@ -82,7 +83,7 @@ const About = () => {
             <Riwayat />
           </div>
           <div ref={prinsipRef}>
-            <Filosofi />
+            <Prinsip />
           </div>
           <div ref={visiMisiRef}>
             <Filosofi />
