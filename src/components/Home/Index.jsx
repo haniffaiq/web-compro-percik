@@ -10,12 +10,11 @@ import PartnershipReal from "./Partnership_real";
 import Sambutan from "./Sambutan";
 import SambutanCard from "./SambutanCard";
 
-
 const Home = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const [isMobile, setIsMobile] = useState(false);
 
-  console.log(globalState.globalProperty );
+  console.log(globalState.globalProperty);
 
   useEffect(() => {
     window.scrollTo(0, 0);
