@@ -104,10 +104,10 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
             {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
           </Link>
           <Link to="/project" className={location.pathname === "/project" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
+            {globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}
           </Link>
           <Link to="/event" className={location.pathname === "/event" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
+            {globalState.globalProperty === "IND" ? "Warta" : "News"}
           </Link>
         </div>
         <div className="hidden w-full lg:flex justify-end items-center col-span-2 py-2">
@@ -147,10 +147,10 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
               {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
             </Link>
             <Link to="/project" className={location.pathname === "/project" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
-              {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
+              {globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}
             </Link>
             <Link to="/event" className={location.pathname === "/event" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
-              {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
+              {globalState.globalProperty === "IND" ? "Warta" : "News"}
             </Link>
             <Link
               to="/management"

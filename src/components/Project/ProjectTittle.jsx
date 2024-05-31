@@ -9,7 +9,7 @@ const ProjectTittle = () => {
     <div>
       <div className="tittle-management-wrapper">
         <div className="tittle-container">
-          <p>{globalState.globalProperty === "IND" ? "PROYEK" : "PROJECT"}</p>
+          <p>{globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}</p>
         </div>
         <div className="yellow-bar-header"></div>
       </div>

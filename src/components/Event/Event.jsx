@@ -58,7 +58,7 @@ const Event = () => {
       <div>
         <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black  text-3xl lg:text-5xl" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>{globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}</p>
+            <p className="text-black  text-3xl lg:text-5xl" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>{globalState.globalProperty === "IND" ? "Warta" : "News"}</p>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@ const Event = () => {
         </Link>
         <span className="text-lg"> &gt; </span>
         <Link to="/event" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
+          {globalState.globalProperty === "IND" ? "Warta" : "News"}
         </Link>
       </div>
 
