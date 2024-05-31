@@ -54,7 +54,7 @@ const SambutanCard = () => {
                 <div className="text-center text-3xl lg:text-5xl font-bold mb-10 bg-[#034694] text-white py-2 ">
                     SAMBUTAN
                 </div>
-                <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+                <div className="grid grid-cols-1 lg:gap-4 lg:grid-cols-4">
                     <div></div>
                     {selectedData.map((value, index) => {
                         return (
@@ -72,7 +72,7 @@ const SambutanCard = () => {
                                             />
                                         </div>
                                         <div className="">
-                                            <div className="text-[4px] lg:text-lg font-bold lg:mt-2">{value.name}</div>
+                                            <div className="text-lg lg:text-lg font-bold lg:mt-2">{value.name}</div>
                                         </div>
                                     </div>
 
@@ -81,7 +81,7 @@ const SambutanCard = () => {
 
 
                                 {/* Mobile */}
-                                <div
+                                {/* <div
                                     onClick={() =>
                                         openModal(index, value.title, value.name, value.img)
                                     }
@@ -117,7 +117,7 @@ const SambutanCard = () => {
                                     </div>
 
 
-                                </div>
+                                </div> */}
                             </div>
                         );
                     })}
