@@ -107,8 +107,7 @@ const Riwayat = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
       <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
-          <div className="text-black text-md  lg:text-5xl mt-16 lg:mt-0 lg:ml-32 py-2 text-center lg:text-left" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
-
+          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
             {globalState.globalProperty === "IND"
               ? "Riwayat Singkat Perguruan 'Cikini'"
               : "'Cikini' School Brief History"}
@@ -133,10 +132,10 @@ const Riwayat = () => {
                 <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
               </div> */}
               <div className="col-span-6 lg:mx-5 lg:ml-16">
-                <div className="text-[12px] lg:text-4xl font-bold text-black">
+                <div className="text-[16px] lg:text-4xl font-bold text-black">
                   {selectedData[key].title}
                 </div>
-                <div className="flex flex-col gap-5 text-[12px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black w-full lg:w-auto text-left leading-normal">
+                <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black w-full lg:w-auto text-left leading-normal ">
                   {selectedData[key].content}
                 </div>
               </div>

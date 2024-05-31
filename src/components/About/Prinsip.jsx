@@ -49,8 +49,8 @@ const Prinsip = () => {
                 <div className="w-full rounded-xl lg:my-10 ">
                     <div className="leading-normal	border-4">
                         <div className="text-white py-5 px-5 lg:px-0 lg:py-14 lg:col-span-2 lg:row-span-2 ">
-                            <div className="flex flex-col gap-5 text-sm lg:text-lg mt-5 lg:mt-0 text-black leading-normal px-4">
-                                <ul className="list-inside list-disc">
+                            <div className="flex flex-col gap-5 text-[16px] lg:text-lg mt-5 lg:mt-0 text-black leading-normal px-4">
+                                <ul className="list-outside list-disc">
                                     <li>Universal dan obyektif dalam ilmu pengetahuan untuk mencapai kenyataan dan kebenaran.</li>
                                     <li>Kebebasan akademik yang dilaksanakan dengan hikmah dan bertanggungjawab.</li>
                                     <li>Keadaban, kemanfaatan, kebahagiaan, kemanusiaan, dan kesejahteraan.</li>

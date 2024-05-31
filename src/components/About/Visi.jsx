@@ -33,48 +33,59 @@ const Visi = () => {
           </ul>
         </div>
         <div className="text-start text-3xl lg:text-3xl font-bold my-12">Value</div>
-        <div className="grid grid-row gap-0 text-sm lg:text-lg my-5 text-black leading-normal px-4">
+        <div className="grid grid-row gap-0 my-5 text-black leading-normal px-4">
 
-          <div className="flex flex-row align-center">
-            <div className="text-white font-bold text-3xl px-4 py-6 w-[50px]  bg-indigo-950">P</div>
-            <div className=" font-bold text-3xl px-0 py-6 w-[300px] text-indigo-950">rofesional</div>
-            <div className="text-white font-bold text-3xl w-[8px] my-4  bg-indigo-950"></div>
-            <div className="text-lg px-2 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "BEKERJA SECARA KOMPETEN DENGAN JIWA PATRIOTIK KEBANGSAAN, DAN KETELADANAN \n DALAM BERPERILAKU LUHUR SERTA MENJUNJUNG TINGGI ETIKA PROFESI." : "BEKERJA SECARA KOMPETEN DENGAN JIWA PATRIOTIK KEBANGSAAN, DAN KETELADANAN \n DALAM BERPERILAKU LUHUR SERTA MENJUNJUNG TINGGI ETIKA PROFESI."}</div>
-
-          </div>
-          <div className="flex flex-row align-center">
-            <div className="text-white font-bold text-3xl px-4 py-6 w-[50px]  bg-indigo-700">E</div>
-            <div className=" font-bold text-3xl px-0 py-6 w-[300px]  text-indigo-700">xcelent</div>
-            <div className="text-white font-bold text-3xl w-[8px] my-4  bg-indigo-700"></div>
-            <div className="text-lg px-2 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "BEKERJA DENGAN BERPEDOMAN PADA STANDAR TERBAIK UNTUK MEMBERIKAN HASIL YANG \n UNGGUL." : "BEKERJA DENGAN BERPEDOMAN PADA STANDAR TERBAIK UNTUK MEMBERIKAN HASIL YANG \n UNGGUL."}</div>
+          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
+            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-950">P</div>
+            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block text-indigo-950">rofesional</div>
+            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-950">Profesional</div>
+            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-950"></div>
+            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "BEKERJA SECARA KOMPETEN DENGAN JIWA PATRIOTIK KEBANGSAAN, DAN KETELADANAN \n DALAM BERPERILAKU LUHUR SERTA MENJUNJUNG TINGGI ETIKA PROFESI." : "BEKERJA SECARA KOMPETEN DENGAN JIWA PATRIOTIK KEBANGSAAN, DAN KETELADANAN \n DALAM BERPERILAKU LUHUR SERTA MENJUNJUNG TINGGI ETIKA PROFESI."}</div>
 
           </div>
-          <div className="flex flex-row align-center">
-            <div className="text-white font-bold text-3xl px-4 py-6 w-[50px]  bg-indigo-500">R</div>
-            <div className="font-bold text-3xl px-0 py-6 w-[300px]  text-indigo-500">eligius</div>
-            <div className="text-white font-bold text-3xl w-[8px] my-4  bg-indigo-500"></div>
-            <div className="text-lg px-2 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "BEKERJA DENGAN MENJUNJUNG TINGGI NILAI-NILAI RELIGI DAN MENGEDEPANKAN EMPATI,\n TOLERANSI SERTA SALING MENGHORMATI." : "BEKERJA DENGAN MENJUNJUNG TINGGI NILAI-NILAI RELIGI DAN MENGEDEPANKAN EMPATI,\n TOLERANSI SERTA SALING MENGHORMATI."}</div>
+          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
+            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-700">E</div>
+            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-700">xcelent</div>
+            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-700">Excelent</div>
+
+            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-700"></div>
+            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "BEKERJA DENGAN BERPEDOMAN PADA STANDAR TERBAIK UNTUK MEMBERIKAN HASIL YANG \n UNGGUL." : "BEKERJA DENGAN BERPEDOMAN PADA STANDAR TERBAIK UNTUK MEMBERIKAN HASIL YANG \n UNGGUL."}</div>
 
           </div>
-          <div className="flex flex-row align-center">
-            <div className="text-white font-bold text-3xl px-4 py-6 w-[50px]  bg-indigo-400">C</div>
-            <div className="font-bold text-3xl px-0 py-6 w-[300px]  text-indigo-400">ontribution</div>
-            <div className="text-white font-bold text-3xl w-[8px] my-4  bg-indigo-400"></div>
-            <div className="text-lg px-2 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "MEMBERIKAN MANFAAT NYATA DENGAN TULUS DAN IKHLAS KEPADA BANGSA, NEGARA, DAN \n MASYARAKAT." : "MEMBERIKAN MANFAAT NYATA DENGAN TULUS DAN IKHLAS KEPADA BANGSA, NEGARA, DAN \n MASYARAKAT."}</div>
+          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
+            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-500">R</div>
+            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-500">eligius</div>
+            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-500">Religius</div>
+
+            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-500"></div>
+            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "BEKERJA DENGAN MENJUNJUNG TINGGI NILAI-NILAI RELIGI DAN MENGEDEPANKAN EMPATI,\n TOLERANSI SERTA SALING MENGHORMATI." : "BEKERJA DENGAN MENJUNJUNG TINGGI NILAI-NILAI RELIGI DAN MENGEDEPANKAN EMPATI,\n TOLERANSI SERTA SALING MENGHORMATI."}</div>
 
           </div>
-          <div className="flex flex-row align-center">
-            <div className="text-white font-bold text-3xl px-4 py-6 w-[50px]  bg-indigo-300">I</div>
-            <div className="font-bold text-3xl px-0 py-6 w-[300px]  text-indigo-300">ntegrity</div>
-            <div className="text-white font-bold text-3xl w-[8px] my-4  bg-indigo-300"></div>
-            <div className="text-lg px-2 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "KOMITMEN SATUNYA KATA DENGAN PERBUATAN DAN BERSIKAP JUJUR DALAM MELAKSANAKAN \n TUGAS SESUAI PRINSIP-PRINSIP." : "KOMITMEN SATUNYA KATA DENGAN PERBUATAN DAN BERSIKAP JUJUR DALAM MELAKSANAKAN \n TUGAS SESUAI PRINSIP-PRINSIP."}</div>
+          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
+            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-400">C</div>
+            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-400">ontribution</div>
+            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-400">Contribution</div>
+
+            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-400"></div>
+            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "MEMBERIKAN MANFAAT NYATA DENGAN TULUS DAN IKHLAS KEPADA BANGSA, NEGARA, DAN \n MASYARAKAT." : "MEMBERIKAN MANFAAT NYATA DENGAN TULUS DAN IKHLAS KEPADA BANGSA, NEGARA, DAN \n MASYARAKAT."}</div>
 
           </div>
-          <div className="flex flex-row align-center">
-            <div className="text-white font-bold text-3xl px-4 py-6 w-[50px] flex bg-indigo-200">K</div>
-            <div className="font-bold text-3xl px-0 py-6 w-[300px]  text-indigo-200">nowledgeable</div>
-            <div className="text-white font-bold text-3xl w-[8px] my-4 bg-indigo-200"></div>
-            <div className="text-lg px-2 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "CERDAS DAN BERWAWASAN LUAS DENGAN SENANTIASA MELAKUKAN PENINGKATAN \n BERKELANJUTAN SESUAI PERKEMBANGAN ZAMAN." : "CERDAS DAN BERWAWASAN LUAS DENGAN SENANTIASA MELAKUKAN PENINGKATAN \n BERKELANJUTAN SESUAI PERKEMBANGAN ZAMAN."}</div>
+          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
+            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-300">I</div>
+            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-300">ntegrity</div>
+            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-300">Integrity</div>
+
+            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-300"></div>
+            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "KOMITMEN SATUNYA KATA DENGAN PERBUATAN DAN BERSIKAP JUJUR DALAM MELAKSANAKAN \n TUGAS SESUAI PRINSIP-PRINSIP." : "KOMITMEN SATUNYA KATA DENGAN PERBUATAN DAN BERSIKAP JUJUR DALAM MELAKSANAKAN \n TUGAS SESUAI PRINSIP-PRINSIP."}</div>
+
+          </div>
+          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
+            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block flex bg-indigo-200">K</div>
+            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-200">nowledgeable</div>
+            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-200">Knowledgeable</div>
+
+            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block bg-indigo-200"></div>
+            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: 'pre-line' }}>{globalState.globalProperty === "IND" ? "CERDAS DAN BERWAWASAN LUAS DENGAN SENANTIASA MELAKUKAN PENINGKATAN \n BERKELANJUTAN SESUAI PERKEMBANGAN ZAMAN." : "CERDAS DAN BERWAWASAN LUAS DENGAN SENANTIASA MELAKUKAN PENINGKATAN \n BERKELANJUTAN SESUAI PERKEMBANGAN ZAMAN."}</div>
 
           </div>
         </div>

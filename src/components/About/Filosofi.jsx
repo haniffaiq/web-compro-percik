@@ -48,7 +48,7 @@ const Filosofi = () => {
       </div>
       <div className="p-5 lg:p-8 lg:mx-16">
         <div className="w-full rounded-xl lg:my-10 ">
-          <div className="grid lg:grid-cols-3 grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5 leading-normal	border-4">
+          <div className="grid lg:grid-cols-3 lg:grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5 leading-normal	border-4">
             <div className="flex lg:justify-center justify-center items-center h-full lg:h-full lg:row-span-2">
               <img
                 loading="lazy"
@@ -57,7 +57,7 @@ const Filosofi = () => {
               />
             </div>
             <div className="text-white py-5 px-5 lg:px-0 lg:py-14 lg:col-span-2 lg:row-span-2 ">
-              <div className="flex flex-col gap-5 text-[12px] lg:text-lg mt-5 lg:mt-0 text-black leading-normal">
+              <div className="flex flex-col gap-5 text-[16px] lg:text-lg mt-5 lg:mt-0 text-black leading-normal">
                 {<div dangerouslySetInnerHTML={html} />}
               </div>
             </div>

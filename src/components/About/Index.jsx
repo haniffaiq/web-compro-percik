@@ -74,7 +74,7 @@ const About = () => {
 
       <div className="lg:grid lg:grid-cols-7">
 
-        <div className="grid grid-row lg:col-span-6">
+        <div className="lg:grid lg:grid-row lg:col-span-6">
           {/* <AboutUs /> */}
           <div ref={riwayatRef}>
             <Riwayat />
