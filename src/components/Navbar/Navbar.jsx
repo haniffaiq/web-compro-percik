@@ -125,6 +125,16 @@ const MobileNavbar = ({
             {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
           </Link>
           <Link
+            to="/management"
+            className={
+              location.pathname === "/management"
+                ? "text-black "
+                : "text-[#6B7280] "
+            }
+          >
+            {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
+          </Link>
+          <Link
             to="/school"
             className={
               location.pathname === "/school" ||
@@ -159,16 +169,7 @@ const MobileNavbar = ({
           >
             {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
           </Link>
-          <Link
-            to="/management"
-            className={
-              location.pathname === "/management"
-                ? "text-black "
-                : "text-[#6B7280] "
-            }
-          >
-            {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
-          </Link>
+
         </div>
         <div className="hidden w-full lg:flex justify-end items-center col-span-2 py-2">
           <div className="border-2 rounded-[8px] grid grid-cols-2 border-[#09588D]">
@@ -357,8 +358,12 @@ const DesktopNavbar = ({
               {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
             </Link>
             <div className="hover:bg-[##034da2]">|</div>
-            <Link to="/about" className={location.pathname === "/about" ? "text-black font-[600]" : "text-[#6B7280] font-[600]" }>
+            <Link to="/about" className={location.pathname === "/about" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
               {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
+            </Link>
+            <div>|</div>
+            <Link to="/management" className={location.pathname === "/management" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+              {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
             </Link>
             <div>|</div>
             <Link
@@ -367,17 +372,15 @@ const DesktopNavbar = ({
               {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
             </Link>
             <div>|</div>
-            <Link to="/project" className={location.pathname === "/project" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
-              {globalState.globalProperty === "IND" ? "Proyek" : "Project"}
-            </Link>
-            <div>|</div>
             <Link to="/event" className={location.pathname === "/event" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
-              {globalState.globalProperty === "IND" ? "Kegiatan" : "Event"}
+              {globalState.globalProperty === "IND" ? "Warta" : "News"}
             </Link>
             <div>|</div>
-            <Link to="/management" className={location.pathname === "/management" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
-              {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
+            <Link to="/project" className={location.pathname === "/project" ? "text-black font-[600]" : "text-[#6B7280] font-[600]"}>
+              {globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}
             </Link>
+            <div>|</div>
+
           </div>
           <div className="hidden w-full lg:flex justify-end items-center col-span-1 py-2 lg:pr-16">
             <div className="border-2 rounded-[8px] grid grid-cols-2 border-[#09588D]">
