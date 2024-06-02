@@ -49,7 +49,7 @@ const SambutanCard = () => {
 
   return (
     <>
-      <div className="p-5 lg:p-8 lg:mx-16 ">
+      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 ">
         <div className="text-center text-3xl lg:text-2xl font-bold mb-10 bg-[#034694] text-white py-4 lg:mx-[250px] rounded-xl" style={{ letterSpacing: 14 }}>
           {globalState.globalProperty === "IND" ? "SAMBUTAN" : "WELCOMING"}
         </div>

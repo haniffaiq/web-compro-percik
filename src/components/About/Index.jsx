@@ -14,6 +14,7 @@ import Riwayat2 from "./Riwayat2";
 import { useRef } from 'react';
 import Statistik from "./Statistik";
 import Prinsip from "./Prinsip";
+import Akreditasi from "./Akreditasi";
 
 const About = () => {
 
@@ -23,6 +24,8 @@ const About = () => {
   const visiMisiRef = useRef(null);
   const strukturRef = useRef(null);
   const statistikRef = useRef(null);
+  const akreditasiRef = useRef(null);
+
 
 
   const scrollToRef = (ref) => {
@@ -88,8 +91,11 @@ const About = () => {
           <div ref={visiMisiRef}>
             <Visi />
           </div>
+          <div ref={akreditasiRef}>
+            <Akreditasi />
+          </div>
           <div ref={strukturRef}>
-            <Filosofi />
+            <Akreditasi />
           </div>
           <div ref={statistikRef}>
             <Statistik />
@@ -107,6 +113,7 @@ const About = () => {
             <button onClick={() => handleClick(maknaRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Makna Logo</button>
             <button onClick={() => handleClick(prinsipRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Prinsip Dasar</button>
             <button onClick={() => handleClick(visiMisiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Visi, Misi & Value</button>
+            <button onClick={() => handleClick(akreditasiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">SK Akreditasi</button>
             <button onClick={() => handleClick(strukturRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Struktur Organisasi</button>
             <button onClick={() => handleClick(statistikRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Statistik</button>
 

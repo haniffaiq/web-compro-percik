@@ -68,7 +68,7 @@ const Statistik = () => {
         </div>
       </div>
 
-      <div className="p-5 lg:p-8 lg:mx-16">
+      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32">
         <canvas ref={chartRef} id="myChart"></canvas>
       </div>
     </>
