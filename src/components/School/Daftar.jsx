@@ -21,10 +21,10 @@ const Daftar = () => {
   }
   
   return (
-    <div className="p-5 lg:p-8">
+    <div className="p-5 lg:p-8 lg:mx-[250px]">
       <div className="text-center text-3xl lg:text-5xl font-bold mb-10">Daftar Sekolah</div>
       <div className="mx-auto px-4 sm:px-6 lg:mx-16">
-        <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-4">
+        <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-3">
           {sortedData.map((school) => (
             <div key={school.id} to={`/school-detail/${school.id}`} className="w-full">
               <div

@@ -10,7 +10,7 @@ const Visi = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
-          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
+          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[250px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
             {globalState.globalProperty === "IND"
               ? "Visi, Misi dan Value"
               : "Vision, Mission and Values"}
@@ -18,7 +18,7 @@ const Visi = () => {
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>
-      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32">
+      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[250px]">
         <div className="lg:text-start text-center text-3xl lg:text-3xl font-bold my-12">Visi</div>
         <div className="text-md lg:text-xl text-start">
           Menjadi center of excellence bidang pendidikan dalam mencetak generasi panutan yang amanah, berwawasan kebangsaan, pancasilais, berbudi pekerti luhur, dan mandiri sesuai perkembangan zaman, dengan tetap menjaga keberlangsungan Yayasan Perguruan “CIKINI”. Misi Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi. Membangun fasilitas sarana dan prasarana yang unggul. Membangun pusat pengembanga dan penelitian kebangsaan. Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara. Value

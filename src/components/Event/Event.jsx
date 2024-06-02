@@ -58,13 +58,13 @@ const Event = () => {
       <div>
         <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black  text-3xl lg:text-5xl" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+            <p className="text-black  text-3xl lg:text-5xl lg:px-[250px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Warta" : "News"}
             </p>
           </div>
         </div>
       </div>
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start">
+      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[250px]">
         <Link to="/" className="text-lg">
           {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
         </Link>
@@ -73,37 +73,41 @@ const Event = () => {
           {globalState.globalProperty === "IND" ? "Warta" : "News"}
         </Link>
       </div>
-
-      <div className="flex align-center justify-center flex-wrap mt-8 gap-4">
-        {currentData.map((item) => (
-          <Link
-            key={item.id}
-            to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
-            className="flex flex-col w-[400px] lg:w-[550px] min-h-[424px] p-4 border-4 rounded-lg hover:bg-[#09588D] hover:text-white mx-4 lg:mx-0"
-          >
-            <div className="">
-              <div>
-                <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
-              </div>
-              <div className="">
-                <p className="font-bold lg:text-[20px] py-6 justify-center">{item.headline}</p>
-                <p className="lg:text-[14px] leading-normal">{truncateText(item.deskripsi, 39)}</p>
-                <div className="maker-layout">
-                  <img loading="lazy" src={Logo} alt="logo" />
-                  <p className="">{item.maker}</p>
+      <div className="p-5 lg:p-8 lg:mx-[250px]">
+        <div className="mx-auto px-4 sm:px-6 lg:mx-16">
+          <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-2 justify-center">
+            {currentData.map((item) => (
+              <Link
+                key={item.id}
+                to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
+                className="border-4 rounded-lg p-4"
+              >
+                <div className="">
                   <div>
-                    <p className="date-style">{item.date}</p>
+                    <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+                  </div>
+                  <div className="">
+                    <p className="font-bold lg:text-[20px] py-6 justify-center">{item.headline}</p>
+                    <p className="lg:text-[14px] leading-normal">{truncateText(item.deskripsi, 39)}</p>
+                    <div className="maker-layout">
+                      <img loading="lazy" src={Logo} alt="logo" />
+                      <p className="">{item.maker}</p>
+                      <div>
+                        <p className="date-style">{item.date}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex justify-center">
+                      <button className="text-[15px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md">{globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}</button>
+                    </div>
                   </div>
                 </div>
-
-                <div className="link-layout">
-                  <p>{globalState.globalProperty === "IND" ? "Selengkapnya" : "More"}</p>
-                </div>
-              </div>
-            </div>
-          </Link>
-        ))}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
+
       <Pagination totalItems={sortedData.length} itemsPerPage={6} currentPage={currentPage} onPageChange={handlePageChange} />
     </>
   );

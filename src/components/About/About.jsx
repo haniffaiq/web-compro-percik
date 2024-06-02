@@ -48,7 +48,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32">
+      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:px-[250px]">
         {/* <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">
           TENTANG KAMI
         </div> */}

@@ -62,13 +62,13 @@ const Statistik = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
-          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
+          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[250px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
 {globalState.globalProperty === "IND" ? "Statistik Pertumbuhan Alumni" : "Statistics of Alumni Growth"}</div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>
 
-      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32">
+      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[250px]">
         <canvas ref={chartRef} id="myChart"></canvas>
       </div>
     </>
