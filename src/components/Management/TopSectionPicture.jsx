@@ -13,7 +13,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
     return <div>No data available for {selectedButton}</div>;
   }
 
-  if (selectedButton === "Pembina" || selectedButton === "Pengawas") {
+  if (selectedButton === "Pembina" || selectedButton === "Pengawas" || selectedButton === "Advisor" || selectedButton === "Supervisor") {
     return (
       <div className="parent-container">
         {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
@@ -39,7 +39,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
     );
   }
 
-  if (selectedButton === "Pengurus") {
+  if (selectedButton === "Pengurus" || selectedButton === "Administrator") {
     return (
       <div className="parent-container">
         {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }, index) => (

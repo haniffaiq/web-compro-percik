@@ -18,6 +18,21 @@ const Management = () => {
   const [selectedButton, setSelectedButton] = useState(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
   const [isPengurusSelected, setIsPengurusSelected] = useState(false);
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
     if (buttonName === "Pengurus" || buttonName === "Administrator") {
@@ -49,26 +64,50 @@ const Management = () => {
           {globalState.globalProperty === "IND" ? "MANAJEMEN" : "MANAGEMENT"}
         </Link>
       </div>
+      <div>
+        {windowWidth <= 600 || windowWidth <= 1440 ? (
+          <div className="managament-layout-main">
+            <div className="triple-button-container">
+              {globalState.globalProperty === "IND" ? (
+                <>
+                  <Button buttonName="Pembina" onClick={handleButtonClick} selected={selectedButton} />
 
-      <div className="managament-layout-main">
-        <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
-        <div className="triple-button-container">
-          {globalState.globalProperty === "IND" ? (
-            <>
-              <Button buttonName="Pembina" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Pengawas" onClick={handleButtonClick} selected={selectedButton} />
 
-              <Button buttonName="Pengawas" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Pengurus" onClick={handleButtonClick} selected={selectedButton} />
+                </>
+              ) : (
+                <>
+                  <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Supervisor" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
+                </>
+              )}
+            </div>
+            <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
+          </div>
+        ) : (
+          <div className="managament-layout-main">
+            <TopSectionPict selectedButton={selectedButton} manajemenData={globalState.globalProperty === "IND" ? data.bahasa : data.english} />
+            <div className="triple-button-container">
+              {globalState.globalProperty === "IND" ? (
+                <>
+                  <Button buttonName="Pembina" onClick={handleButtonClick} selected={selectedButton} />
 
-              <Button buttonName="Pengurus" onClick={handleButtonClick} selected={selectedButton} />
-            </>
-          ) : (
-            <>
-              <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
-              <Button buttonName="Supersivor" onClick={handleButtonClick} selected={selectedButton} />
-              <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
-            </>
-          )}
-        </div>
+                  <Button buttonName="Pengawas" onClick={handleButtonClick} selected={selectedButton} />
+
+                  <Button buttonName="Pengurus" onClick={handleButtonClick} selected={selectedButton} />
+                </>
+              ) : (
+                <>
+                  <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Supervisor" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
+                </>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
