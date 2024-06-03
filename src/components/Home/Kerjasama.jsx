@@ -13,6 +13,11 @@ const Kerjasama = () => {
         <ul class="list-disc flex justify-center grid justify-items-center flex-col gap-[50px] mt-[86px]">
           <li className="w-[350px] lg:w-[1000px] text-left text-md lg:text-2xl mt-[0px] leading-normal" style={{ fontFamily: "Maven Pro" }}>
             {globalState.globalProperty === "IND"
+              ? "Kerja sama pendidikan dengan PT Kertas Nusantara Kalimantan Timur | Kerja sama pendidikan dengan Yayasan Vidatra (PT Badak) Bontang, Kalimantan Timur | Kerja sama pendidikan dengan Yayasan KPS (Kontraktor Production Sharing) Balikpapan, Kalimantan Timur | Kerja sama pendidikan dengan Sangata Prima Coal, Sangata, Kalimantan Timur | Kerjasama Pendidikan Vokosi dengan PT Harapan Anang Bakri & Sons, PT Maligi Permata Industri Estate Karawang Jawa Barat | Kerja sama kesehatan dengan penyelenggara asuransi kesehatan | Kerja sama asuransi dengan PT Jaminan Sosial Tenaga Kerja.."
+              : "Educational cooperation with PT Kertas Nusantara, East Kalimantan | Educational cooperation with Vidatra Foundation (PT Badak), Bontang, East Kalimantan | Educational cooperation with KPS Foundation (Contractor Production Sharing), Balikpapan, East Kalimantan | Educational cooperation with Sangata Prima Coal, Sangata, East Kalimantan | Health cooperation with health insurance providers | Insurance cooperation with PT Jaminan Sosial Tenaga Kerja."}
+          </li>
+          <li className="w-[350px] lg:w-[1000px] text-left text-md lg:text-2xl mt-[0px] leading-normal" style={{ fontFamily: "Maven Pro" }}>
+            {globalState.globalProperty === "IND"
               ? "Yayasan Perguruan “CIKINI” dengan Sekolah Nasional KPS (Kontraktor Production Sharing) Balikpapan Kalimantan Timur mengelola Pendidikan TK, SD dan SMP KPS Balikpapan mulai Tahun 1976 berakhir tahun 2004, pihak Yayasan Sekolah Nasional KPS ingin berupaya mandiri dalam pengelolaan sekolah sendiri."
               : "The Perguruan 'CIKINI' Foundation and the KPS National School (Contractor Production Sharing) in Balikpapan, East Kalimantan, managed the education of KPS Balikpapan Kindergarten, Elementary School, and Junior High School from 1976 until 2004. The KPS National School Foundation aimed to independently manage its own schools."}
           </li>
