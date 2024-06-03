@@ -6,8 +6,8 @@ const Kerjasama = () => {
 
   return (
     <>
-      <div className="mt-[70px] ">
-        <div className="text-center text-3xl lg:text-2xl font-bold mb-10 bg-[#034694] text-white py-4 lg:mx-[350px] mx-[20px] lg:w-[1220px] rounded-xl" style={{ letterSpacing: 14 }}>
+      <div className="mt-[70px] lg:px-9 lg:py-4 lg:mx-[250px]">
+        <div className="text-center text-3xl lg:text-2xl font-bold mb-10 bg-[#034694] text-white py-4 rounded-xl" style={{ letterSpacing: 14 }}>
           {globalState.globalProperty === "IND" ? "KERJA SAMA DENGAN PIHAK LAIN" : "COOPERATION WITH OTHER PARTIES"}
         </div>
         <ul class="list-disc flex justify-center grid justify-items-center flex-col gap-[50px] mt-[86px]">

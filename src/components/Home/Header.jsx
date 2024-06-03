@@ -10,60 +10,24 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 const carouselItemsMulti = {
   bahasa: [
     {
-      image: require("../../assets/img/Home/H1.webp"),
+      image: require("../../assets/img/Home/H1-New.webp"),
     },
     {
-      image: require("../../assets/img/Home/H2.webp"),
+      image: require("../../assets/img/Home/H2-New.webp"),
     },
     {
-      image: require("../../assets/img/Home/H3.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H4.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H5.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H6.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H7.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H8.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H9.webp"),
+      image: require("../../assets/img/Home/H3-New.webp"),
     }
   ],
   english: [
     {
-      image: require("../../assets/img/Home/H1-ENG.webp"),
+      image: require("../../assets/img/Home/H1-New.webp"),
     },
     {
-      image: require("../../assets/img/Home/H2-ENG.webp"),
+      image: require("../../assets/img/Home/H2-New.webp"),
     },
     {
-      image: require("../../assets/img/Home/H3-ENG.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H4.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H5.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H6.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H7.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H8.webp"),
-    },
-    {
-      image: require("../../assets/img/Home/H9.webp"),
+      image: require("../../assets/img/Home/H3-New.webp"),
     }
   ]
 
@@ -173,7 +137,7 @@ const Header = () => {
         {!isMobile && (
           <Carousel autoplay>
             {carouselItemsSelected.map((item, index) => (
-              <div key={index} className="h-[300px] lg:h-[810px] relative">
+              <div key={index} className="h-[300px] lg:h-[1297px] relative">
                 <div
                   className="h-full bg-cover bg-center"
                   style={{
@@ -248,6 +212,17 @@ const Header = () => {
         )}
       </ConfigProvider>
 
+      <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
+        <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
+          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
+
+            {globalState.globalProperty === "IND"
+              ? "Fakta Perguruan 'CIKINI'"
+              : "Fakta Perguruan 'CIKINI'"}
+          </div>
+          {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
+        </div>
+      </div>
       <div className="lg:grid lg:grid-cols-3 flex flex-col lg:gap-0 h-[auto]">
         <div
           className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative"
