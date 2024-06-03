@@ -111,14 +111,14 @@
 }
 
 /* Untuk Laptop */
-/* @media only screen and (min-width: 1366px) and (max-width: 1920px) {
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
   .triple-button-container {
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 52px;
+    margin-top: 70px;
   }
 
   .triple-button-container button {
@@ -126,7 +126,6 @@
     background: #ededed;
     padding: 6px 21px 6px 21px;
     color: #000;
-
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -138,7 +137,6 @@
     background: #034da2;
     padding: 6px 21px 6px 21px;
     color: #fff;
-
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -156,7 +154,7 @@
     font-weight: 600;
     line-height: normal;
   }
-} */
+}
 
 /* Untuk Desktop PC */
 @media only screen and (min-width: 1920px) {
@@ -202,9 +200,9 @@
 /* Style Component Top Section Pict */
 /* Untuk Mobile */
 @media only screen and (max-width: 600px) {
-  .parent-container {
-    opacity: 0;
-    display: none;
+  .managament-layout-main {
+    display: flex;
+    flex-direction: column;
   }
   .top-section-pict-container {
     display: flex;
@@ -277,16 +275,11 @@
 }
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .parent-container {
-    opacity: 0;
-    display: none;
-  }
-
   .top-section-pict-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
-    margin-left: 125px;
+    margin-left: 240px;
     margin-top: 30px;
   }
 
@@ -351,52 +344,54 @@
     height: 300px;
   }
 }
-/* Untuk Laptop */
-.parent-container {
-  margin-bottom: 72px;
-}
+
 @media only screen and (min-width: 1366px) and (max-width: 1440px) {
+  .managament-layout-main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
   .top-section-pict-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
-    margin-left: 125px;
-  }
-
-  .yellow-bar-management-tittle {
-    border-top: 7px solid #faa61a;
-    width: 90px;
-    position: relative;
-    top: -15px;
+    margin-top: 60px;
   }
 
   .pict-list-management-wrapper {
-    width: 878px;
-    height: 382px;
+    width: 100%;
     flex-shrink: 0;
-    border: solid 3px #ebebeb;
     display: flex;
     flex-direction: row;
   }
 
+  .pict-list-management-wrapper-pengurus {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+
   .management-text-wrapper {
-    margin-left: 70px;
-    margin-top: 30px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
+    margin-top: 20px;
   }
 
   .overlay-text-management-tittle {
     color: #000;
-
-    font-size: 24px;
+    font-size: 34px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
   }
 
   .overlay-text-management-role {
     color: #000;
-
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -404,25 +399,45 @@
   }
 
   .overlay-text-management-desc {
-    max-width: 535px;
+    max-width: 766px;
+    max-height: 553px;
     color: #000;
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
   }
 
   .management-image-wrapper {
-    top: 39px;
+    top: 22px;
     right: 35px;
-    left: 30px;
+    left: 10px;
     position: relative;
   }
 
   .management-image-wrapper img {
-    width: 300px;
+    width: 420px;
     height: 300px;
+  }
+
+  .gray-sepparator {
+    border-top-width: 2px;
+    width: 100%;
+    color: #ebebeb;
+    margin-top: 70px;
+  }
+
+  .special-pak-budi-gray-sepparator {
+    border-top-width: 2px;
+    width: 100%;
+    color: #ebebeb;
+    margin-top: 80px;
+  }
+
+  .gray-sepparator-pengurus {
+    border-top-width: 2px;
+    width: 100%;
+    color: #ebebeb;
+    margin-top: -10px;
   }
 }
 

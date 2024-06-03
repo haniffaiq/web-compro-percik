@@ -9,7 +9,7 @@ const ManagementTittle = () => {
     <div>
       <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
         <div className="tittle-container mb-[-20px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-          <div className="ml-[145px]">
+          <div className="lg:ml-[145px]">
             <p className="text-black text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "Manajemen" : "Management"}</p>
           </div>
         </div>
