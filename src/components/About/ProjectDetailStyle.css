@@ -35,16 +35,16 @@
 
 .gallery-tittle h2 {
   color: #000;
-  
+
   font-size: 64px;
   font-style: normal;
-  font-weight: 700;
+
   line-height: normal;
 }
 
 .project-detail-main-container h2 {
   color: #000;
-  
+
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -62,7 +62,6 @@
 }
 
 .project-detail-main-container p {
-  
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -106,7 +105,7 @@
 
 .detail-selengkapnya-button-layout p {
   color: #fff;
-  
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

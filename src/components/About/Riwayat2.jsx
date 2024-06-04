@@ -7,7 +7,7 @@ const sejarah = {
   1: {
     id: "1",
     imgUrl: require("../../assets/img/history/ibu_pandu.webp"),
-    title: "ERA MERINTIS DAN PERJUANGAN (1942 - 1951)",
+    title: "Era Merintis dan Perjuangan (1942 - 1951)",
     content:
       "Pada tahun 1942, di tengah era perjuangan menuju kemerdekaan Republik Indonesia, Ibu Pandu Soeradhiningrat mengambil inisiatif untuk membuka kursus Bahasa Indonesia. Saat itu, tentara Jepang menutup sekolah-sekolah peninggalan Hindia Belanda, tetapi memberikan kebebasan berbicara dalam Bahasa Indonesia kepada rakyat pribumi. Ibu Pandu melihat peluang ini sebagai sarana untuk mencerdaskan anak bangsa dan menanamkan semangat perjuangan tanpa memandang status sosial, agama, dan politik. Kursus dimulai dengan 12 murid di rumah Dr. Rasyid, Jakarta, dibantu oleh guru bernama Ibu Mien Soemadji. Seiring bertambahnya jumlah murid, kursus berubah fungsi menjadi Sekolah Rakyat Partikelir 'MAYUMI' pada tanggal 1 Agustus 1942, dan hanya dalam waktu 3 bulan, tepatnya pada tanggal 1 November 1942, sekolah 'MAYUMI' dipindahkan ke Jalan Cikini Raya No. 76 karena jumlah murid yang terus meningkat mencapai 200 orang. Perjuangan Ibu Pandu dan perkembangan sekolahnya mencerminkan tekad untuk mencerdaskan generasi muda Indonesia di tengah keterbatasan dan perubahan kondisi pada masa itu.",
   },
@@ -118,18 +118,14 @@ const Riwayat2 = () => {
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
         <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:py-[28px] lg:mb-[28px] lg:px-16">
           <div className="flex justify-center text-center lg:flex lg:justify-between">
-<div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] lg:px-[145px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
-              {globalState.globalProperty === "IND"
-                ? "Riwayat Singkat Perguruan 'Cikini'"
-                : "'Cikini' School Brief History"}
-            </div>
-            <Link
-              to="/about-detail"
-              className="text-center mr-[30px] lg:mt-3 mt-16  lg:mr-16"
+            <div
+              className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] lg:px-[145px]"
+              style={{ fontFamily: "Hedvig Letters Serif, serif" }}
             >
-              <button className="text-[20px] text-center bg-[#40E0D0] lg:px-6 lg:py-2 w-auto rounded-full p-1 text-white px-3">
-                {globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}
-              </button>
+              {globalState.globalProperty === "IND" ? "Riwayat Singkat Perguruan 'Cikini'" : "'Cikini' School Brief History"}
+            </div>
+            <Link to="/about-detail" className="text-center mr-[30px] lg:mt-3 mt-16  lg:mr-16">
+              <button className="text-[20px] text-center bg-[#40E0D0] lg:px-6 lg:py-2 w-auto rounded-full p-1 text-white px-3">{globalState.globalProperty === "IND" ? "Selengkapnya" : "See More"}</button>
             </Link>
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-4"></div> */}
@@ -143,31 +139,19 @@ const Riwayat2 = () => {
           >
             {Object.keys(selectedData).map((key) => (
               <div className="lg:flex gap-5 mt-10 lg:px-2">
-                <img
-                  loading="lazy"
-                  src={selectedData[key].imgUrl}
-                  className="lg:object-cover flex h-[200px] lg:h-[250px] gap-10 lg:w-[200px] w-full "
-                  alt="selectedData[key].imgUrl"
-                />
+                <img loading="lazy" src={selectedData[key].imgUrl} className="lg:object-cover flex h-[200px] lg:h-[250px] gap-10 lg:w-[200px] w-full " alt="selectedData[key].imgUrl" />
                 {/* <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div> */}
                 <div className="col-span-2">
-                  <div className="text-[12px] lg:text-[21px] font-bold text-black lg:px-2" style={{ whiteSpace: 'pre-line' }}>
+                  <div className="text-[12px] lg:text-[21px] font-bold text-black lg:px-2" style={{ whiteSpace: "pre-line" }}>
                     {selectedData[key].title}
                   </div>
-                  <div className="flex flex-col gap-5 text-[12px] lg:text-[18px] mt-5 lg:mt-2 text-black w-full lg:w-auto text-left lg:px-2">
-                    {truncateText(selectedData[key].content, 32)}...
-                  </div>
+                  <div className="flex flex-col gap-5 text-[12px] lg:text-[18px] mt-5 lg:mt-2 text-black w-full lg:w-auto text-left lg:px-2">{truncateText(selectedData[key].content, 32)}...</div>
                 </div>
               </div>
             ))}
           </div>
-          <Link
-            to="/about-detail"
-            className="lg:hidden flex justify-center text-center lg:mt-3 mt-16 py-2"
-          >
-            <button className="border border-none px-3 rounded-lg py-1 bg-[#40E0D0] lg:px-6 lg:py-2 text-white ">
-              Lihat Selengkapnya
-            </button>
+          <Link to="/about-detail" className="lg:hidden flex justify-center text-center lg:mt-3 mt-16 py-2">
+            <button className="border border-none px-3 rounded-lg py-1 bg-[#40E0D0] lg:px-6 lg:py-2 text-white ">Lihat Selengkapnya</button>
           </Link>
         </div>
       </div>
