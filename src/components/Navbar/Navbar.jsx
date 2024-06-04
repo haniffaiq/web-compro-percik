@@ -83,7 +83,7 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
             {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
           </Link>
           <Link to="/about" className={location.pathname === "/about" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
+            {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"}
           </Link>
           <Link to="/management" className={location.pathname === "/management" ? "text-black text-[21px] " : "text-[#6B7280] "} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}
@@ -138,10 +138,10 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
         <div className={"lg:flex flex-grow items-center pt-5 pb-5" + (navbarOpen ? " " : " hidden")} id="example-navbar-danger">
           <div className="flex flex-col lg:hidden text-center gap-5 list-none lg:ml-auto">
             <Link to="/" className={location.pathname === "/" ? " text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
-              {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
+              {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
             </Link>
             <Link to="/about" className={location.pathname === "/about" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
-              {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
+              {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"}
             </Link>
             <Link to="/school" className={location.pathname === "/school" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
               {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
@@ -202,10 +202,10 @@ const DesktopNavbar = ({ navbarClasses, globalState, updateGlobalState, location
         <div className="flex justify-between lg:grid lg:grid-cols-5 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] mt-[15px] items-center">
           <div className="hidden lg:flex items-center gap-6 w-full col-span-4 justify-start">
             <Link to="/" className={location.pathname === "/" ? " text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-              {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
+              {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
             </Link>
             <Link to="/about" className={location.pathname === "/about" ? "text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-              {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
+              {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"}
             </Link>
             <Link to="/management" className={location.pathname === "/management" ? "text-black mx-6 font-[600] text-md" : "text-[#6B7280] mx-6 font-[600] text-md"} style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
               {globalState.globalProperty === "IND" ? "Manajemen" : "Management"}

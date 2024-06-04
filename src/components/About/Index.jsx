@@ -53,20 +53,20 @@ const About = () => {
 
         <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black  text-3xl lg:text-5xl lg:px-[250px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>{globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}</p>
+            <p className="text-black  text-3xl lg:text-5xl lg:px-[145px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>{globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"}</p>
           </div>
           {/* <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div> */}
         </div>
       </div>
 
 
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[250px] justify-center lg:justify-start lg:px-[250px]">
-        <Link to="/" className="text-lg lg:text-lg text-sm">
-          {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
+      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] justify-center lg:justify-start lg:px-[145px]">
+        <Link to="/" className="text-lg lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
+          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
-        <span className="text-lg lg:text-lg text-sm"> &gt; </span>
-        <Link to="/about" className="font-bold text-lg lg:text-lg text-sm">
-          {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
+        <span className="text-lg lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}> &gt; </span>
+        <Link to="/about" className="font-bold text-lg lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
+          {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"}
         </Link>
       </div>
 
@@ -109,13 +109,13 @@ const About = () => {
 
         <div className="h-[1000px] sticky top-0 z-10 lg:block hidden">
           <div className="mt-32 grid grid-rows justify-center">
-            <button onClick={() => handleClick(riwayatRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Riwayat</button>
-            <button onClick={() => handleClick(maknaRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Makna Logo</button>
-            <button onClick={() => handleClick(prinsipRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Prinsip Dasar</button>
-            <button onClick={() => handleClick(visiMisiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Visi, Misi & Value</button>
-            <button onClick={() => handleClick(akreditasiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">SK Akreditasi</button>
-            <button onClick={() => handleClick(strukturRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Struktur Organisasi</button>
-            <button onClick={() => handleClick(statistikRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2">Statistik</button>
+            <button onClick={() => handleClick(riwayatRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4 ">Riwayat</button>
+            <button onClick={() => handleClick(maknaRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4">Makna Logo</button>
+            <button onClick={() => handleClick(prinsipRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4">Prinsip Dasar</button>
+            <button onClick={() => handleClick(visiMisiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4">Visi, Misi & Value</button>
+            <button onClick={() => handleClick(akreditasiRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4">SK Akreditasi</button>
+            <button onClick={() => handleClick(strukturRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4">Struktur Organisasi</button>
+            <button onClick={() => handleClick(statistikRef)} className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4">Statistik</button>
 
           </div>
         </div>

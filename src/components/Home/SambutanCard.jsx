@@ -53,7 +53,7 @@ const SambutanCard = () => {
         <div className="text-center text-3xl lg:text-2xl font-bold mb-10 bg-[#034694] text-white py-4  rounded-xl" style={{ letterSpacing: 14 }}>
           {globalState.globalProperty === "IND" ? "SAMBUTAN" : "WELCOMING"}
         </div>
-        <div className="grid grid-cols-1 lg:gap-20 lg:grid-cols-4">
+        <div className="grid grid-cols-1 lg:gap-5 lg:grid-cols-4">
           <div></div>
           {selectedData.map((value, index) => {
             return (

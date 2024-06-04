@@ -105,9 +105,9 @@ const EventDetail = () => {
           {/* <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div> */}
         </div>
       </div>
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[250px] align-center justify-center ">
+      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] align-center justify-center ">
         <Link to="/" className="text-lg">
-          {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
+          {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="text-lg"> &gt; </span>
         <Link to="/event" className="font-bold text-lg">

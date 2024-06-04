@@ -38,8 +38,8 @@ const Akreditasi = () => {
     return (
         <>
             <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
-                <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
-                    <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[250px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
+                <div className=" w-full lg:py-[28px]">
+                    <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
 
                         {globalState.globalProperty === "IND"
                             ? "SK Akreditasi"
@@ -48,7 +48,7 @@ const Akreditasi = () => {
                     {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
                 </div>
             </div>
-            <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[250px]">
+            <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[145px] lg:pr-28">
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
                     {Selecteddata.map((item, index) => (
                         <div key={index} className="w-full" onClick={() => handleCardClick(item.imgurl)}>

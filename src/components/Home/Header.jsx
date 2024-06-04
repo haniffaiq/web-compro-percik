@@ -213,8 +213,8 @@ const Header = () => {
       </ConfigProvider>
 
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
-        <div className=" bg-[#E1E1E1] w-full lg:py-[28px]">
-          <div className="text-black text-xl lg:text-5xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
+        <div className="w-full lg:py-[28px]">
+          <div className="text-black text-xl lg:text-[54px] mt-16 lg:mt-0 py-[40px] text-center" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
 
             {globalState.globalProperty === "IND"
               ? "Fakta Perguruan 'CIKINI'"
@@ -233,9 +233,9 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#FAAE35] bg-opacity-80"></div>{" "}
           {/* Overlay kuning */}
-          <div className="flex text-6xl lg:text-9xl lg:text-white text-white relative z-10">
+          <div className="flex text-6xl lg:text-[150px] lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans ">{rounded1}</motion.h1>
-            <h1 className="text-6xl lg:text-9xl font-bold font-sans">+</h1>
+            <h1 className="text-6xl lg:text-[150px] font-bold font-sans">+</h1>
           </div>
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
             {globalState.globalProperty === "IND" ? "Mendidik pelajar/mahasiswa berkualitas \n yang siap dengan dunia kerja" : "Educating qualified students \n who are ready to face the world of work"}
@@ -250,9 +250,9 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#30B8A9] bg-opacity-80"></div>{" "}
           {/* Overlay merah */}
-          <div className="flex text-6xl lg:text-9xl lg:text-white text-white relative z-10">
+          <div className="flex text-6xl lg:text-[150px] lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans">{rounded2}</motion.h1>
-            <div className="text-6xl lg:text-9xl font-bold font-sansfont-bold">+</div>
+            <div className="text-6xl lg:text-[150px] font-bold font-sansfont-bold">+</div>
           </div>
 
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
@@ -268,9 +268,9 @@ const Header = () => {
         >
           <div className="absolute inset-0 bg-[#7888C4] bg-opacity-80"></div>{" "}
           {/* Overlay biru */}
-          <div className="flex text-6xl lg:text-9xl lg:text-white text-white relative z-10">
+          <div className="flex text-6xl lg:text-[150px] lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans">{rounded3}</motion.h1>
-            <div className="text-6xl lg:text-9xl font-bold font-sans">%</div>
+            <div className="text-6xl lg:text-[150px] font-bold font-sans">%</div>
           </div>
           <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
             {globalState.globalProperty === "IND" ? "Tingkat keberhasilan pelajar/mahasiswa \n yang diterima kerja" : "Success rate of students who are \n accepted to work"}

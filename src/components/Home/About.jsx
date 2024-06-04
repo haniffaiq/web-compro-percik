@@ -34,11 +34,11 @@ const About = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 items-center lg:pt-12 pt-4 lg:p-[250px]">
-        <div className="text-center lg:text-start text-2xl lg:text-5xl font-bold mb-5 lg:mb-10">
+      <div className="flex flex-col gap-2 items-center lg:px-[250px]">
+        <div className="text-center lg:text-start text-2xl lg:text-[54px] py-[58px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
           {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"} <br />
         </div>
-        <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-row-2 gap-5 w-full lg:p-24 px-4 ">
+        <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-row-2 gap-5 w-full lg:px-24 px-4 ">
           <div className="justify-center flex">
             <img loading="lazy" className="w-auto" src={AboutImg} alt="img" />
           </div>
