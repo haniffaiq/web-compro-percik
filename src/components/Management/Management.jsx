@@ -55,12 +55,12 @@ const Management = () => {
     <>
       <ManagementTittle />
 
-      <div className="flex gap-1 lg:ml-[270px] py-2 mt-[28px] justify-center lg:justify-start">
+      <div className="flex gap-1 lg:ml-[270px] py-2 mt-[28px] justify-center lg:justify-start tracking-widest" style={{ fontFamily: "Maven Pro" }}>
         <Link to="/" className="lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="lg:text-lg text-sm"> &gt; </span>
-        <Link to="/management" className="font-bold lg:text-lg text-sm">
+        <Link to="/management" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
           {globalState.globalProperty === "IND" ? "MANAJEMEN" : "MANAGEMENT"}
         </Link>
       </div>
