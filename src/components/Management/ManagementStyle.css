@@ -48,6 +48,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 19px;
+    font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button {
@@ -60,6 +61,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button.selected {
@@ -71,6 +73,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 }
 
@@ -83,6 +86,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 19px;
+    font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button {
@@ -95,6 +99,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button.selected {
@@ -107,6 +112,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 }
 
@@ -130,29 +136,32 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button.selected {
     border-radius: 20px;
+    font-weight: bold;
     background: #034da2;
     padding: 6px 21px 6px 21px;
-    color: #fff;
+    color: #034da2;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button:hover {
     border-radius: 20px;
-    background: #034da2;
+    font-weight: bold;
     padding: 6px 21px 6px 21px;
-    color: #fff;
-
+    color: #034da2;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 }
 
@@ -170,28 +179,30 @@
   .triple-button-container button {
     padding: 6px 21px 6px 21px;
     color: #000;
-    font-size: 16px;
+    font-size: 20px;
     line-height: normal;
-
-    width: 119px;
+    font-family: "Hedvig Letters Serif, serif";
+    width: 189px;
     text-align: left;
   }
 
   .triple-button-container button.selected {
     padding: 6px 21px 6px 21px;
-    color: #fff;
-    font-size: 16px;
+    font-weight: bold;
+    color: #034da2;
+    font-size: 20px;
     line-height: 22px;
-    background-color: #034da2;
+    font-family: "Hedvig Letters Serif, serif";
     border-radius: 7px;
   }
   .triple-button-container button:hover {
     padding: 6px 21px 6px 21px;
-    color: #fff;
-    font-size: 16px;
+    font-weight: bold;
+    color: #034da2;
+    font-size: 20px;
     line-height: normal;
-    background-color: #034da2;
     border-radius: 7px;
+    font-family: "Hedvig Letters Serif, serif";
   }
 }
 
