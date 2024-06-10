@@ -19,12 +19,12 @@ const bahasa = (
 const english = (
   <>
     {" "}
-    The "CIKINI" Education Foundation has achieved remarkable success as an educational institution with an impressive track record. Since its establishment, this foundation has produced many outstanding individuals who now contribute to
-    various sectors in Indonesia. The alumni of "CIKINI" Educational Institution stand as concrete evidence of the foundation's dedication to shaping an excellent and accomplished generation. <br />
+    Yayasan Perguruan "CIKINI" (CIKINI Educational Foundation). has achieved remarkable success as an educational institution with an impressive track record. Since its establishment, this foundation has produced many outstanding
+    individuals who now contribute to various sectors in Indonesia. The alumni of Yayasan Perguruan "CIKINI" stand as concrete evidence of the foundation's dedication to shaping an excellent and accomplished generation. <br />
     <br />
-    The "CIKINI" Education Foundation continues to innovate without abandoning its strong traditions. By combining traditional richness with an innovative spirit, the foundation provides an education that is not only relevant to current
-    developments but also empowers the next generation to face the future. Community support, dedicated teachers, and a commitment to quality education make the "CIKINI" Education Foundation a pioneer in shaping the character and
-    intelligence of the nation's children.
+    Yayasan Perguruan "CIKINI" continues to innovate without abandoning its strong traditions. By combining traditional richness with an innovative spirit, the foundation provides an education that is not only relevant to current
+    developments but also empowers the next generation to face the future. Community support, dedicated teachers, and a commitment to quality education make the Yayasan Perguruan "CIKINI" a pioneer in shaping the character and intelligence
+    of the nation's children.
   </>
 );
 const About = () => {
@@ -35,7 +35,7 @@ const About = () => {
   return (
     <>
       <div className="flex flex-col gap-2 items-center lg:px-[250px]">
-        <div className="text-center lg:text-start text-2xl lg:text-[54px] py-[58px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
+        <div className="text-center lg:text-start text-2xl lg:text-[54px] py-[58px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
           {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"} <br />
         </div>
         <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-row-2 gap-5 w-full lg:px-24 px-4 ">

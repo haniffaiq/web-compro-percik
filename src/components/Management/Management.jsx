@@ -78,9 +78,9 @@ const Management = () => {
                 </>
               ) : (
                 <>
-                  <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
-                  <Button buttonName="Supervisor" onClick={handleButtonClick} selected={selectedButton} />
-                  <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Governing Board" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Supervisory Board" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Executive Board" onClick={handleButtonClick} selected={selectedButton} />
                 </>
               )}
             </div>
@@ -100,9 +100,9 @@ const Management = () => {
                 </>
               ) : (
                 <>
-                  <Button buttonName="Advisor" onClick={handleButtonClick} selected={selectedButton} />
-                  <Button buttonName="Supervisor" onClick={handleButtonClick} selected={selectedButton} />
-                  <Button buttonName="Administrator" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Governing Board" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Supervisory Board" onClick={handleButtonClick} selected={selectedButton} />
+                  <Button buttonName="Executive Board" onClick={handleButtonClick} selected={selectedButton} />
                 </>
               )}
             </div>

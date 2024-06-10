@@ -58,12 +58,12 @@ const Project = () => {
         </Link>
         <span className="text-lg"> &gt; </span>
         <Link to="/project" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}
+          {globalState.globalProperty === "IND" ? "DETAIL PENGEMBANGAN" : "DEVELOPMENT DETAILS"}
         </Link>
       </div>
       <div className="page-tittle">
         {/* <p>{globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}</p> */}
-        <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">{globalState.globalProperty === "IND" ? "RENCANA PEMBANGUNAN SEKOLAH" : "PLANNED SCHOOL CONSTRUCTION"}</div>
+        {/* <div className="text-center text-3xl lg:text-5xl font-bold mb-10 ">{globalState.globalProperty === "IND" ? "RENCANA PEMBANGUNAN SEKOLAH" : "PLANNED SCHOOL CONSTRUCTION"}</div> */}
       </div>
 
       <div className="image-list-container">

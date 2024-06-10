@@ -13,7 +13,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
     return <div>No data available for {selectedButton}</div>;
   }
 
-  if (selectedButton === "Pembina" || selectedButton === "Pengawas" || selectedButton === "Advisor" || selectedButton === "Supervisor") {
+  if (selectedButton === "Pembina" || selectedButton === "Pengawas" || selectedButton === "Governing Board" || selectedButton === "Supervisory Board") {
     return (
       <div className="parent-container">
         {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }) => (
@@ -23,11 +23,15 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
               </div>
               <div className="management-text-wrapper">
-                <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
+                <p className="overlay-text-management-tittle" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                  {namaLengkapManajemen}
+                </p>
 
                 <div className="overlay-text-management-desc">
                   {deskripsiManajemen.split("\n").map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
+                    <p key={index} style={{ fontFamily: "Maven Pro" }}>
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -39,7 +43,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
     );
   }
 
-  if (selectedButton === "Pengurus" || selectedButton === "Administrator") {
+  if (selectedButton === "Pengurus" || selectedButton === "Executive Board") {
     return (
       <div className="parent-container">
         {filteredData.map(({ id, namaLengkapManajemen, jabatanManajemen, deskripsiManajemen, imageSourceManajemen }, index) => (
@@ -49,11 +53,15 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
               </div>
               <div className="management-text-wrapper">
-                <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
+                <p className="overlay-text-management-tittle" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                  {namaLengkapManajemen}
+                </p>
 
                 <div className="overlay-text-management-desc">
                   {deskripsiManajemen.split("\n").map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
+                    <p key={index} style={{ fontFamily: "Maven Pro" }}>
+                      {paragraph}
+                    </p>
                   ))}
                 </div>
               </div>
