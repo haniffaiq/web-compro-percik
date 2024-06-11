@@ -69,36 +69,34 @@ const Event = () => {
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="text-lg"> &gt; </span>
-        <Link to="/event" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "Warta" : "News"}
+        <Link to="/event" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
+          {globalState.globalProperty === "IND" ? "WARTA" : "NEWS"}
         </Link>
       </div>
-      <div className="p-5 lg:p-8 lg:mx-[250px]">
+      <div className="p-5 lg:p-8 lg:mx-[150px]">
         <div className="mx-auto px-4 sm:px-6 lg:mx-16">
-          <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-2 justify-center">
+          <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-2 ">
             {currentData.map((item) => (
-              <Link
-                key={item.id}
-                to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
-                className="border-4 rounded-lg p-4"
-              >
-                <div className="">
+              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="border-2 rounded-t-[20px] h-[1000px] ">
+                <div>
                   <div>
-                    <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} />
+                    <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} className="rounded-t-[20px]" />
                   </div>
                   <div className="">
-                    <p className="font-bold lg:text-[20px] py-6 justify-center">{item.headline}</p>
-                    <p className="lg:text-[14px] leading-normal">{truncateText(item.deskripsi, 39)}</p>
-                    <div className="maker-layout">
+                    <p className="font-bold lg:text-[32px] py-6 justify-center pl-[37px] w-[488px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                      {item.headline}
+                    </p>
+                    <p className="lg:text-[22px] leading-normal pl-[37px] w-[515px]">{truncateText(item.deskripsi, 50)}</p>
+                    {/* <div className="maker-layout pl-[37px]">
                       <img loading="lazy" src={Logo} alt="logo" />
                       <p className="">{item.maker}</p>
                       <div>
                         <p className="date-style">{item.date}</p>
                       </div>
-                    </div>
+                    </div> */}
 
-                    <div className="flex justify-center">
-                      <button className="text-[15px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md">{globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}</button>
+                    <div className="flex mt-[35px] mx-[170px]">
+                      <button className="text-[15px] text-center bg-black lg:px-6 lg:py-2 w-[249px] h-[40px] p-1 text-white px-3 rounded-md">{globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}</button>
                     </div>
                   </div>
                 </div>

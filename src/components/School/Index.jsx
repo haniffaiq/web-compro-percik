@@ -31,8 +31,8 @@ const School = () => {
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="text-lg"> &gt; </span>
-        <Link to="/school" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "Sekolah" : "School"}
+        <Link to="/school" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
+          {globalState.globalProperty === "IND" ? "SEKOLAH" : "SCHOOL"}
         </Link>
       </div>
       {/* <Alur /> */}

@@ -57,7 +57,7 @@ const Project = () => {
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="text-lg"> &gt; </span>
-        <Link to="/project" className="font-bold text-lg">
+        <Link to="/project" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
           {globalState.globalProperty === "IND" ? "DETAIL PENGEMBANGAN" : "DEVELOPMENT DETAILS"}
         </Link>
       </div>
@@ -71,9 +71,9 @@ const Project = () => {
           <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="image-list-wrapper">
             <img loading="lazy" src={require(`../../assets/img/project/${item.urlImage}`)} alt="img" />
             <p className="overlay-text-tittle">{item.tittleProyek}</p>
-            <p className="overlay-text-desc">{truncateText(item.deskripsiProyek, 29)}...</p>
+            <p className="overlay-text-desc">{item.deskripsiProyek}</p>
             <Link key={item.id} to={`/project-detail?id=${item.id}&tittle=${item.tittleProyek}&desc=${item.deskripsiProyek}&img=${item.urlImage}`} className="link-layout">
-              <p>{globalState.globalProperty === "IND" ? "Selengkapnya" : "More"}</p>
+              <p>{globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}</p>
             </Link>
           </Link>
         ))}

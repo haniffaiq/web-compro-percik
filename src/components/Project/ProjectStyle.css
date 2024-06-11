@@ -195,7 +195,7 @@
 }
 
 /* Laptop */
-@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+/* @media only screen and (min-width: 1366px) and (max-width: 1920px) {
   .tittle-management-wrapper {
     background: #ebebeb;
   }
@@ -229,7 +229,7 @@
   .image-list-container {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
-    gap: 30px; /* Optional: adds space between items */
+    gap: 30px; 
     padding: 16px;
     justify-content: center;
     align-items: center;
@@ -292,7 +292,7 @@
     font-size: 14px;
     color: #fff;
   }
-}
+} */
 
 /* Desktop PC */
 @media only screen and (min-width: 1920px) {
@@ -328,49 +328,58 @@
     display: grid;
     grid-template-columns: repeat(2, 0fr);
     gap: 30px; /* Optional: adds space between items */
-    padding: 16px;
-    justify-content: center;
-    align-items: center;
+    margin-left: 270px;
+    margin-right: 270px;
   }
 
   .image-list-wrapper {
     border: 2px solid #ebebeb;
     display: flex;
     flex-direction: column;
-    padding: 19px;
-    width: 550px;
-    height: 480px;
+    width: 670px;
+    height: 889px;
     margin-bottom: 57px;
+    border-radius: 20px;
   }
 
   .image-list-wrapper img {
-    width: 480px;
-    max-height: 400px;
+    width: 670px;
+    min-height: 358px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .overlay-text-tittle {
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bold;
-    line-height: 22px;
-    min-width: 370px;
+    line-height: 40px;
+    width: 488px;
     min-height: 50px;
-    margin-top: 22px;
+    margin-top: 41px;
+    margin-left: 37px;
+    font-family: "Hedvig Letters Serif";
   }
 
   .overlay-text-desc {
-    font-size: 14px;
+    font-size: 22px;
     color: #000;
     font-weight: normal;
     margin-top: 2px;
     line-height: 1.5;
+    width: 515px;
+    min-height: 225px;
+    margin-left: 37px;
   }
 
   .link-layout {
-    background-color: turquoise;
-    width: 133px;
-    height: 26px;
-    border-radius: 15px;
-    padding: 5px 14.95px 6px 16px;
+    background-color: #000;
+    width: 249px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 9px 14.95px 9px 16px;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
   }
@@ -382,7 +391,8 @@
     transform: translateY(1px);
   }
   .link-layout p {
-    font-size: 14px;
+    font-size: 19px;
     color: #fff;
+    font-family: "Maven Pro";
   }
 }
