@@ -403,7 +403,7 @@
 }
 
 /* Untuk Laptop */
-@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+@media only screen and (min-width: 1366px) and (max-width: 1440px) {
   .project-detail-main-container {
     width: auto;
     margin-top: 100px;
@@ -414,11 +414,9 @@
   }
   .project-detail-main-container h1 {
     color: #000;
-
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 54px;
+    font-family: "Hedvig Letters Serif";
+    line-height: 64px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -440,11 +438,10 @@
 
   .desc-container-layout p {
     font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
+
     line-height: 1.5;
     letter-spacing: -0.176px;
-    text-align: justify;
+    text-align: left;
     padding-right: 5%;
     padding-left: 5%;
   }
@@ -518,11 +515,10 @@
   }
   .project-detail-main-container h1 {
     color: #000;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: 1200px;
+    font-size: 54px;
+    font-family: "Hedvig Letters Serif";
+    line-height: 64px;
+    width: 1220px;
     text-align: center;
   }
 
@@ -533,23 +529,26 @@
   }
 
   .image-detail-layout img {
-    width: 1200px;
+    width: 1220px;
     height: 620px;
-    border-radius: 20px;
+    border-radius: 11px;
     margin-top: 20px;
   }
 
   .desc-container-layout p {
     font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
+    line-height: 32px;
     letter-spacing: -0.176px;
-    text-align: justify;
+    text-align: left;
+    font-family: "Maven Pro";
+    width: 1220px;
   }
 
   .desc-container-layout {
     width: 1490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .desc-main-container {
@@ -573,10 +572,10 @@
 
   .detail-selengkapnya-text {
     color: #000;
-
+    font-family: "Maven Pro";
     font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
+    letter-spacing: -0.176px;
+    line-height: 32px;
   }
 
   .button-download-style {
@@ -616,22 +615,21 @@
 }
 .project-detail-main-container-pdf h2 {
   color: #000;
+  font-size: 54px;
+  font-family: "Hedvig Letters Serif";
+  line-height: 64px;
 
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .desc-container-layout-pdf p {
   font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 32px;
   letter-spacing: -0.176px;
-  text-align: justify;
+  text-align: left;
+  font-family: "Maven Pro";
 }
 
 .desc-container-layout-pdf {
@@ -639,7 +637,7 @@
 }
 
 .desc-main-container-pdf {
-  margin-top: 47px;
+  margin-top: 87px;
   display: flex;
   justify-content: center;
   align-items: center;

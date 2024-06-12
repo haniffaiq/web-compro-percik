@@ -80,10 +80,10 @@ const Event = () => {
               <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="border-2 rounded-t-[20px] h-[1000px] ">
                 <div>
                   <div>
-                    <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} className="rounded-t-[20px]" />
+                    <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} className="rounded-t-[20px] lg:h-[400px]" />
                   </div>
                   <div className="">
-                    <p className="font-bold lg:text-[32px] py-6 justify-center pl-[37px] w-[488px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                    <p className="font-bold lg:text-[32px] py-6 justify-center pl-[37px] w-[598px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
                       {item.headline}
                     </p>
                     <p className="lg:text-[22px] leading-normal pl-[37px] w-[515px]">{truncateText(item.deskripsi, 50)}</p>

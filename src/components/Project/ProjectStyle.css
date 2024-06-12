@@ -337,14 +337,14 @@
     display: flex;
     flex-direction: column;
     width: 670px;
-    height: 889px;
+    height: 990px;
     margin-bottom: 57px;
     border-radius: 20px;
   }
 
   .image-list-wrapper img {
     width: 670px;
-    min-height: 358px;
+    min-height: 410px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -353,7 +353,7 @@
     font-size: 32px;
     font-weight: bold;
     line-height: 40px;
-    width: 488px;
+    width: 428px;
     min-height: 50px;
     margin-top: 41px;
     margin-left: 37px;
