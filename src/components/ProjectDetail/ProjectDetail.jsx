@@ -91,7 +91,9 @@ const ProjectDetail = () => {
       <div>
         <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black  text-3xl lg:text-5xl lg:px-[145px]" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>{globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}</p>
+            <p className="text-black  text-3xl lg:text-5xl lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+              {globalState.globalProperty === "IND" ? "Pengembangan" : "Development"}
+            </p>
           </div>
           {/* <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div> */}
         </div>
@@ -101,19 +103,19 @@ const ProjectDetail = () => {
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="text-lg"> &gt; </span>
-        <Link to="/project" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "Detail Proyek" : "Project Details"}
+        <Link to="/project" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
+          {globalState.globalProperty === "IND" ? "DETAIL PENGEMBANGAN" : "DEVELOPMENT DETAILS"}
         </Link>
       </div>
 
       <div className="project-detail-main-container">
         {globalState.globalProperty === "IND" ? (
-          <h1 style={{ whiteSpace: 'pre-line' }}>
-              <React.Fragment >{projectDatasBahasa.tittleProyek}</React.Fragment>
+          <h1 style={{ whiteSpace: "pre-line" }}>
+            <React.Fragment>{projectDatasBahasa.tittleProyek}</React.Fragment>
           </h1>
         ) : (
           <h1>
-              <React.Fragment >{projectDatasEnglish.tittleProyek}</React.Fragment>
+            <React.Fragment>{projectDatasEnglish.tittleProyek}</React.Fragment>
           </h1>
         )}
 
