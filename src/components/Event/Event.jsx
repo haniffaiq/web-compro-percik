@@ -75,18 +75,18 @@ const Event = () => {
       </div>
       <div className="p-5 lg:p-8 lg:mx-[150px]">
         <div className="mx-auto px-4 sm:px-6 lg:mx-16">
-          <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-2 ">
+          <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-2  ">
             {currentData.map((item) => (
-              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="border-2 rounded-t-[20px] h-[1000px] ">
+              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="border-2 rounded-t-[20px] h-[1000px] mt-[50px] ">
                 <div>
                   <div>
                     <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} className="rounded-t-[20px] lg:h-[400px]" />
                   </div>
                   <div className="">
-                    <p className="font-bold lg:text-[32px] py-6 justify-center pl-[37px] w-[598px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                    <p className="lg:text-[32px] py-6 justify-center pl-[37px] w-[598px] mt-[21px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
                       {item.headline}
                     </p>
-                    <p className="lg:text-[22px] leading-normal pl-[37px] w-[515px]">{truncateText(item.deskripsi, 50)}</p>
+                    <p className="lg:text-[22px] leading-normal pl-[37px] w-[609px]">{truncateText(item.deskripsi, 50)}</p>
                     {/* <div className="maker-layout pl-[37px]">
                       <img loading="lazy" src={Logo} alt="logo" />
                       <p className="">{item.maker}</p>
@@ -96,7 +96,9 @@ const Event = () => {
                     </div> */}
 
                     <div className="flex mt-[35px] mx-[170px]">
-                      <button className="text-[15px] text-center bg-black lg:px-6 lg:py-2 w-[249px] h-[40px] p-1 text-white px-3 rounded-md">{globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}</button>
+                      <button className="text-[19px] text-center bg-black lg:px-[16px] lg:py-[9px] w-[249px] h-[40px] p-1 text-white px-3 rounded-md" style={{ fontFamily: "Maven Pro", letterSpacing: 2 }}>
+                        {globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}
+                      </button>
                     </div>
                   </div>
                 </div>

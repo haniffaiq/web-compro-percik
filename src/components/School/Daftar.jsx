@@ -8,7 +8,7 @@ import Telf from "../../assets/icon/telfon.svg";
 import data from "../../assets/json/school.json";
 
 const Daftar = () => {
-  let schoolsData = data.bahasa
+  let schoolsData = data.bahasa;
   const { globalState, updateGlobalState } = useContext(AppContext);
   const [saveId, setSaveId] = useState(null);
   console.log(globalState.globalProperty + saveId);
@@ -19,10 +19,9 @@ const Daftar = () => {
   } else {
     sortedData = [...data.english];
   }
-  
+
   return (
     <div className="p-5 lg:p-8 lg:mx-[250px]">
-      <div className="text-center text-3xl lg:text-5xl font-bold mb-10">Daftar Sekolah</div>
       <div className="mx-auto px-4 sm:px-6 lg:mx-16">
         <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-3">
           {sortedData.map((school) => (
@@ -34,20 +33,16 @@ const Daftar = () => {
                 //   // <SchoolDetail data={saveId} />;
                 // }}
                 className="border-4 rounded-lg p-4"
-                style={{ margin: '10px 0' }}
+                style={{ margin: "10px 0" }}
               >
                 <div className="w-full h-64 lg:h-64 overflow-hidden">
-                  <img
-                    className="w-full h-full object-cover"
-                    src={require(`../../assets/img/school/${school.image}`)}
-                    alt={`${school.name}`}
-                  />
+                  <img className="w-full h-full object-cover" src={require(`../../assets/img/school/${school.image}`)} alt={`${school.name}`} />
                 </div>
                 <div className="text-start text-lg lg:text-2xl mt-5 font-bold">
-                  {school.name.split('\n').map((line, index) => (
+                  {school.name.split("\n").map((line, index) => (
                     <React.Fragment key={index}>
                       {line}
-                      {index !== school.name.split('\n').length - 1 && <br />}
+                      {index !== school.name.split("\n").length - 1 && <br />}
                     </React.Fragment>
                   ))}
                 </div>
@@ -72,6 +67,5 @@ const Daftar = () => {
     </div>
   );
 };
-
 
 export default Daftar;
