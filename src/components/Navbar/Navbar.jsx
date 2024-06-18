@@ -195,7 +195,7 @@ const DesktopNavbar = ({ navbarClasses, globalState, updateGlobalState, location
           <img src={logo} alt="ypc" />
         </Link>
         <Link to="/" className="font-bold text-md lg:text-[26px] flex items-center text-white w-full">
-          YAYASAN PERGURUAN "CIKINI"
+          YAYASAN PERGURUAN ’CIKINI’
         </Link>
       </div>
       <div className={navbarClasses}>

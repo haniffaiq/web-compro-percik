@@ -114,8 +114,10 @@ const SambutanCard = () => {
           })}
           <div></div>
         </div>
-        <Link to="/sambutan" className="flex mt-[47px] item-center justify-center">
-          <button className="text-[20px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md">{globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}</button>
+        <Link to="/about" className="flex item-center justify-center mt-[47px]">
+          <button className="text-[18px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md" style={{ letterSpacing: 4 }}>
+            {globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}
+          </button>
         </Link>
 
         <div className="lg:hidden flex">

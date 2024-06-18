@@ -351,9 +351,8 @@
 
   .overlay-text-tittle {
     font-size: 32px;
-    font-weight: bold;
     line-height: 40px;
-    width: 428px;
+    width: 488px;
     min-height: 50px;
     margin-top: 41px;
     margin-left: 37px;
@@ -394,5 +393,6 @@
     font-size: 19px;
     color: #fff;
     font-family: "Maven Pro";
+    letter-spacing: 2px;
   }
 }

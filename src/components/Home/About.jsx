@@ -38,7 +38,7 @@ const About = () => {
         <div className="text-center lg:text-start text-2xl lg:text-[54px] py-[58px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
           {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"} <br />
         </div>
-        <div className="bg-white rounded-lg overflow-hidden shadow-lg lg:grid lg:grid-row-2 gap-5 w-full lg:px-24 px-4 ">
+        <div className="bg-white rounded-lg overflow-hidden lg:grid lg:grid-row-2 gap-5 w-full lg:px-24 px-4 ">
           <div className="justify-center flex">
             <img loading="lazy" className="w-auto" src={AboutImg} alt="img" />
           </div>

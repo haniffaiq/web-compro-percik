@@ -100,9 +100,10 @@ const EventDetail = () => {
       <div>
         <div className="lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start hidden">
           <div className="tittle-container mb-[-28px] bg-[#ebebeb] lg:mb-0 lg:bg-transparent w-full">
-            <p className="text-black  text-3xl font-bold lg:text-5xl">{globalState.globalProperty === "IND" ? "Warta" : "News"}</p>
+            <p className="text-black  text-3xl lg:text-5xl lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+              {globalState.globalProperty === "IND" ? "Warta" : "News"}
+            </p>
           </div>
-          {/* <div className="yellow-bar-header border-t-7 border-yellow-400 w-103 absolute top-218 left-125 lg:static lg:border-0"></div> */}
         </div>
       </div>
       <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] align-center justify-center ">
@@ -110,14 +111,16 @@ const EventDetail = () => {
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
         <span className="text-lg"> &gt; </span>
-        <Link to="/event" className="font-bold text-lg">
-          {globalState.globalProperty === "IND" ? "Detail Berita & Acara" : "Event & News Details"}
+        <Link to="/event" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
+          {globalState.globalProperty === "IND" ? "DETAIL WARTA" : "NEWS DETAILS"}
         </Link>
       </div>
 
       <div className="container mx-auto px-[5%] py-8">
         <div className="rounded-lg overflow-hidden lg:mt-20">
-          <div className="lg:text-6xl font-bold mb-16 text-center lg:leading-normal" style={{ whiteSpace: 'pre-line' }}>{selectedItem.headline}</div>
+          <div className="lg:text-6xl mb-16 text-center lg:leading-normal" style={{ whiteSpace: "pre-line", fontFamily: "Hedvig Letters Serif, serif" }}>
+            {selectedItem.headline}
+          </div>
           <img className="w-full" src={require(`../../assets/${selectedItem.urlImage}`)} alt="News" />
           <div className="">
             {/* <div className="flex items-center mb-4">
@@ -127,7 +130,9 @@ const EventDetail = () => {
             <p className="text-gray-700">{selectedItem.date}</p> */}
             <div className="mt-16">
               {selectedItem.deskripsi.split("\n").map((paragraph, index) => (
-                <p key={index} className="lg:text-[22px] text-justify leading-normal text-black">{paragraph}</p>
+                <p key={index} className="lg:text-[22px] text-justify leading-normal text-black">
+                  {paragraph}
+                </p>
               ))}
             </div>
           </div>
