@@ -35,9 +35,7 @@ const SambutanCard = () => {
     setHtml({
       __html: `<div>${selectedData[0].desc.replace(/\n/g, "<br><br>")}</div>`,
     });
-    setHtml2({
-      __html: `<div>${selectedData[1].desc.replace(/\n/g, "<br><br>")}</div>`,
-    });
+
     // setHtml3({
     //   __html: `<div>${selectedData[2].desc.replace(/\n/g, "<br><br>")}</div>`,
     // });
@@ -53,7 +51,7 @@ const SambutanCard = () => {
         <div className="text-center text-3xl lg:text-2xl font-bold mb-10 bg-[#034694] text-white py-4  rounded-xl" style={{ letterSpacing: 14 }}>
           {globalState.globalProperty === "IND" ? "SAMBUTAN" : "WELCOMING"}
         </div>
-        <div className="grid grid-cols-1 lg:gap-5 lg:grid-cols-4">
+        <div className="grid grid-cols-1 lg:gap-5 lg:grid-cols-1">
           <div></div>
           {selectedData.map((value, index) => {
             return (
@@ -136,7 +134,10 @@ const SambutanCard = () => {
                   <div>
                     <div className="text-[20px] font-semibold text-start leading-normal	">{selectedManagement.title}</div>
                     <div className="text-[24px] mt-5 font-bold text-start leading-normal	">{selectedManagement.name}</div>
-                    <div className="mt-3">{selectedManagement.index == 0 ? <div dangerouslySetInnerHTML={html} /> : selectedManagement.index == 1 ? <div dangerouslySetInnerHTML={html2} /> : <div></div>}</div>
+                    <div className="mt-3">
+                      {" "}
+                      <div dangerouslySetInnerHTML={html} />
+                    </div>
                   </div>
                 </div>
               </>
