@@ -2,186 +2,149 @@
   "bahasa": [
     {
       "id": 1,
-      "name": "TK \n Perguruan Cikini",
+      "name": "TK - SD - SMP \n PERGURUAN 'CIKINI'",
       "type": "TK",
-      "image": "TK PERGURUAN CIKINI.webp",
+      "image": "header1.jpg",
       "students": 25,
-      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "(021) 3102287"
+      "address": "Jalan Cikini Raya No. 74-76, Cikini, Kecamatan Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
+      "phone": "SD - (021) 3102287 \n SD - (021) 3146374 \n SMP - (021) 3146375"
     },
     {
       "id": 2,
-      "name": "SD \n Perguruan Cikini",
+      "name": "SMA 1 - SMK 2 MUSIK \n PERGURUAN “CIKINI”",
       "type": "SD",
-      "image": "SD PERGURUAN CIKINI.webp",
+      "image": "SMA 1 PERGURUAN CIKINI.webp",
       "students": 419,
-      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "(021) 3102287"
+      "address": "Jalan Duren Tiga Raya No.1, Duren Tiga, Kecamatan Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760",
+      "phone": "SMA 1 - (021) 7991458 \n SMK 2 MUSIK - (021) 7991458"
     },
     {
       "id": 3,
-      "name": "SMP \n Perguruan Cikini",
+      "name": "SMA 2 - SMK 3 \n PERGURUAN “CIKINI”",
       "type": "SMP",
-      "image": "SMP PERGURUAN CIKINI.webp",
+      "image": "SMA 2 PERGURUAN CIKINI.webp",
       "students": 133,
-      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10330",
-      "phone": "(021) 3102287"
+      "address": "Jalan Srengseng Sawah No.79, Srengseng Sawah, Kecamatan Jagakarsa, Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640",
+      "phone": "SMA 2 - (021) 22710146 \n SMK 3 - (021) 7865396"
     },
     {
       "id": 4,
-      "name": "SMA 1 \n Perguruan Cikini",
+      "name": "SMK PERGURUAN CIKINI \n - KARAWANG  \n INTERNATIONAL \n INDUSTRIAL CITY (KIIC)",
       "type": "SMK",
-      "image": "SMA 1 PERGURUAN CIKINI.webp",
+      "image": "KIIC Karawang 2.jpg",
       "students": 409,
-      "address": "Jl. Duren Tiga Raya No.1, Duren Tiga, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760 ",
-      "phone": "(021) 7991458"
+      "address": "Jalan Permata Raya Kawasan Industri KIIC No. IV, Sukaluyu, Teluk Jambe Timur, Karawang, Jawa Barat 41361",
+      "phone": "0812 9206 906 (WA)"
     },
     {
       "id": 5,
-      "name": "SMA 2 \n Perguruan Cikini",
-      "type": "SMK",
-      "image": "SMA 2 PERGURUAN CIKINI.webp",
-      "students": 644,
-      "address": "Jl. Srengseng Sawah No.79, Srengseng Sawah, Kec. Jagakarsa, Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640 ",
-      "phone": "(021) 22710146"
-    },
-    {
-      "id": 6,
-      "name": "SMK 1 \n Perguruan Cikini",
+      "name": "SMK 1 - POLITEKNIK \n PERGURUAN “CIKINI”",
       "type": "SMK",
       "image": "SMK 1 PERGURUAN CIKINI.webp",
-      "students": 1202,
-      "address": "Jalan Alur Laut Blok NN No. 1, Rawabadak Utara, Kec. Koja, Jakarta Utara, Daerah Khusus Ibukota Jakarta 14230 ",
+      "students": 644,
+      "address": "Jalan Alur Laut Blok NN No. 1, Rawabadak Utara, Kec. Koja, Jakarta Utara, Daerah Khusus Ibukota Jakarta 14230",
       "phone": "(021) 43933434"
     },
     {
-      "id": 7,
-      "name": "SMK 2 MUSIK \n Perguruan Cikini",
-      "type": "SMP",
-      "image": "SMK 2 MUSIK PERGURUAN CIKINI.webp",
-      "students": 409,
-      "address": "Jl. Duren Tiga Raya No.1, Duren Tiga, Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760 ",
-      "phone": "(021) 7991458"
-    },
-    {
-      "id": 8,
-      "name": "SMK 3 \n Perguruan Cikini",
-      "type": "SMP",
-      "image": "SMK 3 PERGURUAN CIKINI.webp",
-      "students": 1287,
-      "address": "Jl. Srengseng Sawah No.79, Srengseng Sawah, Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640 ",
-      "phone": "(021) 7865396"
-    },
-    {
-      "id": 9,
-      "name": "SMK \n Perguruan Cikini KIIC",
-      "type": "SMP",
-      "image": "SMK KIIC PERGURUAN CIKINI.webp",
-      "students": 188,
-      "address": "Jl. Permata Raya Kawasan Industri KIIC No. IV, Sukaluyu, Teluk Jambe Timur, Karawang, Jawa Barat 41361",
-      "phone": "0812-9206-906"
-    },
-    {
-      "id": 10,
-      "name": "ISTN (INSTITUT SAINS \n & TEKNOLOGI NASIONAL)",
-      "type": "SMP",
+      "id": 6,
+      "name": "INSTITUT SAINS  & \n TEKNOLOGI NASIONAL \n (ISTN)",
+      "type": "SMK",
       "image": "ISTN PERGURUAN CIKINI.webp",
-      "students": 1714,
-      "address": "Jl. Moh. Kahfi II, Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640 82311000550",
-      "phone": "0812-9103-0024"
+      "students": 1202,
+      "address": "Jalan Moh. Kahfi II, Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640",
+      "phone": "082311000550 \n 081291030024"
     }
   ],
   "english": [
     {
-        "id": 1,
-        "name": "Kindergarten\nCikini School",
-        "type": "Kindergarten",
-        "image": "TK PERGURUAN CIKINI.webp",
-        "students": 25,
-        "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
-        "phone": "(021) 3102287"
+      "id": 1,
+      "name": "Kindergarten\nCikini School",
+      "type": "Kindergarten",
+      "image": "TK PERGURUAN CIKINI.webp",
+      "students": 25,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
+      "phone": ["SD - (021) 3102287", "SD - (021) 3146374", "SMP - (021) 3146375"]
     },
     {
-        "id": 2,
-        "name": "Elementary School\nCikini School",
-        "type": "Elementary School",
-        "image": "SD PERGURUAN CIKINI.webp",
-        "students": 419,
-        "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
-        "phone": "(021) 3102287"
+      "id": 2,
+      "name": "Elementary School\nCikini School",
+      "type": "Elementary School",
+      "image": "SD PERGURUAN CIKINI.webp",
+      "students": 419,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
+      "phone": ["SD - (021) 3102287", "SD - (021) 3146374", "SMP - (021) 3146375"]
     },
     {
-        "id": 3,
-        "name": "Junior High School\nCikini School",
-        "type": "Junior High School",
-        "image": "SMP PERGURUAN CIKINI.webp",
-        "students": 133,
-        "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
-        "phone": "(021) 3102287"
+      "id": 3,
+      "name": "Junior High School\nCikini School",
+      "type": "Junior High School",
+      "image": "SMP PERGURUAN CIKINI.webp",
+      "students": 133,
+      "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
+      "phone": ["SD - (021) 3102287", "SD - (021) 3146374", "SMP - (021) 3146375"]
     },
     {
-        "id": 4,
-        "name": "Senior High School 1\nCikini School",
-        "type": "Vocational High School",
-        "image": "SMA 1 PERGURUAN CIKINI.webp",
-        "students": 409,
-        "address": "Jl. Duren Tiga Raya No.1, Duren Tiga, Pancoran, South Jakarta, Special Capital Region of Jakarta 12760",
-        "phone": "(021) 7991458"
+      "id": 4,
+      "name": "Senior High School 1\nCikini School",
+      "type": "Vocational High School",
+      "image": "SMA 1 PERGURUAN CIKINI.webp",
+      "students": 409,
+      "address": "Jl. Duren Tiga Raya No.1, Duren Tiga, Pancoran, South Jakarta, Special Capital Region of Jakarta 12760",
+      "phone": "(021) 7991458"
     },
     {
-        "id": 5,
-        "name": "Senior High School 2\nCikini School",
-        "type": "Vocational High School",
-        "image": "SMA 2 PERGURUAN CIKINI.webp",
-        "students": 644,
-        "address": "Jl. Srengseng Sawah No.79, Srengseng Sawah, Jagakarsa, South Jakarta, Special Capital Region of Jakarta 12640",
-        "phone": "(021) 22710146"
+      "id": 5,
+      "name": "Senior High School 2\nCikini School",
+      "type": "Vocational High School",
+      "image": "SMA 2 PERGURUAN CIKINI.webp",
+      "students": 644,
+      "address": "Jl. Srengseng Sawah No.79, Srengseng Sawah, Jagakarsa, South Jakarta, Special Capital Region of Jakarta 12640",
+      "phone": "(021) 22710146"
     },
     {
-        "id": 6,
-        "name": "Vocational High School 1\nCikini School",
-        "type": "Vocational High School",
-        "image": "SMK 1 PERGURUAN CIKINI.webp",
-        "students": 1202,
-        "address": "Jalan Alur Laut Blok NN No. 1, Rawabadak Utara, Koja, North Jakarta, Special Capital Region of Jakarta 14230",
-        "phone": "(021) 43933434"
+      "id": 6,
+      "name": "Vocational High School 1\nCikini School",
+      "type": "Vocational High School",
+      "image": "SMK 1 PERGURUAN CIKINI.webp",
+      "students": 1202,
+      "address": "Jalan Alur Laut Blok NN No. 1, Rawabadak Utara, Koja, North Jakarta, Special Capital Region of Jakarta 14230",
+      "phone": "(021) 43933434"
     },
     {
-        "id": 7,
-        "name": "Vocational High School 2 Music\nCikini School",
-        "type": "Junior High School",
-        "image": "SMK 2 MUSIK PERGURUAN CIKINI.webp",
-        "students": 409,
-        "address": "Jl. Duren Tiga Raya No.1, Duren Tiga, Pancoran, South Jakarta, Special Capital Region of Jakarta 12760",
-        "phone": "(021) 7991458"
+      "id": 7,
+      "name": "Vocational High School 2 Music\nCikini School",
+      "type": "Junior High School",
+      "image": "SMK 2 MUSIK PERGURUAN CIKINI.webp",
+      "students": 409,
+      "address": "Jl. Duren Tiga Raya No.1, Duren Tiga, Pancoran, South Jakarta, Special Capital Region of Jakarta 12760",
+      "phone": "(021) 7991458"
     },
     {
-        "id": 8,
-        "name": "Vocational High School 3\nCikini School",
-        "type": "Junior High School",
-        "image": "SMK 3 PERGURUAN CIKINI.webp",
-        "students": 1287,
-        "address": "Jl. Srengseng Sawah No.79, Srengseng Sawah, Jagakarsa, South Jakarta, Special Capital Region of Jakarta 12640",
-        "phone": "(021) 7865396"
+      "id": 8,
+      "name": "Vocational High School 3\nCikini School",
+      "type": "Junior High School",
+      "image": "SMK 3 PERGURUAN CIKINI.webp",
+      "students": 1287,
+      "address": "Jl. Srengseng Sawah No.79, Srengseng Sawah, Jagakarsa, South Jakarta, Special Capital Region of Jakarta 12640",
+      "phone": "(021) 7865396"
     },
     {
-        "id": 9,
-        "name": "Vocational High School\nCikini KIIC",
-        "type": "Junior High School",
-        "image": "SMK KIIC PERGURUAN CIKINI.webp",
-        "students": 188,
-        "address": "Jl. Permata Raya Industrial Estate KIIC No. IV, Sukaluyu, Teluk Jambe Timur, Karawang, West Java 41361",
-        "phone": "0812-9206-906"
+      "id": 9,
+      "name": "Vocational High School\nCikini KIIC",
+      "type": "Junior High School",
+      "image": "SMK KIIC PERGURUAN CIKINI.webp",
+      "students": 188,
+      "address": "Jl. Permata Raya Industrial Estate KIIC No. IV, Sukaluyu, Teluk Jambe Timur, Karawang, West Java 41361",
+      "phone": "0812-9206-906"
     },
     {
-        "id": 10,
-        "name": "ISTN (NATIONAL INSTITUTE OF SCIENCE & TECHNOLOGY)\nCikini School",
-        "type": "Junior High School",
-        "image": "ISTN PERGURUAN CIKINI.webp",
-        "students": 1714,
-        "address": "Jl. Moh. Kahfi II, Jagakarsa, South Jakarta, Special Capital Region of Jakarta 12640",
-        "phone": "0812-9103-0024"
+      "id": 10,
+      "name": "ISTN (NATIONAL INSTITUTE OF SCIENCE & TECHNOLOGY)\nCikini School",
+      "type": "Junior High School",
+      "image": "ISTN PERGURUAN CIKINI.webp",
+      "students": 1714,
+      "address": "Jl. Moh. Kahfi II, Jagakarsa, South Jakarta, Special Capital Region of Jakarta 12640",
+      "phone": "0812-9103-0024"
     }
-]
-
+  ]
 }
