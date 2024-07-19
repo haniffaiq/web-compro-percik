@@ -34,7 +34,7 @@ const Filosofi = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className="w-full lg:py-[28px] bg-[#E2E5E9]">
-          <div className="text-black text-xl lg:text-6xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+          <div className="text-black text-xl lg:text-6xl mt-8 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Makna Logo" : "Meaning of Logos"}
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
@@ -42,12 +42,12 @@ const Filosofi = () => {
       </div>
       <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[90px]">
         <div className="w-full rounded-xl lg:my-10 ">
-          <div className="grid lg:grid-cols-3 lg:grid-rows-2 mt-0 lg:mt-10 lg:gap-0 gap-5 leading-normal">
+          <div className="grid lg:grid-cols-3 lg:grid-rows-2 mt-[-40px] lg:mt-10 lg:gap-0 gap-5 leading-normal">
             <div className="flex  justify-center mt-[40px] h-full lg:h-full lg:row-span-2">
               <img loading="lazy" src={Logo} className="lg:object-cover flex lg:h-[400px] h-[250px]" />
             </div>
             <div className="text-white py-1 px-5 lg:px-0 lg:py-14 lg:col-span-2 lg:row-span-2 ">
-              <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-0 text-black leading-normal lg:pr-28">{<div dangerouslySetInnerHTML={html} />}</div>
+              <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-2 lg:mt-0 text-black leading-normal lg:pr-28">{<div dangerouslySetInnerHTML={html} />}</div>
             </div>
           </div>
         </div>

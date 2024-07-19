@@ -43,36 +43,29 @@
 @media only screen and (max-width: 600px) {
   .triple-button-container {
     display: flex;
-    flex-direction: row;
     gap: 15px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 19px;
+    margin-top: 40px;
     font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button {
     border-radius: 12px;
-    background: #ededed;
     padding: 8px 20px 8px 20px;
     color: #000;
-
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    background-color: #ebebeb;
+    font-size: 14px;
     font-family: "Hedvig Letters Serif, serif";
   }
 
   .triple-button-container button.selected {
     border-radius: 12px;
-    background: #faa61a;
     padding: 8px 20px 8px 20px;
-    color: #000;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    color: #fff;
+    background-color: #034da2;
+    font-size: 14px;
     font-family: "Hedvig Letters Serif, serif";
   }
 }
@@ -223,18 +216,10 @@
     margin-top: 30px;
   }
 
-  .yellow-bar-management-tittle {
-    border-top: 3px solid #faa61a;
-    width: 30px;
-    position: relative;
-    top: -10px;
-  }
-
   .pict-list-management-wrapper {
     width: 290px;
     flex-shrink: 0;
-    border-bottom-width: 3px;
-    border-color: #ebebeb;
+
     display: flex;
     flex-direction: column;
   }
@@ -245,12 +230,11 @@
 
   .overlay-text-management-tittle {
     color: #000;
-
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
+    font-size: 22px;
+    font-family: "Hedvig Letters Serif, serif";
     line-height: normal;
-    max-width: 270px;
+    width: 250px;
+    margin-top: 20px;
   }
 
   .overlay-text-management-role {
@@ -265,11 +249,10 @@
   .overlay-text-management-desc {
     max-width: 255px;
     color: #000;
-
-    font-size: 14px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    line-height: 1.4;
+    font-family: "Maven Pro";
   }
 
   .management-image-wrapper {
@@ -501,6 +484,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-family: "Hedvig Letters Serif, serif";
   }
 
   .overlay-text-management-role {
@@ -518,6 +502,7 @@
     font-size: 20px;
     line-height: 1.4;
     text-align: left;
+    font-family: "Maven Pro";
   }
 
   .management-image-wrapper {

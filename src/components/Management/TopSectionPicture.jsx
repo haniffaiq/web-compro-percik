@@ -23,15 +23,11 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
               </div>
               <div className="management-text-wrapper">
-                <p className="overlay-text-management-tittle" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-                  {namaLengkapManajemen}
-                </p>
+                <p className="overlay-text-management-tittle">{namaLengkapManajemen}</p>
 
                 <div className="overlay-text-management-desc">
                   {deskripsiManajemen.split("\n").map((paragraph, index) => (
-                    <p key={index} style={{ fontFamily: "Maven Pro" }}>
-                      {paragraph}
-                    </p>
+                    <p key={index}>{paragraph}</p>
                   ))}
                 </div>
               </div>

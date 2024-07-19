@@ -105,19 +105,20 @@ const Riwayat = () => {
 
   return (
     <>
-      <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
-        <div className=" w-full lg:py-[28px]">
-          <div className="text-black text-xl lg:text-6xl mt-16 lg:mt-20 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? "Riwayat Singkat Perguruan 'CIKINI'" : "'CIKINI' School Brief History"}
+      <div className="ml-[20px] mr-[20px] lg:ml-[0px] lg:mr-[0px]">
+        <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
+          <div className=" w-full lg:py-[28px]">
+            <div className="text-black text-[28px] lg:text-6xl mt-12 lg:mt-20 lg:ml-[-60px] py-2 lg:text-center lg:text-left lg:px-[145px] w-[280px] ml-[20px] lg:w-full" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+              {globalState.globalProperty === "IND" ? "Riwayat Singkat Perguruan 'CIKINI'" : "'CIKINI' School Brief History"}
+            </div>
+            {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
           </div>
-          {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
-      </div>
-      <div className="px-5 lg:px-8 lg:mx-16 lg:pl-[145px]">
-        <div className="w-full rounded-xl">
-          {Object.keys(selectedData).map((key) => (
-            <div key={selectedData[key].id} className="flex flex-col lg:grid lg:grid-cols mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg">
-              {/* <div className="flex flex-col items-center">
+        <div className="px-5 lg:px-8 lg:mx-16 lg:pl-[145px]">
+          <div className="w-full rounded-xl">
+            {Object.keys(selectedData).map((key) => (
+              <div key={selectedData[key].id} className="flex flex-col lg:grid lg:grid-cols mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg">
+                {/* <div className="flex flex-col items-center">
                 <img
                   loading="lazy"
                   src={selectedData[key].imgUrl}
@@ -126,14 +127,15 @@ const Riwayat = () => {
                 />
                 <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
               </div> */}
-              <div className="lg:mx-5 lg:ml-16">
-                <div className="text-[16px] lg:text-[42px] text-black" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-                  {selectedData[key].title}
+                <div className="lg:mx-5 lg:ml-16">
+                  <div className="lg:text-[20px] text-[20px] lg:text-[42px] text-black" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                    {selectedData[key].title}
+                  </div>
+                  <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black w-full lg:w-auto text-left leading-normal ">{selectedData[key].content}</div>
                 </div>
-                <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black w-full lg:w-auto text-left leading-normal ">{selectedData[key].content}</div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </>

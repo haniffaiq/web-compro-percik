@@ -43,7 +43,7 @@ const Akreditasi = () => {
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>
-      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[145px] lg:pr-28">
+      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[145px] lg:pr-28 lg:my-[50px]">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {Selecteddata.map((item, index) => (
             <div key={index} className="w-full" onClick={() => handleCardClick(item.imgurl)}>

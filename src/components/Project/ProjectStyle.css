@@ -4,21 +4,17 @@
     background: #ebebeb;
   }
 
-  .horizontal-line {
-    border-top: 2px solid #ebebeb;
-    width: 100%;
+  .page-tittle {
+    margin-top: 40px;
   }
 
   .tittle-container {
-    margin-bottom: -28px;
     background: #ebebeb;
   }
 
   .tittle-container p {
     color: #000;
-
     font-size: 36px;
-
     line-height: normal;
     margin-left: 125px;
     margin-top: 61px;
@@ -34,54 +30,59 @@
   .image-list-container {
     display: flex;
     flex-direction: column;
-    gap: 23px;
-    justify-content: center;
-    align-items: center;
+    gap: 10px; /* Optional: adds space between items */
+    margin-left: 30px;
+    margin-right: 20px;
   }
 
   .image-list-wrapper {
     border: 2px solid #ebebeb;
     display: flex;
     flex-direction: column;
-    padding: 19px;
-    width: 350px;
-    height: 447px;
+    width: 315px;
+    height: 520px;
+    margin-bottom: 57px;
+    border-radius: 20px;
   }
 
   .image-list-wrapper img {
-    width: 380px;
-    height: 200px;
+    width: 315px;
+    min-height: 110px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .overlay-text-tittle {
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 22px;
-    width: 300px;
-    margin-top: 12px;
-  }
-
-  .yellow-bar-project {
-    border-top: 5px solid #faa61a;
-    width: 55px;
-    position: relative;
-    top: -5px;
+    font-size: 18px;
+    line-height: 20px;
+    width: 270px;
+    min-height: 50px;
+    margin-top: 27px;
+    margin-left: 27px;
+    font-family: "Hedvig Letters Serif";
   }
 
   .overlay-text-desc {
     font-size: 14px;
     color: #000;
     font-weight: normal;
-    margin-top: 20px;
+    line-height: 1.5;
+    width: 270px;
+    margin-left: 27px;
+    margin-top: -10px;
   }
 
   .link-layout {
-    background-color: turquoise;
-    width: 133px;
-    height: 26px;
-    border-radius: 15px;
-    padding: 5px 14.95px 6px 16px;
-    margin-left: 80px;
+    background-color: #000;
+    width: 170px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 12px 14.95px 12px 16px;
+    margin-left: 27px;
+    margin-right: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .link-layout:hover {
@@ -91,8 +92,10 @@
     transform: translateY(1px);
   }
   .link-layout p {
-    font-size: 14px;
+    font-size: 11.5px;
     color: #fff;
+    font-family: "Maven Pro";
+    letter-spacing: 2px;
   }
 }
 
@@ -102,21 +105,17 @@
     background: #ebebeb;
   }
 
-  .horizontal-line {
-    border-top: 2px solid #ebebeb;
-    width: 100%;
+  .page-tittle {
+    margin-top: 80px;
   }
 
   .tittle-container {
-    margin-bottom: -28px;
     background: #ebebeb;
   }
 
   .tittle-container p {
     color: #000;
-
     font-size: 36px;
-
     line-height: normal;
     margin-left: 125px;
     margin-top: 61px;
@@ -132,54 +131,61 @@
   .image-list-container {
     display: flex;
     flex-direction: column;
-    gap: 23px;
-    justify-content: center;
-    align-items: center;
+
+    gap: 30px; /* Optional: adds space between items */
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .image-list-wrapper {
     border: 2px solid #ebebeb;
     display: flex;
     flex-direction: column;
-    padding: 19px;
-    width: 450px;
-    height: 447px;
+    width: 270px;
+    height: 690px;
+    margin-bottom: 57px;
+    border-radius: 20px;
   }
 
   .image-list-wrapper img {
-    width: 380px;
-    height: 200px;
+    width: 270px;
+    min-height: 210px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .overlay-text-tittle {
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 22px;
-    width: 300px;
-    margin-top: 12px;
-  }
-
-  .yellow-bar-project {
-    border-top: 5px solid #faa61a;
-    width: 55px;
-    position: relative;
-    top: -5px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 188px;
+    min-height: 50px;
+    margin-top: 41px;
+    margin-left: 37px;
+    font-family: "Hedvig Letters Serif";
   }
 
   .overlay-text-desc {
     font-size: 14px;
     color: #000;
     font-weight: normal;
-    margin-top: 20px;
+    margin-top: 2px;
+    line-height: 1.5;
+    width: 190px;
+    min-height: 225px;
+    margin-left: 37px;
   }
 
   .link-layout {
-    background-color: turquoise;
-    width: 133px;
-    height: 26px;
-    border-radius: 15px;
-    padding: 5px 14.95px 6px 16px;
-    margin-left: 80px;
+    background-color: #000;
+    width: 190px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 12px 14.95px 12px 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
   }
 
   .link-layout:hover {
@@ -189,8 +195,10 @@
     transform: translateY(1px);
   }
   .link-layout p {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
+    font-family: "Maven Pro";
+    letter-spacing: 2px;
   }
 }
 

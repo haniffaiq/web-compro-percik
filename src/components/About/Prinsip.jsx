@@ -34,7 +34,7 @@ const Prinsip = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className=" w-full lg:py-[28px] bg-[#E2E5E9]">
-          <div className="text-black text-xl lg:text-6xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+          <div className="text-black text-xl lg:text-6xl mt-5 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Prinsip Dasar" : "Prinsip Dasar"}
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
@@ -44,7 +44,7 @@ const Prinsip = () => {
         <div className="w-full rounded-xl lg:my-10 ">
           <div className="leading-normal">
             <div className="text-white py-5 px-5 lg:px-0 lg:py-2 lg:col-span-2 lg:row-span-2 ">
-              <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-0 text-black leading-normal px-4 lg:pr-28">
+              <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-[-10px] lg:mt-0 text-black leading-normal px-4 lg:pr-28">
                 <ul className="list-outside list-disc">
                   <li>Universal dan obyektif dalam ilmu pengetahuan untuk mencapai kenyataan dan kebenaran.</li>
                   <li>Kebebasan akademik yang dilaksanakan dengan hikmah dan bertanggungjawab.</li>

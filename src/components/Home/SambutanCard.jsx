@@ -47,19 +47,19 @@ const SambutanCard = () => {
 
   return (
     <>
-      <div className="lg:px-9 lg:py-4 lg:mx-[250px]">
-        <div className="text-center text-3xl lg:text-2xl font-bold mb-10 bg-[#034694] text-white py-4  rounded-xl" style={{ letterSpacing: 14 }}>
+      <div className="lg:px-9 lg:py-4 lg:mx-[250px] w-full mt-[30px]">
+        <div className="text-center text-[22px] lg:text-2xl lg:font-bold mb-10 bg-[#034694] text-white py-4  lg:rounded-xl" style={{ letterSpacing: 1, fontFamily: "Hedvig Letters Serif, serif" }}>
           {globalState.globalProperty === "IND" ? "SAMBUTAN" : "WELCOMING"}
         </div>
         <div className="grid grid-cols-1 lg:gap-5 lg:grid-cols-1">
           <div></div>
           {selectedData.map((value, index) => {
             return (
-              <div className="mt-[-10px]">
+              <div className="mt-[-15px]">
                 <div className="mt-0 lg:mt-10 lg:gap-0 gap-5">
                   <div className="flex flex-col justify-center items-center">
                     <div className="">
-                      <img loading="lazy" src={require(`../../assets/${value.img}`)} alt="img" className="object-cover rounded-lg lg:w-[391px]" />
+                      <img loading="lazy" src={require(`../../assets/${value.img}`)} alt="img" className="object-cover rounded-lg lg:w-[391px] w-[300px]" />
                     </div>
                     <div className="">
                       <div className="text-lg lg:text-xl font-bold lg:mt-2" style={{ fontFamily: "Maven Pro" }}>
@@ -113,7 +113,7 @@ const SambutanCard = () => {
           <div></div>
         </div>
         <Link to="/about" className="flex item-center justify-center mt-[47px]">
-          <button className="text-[18px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md" style={{ letterSpacing: 4 }}>
+          <button className="text-[12px] lg:text-[18px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md" style={{ letterSpacing: 4 }}>
             {globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}
           </button>
         </Link>
