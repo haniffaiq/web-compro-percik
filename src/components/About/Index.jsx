@@ -56,7 +56,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] justify-center lg:justify-start lg:px-[145px]">
+      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-start ml-[42px] lg:justify-start lg:justify-center lg:justify-start lg:justify-start lg:px-[145px] lg:justify-start lg:px-[145px]">
         <Link to="/" className="text-lg lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
@@ -87,12 +87,12 @@ const About = () => {
           <div ref={akreditasiRef}>
             <Akreditasi />
           </div>
-          <div ref={strukturRef}>
+          {/* <div ref={strukturRef}>
             <Akreditasi />
-          </div>
-          <div ref={statistikRef}>
+          </div> */}
+          {/* <div ref={statistikRef}>
             <Statistik />
-          </div>
+          </div> */}
           {/* <Riwayat2 /> */}
           {/* <Visi /> */}
           {/* <Misi /> */}

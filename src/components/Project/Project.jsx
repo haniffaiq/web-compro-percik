@@ -53,10 +53,10 @@ const Project = () => {
         </div>
       </div>
       <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px]">
-        <Link to="/" className="text-lg">
+        <Link to="/" className="lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
-        <span className="text-lg"> &gt; </span>
+        <span className="lg:text-lg text-sm"> &gt; </span>
         <Link to="/project" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
           {globalState.globalProperty === "IND" ? "DETAIL PENGEMBANGAN" : "DEVELOPMENT DETAILS"}
         </Link>

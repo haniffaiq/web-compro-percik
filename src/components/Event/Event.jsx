@@ -64,39 +64,35 @@ const Event = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px]">
-        <Link to="/" className="text-lg">
+      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-start ml-[53px] lg:justify-start lg:justify-center lg:justify-start lg:justify-start lg:px-[145px] lg:justify-start lg:px-[145px]">
+        <Link to="/" className="lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
-        <span className="text-lg"> &gt; </span>
+        <span className="lg:text-lg text-sm"> &gt; </span>
         <Link to="/event" className="font-bold lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
           {globalState.globalProperty === "IND" ? "WARTA" : "NEWS"}
         </Link>
       </div>
-      <div className="p-5 lg:p-8 lg:mx-[150px]">
+      <div className="p-5 lg:p-8 lg:mx-[150px] lg:mt-0 mt-[-30px]">
         <div className="mx-auto px-4 sm:px-6 lg:mx-16">
           <div className="flex flex-col gap-4 lg:gap-10 lg:grid lg:grid-cols-2  ">
             {currentData.map((item) => (
-              <Link key={item.id} to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`} className="border-2 rounded-t-[20px] h-[1000px] mt-[50px] ">
+              <Link
+                key={item.id}
+                to={`/event-detail?id=${item.id}&headline=${item.headline}&desc=${item.deskripsi}&img=${item.urlImage}&maker=${item.maker}&date=${item.date}`}
+                className="border-2 rounded-t-[20px] lg:h-[1000px] mt-[50px] h-[700px] "
+              >
                 <div>
                   <div>
                     <img loading="lazy" src={require(`../../assets/${item.urlImage}`)} alt={item.alt} className="rounded-t-[20px] lg:h-[400px]" />
                   </div>
                   <div className="">
-                    <p className="lg:text-[32px] py-6 justify-center pl-[37px] w-[598px] mt-[21px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                    <p className="lg:text-[32px] py-6 justify-center lg:pl-[37px] lg:w-[598px] lg:mt-[21px] px-[27px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
                       {item.headline}
                     </p>
-                    <p className="lg:text-[22px] leading-normal pl-[37px] w-[609px]">{truncateText(item.deskripsi, 50)}</p>
-                    {/* <div className="maker-layout pl-[37px]">
-                      <img loading="lazy" src={Logo} alt="logo" />
-                      <p className="">{item.maker}</p>
-                      <div>
-                        <p className="date-style">{item.date}</p>
-                      </div>
-                    </div> */}
-
-                    <div className="flex mt-[35px] mx-[170px]">
-                      <button className="text-[19px] text-center bg-black lg:px-[16px] lg:py-[9px] w-[249px] h-[40px] p-1 text-white px-3 rounded-md" style={{ fontFamily: "Maven Pro", letterSpacing: 2 }}>
+                    <p className="lg:text-[22px] leading-normal lg:pl-[37px] lg:w-[609px] pl-[27px] w-[280px] mt-[-10px]">{truncateText(item.deskripsi, 50)}</p>
+                    <div className="flex lg:mt-[35px] lg:mx-[170px] ml-[27px] mt-[30px]">
+                      <button className="lg:text-[19px] text-[11.5px] text-center bg-black lg:px-[16px] lg:py-[9px] lg:w-[249px] h-[40px] p-1 text-white px-3 rounded-md w-[170px]" style={{ fontFamily: "Maven Pro", letterSpacing: 2 }}>
                         {globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}
                       </button>
                     </div>

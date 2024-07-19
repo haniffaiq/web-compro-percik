@@ -19,10 +19,10 @@ const PartnershipReal = () => {
             </div>
           </div>
         </div>
-        <div class="flex lg:flex-row py-16 px-36 lg:mx-[200px] items-center">
-          <div class="flex flex-col lg:flex-row justify-center lg:gap-28 lg:h-full lg:w-full h-full w-full gap-7 overflow-y-hidden">
-            <div class="flex items-center">
-              <img loading="lazy" src={Bni} class="" alt="logo" />
+        <div class="flex lg:flex-row py-16 px-[90px] lg:mx-[200px] items-center ">
+          <div class="flex flex-col lg:flex-row justify-center lg:gap-28 lg:h-full lg:w-full h-full gap-12 ">
+            <div class="flex items-center ">
+              <img loading="lazy" src={Bni} class="w-[300px]" alt="logo" />
             </div>
             <div class="flex items-center">
               <img loading="lazy" src={Lipi} class="" alt="logo" />

@@ -10,26 +10,26 @@ const Visi = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className="  w-full lg:py-[28px] bg-[#E2E5E9]">
-          <div className="text-black text-xl lg:text-6xl mt-16 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+          <div className="text-black text-xl lg:text-6xl mt-[-20px] lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
             {globalState.globalProperty === "IND" ? "Visi, Misi dan Value" : "Vision, Mission and Values"}
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>
       <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[145px] lg:pr-28">
-        <div className="lg:text-start text-center text-3xl my-12 lg:text-[42px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+        <div className="lg:text-start text-center text-3xl my-12 mt-[-10px] lg:mt-[50px] lg:text-[42px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
           Visi
         </div>
-        <div className="text-md lg:text-[24px] text-start">
+        <div className="text-md lg:text-[24px] text-start leading-normal lg:mt-[0px] mt-[-30px]">
           Menjadi center of excellence bidang pendidikan dalam mencetak generasi panutan yang amanah, berwawasan kebangsaan, pancasilais, berbudi pekerti luhur, dan mandiri sesuai perkembangan zaman, dengan tetap menjaga keberlangsungan
           Yayasan Perguruan “CIKINI”. Misi Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi. Membangun fasilitas sarana dan prasarana yang unggul. Membangun pusat pengembanga
-          dan penelitian kebangsaan. Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara. Value
+          dan penelitian kebangsaan. Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara.
         </div>
         <div className="lg:text-start text-center text-3xl lg:text-[42px] my-12" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
           Misi
         </div>
-        <div className="flex flex-col gap-5 text-sm lg:text-[24px] mt-5 lg:mt-0 text-black leading-normal px-4">
-          <ul className="list-inside list-disc">
+        <div className="flex flex-col gap-5 text-md lg:text-[24px] mt-[-20px] lg:mt-0 text-black leading-normal px-4">
+          <ul className="list-disc">
             <li>Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi.</li>
             <li>Membangun fasilitas sarana dan prasarana yang unggul.</li>
             <li>Membangun pusat pengembanga dan penelitian kebangsaan.</li>

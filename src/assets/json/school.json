@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "name": "SMA 1 - SMK 2 MUSIK \n PERGURUAN “CIKINI”",
+      "name": "SMA 1 - SMK 2 MUSIK \n PERGURUAN 'CIKINI'",
       "type": "SD",
       "image": "SMA 1 PERGURUAN CIKINI.webp",
       "students": 419,
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "name": "SMA 2 - SMK 3 \n PERGURUAN “CIKINI”",
+      "name": "SMA 2 - SMK 3 \n PERGURUAN 'CIKINI'",
       "type": "SMP",
       "image": "SMA 2 PERGURUAN CIKINI.webp",
       "students": 133,
@@ -38,7 +38,7 @@
     },
     {
       "id": 5,
-      "name": "SMK 1 - POLITEKNIK \n PERGURUAN “CIKINI”",
+      "name": "SMK 1 - POLITEKNIK \n PERGURUAN 'CIKINI'",
       "type": "SMK",
       "image": "SMK 1 PERGURUAN CIKINI.webp",
       "students": 644,

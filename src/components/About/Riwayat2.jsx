@@ -119,7 +119,7 @@ const Riwayat2 = () => {
         <div className="bg-[#E1E1E1] lg:bg-[#E1E1E1] w-full lg:py-[28px] lg:mb-[28px] lg:px-16">
           <div className="flex justify-center text-center lg:flex lg:justify-between">
             <div
-              className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] lg:px-[145px]"
+              className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-center lg:justify-start justify-center lg:justify-start  justify-center lg:justify-start lg:px-[145px] ml-[-20px]"
               style={{ fontFamily: "Hedvig Letters Serif, serif" }}
             >
               {globalState.globalProperty === "IND" ? "Riwayat Singkat Perguruan 'Cikini'" : "'Cikini' School Brief History"}
