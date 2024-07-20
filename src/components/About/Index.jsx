@@ -3,15 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import AboutUs from "./About";
 import Visi from "./Visi";
-import Prestasi from "./Prestasi";
-import Galeri from "./Galeri";
-import Misi from "./Misi";
 import Filosofi from "./Filosofi";
 import Riwayat from "./Riwayat";
-import Riwayat2 from "./Riwayat2";
+import Struktur from "./Struktur";
 
 import { useRef } from "react";
 import Statistik from "./Statistik";
+import Sambutan from "./Sambutan";
 import Prinsip from "./Prinsip";
 import Akreditasi from "./Akreditasi";
 
@@ -21,7 +19,7 @@ const About = () => {
   const prinsipRef = useRef(null);
   const visiMisiRef = useRef(null);
   const strukturRef = useRef(null);
-  const statistikRef = useRef(null);
+  const sambutanRef = useRef(null);
   const akreditasiRef = useRef(null);
 
   const scrollToRef = (ref) => {
@@ -56,7 +54,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-start ml-[42px] lg:justify-start lg:justify-center lg:justify-start lg:justify-start lg:px-[145px] lg:justify-start lg:px-[145px]">
+      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-start ml-[42px] lg:justify-start  lg:px-[145px] lg:px-[145px]">
         <Link to="/" className="text-lg lg:text-lg text-sm tracking-widest" style={{ fontFamily: "Maven Pro" }}>
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
@@ -71,7 +69,9 @@ const About = () => {
 
       <div className="lg:grid lg:grid-cols-7">
         <div className="lg:grid lg:grid-row lg:col-span-6">
-          {/* <AboutUs /> */}
+          <div ref={sambutanRef}>
+            <Sambutan />
+          </div>
           <div ref={riwayatRef}>
             <Riwayat />
           </div>
@@ -84,15 +84,13 @@ const About = () => {
           <div ref={visiMisiRef}>
             <Visi />
           </div>
+          <div ref={strukturRef}>
+            <Struktur />
+          </div>
           <div ref={akreditasiRef}>
             <Akreditasi />
           </div>
-          {/* <div ref={strukturRef}>
-            <Akreditasi />
-          </div> */}
-          {/* <div ref={statistikRef}>
-            <Statistik />
-          </div> */}
+
           {/* <Riwayat2 /> */}
           {/* <Visi /> */}
           {/* <Misi /> */}
@@ -103,10 +101,16 @@ const About = () => {
         <div className="h-[1000px] sticky top-0 z-10 lg:block hidden">
           <div className="mt-32 grid grid-rows justify-center">
             <button
+              onClick={() => handleClick(sambutanRef)}
+              className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
+            >
+              Sambutan
+            </button>
+            <button
               onClick={() => handleClick(riwayatRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4 "
             >
-              Riwayat
+              Riwayat Singkat
             </button>
             <button
               onClick={() => handleClick(maknaRef)}
@@ -127,22 +131,16 @@ const About = () => {
               Visi, Misi & Value
             </button>
             <button
-              onClick={() => handleClick(akreditasiRef)}
-              className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
-            >
-              SK Akreditasi
-            </button>
-            <button
               onClick={() => handleClick(strukturRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
               Struktur Organisasi
             </button>
             <button
-              onClick={() => handleClick(statistikRef)}
+              onClick={() => handleClick(akreditasiRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
-              Statistik
+              SK Akreditasi
             </button>
           </div>
         </div>

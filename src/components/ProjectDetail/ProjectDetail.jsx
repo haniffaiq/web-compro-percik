@@ -46,7 +46,7 @@ const ProjectDetail = () => {
         filename: `${queryParameters.get("tittle")}_Project_detail.pdf`,
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: "mm", format: "a4", orientation: "landscape" },
+        jsPDF: { unit: "mm", format: "A4", orientation: "portrait" },
       };
 
       html2pdf().from(content).set(pdfOptions).save();
@@ -142,7 +142,13 @@ const ProjectDetail = () => {
         <div className="button-container">
           <div class="container-download">
             <div class="line-proyek1"></div>
+            {/* <Link to="/pdftest">
+              <p>untuk test button</p>
+              <img src={download} alt="Gambar" />
+            </Link> */}
+
             <img src={download} alt="Gambar" onClick={handleDownloadPDF} />
+
             <div class="line-proyek2"></div>
           </div>
           {/* <button className="button-download-style" onClick={handleDownloadPDF}>

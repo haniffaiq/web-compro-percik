@@ -10,17 +10,17 @@ import Whatsapp from "../../assets/img/WA.png";
 import Logo from "../../assets/logo/logo_white.png";
 
 const Footer = () => {
-  //   const { globalState, updateGlobalState } = useContext(AppContext);
+  const { globalState, updateGlobalState } = useContext(AppContext);
 
   return (
     <>
       <hr className="bg-[#034DA2] h-4 w-full border-none" />
-      <div className="bg-[#012958] w-full flex flex-col lg:grid-cols-7 grid-cols-6 p-5 lg:p-14 lg:px-[150px]">
+      <div className="bg-[#012958] w-full flex flex-col lg:grid-cols-7 grid-cols-6 p-5 lg:p-14 lg:px-[150px] pb-[50px]">
         <div className="col-span-3 lg:flex">
           <div>
             <div className="lg:flex mb-2 lg:ml-[165px]">
-              <div className="mr-2 mb-2 flex justify-center">
-                <img src={Logo} alt="Logo Yayasan" className="w-[214px] h-[214px] mr-4 lg:mt-[20px]" />
+              <div className="mr-0 mb-2 flex lg:flex-row flex-col justify-center items-center">
+                <img src={Logo} alt="Logo Yayasan" className="w-[125px] h-[125px] mr-4 lg:mt-[20px] " />
 
                 <div>
                   <div className="text-white font-[600] lg:text-3xl text-md  mt-8  lg:text-start text-center" style={{ fontFamily: "Maven Pro" }}>
@@ -38,7 +38,7 @@ const Footer = () => {
                   <div className="text-[#C1CACF] lg:text-2xl text-sm mt-1 lg:text-start text-center" style={{ fontFamily: "Maven Pro" }}>
                     E-mail : ypcikini@indo.net.id
                   </div>
-                  <div className="mt-2 lg:mt-[35px] w-full col-span-3 text-[#C1CACF] lg:text-start text-center" style={{ fontFamily: "Maven Pro" }}>
+                  <div className="mt-8 lg:mt-[35px] w-full col-span-3 text-sm text-[#C1CACF] lg:text-start text-center" style={{ fontFamily: "Maven Pro" }}>
                     @ 2024 Yayasan Perguruan Cikini
                   </div>
                 </div>
@@ -73,8 +73,8 @@ const Footer = () => {
             <img loading="lazy" src={Tiktok} alt="Tiktok" className="h-[30px]" />
           </div> */}
             </div>
-            <div className="text-[#C1CACF] text-lg text-start lg:text-center lg:mt-4" style={{ fontFamily: "Maven Pro" }}>
-              Informasi Selengkapnya Hubungi Kami
+            <div className="text-[#C1CACF] lg:text-lg text-sm text-start lg:text-center lg:mt-4" style={{ fontFamily: "Maven Pro" }}>
+              {globalState.globalProperty === "IND" ? "Informasi Selengkapnya Hubungi Kami" : "For more information contact us"}
             </div>
           </div>
         </div>
