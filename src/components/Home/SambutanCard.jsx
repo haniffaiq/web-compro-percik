@@ -47,7 +47,7 @@ const SambutanCard = () => {
 
   return (
     <>
-      <div className="lg:px-9 lg:py-4 lg:mx-[250px] w-full mt-[30px]">
+      <div className="lg:px-9 lg:py-4 lg:mx-[250px] w-full lg:w-auto mt-[30px]">
         <div className="text-center text-[22px] lg:text-2xl lg:font-bold mb-10 bg-[#034694] text-white py-4  lg:rounded-xl" style={{ letterSpacing: 1, fontFamily: "Hedvig Letters Serif, serif" }}>
           {globalState.globalProperty === "IND" ? "SAMBUTAN" : "WELCOMING"}
         </div>
@@ -55,14 +55,14 @@ const SambutanCard = () => {
           <div></div>
           {selectedData.map((value, index) => {
             return (
-              <div className="mt-[-15px]">
+              <div className="mt-[-60px]">
                 <div className="mt-0 lg:mt-10 lg:gap-0 gap-5">
                   <div className="flex flex-col justify-center items-center">
                     <div className="">
-                      <img loading="lazy" src={require(`../../assets/${value.img}`)} alt="img" className="object-cover rounded-lg lg:w-[391px] w-[300px]" />
+                      <img loading="lazy" src={require(`../../assets/${value.img}`)} alt="img" className="object-cover rounded-lg lg:w-[470px] w-[300px]" />
                     </div>
                     <div className="">
-                      <div className="text-lg lg:text-xl font-bold lg:mt-2" style={{ fontFamily: "Maven Pro" }}>
+                      <div className="text-lg lg:text-2xl font-bold lg:mt-2" style={{ fontFamily: "Maven Pro" }}>
                         {value.name}
                       </div>
                     </div>

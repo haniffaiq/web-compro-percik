@@ -138,10 +138,10 @@ const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location,
         <div className={"lg:flex flex-grow items-center pt-5 pb-5" + (navbarOpen ? " " : " hidden")} id="example-navbar-danger">
           <div className="flex flex-col lg:hidden text-center gap-5 list-none lg:ml-auto">
             <Link to="/" className={location.pathname === "/" ? " text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
-              {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
+              {globalState.globalProperty === "IND" ? "Beranda" : "Home"}
             </Link>
             <Link to="/about" className={location.pathname === "/about" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
-              {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"}
+              {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"}
             </Link>
             <Link to="/school" className={location.pathname === "/school" ? "text-black text-[21px] font-[600]" : "text-[#6B7280] font-[600]"} style={{ fontFamily: "Hedvig Letters Serif, serif" }} onClick={() => setNavbarOpen(false)}>
               {globalState.globalProperty === "IND" ? "Sekolah" : "School"}

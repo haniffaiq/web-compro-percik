@@ -17,7 +17,7 @@ const carouselItemsMulti = {
     },
     {
       image: require("../../assets/img/Home/H3-New.webp"),
-    }
+    },
   ],
   english: [
     {
@@ -28,13 +28,11 @@ const carouselItemsMulti = {
     },
     {
       image: require("../../assets/img/Home/H3-New.webp"),
-    }
-  ]
-
+    },
+  ],
 };
 
-
-let carouselItemsSelected = []
+let carouselItemsSelected = [];
 
 const carouselItemsMobile = [
   {
@@ -79,9 +77,9 @@ const Header = () => {
   }, []);
 
   if (globalState.globalProperty == "IND") {
-    carouselItemsSelected = carouselItemsMulti.bahasa
+    carouselItemsSelected = carouselItemsMulti.bahasa;
   } else {
-    carouselItemsSelected = carouselItemsMulti.english
+    carouselItemsSelected = carouselItemsMulti.english;
   }
 
   useEffect(() => {
@@ -146,16 +144,10 @@ const Header = () => {
                 />
                 {index === 10 && (
                   <div className="absolute bottom-0 left-0 w-full text-center p-10">
-                    <div className="text-white text-[15px] lg:text-[25px] font-[600]">
-                      {item.title}
-                    </div>
-                    <div className="text-white text-[12px] lg:text-[20px] font-[600]">
-                      {item.subtitle}
-                    </div>
+                    <div className="text-white text-[15px] lg:text-[25px] font-[600]">{item.title}</div>
+                    <div className="text-white text-[12px] lg:text-[20px] font-[600]">{item.subtitle}</div>
                     <div className="flex justify-center">
-                      <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">
-                        {item.buttonText}
-                      </button>
+                      <button className="border bg-[#2F80ED] text-white py-1 lg:py-2 mt-2 px-2 lg:px-4 text-[10px] lg:text-md border-none rounded-md font-bold">{item.buttonText}</button>
                     </div>
                   </div>
                 )}
@@ -174,19 +166,11 @@ const Header = () => {
                     backgroundImage: `url(${item.image})`,
                   }}
                 /> */}
-                {item.image && (
-                  <img className="h-full w-full" src={item.image} alt="Item" />
-                )}
-                <div className="bg-[#034EA2] text-center flex flex-col min-h-[200px] justify-center items-center">
-                  <div className="text-[#3AE7FF] text-xl font-bold">
-                    {item.title ? item.title : ""}
-                  </div>
-                  <div className="text-white text-xl font-bold">
-                    {item.subTitle ? item.subTitle : ""}
-                  </div>
-                  <div className="mr-[20px] ml-[20px] text-white">
-                    {item.desc ? item.desc : ""}
-                  </div>
+                {item.image && <img className="h-full w-full" src={item.image} alt="Item" />}
+                <div className="bg-[#034EA2] text-center flex flex-col min-h-[280px] justify-center items-center">
+                  <div className="text-[#3AE7FF] text-xl font-bold">{item.title ? item.title : ""}</div>
+                  <div className="text-white text-xl font-bold">{item.subTitle ? item.subTitle : ""}</div>
+                  <div className="mr-[20px] ml-[20px] text-white">{item.desc ? item.desc : ""}</div>
                 </div>
 
                 {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div> */}
@@ -214,16 +198,13 @@ const Header = () => {
 
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className="w-full lg:py-[28px]">
-          <div className="text-black text-xl lg:text-[54px] mt-16 lg:mt-0 py-[40px] text-center" style={{ fontFamily: 'Hedvig Letters Serif, serif' }}>
-
-            {globalState.globalProperty === "IND"
-              ? "Fakta Perguruan 'CIKINI'"
-              : "Fakta Perguruan 'CIKINI'"}
+          <div className="text-black text-2xl lg:text-[54px] mt-[-10px] lg:mt-0 py-[40px] text-center" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+            {globalState.globalProperty === "IND" ? "Fakta Perguruan 'CIKINI'" : "Fakta Perguruan 'CIKINI'"}
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>
-      <div className="lg:grid lg:grid-cols-3 flex flex-col lg:gap-0 h-[auto]">
+      <div className="lg:grid lg:grid-cols-3 flex flex-col lg:gap-0 h-[auto] mt-[-10px]">
         <div
           className="py-2 lg:py-12 flex flex-col items-center justify-center lg:bg-cover bg-center relative"
           style={{
@@ -231,14 +212,13 @@ const Header = () => {
             backgroundSize: "cover",
           }}
         >
-          <div className="absolute inset-0 bg-[#FAAE35] bg-opacity-80"></div>{" "}
-          {/* Overlay kuning */}
+          <div className="absolute inset-0 bg-[#FAAE35] bg-opacity-80"></div> {/* Overlay kuning */}
           <div className="flex text-6xl lg:text-[150px] lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans ">{rounded1}</motion.h1>
             <h1 className="text-6xl lg:text-[150px] font-bold font-sans">+</h1>
           </div>
-          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
-            {globalState.globalProperty === "IND" ? "Mendidik pelajar/mahasiswa berkualitas \n yang siap dengan dunia kerja" : "Educating qualified students \n who are ready to face the world of work"}
+          <div className="text-center text-[19px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[390px] h-[80px] relative z-10 mt-[-20px] font-sans px-12" style={{ whiteSpace: "pre-line" }}>
+            {globalState.globalProperty === "IND" ? "Mendidik pelajar/mahasiswa berkualitas yang siap dengan dunia kerja" : "Educating qualified students who are ready to face the world of work"}
           </div>
         </div>
         <div
@@ -248,15 +228,13 @@ const Header = () => {
             backgroundSize: "cover",
           }}
         >
-          <div className="absolute inset-0 bg-[#30B8A9] bg-opacity-80"></div>{" "}
-          {/* Overlay merah */}
+          <div className="absolute inset-0 bg-[#30B8A9] bg-opacity-80"></div> {/* Overlay merah */}
           <div className="flex text-6xl lg:text-[150px] lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans">{rounded2}</motion.h1>
             <div className="text-6xl lg:text-[150px] font-bold font-sansfont-bold">+</div>
           </div>
-
-          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10 font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
-            {globalState.globalProperty === "IND" ? "Menorehkan beberapa prestasi bergengsi \n baik tingkat regional maupun nasional" : "Achieved several prestigious achievements \n both at regional and national levels"}
+          <div className="text-center text-[19px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[390px] h-[80px] relative z-10 mt-[-20px] font-sans px-12" style={{ whiteSpace: "pre-line" }}>
+            {globalState.globalProperty === "IND" ? "Menorehkan beberapa prestasi bergengsi baik tingkat regional maupun nasional" : "Achieved several prestigious achievements both at regional and national levels"}
           </div>
         </div>
         <div
@@ -266,14 +244,13 @@ const Header = () => {
             backgroundSize: "cover",
           }}
         >
-          <div className="absolute inset-0 bg-[#7888C4] bg-opacity-80"></div>{" "}
-          {/* Overlay biru */}
+          <div className="absolute inset-0 bg-[#7888C4] bg-opacity-80"></div> {/* Overlay biru */}
           <div className="flex text-6xl lg:text-[150px] lg:text-white text-white relative z-10">
             <motion.h1 className="font-bold font-sans">{rounded3}</motion.h1>
             <div className="text-6xl lg:text-[150px] font-bold font-sans">%</div>
           </div>
-          <div className="text-center text-[15px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[310px] relative z-10  font-sans px-12" style={{ whiteSpace: 'pre-line' }}>
-            {globalState.globalProperty === "IND" ? "Tingkat keberhasilan pelajar/mahasiswa \n yang diterima kerja" : "Success rate of students who are \n accepted to work"}
+          <div className="text-center text-[19px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[390px] h-[80px] relative z-10 mt-[-20px] font-sans px-12" style={{ whiteSpace: "pre-line" }}>
+            {globalState.globalProperty === "IND" ? "Tingkat keberhasilan pelajar/mahasiswa yang diterima kerja" : "Success rate of students who are accepted to work"}
           </div>
         </div>
       </div>

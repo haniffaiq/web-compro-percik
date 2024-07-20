@@ -59,7 +59,7 @@ const history = {
   3: {
     id: "3",
     imgUrl: require("../../assets/img/history/ibu_pandu.webp"),
-    title: "THE Glory Era (1960 - 1995)",
+    title: "The Glory Era (1960 - 1995)",
     content:
       "In the 1980s, the 'Cikini' School Foundation experienced rapid development, especially in Jalan Cikini Raya 74-76 Jakarta Pusat. 'Cikini' School, or often abbreviated as 'Percik,' became a private school in the Menteng area of Central Jakarta that was highly sought after by patriots and national figures to educate their children. Both national leaders, politicians, military figures, renowned entrepreneurs, and ordinary people enthusiastically enrolled their children in 'Cikini' School. As the number of high school students increased, in 1986, SMA became independent and relocated to Jalan PLN Duren Tiga South Jakarta, with the aim of improving facilities and infrastructure so that the quality and quantity of SMA could be continuously increased. 'Cikini' School continued to develop with the joining of ATN (National Technical Academy) which is now known as ISTN (National Institute of Science & Technology) in Jagakarsa South Jakarta. ISTN has produced thousands of engineering graduates who have contributed to the nation's development. With an education system ranging from kindergarten, elementary, junior high, high school, to college, 'Cikini' School meets the educational needs in the era of globalization. On September 3, 1979, STM was established in North Jakarta, and non-formal education began in 1994 with Music Education in various branches around Jakarta. The 'Cikini' School Foundation has the motto 'Participating in Building the Nation,' which is consistently implemented, producing the next generation of national leaders, renowned politicians, national entrepreneurs, and other figures in various fields of life. Many alumni have become national figures, such as Ibu Megawati Soekarnoputri, Mr. Akbar Tanjung, Mr. Agung Laksono, Mr. Hayono Isman, Mr. Soebronto Laras, and many others. Thus, 'Cikini' School can be said to be a school that has successfully produced the nation's golden generation and continues to exist to this day.",
   },
@@ -105,16 +105,22 @@ const Riwayat = () => {
 
   return (
     <>
-      <div className="ml-[20px] mr-[20px] lg:ml-[0px] lg:mr-[0px]">
-        <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start">
-          <div className=" w-full lg:py-[28px]">
-            <div className="text-black text-[28px] lg:text-6xl mt-12 lg:mt-20 lg:ml-[-60px] py-2 lg:text-center lg:text-left lg:px-[145px] w-[280px] ml-[20px] lg:w-full" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-              {globalState.globalProperty === "IND" ? "Riwayat Singkat Perguruan 'CIKINI'" : "'CIKINI' School Brief History"}
-            </div>
-            {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
+      <div className=" lg:ml-[0px] lg:mr-[0px] ">
+        <div className="w-full lg:py-[28px] bg-[#E2E5E9] py-[20px]">
+          <div className="text-black text-[24px] lg:text-6xl mt-[2px] lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+            {globalState.globalProperty === "IND" ? (
+              <>
+                Riwayat Singkat <br /> Perguruan 'CIKINI'
+              </>
+            ) : (
+              <>
+                Yayasan Perguruan 'CIKINI' <br /> Brief History
+              </>
+            )}
           </div>
+          {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
-        <div className="px-5 lg:px-8 lg:mx-16 lg:pl-[145px]">
+        <div className="px-5 lg:px-8 lg:mx-16 lg:pl-[145px] w-full">
           <div className="w-full rounded-xl">
             {Object.keys(selectedData).map((key) => (
               <div key={selectedData[key].id} className="flex flex-col lg:grid lg:grid-cols mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg">
@@ -127,11 +133,11 @@ const Riwayat = () => {
                 />
                 <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
               </div> */}
-                <div className="lg:mx-5 lg:ml-16">
-                  <div className="lg:text-[20px] text-[20px] lg:text-[42px] text-black" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                <div className="lg:mx-5 lg:ml-16 mt-[20px] ">
+                  <div className="lg:text-[20px] text-[20px] lg:text-[42px] text-black mx-[40px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
                     {selectedData[key].title}
                   </div>
-                  <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black w-full lg:w-auto text-left leading-normal ">{selectedData[key].content}</div>
+                  <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black lg:w-auto text-left leading-normal mx-[40px] w-[270px]">{selectedData[key].content}</div>
                 </div>
               </div>
             ))}

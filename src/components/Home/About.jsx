@@ -34,11 +34,11 @@ const About = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-2 items-center lg:px-[250px] mt-[-10px]">
+      <div className="flex flex-col gap-2 items-center lg:px-[250px] mt-[-30px]">
         <div className="text-center lg:text-start text-2xl lg:text-[54px] py-[58px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-          {globalState.globalProperty === "IND" ? "TENTANG KAMI" : "ABOUT US"} <br />
+          {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"} <br />
         </div>
-        <div className="bg-white rounded-lg overflow-hidden lg:grid lg:grid-row-2 gap-5 w-full lg:px-24 px-4 mt-[-30px] ">
+        <div className="bg-white rounded-lg overflow-hidden lg:grid lg:grid-row-2 gap-5 w-full lg:px-24 px-4 mt-[-40px] ">
           <div className="justify-center flex">
             <img loading="lazy" className="lg:w-auto w-[291px] " src={AboutImg} alt="img" />
           </div>
@@ -46,7 +46,7 @@ const About = () => {
             <div className="text-sm lg:text-xl lg:text-md mb-4 lg:mb-10 leading-normal px-6 text-left lg:px-24" style={{ fontFamily: "Maven Pro" }}>
               {globalState.globalProperty === "IND" ? bahasa : english} <br />
             </div>
-            <Link to="/about" className="flex mt-[30px] item-center justify-center">
+            <Link to="/about" className="flex mt-[20px] item-center justify-center">
               <button className="text-[12px] lg:text-[18px] text-center bg-black lg:px-6 lg:py-2 w-auto p-1 text-white px-3 rounded-md" style={{ letterSpacing: 4 }}>
                 {globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}
               </button>

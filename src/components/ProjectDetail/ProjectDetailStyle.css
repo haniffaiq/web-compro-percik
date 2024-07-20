@@ -607,7 +607,16 @@
   }
 }
 /* End Style Main Component Project Detail */
-
+/* Style test pdf */
+.a4-container {
+  width: 210mm; /* Lebar A4 */
+  height: 297mm; /* Tinggi A4 */
+  border: 1px solid #000; /* Garis batas */
+  box-sizing: border-box; /* Sertakan padding dan border dalam ukuran elemen */
+  padding: 10mm; /* Padding (opsional, sesuaikan dengan kebutuhan) */
+  margin: 20px auto; /* Margin untuk mengatur posisi tengah (opsional) */
+  background-color: #fff; /* Warna latar belakang putih (opsional) */
+}
 /* style pdf */
 
 .project-detail-main-container-pdf {
@@ -615,21 +624,21 @@
 }
 .project-detail-main-container-pdf h2 {
   color: #000;
-  font-size: 54px;
+  font-size: 32px;
   font-family: "Hedvig Letters Serif";
   line-height: 64px;
-
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .desc-container-layout-pdf p {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 32px;
   letter-spacing: -0.176px;
   text-align: left;
   font-family: "Maven Pro";
+  width: 650px;
 }
 
 .desc-container-layout-pdf {
@@ -637,18 +646,25 @@
 }
 
 .desc-main-container-pdf {
-  margin-top: 87px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .image-detail-layout-pdf {
-  height: 90%;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-detail-layout-pdf img {
+  width: 500px;
+  height: 300px;
 }
 
 .dana-detail-container {
@@ -664,8 +680,8 @@
 }
 
 .dana-detail-content-layout img {
-  height: 90%;
-  width: 90%;
+  height: 100px;
+  width: 100px;
 }
 
 /* style button download baru */

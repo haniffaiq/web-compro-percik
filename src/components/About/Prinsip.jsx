@@ -34,8 +34,8 @@ const Prinsip = () => {
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className=" w-full lg:py-[28px] bg-[#E2E5E9]">
-          <div className="text-black text-xl lg:text-6xl mt-5 lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? "Prinsip Dasar" : "Prinsip Dasar"}
+          <div className="text-black text-[28px] lg:text-6xl mt-5 lg:mt-0 ml-0 lg:ml-32 py-6 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+            {globalState.globalProperty === "IND" ? "Prinsip Dasar" : "Basic Principals"}
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
@@ -45,21 +45,34 @@ const Prinsip = () => {
           <div className="leading-normal">
             <div className="text-white py-5 px-5 lg:px-0 lg:py-2 lg:col-span-2 lg:row-span-2 ">
               <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-[-10px] lg:mt-0 text-black leading-normal px-4 lg:pr-28">
-                <ul className="list-outside list-disc">
-                  <li>Universal dan obyektif dalam ilmu pengetahuan untuk mencapai kenyataan dan kebenaran.</li>
-                  <li>Kebebasan akademik yang dilaksanakan dengan hikmah dan bertanggungjawab.</li>
-                  <li>Keadaban, kemanfaatan, kebahagiaan, kemanusiaan, dan kesejahteraan.</li>
-                  <li>Aktualisasi nilai-nilai kebangsaan dan Pancasila dalam kehidupan akademik.</li>
-                  <li>Pendidikan yang unggul.</li>
-                  <li>Pengembangan IPTEK secara kreatif dan inovatif untuk mewujudkan keunggulan bangsa.</li>
-                  <li>Pemanfaatan hasil IPTEK untuk memberdayakan masyarakat serta mendukung pembangunan nasional dan daerah.</li>
-                  <li>Pengayaan budaya untuk mendukung kemandirian serta keutuhan bangsa dan negara.</li>
+                <ul className="list-outside list-disc mx-[10px] w-[220px]">
+                  <li>{globalState.globalProperty === "IND" ? "Universal dan obyektif dalam ilmu pengetahuan untuk mencapai kenyataan dan kebenaran." : "Universal and objective in knowledge to achieve reality and truth."}</li>
+                  <li>{globalState.globalProperty === "IND" ? "Kebebasan akademik yang dilaksanakan dengan hikmah dan bertanggungjawab." : "Academic freedom exercised with wisdom and responsibility."}</li>
+                  <li>{globalState.globalProperty === "IND" ? "Keadaban, kemanfaatan, kebahagiaan, kemanusiaan, dan kesejahteraan." : "Civility, usefulness, happiness, humanity, and welfare."}</li>
+                  <li>{globalState.globalProperty === "IND" ? "Aktualisasi nilai-nilai kebangsaan dan Pancasila dalam kehidupan akademik." : "Actualization of national values and Pancasila in academic life."}</li>
+                  <li>{globalState.globalProperty === "IND" ? "Pendidikan yang unggul." : "Excellent education."}</li>
                   <li>
-                    Transformasi organisasi dan pengelolaan untuk mengembangkan keunggulan akademik serta meningkatkan efisiensi dan produktivitas melalui penerapan prinsip “sentralisasi administrasi keuangan, desentralisasi akademik dan
-                    riset”.
+                    {globalState.globalProperty === "IND"
+                      ? "Pengembangan IPTEK secara kreatif dan inovatif untuk mewujudkan keunggulan bangsa."
+                      : "Development of science and technology creatively and innovatively to achieve national excellence."}
                   </li>
-                  <li>Penyediaan sarana dan prasarana kampus untuk mendukung posisi Perguruan 'Cikini' ke taraf mutu internasional.</li>
-                  <li>Pengembangan jaringan kerjasama menuju pembangunan masyarakat yang demokratis.</li>
+                  <li>
+                    {globalState.globalProperty === "IND"
+                      ? "Pemanfaatan hasil IPTEK untuk memberdayakan masyarakat serta mendukung pembangunan nasional dan daerah."
+                      : "Utilization of science and technology outcomes to empower communities and support national and regional development."}
+                  </li>
+                  <li>{globalState.globalProperty === "IND" ? "Pengayaan budaya untuk mendukung kemandirian serta keutuhan bangsa dan negara." : "Cultural enrichment to support independence and the integrity of the nation and state."}</li>
+                  <li>
+                    {globalState.globalProperty === "IND"
+                      ? "Transformasi organisasi dan pengelolaan untuk mengembangkan keunggulan akademik serta meningkatkan efisiensi dan produktivitas melalui penerapan prinsip “sentralisasi administrasi keuangan, desentralisasi akademik dan riset”."
+                      : "Organizational and management transformation to develop academic excellence and increase efficiency and productivity through the implementation of the principle 'financial administration centralization, academic and research decentralization'."}
+                  </li>
+                  <li>
+                    {globalState.globalProperty === "IND"
+                      ? "Penyediaan sarana dan prasarana kampus untuk mendukung posisi Perguruan 'Cikini' ke taraf mutu internasional."
+                      : "Provision of campus facilities and infrastructure to support the position of Perguruan 'Cikini' to international quality standards."}
+                  </li>
+                  <li>{globalState.globalProperty === "IND" ? "Pengembangan jaringan kerjasama menuju pembangunan masyarakat yang demokratis." : "Development of cooperation networks towards building a democratic society."}</li>
                 </ul>
               </div>
             </div>

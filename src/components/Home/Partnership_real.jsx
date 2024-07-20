@@ -22,13 +22,13 @@ const PartnershipReal = () => {
         <div class="flex lg:flex-row py-16 px-[90px] lg:mx-[200px] items-center ">
           <div class="flex flex-col lg:flex-row justify-center lg:gap-28 lg:h-full lg:w-full h-full gap-12 ">
             <div class="flex items-center ">
-              <img loading="lazy" src={Bni} class="w-[300px]" alt="logo" />
+              <img loading="lazy" src={Bni} class="w-[300px] lg:w-full" alt="logo" />
             </div>
             <div class="flex items-center">
-              <img loading="lazy" src={Lipi} class="" alt="logo" />
+              <img loading="lazy" src={Lipi} class="w-[300px] lg:w-full" alt="logo" />
             </div>
             <div class="flex items-center">
-              <img loading="lazy" src={Telkomsel} class="" alt="logo" />
+              <img loading="lazy" src={Telkomsel} class="w-[300px] lg:w-full" alt="logo" />
             </div>
           </div>
         </div>

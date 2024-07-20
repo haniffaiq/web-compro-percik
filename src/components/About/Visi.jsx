@@ -1,115 +1,90 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
 import AppContext from "../../context/AppContext";
-import misi from "../../assets/img/misi.webp";
+import ValueInd from "../../assets/img/VALUE IND.png";
+import ValueEn from "../../assets/img/VALUE ENG.png";
+import ValueIdMobile from "../../assets/img/VALUE MOBILE_eng.jpg"; //ini emg kebalik wkwkw
+import ValueEnMobile from "../../assets/img/VALUE MOBILE_idn.jpg";
 
 const Visi = () => {
+  function isMobile() {
+    return window.innerWidth <= 768; // You can adjust the width threshold as needed
+  }
   const { globalState, updateGlobalState } = useContext(AppContext);
+  const [isMobileScreen, setIsMobileScreen] = useState(isMobile());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileScreen(isMobile());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  function MobileView() {
+    return <div className="ml-[-22px] text-black leading-normal w-[350px] mt-[-40px]">{globalState.globalProperty === "IND" ? <img src={ValueIdMobile} alt="value-pict-indo" /> : <img src={ValueEnMobile} alt="value-pict-en" />}</div>;
+  }
+
+  function DesktopView() {
+    return <div className="grid grid-row gap-0 my-5 text-black leading-normal px-4">{globalState.globalProperty === "IND" ? <img src={ValueInd} alt="value-pict-indo" /> : <img src={ValueEn} alt="value-pict-en" />}</div>;
+  }
 
   return (
     <>
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className="  w-full lg:py-[28px] bg-[#E2E5E9]">
-          <div className="text-black text-xl lg:text-6xl mt-[-20px] lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? "Visi, Misi dan Value" : "Vision, Mission and Values"}
+          <div className="text-black text-[28px] lg:text-6xl mt-[-20px] lg:mt-0 ml-0 lg:ml-32 py-6 text-center lg:text-left lg:px-[145px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+            {globalState.globalProperty === "IND" ? (
+              <>
+                Visi, Misi <br /> dan Value
+              </>
+            ) : (
+              <>
+                Vision, Mission <br /> and Values
+              </>
+            )}
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>
       </div>
       <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[145px] lg:pr-28">
         <div className="lg:text-start text-center text-3xl my-12 mt-[-10px] lg:mt-[50px] lg:text-[42px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-          Visi
+          {globalState.globalProperty === "IND" ? "Visi" : "Vision"}
         </div>
-        <div className="text-md lg:text-[24px] text-start leading-normal lg:mt-[0px] mt-[-30px]">
-          Menjadi center of excellence bidang pendidikan dalam mencetak generasi panutan yang amanah, berwawasan kebangsaan, pancasilais, berbudi pekerti luhur, dan mandiri sesuai perkembangan zaman, dengan tetap menjaga keberlangsungan
-          Yayasan Perguruan “CIKINI”. Misi Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi. Membangun fasilitas sarana dan prasarana yang unggul. Membangun pusat pengembanga
-          dan penelitian kebangsaan. Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara.
+        <div className="text-md lg:text-[24px] text-start leading-normal lg:mt-[0px] mt-[-30px] mx-[40px] w-[250px]">
+          {globalState.globalProperty === "IND"
+            ? "Menjadi center of excellence bidang pendidikan dalam mencetak generasi panutan yang amanah, berwawasan kebangsaan, pancasilais, berbudi pekerti luhur, dan mandiri sesuai perkembangan zaman, dengan tetap menjaga keberlangsungan Yayasan Perguruan “CIKINI”. Misi Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi. Membangun fasilitas sarana dan prasarana yang unggul. Membangun pusat pengembangan dan penelitian kebangsaan. Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara."
+            : "To become a center of excellence in education by producing exemplary generations who are trustworthy, nationalistic, Pancasila-oriented, noble in character, and independent, in accordance with the times, while maintaining the sustainability of Yayasan Perguruan “CIKINI”.Develop an outstanding curriculum to produce competent individuals who are adaptive to technological changes.Build excellent facilities and infrastructure.Establish a center for national development and research.Establish cooperation, collaboration, and industrial networks.Provide benefits to the nation and country."}
         </div>
-        <div className="lg:text-start text-center text-3xl lg:text-[42px] my-12" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-          Misi
+        <div className="lg:text-start text-center text-3xl lg:text-[42px] py-12 mt-[-20px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+          {globalState.globalProperty === "IND" ? "Misi" : "Mission"}
         </div>
-        <div className="flex flex-col gap-5 text-md lg:text-[24px] mt-[-20px] lg:mt-0 text-black leading-normal px-4">
-          <ul className="list-disc">
-            <li>Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi.</li>
-            <li>Membangun fasilitas sarana dan prasarana yang unggul.</li>
-            <li>Membangun pusat pengembanga dan penelitian kebangsaan.</li>
-            <li>Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara.</li>
+        <div className="flex flex-col gap-5 text-md lg:text-[24px] mt-[-30px] lg:mt-0 text-black leading-normal px-4">
+          <ul className="list-disc mx-[40px] w-[220px]">
+            <li>
+              {" "}
+              {globalState.globalProperty === "IND"
+                ? "Mengembangkan kurikulum unggulan untuk menghasilkan insan yang kompeten dan adaptif terhadap perubahan teknologi."
+                : "Develop an outstanding curriculum to produce competent individuals who are adaptive to technological changes."}
+            </li>
+            <li> {globalState.globalProperty === "IND" ? "Membangun fasilitas sarana dan prasarana yang unggul." : "Build excellent facilities and infrastructure."}</li>
+            <li> {globalState.globalProperty === "IND" ? "Membangun pusat pengembangan dan penelitian kebangsaan." : "Establish a center for national development and research."}</li>
+            <li>
+              {" "}
+              {globalState.globalProperty === "IND"
+                ? "Menjalin kerjasama, kolaborasi dan jejaring industri Memberikan manfaat kepada bangsa dan negara."
+                : "Establish cooperation, collaboration, and industrial networks provide benefits to the nation and country."}
+            </li>
           </ul>
         </div>
-        <div className="lg:text-start text-center text-3xl lg:text-[42px] my-12" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-          Value
+        <div className="lg:text-start text-center text-3xl lg:text-[42px] py-12 mt-[-20px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+          Values
         </div>
-        <div className="grid grid-row gap-0 my-5 text-black leading-normal px-4">
-          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
-            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-950">P</div>
-            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block text-indigo-950">rofesional</div>
-            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-950">Profesional</div>
-            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-950"></div>
-            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: "pre-line" }}>
-              {globalState.globalProperty === "IND"
-                ? "BEKERJA SECARA KOMPETEN DENGAN JIWA PATRIOTIK KEBANGSAAN, DAN KETELADANAN \n DALAM BERPERILAKU LUHUR SERTA MENJUNJUNG TINGGI ETIKA PROFESI."
-                : "BEKERJA SECARA KOMPETEN DENGAN JIWA PATRIOTIK KEBANGSAAN, DAN KETELADANAN \n DALAM BERPERILAKU LUHUR SERTA MENJUNJUNG TINGGI ETIKA PROFESI."}
-            </div>
-          </div>
-          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
-            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-700">E</div>
-            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-700">xcelent</div>
-            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-700">Excelent</div>
-
-            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-700"></div>
-            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: "pre-line" }}>
-              {globalState.globalProperty === "IND" ? "BEKERJA DENGAN BERPEDOMAN PADA STANDAR TERBAIK UNTUK MEMBERIKAN HASIL YANG \n UNGGUL." : "BEKERJA DENGAN BERPEDOMAN PADA STANDAR TERBAIK UNTUK MEMBERIKAN HASIL YANG \n UNGGUL."}
-            </div>
-          </div>
-          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
-            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-500">R</div>
-            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-500">eligius</div>
-            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-500">Religius</div>
-
-            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-500"></div>
-            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: "pre-line" }}>
-              {globalState.globalProperty === "IND"
-                ? "BEKERJA DENGAN MENJUNJUNG TINGGI NILAI-NILAI RELIGI DAN MENGEDEPANKAN EMPATI,\n TOLERANSI SERTA SALING MENGHORMATI."
-                : "BEKERJA DENGAN MENJUNJUNG TINGGI NILAI-NILAI RELIGI DAN MENGEDEPANKAN EMPATI,\n TOLERANSI SERTA SALING MENGHORMATI."}
-            </div>
-          </div>
-          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
-            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-400">C</div>
-            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-400">ontribution</div>
-            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-400">Contribution</div>
-
-            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-400"></div>
-            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: "pre-line" }}>
-              {globalState.globalProperty === "IND"
-                ? "MEMBERIKAN MANFAAT NYATA DENGAN TULUS DAN IKHLAS KEPADA BANGSA, NEGARA, DAN \n MASYARAKAT."
-                : "MEMBERIKAN MANFAAT NYATA DENGAN TULUS DAN IKHLAS KEPADA BANGSA, NEGARA, DAN \n MASYARAKAT."}
-            </div>
-          </div>
-          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
-            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block  bg-indigo-300">I</div>
-            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-300">ntegrity</div>
-            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-300">Integrity</div>
-
-            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block  bg-indigo-300"></div>
-            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: "pre-line" }}>
-              {globalState.globalProperty === "IND"
-                ? "KOMITMEN SATUNYA KATA DENGAN PERBUATAN DAN BERSIKAP JUJUR DALAM MELAKSANAKAN \n TUGAS SESUAI PRINSIP-PRINSIP."
-                : "KOMITMEN SATUNYA KATA DENGAN PERBUATAN DAN BERSIKAP JUJUR DALAM MELAKSANAKAN \n TUGAS SESUAI PRINSIP-PRINSIP."}
-            </div>
-          </div>
-          <div className="lg:flex lg:flex-row grid grid-row-3 align-center">
-            <div className="text-white font-bold text-sm lg:text-3xl px-4 py-6 w-[50px] hidden lg:block flex bg-indigo-200">K</div>
-            <div className="font-bold text-sm lg:text-3xl px-0 py-6 w-[300px]  hidden lg:block  text-indigo-200">nowledgeable</div>
-            <div className="font-bold text-3xl lg:text-3xl lg:px-0 lg:py-6 w-[300px]  block lg:hidden text-indigo-200">Knowledgeable</div>
-
-            <div className="text-white font-bold text-sm lg:text-3xl w-[8px] my-4 hidden lg:block bg-indigo-200"></div>
-            <div className="text-sm lg:text-lg lg:px-2 lg:py-4 py-4 w-auto leading-normal " style={{ whiteSpace: "pre-line" }}>
-              {globalState.globalProperty === "IND"
-                ? "CERDAS DAN BERWAWASAN LUAS DENGAN SENANTIASA MELAKUKAN PENINGKATAN \n BERKELANJUTAN SESUAI PERKEMBANGAN ZAMAN."
-                : "CERDAS DAN BERWAWASAN LUAS DENGAN SENANTIASA MELAKUKAN PENINGKATAN \n BERKELANJUTAN SESUAI PERKEMBANGAN ZAMAN."}
-            </div>
-          </div>
-        </div>
+        <div className="lg:mb-[60px]">{isMobileScreen ? <MobileView /> : <DesktopView />}</div>
       </div>
     </>
   );
