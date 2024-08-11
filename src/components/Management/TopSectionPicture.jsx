@@ -49,7 +49,7 @@ const TopSectionPict = ({ selectedButton, manajemenData }) => {
                 <img loading="lazy" src={require(`../../assets/${imageSourceManajemen}`)} alt="img" />
               </div>
               <div className="management-text-wrapper">
-                <p className="overlay-text-management-tittle" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                <p className="overlay-text-management-tittle" style={{ fontFamily: "Hedvig Letters Serif, serif", marginTop: "50px" }}>
                   {namaLengkapManajemen}
                 </p>
 

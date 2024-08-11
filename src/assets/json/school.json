@@ -58,34 +58,34 @@
   "english": [
     {
       "id": 1,
-      "name": "Kindergarten\nCikini School",
+      "name": "Kindergarten\nYayasan Perguruan 'CIKINI'",
       "type": "Kindergarten",
       "image": "TK PERGURUAN CIKINI.webp",
       "students": 25,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
-      "phone": ["SD - (021) 3102287", "SD - (021) 3146374", "SMP - (021) 3146375"]
+      "phone": "SD - (021) 3102287 \n SD - (021) 3146374 \n SMP - (021) 3146375"
     },
     {
       "id": 2,
-      "name": "Elementary School\nCikini School",
+      "name": "Elementary School\nYayasan Perguruan 'CIKINI'",
       "type": "Elementary School",
       "image": "SD PERGURUAN CIKINI.webp",
       "students": 419,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
-      "phone": ["SD - (021) 3102287", "SD - (021) 3146374", "SMP - (021) 3146375"]
+      "phone": "SMA 1 - (021) 7991458 \n SMK 2 MUSIK - (021) 7991458"
     },
     {
       "id": 3,
-      "name": "Junior High School\nCikini School",
+      "name": "Junior High School\nYayasan Perguruan 'CIKINI'",
       "type": "Junior High School",
       "image": "SMP PERGURUAN CIKINI.webp",
       "students": 133,
       "address": "Jl. Cikini Raya No.74-76 14, RT.14/RW.5, Cikini, Menteng, Central Jakarta, Special Capital Region of Jakarta 10330",
-      "phone": ["SD - (021) 3102287", "SD - (021) 3146374", "SMP - (021) 3146375"]
+      "phone": "SMA 2 - (021) 22710146 \n SMK 3 - (021) 7865396"
     },
     {
       "id": 4,
-      "name": "Senior High School 1\nCikini School",
+      "name": "Senior High School 1\nYayasan Perguruan 'CIKINI'",
       "type": "Vocational High School",
       "image": "SMA 1 PERGURUAN CIKINI.webp",
       "students": 409,
@@ -94,7 +94,7 @@
     },
     {
       "id": 5,
-      "name": "Senior High School 2\nCikini School",
+      "name": "Senior High School 2\nYayasan Perguruan 'CIKINI'",
       "type": "Vocational High School",
       "image": "SMA 2 PERGURUAN CIKINI.webp",
       "students": 644,
@@ -103,7 +103,7 @@
     },
     {
       "id": 6,
-      "name": "Vocational High School 1\nCikini School",
+      "name": "Vocational High School 1\nYayasan Perguruan 'CIKINI'",
       "type": "Vocational High School",
       "image": "SMK 1 PERGURUAN CIKINI.webp",
       "students": 1202,
@@ -112,7 +112,7 @@
     },
     {
       "id": 7,
-      "name": "Vocational High School 2 Music\nCikini School",
+      "name": "Vocational High School 2 Music\nYayasan Perguruan 'CIKINI'",
       "type": "Junior High School",
       "image": "SMK 2 MUSIK PERGURUAN CIKINI.webp",
       "students": 409,
@@ -121,7 +121,7 @@
     },
     {
       "id": 8,
-      "name": "Vocational High School 3\nCikini School",
+      "name": "Vocational High School 3\nYayasan Perguruan 'CIKINI'",
       "type": "Junior High School",
       "image": "SMK 3 PERGURUAN CIKINI.webp",
       "students": 1287,
@@ -130,7 +130,7 @@
     },
     {
       "id": 9,
-      "name": "Vocational High School\nCikini KIIC",
+      "name": "Vocational High School\nYayasan Perguruan 'CIKINI' - KIIC",
       "type": "Junior High School",
       "image": "SMK KIIC PERGURUAN CIKINI.webp",
       "students": 188,
@@ -139,7 +139,7 @@
     },
     {
       "id": 10,
-      "name": "ISTN (NATIONAL INSTITUTE OF SCIENCE & TECHNOLOGY)\nCikini School",
+      "name": "ISTN (NATIONAL INSTITUTE OF SCIENCE & TECHNOLOGY)\nYayasan Perguruan 'CIKINI'",
       "type": "Junior High School",
       "image": "ISTN PERGURUAN CIKINI.webp",
       "students": 1714,

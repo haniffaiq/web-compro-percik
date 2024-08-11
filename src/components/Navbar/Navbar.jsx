@@ -6,6 +6,7 @@ import burger from "../../assets/icon/pajamas_hamburger.svg";
 import { Link, useLocation } from "react-router-dom";
 import AppContext from "../../context/AppContext";
 import logo from "../../assets/img/logo YPC_PUTIH.png";
+import LogoNavbar from "../../assets/img/logo YPC_PUTIH.png";
 
 const Navbar = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
@@ -66,7 +67,7 @@ const Navbar = () => {
 const MobileNavbar = ({ navbarClasses, globalState, updateGlobalState, location, navbarOpen, setNavbarOpen }) => {
   return (
     <div className={navbarClasses}>
-      <div className="flex justify-between lg:grid lg:grid-cols-8 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] items-center">
+      <div className="flex justify-between lg:grid lg:grid-cols-8 ml-[15px] lg:ml-[30px] mr-[15px] lg:mr-[30px] items-center ">
         <div className="flex gap-0 lg:gap-3 col-span-3">
           <Link to="/" className="">
             <Logo />

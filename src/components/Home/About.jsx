@@ -35,7 +35,7 @@ const About = () => {
   return (
     <>
       <div className="flex flex-col gap-2 items-center lg:px-[250px] mt-[-30px]">
-        <div className="text-center lg:text-start text-2xl lg:text-[54px] py-[58px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+        <div className="text-center lg:text-start text-2xl lg:text-[54px] py-[58px] lg:my-[30px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
           {globalState.globalProperty === "IND" ? "Tentang Kami" : "About Us"} <br />
         </div>
         <div className="bg-white rounded-lg overflow-hidden lg:grid lg:grid-row-2 gap-5 w-full lg:px-24 px-4 mt-[-40px] ">

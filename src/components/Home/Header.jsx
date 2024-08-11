@@ -199,7 +199,7 @@ const Header = () => {
       <div className="lg:lg:flex flex-col items-center justify-center lg:flex-row lg:justify-start ">
         <div className="w-full lg:py-[28px]">
           <div className="text-black text-2xl lg:text-[54px] mt-[-10px] lg:mt-0 py-[40px] text-center" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? "Fakta Perguruan 'CIKINI'" : "Fakta Perguruan 'CIKINI'"}
+            {globalState.globalProperty === "IND" ? "Fakta Perguruan 'CIKINI'" : "Perguruan 'CIKINI' Facts"}
           </div>
           {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
         </div>

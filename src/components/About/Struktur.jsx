@@ -33,7 +33,7 @@ const Struktur = () => {
 
   function DesktopView() {
     return (
-      <div className="p-9 lg:px-0 lg:py-4 lg:ml-32 lg:pl-[145px] lg:pr-28 lg:my-[50px]">
+      <div className="p-2 lg:px-0 lg:py-4 lg:ml-0 lg:pl-[0px] lg:pr-0 lg:my-[50px]">
         <img src={BaganPict} alt="bagan-organisasi" />
       </div>
     );
@@ -51,7 +51,7 @@ const Struktur = () => {
                 </>
               ) : (
                 <>
-                  Organizational Chart <br /> Yayasan Perguruan 'CIKINI'
+                  Organizational Structure <br /> Yayasan Perguruan 'CIKINI'
                 </>
               )}
             </div>

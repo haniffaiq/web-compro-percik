@@ -20,7 +20,7 @@ const Footer = () => {
           <div>
             <div className="lg:flex mb-2 lg:ml-[165px]">
               <div className="mr-0 mb-2 flex lg:flex-row flex-col justify-center items-center">
-                <img src={Logo} alt="Logo Yayasan" className="w-[125px] h-[125px] mr-4 lg:mt-[20px] " />
+                <img src={Logo} alt="Logo Yayasan" className="lg:w-[155px] lg:h-[155px] w-[125px] h-[125px] mr-4 lg:mt-[20px] " />
 
                 <div>
                   <div className="text-white font-[600] lg:text-3xl text-md  mt-8  lg:text-start text-center" style={{ fontFamily: "Maven Pro" }}>

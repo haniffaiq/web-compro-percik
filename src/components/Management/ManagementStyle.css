@@ -175,10 +175,10 @@
   .triple-button-container button {
     padding: 6px 21px 6px 21px;
     color: #000;
-    font-size: 20px;
+    font-size: 16px;
     line-height: normal;
-    font-family: "Hedvig Letters Serif, serif";
-    width: 189px;
+    font-family: "Maven Pro";
+    width: 186px;
     text-align: left;
     border-bottom-width: 4px;
     border-bottom-color: #ededed;
@@ -189,19 +189,20 @@
     font-weight: bold;
     background-color: #3b82f6; /* focus:bg-blue-500 */
     color: #ffffff; /* focus:text-white */
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
-    font-family: "Hedvig Letters Serif, serif";
+    font-family: "Maven Pro";
+    width: 186px;
   }
   .triple-button-container button:hover {
     padding: 6px 21px 6px 21px;
     font-weight: bold;
     background-color: #3b82f6; /* hover:bg-blue-500 */
     color: #ffffff; /* hover:text-white */
-    font-size: 20px;
+    font-size: 16px;
     line-height: normal;
-
-    font-family: "Hedvig Letters Serif, serif";
+    font-family: "Maven Pro";
+    width: 186px;
   }
 }
 

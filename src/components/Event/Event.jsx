@@ -64,7 +64,7 @@ const Event = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-1 lg:ml-[125px] py-2 mt-[28px] justify-start ml-[53px] lg:justify-start lg:justify-center lg:justify-start lg:justify-start lg:px-[145px] lg:justify-start lg:px-[145px]">
+      <div className="flex gap-1 lg:ml-[270px] py-2 mt-[28px] justify-center lg:justify-start tracking-widest">
         <Link to="/" className="lg:text-lg text-sm">
           {globalState.globalProperty === "IND" ? "BERANDA" : "HOME"}
         </Link>
@@ -92,7 +92,10 @@ const Event = () => {
                     </p>
                     <p className="lg:text-[22px] leading-normal lg:pl-[37px] lg:w-[609px] pl-[27px] w-[280px] mt-[-10px]">{truncateText(item.deskripsi, 50)}</p>
                     <div className="flex lg:mt-[35px] lg:mx-[170px] ml-[27px] mt-[30px]">
-                      <button className="lg:text-[19px] text-[11.5px] text-center bg-black lg:px-[16px] lg:py-[9px] lg:w-[249px] h-[40px] p-1 text-white px-3 rounded-md w-[170px]" style={{ fontFamily: "Maven Pro", letterSpacing: 2 }}>
+                      <button
+                        className="lg:text-[19px] text-[11.5px] text-center bg-black lg:px-[16px] lg:py-[9px] lg:w-[249px] h-[40px] p-1 text-white px-3 rounded-md w-[170px] hover:bg-[#48d1cc]"
+                        style={{ fontFamily: "Maven Pro", letterSpacing: 2 }}
+                      >
                         {globalState.globalProperty === "IND" ? "SELENGKAPNYA >>" : "SEE MORE >>"}
                       </button>
                     </div>

@@ -45,7 +45,7 @@ const Prinsip = () => {
           <div className="leading-normal">
             <div className="text-white py-5 px-5 lg:px-0 lg:py-2 lg:col-span-2 lg:row-span-2 ">
               <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-[-10px] lg:mt-0 text-black leading-normal px-4 lg:pr-28">
-                <ul className="list-outside list-disc mx-[10px] w-[220px]">
+                <ul className="list-outside list-disc mx-[10px] w-[220px] lg:w-full">
                   <li>{globalState.globalProperty === "IND" ? "Universal dan obyektif dalam ilmu pengetahuan untuk mencapai kenyataan dan kebenaran." : "Universal and objective in knowledge to achieve reality and truth."}</li>
                   <li>{globalState.globalProperty === "IND" ? "Kebebasan akademik yang dilaksanakan dengan hikmah dan bertanggungjawab." : "Academic freedom exercised with wisdom and responsibility."}</li>
                   <li>{globalState.globalProperty === "IND" ? "Keadaban, kemanfaatan, kebahagiaan, kemanusiaan, dan kesejahteraan." : "Civility, usefulness, happiness, humanity, and welfare."}</li>

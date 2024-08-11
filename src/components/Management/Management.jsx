@@ -15,7 +15,7 @@ const Button = ({ buttonName, onClick, selected }) => (
 
 const Management = () => {
   const { globalState } = useContext(AppContext);
-  const [selectedButton, setSelectedButton] = useState(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
+  const [selectedButton, setSelectedButton] = useState(globalState.globalProperty === "IND" ? "Pembina" : "Governing Board");
   const [isPengurusSelected, setIsPengurusSelected] = useState(false);
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -35,7 +35,7 @@ const Management = () => {
 
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
-    if (buttonName === "Pengurus" || buttonName === "Administrator") {
+    if (buttonName === "Pengurus" || buttonName === "Executive Board") {
       setIsPengurusSelected(true);
     } else {
       setIsPengurusSelected(false);
@@ -47,7 +47,7 @@ const Management = () => {
   }, []);
 
   useEffect(() => {
-    setSelectedButton(globalState.globalProperty === "IND" ? "Pembina" : "Advisor");
+    setSelectedButton(globalState.globalProperty === "IND" ? "Pembina" : "Governing Board");
     setIsPengurusSelected(false); // Reset state when globalProperty changes
   }, [globalState.globalProperty]);
 
