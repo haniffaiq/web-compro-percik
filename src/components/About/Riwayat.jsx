@@ -82,6 +82,7 @@ const Riwayat = () => {
   const { globalState, updateGlobalState } = useContext(AppContext);
   const [html, setHtml] = useState({ __html: "" });
   console.log(globalState.globalProperty);
+  const [isMobileScreen, setIsMobileScreen] = useState(isMobile());
 
   let selectedData = {};
   if (globalState.globalProperty === "IND") {
@@ -103,49 +104,108 @@ const Riwayat = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
-    <>
-      <div className=" lg:ml-[0px] lg:mr-[0px] ">
-        <div className="w-full lg:py-[28px] bg-[#E2E5E9] py-[20px]">
-          <div className="text-black text-[24px] lg:text-6xl mt-[2px] lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-            {globalState.globalProperty === "IND" ? (
-              <>
-                Riwayat Singkat <br /> Perguruan 'CIKINI'
-              </>
-            ) : (
-              <>
-                Yayasan Perguruan 'CIKINI' <br /> Brief History
-              </>
-            )}
+  function isMobile() {
+    return window.innerWidth <= 768; // You can adjust the width threshold as needed
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileScreen(isMobile());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  function MobileView() {
+    return (
+      <>
+        <div className=" lg:ml-[0px] lg:mr-[0px] ">
+          <div className="w-full lg:py-[28px] bg-[#E2E5E9] py-[20px]">
+            <div className="text-black text-[24px] lg:text-6xl mt-[2px] lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+              {globalState.globalProperty === "IND" ? (
+                <>
+                  Riwayat Singkat <br /> Perguruan 'CIKINI'
+                </>
+              ) : (
+                <>
+                  Yayasan Perguruan 'CIKINI' <br /> Brief History
+                </>
+              )}
+            </div>
+            {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
           </div>
-          {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
-        </div>
-        <div className="px-5 lg:px-8 lg:mx-16 lg:pl-[145px] w-full">
-          <div className="w-full rounded-xl">
-            {Object.keys(selectedData).map((key) => (
-              <div key={selectedData[key].id} className="flex flex-col lg:grid lg:grid-cols mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg">
-                {/* <div className="flex flex-col items-center">
-                <img
-                  loading="lazy"
-                  src={selectedData[key].imgUrl}
-                  className="lg:object-cover flex h-[300px] lg:h-[300px]"
-                  alt="selectedData[key].imgUrl"
-                />
-                <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
-              </div> */}
-                <div className="lg:mx-5 lg:ml-16 mt-[20px] ">
-                  <div className="lg:text-[20px] text-[20px] lg:text-[42px] text-black mx-[40px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
-                    {selectedData[key].title}
+          <div className="px-5 lg:px-8 lg:mx-16 lg:pl-[145px] w-full">
+            <div className="w-full rounded-xl">
+              {Object.keys(selectedData).map((key) => (
+                <div key={selectedData[key].id} className="flex flex-col lg:grid lg:grid-cols mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg">
+                  {/* <div className="flex flex-col items-center">
+                  <img
+                    loading="lazy"
+                    src={selectedData[key].imgUrl}
+                    className="lg:object-cover flex h-[300px] lg:h-[300px]"
+                    alt="selectedData[key].imgUrl"
+                  />
+                  <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
+                </div> */}
+                  <div className="lg:mx-5 lg:ml-16 mt-[20px] ">
+                    <div className="lg:text-[20px] text-[20px] lg:text-[42px] text-black mx-[40px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                      {selectedData[key].title}
+                    </div>
+                    <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black lg:w-auto text-left leading-normal mx-[40px] w-[270px]">{selectedData[key].content}</div>
                   </div>
-                  <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black lg:w-auto text-left leading-normal mx-[40px] w-[270px]">{selectedData[key].content}</div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
+  }
+
+  function DesktopView() {
+    return (
+      <>
+        <div className=" lg:ml-[0px] lg:mr-[0px] ">
+          <div className="w-full lg:py-[28px] bg-[#E2E5E9] py-[20px]">
+            <div className="text-black text-[24px] lg:text-6xl mt-[2px] lg:mt-0 ml-0 lg:ml-32 py-2 text-center lg:text-left lg:px-[145px] " style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+              {globalState.globalProperty === "IND" ? <>Riwayat Singkat Perguruan 'CIKINI'</> : <>Yayasan Perguruan 'CIKINI' Brief History</>}
+            </div>
+            {/* <div className="border-t-7 border-yellow-400 w-[103px] lg:absolute left-[125px] lg:border-[6px]"></div> */}
+          </div>
+          <div className="px-5 lg:px-8 lg:mx-16 lg:pl-[145px] w-full">
+            <div className="w-full rounded-xl">
+              {Object.keys(selectedData).map((key) => (
+                <div key={selectedData[key].id} className="flex flex-col lg:grid lg:grid-cols mt-0 lg:mt-10 lg:gap-0 gap-5 py-5 rounded-lg">
+                  {/* <div className="flex flex-col items-center">
+                  <img
+                    loading="lazy"
+                    src={selectedData[key].imgUrl}
+                    className="lg:object-cover flex h-[300px] lg:h-[300px]"
+                    alt="selectedData[key].imgUrl"
+                  />
+                  <div className="text-end font-semibold">Ibu Pandu Soeradhiningrat</div>
+                </div> */}
+                  <div className="lg:mx-5 lg:ml-6 mt-[20px] ">
+                    <div className="lg:text-[20px] text-[20px] lg:text-[42px] text-black mx-[40px]" style={{ fontFamily: "Hedvig Letters Serif, serif" }}>
+                      {selectedData[key].title}
+                    </div>
+                    <div className="flex flex-col gap-5 text-[16px] lg:text-[24px] mt-5 lg:mt-10 lg:mb-10 text-black lg:w-auto text-left leading-normal mx-[40px] w-[270px]">{selectedData[key].content}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  return <div>{isMobileScreen ? <MobileView /> : <DesktopView />}</div>;
 };
 
 export default Riwayat;

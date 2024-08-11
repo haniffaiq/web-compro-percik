@@ -56,7 +56,7 @@ const SambutanCard = () => {
           {selectedData.map((value, index) => {
             return (
               <div className="mt-[-60px]">
-                <div className="mt-0 lg:mt-10 lg:gap-0 gap-5">
+                <div className="mt-10 lg:mt-10 lg:gap-0 gap-5">
                   <div className="flex flex-col justify-center items-center">
                     <div className="">
                       <img loading="lazy" src={require(`../../assets/${value.img}`)} alt="img" className="object-cover rounded-lg lg:w-[470px] w-[300px]" />

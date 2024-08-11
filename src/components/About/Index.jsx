@@ -104,43 +104,43 @@ const About = () => {
               onClick={() => handleClick(sambutanRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
-              Sambutan
+              {globalState.globalProperty === "IND" ? "Sambutan" : "Welcoming"}
             </button>
             <button
               onClick={() => handleClick(riwayatRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4 "
             >
-              Riwayat Singkat
+              {globalState.globalProperty === "IND" ? "Riwayat Singkat" : "Brief History"}
             </button>
             <button
               onClick={() => handleClick(maknaRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
-              Makna Logo
+              {globalState.globalProperty === "IND" ? "Makna Logo" : "Meaning of Logos"}
             </button>
             <button
               onClick={() => handleClick(prinsipRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
-              Prinsip Dasar
+              {globalState.globalProperty === "IND" ? "Prinsip Dasar" : "Basic Principals"}
             </button>
             <button
               onClick={() => handleClick(visiMisiRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
-              Visi, Misi & Value
+              {globalState.globalProperty === "IND" ? "Visi, Misi & Value" : "Vision, Mision, & Value"}
             </button>
             <button
               onClick={() => handleClick(strukturRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
-              Struktur Organisasi
+              {globalState.globalProperty === "IND" ? "Struktur Organisasi" : "Organizational Structure"}
             </button>
             <button
               onClick={() => handleClick(akreditasiRef)}
               className="m-1 px-8 py-2 rounded-lg text-left hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:bg-blue-500 focus:text-white focus:ring-offset-2 border-b-4"
             >
-              SK Akreditasi
+              {globalState.globalProperty === "IND" ? "SK Akreditasi" : "Accreditation Decree"}
             </button>
           </div>
         </div>
