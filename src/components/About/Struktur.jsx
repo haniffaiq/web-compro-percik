@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
-import BaganPict from "../../assets/img/bagan yapercik WEB_ACC.png";
-import BaganMobile from "../../assets/img/bagan yapercik WEB_ACC.png";
+import BaganPict from "../../assets/img/BaganPercikFix.png";
+import BaganMobile from "../../assets/img/BaganPercikFix.png";
 import AppContext from "../../context/AppContext";
 
 const Struktur = () => {

@@ -2,66 +2,66 @@
   "bahasa": [
     {
       "id": 1,
-      "namaLengkapManajemen": "Prof. Dr. (H.C). Hj Megawati Soekarnoputri",
+      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo,SH",
       "jabatanManajemen": "Pembina",
-      "deskripsiManajemen": "Merupakan Presiden Indonesia kelima yang menjabat sejak 23 Juli 2001 sampai 20 Oktober 2004. Ia merupakan presiden wanita Indonesia pertama dan putri dari presiden Indonesia pertama, Soekarno, yang kemudian mengikuti jejak ayahnya menjadi Presiden Indonesia.\n Sebelumnya dari tahun 1999–2001, ia menjabat Wakil Presiden pada pemerintahan Presiden Abdurrahman Wahid (Gus Dur). Megawati juga merupakan ketua umum Partai Demokrasi Indonesia Perjuangan (PDI-P) sejak memisahkan diri dari Partai Demokrasi Indonesia pada tahun 1999.",
-      "imageSourceManajemen": "img/management/Pembina/MEGA_FG.png"
+      "deskripsiManajemen": "Lahir di Semarang, 26 Desember 1938, meraih Sarjana Hukum dari Fakultas Hukum UI tahun 1967. Melanjutkan studi dengan kursus singkat di Norwegian Shipping Academy, Sanderstolen, Norwegian, dan Seatrade Academy of London, Cambridge, Inggris. \n Beliau yang juga merupakan alumni dari Perguruan Cikini, pernah menjabat sebagai Ketua Umum Yayasan Perguruan Cikini untuk periode 2001-2006.",
+      "imageSourceManajemen": "img/management/Pembina/HK_FG.png"
     },
     {
       "id": 2,
-      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo,SH",
+      "namaLengkapManajemen": "Prof. Dr. (H.C). Hj Megawati Soekarnoputri",
       "jabatanManajemen": "Pembina",
-      "deskripsiManajemen": "Lahir di Semarang, 26 Desember 1938, meraih Sarjana Hukum dari Fakultas Hukum UI tahun 1967. Melanjutkan studi dengan kursus singkat di Norwegian Shipping Academy, Sanderstolen, Norwegian, dan Seatrade Academy of London, Cambridge, Inggris. \n Beliau pernah menjabat sebagai Ketua Umum Yayasan Perguruan Cikini untuk periode 2001-2006.",
-      "imageSourceManajemen": "img/management/Pembina/HK_FG.png"
+      "deskripsiManajemen": "Lahir di Yogyakarta, 23 Januari 1947. Beliau adalah alumni dari Perguruan Cikini yang merupakan Presiden Indonesia kelima, menjabat sejak 23 Juli 2001 sampai 20 Oktober 2004. Ia adalah presiden wanita Indonesia pertama dan putri dari presiden Indonesia pertama, Soekarno, yang kemudian mengikuti jejak ayahnya menjadi Presiden Indonesia.\n Sebelumnya dari tahun 1999–2001, ia menjabat Wakil Presiden pada pemerintahan Presiden Abdurrahman Wahid (Gus Dur). Megawati juga merupakan ketua umum Partai Demokrasi Indonesia Perjuangan (PDI-P) sejak memisahkan diri dari Partai Demokrasi Indonesia pada tahun 1999.",
+      "imageSourceManajemen": "img/management/Pembina/MEGA_FG.png"
     },
 
     {
-      "id": 6,
+      "id": 3,
       "namaLengkapManajemen": "Drs. Indra Kartasasmita",
       "jabatanManajemen": "Pembina",
-      "deskripsiManajemen": "Wakil Presiden Komite Olimpiade Indonesia, juga aktif di Yayasan Perguruan Cikini, berperan dalam pengembangan olahraga dan pendidikan. \n Pendiri dari Perkemi di Indonesia. Sebuah organisasi Persaudaraan Shorinji Kempo Indonesia, salah satu dari seni bela diri yang berasal dari Jepang. Saat ini beliau bertindak sebagai salah satu majelis tinggi Perkemi tahun 2022-2026.",
+      "deskripsiManajemen": "Wakil Presiden Komite Olimpiade Indonesia, adalah alumni dari Perguruan Cikini yang juga aktif di Yayasan Perguruan Cikini, berperan dalam pengembangan olahraga dan pendidikan.\n Pendiri dari Perkemi di Indonesia. Sebuah organisasi Persaudaraan Shorinji Kempo Indonesia, salah satu dari seni bela diri yang berasal dari Jepang. Saat ini beliau bertindak sebagai salah satu majelis tinggi Perkemi tahun 2022-2026.",
       "imageSourceManajemen": "img/management/Pembina/IK_FG.png"
     },
     {
-      "id": 11,
-      "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
+      "id": 4,
+      "namaLengkapManajemen": "Akhmad Bukhari Saleh, Ir",
       "jabatanManajemen": "Pengawas",
       "deskripsiManajemen": "Lahir di Jakarta pada 26 Juni 1944. Siswa SD, SMP dan SMA Perguruan Cikini (1950-1963). Menjadi Captain Regu Basketball SMA Perguruan Cikini (1961-1963) yang menjadi juara antar SLA Jakarta Raya (1962-1963), dan Ketua OSIS (1962-1963). \n Meraih gelar Insinyur Teknik Kimia dari Institut Teknologi Bandung. Kemudian mengambil diploma di Jurusan Petroleochimie pada l'Universite de Droit, d'Economie et des Sciences d'Aix-Marseille, Perancis. Selain menjadi Pengawas Yayasan Perguruan Cikini, aktif juga di kepengurusan Pramuka, FASI (Aero Sport), PII (Persatuan Insinyur) dan KMI (Menwa).",
       "imageSourceManajemen": "img/management/Pengawas/BS 1_fg.png"
     },
     {
-      "id": 13,
-      "namaLengkapManajemen": "Ir. Syahril Anwar",
+      "id": 5,
+      "namaLengkapManajemen": "Syahril Anwar, Ir",
       "jabatanManajemen": "Pengawas",
       "deskripsiManajemen": "Lahir di Padang 18 Juli 1946, meraih gelar Sarjana Teknik Industri dari Institut Teknologi Bandung. Mengikuti kursus kursus singkat di beberapa Lembaga Pendidikan. Bergerak dalam bidang konstruksi , mendirikan Pembangkit listrik, pabrik transformator daya  dan perkebunan sawit. \n Beliau pendiri dan ketua Alumni Perguruan Cikini. Dalam bidang profesi anggota Dewan Pembina Assosiasi Kontraktor Indonesia dan Anggota Kehormatan Masyarakat Kelistrikan Nasional. \n ",
       "imageSourceManajemen": "img/management/Pengawas/SA 1_fg.png"
     },
     {
-      "id": 15,
-      "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo, IPU",
+      "id": 6,
+      "namaLengkapManajemen": "Budiono Kartohadiprodjo, Ir. IPU",
       "jabatanManajemen": "Pengurus",
       "deskripsiManajemen": "Lahir di Jakarta 10 Maret 1946, lulusan SR Perguruan Cikini yang kemudian menyelesaikan pendidikannya di jurusan Teknik Fisika Institut Teknologi Bandung (ITB). Selesai dari ITB, Budiono banyak mengerjakan pembangunan pabrik migas, petrokimia, dan gedung tinggi dan kemudiannya menjabat sebagai Direktur dan Komisaris dari Perusahaan EPC Engineering, konsultan, dan non teknik lainnya, disamping aktif sebagai dosen tamu tetap di jurusan Teknik Fisika ITB dan berbagai perguruan tinggi lainnya. \n Disamping itu Budiono juga aktif di Organisasi Persatuan Insinyur Indonesia dan Korps Menwa Indonesia dan pernah menjadi anggota Majelis Permusyawaratan Rakyat (1993-1998) serta Pengurus Organisasi Olahraga Internasional cabang Angkat Besi. Penghargaan yang diperoleh antara lain dari Pemerintah Republik Indonesia, ITB dan Organisasi olahraga Internasional.",
       "imageSourceManajemen": "img/management/Pengurus/BK_FG.png"
     },
     {
-      "id": 16,
-      "namaLengkapManajemen": "Dr. Setiawan Nazir, M.Kes",
+      "id": 7,
+      "namaLengkapManajemen": "Setiawan Nazir, dr. MKes",
       "jabatanManajemen": "Pengurus",
       "deskripsiManajemen": "Lahir di Jakarta tahun 1944. Meraih gelar dokter dari Fakultas Kedokteran Universitas Pajajaran Bandung tahun 1978. Kemudian bekerja sebagai Pegawai Negri Sipil Departemen Kesehatan Republik Indonesia diperbantukan pada pemerintah DKI Jakarta. Pada tahun 1997 meraih gelar Magister Kesehatan dari Fakultas Kesehatan Masyarakat Universitas Indonesia di Jakarta untuk peminatan Epidemiologi.",
       "imageSourceManajemen": "img/management/Pengurus/IW_FG.png"
     },
 
     {
-      "id": 18,
-      "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR(K)",
+      "id": 8,
+      "namaLengkapManajemen": "Amendi Nasution, dr. Sp.KFR(K)",
       "jabatanManajemen": "Pengurus",
       "deskripsiManajemen": "Merupakan anggota dari Ikatan Dokter Indonesia (IDI) dan Perhimpunan Dokter Spesialis Rehabilitasi Medis Indonesia (PERDOSRI).Beliau juga mengikuti pendidikan lainnya seperti Child Development and Rehabilitation di Royal Children's Hospital, Melbourn, Australia",
       "imageSourceManajemen": "img/management/Pengurus/ibu Amendi_fg.png"
     },
 
     {
-      "id": 21,
-      "namaLengkapManajemen": "Ir. Triawan Saleh",
+      "id": 9,
+      "namaLengkapManajemen": "Triawan Saleh, Ir",
       "jabatanManajemen": "Pengurus",
       "deskripsiManajemen": "Lahir di Madiun pada 13 Juni 1046. Meraih gelar Sarjana Teknik Mesin dari ITB pada tahun 1975. Mendirikan perusahaan engineering dan konstruksi dibidang teknik mesin dan elektro. Sejak tahun 2001 aktif di kepengurusan Yayasan Perguruan Cikini.",
       "imageSourceManajemen": "img/management/Pengurus/TS_FG.png"
@@ -70,66 +70,65 @@
   "english": [
     {
       "id": 1,
-      "namaLengkapManajemen": "Prof. Dr. (H.C). Hj Megawati Soekarnoputri",
+      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo,SH",
       "jabatanManajemen": "Governing Board",
-      "deskripsiManajemen": "Being the fifth President of Indonesia, she served from July 23, 2001, until October 20, 2004. She was the first female president of Indonesia and the daughter of Indonesia's first president, Soekarno, who later followed in her father's footsteps to become President of Indonesia. \n Prior to that, from 1999 to 2001, she served as the Vice President in the administration of President Abdurrahman Wahid (Gus Dur). Megawati also served as the chairperson of the Partai Demokrasi Indonesia Perjuangan (PDI-P) since separating from the Indonesian Democratic Party in 1999.",
-      "imageSourceManajemen": "img/management/Pembina/MEGA_FG.png"
+      "deskripsiManajemen": "Born in Semarang, December 26, 1938, he earned a Bachelor of Laws degree from the Faculty of Law, University of Indonesia in 1967. He continued his studies with short courses at the Norwegian Shipping Academy, Sanderstolen, Norway, and the Seatrade Academy of London, Cambridge, England. \n He is also an alumnus of Perguruan Cikini and served as the Chairman of the Yayasan Perguruan Cikini for the 2001-2006 period.",
+      "imageSourceManajemen": "img/management/Pembina/HK_FG.png"
     },
     {
       "id": 2,
-      "namaLengkapManajemen": "M. Harjono Kartohadiprodjo,SH",
+      "namaLengkapManajemen": "Prof. Dr. (H.C). Hj Megawati Soekarnoputri",
       "jabatanManajemen": "Governing Board",
-      "deskripsiManajemen": "Born in Semarang on December 26, 1938, he earned his Bachelor of Law from the Faculty of Law, University of Indonesia in 1967. he continued his studies with short courses at the Norwegian Shipping Academy, Sanderstolen, Norway, and the Seatrade Academy of London, Cambridge, England. \n He has served as the Chairperson of the Cikini Educational Foundation for the period 2001-2006.",
-      "imageSourceManajemen": "img/management/Pembina/HK_FG.png"
+      "deskripsiManajemen": "Born in Yogyakarta, January 23, 1947. She is an alumna of Perguruan Cikini who became the fifth President of Indonesia, serving from July 23, 2001, to October 20, 2004. She was Indonesia's first female president and the daughter of Indonesia's first president, Soekarno, following in her father's footsteps to become President of Indonesia.\n Previously, from 1999–2001, she served as Vice President under President Abdurrahman Wahid (Gus Dur). Megawati is also the chairwoman of the Partai Demokrasi Indonesia Perjuangan (PDI-P) since separating from the Indonesian Democratic Party in 1999.",
+      "imageSourceManajemen": "img/management/Pembina/MEGA_FG.png"
     },
-
     {
-      "id": 6,
+      "id": 3,
       "namaLengkapManajemen": "Drs. Indra Kartasasmita",
       "jabatanManajemen": "Governing Board",
-      "deskripsiManajemen": "Vice President of the Indonesian Olympic Committee, also active in the Cikini Educational Foundation, playing a role in the development of sports and education. \n Founder of Perkemi in Indonesia. It is a fraternity organization of Shorinji Kempo Indonesia, one of the martial arts originating from Japan. Currently, he serves as one of the high council members of Perkemi for the term 2022-2026.",
+      "deskripsiManajemen": "Vice President of the Indonesian Olympic Committee, he is an alumnus of Perguruan Cikini and also actively involved in the Yayasan Perguruan Cikini, contributing to the development of sports and education.\n Founder of Perkemi in Indonesia, an organization for Shorinji Kempo, a martial art originating from Japan. He currently serves as one of the high council members of Perkemi for the 2022-2026 period.",
       "imageSourceManajemen": "img/management/Pembina/IK_FG.png"
     },
     {
-      "id": 11,
-      "namaLengkapManajemen": "Ir. Akhmad Bukhari Saleh",
+      "id": 4,
+      "namaLengkapManajemen": "Akhmad Bukhari Saleh, Ir",
       "jabatanManajemen": "Supervisory Board",
       "deskripsiManajemen": "Born in Jakarta on June 26, 1944. Attended elementary, junior high, and high school at Perguruan Cikini (1950-1963). Became the Captain of the Basketball Team at Perguruan Cikini High School (1961-1963), which won the inter-school championship in Jakarta Raya (1962-1963), and served as the Student Council President (1962-1963).\n Obtained a degree in Chemical Engineering from Bandung Institute of Technology. Later pursued a diploma in Petroleum Chemistry at l'Universite de Droit, d'Economie et des Sciences d'Aix-Marseille, France. Besides serving as a Supervisor at the Perguruan Cikini Foundation, also actively involved in the Scout organization, FASI (Aero Sport), PII (Association of Engineers), and KMI (University Military Corps).",
       "imageSourceManajemen": "img/management/Pengawas/BS 1_fg.png"
     },
     {
-      "id": 13,
-      "namaLengkapManajemen": "Ir. Syahril Anwar",
+      "id": 5,
+      "namaLengkapManajemen": "Syahril Anwar, Ir",
       "jabatanManajemen": "Supervisory Board",
       "deskripsiManajemen": "Born in Padang on July 18, 1946, he earned a Bachelor’s degree in Industrial Engineering from the Institut Teknologi Bandung (ITB). He also attended short courses at various educational institutions. His career focused on construction, including establishing power plants, power transformer factories, and oil palm plantations. \n He is the founder and chairman of the Cikini Educational Foundation Alumni. In his professional capacity, he serves as a member of the Indonesian Contractors Association Board and holds an honorary position in the National Electrical Society.",
       "imageSourceManajemen": "img/management/Pengawas/SA 1_fg.png"
     },
 
     {
-      "id": 15,
-      "namaLengkapManajemen": "Ir. Budiono Kartohadiprodjo, IPU",
+      "id": 6,
+      "namaLengkapManajemen": "Budiono Kartohadiprodjo, Ir. IPU",
       "jabatanManajemen": "Executive Board",
       "deskripsiManajemen": "Born in Jakarta on March 10, 1946, Budiono graduated from SR Perguruan Cikini before completing his education in the Physics Engineering department at Bandung Institute of Technology (ITB). After graduating from ITB, Budiono was extensively involved in the construction of oil and gas factories, petrochemical plants, and high-rise buildings. He later served as Director and Commissioner of an EPC Engineering Company, as well as a consultant in various technical and non-technical fields. Additionally, he remained active as a permanent guest lecturer in the Physics Engineering department at ITB and several other universities. \n Additionally, Budiono was active in the Indonesian Engineers Association and the Indonesian National Defense Forces (Korps Menwa Indonesia), and he was a member of the People's Consultative Assembly (1993-1998) as well as the Management of an International Sports Organization branch for Weightlifting. Awards he received include those from the Government of the Republic of Indonesia, ITB, and International Sports Organizations.",
       "imageSourceManajemen": "img/management/Pengurus/BK_FG.png"
     },
     {
-      "id": 16,
-      "namaLengkapManajemen": "Dr. Setiawan Nazir, M.Kes",
+      "id": 7,
+      "namaLengkapManajemen": "Setiawan Nazir, dr. MKes",
       "jabatanManajemen": "Executive Board",
       "deskripsiManajemen": "Born in Jakarta in 1944, he earned his medical degree from the Faculty of Medicine, Universitas Padjadjaran, Bandung in 1978. Subsequently, he worked as a Civil Servant in the Indonesian Ministry of Health, specifically assigned to the DKI Jakarta government. In 1997, he obtained a Master’s degree in Public Health with a specialization in Epidemiology from the Faculty of Public Health, University of Indonesia, Jakarta.",
       "imageSourceManajemen": "img/management/Pengurus/IW_FG.png"
     },
     {
-      "id": 18,
-      "namaLengkapManajemen": "Dr. Amendi Nasution, Sp.KFR(K)",
+      "id": 8,
+      "namaLengkapManajemen": "Amendi Nasution, dr. Sp.KFR(K)",
       "jabatanManajemen": "Executive Board",
       "deskripsiManajemen": "Member of the Indonesian Medical Association (IDI) and the Indonesian Association of Specialist Doctors in Physical Medicine and Rehabilitation (PERDOSRI). He also received education in Child Development and Rehabilitation at the Royal Children's Hospital, Melbourne, Australia.",
       "imageSourceManajemen": "img/management/Pengurus/ibu Amendi_fg.png"
     },
 
     {
-      "id": 21,
-      "namaLengkapManajemen": "Ir. Triawan Saleh",
+      "id": 9,
+      "namaLengkapManajemen": "Triawan Saleh, Ir",
       "jabatanManajemen": "Executive Board",
       "deskripsiManajemen": "Born in Madiun on June 13, 1046, he obtained a Bachelor’s degree in Mechanical Engineering from the Institut Teknologi Bandung (ITB) in 1975. He went on to establish an engineering and construction company specializing in mechanical and electrical engineering. Since 2001, he has been actively involved in the management of the Cikini Educational Foundation.",
       "imageSourceManajemen": "img/management/Pengurus/TS_FG.png"

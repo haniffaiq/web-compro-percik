@@ -218,7 +218,7 @@ const Header = () => {
             <h1 className="text-6xl lg:text-[150px] font-bold font-sans">+</h1>
           </div>
           <div className="text-center text-[19px] lg:text-[25px] font-[600] lg:text-white text-white tracking-wider lg:w-full w-[390px] h-[80px] relative z-10 mt-[-20px] font-sans px-12" style={{ whiteSpace: "pre-line" }}>
-            {globalState.globalProperty === "IND" ? "Mendidik pelajar/mahasiswa berkualitas yang siap dengan dunia kerja" : "Educating qualified students who are ready to face the world of work"}
+            {globalState.globalProperty === "IND" ? "Mendidik pelajar/mahasiswa berkualitas yang disiapkan untuk dunia kerja" : "Educating qualified students who are ready to face the world of work"}
           </div>
         </div>
         <div
