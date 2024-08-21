@@ -1,19 +1,20 @@
 {
   "bahasa": [
     {
+      "title": "DAFTAR YAYASAN",
+      "imgurl": "sk hukum.jpg",
+      "subtitle": "NOMOR AHU-0022695.A.H.01.12.TAHUN 2019",
+      "owner": "YAYASAN PERGURUAN CIKINI",
+      "npsn": ""
+    },
+    {
       "title": "SERTIFIKAT AKREDITASI A (UNGGUL)",
       "imgurl": "SK TK 1.png",
       "subtitle": "No. PAUD-TK/3173/0016/11/2018",
       "owner": "TK PERGURUAN CIKINI",
       "npsn": "(NPSN 20110568)"
     },
-    {
-      "title": "SERTIFIKAT AKREDITASI A (UNGGUL)",
-      "imgurl": "SK SMA 2.png",
-      "subtitle": "No. 00125/31000/SMA/2025",
-      "owner": "SMA 2 PERGURUAN CIKINI",
-      "npsn": "(NPSN 70004534)"
-    },
+
     {
       "title": "SERTIFIKAT AKREDITASI A (UNGGUL)",
       "imgurl": "SK SDS.png",
@@ -27,6 +28,13 @@
       "subtitle": "NO. 1347/BAN-SM/SK/2021",
       "owner": "SMP PERGURUAN CIKINI",
       "npsn": "(NPSN 20106427)"
+    },
+    {
+      "title": "SERTIFIKAT AKREDITASI A (UNGGUL)",
+      "imgurl": "SK SMA 2.png",
+      "subtitle": "No. 00125/31000/SMA/2025",
+      "owner": "SMA 2 PERGURUAN CIKINI",
+      "npsn": "(NPSN 70004534)"
     },
     {
       "title": "SERTIFIKAT AKREDITASI A (UNGGUL)",
