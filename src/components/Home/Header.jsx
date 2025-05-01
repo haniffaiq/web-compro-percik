@@ -36,7 +36,7 @@ let carouselItemsSelected = [];
 
 const carouselItemsMobile = [
   {
-    image: require("../../assets/img/Home/mobile1.jpg"),
+    image: require("../../assets/img/Home/home_sekypc.jpeg"),
     title: "SELAMAT DATANG DI WEB RESMI",
     subTitle: "YAYASAN PERGURUAN 'CIKINI'",
     desc: "Terimakasih atas kunjungan Anda, semoga informasi yang diberikan dapat memberi manfaat bagi kita semua",
