@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
-import { Carousel, ConfigProvider } from "antd";
+
 import AppContext from "../../context/AppContext";
-import AboutImg from "../../assets/img/Home/Home_About.png";
+import AboutImg from "../../assets/img/Home/Home_About_New.jpeg";
 import { Link } from "react-router-dom";
-import selengkapnya from "../../assets/img/Home/Selengkapnya.png";
 
 const bahasa = (
   <>
